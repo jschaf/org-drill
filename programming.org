@@ -1,0 +1,440 @@
+
+* Emacs Questions
+
+** Elisp
+
+*** Dired files                                                       :drill:
+
+How do you run an Emacs command on marked files in dired?
+
+**** Answer
+dired-get-marked-files
+
+#+BEGIN_SRC emacs-lisp
+
+(with-current-buffer "org-ref"
+  (loop for path in (dired-get-marked-files)
+        do (with-current-buffer (find-file-noselect path)
+             (indent-region (point-min) (point-max)))))
+#+END_SRC
+
+* Programming Questions
+
+** Math
+
+*** Median 1                                                        :drill:
+SCHEDULED: <2015-12-20 Sun>
+:PROPERTIES:
+:ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-16 Wed 22:35]
+:END:
+
+What is the median?  How is defined for an odd set of number and an even set of
+numbers?
+
+**** Answer
+It's the middle number.  If the number of elements is even, the median is the
+mean of the middle two numbers.
+
+
+** Design Patterns
+
+http://gameprogrammingpatterns.com/singleton.html
+
+*** Singleton 1                                                       :drill:
+SCHEDULED: <2015-12-20 Sun>
+:PROPERTIES:
+:ID:       92910693-0727-4cb6-8180-b879843f0a75
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-16 Wed 22:32]
+:END:
+
+What is the Singleton pattern?
+
+**** Answer
+
+Singleton is a class which only has one instance in a whole application. The
+class provides a getInstance() method to access the singleton instances.
+
+*** Singleton 2                                                       :drill:
+SCHEDULED: <2015-12-20 Sun>
+:PROPERTIES:
+:ID:       5e4c1b0b-ede4-43cf-943d-d83c847691ac
+:DRILL_LAST_INTERVAL: 3.725
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.167
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-16 Wed 22:36]
+:END:
+
+What are the advantages of a Singleton pattern?
+
+**** Answer
+
++ Singletons can implement interfaces and inherit from other classes.
++ Singletons can be lazy loaded.  Handy for expensive resources or DB connections.
++ Singletons can be extended into a factory.
+
+
+*** Singleton 3                                                       :drill:
+SCHEDULED: <2015-12-20 Sun>
+:PROPERTIES:
+:ID:       7b32a2a7-f9c6-464d-a387-53a852634a45
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.4
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-16 Wed 22:35]
+:END:
+
+What are the disadvantages of a Singleton pattern?
+
+**** Answer
+
++ May introduce global state which makes it harder to reason about code.
++ Encourages tight coupling.
++ Makes unit-testing in isolation difficult.
++ Hides dependencies.
++ Difficult to parallelize because of mutable state.
++ Inability to subclass because of private constructor.
+
+*** Singleton 4                                                       :drill:
+SCHEDULED: <2015-12-20 Sun>
+:PROPERTIES:
+:ID:       f6b95c46-c338-4c84-bcb6-8773f38d6282
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-16 Wed 22:32]
+:END:
+
+What are the alternatives to a Singleton pattern?
+
+**** Answer
+
++ Dependency Injection, e.g. passing in context to render functions.
++ Inversion of Control containers
+
+** Arrays
+*** Array 1 :drill:
+SCHEDULED: <2015-12-20 Sun>
+:PROPERTIES:
+:ID:       15ac94ff-d684-4ff4-9660-88f3b64c5cfa
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-16 Wed 22:35]
+:END:
+
+How would you keep track of a median while getting a stream of numbers?
+
+**** Answer
+
+Use a balanced binary tree where instead of keeping track of the height of the
+left and right nodes, we keep track of the number of elements.
+
+A better solution, that doesn't involve new data structures is to use a min heap
+and a max heap.  Python only provides a min-heap, so you can fake a max-heap by
+multiplying by each number by -1 before inserting and then reversing it on a
+pop or get-min.
+
+http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-of-integer-stream/
+
+
+
+** Hash Tables
+
+*** Implement Hash Table
+
+How would you implement a hash table?
+
+**** Answer
+
+**** TODO Fill in this
+
+* Java Concurrency
+
+** Java Concurrency In Practice
+
+*** Motivating Factors                                              :drill:
+SCHEDULED: <2015-12-21 Mon>
+:PROPERTIES:
+:ID:       e084f79e-8e7c-4677-bbf8-415022b927cd
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-17 Thu 11:18]
+:END:
+
+What are the motivating factors for concurrency?
+
+**** Answer
+
++ Resource Utilization - waiting for external operations
++ Fairness - share resources with time slicing
++ Convenience - often easier to write programs perform a single task and
+  coordinate them
+
+*** Thread Benefits                                                 :drill:
+SCHEDULED: <2015-12-21 Mon>
+:PROPERTIES:
+:ID:       3acd0416-3113-4401-a5f4-58af124d3050
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-17 Thu 11:19]
+:END:
+
+What are the benefits of threads?
+
+**** Answer
+
++ Exploit multiple processors.
++ Simplicity of modeling, break complicated async workflow into simpler
+  synchronous workflows and interact at specific sync points.
++ Simplified handling of asynchronous events.
++ More responsive user interface.
+
+*** Thread vs Process                                               :drill:
+SCHEDULED: <2015-12-21 Mon>
+:PROPERTIES:
+:ID:       7ed9edfc-7ef4-41f5-8eb3-dadf2036950c
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-17 Thu 11:18]
+:END:
+
+Whats the difference between threads and processes?
+
+**** Answer
+
+A process is an executing instance of a program.  Process provides resources
+necessary to execute a program.  A process has:
+
++ Virtual address space
++ executable code
++ Open handles to system objects
++ a security context
++ A unique PID (process identifier)
++ At least one thread of execution
+
+A thread is the entity within the thread that can be scheduled for execution.
+Threads share virtual address space of a process.  Each thread maintains:
+
++ Exception handlers
++ scheduling priority
++ thread local storage
++ a unique thread identifier
++ a set of structures to save the thread context until it is scheduled
+
+http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread
+
+* Effective Java
+
+** Creating and Destroying Objects
+
+*** Item 01: Static Factories vs Constructors                         :drill:
+SCHEDULED: <2015-12-21 Mon>
+:PROPERTIES:
+:ID:       6fe16328-2578-41cd-94cf-6eaa8bccaecc
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-17 Thu 11:38]
+:END:
+
+What are the advantages of a static factory over a constructor?
+
+**** Answer
+
+1. Unlike constructors, static factories have names.
+2. Unlike constructors, static factories don't have to create a new object every
+   time.
+3. Unlike constructors, static factories Can return an object of any subtype of
+   their return type.
+4. They reduce the verbosity of creating parameterized type instances, negated by
+   Java diamond operator.
+
+*** Item 01: Disadvantages of Static Factories                        :drill:
+SCHEDULED: <2015-12-21 Mon>
+:PROPERTIES:
+:ID:       2e32ef7c-aad4-492c-a143-0e805019a2db
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-17 Thu 11:36]
+:END:
+
+What are the disadvantages of static factories?
+
+**** Answer
+
+1. A class without a public or protected constructor cannot be subclassed.
+   Blessing in disguise as it forces composition over inheritance.
+2. Static factories are not readily distinguishable from other static methods in
+   the API docs.
+
+*** Item 01:Static Factory naming conventions                         :drill:
+SCHEDULED: <2015-12-21 Mon>
+:PROPERTIES:
+:ID:       42469e44-0a29-4251-9905-e683d6273ccc
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-17 Thu 11:38]
+:END:
+
+What are common names of a static factory?
+
+**** Answer
+
++ valueOf - return instance that has the "same" value as parameters.
+  Essentially a type conversion.
++ of - concise alternative to valueOf
++ getInstance - returns instance that is described by parameters but doesn't
+  have same value.  Singleton is the degenerate case.
++ newInstance - like getInstance, but guarantees that each instance is distinct
+  from all others
++ getType - like getInstance but used when the factory method is in a different
+  class.  Type indicates the return type.
++ new/Type/ - like new instance, but with a new /Type/
+
+*** Item 02: Disadvantages of telescoping constructors              :drill:
+SCHEDULED: <2015-12-23 Wed>
+:PROPERTIES:
+:ID:       5d0e59cb-1bd6-4b82-899d-40eff3015e27
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-19 Sat 12:10]
+:END:
+
+What are the disadvantages of telescoping constructors?
+
+**** Answer
+
++ They are harder to read in client code with many parameters.
++ The allow inconsistency and mandate mutability.
++ A java bean may be in an inconsistent state partway through construction.
++ JavaBeans patterns precludes the possibility of using an immutable class.
++
+
+*** Item 02: Replacing Telescoping Constructors                     :drill:
+SCHEDULED: <2015-12-23 Wed>
+:PROPERTIES:
+:ID:       5fcef5a1-814a-406c-a435-ee66fa073923
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-19 Sat 12:09]
+:END:
+
+What pattern can you use to replace telescoping constructors?
+
+**** Answer
+
+The builder pattern.
+
+*** Item 02: Builder Pattern 1                                        :drill:
+SCHEDULED: <2015-12-23 Wed>
+:PROPERTIES:
+:ID:       78c527a6-6450-41df-aa53-de80b6d16a74
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-19 Sat 12:11]
+:END:
+
+What are the advantages to the builder pattern?
+
+**** Answer
+
++ The builder pattern simulates named parameters.
++ Good choice with classes or static factories that have more than a handful of
+  parameters, "say 4 or more"
+
+*** Item 02: Builder Pattern 2                                        :drill:
+SCHEDULED: <2015-12-23 Wed>
+:PROPERTIES:
+:ID:       6a76637e-5331-48fa-8e54-91ddebe1d184
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-19 Sat 12:10]
+:END:
+
+How do you make an abstract factory from a builder pattern?
+
+**** Answer
+
+1. Make a builder interface.
+2. Use a function like ~Tree buildTree(Builder<? extends Node> nodeBuilder>
+   {...}~
