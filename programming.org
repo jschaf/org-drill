@@ -457,6 +457,18 @@ How do you make an abstract factory from a builder pattern?
 ** Breaking the Time Barrier
 
 *** Seven Mutual Benefits                                           :drill:
+SCHEDULED: <2015-12-26 Sat>
+:PROPERTIES:
+:ID:       8EA0BF20-DE9A-418A-B275-3D0A6BC3CDC6
+:DRILL_LAST_INTERVAL: 3.86
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-22 Tue 13:35]
+:END:
 
 What are the seven mutual benefits of exploring value with clients?
 
