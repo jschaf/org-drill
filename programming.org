@@ -4,17 +4,17 @@
 ** Elisp
 
 *** Dired files                                                       :drill:
-SCHEDULED: <2015-12-29 Tue>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       34d8abed-eba4-4ad0-814c-14bc929fa90a
-:DRILL_LAST_INTERVAL: 3.916
+:DRILL_LAST_INTERVAL: 1.0417
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.25
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:29]
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:39]
 :END:
 
 How do you run an Emacs command on marked files in dired?
@@ -34,44 +34,24 @@ dired-get-marked-files
 
 ** Math
 
-*** Median 1                                                        :drill:
-SCHEDULED: <2015-12-31 Thu>
-:PROPERTIES:
-:ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95
-:DRILL_LAST_INTERVAL: 10.352
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2015-12-21 Mon 19:30]
-:END:
-
-What is the median?  How is defined for an odd set of number and an even set of
-numbers?
-
-**** Answer
-It's the middle number.  If the number of elements is even, the median is the
-mean of the middle two numbers.
-
+*** Median 1                                                        :drill: SCHEDULED: <2015-12-28 Mon> :PROPERTIES: :ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95 :DRILL_LAST_INTERVAL: 1.0061 :DRILL_REPEATS_SINCE_FAIL: 2 :DRILL_TOTAL_REPEATS: 1 :DRILL_FAILURE_COUNT: 0 :DRILL_AVERAGE_QUALITY: 4.0 :DRILL_EASE: 2.5 :DRILL_LAST_QUALITY: 4 :DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:36] :END: What is the median?  How is defined for an odd set of number and an even set of numbers? **** Answer It's the middle number.  If the number of elements is even, the median is the mean of the middle two numbers.
 
 ** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
 
 *** Singleton 1                                                       :drill:
-SCHEDULED: <2015-12-31 Thu>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       92910693-0727-4cb6-8180-b879843f0a75
-:DRILL_LAST_INTERVAL: 10.0
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.75
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-21 Mon 19:49]
+:DRILL_LAST_INTERVAL: 0.985
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:41]
 :END:
 
 What is the Singleton pattern?
@@ -82,17 +62,17 @@ Singleton is a class which only has one instance in a whole application. The
 class provides a getInstance() method to access the singleton instances.
 
 *** Singleton 2                                                       :drill:
-SCHEDULED: <2015-12-29 Tue>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       5e4c1b0b-ede4-43cf-943d-d83c847691ac
-:DRILL_LAST_INTERVAL: 3.834
+:DRILL_LAST_INTERVAL: 1.1561
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 12
-:DRILL_FAILURE_COUNT: 8
-:DRILL_AVERAGE_QUALITY: 2.167
-:DRILL_EASE: 1.94
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:28]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:42]
 :END:
 
 What are the advantages of a Singleton pattern?
@@ -105,17 +85,16 @@ What are the advantages of a Singleton pattern?
 
 
 *** Singleton 3                                                       :drill:
-SCHEDULED: <2015-12-30 Wed>
 :PROPERTIES:
 :ID:       7b32a2a7-f9c6-464d-a387-53a852634a45
-:DRILL_LAST_INTERVAL: 8.9861
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-21 Mon 19:48]
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:39]
 :END:
 
 What are the disadvantages of a Singleton pattern?
@@ -130,17 +109,17 @@ What are the disadvantages of a Singleton pattern?
 + Inability to subclass because of private constructor.
 
 *** Singleton 4                                                       :drill:
-SCHEDULED: <2015-12-29 Tue>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       f6b95c46-c338-4c84-bcb6-8773f38d6282
-:DRILL_LAST_INTERVAL: 8.2681
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.08
+:DRILL_LAST_INTERVAL: 1.0374
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-21 Mon 19:45]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:40]
 :END:
 
 What are the alternatives to a Singleton pattern?
@@ -151,19 +130,38 @@ What are the alternatives to a Singleton pattern?
   construct a single instance at the top of your application and passing it to
   components.
 
+
+*** List design patterns
+
+What are the most common design patterns?
+
+**** Answer
+
++ Singleton
++ Iterator
++ Factory
++ MVC
++ Decorator
++ Facade
++ Strategy
++ Builder
++ Adapter
++ Command
++ Observer
+
 ** Arrays
 *** Array 1 :drill:
-SCHEDULED: <2015-12-30 Wed>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       15ac94ff-d684-4ff4-9660-88f3b64c5cfa
-:DRILL_LAST_INTERVAL: 9.1096
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 1.0374
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-21 Mon 19:44]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 12:37]
 :END:
 
 How would you keep track of a median while getting a stream of numbers?
@@ -181,10 +179,32 @@ pop or get-min.
 http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-of-integer-stream/
 
 
+** Sorting
+
+*** Bubble sort                                                     :drill:
+
+How is bubble sort implemented?
+
+**** Answer
+
+Adjacent items are repeatedly compared.
+
+https://en.wikipedia.org/wiki/Bubble_sort
+
+*** Quick Sort                                                      :drill:
+
+What is quicksorts running time, space complexity?
+
+**** Answer
+
+Average Time: O(n log n)
+Worst case Time: O(n^2)
+
+Space: O(1)
 
 ** Hash Tables
 
-*** Implement Hash Table
+*** Implement Hash Table                                            :drill:
 
 How would you implement a hash table?
 
@@ -197,17 +217,17 @@ How would you implement a hash table?
 ** Java Concurrency In Practice
 
 *** Motivating Factors                                              :drill:
-SCHEDULED: <2015-12-31 Thu>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       e084f79e-8e7c-4677-bbf8-415022b927cd
-:DRILL_LAST_INTERVAL: 9.648
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_LAST_INTERVAL: 0.9795
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-21 Mon 19:45]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 12:37]
 :END:
 
 What are the motivating factors for concurrency?
@@ -220,17 +240,16 @@ What are the motivating factors for concurrency?
   coordinate them
 
 *** Thread Benefits                                                 :drill:
-SCHEDULED: <2015-12-29 Tue>
 :PROPERTIES:
 :ID:       3acd0416-3113-4401-a5f4-58af124d3050
-:DRILL_LAST_INTERVAL: 3.916
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:30]
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:41]
 :END:
 
 What are the benefits of threads?
@@ -244,17 +263,17 @@ What are the benefits of threads?
 + More responsive user interface.
 
 *** Thread vs Process                                               :drill:
-SCHEDULED: <2015-12-29 Tue>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
-:ID:       7ed9edfc-7ef4-41f5-8eb3-dadf2036950c
-:DRILL_LAST_INTERVAL: 3.916
+:ID:       2505D78D-4817-463B-B40A-CCD23232BD24
+:DRILL_LAST_INTERVAL: 0.9921
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 2.08
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:32]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:41]
 :END:
 
 Whats the difference between threads and processes?
@@ -288,17 +307,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 ** Creating and Destroying Objects
 
 *** Item 01: Static Factories vs Constructors                         :drill:
-SCHEDULED: <2016-01-02 Sat>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       6fe16328-2578-41cd-94cf-6eaa8bccaecc
-:DRILL_LAST_INTERVAL: 8.3878
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.4
-:DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:07]
+:DRILL_LAST_INTERVAL: 0.9899
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:38]
 :END:
 
 What are the advantages of a static factory over a constructor?
@@ -314,17 +333,17 @@ What are the advantages of a static factory over a constructor?
    Java diamond operator.
 
 *** Item 01: Disadvantages of Static Factories                        :drill:
-SCHEDULED: <2015-12-29 Tue>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       2e32ef7c-aad4-492c-a143-0e805019a2db
-:DRILL_LAST_INTERVAL: 3.916
+:DRILL_LAST_INTERVAL: 1.2461
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.4
-:DRILL_EASE: 2.08
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:28]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:39]
 :END:
 
 What are the disadvantages of static factories?
@@ -337,17 +356,17 @@ What are the disadvantages of static factories?
    the API docs.
 
 *** Item 01:Static Factory naming conventions                         :drill:
-SCHEDULED: <2016-01-02 Sat>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       42469e44-0a29-4251-9905-e683d6273ccc
-:DRILL_LAST_INTERVAL: 8.3878
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.75
-:DRILL_EASE: 2.08
+:DRILL_LAST_INTERVAL: 1.1596
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-25 Fri 13:25]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:41]
 :END:
 
 What are common names of a static factory?
@@ -366,17 +385,17 @@ What are common names of a static factory?
 + new/Type/ - like new instance, but with a new /Type/
 
 *** Item 02: Disadvantages of telescoping constructors              :drill:
-SCHEDULED: <2015-12-27 Sun>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       5d0e59cb-1bd6-4b82-899d-40eff3015e27
-:DRILL_LAST_INTERVAL: 3.752
+:DRILL_LAST_INTERVAL: 0.9496
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.25
-:DRILL_EASE: 2.22
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-23 Wed 21:22]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 12:37]
 :END:
 
 What are the disadvantages of telescoping constructors?
@@ -389,17 +408,17 @@ What are the disadvantages of telescoping constructors?
 + JavaBeans patterns precludes the possibility of using an immutable class.
 
 *** Item 02: Replacing Telescoping Constructors                     :drill:
-SCHEDULED: <2016-01-02 Sat>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       5fcef5a1-814a-406c-a435-ee66fa073923
-:DRILL_LAST_INTERVAL: 10.0
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 1.0261
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-23 Wed 12:30]
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:40]
 :END:
 
 What pattern can you use to replace telescoping constructors?
@@ -409,17 +428,17 @@ What pattern can you use to replace telescoping constructors?
 The builder pattern.
 
 *** Item 02: Builder Pattern 1                                        :drill:
-SCHEDULED: <2016-01-01 Fri>
+SCHEDULED: <2015-12-28 Mon>
 :PROPERTIES:
 :ID:       78c527a6-6450-41df-aa53-de80b6d16a74
-:DRILL_LAST_INTERVAL: 8.8548
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.22
+:DRILL_LAST_INTERVAL: 0.8272
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-23 Wed 21:20]
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:41]
 :END:
 
 What are the advantages to the builder pattern?
@@ -431,17 +450,16 @@ What are the advantages to the builder pattern?
   parameters, "say 4 or more"
 
 *** Item 02: Builder Pattern 2                                        :drill:
-SCHEDULED: <2015-12-27 Sun>
 :PROPERTIES:
 :ID:       6a76637e-5331-48fa-8e54-91ddebe1d184
-:DRILL_LAST_INTERVAL: 3.752
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-23 Wed 21:23]
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:38]
 :END:
 
 How do you make an abstract factory from a builder pattern?
@@ -457,17 +475,16 @@ How do you make an abstract factory from a builder pattern?
 ** Breaking the Time Barrier
 
 *** Seven Mutual Benefits                                           :drill:
-SCHEDULED: <2015-12-26 Sat>
 :PROPERTIES:
 :ID:       8EA0BF20-DE9A-418A-B275-3D0A6BC3CDC6
-:DRILL_LAST_INTERVAL: 3.86
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-22 Tue 13:35]
+:DRILL_LAST_INTERVAL: 0.0
+:DRILL_REPEATS_SINCE_FAIL: 1
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 1.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 1
+:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:38]
 :END:
 
 What are the seven mutual benefits of exploring value with clients?
