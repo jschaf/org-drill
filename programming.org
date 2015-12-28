@@ -210,7 +210,88 @@ How would you implement a hash table?
 
 **** Answer
 
-**** TODO Fill in this
+Use an array of lists, normally referred to as buckets.  This method is
+chaining.
+
+Start with some default capacity.  Java HashMap is 16
+
+insert(key, value)
+call hashCode to get an int and take it mod length of the array.
+
+Once you get past some threshold, Java's is 75% load factor, you resize the
+array.
+
+get(key)
+
+Use hashcode to find the bucket and search the list to find the item.
+
+
+*** Hash Table Collision Resolution                                   :drill:
+
+What are alternate hash table implementations?
+
+**** Answer
+
+Chaining and Open addressing
+
+
+*** Hash Table Open Addressing                                      :drill:
+
+What are the common techniques for implementing open addressing?
+
+**** Answer
+
++ Linear Probing
++ Quadratic Probing
++ Double Hashing
++ Coalesced hashing
++ Cuckoo Hashing
++ Hopscotch hashing
++ Robin Hood Hashing
++ 2-choice Hashing
+
+** System Design
+
+*** IPC - Interprocess communication                                :drill:
+
+What are the different methods of IPC?
+
+**** Answer
+
++ Sockets
++ Pipe, e.g. STDIN and STDOUT
++ Named Pipe
++ Files
++ Message Queue
++ Signal
++ Semaphore
++ Shared Memory
++ Message Passing
++ Memory mapped file
+
+https://en.wikipedia.org/wiki/Inter-process_communication
+
+
+*** Latency                                                         :drill:
+
+What is latency?
+
+**** Answer
+
+Latency is the time required to perform some action or produce a result.  It is
+measured in units of time.
+
+
+
+*** Throughput                                                        :drill:
+
+What is throughput?
+
+**** Answer
+
+Throughput is the number of actions executed or results produced per unit of
+time.  It is measured in units per unit of time.
+
 
 * Java Concurrency
 
