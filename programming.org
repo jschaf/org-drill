@@ -110,17 +110,17 @@ What are the disadvantages of a Singleton pattern?
 + Inability to subclass because of private constructor.
 
 *** Singleton 4                                                       :drill:
-SCHEDULED: <2016-01-01 Fri>
+SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       f6b95c46-c338-4c84-bcb6-8773f38d6282
-:DRILL_LAST_INTERVAL: 1.5816
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.2084
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-30 Wed 09:39]
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:03]
 :END:
 
 What are the alternatives to a Singleton pattern?
@@ -230,17 +230,17 @@ Space: O(1)
 ** Hash Tables
 
 *** Implement Hash Table                                            :drill:
-SCHEDULED: <2016-01-01 Fri>
+SCHEDULED: <2016-01-03 Sun>
 :PROPERTIES:
 :ID:       12E1B6CF-EE70-42DA-8CB7-495435FEFD7D
-:DRILL_LAST_INTERVAL: 0.8776
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 2.0977
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:55]
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:03]
 :END:
 
 How would you implement a hash table?
@@ -285,17 +285,17 @@ Chaining and Open addressing
 
 
 *** Hash Table Open Addressing                                      :drill:
-SCHEDULED: <2016-01-01 Fri>
+SCHEDULED: <2016-01-02 Sat>
 :PROPERTIES:
 :ID:       1940C116-6088-47FD-A81B-9B3E190113D7
-:DRILL_LAST_INTERVAL: 1.0923
+:DRILL_LAST_INTERVAL: 1.3134
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.25
-:DRILL_EASE: 2.22
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:54]
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:10]
 :END:
 
 What are the common techniques for implementing open addressing?
@@ -314,6 +314,18 @@ Hopscotch raptors.
 + 2-choice Hashing
 
 *** Hopscotch hashing                                               :drill:
+SCHEDULED: <2016-01-02 Sat>
+:PROPERTIES:
+:ID:       C53D4220-3C93-478B-BEBC-BA862E35D2D8
+:DRILL_LAST_INTERVAL: 0.9913
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:08]
+:END:
 
 What is Hopscotch hashing?
 
@@ -324,7 +336,6 @@ Scheme for resolving hash collisions in a table using open addressing.
 Each item is guaranteed to be in the neighborhood of the hashed bucket.  In
 other words, the item will always be in the original array entry, or in the next
 H-1 neighboring entries.
-
 
 Each bucket contains a hop-information word, an H-bit bitmap, indicating which
 of the next H buckets belong to the neighborhood.
@@ -341,12 +352,25 @@ table.
 Well suited for concurrent hash table and provides good performance at load
 factors exceeding 0.9.
 
-
 https://en.wikipedia.org/wiki/Hopscotch_hashing
+
+http://www.cs.tau.ac.il/~liortzaf/papers/disc2008_submission_98.pdf
 
 
 
 *** Linear Probing                                                  :drill:
+SCHEDULED: <2016-01-02 Sat>
+:PROPERTIES:
+:ID:       619671F6-3126-41E1-99C2-FB06CB4EC830
+:DRILL_LAST_INTERVAL: 0.9768
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:09]
+:END:
 
 What is linear probing?
 
@@ -354,13 +378,25 @@ What is linear probing?
 
 Scheme for resolving hash collisions in a table using open addressing.
 
-Looks in some stepsize from bucket i.
+Looks in some step size from bucket i.
 
 A small step size provides better locality of reference, but results in
 clustering.  Linear probing is sensitive to input distribution.
 
 
 *** Quadratic Probing                                               :drill:
+SCHEDULED: <2016-01-02 Sat>
+:PROPERTIES:
+:ID:       22C26F8D-EB15-497A-A2C5-E02227A246D8
+:DRILL_LAST_INTERVAL: 1.0101
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:09]
+:END:
 
 What is Quadratic Probing?
 
@@ -376,6 +412,18 @@ Provides some locality of reference but not as good as linear probing.
 
 
 *** Double Hashing                                                  :drill:
+SCHEDULED: <2016-01-02 Sat>
+:PROPERTIES:
+:ID:       EE521875-0E0D-4784-9DF8-10076572D119
+:DRILL_LAST_INTERVAL: 0.949
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:08]
+:END:
 
 What is Double Hashing?
 
@@ -383,15 +431,50 @@ What is Double Hashing?
 
 Scheme for resolving hash collisions in a table using open addressing.
 
+Uses a second hash function h2 to compute the step size for some value k.  The
+ith location for k is represented by:
+
+$h(i, k) = h1(k) + i * h2(k) mod (length array)$
+
+https://en.wikipedia.org/wiki/Double_hashing
+
 *** Coalesced hashing                                               :drill:
+SCHEDULED: <2016-01-02 Sat>
+:PROPERTIES:
+:ID:       1DDEFC35-28AF-45D7-9911-FA560687150A
+:DRILL_LAST_INTERVAL: 0.9388
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:09]
+:END:
 
 What is Coalesced hashing?
 
 **** Answer
 
-Scheme for resolving hash collisions in a table using open addressing.
+Scheme for resolving hash collisions in a table a hybrid of chaining and open
+addressing.
 
-*** Cuckoo Hashing                                                  :drill:
+Like chaining, except instead of a list, you reuse buckets of the backing
+array.
+
++ Compute h(k)
++ If there's an item there, find the first open spot and link from the collision
++ If a different key get inserted into another chain, the values are said to
+  coalesce.
++ Follow the links until you find an empty spot.
+
+An important optimization is to only hash values to a subset of the table and
+leave room for a "cellar" of values instead of coalescing.
+
+Empirical analysis shows that you should use 86% of the size for hashing and
+reserve 14% for the cellar.
+
+*** Cuckoo Hashing
 
 What is Cuckoo Hashing?
 
@@ -400,7 +483,7 @@ What is Cuckoo Hashing?
 Scheme for resolving hash collisions in a table using open addressing.
 
 
-*** Robin Hood Hashing                                              :drill:
+*** Robin Hood Hashing
 
 What is Robin Hood Hashing?
 
@@ -409,7 +492,7 @@ What is Robin Hood Hashing?
 Scheme for resolving hash collisions in a table using open addressing.
 
 
-*** 2-choice Hashing                                                :drill:
+*** 2-choice Hashing
 
 What is 2-choice Hashing?
 
@@ -421,17 +504,17 @@ Scheme for resolving hash collisions in a table using open addressing.
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
-SCHEDULED: <2016-01-01 Fri>
+SCHEDULED: <2016-01-04 Mon>
 :PROPERTIES:
 :ID:       8C596422-5A0D-4635-A98A-C103638C5760
-:DRILL_LAST_INTERVAL: 1.1856
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.0682
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.25
+:DRILL_AVERAGE_QUALITY: 2.6
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:53]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-01 Fri 19:02]
 :END:
 
 What are the different methods of IPC?
