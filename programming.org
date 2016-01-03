@@ -36,6 +36,67 @@ dired-get-marked-files
 
 *** Median 1                                                        :drill: SCHEDULED: <2015-12-28 Mon> :PROPERTIES: :ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95 :DRILL_LAST_INTERVAL: 1.0061 :DRILL_REPEATS_SINCE_FAIL: 2 :DRILL_TOTAL_REPEATS: 1 :DRILL_FAILURE_COUNT: 0 :DRILL_AVERAGE_QUALITY: 4.0 :DRILL_EASE: 2.5 :DRILL_LAST_QUALITY: 4 :DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:36] :END: What is the median?  How is defined for an odd set of number and an even set of numbers? **** Answer It's the middle number.  If the number of elements is even, the median is the mean of the middle two numbers.
 
+
+** Object Oriented Programming
+
+*** Benefits of OOP                                                 :drill:
+
+What are the benefits of OO Programing?
+
+**** Answer
+
++ Code reuse
++ Modularity
++ Encapsulation - hide implmentation details
++ Pluggability
+
+
+** Java Language
+
+*** Variable Basics                                                 :drill:
+
+What are the 4 types of variables in Java?
+
+**** Answer
+
+1. Instance variables - non-static fields
+2. Class variables - static fields
+3. Local variables
+4. Parameters
+5.
+
+*** Primitive Types                                                 :drill:
+
+What are Java's primitive types?
+
+**** Answer
+
++ byte - 8-bit signed two's complement integer
++ short - 16-bit signed two's complement integer
++ int - 32-bit signed two's complement integer
++ long - 64-bit signed two's complement integer
++ float - single-precision 32-bit IEEE 745 floating point
++ long - double-precision 64-bit IEEE 745 floating point
++ boolean - true and false
++ char - 16-bit unicode char
+
+*** Primitive Types 2
+
+What are the default values for all primitive types?
+
+**** Answer
+
+byte: 0
+short: 0
+int: 0
+long: 0L
+float: 0.0f
+double: 0.0d
+char: '\u0000'
+Sting or any object: null
+boolean: false
+
+
 ** Effective Java
 
 http://gameprogrammingpatterns.com/singleton.html
