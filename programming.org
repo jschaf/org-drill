@@ -36,7 +36,7 @@ dired-get-marked-files
 
 *** Median 1                                                        :drill: SCHEDULED: <2015-12-28 Mon> :PROPERTIES: :ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95 :DRILL_LAST_INTERVAL: 1.0061 :DRILL_REPEATS_SINCE_FAIL: 2 :DRILL_TOTAL_REPEATS: 1 :DRILL_FAILURE_COUNT: 0 :DRILL_AVERAGE_QUALITY: 4.0 :DRILL_EASE: 2.5 :DRILL_LAST_QUALITY: 4 :DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:36] :END: What is the median?  How is defined for an odd set of number and an even set of numbers? **** Answer It's the middle number.  If the number of elements is even, the median is the mean of the middle two numbers.
 
-** Design Patterns
+** Effective Java
 
 http://gameprogrammingpatterns.com/singleton.html
 
@@ -132,7 +132,66 @@ What are the alternatives to a Singleton pattern?
   components.
 
 
-*** List design patterns
+*** Singleton Impl                                                  :drill:
+
+What are the three common methods for implementing a Singleton in Java?
+
+**** Answer
+
+1. public static final field
+2. private constructor to initialize a private static final field and static factory getInstance
+3. Enum with a single field
+
+*** Singleton Enum                                                  :drill:
+
+What is an enum the best way to implement a singleton?
+
+**** Answer
+
+1. It's equivalent to a public field approach
+2. More concise
+3. Provides serialization machinery for free.
+4. Ironclad guarantee against multiple instantiation, even against reflection or serialization attacks.
+
+Effective Java 3
+
+*** Noninstantiability                                              :drill:
+
+How do you enforce noninstantiability and when might you do so?
+
+**** Answer
+
+You might have a grouping of static methods like ~java.util.Arrays~ or utility functions.
+
+Make a class noninstaniable by including a private constructor and throw an AssertationError.
+
+This will also prevent the class from being subclassed.
+
+Effective Java 4
+
+*** Noninstantiability Abstract                                     :drill:
+
+How could you instantiate an abstract class?
+
+**** Answer
+
+Subclass the abstract class and instantiate the subclass.
+
+Effective Java 4
+
+*** Unnecessary Objects                                             :drill:
+
+How can you avoid unnecessary objects?
+
+**** Answer
+
++ Use string literals
++ Prefer primitives and watch out for autoboxing
++ Use a static initializer for objects only set once.
+
+Effective Java 5
+
+*** List design patterns                                            :drill:
 
 What are the most common design patterns?
 
