@@ -254,11 +254,19 @@ MyType[] anArray;
 MyType anArray[]; - WORKS, but BAD
 
 *** Arrays Copying                                                  :drill:
+SCHEDULED: <2016-01-06 Wed>
 :PROPERTIES:
 :ID:       9d2af5e1-b9c1-4715-b227-0eb84708747e
+:DRILL_LAST_INTERVAL: 1.5561
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:37]
 :END:
 
-SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       ba6d519f-2915-40e0-97cc-3288c3bc125d
 :DRILL_LAST_INTERVAL: 1.5779
@@ -275,7 +283,7 @@ How do you copy an array in Java?
 
 **** Answer
 
-System.arraycopy(Object src, int srcPos, Object des, int destPos, int length)
+System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
 
 Copy into initialized array, returns void.
 
@@ -286,8 +294,17 @@ Arrays.copyOfRange(T[] original, int from, int to)
 Copies specified range into a new array
 
 *** Reference Types                                                   :drill:
+SCHEDULED: <2016-01-06 Wed>
 :PROPERTIES:
 :ID:       7ce72681-d605-475d-9934-493eb5ccdefb
+:DRILL_LAST_INTERVAL: 1.6876
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:39]
 :END:
 
 What are Java's reference types and when do they get garbage collected?
@@ -1232,16 +1249,17 @@ How can you avoid unnecessary objects?
 Effective Java 5
 
 *** Item 06: Obsolete Object References                               :drill:
+SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       32570943-f46d-4edb-90ee-15b4ea21945d
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 1
+:DRILL_LAST_INTERVAL: 1.428
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 3
 :DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:23]
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:37]
 :END:
 
 What is the proper name for a memory leak in a garbage-collected language?
@@ -1251,8 +1269,17 @@ What is the proper name for a memory leak in a garbage-collected language?
 unintentional object retention
 
 *** Item 06: Obsolete Object References Fixes                         :drill:
+SCHEDULED: <2016-01-06 Wed>
 :PROPERTIES:
 :ID:       f933a03d-e252-4082-bba9-f90014e1ac13
+:DRILL_LAST_INTERVAL: 1.538
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:58]
 :END:
 
 How do you fix obsolete references?
@@ -1264,8 +1291,17 @@ Null out the object, but this should be the exception, not the rule.
 The best way to handle it is to let the object fall out of scope.
 
 *** Item 06: Obsolete Object Reference Alert                          :drill:
+SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       502824c2-771b-48ca-b809-02020dd22aa4
+:DRILL_LAST_INTERVAL: 1.4661
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:14]
 :END:
 
 When will you typically see obsolete references (memory leaks)?
@@ -1275,11 +1311,19 @@ When will you typically see obsolete references (memory leaks)?
 + Whenever a class manages it's own memory - a stack
 + Caches - weak references
 + Listeners and callbacks
-+
 
 *** Item 06: Obsolete Objects Callbacks                               :drill:
+SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       39949c56-c779-4ab1-9947-a8ee04195bf7
+:DRILL_LAST_INTERVAL: 1.4133
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:48]
 :END:
 
 How do you ensure callbacks are garbage collected?
@@ -1291,16 +1335,17 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
+SCHEDULED: <2016-01-06 Wed>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 1.6991
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 2
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:23]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:12]
 :END:
 
 What are the issues with finalizers?
@@ -1335,16 +1380,17 @@ An explicit termination method. close, dispose, cancel.
 Typically called with a try-finally.
 
 *** Item 07: Avoid Finalizers - Use Cases                             :drill:
+SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       9b440ee4-ec6a-4881-abbe-720f15064554
-:DRILL_LAST_INTERVAL: 0.0
-:DRILL_REPEATS_SINCE_FAIL: 1
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 1.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 1
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:23]
+:DRILL_LAST_INTERVAL: 1.4548
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 1.667
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:36]
 :END:
 
 What are valid use cases for finalizers?
@@ -1432,6 +1478,18 @@ Identify a keystone habit
 Use a feedback loop.
 
 *** Goals are bad                                                     :drill:
+SCHEDULED: <2016-01-05 Tue>
+:PROPERTIES:
+:ID:       10f40af7-186f-448e-a1fe-35e8c881ad84
+:DRILL_LAST_INTERVAL: 0.9655
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:58]
+:END:
 
 Why are goals bad?
 
@@ -1447,16 +1505,43 @@ Why are goals bad?
    made goal a part of their identity and jeopordized themselves to get the goal.
 
 *** Hedonic Adaptation                                                :drill:
+SCHEDULED: <2016-01-05 Tue>
+:PROPERTIES:
+:ID:       0048cd41-4170-47a4-aa65-23a9bc9c7817
+:DRILL_LAST_INTERVAL: 1.3251
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:50]
+:END:
 
 What is hedonic adaptation (hedonic treadmill)?
 
 **** Answer
+
+Tendency of humans to quickly return to a relatively stable level of happiness
+despite major positive or negative events or life changes.
 
 As we lose more weight, make more moeny, win more competition our expections
 rise in tandem, which results in no permanent gain in happiness.
 
 
 *** Build a system                                                    :drill:
+SCHEDULED: <2016-01-06 Wed>
+:PROPERTIES:
+:ID:       5657a814-6be2-479d-9ba5-bc806e578282
+:DRILL_LAST_INTERVAL: 1.7251
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:58]
+:END:
 
 What are the steps to build a system instead of a goal?
 
@@ -1467,6 +1552,18 @@ What are the steps to build a system instead of a goal?
 3. Revise your system on a regular basis.
 
 *** What to Achieve                                                   :drill:
+SCHEDULED: <2016-01-06 Wed>
+:PROPERTIES:
+:ID:       9de25430-f028-4591-a97d-1e74bc205238
+:DRILL_LAST_INTERVAL: 1.6544
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:14]
+:END:
 
 How do you decide what you want to achieve?
 
@@ -1485,6 +1582,18 @@ Why?
 Because I want to settle down and start a family.
 
 *** Keystone Habit                                                    :drill:
+SCHEDULED: <2016-01-05 Tue>
+:PROPERTIES:
+:ID:       935adb91-8ffe-42dc-9ba9-d59003dd78d9
+:DRILL_LAST_INTERVAL: 1.4996
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:36]
+:END:
 
 What is a keystone habit and how do identify it?
 
@@ -1499,6 +1608,18 @@ systemise it.
 /The ONE Thing/ by Keller
 
 *** Habitualise ONE Thing                                             :drill:
+SCHEDULED: <2016-01-06 Wed>
+:PROPERTIES:
+:ID:       d51ec8b8-65ef-4264-a249-1a308dbd746a
+:DRILL_LAST_INTERVAL: 1.5934
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:53]
+:END:
 
 How do you systemize your ONE thing?
 
@@ -1521,6 +1642,18 @@ If I return home and the weather does not permit, I will go running in the
 morning instead.
 
 *** Gall's Law                                                        :drill:
+SCHEDULED: <2016-01-05 Tue>
+:PROPERTIES:
+:ID:       29f0eb88-d255-49f5-8b75-9fc8c6bae6ae
+:DRILL_LAST_INTERVAL: 1.1063
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:53]
+:END:
 
 What is Gall's Law
 
@@ -1532,17 +1665,43 @@ cannot be patched up to make it work. You have to start over with a working
 simple system. – John Gall (1975, p.71)
 
 *** Revise System                                                     :drill:
+SCHEDULED: <2016-01-06 Wed>
+:PROPERTIES:
+:ID:       5e20c306-4d50-4d12-b458-ef270f9c1242
+:DRILL_LAST_INTERVAL: 1.6138
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:19]
+:END:
 
-How do you revise your system on a regular basis?
+How do you revise your system on a really, regular basis?
 
 **** Answer
 
-Do more of what already works.  Evolve a complex system from a working simple
-system.  Use modeling.
+Gall trebuchet feetback
 
-Use a feedback loop to identify what works and what doesn't.
++ Gall's law.  Evolve a complex system from a working simple system.
++ Use modeling.
++ Do more of what already works.
++ Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
+SCHEDULED: <2016-01-05 Tue>
+:PROPERTIES:
+:ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
+:DRILL_LAST_INTERVAL: 1.3631
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:54]
+:END:
 
 What are the stages of a feedback loop?
 
@@ -1564,6 +1723,18 @@ Goal - lose 10,000 lbs
 
 
 *** Impact Bias                                                       :drill:
+SCHEDULED: <2016-01-06 Wed>
+:PROPERTIES:
+:ID:       a3e8eb48-624b-4738-87da-082295451369
+:DRILL_LAST_INTERVAL: 1.8578
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-04 Mon 18:15]
+:END:
 
 What is impact bias?
 
