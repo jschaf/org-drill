@@ -31,11 +31,9 @@ dired-get-marked-files
 #+END_SRC
 
 * Programming Questions
-
 ** Math
 
 *** Median 1                                                        :drill: SCHEDULED: <2015-12-28 Mon> :PROPERTIES: :ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95 :DRILL_LAST_INTERVAL: 1.0061 :DRILL_REPEATS_SINCE_FAIL: 2 :DRILL_TOTAL_REPEATS: 1 :DRILL_FAILURE_COUNT: 0 :DRILL_AVERAGE_QUALITY: 4.0 :DRILL_EASE: 2.5 :DRILL_LAST_QUALITY: 4 :DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:36] :END: What is the median?  How is defined for an odd set of number and an even set of numbers? **** Answer It's the middle number.  If the number of elements is even, the median is the mean of the middle two numbers.
-
 
 ** Object Oriented Programming
 
@@ -61,7 +59,6 @@ What are the benefits of OO Programing?
 + Modularity
 + Encapsulation - hide implmentation details
 + Pluggability
-
 
 ** Java Language
 
@@ -257,6 +254,7 @@ MyType[] anArray;
 MyType anArray[]; - WORKS, but BAD
 
 *** Arrays Copying                                                  :drill:
+
 SCHEDULED: <2016-01-05 Tue>
 :PROPERTIES:
 :ID:       ba6d519f-2915-40e0-97cc-3288c3bc125d
@@ -284,7 +282,18 @@ Copy into new array, truncates or pads with nulls to get newLength
 Arrays.copyOfRange(T[] original, int from, int to)
 Copies specified range into a new array
 
-** Effective Java
+*** Reference Types                                                   :drill:
+
+What are Java's reference types and when do they get garbage collected?
+
+**** Answer
+
++ Direct reference - when no references exist
++ SoftReference - eligible for collection with low memory warning
++ WeakReference - when no direct references exist
++ PhantomReference - relate to cleanup and offer notification before finalization
+
+** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
 
@@ -330,7 +339,6 @@ What are the advantages of a Singleton pattern?
 + Singletons can implement interfaces and inherit from other classes.
 + Singletons can be lazy loaded.  Handy for expensive resources or DB connections.
 + Singletons can be extended into a factory.
-
 
 *** Singleton 3                                                       :drill:
 SCHEDULED: <2016-01-10 Sun>
@@ -378,126 +386,6 @@ What are the alternatives to a Singleton pattern?
 + Dependency Injection by creating an interface and default implementation,
   construct a single instance at the top of your application and passing it to
   components.
-
-
-*** Singleton Impl                                                  :drill:
-SCHEDULED: <2016-01-07 Thu>
-:PROPERTIES:
-:ID:       aa694923-3d0b-4674-a339-df7d29f8065c
-:DRILL_LAST_INTERVAL: 4.0
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:03]
-:END:
-
-What are the three common methods for implementing a Singleton in Java?
-
-**** Answer
-
-1. public static final field
-2. private constructor to initialize a private static final field and static factory getInstance
-3. Enum with a single field
-
-*** Singleton Enum                                                  :drill:
-SCHEDULED: <2016-01-05 Tue>
-:PROPERTIES:
-:ID:       794a10aa-35b6-46af-8845-ca9baa214da5
-:DRILL_LAST_INTERVAL: 1.5869
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:24]
-:END:
-
-Why is a single-element enum the best way to implement a singleton?
-
-**** Answer
-
-1. It's equivalent to a public field approach
-2. More concise
-3. Provides serialization machinery for free.
-4. Ironclad guarantee against multiple instantiation, even against reflection or serialization attacks.
-
-Effective Java 3
-
-*** Noninstantiability                                              :drill:
-SCHEDULED: <2016-01-04 Mon>
-:PROPERTIES:
-:ID:       6559ea73-dbfa-4d3f-90be-178ffa4c4927
-:DRILL_LAST_INTERVAL: 1.4048
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:32]
-:END:
-
-How do you enforce noninstantiability and when might you do so?
-
-**** Answer
-
-You might have a grouping of static methods like ~java.util.Arrays~ or utility functions.
-
-Make a class noninstaniable by including a private constructor and throw an AssertationError.
-
-This will also prevent the class from being subclassed.
-
-Effective Java 4
-
-*** Noninstantiability Abstract                                     :drill:
-SCHEDULED: <2016-01-07 Thu>
-:PROPERTIES:
-:ID:       25f88f5c-f8d8-4d8d-8a9c-d3fb11936443
-:DRILL_LAST_INTERVAL: 4.0
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:07]
-:END:
-
-How could you instantiate an abstract class?
-
-**** Answer
-
-Subclass the abstract class and instantiate the subclass.
-
-Effective Java 4
-
-*** Unnecessary Objects                                             :drill:
-SCHEDULED: <2016-01-04 Mon>
-:PROPERTIES:
-:ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 1.1508
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:32]
-:END:
-
-How can you avoid unnecessary objects?
-
-**** Answer
-
-+ Use string literals
-+ Prefer primitives and watch out for autoboxing
-+ Use a static initializer for objects only set once.
-
-Effective Java 5
 
 *** List design patterns                                            :drill:
 SCHEDULED: <2016-01-04 Mon>
@@ -559,7 +447,6 @@ multiplying by each number by -1 before inserting and then reversing it on a
 pop or get-min.
 
 http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-of-integer-stream/
-
 
 ** Sorting
 
@@ -882,7 +769,6 @@ What is 2-choice Hashing?
 
 Scheme for resolving hash collisions in a table using open addressing.
 
-
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
@@ -962,7 +848,6 @@ What is throughput?
 
 Throughput is the number of actions executed or results produced per unit of
 time.  It is measured in units per unit of time.
-
 
 * Java Concurrency
 
@@ -1055,9 +940,7 @@ Threads share virtual address space of a process.  Each thread maintains:
 http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread
 
 * Effective Java
-
 ** Creating and Destroying Objects
-
 *** Item 01: Static Factories vs Constructors                         :drill:
 SCHEDULED: <2016-01-08 Fri>
 :PROPERTIES:
@@ -1222,6 +1105,206 @@ How do you make an abstract factory from a builder pattern?
 1. Make a builder interface.
 2. Use a function like ~Tree buildTree(Builder<? extends Node> nodeBuilder>
    {...}~
+
+*** Item 03: Singleton Impl                                           :drill:
+SCHEDULED: <2016-01-07 Thu>
+:PROPERTIES:
+:ID:       aa694923-3d0b-4674-a339-df7d29f8065c
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:03]
+:END:
+
+What are the three common methods for implementing a Singleton in Java?
+
+**** Answer
+
+1. public static final field
+2. private constructor to initialize a private static final field and static factory getInstance
+3. Enum with a single field
+
+*** Item 03: Singleton Enum                                           :drill:
+SCHEDULED: <2016-01-05 Tue>
+:PROPERTIES:
+:ID:       794a10aa-35b6-46af-8845-ca9baa214da5
+:DRILL_LAST_INTERVAL: 1.5869
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:24]
+:END:
+
+Why is a single-element enum the best way to implement a singleton?
+
+**** Answer
+
+1. It's equivalent to a public field approach
+2. More concise
+3. Provides serialization machinery for free.
+4. Ironclad guarantee against multiple instantiation, even against reflection or serialization attacks.
+
+Effective Java 3
+
+*** Item 04: Noninstantiability                                       :drill:
+SCHEDULED: <2016-01-04 Mon>
+:PROPERTIES:
+:ID:       6559ea73-dbfa-4d3f-90be-178ffa4c4927
+:DRILL_LAST_INTERVAL: 1.4048
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:32]
+:END:
+
+How do you enforce noninstantiability and when might you do so?
+
+**** Answer
+
+You might have a grouping of static methods like ~java.util.Arrays~ or utility functions.
+
+Make a class noninstaniable by including a private constructor and throw an AssertationError.
+
+This will also prevent the class from being subclassed.
+
+Effective Java 4
+
+*** Item 04: Noninstantiability Abstract                              :drill:
+SCHEDULED: <2016-01-07 Thu>
+:PROPERTIES:
+:ID:       25f88f5c-f8d8-4d8d-8a9c-d3fb11936443
+:DRILL_LAST_INTERVAL: 4.0
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:07]
+:END:
+
+How could you instantiate an abstract class?
+
+**** Answer
+
+Subclass the abstract class and instantiate the subclass.
+
+Effective Java 4
+
+*** Item 05: Unnecessary Objects                                      :drill:
+SCHEDULED: <2016-01-04 Mon>
+:PROPERTIES:
+:ID:       5522d806-b622-4968-a64b-73c656113047
+:DRILL_LAST_INTERVAL: 1.1508
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:32]
+:END:
+
+How can you avoid unnecessary objects?
+
+**** Answer
+
++ Use string literals
++ Prefer primitives and watch out for autoboxing
++ Use a static initializer for objects only set once.
+
+Effective Java 5
+
+*** Item 06: Obsolete Object References                               :drill:
+
+What is the proper name for a memory leak in a garbage-collected language?
+
+**** Answer
+
+unintentional object retention
+
+*** Item 06: Obsolete Object References Fixes                         :drill:
+
+How do you fix obsolete references?
+
+**** Answer
+
+Null out the object, but this should be the exception, not the rule.
+
+The best way to handle it is to let the object fall out of scope.
+
+*** Item 06: Obsolete Object Reference Alert                          :drill:
+
+When will you typically see obsolete references (memory leaks)?
+
+**** Answer
+
++ Whenever a class manages it's own memory - a stack
++ Caches - weak references
++ Listeners and callbacks
++
+
+*** Item 06: Obsolete Objects Callbacks                               :drill:
+
+How do you ensure callbacks are garbage collected?
+
+**** Answer
+
+Store only weak references to them, e.g. storing as keys in a WeakHashMap.
+
+http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
+
+*** Item 07: Avoid Finalizers                                         :drill:
+
+What are the issues with finalizers?
+
+**** Answer
+
+They are unpredictable, often dangerous and generally unnecessary.
+
++ Unpredictable - no guarantee on execution, never do anything time critical in a finalizer
++ Severe performance penalty for using finalizers.
+
+*** Item 07: Avoid Finalizers - Alternative                           :drill:
+
+What should you use instead of a finalizers?
+
+**** Answer
+
+An explicit termination method. close, dispose, cancel.
+
+Typically called with a try-finally.
+
+*** Item 07: Avoid Finalizers - Use Cases                             :drill:
+
+What are valid use cases for finalizers?
+
+**** Answer
+
++ Safety net if owner forgets to call explicit termination method, but should
+  log a warning indicating a bug in the client code.
++ Native peers, assuming the native peer holds no critical resources.
+
+*** Item 07: Avoid Finalizers - Safe Impl                             :drill:
+
+How should you implement finalizers if you must?
+
+**** Answer
+
++ Chain with super.finalize(), since it's not done automatically.
++ Use a finalizer guardian in a public, non-final class to ensure the finalizer
+  isn't overridden.
+
 
 * Consulting
 
