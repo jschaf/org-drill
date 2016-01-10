@@ -212,17 +212,17 @@ unicode escapes - '\u0108', "S\u00ED"
 escape sequences - \b backspace, \t tab, \n, \f, \r, \", \', \\
 
 *** Class Literal                                                   :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-24 Sun>
 :PROPERTIES:
 :ID:       4d3cb5a7-cefd-49e1-8eef-5ffc815b67cd
-:DRILL_LAST_INTERVAL: 4.759
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 13.5913
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:11]
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:16]
 :END:
 
 What is a class literal in Java?
@@ -352,17 +352,17 @@ What are the advantages of a Singleton pattern?
 + Singletons can be extended into a factory.
 
 *** Singleton 3                                                       :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       7b32a2a7-f9c6-464d-a387-53a852634a45
-:DRILL_LAST_INTERVAL: 7.333
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 19.5328
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.429
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:01]
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:23]
 :END:
 
 What are the disadvantages of a Singleton pattern?
@@ -817,17 +817,17 @@ https://en.wikipedia.org/wiki/Inter-process_communication
 
 
 *** Latency                                                         :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       C3100282-E69F-4FE6-BCA1-2350961AC0C7
-:DRILL_LAST_INTERVAL: 8.1835
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 22.7114
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-02 Sat 08:34]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:19]
 :END:
 
 What is latency?
@@ -1301,17 +1301,17 @@ Standing around 7-11
 Effective Java 5
 
 *** Item 06: Obsolete Object References                               :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       32570943-f46d-4edb-90ee-15b4ea21945d
-:DRILL_LAST_INTERVAL: 4.052
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 9.213
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.428
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:50]
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:21]
 :END:
 
 What is the proper name for a memory leak in a garbage-collected language?
@@ -1321,17 +1321,17 @@ What is the proper name for a memory leak in a garbage-collected language?
 unintentional object retention
 
 *** Item 06: Obsolete Object References Fixes                         :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       f933a03d-e252-4082-bba9-f90014e1ac13
-:DRILL_LAST_INTERVAL: 3.9423
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 9.5882
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:58]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:22]
 :END:
 
 How do you fix obsolete references?
@@ -1343,17 +1343,17 @@ Null out the object, but this should be the exception, not the rule.
 The best way to handle it is to let the object fall out of scope.
 
 *** Item 06: Obsolete Object Reference Alert                          :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       502824c2-771b-48ca-b809-02020dd22aa4
-:DRILL_LAST_INTERVAL: 3.6692
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 8.9407
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_AVERAGE_QUALITY: 3.4
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:58]
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:22]
 :END:
 
 When will you typically see obsolete references (memory leaks)?
@@ -1482,17 +1482,17 @@ How should you implement finalizers if you must?
 
 ** Methods Common to All Objects
 *** Item 08: Don't Override Equals                                    :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
 :ID:       3e2e805b-2665-456a-b24e-331c47727060
-:DRILL_LAST_INTERVAL: 1.4653
+:DRILL_LAST_INTERVAL: 1.3724
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:15]
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:24]
 :END:
 
 What conditions should you not override equals?
@@ -1659,17 +1659,17 @@ What is the general contract for Object.hashCode?
    different objects.
 
 *** Item 09: hashCode impl                                            :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       d55ad317-672d-4bee-ab65-d11c8941a4d8
-:DRILL_LAST_INTERVAL: 1.491
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 4.1136
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_AVERAGE_QUALITY: 2.571
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:04]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:19]
 :END:
 
 How do you implement hashCode for an object?
@@ -1897,20 +1897,21 @@ systemise it.
 /The ONE Thing/ by Keller
 
 *** Habitualise ONE Thing                                             :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-12 Tue>
 :PROPERTIES:
 :ID:       d51ec8b8-65ef-4264-a249-1a308dbd746a
-:DRILL_LAST_INTERVAL: 3.7116
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_LAST_INTERVAL: 1.5159
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:54]
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:23]
 :END:
 
-How do you systemize your ONE thing?
+How do you systemize your ONE thing with cue-habit-reward and implementation
+intention?
 
 **** Answer
 
@@ -2014,17 +2015,17 @@ Goal - lose 10,000 lbs
 
 
 *** Impact Bias                                                       :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       a3e8eb48-624b-4738-87da-082295451369
-:DRILL_LAST_INTERVAL: 4.2437
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.8474
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:59]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:19]
 :END:
 
 What is impact bias?
@@ -2036,17 +2037,17 @@ The tendency to overestimate the length and intensity of our future emotions.
 ** Udacity
 
 *** Standard Maven Layout                                 :drill:
-SCHEDULED: <2016-01-10 Sun>
+SCHEDULED: <2016-01-12 Tue>
 :PROPERTIES:
 :ID:       3f3d6cb8-fe88-4dc8-aaba-ea786e50e6ea
-:DRILL_LAST_INTERVAL: 1.3658
+:DRILL_LAST_INTERVAL: 1.6379
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:14]
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:25]
 :END:
 
 What is the standard maven layout?
