@@ -4,17 +4,17 @@
 ** Elisp
 
 *** Dired files                                                       :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       34d8abed-eba4-4ad0-814c-14bc929fa90a
-:DRILL_LAST_INTERVAL: 7.798
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 24.3939
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:45]
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
 :END:
 
 How do you run an Emacs command on marked files in dired?
@@ -38,17 +38,17 @@ dired-get-marked-files
 ** Object Oriented Programming
 
 *** Benefits of OOP                                                 :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       4941e3e8-f13e-4876-ad11-2879598630c6
-:DRILL_LAST_INTERVAL: 3.5482
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 9.0276
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:18]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:04]
 :END:
 
 What are the benefits of OO Programing?
@@ -63,17 +63,17 @@ What are the benefits of OO Programing?
 ** Java Language
 
 *** Variable Basics                                                 :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
 :ID:       dfe6c5a9-33b5-4933-a2c1-9f57ab726506
-:DRILL_LAST_INTERVAL: 4.0209
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_LAST_INTERVAL: 1.5512
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.2
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:22]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:02]
 :END:
 
 What are the 4 types of variables in Java?
@@ -113,17 +113,17 @@ What are Java's primitive types?
 + boolean - true and false
 
 *** Primitive Types 2                                               :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       d2b0df5b-4bea-4a10-9de1-dfdab03d4796
-:DRILL_LAST_INTERVAL: 3.7532
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.5853
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:21]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:04]
 :END:
 
 What are the default values for all primitive types?
@@ -190,17 +190,17 @@ What floating point literals does Java support?
 + underscores, anywhere but the beginning and the end or next to a decimal
 
 *** Char literals                                                   :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-12 Tue>
 :PROPERTIES:
 :ID:       6ace1daf-5b6a-469b-b110-39ed0119e184
-:DRILL_LAST_INTERVAL: 1.426
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 4.3203
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.167
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:45]
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:07]
 :END:
 
 What char and string literals does Java support?
@@ -330,17 +330,17 @@ Singleton is a class which only has one instance in a whole application. The
 class provides a getInstance() method to access the singleton instances.
 
 *** Singleton 2                                                       :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       5e4c1b0b-ede4-43cf-943d-d83c847691ac
-:DRILL_LAST_INTERVAL: 1.6307
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 3.6183
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_AVERAGE_QUALITY: 2.857
 :DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:37]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:11]
 :END:
 
 What are the advantages of a Singleton pattern?
@@ -399,17 +399,17 @@ What are the alternatives to a Singleton pattern?
   components.
 
 *** List design patterns                                            :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       14175568-52ec-4096-b33d-129f38a1de3e
-:DRILL_LAST_INTERVAL: 3.8745
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 10.9226
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_AVERAGE_QUALITY: 2.75
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:21]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:09]
 :END:
 
 What are the most common design patterns?
@@ -432,17 +432,17 @@ Hitler singleton
 
 ** Arrays
 *** Array 1 :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       15ac94ff-d684-4ff4-9660-88f3b64c5cfa
-:DRILL_LAST_INTERVAL: 8.9649
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 25.4648
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:48]
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:11]
 :END:
 
 How would you keep track of a median while getting a stream of numbers?
@@ -509,17 +509,17 @@ Space: O(1)
 ** Hash Tables
 
 *** Implement Hash Table                                            :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       12E1B6CF-EE70-42DA-8CB7-495435FEFD7D
-:DRILL_LAST_INTERVAL: 5.2442
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 14.021
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:00]
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:05]
 :END:
 
 How would you implement a hash table?
@@ -861,17 +861,17 @@ Throughput is the number of actions executed or results produced per unit of
 time.  It is measured in units per unit of time.
 
 *** Formatting String                                                 :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       fc8e3d5f-db93-4482-a0b9-5b55cec511c8
-:DRILL_LAST_INTERVAL: 1.5163
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.156
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:44]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:06]
 :END:
 
 How do you format a string in Java?
@@ -887,17 +887,17 @@ System.out.printf(String formatString, Object... args)
 System.out.format(String formatString, Object... args)
 
 *** Format Specifier Syntax                                          :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-12 Tue>
 :PROPERTIES:
 :ID:       c531d30c-d996-4c67-a870-f5cc6faef83e
-:DRILL_LAST_INTERVAL: 1.4441
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:46]
+:DRILL_LAST_INTERVAL: 3.2564
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.8
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
 :END:
 
 What is the syntax for a format specifier?
@@ -927,17 +927,17 @@ https://www.udemy.com/apachemaven
 ** Java Concurrency In Practice
 
 *** Motivating Factors                                              :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       e084f79e-8e7c-4677-bbf8-415022b927cd
-:DRILL_LAST_INTERVAL: 6.4969
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 17.9188
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-02 Sat 08:34]
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:07]
 :END:
 
 What are the motivating factors for concurrency?
@@ -1015,17 +1015,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 * Effective Java
 ** Creating and Destroying Objects
 *** Item 01: Static Factories vs Constructors                         :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       6fe16328-2578-41cd-94cf-6eaa8bccaecc
-:DRILL_LAST_INTERVAL: 7.8216
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 20.8619
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:48]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
 :END:
 
 What are the advantages of a static factory over a constructor?
@@ -1041,17 +1041,17 @@ What are the advantages of a static factory over a constructor?
    Java diamond operator.
 
 *** Item 01: Disadvantages of Static Factories                        :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       2e32ef7c-aad4-492c-a143-0e805019a2db
-:DRILL_LAST_INTERVAL: 6.0311
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 15.0829
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-02 Sat 08:35]
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:08]
 :END:
 
 What are the disadvantages of static factories?
@@ -1064,17 +1064,17 @@ What are the disadvantages of static factories?
    the API docs.
 
 *** Item 01:Static Factory naming conventions                         :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       42469e44-0a29-4251-9905-e683d6273ccc
-:DRILL_LAST_INTERVAL: 7.9599
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 19.882
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_AVERAGE_QUALITY: 3.75
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-31 Thu 15:48]
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:09]
 :END:
 
 What are common names of a static factory?
@@ -1202,17 +1202,17 @@ What are the three common methods for implementing a Singleton in Java?
 3. Enum with a single field
 
 *** Item 03: Singleton Enum                                           :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-18 Mon>
 :PROPERTIES:
 :ID:       794a10aa-35b6-46af-8845-ca9baa214da5
-:DRILL_LAST_INTERVAL: 3.4832
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 8.5198
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:09]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:07]
 :END:
 
 Why is a single-element enum the best way to implement a singleton?
@@ -1227,17 +1227,17 @@ Why is a single-element enum the best way to implement a singleton?
 Effective Java 3
 
 *** Item 04: Noninstantiability                                       :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       6559ea73-dbfa-4d3f-90be-178ffa4c4927
-:DRILL_LAST_INTERVAL: 3.8756
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 10.5062
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:20]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:05]
 :END:
 
 How do you enforce noninstantiability and when might you do so?
@@ -1275,22 +1275,24 @@ Subclass the abstract class and instantiate the subclass.
 Effective Java 4
 
 *** Item 05: Unnecessary Objects                                      :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
 :ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 1.4962
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 3.2482
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.6
-:DRILL_EASE: 2.08
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 1.94
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:45]
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:10]
 :END:
 
 How can you avoid unnecessary objects?
 
 **** Answer
+
+Standing around 7-11
 
 + Use string literals
 + Prefer primitives and watch out for autoboxing
@@ -1363,17 +1365,17 @@ When will you typically see obsolete references (memory leaks)?
 + Listeners and callbacks
 
 *** Item 06: Obsolete Objects Callbacks                               :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-18 Mon>
 :PROPERTIES:
 :ID:       39949c56-c779-4ab1-9947-a8ee04195bf7
-:DRILL_LAST_INTERVAL: 3.6752
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 9.2453
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:09]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
 :END:
 
 How do you ensure callbacks are garbage collected?
@@ -1413,17 +1415,17 @@ They are unpredictable, often dangerous and generally unnecessary.
 
 
 *** Item 07: Avoid Finalizers - Alternative                           :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       686ef890-f052-4df8-86ce-8a7ed58fa8f7
-:DRILL_LAST_INTERVAL: 3.2407
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 8.3965
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:52]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:07]
 :END:
 
 What should you use instead of a finalizers?
@@ -1435,17 +1437,17 @@ An explicit termination method. close, dispose, cancel.
 Typically called with a try-finally.
 
 *** Item 07: Avoid Finalizers - Use Cases                             :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       9b440ee4-ec6a-4881-abbe-720f15064554
-:DRILL_LAST_INTERVAL: 3.9178
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 8.0673
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.25
+:DRILL_AVERAGE_QUALITY: 2.6
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:04]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:12]
 :END:
 
 What are valid use cases for finalizers?
@@ -1457,17 +1459,17 @@ What are valid use cases for finalizers?
 + Native peers, assuming the native peer holds no critical resources.
 
 *** Item 07: Avoid Finalizers - Safe Impl                             :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
 :ID:       6262a0ed-cd87-446f-b258-f05c1037d8c9
-:DRILL_LAST_INTERVAL: 3.4927
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_LAST_INTERVAL: 1.6967
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:06]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:14]
 :END:
 
 How should you implement finalizers if you must?
@@ -1480,24 +1482,24 @@ How should you implement finalizers if you must?
 
 ** Methods Common to All Objects
 *** Item 08: Don't Override Equals                                    :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-10 Sun>
 :PROPERTIES:
 :ID:       3e2e805b-2665-456a-b24e-331c47727060
-:DRILL_LAST_INTERVAL: 1.8857
+:DRILL_LAST_INTERVAL: 1.4653
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 13:04]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:15]
 :END:
 
 What conditions should you not override equals?
 
 **** Answer
 
-Tianamen, sweater random colors, classy broad, privacy tent
+fork, change random colors, parent, privacy drapes.
 
 1. Each instance of the class is inherently unique, e.g a Thread.
 2. You don't care if the class provides a logical equality test.
@@ -1508,17 +1510,17 @@ Tianamen, sweater random colors, classy broad, privacy tent
    In which case, you should override it and throw an assertion error.
 
 *** Item  08: Equals method general contracts                         :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       7e040020-d7c2-4719-a33c-f410238fb22d
-:DRILL_LAST_INTERVAL: 1.8916
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 5.1279
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:40]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
 :END:
 
 What are the general contracts for the equals method?
@@ -1532,17 +1534,17 @@ What are the general contracts for the equals method?
 + Non-Nullity, x.equals(null) must be false.
 
 *** Item 08: High Quality Equals                                      :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       fed0c121-7d93-476c-b640-1e849ec31f5a
-:DRILL_LAST_INTERVAL: 1.5986
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.4534
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:38]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
 :END:
 
 What are the steps to a high quality equals method?
@@ -1560,17 +1562,17 @@ What are the steps to a high quality equals method?
    transitive, consistent and non-nullity.
 
 *** Item 08: Equals overloading                                       :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       ed57b79c-3dcb-45ce-ae9f-7e1b1fd018e9
-:DRILL_LAST_INTERVAL: 1.8611
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.9026
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 13:07]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:04]
 :END:
 
 What does the argument type have to be when overriding equals?
@@ -1580,17 +1582,17 @@ What does the argument type have to be when overriding equals?
 Object o, otherwise you're overloading equals instead of overriding it.
 
 *** Item 08: High Quality Equals Impl                                 :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       fe0f1e4b-4282-478e-8dbf-295384c0a8d4
-:DRILL_LAST_INTERVAL: 1.5238
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.5354
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:40]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:07]
 :END:
 
 What does a correct equals method look like?
@@ -1613,17 +1615,17 @@ public boolean equals(Object o) {
 #+END_SRC
 
 *** Item 09: Override hashCode                                        :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-12 Tue>
 :PROPERTIES:
 :ID:       382fa3e9-6ee7-4823-b6ff-e2e77901cafe
-:DRILL_LAST_INTERVAL: 1.5107
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.3208
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 13:04]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:08]
 :END:
 
 When should you override hashCode?
@@ -1634,17 +1636,17 @@ Whenever you override equals.  If you don't, you'll violate the general contract
 for Object.hashCode.
 
 *** Item 09: hashCode general contract                                :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       1aa1df92-7da1-4f7d-b75e-145bbd22fadb
-:DRILL_LAST_INTERVAL: 1.6214
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.8953
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 13:05]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
 :END:
 
 What is the general contract for Object.hashCode?
@@ -1657,17 +1659,17 @@ What is the general contract for Object.hashCode?
    different objects.
 
 *** Item 09: hashCode impl                                            :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-10 Sun>
 :PROPERTIES:
 :ID:       d55ad317-672d-4bee-ab65-d11c8941a4d8
-:DRILL_LAST_INTERVAL: 1.4271
+:DRILL_LAST_INTERVAL: 1.491
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.25
-:DRILL_EASE: 2.36
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:35]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:04]
 :END:
 
 How do you implement hashCode for an object?
@@ -1689,17 +1691,17 @@ How do you implement hashCode for an object?
    result = 31 * result + c;
 
 *** Item  09: hashCode optimizations                                  :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       078c43bc-8da6-4529-9389-a9d7b8f9b156
-:DRILL_LAST_INTERVAL: 1.3319
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 3.5847
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:40]
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:07]
 :END:
 
 How to you speed up hashCode?
@@ -1763,17 +1765,17 @@ Identify a keystone habit
 Use a feedback loop.
 
 *** Goals are bad                                                     :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       10f40af7-186f-448e-a1fe-35e8c881ad84
-:DRILL_LAST_INTERVAL: 3.0401
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 7.5769
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:07]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:09]
 :END:
 
 Why are goals bad?
@@ -1790,17 +1792,17 @@ Why are goals bad?
    made goal a part of their identity and jeopordized themselves to get the goal.
 
 *** Hedonic Adaptation                                                :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       0048cd41-4170-47a4-aa65-23a9bc9c7817
-:DRILL_LAST_INTERVAL: 3.4446
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 7.2815
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.2
 :DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 00:20]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:11]
 :END:
 
 What is hedonic adaptation (hedonic treadmill)?
@@ -1839,17 +1841,17 @@ moon rocket habit
 3. Revise your system on a regular basis.
 
 *** What to Achieve                                                   :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       9de25430-f028-4591-a97d-1e74bc205238
-:DRILL_LAST_INTERVAL: 2.7999
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 8.37
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:53]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
 :END:
 
 How do you decide what you want to achieve?
@@ -1869,17 +1871,17 @@ Why?
 Because I want to settle down and start a family.
 
 *** Keystone Habit                                                    :drill:
-SCHEDULED: <2016-01-09 Sat>
+SCHEDULED: <2016-01-15 Fri>
 :PROPERTIES:
 :ID:       935adb91-8ffe-42dc-9ba9-d59003dd78d9
-:DRILL_LAST_INTERVAL: 3.1413
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 6.2522
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.6
+:DRILL_AVERAGE_QUALITY: 2.833
 :DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:51]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
 :END:
 
 What is a keystone habit and how do identify it?
@@ -1954,20 +1956,20 @@ cannot be patched up to make it work. You have to start over with a working
 simple system. – John Gall (1975, p.71)
 
 *** Revise System                                                     :drill:
-SCHEDULED: <2016-01-08 Fri>
+SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
 :ID:       5e20c306-4d50-4d12-b458-ef270f9c1242
-:DRILL_LAST_INTERVAL: 1.4359
+:DRILL_LAST_INTERVAL: 1.733
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 3
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.22
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:45]
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:03]
 :END:
 
-How do you revise your system on a really, regular basis?
+How do you revise your system of accomplishment on a really, regular basis?
 
 **** Answer
 
@@ -2030,3 +2032,42 @@ What is impact bias?
 **** Answer
 
 The tendency to overestimate the length and intensity of our future emotions.
+* Maven
+** Udacity
+
+*** Standard Maven Layout                                 :drill:
+SCHEDULED: <2016-01-10 Sun>
+:PROPERTIES:
+:ID:       3f3d6cb8-fe88-4dc8-aaba-ea786e50e6ea
+:DRILL_LAST_INTERVAL: 1.3658
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:14]
+:END:
+
+What is the standard maven layout?
+
+**** Answer
+
+- src
+  - main
+    - java
+    - resources
+    - webapp
+    - filters
+  - test
+    - java
+    - resources
+    - filters
+  - it
+  - site
+- target
+LICENSE.txt
+NOTICE.txt
+README.txt
+
+https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
