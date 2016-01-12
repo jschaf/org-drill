@@ -485,7 +485,6 @@ What is the Date time prefix in a format specifier?
 
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
-
 *** Formatter - Other Conversions                                     :drill:
 SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
@@ -569,6 +568,40 @@ BigInteger.toString(radix) // The number is part of bigInteger
 Integer.toString(100, 8); // prints 144 - octal
 Integer.toString(100, 2); // prints 1100100 - binary
 Integer.toString(100,16); // prints 64 - hex
+
+*** Math Min and Max values                                           :drill:
+
+How to do you get the min and max value of a number?
+
+**** Answer
+
+Integer.MIN_VALUE
+Integer.MAX_VALUE
+
+Long.MIN_VALUE
+Long.MAX_VALUE
+
+For floating point, the min value is actually the smallest magnitude or smallest
+/absolute/ number.  If you want the most negative number, you do
+-Float.MAX_VALUE.  That works since IEEE754 is symmetric around 0, unlike ints
+
+Float.MIN_VALUE
+Float.MAX_VALUE
+
+Double.MIN_VALUE
+Double.MAX_VALUE
+
+Really you should use:
+
+Float.NEGATIVE_INFINITY
+Float.POSITIVE_INFINITY
+
+Double.NEGATIVE_INFINITY
+Double.POSITIVE_INFINITY
+
+http://stackoverflow.com/questions/3884793/minimum-values-and-double-min-value-in-java
+
+
 
 ** Design Patterns
 
@@ -1897,7 +1930,7 @@ How do you implement hashCode for an object?
 
    result = 31 * result + c;
 
-*** Item  09: hashCode optimizations                                  :drill:
+*** Item 09: hashCode optimizations                                  :drill:
 SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       078c43bc-8da6-4529-9389-a9d7b8f9b156
@@ -1916,6 +1949,53 @@ How to you speed up hashCode?
 **** Answer
 
 Cache the value in a private field.  Don't skip fields because the has will be unbalanced.
+
+*** Item 10: Why override toString                                    :drill:
+
+Why should you override toString?
+
+**** Answer
+
+It makes a class much more pleasant to use.  Compare:
+
+{Jenny=PhoneNumber@163b91}
+{Jenny=(707) 867-5390}
+
+
+*** Item 10: override toString format                                 :drill:
+
+What info should be in toString?
+
+**** Answer
+
+All of the interesting information. For a PhoneBook class:
+
+"Manhattan white pages (184752 listings)"
+
+The string should be self explanatory.
+
+*** Item 10: override toString format specification                   :drill:
+
+When should you specify the value of toString?
+
+**** Answer
+
+For value classes, since it will serve as a standard, unambiguous, human
+readable representation.
+
+You should provide a static factory to convert between the string and Object.
+
+Either way, clearly document your intentions.
+
+*** Item 10: override toString: programmatic access                   :drill:
+
+Should you provide programmatic asses to all info in toString?
+
+**** Answer
+
+Yes.
+
+
 
 * Consulting
 
