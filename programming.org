@@ -282,6 +282,19 @@ Arrays.copyOfRange(T[] original, int from, int to)
 Copies specified range into a new array
 
 *** Reference Types                                                   :drill:
+SCHEDULED: <2016-01-12 Tue>
+:PROPERTIES:
+:ID:       37cb8ba4-f7e8-4420-aa99-623b76180cfb
+:DRILL_LAST_INTERVAL: 1.5517
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:49]
+:END:
+
 SCHEDULED: <2016-01-11 Mon>
 :PROPERTIES:
 :ID:       7ce72681-d605-475d-9934-493eb5ccdefb
@@ -303,6 +316,259 @@ What are Java's reference types and when do they get garbage collected?
 + SoftReference - eligible for collection with low memory warning
 + WeakReference - when no direct references exist
 + PhantomReference - relate to cleanup and offer notification before finalization
+
+*** Formatting String                                                 :drill:
+SCHEDULED: <2016-01-13 Wed>
+:PROPERTIES:
+:ID:       fc8e3d5f-db93-4482-a0b9-5b55cec511c8
+:DRILL_LAST_INTERVAL: 4.156
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:06]
+:END:
+
+How do you format a string in Java?
+
+**** Answer
+
+Creating a string
+String.format(Locale l, String format, Object... args)
+String.format(String format, Object... args)
+
+Printing
+System.out.printf(String formatString, Object... args)
+System.out.format(String formatString, Object... args)
+
+*** Format Specifier Syntax                                          :drill:
+SCHEDULED: <2016-01-12 Tue>
+:PROPERTIES:
+:ID:       c531d30c-d996-4c67-a870-f5cc6faef83e
+:DRILL_LAST_INTERVAL: 3.2564
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.8
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
+:END:
+
+What is the syntax for a format specifier?
+
+**** Answer
+
+~%[argument_index$][flags][width][.precision]conversion~
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+*** Formatter - General Conversions                                   :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       1186f080-5d43-40a7-8045-7aae066f84b1
+:DRILL_LAST_INTERVAL: 1.3603
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:08]
+:END:
+
+What general conversions are supported in a format specifier?
+
+**** Answer
+
+*General*
+
++ b, B - "false" if null, String.valueOf(arg) if boolean, otherwise "true"
++ h, H - "null" if null, otherwise Integer.toHexString(arg.hashCode())
++ s, S - "null" if null, if arg is Formattable then arg.FormatTo, otherwise
+  arg.toString.
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+*** Formatter - Character Conversions                                 :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       25a7e8cc-dd99-40cf-9642-8e46cfb690ed
+:DRILL_LAST_INTERVAL: 1.2707
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:56]
+:END:
+
+What character conversions are supported in a format specifier?
+
+**** Answer
+*Character*
++ c, C - Unicode character
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+*** Formatter - Integral Conversions                                  :drill:
+SCHEDULED: <2016-01-12 Tue>
+:PROPERTIES:
+:ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
+:DRILL_LAST_INTERVAL: 1.5556
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:08]
+:END:
+
+What Integral conversions are supported in a format specifier?
+
+**** Answer
+*Integral*
++ d    - decimal integer
++ o    - octal integer
++ x, X - hexadecimal integer
+
+*** Formatter - Floating Point Conversions                           :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
+:DRILL_LAST_INTERVAL: 1.4346
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:01]
+:END:
+
+What floating point conversions are supported in a format specifier?
+
+**** Answer
+*Floating Point*
++ e, E - decimal number in computerized scientific notation
++ f    - decimal number
++ g, G - smart decimal number with maybe scientific notation, uses the shorter
+  of e and f
++ a, A - hexadecimal floating-point number with significant and exponent
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+*** Formatter - Date time Conversions                                 :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       50ed3929-de34-4b06-9cb6-ee7cbcdc3fc8
+:DRILL_LAST_INTERVAL: 1.4775
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:57]
+:END:
+
+What is the Date time prefix in a format specifier?
+
+**** Answer
+
+*Date Time*
++ t, T - prefix for date/time conversions
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+
+*** Formatter - Other Conversions                                     :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       3a979001-89ca-449c-beca-727caaaa4dd6
+:DRILL_LAST_INTERVAL: 1.4797
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:02]
+:END:
+
+What other conversions are supported in a format specifier?
+
+**** Answer
+
+*Other*
++ %    - literal %
++ n    - platform line separator
+
+https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
+
+*** Formatter - Flags                                                 :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       28483543-3abc-46e8-9d14-dbaa606e6ca8
+:DRILL_LAST_INTERVAL: 1.4683
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:07]
+:END:
+
+What flags does java.util.Formatter support?
+
+**** Answer
+
+7 promoted to 007, HIV positive, negative, europe
+
++ '-'     left-justified
++ '#'     conversion-dependent alternate form
++ '+'     always include a sign
++ ' '     pad with leading spaces for positive values
++ '0'     zero-padded
++ ','     locale specific grouping separators
++ '('     enclose negative numbers in parenthesis
+
+*** Integral different base                                         :drill:
+SCHEDULED: <2016-01-11 Mon>
+:PROPERTIES:
+:ID:       9e2f790c-c1e8-4897-bfc5-cd766456d76e
+:DRILL_LAST_INTERVAL: 1.2757
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:55]
+:END:
+
+How do you get an integral representation in different bases?
+
+**** Answer
+
+Returns the two's complement version:
+
+Integer.toBinaryString(100);
+Integer.toHexString(100);
+Integer.toOctalString(100);
+Long.*
+
+Return the literal version
+
+BigInteger.toString(radix) // The number is part of bigInteger
+Integer.toString(100, 8); // prints 144 - octal
+Integer.toString(100, 2); // prints 1100100 - binary
+Integer.toString(100,16); // prints 64 - hex
 
 ** Design Patterns
 
@@ -859,65 +1125,6 @@ What is throughput?
 
 Throughput is the number of actions executed or results produced per unit of
 time.  It is measured in units per unit of time.
-
-*** Formatting String                                                 :drill:
-SCHEDULED: <2016-01-13 Wed>
-:PROPERTIES:
-:ID:       fc8e3d5f-db93-4482-a0b9-5b55cec511c8
-:DRILL_LAST_INTERVAL: 4.156
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:06]
-:END:
-
-How do you format a string in Java?
-
-**** Answer
-
-Creating a string
-String.format(Locale l, String format, Object... args)
-String.format(String format, Object... args)
-
-Printing
-System.out.printf(String formatString, Object... args)
-System.out.format(String formatString, Object... args)
-
-*** Format Specifier Syntax                                          :drill:
-SCHEDULED: <2016-01-12 Tue>
-:PROPERTIES:
-:ID:       c531d30c-d996-4c67-a870-f5cc6faef83e
-:DRILL_LAST_INTERVAL: 3.2564
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.8
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
-:END:
-
-What is the syntax for a format specifier?
-
-**** Answer
-
-~%[argument_index$][flags][width][.precision]conversion~
-
-https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
-
-
-*** Item
-
-What conversions are supported in a format specifier?
-
-**** Answer
-
-
-
-https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 ** Maven
 https://www.udemy.com/apachemaven
