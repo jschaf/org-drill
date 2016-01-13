@@ -63,17 +63,17 @@ What are the benefits of OO Programing?
 ** Java Language
 
 *** Variable Basics                                                 :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       dfe6c5a9-33b5-4933-a2c1-9f57ab726506
-:DRILL_LAST_INTERVAL: 1.5512
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 4.1131
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.2
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:02]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:32]
 :END:
 
 What are the 4 types of variables in Java?
@@ -143,17 +143,17 @@ Sting or any object: null
 boolean: false
 
 *** Integer Literals                                                :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       c966a52c-6989-4f50-891a-dbbb88ae72a9
-:DRILL_LAST_INTERVAL: 6.3151
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 18.1157
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:04]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
 :END:
 
 What integer literals does Java support?
@@ -190,17 +190,17 @@ What floating point literals does Java support?
 + underscores, anywhere but the beginning and the end or next to a decimal
 
 *** Char literals                                                   :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       6ace1daf-5b6a-469b-b110-39ed0119e184
-:DRILL_LAST_INTERVAL: 4.3203
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 11.4182
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.167
+:DRILL_AVERAGE_QUALITY: 3.286
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:07]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:19]
 :END:
 
 What char and string literals does Java support?
@@ -254,17 +254,17 @@ MyType[] anArray;
 MyType anArray[]; - WORKS, but BAD
 
 *** Arrays Copying                                                  :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       9d2af5e1-b9c1-4715-b227-0eb84708747e
-:DRILL_LAST_INTERVAL: 5.1935
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 14.8638
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_AVERAGE_QUALITY: 2.8
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:51]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:35]
 :END:
 
 How do you copy an array in Java?
@@ -282,30 +282,17 @@ Arrays.copyOfRange(T[] original, int from, int to)
 Copies specified range into a new array
 
 *** Reference Types                                                   :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       37cb8ba4-f7e8-4420-aa99-623b76180cfb
-:DRILL_LAST_INTERVAL: 1.5517
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:49]
-:END:
-
-SCHEDULED: <2016-01-11 Mon>
-:PROPERTIES:
-:ID:       7ce72681-d605-475d-9934-493eb5ccdefb
-:DRILL_LAST_INTERVAL: 4.5731
+:DRILL_LAST_INTERVAL: 4.5208
 :DRILL_REPEATS_SINCE_FAIL: 3
 :DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:58]
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:31]
 :END:
 
 What are Java's reference types and when do they get garbage collected?
@@ -344,17 +331,17 @@ System.out.printf(String formatString, Object... args)
 System.out.format(String formatString, Object... args)
 
 *** Format Specifier Syntax                                          :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       c531d30c-d996-4c67-a870-f5cc6faef83e
-:DRILL_LAST_INTERVAL: 3.2564
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 6.9327
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.8
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:24]
 :END:
 
 What is the syntax for a format specifier?
@@ -366,17 +353,17 @@ What is the syntax for a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - General Conversions                                   :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-15 Fri>
 :PROPERTIES:
 :ID:       1186f080-5d43-40a7-8045-7aae066f84b1
-:DRILL_LAST_INTERVAL: 1.3603
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 3.0405
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:08]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:27]
 :END:
 
 What general conversions are supported in a format specifier?
@@ -393,17 +380,17 @@ What general conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Character Conversions                                 :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-15 Fri>
 :PROPERTIES:
 :ID:       25a7e8cc-dd99-40cf-9642-8e46cfb690ed
-:DRILL_LAST_INTERVAL: 1.2707
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.2522
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:56]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
 :END:
 
 What character conversions are supported in a format specifier?
@@ -415,17 +402,17 @@ What character conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Integral Conversions                                  :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
-:DRILL_LAST_INTERVAL: 1.5556
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 3.8267
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:08]
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:24]
 :END:
 
 What Integral conversions are supported in a format specifier?
@@ -437,17 +424,17 @@ What Integral conversions are supported in a format specifier?
 + x, X - hexadecimal integer
 
 *** Formatter - Floating Point Conversions                           :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-15 Fri>
 :PROPERTIES:
 :ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
-:DRILL_LAST_INTERVAL: 1.4346
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.4519
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:01]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:25]
 :END:
 
 What floating point conversions are supported in a format specifier?
@@ -463,17 +450,17 @@ What floating point conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Date time Conversions                                 :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       50ed3929-de34-4b06-9cb6-ee7cbcdc3fc8
-:DRILL_LAST_INTERVAL: 1.4775
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.9108
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:57]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:33]
 :END:
 
 What is the Date time prefix in a format specifier?
@@ -486,17 +473,17 @@ What is the Date time prefix in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Other Conversions                                     :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       3a979001-89ca-449c-beca-727caaaa4dd6
-:DRILL_LAST_INTERVAL: 1.4797
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.103
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:02]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:30]
 :END:
 
 What other conversions are supported in a format specifier?
@@ -510,17 +497,17 @@ What other conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Flags                                                 :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       28483543-3abc-46e8-9d14-dbaa606e6ca8
-:DRILL_LAST_INTERVAL: 1.4683
+:DRILL_LAST_INTERVAL: 1.5258
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 20:07]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:38]
 :END:
 
 What flags does java.util.Formatter support?
@@ -538,17 +525,17 @@ What flags does java.util.Formatter support?
 + '('     enclose negative numbers in parenthesis
 
 *** Integral different base                                         :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       9e2f790c-c1e8-4897-bfc5-cd766456d76e
-:DRILL_LAST_INTERVAL: 1.2757
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 3.7458
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 19:55]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:18]
 :END:
 
 How do you get an integral representation in different bases?
@@ -570,6 +557,9 @@ Integer.toString(100, 2); // prints 1100100 - binary
 Integer.toString(100,16); // prints 64 - hex
 
 *** Math Min and Max values                                           :drill:
+:PROPERTIES:
+:ID:       cda0c464-b768-4628-9e69-c408e1bff97e
+:END:
 
 How to do you get the min and max value of a number?
 
@@ -602,6 +592,50 @@ Double.POSITIVE_INFINITY
 http://stackoverflow.com/questions/3884793/minimum-values-and-double-min-value-in-java
 
 
+
+*** Overloaded Return Types                                           :drill:
+:PROPERTIES:
+:ID:       b9e3c6f1-927a-487f-b702-28b958ddb849
+:END:
+
+Can you overload a method by return type in Java?
+
+**** Answer
+
+No, because you are not required to capture the the return value of a method in
+Java, so the compiler cannot pick between two methods.
+
+#+BEGIN_SRC java
+boolean doSomething() {}
+int doSomething() {}
+
+doSomething();
+#+END_SRC
+
+This limitation is part of Java, but not the JVM.
+
+#+BEGIN_QUOTE
+[[http://docs.oracle.com/javase/8/docs/api/java/lang/Class.html#getMethod-java.lang.String-java.lang.Class][Class.getMethod(String, Class...)]]
+
+Note that there may be more than one matching method in a class because while
+the Java language forbids a class to declare multiple methods with the same
+signature but different return types, the Java virtual machine does not. This
+increased flexibility in the virtual machine can be used to implement various
+language features. For example, covariant returns can be implemented with bridge
+methods; the bridge method and the method being overridden would have the same
+signature but different return types.
+#+END_QUOTE
+*** Clone Array                                                       :drill:
+:PROPERTIES:
+:ID:       1d1f12f4-cb3a-4c7a-bbe0-9897a3e5ced1
+:END:
+
+What type does Array.clone return?
+
+**** Answer
+
+As of Java 1.5, it returns a shallow copy of the array with the same return
+type.
 
 ** Design Patterns
 
@@ -761,17 +795,17 @@ http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-
 ** Sorting
 
 *** Bubble sort                                                     :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-02-13 Sat>
 :PROPERTIES:
 :ID:       45FF61B9-A095-4F7A-B7E2-2ED612001C56
-:DRILL_LAST_INTERVAL: 9.0889
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 32.0057
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-03 Sun 03:00]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:28]
 :END:
 
 How is bubble sort implemented?
@@ -842,17 +876,17 @@ Use hashcode to find the bucket and search the list to find the item.
 
 
 *** Hash Table Collision Resolution                                   :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       F426A0A8-72BE-4F74-8F0E-32381A0D7C99
-:DRILL_LAST_INTERVAL: 8.6992
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 24.1929
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-02 Sat 08:32]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:24]
 :END:
 
 What are the two common hash table implementations techniques?
@@ -892,17 +926,17 @@ Hopscotch raptors.
 + 2-choice Hashing
 
 *** Hopscotch hashing                                               :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       C53D4220-3C93-478B-BEBC-BA862E35D2D8
-:DRILL_LAST_INTERVAL: 5.7707
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 14.1813
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:08]
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:32]
 :END:
 
 What is Hopscotch hashing?
@@ -938,17 +972,17 @@ http://codecapsule.com/2013/08/11/hopscotch-hashing/
 
 
 *** Linear Probing                                                  :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       619671F6-3126-41E1-99C2-FB06CB4EC830
-:DRILL_LAST_INTERVAL: 5.9521
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 15.1967
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:05]
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:27]
 :END:
 
 What is linear probing?
@@ -964,17 +998,17 @@ clustering.  Linear probing is sensitive to input distribution.
 
 
 *** Quadratic Probing                                               :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
 :ID:       22C26F8D-EB15-497A-A2C5-E02227A246D8
-:DRILL_LAST_INTERVAL: 7.2557
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 18.7719
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:07]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
 :END:
 
 What is Quadratic Probing?
@@ -991,17 +1025,17 @@ Provides some locality of reference but not as good as linear probing.
 
 
 *** Double Hashing                                                  :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       EE521875-0E0D-4784-9DF8-10076572D119
-:DRILL_LAST_INTERVAL: 6.766
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 20.4315
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:05]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:35]
 :END:
 
 What is Double Hashing?
@@ -1018,17 +1052,17 @@ $h(i, k) = h1(k) + i * h2(k) mod (length array)$
 https://en.wikipedia.org/wiki/Double_hashing
 
 *** Coalesced hashing                                               :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       1DDEFC35-28AF-45D7-9911-FA560687150A
-:DRILL_LAST_INTERVAL: 3.9864
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 9.2699
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.167
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:40]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:19]
 :END:
 
 What is Coalesced hashing?
@@ -1082,17 +1116,17 @@ Scheme for resolving hash collisions in a table using open addressing.
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       8C596422-5A0D-4635-A98A-C103638C5760
-:DRILL_LAST_INTERVAL: 6.5848
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.833
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:20]
+:DRILL_LAST_INTERVAL: 1.1232
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.08
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:39]
 :END:
 
 What are the different methods of IPC?
@@ -1139,17 +1173,17 @@ measured in units of time.
 
 
 *** Throughput                                                        :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       5FB041A6-CAFF-4317-A86B-39E6AF117500
-:DRILL_LAST_INTERVAL: 8.6585
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 23.9379
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-02 Sat 08:35]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
 :END:
 
 What is throughput?
@@ -1252,6 +1286,52 @@ Threads share virtual address space of a process.  Each thread maintains:
 
 http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread
 
+* Object Oriented Programming
+** Types
+*** Covariant                                                         :drill:
+SCHEDULED: <2016-01-14 Thu>
+:PROPERTIES:
+:ID:       d42c342e-3741-4bb0-b310-d01cab81551d
+:DRILL_LAST_INTERVAL: 1.6295
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:36]
+:END:
+
+What is a covariant return type?
+
+**** Answer
+
+In OO programming, a covariant return type of a method is one that can be
+replaced by a narrower type when the method is overriden in a subclass.
+
+#+BEGIN_SRC java
+
+class A {
+}
+
+// Class B is more narrow than A
+class B extends A {
+}
+
+class C {
+    A getFoo() {
+        return new A();
+    }
+}
+
+
+class D extends C {
+    // Overrides getFoo and returns a more narrow class.
+    B getFoo() {
+        return new B();
+    }
+}
+#+END_SRC
 * Effective Java
 ** Creating and Destroying Objects
 *** Item 01: Static Factories vs Constructors                         :drill:
@@ -1515,24 +1595,24 @@ Subclass the abstract class and instantiate the subclass.
 Effective Java 4
 
 *** Item 05: Unnecessary Objects                                      :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 3.2482
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 1.94
+:DRILL_LAST_INTERVAL: 1.4997
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.626
+:DRILL_EASE: 1.8
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:10]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:38]
 :END:
 
 How can you avoid unnecessary objects?
 
 **** Answer
 
-Standing around 7-11
+Primitives standing around 7-11
 
 + Use string literals
 + Prefer primitives and watch out for autoboxing
@@ -1627,22 +1707,24 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 4.8645
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.46
+:DRILL_LAST_INTERVAL: 1.5769
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 2.32
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 12:58]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:39]
 :END:
 
 What are the issues with finalizers?
 
 **** Answer
+
+Womanizer slap ref, double-slap spider web, Conner "accept", zombie
 
 They are unpredictable, often dangerous and generally unnecessary.
 
@@ -1699,17 +1781,17 @@ What are valid use cases for finalizers?
 + Native peers, assuming the native peer holds no critical resources.
 
 *** Item 07: Avoid Finalizers - Safe Impl                             :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       6262a0ed-cd87-446f-b258-f05c1037d8c9
-:DRILL_LAST_INTERVAL: 1.6967
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.75
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:14]
+:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
 :END:
 
 How should you implement finalizers if you must?
@@ -1722,17 +1804,17 @@ How should you implement finalizers if you must?
 
 ** Methods Common to All Objects
 *** Item 08: Don't Override Equals                                    :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-15 Fri>
 :PROPERTIES:
 :ID:       3e2e805b-2665-456a-b24e-331c47727060
-:DRILL_LAST_INTERVAL: 1.3724
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 3.372
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:24]
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:25]
 :END:
 
 What conditions should you not override equals?
@@ -1855,17 +1937,17 @@ public boolean equals(Object o) {
 #+END_SRC
 
 *** Item 09: Override hashCode                                        :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       382fa3e9-6ee7-4823-b6ff-e2e77901cafe
-:DRILL_LAST_INTERVAL: 4.3208
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.7758
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:08]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:19]
 :END:
 
 When should you override hashCode?
@@ -1951,6 +2033,9 @@ How to you speed up hashCode?
 Cache the value in a private field.  Don't skip fields because the has will be unbalanced.
 
 *** Item 10: Why override toString                                    :drill:
+:PROPERTIES:
+:ID:       4be4efec-848a-4cb3-9617-e3fe055050e0
+:END:
 
 Why should you override toString?
 
@@ -1963,6 +2048,9 @@ It makes a class much more pleasant to use.  Compare:
 
 
 *** Item 10: override toString format                                 :drill:
+:PROPERTIES:
+:ID:       d23d8b5b-7371-462a-ab3e-11e3615c244e
+:END:
 
 What info should be in toString?
 
@@ -1975,6 +2063,9 @@ All of the interesting information. For a PhoneBook class:
 The string should be self explanatory.
 
 *** Item 10: override toString format specification                   :drill:
+:PROPERTIES:
+:ID:       da560596-fcfe-44a1-b831-6af67b1ec2fa
+:END:
 
 When should you specify the value of toString?
 
@@ -1988,6 +2079,9 @@ You should provide a static factory to convert between the string and Object.
 Either way, clearly document your intentions.
 
 *** Item 10: override toString: programmatic access                   :drill:
+:PROPERTIES:
+:ID:       d67a1839-8010-4466-aeb1-5493e8c1d4b6
+:END:
 
 Should you provide programmatic asses to all info in toString?
 
@@ -2104,17 +2198,17 @@ rise in tandem, which results in no permanent gain in happiness.
 
 
 *** Build a system                                                    :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       5657a814-6be2-479d-9ba5-bc806e578282
-:DRILL_LAST_INTERVAL: 4.975
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.25
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-06 Wed 00:21]
+:DRILL_LAST_INTERVAL: 1.7769
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:38]
 :END:
 
 What are the steps to build a system instead of a goal?
@@ -2184,17 +2278,17 @@ systemise it.
 /The ONE Thing/ by Keller
 
 *** Habitualise ONE Thing                                             :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       d51ec8b8-65ef-4264-a249-1a308dbd746a
-:DRILL_LAST_INTERVAL: 1.5159
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.2506
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:23]
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:28]
 :END:
 
 How do you systemize your ONE thing with cue-habit-reward and implementation
@@ -2221,17 +2315,17 @@ If I return home and the weather does not permit, I will go running in the
 morning instead.
 
 *** Gall's Law                                                        :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       29f0eb88-d255-49f5-8b75-9fc8c6bae6ae
-:DRILL_LAST_INTERVAL: 3.9365
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 9.1254
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.8
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:41]
+:DRILL_AVERAGE_QUALITY: 3.167
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:24]
 :END:
 
 What is Gall's Law
@@ -2244,17 +2338,17 @@ cannot be patched up to make it work. You have to start over with a working
 simple system. – John Gall (1975, p.71)
 
 *** Revise System                                                     :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       5e20c306-4d50-4d12-b458-ef270f9c1242
-:DRILL_LAST_INTERVAL: 1.733
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 4.4344
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:03]
+:DRILL_AVERAGE_QUALITY: 2.857
+:DRILL_EASE: 2.18
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
 :END:
 
 How do you revise your system of accomplishment on a really, regular basis?
@@ -2269,17 +2363,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-SCHEDULED: <2016-01-11 Mon>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 4.4846
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 9.4622
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.8
-:DRILL_EASE: 2.22
+:DRILL_AVERAGE_QUALITY: 2.833
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-07 Thu 17:43]
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:30]
 :END:
 
 What are the stages of a feedback loop?
@@ -2324,17 +2418,17 @@ The tendency to overestimate the length and intensity of our future emotions.
 ** Udacity
 
 *** Standard Maven Layout                                 :drill:
-SCHEDULED: <2016-01-12 Tue>
+SCHEDULED: <2016-01-15 Fri>
 :PROPERTIES:
 :ID:       3f3d6cb8-fe88-4dc8-aaba-ea786e50e6ea
-:DRILL_LAST_INTERVAL: 1.6379
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 3.4454
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:25]
+:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:28]
 :END:
 
 What is the standard maven layout?
