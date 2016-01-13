@@ -557,11 +557,20 @@ Integer.toString(100, 2); // prints 1100100 - binary
 Integer.toString(100,16); // prints 64 - hex
 
 *** Math Min and Max values                                           :drill:
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       cda0c464-b768-4628-9e69-c408e1bff97e
+:DRILL_LAST_INTERVAL: 1.9066
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:58]
 :END:
 
-How to do you get the min and max value of a number?
+How to do you get the min and max value of a number type in Java?
 
 **** Answer
 
@@ -594,8 +603,17 @@ http://stackoverflow.com/questions/3884793/minimum-values-and-double-min-value-i
 
 
 *** Overloaded Return Types                                           :drill:
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       b9e3c6f1-927a-487f-b702-28b958ddb849
+:DRILL_LAST_INTERVAL: 1.6622
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
 :END:
 
 Can you overload a method by return type in Java?
@@ -626,8 +644,17 @@ methods; the bridge method and the method being overridden would have the same
 signature but different return types.
 #+END_QUOTE
 *** Clone Array                                                       :drill:
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       1d1f12f4-cb3a-4c7a-bbe0-9897a3e5ced1
+:DRILL_LAST_INTERVAL: 1.7432
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
 :END:
 
 What type does Array.clone return?
@@ -2033,8 +2060,17 @@ How to you speed up hashCode?
 Cache the value in a private field.  Don't skip fields because the has will be unbalanced.
 
 *** Item 10: Why override toString                                    :drill:
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       4be4efec-848a-4cb3-9617-e3fe055050e0
+:DRILL_LAST_INTERVAL: 1.202
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:56]
 :END:
 
 Why should you override toString?
@@ -2048,8 +2084,17 @@ It makes a class much more pleasant to use.  Compare:
 
 
 *** Item 10: override toString format                                 :drill:
+SCHEDULED: <2016-01-13 Wed>
 :PROPERTIES:
 :ID:       d23d8b5b-7371-462a-ab3e-11e3615c244e
+:DRILL_LAST_INTERVAL: 1.176
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:56]
 :END:
 
 What info should be in toString?
@@ -2063,8 +2108,17 @@ All of the interesting information. For a PhoneBook class:
 The string should be self explanatory.
 
 *** Item 10: override toString format specification                   :drill:
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       da560596-fcfe-44a1-b831-6af67b1ec2fa
+:DRILL_LAST_INTERVAL: 1.5318
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
 :END:
 
 When should you specify the value of toString?
@@ -2079,11 +2133,20 @@ You should provide a static factory to convert between the string and Object.
 Either way, clearly document your intentions.
 
 *** Item 10: override toString: programmatic access                   :drill:
+SCHEDULED: <2016-01-14 Thu>
 :PROPERTIES:
 :ID:       d67a1839-8010-4466-aeb1-5493e8c1d4b6
+:DRILL_LAST_INTERVAL: 1.6346
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
 :END:
 
-Should you provide programmatic asses to all info in toString?
+Should you provide programmatic access to all info in toString?
 
 **** Answer
 
