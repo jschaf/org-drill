@@ -36,6 +36,34 @@ dired-get-marked-files
 *** Median 1                                                        :drill: SCHEDULED: <2015-12-28 Mon> :PROPERTIES: :ID:       6be85ae3-7fbb-42d7-9f95-3c57fba17c95 :DRILL_LAST_INTERVAL: 1.0061 :DRILL_REPEATS_SINCE_FAIL: 2 :DRILL_TOTAL_REPEATS: 1 :DRILL_FAILURE_COUNT: 0 :DRILL_AVERAGE_QUALITY: 4.0 :DRILL_EASE: 2.5 :DRILL_LAST_QUALITY: 4 :DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:36] :END: What is the median?  How is defined for an odd set of number and an even set of numbers? **** Answer It's the middle number.  If the number of elements is even, the median is the mean of the middle two numbers.
 
 ** Object Oriented Programming
+*** Open Closed Principle                                             :drill:
+:PROPERTIES:
+:ID:       e5f77354-5bc9-4c14-95de-09ba86eb1f9f
+:END:
+
+What is the open closed principle?
+
+**** Answer
+
+Software entities (classes, modules, functions, etc...) should be open for
+extension, but closed for modification.
+
+-- Bertrand Meyer
+
+
+There's some contention about it's viability at Jon Skeet's blog.  He suggests a
+better variation of:
+
+http://codeblog.jonskeet.uk/2013/03/15/the-open-closed-principle-in-review/
+
+"Identify points of predicted variation and create a stable interface around
+them."
+
+Which is similar to Bloch's advice of "design for inheritance or prohibit it."
+
+
+
+https://en.wikipedia.org/wiki/Open/closed_principle
 
 *** Benefits of OOP                                                 :drill:
 SCHEDULED: <2016-01-17 Sun>
@@ -305,17 +333,17 @@ What are Java's reference types and when do they get garbage collected?
 + PhantomReference - relate to cleanup and offer notification before finalization
 
 *** Formatting String                                                 :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-24 Sun>
 :PROPERTIES:
 :ID:       fc8e3d5f-db93-4482-a0b9-5b55cec511c8
-:DRILL_LAST_INTERVAL: 4.156
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.107
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:06]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
 :END:
 
 How do you format a string in Java?
@@ -497,17 +525,17 @@ What other conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Flags                                                 :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-18 Mon>
 :PROPERTIES:
 :ID:       28483543-3abc-46e8-9d14-dbaa606e6ca8
-:DRILL_LAST_INTERVAL: 1.5258
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 4.0449
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.333
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:38]
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:17]
 :END:
 
 What flags does java.util.Formatter support?
@@ -557,17 +585,17 @@ Integer.toString(100, 2); // prints 1100100 - binary
 Integer.toString(100,16); // prints 64 - hex
 
 *** Math Min and Max values                                           :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       cda0c464-b768-4628-9e69-c408e1bff97e
-:DRILL_LAST_INTERVAL: 1.9066
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 5.8277
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:58]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:21]
 :END:
 
 How to do you get the min and max value of a number type in Java?
@@ -603,17 +631,17 @@ http://stackoverflow.com/questions/3884793/minimum-values-and-double-min-value-i
 
 
 *** Overloaded Return Types                                           :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-18 Mon>
 :PROPERTIES:
 :ID:       b9e3c6f1-927a-487f-b702-28b958ddb849
-:DRILL_LAST_INTERVAL: 1.6622
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.262
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:25]
 :END:
 
 Can you overload a method by return type in Java?
@@ -644,17 +672,17 @@ methods; the bridge method and the method being overridden would have the same
 signature but different return types.
 #+END_QUOTE
 *** Clone Array                                                       :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       1d1f12f4-cb3a-4c7a-bbe0-9897a3e5ced1
-:DRILL_LAST_INTERVAL: 1.7432
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.9444
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:18]
 :END:
 
 What type does Array.clone return?
@@ -690,17 +718,17 @@ Singleton is a class which only has one instance in a whole application. The
 class provides a getInstance() method to access the singleton instances.
 
 *** Singleton 2                                                       :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       5e4c1b0b-ede4-43cf-943d-d83c847691ac
-:DRILL_LAST_INTERVAL: 3.6183
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 7.3544
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.857
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:11]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:26]
 :END:
 
 What are the advantages of a Singleton pattern?
@@ -737,17 +765,17 @@ What are the disadvantages of a Singleton pattern?
 + Inability to subclass because of private constructor.
 
 *** Singleton 4                                                       :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       f6b95c46-c338-4c84-bcb6-8773f38d6282
-:DRILL_LAST_INTERVAL: 9.3512
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 23.5836
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:04]
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.42
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:18]
 :END:
 
 What are the alternatives to a Singleton pattern?
@@ -844,17 +872,17 @@ Adjacent items are repeatedly compared.
 https://en.wikipedia.org/wiki/Bubble_sort
 
 *** Quick Sort                                                      :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       A9B6BC51-C1E8-46DC-9288-9EFF8126261A
-:DRILL_LAST_INTERVAL: 9.3439
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 26.3435
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:22]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:22]
 :END:
 
 What is quicksort's running time and space complexity?
@@ -924,17 +952,17 @@ Chaining and Open addressing
 
 
 *** Hash Table Open Addressing                                      :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
 :ID:       1940C116-6088-47FD-A81B-9B3E190113D7
-:DRILL_LAST_INTERVAL: 7.856
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 17.3909
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.75
-:DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-05 Tue 22:04]
+:DRILL_AVERAGE_QUALITY: 2.778
+:DRILL_EASE: 1.94
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:21]
 :END:
 
 What are the common techniques for implementing open addressing?
@@ -1143,17 +1171,17 @@ Scheme for resolving hash collisions in a table using open addressing.
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       8C596422-5A0D-4635-A98A-C103638C5760
-:DRILL_LAST_INTERVAL: 1.1232
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 2.5179
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_AVERAGE_QUALITY: 2.889
 :DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:39]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:28]
 :END:
 
 What are the different methods of IPC?
@@ -1251,17 +1279,17 @@ What are the motivating factors for concurrency?
   coordinate them
 
 *** Thread Benefits                                                 :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       3acd0416-3113-4401-a5f4-58af124d3050
-:DRILL_LAST_INTERVAL: 9.6704
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 23.3604
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:21]
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
 :END:
 
 What are the benefits of threads?
@@ -1316,17 +1344,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       d42c342e-3741-4bb0-b310-d01cab81551d
-:DRILL_LAST_INTERVAL: 1.6295
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.7983
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:36]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:21]
 :END:
 
 What is a covariant return type?
@@ -1622,17 +1650,17 @@ Subclass the abstract class and instantiate the subclass.
 Effective Java 4
 
 *** Item 05: Unnecessary Objects                                      :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 1.4997
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 3.0239
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.626
+:DRILL_AVERAGE_QUALITY: 2.779
 :DRILL_EASE: 1.8
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:38]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:27]
 :END:
 
 How can you avoid unnecessary objects?
@@ -1734,17 +1762,17 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 1.5769
+:DRILL_LAST_INTERVAL: 1.7296
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.667
-:DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:39]
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.42
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:35]
 :END:
 
 What are the issues with finalizers?
@@ -1858,18 +1886,18 @@ fork, change random colors, parent, privacy drapes.
 4. The class is private or package private and you know equals is never called.
    In which case, you should override it and throw an assertion error.
 
-*** Item  08: Equals method general contracts                         :drill:
-SCHEDULED: <2016-01-14 Thu>
+*** Item 08: Equals method general contracts                         :drill:
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       7e040020-d7c2-4719-a33c-f410238fb22d
-:DRILL_LAST_INTERVAL: 5.1279
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 14.3393
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:17]
 :END:
 
 What are the general contracts for the equals method?
@@ -1883,17 +1911,17 @@ What are the general contracts for the equals method?
 + Non-Nullity, x.equals(null) must be false.
 
 *** Item 08: High Quality Equals                                      :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-25 Mon>
 :PROPERTIES:
 :ID:       fed0c121-7d93-476c-b640-1e849ec31f5a
-:DRILL_LAST_INTERVAL: 4.4534
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 10.5946
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:08]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:18]
 :END:
 
 What are the steps to a high quality equals method?
@@ -1911,17 +1939,17 @@ What are the steps to a high quality equals method?
    transitive, consistent and non-nullity.
 
 *** Item 08: Equals overloading                                       :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       ed57b79c-3dcb-45ce-ae9f-7e1b1fd018e9
-:DRILL_LAST_INTERVAL: 4.9026
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.5419
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-08 Fri 17:04]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:21]
 :END:
 
 What does the argument type have to be when overriding equals?
@@ -1931,17 +1959,17 @@ What does the argument type have to be when overriding equals?
 Object o, otherwise you're overloading equals instead of overriding it.
 
 *** Item 08: High Quality Equals Impl                                 :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-24 Sun>
 :PROPERTIES:
 :ID:       fe0f1e4b-4282-478e-8dbf-295384c0a8d4
-:DRILL_LAST_INTERVAL: 4.5354
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 10.1128
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:07]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
 :END:
 
 What does a correct equals method look like?
@@ -1958,7 +1986,7 @@ public boolean equals(Object o) {
     }
     MyClass myClass = (MyClass) o;
     return myClass.field1 == this.field1
-        && myClass.field2 == this.field2;
+        && Objects.equals(myClass.field2, this.field2);
 
 }
 #+END_SRC
@@ -1985,17 +2013,17 @@ Whenever you override equals.  If you don't, you'll violate the general contract
 for Object.hashCode.
 
 *** Item 09: hashCode general contract                                :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       1aa1df92-7da1-4f7d-b75e-145bbd22fadb
-:DRILL_LAST_INTERVAL: 3.8953
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.3111
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:22]
 :END:
 
 What is the general contract for Object.hashCode?
@@ -2008,17 +2036,17 @@ What is the general contract for Object.hashCode?
    different objects.
 
 *** Item 09: hashCode impl                                            :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-25 Mon>
 :PROPERTIES:
 :ID:       d55ad317-672d-4bee-ab65-d11c8941a4d8
-:DRILL_LAST_INTERVAL: 4.1136
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 11.1012
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.571
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:19]
+:DRILL_AVERAGE_QUALITY: 2.875
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:27]
 :END:
 
 How do you implement hashCode for an object?
@@ -2039,18 +2067,18 @@ How do you implement hashCode for an object?
 
    result = 31 * result + c;
 
-*** Item 09: hashCode optimizations                                  :drill:
-SCHEDULED: <2016-01-13 Wed>
+*** Item 09: hashCode optimizations                                   :drill:
+SCHEDULED: <2016-01-24 Sun>
 :PROPERTIES:
 :ID:       078c43bc-8da6-4529-9389-a9d7b8f9b156
-:DRILL_LAST_INTERVAL: 3.5847
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 9.515
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:07]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:13]
 :END:
 
 How to you speed up hashCode?
@@ -2060,17 +2088,17 @@ How to you speed up hashCode?
 Cache the value in a private field.  Don't skip fields because the has will be unbalanced.
 
 *** Item 10: Why override toString                                    :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       4be4efec-848a-4cb3-9617-e3fe055050e0
-:DRILL_LAST_INTERVAL: 1.202
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.2566
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:56]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
 :END:
 
 Why should you override toString?
@@ -2082,19 +2110,18 @@ It makes a class much more pleasant to use.  Compare:
 {Jenny=PhoneNumber@163b91}
 {Jenny=(707) 867-5390}
 
-
 *** Item 10: override toString format                                 :drill:
-SCHEDULED: <2016-01-13 Wed>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       d23d8b5b-7371-462a-ab3e-11e3615c244e
-:DRILL_LAST_INTERVAL: 1.176
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.2378
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:56]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
 :END:
 
 What info should be in toString?
@@ -2108,17 +2135,17 @@ All of the interesting information. For a PhoneBook class:
 The string should be self explanatory.
 
 *** Item 10: override toString format specification                   :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       da560596-fcfe-44a1-b831-6af67b1ec2fa
-:DRILL_LAST_INTERVAL: 1.5318
+:DRILL_LAST_INTERVAL: 1.7133
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:33]
 :END:
 
 When should you specify the value of toString?
@@ -2133,17 +2160,17 @@ You should provide a static factory to convert between the string and Object.
 Either way, clearly document your intentions.
 
 *** Item 10: override toString: programmatic access                   :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       d67a1839-8010-4466-aeb1-5493e8c1d4b6
-:DRILL_LAST_INTERVAL: 1.6346
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.808
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:57]
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:17]
 :END:
 
 Should you provide programmatic access to all info in toString?
@@ -2152,7 +2179,188 @@ Should you provide programmatic access to all info in toString?
 
 Yes.
 
+*** Item 11: Override Clone Judiciously - Copy Constructors Bad       :drill: 
+SCHEDULED: <2016-01-16 Sat>
+:PROPERTIES:
+:ID:       ebdb7479-7e0e-4ba0-a409-5d2978810b3f
+:DRILL_LAST_INTERVAL: 1.7077
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:29]
+:END:
 
+Should you use copy constructors?
+
+**** Answer
+
+Public copy constructors are bad because you get tight coupling on all the
+fields.
+
+If you extend a field's subclass, there's not an easy way to clone that subfield
+
+http://www.agiledeveloper.com/articles/cloning072002.htm
+
+*** Item 11: Override Clone Judiciously - interface                   :drill:
+SCHEDULED: <2016-01-15 Fri>
+:PROPERTIES:
+:ID:       47e02ec5-8662-4247-92ce-040951f211d4
+:DRILL_LAST_INTERVAL: 1.482
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:28]
+:END:
+
+What interface do you use to implement clone?
+
+**** Answer
+
+Cloneable
+
+*** Item 11: Override Clone Judiciously - semantics                   :drill:
+SCHEDULED: <2016-01-15 Fri>
+:PROPERTIES:
+:ID:       2d019765-a799-40ba-86bd-599258d1e641
+:DRILL_LAST_INTERVAL: 1.4756
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:28]
+:END:
+
+What does cloneable do?
+
+**** Answer
+
+It determines the behavior of Object's protected clone implementation.  If a
+class implements Cloneable, clone returns a field-by-field copy.  Otherwise, it
+throws a CloneNotSupportedException.
+
+*** Item 11: Override Clone Judiciously - contract                    :drill:
+SCHEDULED: <2016-01-16 Sat>
+:PROPERTIES:
+:ID:       883c47bb-108e-4f5a-8e00-e5d8d70e0760
+:DRILL_LAST_INTERVAL: 1.6117
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:29]
+:END:
+
+What is the general contract for clone?
+
+**** Answer
+
+x.clone() != x
+
+x.clone().getClass() == x.getClass() // Not 100% required
+
+x.clone().equals(x) // Not 100% required.
+
+
+*** Item 11: Override Clone Judiciously - nonfinal class              :drill:
+SCHEDULED: <2016-01-15 Fri>
+:PROPERTIES:
+:ID:       a8c9d998-919e-47f5-a521-bafe40dc0141
+:DRILL_LAST_INTERVAL: 1.4634
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:32]
+:END:
+
+What type should you return in a clone of a nonfinal class?
+
+**** Answer
+
+The object obtained by invoking super.clone() because programmer's expect that
+calling super.clone on a child will return an object of that type.  The only
+way that a superclass can provide that functionality is to return an object
+obtained by calling super.clone()
+
+*** Item 11: Override Clone Judiciously - drawbacks                   :drill:
+SCHEDULED: <2016-01-15 Fri>
+:PROPERTIES:
+:ID:       0c51568b-767d-4463-a4b7-b02b158d2786
+:DRILL_LAST_INTERVAL: 1.4984
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:35]
+:END:
+
+What are the drawbacks of clone?
+
+**** Answer
+
++ extralingustic object creation
++ unenforceable adherence to thinly documented conventions
++ conflict with final fields since you can't modify final fields outside a
+  constructor.
+
+*** Item 11: Override Clone Judiciously - alternatives                :drill:
+SCHEDULED: <2016-01-16 Sat>
+:PROPERTIES:
+:ID:       37901341-bdac-4c0d-b6e8-3d786082771e
+:DRILL_LAST_INTERVAL: 1.5317
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:31]
+:END:
+
+What are the alternatives of clone?
+
+**** Answer
+
++ copy constructor
++ static factory
+ 
+*** Item 11: Override Clone Judiciously - Proper impl                 :drill:
+SCHEDULED: <2016-01-15 Fri>
+:PROPERTIES:
+:ID:       1666a35c-8474-4c2d-8e4a-31e9338b8bd7
+:DRILL_LAST_INTERVAL: 1.4221
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:34]
+:END:
+
+How should you implement clone if you must?
+
+**** Answer
+
+ http://www.agiledeveloper.com/articles/cloning072002.htm
+
++ Implement the clone method
++ Use a protected copy constructor to initialize final fields, protected so you
+  don't get tight dependencies.
 
 * Consulting
 
@@ -2261,17 +2469,17 @@ rise in tandem, which results in no permanent gain in happiness.
 
 
 *** Build a system                                                    :drill:
-SCHEDULED: <2016-01-14 Thu>
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       5657a814-6be2-479d-9ba5-bc806e578282
-:DRILL_LAST_INTERVAL: 1.7769
+:DRILL_LAST_INTERVAL: 1.7374
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 3
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 4
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:38]
+:DRILL_EASE: 2.18
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:33]
 :END:
 
 What are the steps to build a system instead of a goal?
@@ -2516,3 +2724,48 @@ NOTICE.txt
 README.txt
 
 https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
+* Excel
+** Formulas
+*** Index and Match                                                   :drill:
+SCHEDULED: <2016-01-16 Sat>
+:PROPERTIES:
+:ID:       09e90c89-c6a4-4599-9bde-1768676aa2da
+:DRILL_LAST_INTERVAL: 1.5742
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:33]
+:END:
+
+Given the a data table and a summary table below, how do you get the missing
+column to populate with index and match?
+
+*Table 1*
+
+| Last Name  | First Name | Rank |
+|------------+------------+------|
+| Patton     | George     | 2LT  |
+| Washington | George     | CPT  |
+
+*Table 2*
+
+| Last Name  | Rank           |
+|------------+----------------|
+| Patton     | <FORMULA HERE> |
+| Washington |                |
+
+
+
+**** Answer
+
+#+BEGIN_SRC 
+
+INDEX(Table1,                                     // The table to search
+      MATCH([@[Last Name]], Table1[Last Name]),   // Get the row of the last name in a specific column.
+      3)                                          // Column number to pull from, starts from 1
+#+END_SRC
+
+
