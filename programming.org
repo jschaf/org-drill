@@ -37,8 +37,17 @@ dired-get-marked-files
 
 ** Object Oriented Programming
 *** Open Closed Principle                                             :drill:
+SCHEDULED: <2016-01-16 Sat>
 :PROPERTIES:
 :ID:       e5f77354-5bc9-4c14-95de-09ba86eb1f9f
+:DRILL_LAST_INTERVAL: 1.3913
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:51]
 :END:
 
 What is the open closed principle?
@@ -381,17 +390,17 @@ What is the syntax for a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - General Conversions                                   :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-22 Fri>
 :PROPERTIES:
 :ID:       1186f080-5d43-40a7-8045-7aae066f84b1
-:DRILL_LAST_INTERVAL: 3.0405
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 7.0423
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:27]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:42]
 :END:
 
 What general conversions are supported in a format specifier?
@@ -408,17 +417,17 @@ What general conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Character Conversions                                 :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       25a7e8cc-dd99-40cf-9642-8e46cfb690ed
-:DRILL_LAST_INTERVAL: 3.2522
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 8.0338
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:44]
 :END:
 
 What character conversions are supported in a format specifier?
@@ -452,17 +461,17 @@ What Integral conversions are supported in a format specifier?
 + x, X - hexadecimal integer
 
 *** Formatter - Floating Point Conversions                           :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
-:DRILL_LAST_INTERVAL: 3.4519
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 7.7725
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:25]
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:43]
 :END:
 
 What floating point conversions are supported in a format specifier?
@@ -1302,17 +1311,17 @@ What are the benefits of threads?
 + More responsive user interface.
 
 *** Thread vs Process                                               :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       2505D78D-4817-463B-B40A-CCD23232BD24
-:DRILL_LAST_INTERVAL: 11.4773
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 24.5691
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_AVERAGE_QUALITY: 3.4
 :DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:19]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:45]
 :END:
 
 Whats the difference between threads and processes?
@@ -1511,17 +1520,17 @@ What pattern can you use to replace telescoping constructors?
 The builder pattern.
 
 *** Item 02: Builder Pattern 1                                        :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       78c527a6-6450-41df-aa53-de80b6d16a74
-:DRILL_LAST_INTERVAL: 11.2754
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 27.1063
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.6
 :DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:17]
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:51]
 :END:
 
 What are the advantages to the builder pattern?
@@ -1533,17 +1542,17 @@ What are the advantages to the builder pattern?
   parameters, "say 4 or more"
 
 *** Item 02: Builder Pattern 2                                        :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       6a76637e-5331-48fa-8e54-91ddebe1d184
-:DRILL_LAST_INTERVAL: 10.9006
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 25.4665
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:21]
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:46]
 :END:
 
 How do you make an abstract factory from a builder pattern?
@@ -1859,17 +1868,17 @@ How should you implement finalizers if you must?
 
 ** Methods Common to All Objects
 *** Item 08: Don't Override Equals                                    :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       3e2e805b-2665-456a-b24e-331c47727060
-:DRILL_LAST_INTERVAL: 3.372
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 8.1161
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.143
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:25]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:43]
 :END:
 
 What conditions should you not override equals?
@@ -2205,17 +2214,17 @@ If you extend a field's subclass, there's not an easy way to clone that subfield
 http://www.agiledeveloper.com/articles/cloning072002.htm
 
 *** Item 11: Override Clone Judiciously - interface                   :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       47e02ec5-8662-4247-92ce-040951f211d4
-:DRILL_LAST_INTERVAL: 1.482
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.6165
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:28]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:41]
 :END:
 
 What interface do you use to implement clone?
@@ -2225,17 +2234,17 @@ What interface do you use to implement clone?
 Cloneable
 
 *** Item 11: Override Clone Judiciously - semantics                   :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       2d019765-a799-40ba-86bd-599258d1e641
-:DRILL_LAST_INTERVAL: 1.4756
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.6095
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:28]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:39]
 :END:
 
 What does cloneable do?
@@ -2270,19 +2279,18 @@ x.clone().getClass() == x.getClass() // Not 100% required
 
 x.clone().equals(x) // Not 100% required.
 
-
 *** Item 11: Override Clone Judiciously - nonfinal class              :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       a8c9d998-919e-47f5-a521-bafe40dc0141
-:DRILL_LAST_INTERVAL: 1.4634
+:DRILL_LAST_INTERVAL: 1.5466
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:32]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:52]
 :END:
 
 What type should you return in a clone of a nonfinal class?
@@ -2295,24 +2303,24 @@ way that a superclass can provide that functionality is to return an object
 obtained by calling super.clone()
 
 *** Item 11: Override Clone Judiciously - drawbacks                   :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       0c51568b-767d-4463-a4b7-b02b158d2786
-:DRILL_LAST_INTERVAL: 1.4984
+:DRILL_LAST_INTERVAL: 1.5282
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.333
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.6
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:35]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:52]
 :END:
 
 What are the drawbacks of clone?
 
 **** Answer
 
-+ extralingustic object creation
++ extra-linguistic object creation
 + unenforceable adherence to thinly documented conventions
 + conflict with final fields since you can't modify final fields outside a
   constructor.
@@ -2339,17 +2347,17 @@ What are the alternatives of clone?
 + static factory
  
 *** Item 11: Override Clone Judiciously - Proper impl                 :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-18 Mon>
 :PROPERTIES:
 :ID:       1666a35c-8474-4c2d-8e4a-31e9338b8bd7
-:DRILL_LAST_INTERVAL: 1.4221
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 2.7407
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:34]
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:44]
 :END:
 
 How should you implement clone if you must?
@@ -2361,6 +2369,176 @@ How should you implement clone if you must?
 + Implement the clone method
 + Use a protected copy constructor to initialize final fields, protected so you
   don't get tight dependencies.
+
+*** Item 12: Consider Implementing Comparable: Interface              :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       7d645124-9390-464b-80c4-a6cb9abeedc0
+:DRILL_LAST_INTERVAL: 1.8065
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:50]
+:END:
+
+How do you implement the Comparable interface?
+
+**** Answer
+
+#+BEGIN_SRC java
+class MyClass implements Comparable {
+    @Override
+    public int compareTo(MyClass other) {
+        return -1;
+    }
+}
+#+END_SRC
+
+*** Item 12: Consider Implementing Comparable: Contract               :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       ebfcf743-d916-43ea-a93d-78f501f6b61f
+:DRILL_LAST_INTERVAL: 1.6865
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:48]
+:END:
+
+What is the general contract of Comparable?
+
+**** Answer
+
+- Reflexive: ~sgn(x.compareTo(y)) == -sgn(y.compareTo(x))~
+- Transitive: ~(x.compareTo(y) > 0 && y.compareTo(z) > 0~ implies
+  ~x.compareTo(z) > 0~
+- Symmetry: ~x.compareTo(y) == 0~ implies that ~sgn(x.compareTo(z)) ==
+  sgn(y.compareTo(z))~
+- Strongly recommended that if ~x.compareTo(y) == 0~ then ~x.equals(y)~
+ 
+*** Item 12: Consider Implementing Comparable: compareTo not consistent with equals :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       7f740588-9ca2-4c51-ac09-8a91d1c65e42
+:DRILL_LAST_INTERVAL: 1.6519
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:52]
+:END:
+
+What should you do if compareTo is not consistent with equals?  That is,
+
+~x.compareTo(y) == 0 && !x.equals(y)~
+
+**** Answer
+
+Put the following in the documentation:
+
+"Note: This class has a natural ordering that is inconsistent with equals."
+
+*** Item 12: Consider Implementing Comparable: Extend Value class     :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       a01ffdfe-96ea-41a4-948c-1f0527e090a7
+:DRILL_LAST_INTERVAL: 1.5184
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:50]
+:END:
+
+What is the problem with comparable and a value class?
+
+**** Answer
+
+There is no way to extend an instantiable class with a new value component while
+preserving the compareTo contract.
+
+If you want to add a value component to a class that implements Comparable,
+write an unrelated class containing an instance of the first class and provide a
+view method that returns the instance.  Then, you are free to implement your own
+~compareTo~.
+
+*** Item 12: Consider Implementing Comparable: Impl                   :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       5a6fa657-f96d-4a9b-a46c-4c90da10704b
+:DRILL_LAST_INTERVAL: 1.6173
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:47]
+:END:
+
+What does an implementation for Comparable look like?
+
+**** Answer
+
+#+BEGIN_SRC java
+
+public int compareTo(PhoneNumber pn) {
+    // Compare area coes
+    if (areaCode < pn.areaCode)
+        return -1;
+    if (areaCode > pn.areaCode)
+        return 1;
+
+    // Area codes are equal, compare prefixes
+    if (prefix < pn.prefix)
+        return -1;
+    if (prefix > pn.prefix)
+        return 1;
+
+    // All fields equal
+    return 0;
+}
+#+END_SRC
+
+*** Item 12: Consider Implementing Comparable: Guava Impl             :drill:
+SCHEDULED: <2016-01-16 Sat>
+:PROPERTIES:
+:ID:       ecd99002-0134-43ff-b96d-f0b7a5efad52
+:DRILL_LAST_INTERVAL: 1.2044
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:48]
+:END:
+
+What does an implementation for Comparable look like with Guava?
+
+**** Answer
+
+#+BEGIN_SRC java
+
+public int compareTo(PhoneNumber pn) {
+    return ComparisonChain.start()
+        .compare(areaCode, pn.areaCode)
+        .compare(prefix, pn.prefix)
+        .result();
+}
+#+END_SRC
+
+
 
 * Consulting
 
@@ -2523,17 +2701,17 @@ Why?
 Because I want to settle down and start a family.
 
 *** Keystone Habit                                                    :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       935adb91-8ffe-42dc-9ba9-d59003dd78d9
-:DRILL_LAST_INTERVAL: 6.2522
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 13.5272
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.833
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:41]
 :END:
 
 What is a keystone habit and how do identify it?
@@ -2689,17 +2867,17 @@ The tendency to overestimate the length and intensity of our future emotions.
 ** Udacity
 
 *** Standard Maven Layout                                 :drill:
-SCHEDULED: <2016-01-15 Fri>
+SCHEDULED: <2016-01-24 Sun>
 :PROPERTIES:
 :ID:       3f3d6cb8-fe88-4dc8-aaba-ea786e50e6ea
-:DRILL_LAST_INTERVAL: 3.4454
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 8.5585
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_AVERAGE_QUALITY: 3.4
 :DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:28]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:42]
 :END:
 
 What is the standard maven layout?
