@@ -37,17 +37,17 @@ dired-get-marked-files
 
 ** Object Oriented Programming
 *** Open Closed Principle                                             :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-17 Sun>
 :PROPERTIES:
 :ID:       e5f77354-5bc9-4c14-95de-09ba86eb1f9f
-:DRILL_LAST_INTERVAL: 1.3913
+:DRILL_LAST_INTERVAL: 1.4153
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:51]
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:10]
 :END:
 
 What is the open closed principle?
@@ -98,19 +98,18 @@ What are the benefits of OO Programing?
 + Pluggability
 
 ** Java Language
-
 *** Variable Basics                                                 :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       dfe6c5a9-33b5-4933-a2c1-9f57ab726506
-:DRILL_LAST_INTERVAL: 4.1131
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 12.3569
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:32]
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:00]
 :END:
 
 What are the 4 types of variables in Java?
@@ -439,17 +438,17 @@ What character conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Integral Conversions                                  :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
-:DRILL_LAST_INTERVAL: 3.8267
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 10.5243
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:24]
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:58]
 :END:
 
 What Integral conversions are supported in a format specifier?
@@ -510,17 +509,17 @@ What is the Date time prefix in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Other Conversions                                     :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       3a979001-89ca-449c-beca-727caaaa4dd6
-:DRILL_LAST_INTERVAL: 4.103
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.2291
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:30]
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:56]
 :END:
 
 What other conversions are supported in a format specifier?
@@ -562,17 +561,17 @@ What flags does java.util.Formatter support?
 + '('     enclose negative numbers in parenthesis
 
 *** Integral different base                                         :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-23 Sat>
 :PROPERTIES:
 :ID:       9e2f790c-c1e8-4897-bfc5-cd766456d76e
-:DRILL_LAST_INTERVAL: 3.7458
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 7.3481
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:18]
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:57]
 :END:
 
 How do you get an integral representation in different bases?
@@ -638,7 +637,6 @@ Double.POSITIVE_INFINITY
 http://stackoverflow.com/questions/3884793/minimum-values-and-double-min-value-in-java
 
 
-
 *** Overloaded Return Types                                           :drill:
 SCHEDULED: <2016-01-18 Mon>
 :PROPERTIES:
@@ -700,6 +698,140 @@ What type does Array.clone return?
 
 As of Java 1.5, it returns a shallow copy of the array with the same return
 type.
+
+*** Class initialization order                                        :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       b5363986-8d46-4f21-87ad-3299e06cd59e
+:DRILL_LAST_INTERVAL: 1.4067
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:15]
+:END:
+
+What order are classes initialized in the following code?
+
+#+BEGIN_SRC java
+package pkg;
+
+public class LoadTest {
+    public static void main(String[] args) {
+        System.out.println("START");
+        new Child();
+        System.out.println("END");
+    }
+}
+
+class Parent extends Grandparent {
+    // Instance init block
+    { System.out.println("instance - parent"); }
+
+    // Constructor
+    public Parent() { System.out.println("constructor - parent"); }
+
+    // Static init block
+    static { System.out.println("static - parent"); }
+}
+
+class Grandparent {
+    // Static init block
+    static { System.out.println("static - grandparent"); }
+
+    // Instance init block
+    { System.out.println("instance - grandparent"); }
+
+    // Constructor
+    public Grandparent() { System.out.println("constructor - grandparent"); }
+}
+
+class Child extends Parent {
+    // Constructor
+    public Child() { System.out.println("constructor - child"); }
+
+    // Static init block
+    static { System.out.println("static - child"); }
+
+    // Instance init block
+    { System.out.println("instance - child"); }
+}
+#+END_SRC
+
+**** Answer
+
+START
+static - grandparent
+static - parent
+static - child
+instance - grandparent
+constructor - grandparent
+instance - parent
+constructor - parent
+instance - child
+constructor - child
+END
+
+http://stackoverflow.com/questions/23093470/java-order-of-initialization-and-instantiation
+http://stackoverflow.com/questions/2007666/in-what-order-do-static-initializer-blocks-in-java-run
+http://docs.oracle.com/javase/specs/jls/se8/html/jls-12.html#jls-12.4.1
+
+*** Class intialization                                               :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       4a16e638-6b5f-4650-9269-7e534efd74c4
+:DRILL_LAST_INTERVAL: 1.3411
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:15]
+:END:
+
+When are Java classes intialized?
+
+**** Answer
+
+A class or interface is initialized on first access of non-compile-time constant:
+
++ assigning compile time constants
++ recursively initializing the superclass
++ processing the static initializers (if not already complete)
+
+Initialization does not occur when accessing fields that are compile time constants. 
+
+http://stackoverflow.com/questions/23093470/java-order-of-initialization-and-instantiation
+
+*** Compile time constants                                            :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       2c7534cd-5b20-42ad-b72b-114fa56ff988
+:DRILL_LAST_INTERVAL: 1.365
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:12]
+:END:
+
+What are compile time constants in Java?
+
+**** Answer
+
++ Literals of primitive types and literal strings.
++ Casts to primitive types and strings.
++ All operators excepts ++ and --
++ Simple and qualified names that refer to constant expressions.
+
+http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
+
+
 
 ** Design Patterns
 
@@ -1396,6 +1528,33 @@ class D extends C {
     }
 }
 #+END_SRC
+** Benefits
+*** Encapsulation                                                     :drill:
+SCHEDULED: <2016-01-18 Mon>
+:PROPERTIES:
+:ID:       1b9d6914-6168-442a-9988-facdd843d607
+:DRILL_LAST_INTERVAL: 1.5066
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:11]
+:END:
+
+What are the benefits of encapsulation?
+
+**** Answer
+
+1. Decouples modules that compromise a system, allowing them to be developed,
+   tested, optimized in isolation.
+2. Eases the maintenance burden because modules can be understood more quickly
+   and debugged with little fear of harming other modules.
+3. Modules can be optimized with affecting the correctness of other modules.
+4. Increases software reuse because modules that aren't tightly coupled can be
+   used in unrelated contexts.
+
 * Effective Java
 ** Creating and Destroying Objects
 *** Item 01: Static Factories vs Constructors                         :drill:
@@ -1477,17 +1636,17 @@ What are common names of a static factory?
 + new/Type/ - like new instance, but with a new /Type/
 
 *** Item 02: Disadvantages of telescoping constructors              :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       5d0e59cb-1bd6-4b82-899d-40eff3015e27
-:DRILL_LAST_INTERVAL: 11.9503
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 30.634
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-04 Mon 01:18]
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:06]
 :END:
 
 What are the disadvantages of telescoping constructors?
@@ -1771,17 +1930,17 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 1.7296
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 3.8136
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_AVERAGE_QUALITY: 2.889
 :DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:35]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:05]
 :END:
 
 What are the issues with finalizers?
@@ -1845,17 +2004,17 @@ What are valid use cases for finalizers?
 + Native peers, assuming the native peer holds no critical resources.
 
 *** Item 07: Avoid Finalizers - Safe Impl                             :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       6262a0ed-cd87-446f-b258-f05c1037d8c9
-:DRILL_LAST_INTERVAL: 3.75
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 10.8932
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:02]
 :END:
 
 How should you implement finalizers if you must?
@@ -2120,17 +2279,17 @@ It makes a class much more pleasant to use.  Compare:
 {Jenny=(707) 867-5390}
 
 *** Item 10: override toString format                                 :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       d23d8b5b-7371-462a-ab3e-11e3615c244e
-:DRILL_LAST_INTERVAL: 2.2378
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 5.385
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:59]
 :END:
 
 What info should be in toString?
@@ -2144,17 +2303,17 @@ All of the interesting information. For a PhoneBook class:
 The string should be self explanatory.
 
 *** Item 10: override toString format specification                   :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-21 Thu>
 :PROPERTIES:
 :ID:       da560596-fcfe-44a1-b831-6af67b1ec2fa
-:DRILL_LAST_INTERVAL: 1.7133
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.385
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:33]
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:59]
 :END:
 
 When should you specify the value of toString?
@@ -2189,17 +2348,17 @@ Should you provide programmatic access to all info in toString?
 Yes.
 
 *** Item 11: Override Clone Judiciously - Copy Constructors Bad       :drill: 
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       ebdb7479-7e0e-4ba0-a409-5d2978810b3f
-:DRILL_LAST_INTERVAL: 1.7077
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.0218
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:29]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:56]
 :END:
 
 Should you use copy constructors?
@@ -2208,6 +2367,41 @@ Should you use copy constructors?
 
 Public copy constructors are bad because you get tight coupling on all the
 fields.
+
+You can't update the instance objects, e.g. Brain, with updating the copy
+constructor.
+
+#+BEGIN_SRC java
+// Java is used in the rest of the article.
+public class Person
+{
+	private Brain brain;
+	private int age;
+	public Person(Brain aBrain, int theAge)
+	{
+		brain = aBrain; 
+		age = theAge;
+	}
+	public Person(Person another)
+	{
+		age = another.age;
+		brain = new Brain(another.brain);
+		// we assume we have a copy constructor for Brain
+	}
+	public String toString()
+	{
+		return "This is person with " + brain;
+		// Not meant to sound rude as it reads!
+	}
+}
+
+// Brain
+public class Brain
+{
+	public Brain() {}
+	public Brain(Brain another) {} // Assume proper copying of the Brain
+}
+#+END_SRC
 
 If you extend a field's subclass, there's not an easy way to clone that subfield
 
@@ -2256,17 +2450,17 @@ class implements Cloneable, clone returns a field-by-field copy.  Otherwise, it
 throws a CloneNotSupportedException.
 
 *** Item 11: Override Clone Judiciously - contract                    :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       883c47bb-108e-4f5a-8e00-e5d8d70e0760
-:DRILL_LAST_INTERVAL: 1.6117
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.6028
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:29]
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:00]
 :END:
 
 What is the general contract for clone?
@@ -2326,17 +2520,17 @@ What are the drawbacks of clone?
   constructor.
 
 *** Item 11: Override Clone Judiciously - alternatives                :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       37901341-bdac-4c0d-b6e8-3d786082771e
-:DRILL_LAST_INTERVAL: 1.5317
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.967
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:31]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:01]
 :END:
 
 What are the alternatives of clone?
@@ -2366,9 +2560,47 @@ How should you implement clone if you must?
 
  http://www.agiledeveloper.com/articles/cloning072002.htm
 
-+ Implement the clone method
++ Implement the clone method that calls a protected copy constructor
 + Use a protected copy constructor to initialize final fields, protected so you
   don't get tight dependencies.
++ clone the instance fields in the copy constructor.
++ Now you can extend the class and make it work with a new copy constructor.
+ 
+#+BEGIN_SRC java
+public class Person implements Cloneable
+{
+	private final Brain brain; // brain is final since I do not want 
+				// any transplant on it once created!
+	private int age;
+	public Person(Brain aBrain, int theAge)
+	{
+		brain = aBrain; 
+		age = theAge;
+	}
+ 	protected Person(Person another)
+	{
+		Brain refBrain = null;
+		try
+		{
+			refBrain = (Brain) another.brain.clone();
+			// You can set the brain in the constructor
+		}
+		catch(CloneNotSupportedException e) {}
+		brain = refBrain;
+		age = another.age;
+	}
+ 	public String toString()
+	{
+		return "This is person with " + brain;
+		// Not meant to sound rude as it reads!
+	}
+ 	public Object clone()
+	{
+		return new Person(this);
+	}
+ 	…
+}
+#+END_SRC
 
 *** Item 12: Consider Implementing Comparable: Interface              :drill:
 SCHEDULED: <2016-01-17 Sun>
@@ -2511,17 +2743,17 @@ public int compareTo(PhoneNumber pn) {
 #+END_SRC
 
 *** Item 12: Consider Implementing Comparable: Guava Impl             :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-19 Tue>
 :PROPERTIES:
 :ID:       ecd99002-0134-43ff-b96d-f0b7a5efad52
-:DRILL_LAST_INTERVAL: 1.2044
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.1506
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:48]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:02]
 :END:
 
 What does an implementation for Comparable look like with Guava?
@@ -2538,7 +2770,92 @@ public int compareTo(PhoneNumber pn) {
 }
 #+END_SRC
 
+** Classes and Interfaces
 
+*** Item 13: Minimize accessibility                                   :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       4f004a9c-f4bc-41b0-9347-4630ecfc8b1b
+:DRILL_LAST_INTERVAL: 1.4051
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:06]
+:END:
+
+What is Bloch's rule of thumb for class or member accessibility?
+
+**** Answer
+
+Make each class or member as inaccessible as possible.
+
+*** Item 13: Minimize accessibility - levels                          :drill:
+SCHEDULED: <2016-01-18 Mon>
+:PROPERTIES:
+:ID:       d8c3a0e4-da20-496d-8380-220ecb303820
+:DRILL_LAST_INTERVAL: 1.7167
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:13]
+:END:
+
+What are the four access levels in Java?
+
+**** Answer
+
+1. private - only accessible from the top level class where it is declared.
+2. package-private (default) - only accessible from any class in the package
+   where it is declared.
+3. protected - accessible from subclasses of the class where it is declared.
+4. public - everywhere
+
+*** Item 13: Minimize accessibility - public mutable                  :drill:
+SCHEDULED: <2016-01-17 Sun>
+:PROPERTIES:
+:ID:       bb8391ef-dd19-4658-aeb1-034402409033
+:DRILL_LAST_INTERVAL: 1.4471
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:06]
+:END:
+
+Are public mutable fields thread-safe?
+
+**** Answer
+
+Nope.
+
+*** Item 13: Minimize accessibility - arrays                          :drill:
+SCHEDULED: <2016-01-18 Mon>
+:PROPERTIES:
+:ID:       878dbcd5-d7bb-45ad-bf26-6e7b933e997e
+:DRILL_LAST_INTERVAL: 1.6311
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 16:11]
+:END:
+
+What alternatives are there to a final array?
+
+**** Answer
+
+Collections.unmodifiableList - an unmodifiable view, the backing array can still change
+Guava ImmutableList - actually immutable
 
 * Consulting
 
@@ -2622,17 +2939,17 @@ Why are goals bad?
    made goal a part of their identity and jeopordized themselves to get the goal.
 
 *** Hedonic Adaptation                                                :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       0048cd41-4170-47a4-aa65-23a9bc9c7817
-:DRILL_LAST_INTERVAL: 7.2815
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 17.7507
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:11]
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:58]
 :END:
 
 What is hedonic adaptation (hedonic treadmill)?
@@ -2647,17 +2964,17 @@ rise in tandem, which results in no permanent gain in happiness.
 
 
 *** Build a system                                                    :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       5657a814-6be2-479d-9ba5-bc806e578282
-:DRILL_LAST_INTERVAL: 1.7374
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 4.2866
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:33]
+:DRILL_AVERAGE_QUALITY: 2.778
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:59]
 :END:
 
 What are the steps to build a system instead of a goal?
@@ -2727,17 +3044,17 @@ systemise it.
 /The ONE Thing/ by Keller
 
 *** Habitualise ONE Thing                                             :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       d51ec8b8-65ef-4264-a249-1a308dbd746a
-:DRILL_LAST_INTERVAL: 4.2506
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 10.9521
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:28]
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:59]
 :END:
 
 How do you systemize your ONE thing with cue-habit-reward and implementation
@@ -2787,20 +3104,21 @@ cannot be patched up to make it work. You have to start over with a working
 simple system. – John Gall (1975, p.71)
 
 *** Revise System                                                     :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       5e20c306-4d50-4d12-b458-ef270f9c1242
-:DRILL_LAST_INTERVAL: 4.4344
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 10.6309
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.857
+:DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:04]
 :END:
 
-How do you revise your system of accomplishment on a really, regular basis?
+How do you revise your system of accomplishment on a really, regular basis with
+trebuchets?
 
 **** Answer
 
@@ -2905,17 +3223,17 @@ https://maven.apache.org/guides/introduction/introduction-to-the-standard-direct
 * Excel
 ** Formulas
 *** Index and Match                                                   :drill:
-SCHEDULED: <2016-01-16 Sat>
+SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       09e90c89-c6a4-4599-9bde-1768676aa2da
-:DRILL_LAST_INTERVAL: 1.5742
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.1447
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:33]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:58]
 :END:
 
 Given the a data table and a summary table below, how do you get the missing
