@@ -2964,7 +2964,6 @@ Follow these five rules:
 4. Make all fields private.
 5. Ensure exclusive access to any mutable components.
 
-
 *** Item 15: Minimize Mutability - benefits                           :drill:
 SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
@@ -3012,7 +3011,7 @@ What are the drawbacks of immutable object?
 
 Immutable objects require a separate object for each distinct value.
 
-*** Item 15 - Minimize Mutability - mitigate performance problem      :drill:
+*** Item 15:  Minimize Mutability - mitigate performance problem      :drill:
 SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
 :ID:       20a96920-807f-498e-8f90-1102e2bf07df
@@ -3077,7 +3076,6 @@ When should classes be immutable?
 
 All the time, unless there's a very good reason to make them mutable.
 
-
 *** Item 15: Minimize Mutability - if can't immutable                 :drill:
 SCHEDULED: <2016-01-20 Wed>
 :PROPERTIES:
@@ -3098,6 +3096,105 @@ If you absolutely must make a class mutable, how should you mitigate the risks?
 
 Limit mutability as much as possible.
 Mark every field as final unless there is a compelling reason not to.
+
+*** Item 16: Favor Composition - why inheritance bad                 :drill:
+SCHEDULED: <2016-01-20 Wed>
+:PROPERTIES:
+:ID:       4b082ecd-3192-4a9d-8be4-48f55f36016e
+:DRILL_LAST_INTERVAL: 1.5396
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-18 Mon 15:48]
+:END:
+
+Why is inheritance bad?
+
+**** Answer
+
+Unlike method invocation, inheritance violates encapsulation.
+
+If you try to implement InstrumentedHashSet by extending HashSet, you must rely
+on the implementation of HashSet to Instrument correctly.
+
+Additionally, if the super-class gets new methods, they can break your class.
+
+*** Item 16: Favor Composition - alternative inheritance              :drill:
+SCHEDULED: <2016-01-20 Wed>
+:PROPERTIES:
+:ID:       d42ea0ae-570b-4449-9116-247a2d5c2acb
+:DRILL_LAST_INTERVAL: 1.5977
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-18 Mon 15:48]
+:END:
+
+What can you use instead of inheritance?
+
+**** Answer
+
+Create a field that has an instance of the existing class.
+
+This is composition because the existing class becomes a component of the new
+class.
+
+*** Item 16: Favor Composition - drawbacks                            :drill:
+SCHEDULED: <2016-01-20 Wed>
+:PROPERTIES:
+:ID:       c811f48e-2ce7-462e-b064-6182dbc51b56
+:DRILL_LAST_INTERVAL: 1.5731
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-18 Mon 15:47]
+:END:
+
+What are the drawbacks of composition, specifically of forwarding classes?
+
+**** Answer
+
+Wrapper classes are not suited for use in callback frameworks.
+Annoying and tedious to write.
+
+http://programmers.stackexchange.com/questions/117628/why-are-wrapper-classes-not-suited-for-use-in-callback-frameworks
+
+*** Item 16: Favor Composition - when to use inheritance              :drill:
+SCHEDULED: <2016-01-20 Wed>
+:PROPERTIES:
+:ID:       71d5fc01-01f6-48f7-9ffa-d071e95bd4ae
+:DRILL_LAST_INTERVAL: 1.632
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-18 Mon 15:48]
+:END:
+
+When is inheritance appropriate?
+
+**** Answer
+
+In circumstances where the subclass really is a subtype of the superclass.
+
+Class B should only extend class A only if B "is-a" A.
+
+If you are tempted to have clas B extend a class A, ask yourself: Is every B
+really an A?  If you cannot truthfully answer yes, B should not extend A.
+
+You must also be comfortable in adopting the flaws of A.
+
 
 * Consulting
 
