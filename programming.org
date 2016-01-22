@@ -37,17 +37,17 @@ dired-get-marked-files
 
 ** Object Oriented Programming
 *** Open Closed Principle                                             :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       e5f77354-5bc9-4c14-95de-09ba86eb1f9f
-:DRILL_LAST_INTERVAL: 3.7264
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 10.0029
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.2
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:14]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:16]
 :END:
 
 What is the open closed principle?
@@ -389,17 +389,17 @@ What is the syntax for a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - General Conversions                                   :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       1186f080-5d43-40a7-8045-7aae066f84b1
-:DRILL_LAST_INTERVAL: 7.0423
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 16.5327
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:42]
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:15]
 :END:
 
 What general conversions are supported in a format specifier?
@@ -769,20 +769,20 @@ http://stackoverflow.com/questions/2007666/in-what-order-do-static-initializer-b
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-12.html#jls-12.4.1
 
 *** Class intialization                                               :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       4a16e638-6b5f-4650-9269-7e534efd74c4
-:DRILL_LAST_INTERVAL: 3.8379
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.0273
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:15]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:17]
 :END:
 
-When are Java classes intialized?
+When are Java classes initialized?
 
 **** Answer
 
@@ -797,17 +797,17 @@ Initialization does not occur when accessing fields that are compile time consta
 http://stackoverflow.com/questions/23093470/java-order-of-initialization-and-instantiation
 
 *** Compile time constants                                            :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       2c7534cd-5b20-42ad-b72b-114fa56ff988
-:DRILL_LAST_INTERVAL: 1.5117
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 3.9888
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.833
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:26]
+:DRILL_AVERAGE_QUALITY: 3.143
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:18]
 :END:
 
 What are compile time constants in Java?
@@ -1493,17 +1493,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       d42c342e-3741-4bb0-b310-d01cab81551d
-:DRILL_LAST_INTERVAL: 1.5797
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.0933
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:26]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:15]
 :END:
 
 What is a covariant return type?
@@ -2456,17 +2456,17 @@ class implements Cloneable, clone returns a field-by-field copy.  Otherwise, it
 throws a CloneNotSupportedException.
 
 *** Item 11: Override Clone Judiciously - contract                    :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       883c47bb-108e-4f5a-8e00-e5d8d70e0760
-:DRILL_LAST_INTERVAL: 1.7798
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.2338
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:25]
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:19]
 :END:
 
 What is the general contract for clone?
@@ -2661,17 +2661,17 @@ What is the general contract of Comparable?
 - Strongly recommended that if ~x.compareTo(y) == 0~ then ~x.equals(y)~
  
 *** Item 12: Consider Implementing Comparable: compareTo not consistent with equals :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       7f740588-9ca2-4c51-ac09-8a91d1c65e42
-:DRILL_LAST_INTERVAL: 3.8947
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 9.6796
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:05]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:14]
 :END:
 
 What should you do if compareTo is not consistent with equals?  That is,
@@ -2839,17 +2839,17 @@ What are the four access levels in Java?
 4. public - everywhere
 
 *** Item 13: Minimize accessibility - public mutable                  :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       bb8391ef-dd19-4658-aeb1-034402409033
-:DRILL_LAST_INTERVAL: 4.0694
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.6984
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:10]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:18]
 :END:
 
 Are public mutable fields thread-safe?
@@ -2929,17 +2929,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 1.7007
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.8176
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_AVERAGE_QUALITY: 3.4
 :DRILL_EASE: 2.6
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:22]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:14]
 :END:
 
 How do you make a class immutable?
@@ -2984,17 +2984,17 @@ Hans Solo - classrooms, intestines, blocks
 + Immutable objects make great building blocks.
 
 *** Item 15: Minimize Mutability - drawbacks                          :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       09fcee96-404f-49fe-9311-1c1751869b6c
-:DRILL_LAST_INTERVAL: 1.6749
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.448
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:26]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:18]
 :END:
 
 What are the drawbacks of immutable object?
@@ -3162,17 +3162,17 @@ Annoying and tedious to write.
 http://programmers.stackexchange.com/questions/117628/why-are-wrapper-classes-not-suited-for-use-in-callback-frameworks
 
 *** Item 16: Favor Composition - when to use inheritance              :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       71d5fc01-01f6-48f7-9ffa-d071e95bd4ae
-:DRILL_LAST_INTERVAL: 1.6902
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 4.7104
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:23]
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:17]
 :END:
 
 When is inheritance appropriate?
@@ -3187,7 +3187,6 @@ If you are tempted to have class B extend a class A, ask yourself: Is every B
 really an A?  If you cannot truthfully answer yes, B should not extend A.
 
 You must also be comfortable in adopting the flaws of A.
-
 
 *** Item 17: Design for Inheritance -  Document           :drill:
 SCHEDULED: <2016-01-23 Sat>
@@ -3241,20 +3240,21 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-24 Sun>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 1.4213
+:DRILL_LAST_INTERVAL: 1.6203
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:27]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:23]
 :END:
 
-How do you allow efficient to the internal workings of a subclass?
+How do you allow efficient access to the internal workings of a subclass
+designed for inheritance?
 
 **** Answer
 
@@ -3382,19 +3382,18 @@ classes?
 Prohibit subclassing in classes that are not designed and documented to be
 safely subclasses.
 
-
 *** Item 17: Design for Inheritance - concrete with no std interface  :drill:
-SCHEDULED: <2016-01-22 Fri>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       f7f17099-a359-4b7e-97b5-dfbc52c0eb8e
-:DRILL_LAST_INTERVAL: 1.4817
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.0918
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:24]
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:18]
 :END:
 
 If you must allow inheritance from a concrete class that doesn't implement a
@@ -3410,6 +3409,144 @@ You can do this by moving the body of each overridable method into a private
 helper method and then call the helper method from the overridable method.
 Then, replace each self-use of an overridable method with its private helper.
 
+*** Item 18: Prefer Interfaces - Why                                  :drill:
+SCHEDULED: <2016-01-24 Sun>
+:PROPERTIES:
+:ID:       28beb321-3739-4e82-aa2c-45c81c33e107
+:DRILL_LAST_INTERVAL: 2.1168
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:23]
+:END:
+
+Why should you prefer interfaces to abstract classes?
+
+**** Answer
+
+1. Existing classes can be easily retrofitted to implement a new interface.
+2. Interfaces are ideal for defining mixins.
+3. Interfaces allow the construction of non-hierarchical type frameworks.
+4. Interfaces enable safe, powerful functionality enhancements through
+   composition, by the wrapper idiom.
+
+*** Item 18: Prefer Interfaces -                                      :drill:
+SCHEDULED: <2016-01-24 Sun>
+:PROPERTIES:
+:ID:       fcda47f0-d9c6-4172-be27-a0423b8e6820
+:DRILL_LAST_INTERVAL: 1.691
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:19]
+:END:
+
+How do you combine the virtues of interfaces and abstract classes?
+
+**** Answer
+
+Provide an abstract, skeletal implementation class to go with each non-trivial
+interface that you export.
+
+The naming convention is AbstractINTERFACE, where INTERFACE is the interface you
+implement.
+
+*** Item 18: Prefer Interfaces - simulated multiple inheritance       :drill:
+SCHEDULED: <2016-01-24 Sun>
+:PROPERTIES:
+:ID:       ead7a395-bcd7-4fd9-9917-50c67c7954cb
+:DRILL_LAST_INTERVAL: 1.599
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:20]
+:END:
+
+What is simulated multiple inheritance?
+
+**** Answer
+
+You use composition to included a skeletal implementation of an interface and
+then forward the interfaces' method calls to the wrapped skeletal interface.
+
+*** Item 18: Prefer Interfaces - Advantages of abstract classes       :drill:
+SCHEDULED: <2016-01-23 Sat>
+:PROPERTIES:
+:ID:       571f408b-2c08-4b4f-8b62-397feb475239
+:DRILL_LAST_INTERVAL: 1.4653
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:19]
+:END:
+
+What are the advantages of abstract classes?
+
+**** Answer
+
+It is far easier to evolve an abstract class than an interface.
+
+In Java 8, the story is slightly better for interfaces since you can provide
+default methods.
+
+*** Item 19: Interface only for Types - Why                           :drill:
+SCHEDULED: <2016-01-24 Sun>
+:PROPERTIES:
+:ID:       dc434c1d-7b41-4c98-8f39-f6556da48256
+:DRILL_LAST_INTERVAL: 1.6396
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:23]
+:END:
+
+Why should you use interfaces only for types?
+
+**** Answer
+
+Because the constant interface is a poor use of interfaces.  The constants are
+an implementation detail.
+
+*** Item 19: Interface only for Types - Alternative for constants     :drill:
+SCHEDULED: <2016-01-24 Sun>
+:PROPERTIES:
+:ID:       8803fbf7-ca24-4b9d-b9d0-5708c24e772a
+:DRILL_LAST_INTERVAL: 1.8631
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:20]
+:END:
+
+How should you export constants?
+
+**** Answer
+
+If the constants are best viewed as members of an enumerated type, export with
+an enum.
+
+Otherwise, export with a non-instantiable utility class with public, static,
+final modifiers.
+
+Then you can import with static import.
 
 * Consulting
 
