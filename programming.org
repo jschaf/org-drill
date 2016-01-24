@@ -248,17 +248,17 @@ unicode escapes - '\u0108', "S\u00ED"
 escape sequences - \b backspace, \t tab, \n, \f, \r, \", \', \\
 
 *** Class Literal                                                   :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-28 Sun>
 :PROPERTIES:
 :ID:       4d3cb5a7-cefd-49e1-8eef-5ffc815b67cd
-:DRILL_LAST_INTERVAL: 13.5913
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 34.5786
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:16]
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:38]
 :END:
 
 What is a class literal in Java?
@@ -341,17 +341,17 @@ What are Java's reference types and when do they get garbage collected?
 + PhantomReference - relate to cleanup and offer notification before finalization
 
 *** Formatting String                                                 :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-22 Mon>
 :PROPERTIES:
 :ID:       fc8e3d5f-db93-4482-a0b9-5b55cec511c8
-:DRILL_LAST_INTERVAL: 10.107
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 28.5502
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:33]
 :END:
 
 How do you format a string in Java?
@@ -1824,17 +1824,17 @@ Why doesn't making a class abstract prevent instantiation?
 Because you can subclass the abstract class and instantiate the subclass.
 
 *** Item 05: Unnecessary Objects                                      :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 5.6952
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 11.3547
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.001
-:DRILL_EASE: 1.9
+:DRILL_AVERAGE_QUALITY: 3.183
+:DRILL_EASE: 2.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:13]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:23]
 :END:
 
 How can you avoid unnecessary objects?
@@ -2133,17 +2133,17 @@ What does the argument type have to be when overriding equals?
 Object o, otherwise you're overloading equals instead of overriding it.
 
 *** Item 08: High Quality Equals Impl                                 :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-17 Wed>
 :PROPERTIES:
 :ID:       fe0f1e4b-4282-478e-8dbf-295384c0a8d4
-:DRILL_LAST_INTERVAL: 10.1128
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 24.0059
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_AVERAGE_QUALITY: 3.4
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:35]
 :END:
 
 What does a correct equals method look like?
@@ -2242,17 +2242,17 @@ How do you implement hashCode for an object?
    result = 31 * result + c;
 
 *** Item 09: hashCode optimizations                                   :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-22 Mon>
 :PROPERTIES:
 :ID:       078c43bc-8da6-4529-9389-a9d7b8f9b156
-:DRILL_LAST_INTERVAL: 9.515
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 28.6419
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:13]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:23]
 :END:
 
 How to you speed up hashCode?
@@ -2503,17 +2503,17 @@ way that a superclass can provide that functionality is to return an object
 obtained by calling super.clone()
 
 *** Item 11: Override Clone Judiciously - drawbacks                   :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       0c51568b-767d-4463-a4b7-b02b158d2786
-:DRILL_LAST_INTERVAL: 3.8823
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 9.9895
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.125
+:DRILL_AVERAGE_QUALITY: 3.222
 :DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:11]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:26]
 :END:
 
 What are the drawbacks of clone?
@@ -2547,17 +2547,17 @@ What are the alternatives of clone?
 + static factory
  
 *** Item 11: Override Clone Judiciously - Proper impl                 :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-25 Mon>
 :PROPERTIES:
 :ID:       1666a35c-8474-4c2d-8e4a-31e9338b8bd7
-:DRILL_LAST_INTERVAL: 3.2958
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.167
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:11]
+:DRILL_LAST_INTERVAL: 1.3632
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:42]
 :END:
 
 How should you implement clone if you must?
@@ -2609,17 +2609,17 @@ public class Person implements Cloneable
 #+END_SRC
 
 *** Item 12: Consider Implementing Comparable: Interface              :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       7d645124-9390-464b-80c4-a6cb9abeedc0
-:DRILL_LAST_INTERVAL: 6.1996
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.5052
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:10]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:22]
 :END:
 
 How do you implement the Comparable interface?
@@ -2728,17 +2728,17 @@ then ~dateOfBirth~.  But what if we compare NamedThing to Person.
 http://stackoverflow.com/questions/13509286/why-cant-i-extend-an-instantiable-class-with-a-new-value-component-while-preser
 
 *** Item 12: Consider Implementing Comparable: Impl                   :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       5a6fa657-f96d-4a9b-a46c-4c90da10704b
-:DRILL_LAST_INTERVAL: 4.3595
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 11.1904
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:10]
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:30]
 :END:
 
 What does a plain implementation for Comparable look like?
@@ -2880,17 +2880,17 @@ Collections.unmodifiableList - an unmodifiable view, the backing array can still
 Guava ImmutableList - actually immutable
 
 *** Item 14: Public accessors - accessor vs public field              :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       f204e0bd-7b04-4cb1-bbb8-977d14b186e7
-:DRILL_LAST_INTERVAL: 3.8294
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 8.9417
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.32
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:04]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:29]
 :END:
 
 When should you use an accessor over a public field?
@@ -3004,17 +3004,17 @@ What are the drawbacks of immutable object?
 Immutable objects require a separate object for each distinct value.
 
 *** Item 15:  Minimize Mutability - mitigate performance problem      :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       20a96920-807f-498e-8f90-1102e2bf07df
-:DRILL_LAST_INTERVAL: 4.3338
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_LAST_INTERVAL: 1.7253
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.75
 :DRILL_EASE: 2.6
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:15]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:39]
 :END:
 
 What are two approaches to making mutability performant in immutable classes?
@@ -3240,17 +3240,17 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 1.6203
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 2.9981
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:23]
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:27]
 :END:
 
 How do you allow efficient access to the internal workings of a subclass
@@ -3410,17 +3410,17 @@ helper method and then call the helper method from the overridable method.
 Then, replace each self-use of an overridable method with its private helper.
 
 *** Item 18: Prefer Interfaces - Why                                  :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-25 Mon>
 :PROPERTIES:
 :ID:       28beb321-3739-4e82-aa2c-45c81c33e107
-:DRILL_LAST_INTERVAL: 2.1168
+:DRILL_LAST_INTERVAL: 1.1898
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:23]
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:42]
 :END:
 
 Why should you prefer interfaces to abstract classes?
@@ -3434,17 +3434,17 @@ Why should you prefer interfaces to abstract classes?
    composition, by the wrapper idiom.
 
 *** Item 18: Prefer Interfaces -                                      :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       fcda47f0-d9c6-4172-be27-a0423b8e6820
-:DRILL_LAST_INTERVAL: 1.691
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.7955
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:19]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:33]
 :END:
 
 How do you combine the virtues of interfaces and abstract classes?
@@ -3458,17 +3458,17 @@ The naming convention is AbstractINTERFACE, where INTERFACE is the interface you
 implement.
 
 *** Item 18: Prefer Interfaces - simulated multiple inheritance       :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       ead7a395-bcd7-4fd9-9917-50c67c7954cb
-:DRILL_LAST_INTERVAL: 1.599
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.9309
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:20]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:27]
 :END:
 
 What is simulated multiple inheritance?
@@ -3502,17 +3502,17 @@ In Java 8, the story is slightly better for interfaces since you can provide
 default methods.
 
 *** Item 19: Interface only for Types - Why                           :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       dc434c1d-7b41-4c98-8f39-f6556da48256
-:DRILL_LAST_INTERVAL: 1.6396
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.4295
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:23]
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:32]
 :END:
 
 Why should you use interfaces only for types?
@@ -3523,17 +3523,17 @@ Because the constant interface is a poor use of interfaces.  The constants are
 an implementation detail.
 
 *** Item 19: Interface only for Types - Alternative for constants     :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
 :ID:       8803fbf7-ca24-4b9d-b9d0-5708c24e772a
-:DRILL_LAST_INTERVAL: 1.8631
+:DRILL_LAST_INTERVAL: 1.671
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:20]
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:39]
 :END:
 
 How should you export constants?
@@ -3547,6 +3547,148 @@ Otherwise, export with a non-instantiable utility class with public, static,
 final modifiers.
 
 Then you can import with static import.
+
+*** Item 20: Prefer class hierarchies over tags - what                :drill:
+SCHEDULED: <2016-01-25 Mon>
+:PROPERTIES:
+:ID:       b284739b-61be-453e-9887-ce4304181027
+:DRILL_LAST_INTERVAL: 1.4522
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:38]
+:END:
+
+What is a tagged class?
+
+**** Answer
+
+It's a class that has a /tag/ field to indicate which flavor of the class we're
+using.  It's used to simulate class hierarchies.
+
+#+BEGIN_SRC java
+class Figure {
+
+    enum Shape { RECTANGLE, CIRCLE };
+
+    // Tag field
+    final Shape shape;
+
+    // Fields for RECTANGLE
+    double length;
+    double width;
+
+    // Fields for CIRCLE
+    double radius;
+
+    // Constructor for circle
+    Figure(double radius) {
+        this.shape = Shape.CIRCLE;
+        this.radius = radius;
+    }
+
+    // Constructor for rectangle
+    Figure(double width, double length) {
+        this.shape = Shape.RECTANGLE
+        this.width = width;
+        this.length = length;
+    }
+
+    double area() {
+        switch (shape) {
+        case RECTANGLE:
+            return length * width;
+        case CIRCLE:
+            return Math.PI * (radius * radius);
+        default:
+            throw new AssertationError();
+        }
+    }
+}
+#+END_SRC
+
+*** Item 20: Prefer class hierarchies over tags - why bad :drill:
+SCHEDULED: <2016-01-26 Tue>
+:PROPERTIES:
+:ID:       26e60c15-d309-4102-b78b-d63528fa4614
+:DRILL_LAST_INTERVAL: 1.5962
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:41]
+:END:
+
+Why are tagged classes bad?
+
+**** Answer
+
+Schwarzenegger Tag preschool class, read constitution, ram, final countdown,
+green-light red-light on ramp.
+
++ Cluttered with boiler plate, including enums, tag fields, and switch statements.
++ Readability is bad because multiple implementations are jumbled together in a
+  single class.
++ Memory footprint is increased because every instance has all the fields of
+  every tag.
++ Fields can't be final unless each constructor initializes all the irrelevant
+  fields.
++ You can't add a new flavor of a tagged class unless you can modify the source
+  file.  This violates the open-closed principle.
+
+Tagged classes are verbose, error-prone and inefficient.
+
+A tagged class is a pallid imitation of a class hierarchy. 
+
+
+*** Item 20: Prefer class hierarchies over tags - alternative         :drill:
+SCHEDULED: <2016-01-26 Tue>
+:PROPERTIES:
+:ID:       892ac2e3-b1ec-4764-8a6d-7b5eaed515ad
+:DRILL_LAST_INTERVAL: 1.5165
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:41]
+:END:
+
+What do you replace a tagged class with?
+
+**** Answer
+
+A class hierarchy.
+
+
+*** Item 20: Prefer class hierarchies over tags - Alternative impl    :drill:
+SCHEDULED: <2016-01-26 Tue>
+:PROPERTIES:
+:ID:       37854105-68d9-4e5f-93ef-586127dea641
+:DRILL_LAST_INTERVAL: 1.91
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:34]
+:END:
+
+How do you transform a tagged class to a class hierarchy?
+
+**** Answer
+
+1. Define an abstract class containing an abstract method for each method in the
+   tagged class that depends on the tag value.
+2. Define a concrete subclass of the root class for each flavor of the original
+   tagged class.
 
 * Consulting
 
@@ -3876,17 +4018,17 @@ The tendency to overestimate the length and intensity of our future emotions.
 ** Udacity
 
 *** Standard Maven Layout                                 :drill:
-SCHEDULED: <2016-01-24 Sun>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       3f3d6cb8-fe88-4dc8-aaba-ea786e50e6ea
-:DRILL_LAST_INTERVAL: 8.5585
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 20.715
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:42]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.42
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:24]
 :END:
 
 What is the standard maven layout?
