@@ -636,7 +636,6 @@ Double.POSITIVE_INFINITY
 
 http://stackoverflow.com/questions/3884793/minimum-values-and-double-min-value-in-java
 
-
 *** Overloaded Return Types                                           :drill:
 SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
@@ -821,6 +820,45 @@ What are compile time constants in Java?
 
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
 
+*** String vs StringBuilder vs StringBuffer                           :drill:
+
+What are the differences between String, StringBuilder and StringBuffer?
+
+**** Answer
+
+String is immutable and stored in the constant String pool.
+StringBuilder is not threadsafe and is stored on the heap.
+StringBuffer is threadsafe and is stored on the heap, but is slower than string builder.
+
+You should generally use StringBuilder.  If you need synchronization,
+synchronize on the string builder.
+
+Both StringBuilder and StringBuffer extend AbstractStringBuilder.
+
+http://stackoverflow.com/questions/355089/stringbuilder-and-stringbuffer
+
+*** Varargs                                                           :drill:
+
+How do you declare varargs in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+public static void main(String... args) {
+    System.out.println(Arrays.toString(args));
+}
+#+END_SRC
+
+
+*** Varargs type                                                      :drill:
+
+What type is a varargs argument in Java
+
+**** Answer
+
+The Java Language Specification (third edition) section 8.4.1 says that "If the
+last formal parameter is a variable arity parameter of type T, it is considered
+to define a formal parameter of type T[]".
 
 ** Design Patterns
 
