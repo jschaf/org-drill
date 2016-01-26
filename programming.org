@@ -821,6 +821,18 @@ What are compile time constants in Java?
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
 
 *** String vs StringBuilder vs StringBuffer                           :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       71b8ea5d-535f-4a21-853d-f2319f7d2c69
+:DRILL_LAST_INTERVAL: 1.5463
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:46]
+:END:
 
 What are the differences between String, StringBuilder and StringBuffer?
 
@@ -838,6 +850,18 @@ Both StringBuilder and StringBuffer extend AbstractStringBuilder.
 http://stackoverflow.com/questions/355089/stringbuilder-and-stringbuffer
 
 *** Varargs                                                           :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       7b5fe7f3-70ef-4606-b523-e246dc95cddc
+:DRILL_LAST_INTERVAL: 2.0225
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:END:
 
 How do you declare varargs in Java?
 
@@ -849,8 +873,10 @@ public static void main(String... args) {
 }
 #+END_SRC
 
-
 *** Varargs type                                                      :drill:
+:PROPERTIES:
+:ID:       262bfbad-9446-443f-81f8-c09cebe80766
+:END:
 
 What type is a varargs argument in Java
 
@@ -1331,17 +1357,17 @@ Scheme for resolving hash collisions in a table using open addressing.
 ** Algorithms
 
 *** Perfect Hashing for Pair of Ints                                  :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       592e784d-e09b-44e2-907a-07ac56433737
-:DRILL_LAST_INTERVAL: 4.2057
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 11.8708
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:14]
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:41]
 :END:
 
 What's a perfect hash for a pair of ints?
@@ -1576,17 +1602,17 @@ class D extends C {
 #+END_SRC
 ** Benefits
 *** Encapsulation                                                     :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       1b9d6914-6168-442a-9988-facdd843d607
-:DRILL_LAST_INTERVAL: 5.2674
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 13.5558
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:16]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:40]
 :END:
 
 What are the benefits of encapsulation?
@@ -2002,7 +2028,6 @@ They are unpredictable, often dangerous and generally unnecessary.
 + Uncaught exceptions in finalizers are ignored and not reported.
 + Finalizers can resurrect objects in corrupt states
 
-
 *** Item 07: Avoid Finalizers - Alternative                           :drill:
 SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
@@ -2123,17 +2148,17 @@ What are the general contracts for the equals method?
 + Non-Nullity, x.equals(null) must be false.
 
 *** Item 08: High Quality Equals                                      :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       fed0c121-7d93-476c-b640-1e849ec31f5a
-:DRILL_LAST_INTERVAL: 10.5946
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 27.0376
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:18]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:47]
 :END:
 
 What are the steps to a high quality equals method?
@@ -2248,17 +2273,17 @@ What is the general contract for Object.hashCode?
    different objects.
 
 *** Item 09: hashCode impl                                            :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-24 Wed>
 :PROPERTIES:
 :ID:       d55ad317-672d-4bee-ab65-d11c8941a4d8
-:DRILL_LAST_INTERVAL: 11.1012
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 29.8999
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.875
-:DRILL_EASE: 2.32
+:DRILL_AVERAGE_QUALITY: 3.111
+:DRILL_EASE: 2.42
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:27]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:48]
 :END:
 
 How do you implement hashCode for an object?
@@ -2518,17 +2543,17 @@ x.clone().getClass() == x.getClass() // Not 100% required
 x.clone().equals(x) // Not 100% required.
 
 *** Item 11: Override Clone Judiciously - nonfinal class              :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       a8c9d998-919e-47f5-a521-bafe40dc0141
-:DRILL_LAST_INTERVAL: 4.2144
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 13.044
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:12]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:42]
 :END:
 
 What type should you return in a clone of a nonfinal class?
@@ -2585,17 +2610,17 @@ What are the alternatives of clone?
 + static factory
  
 *** Item 11: Override Clone Judiciously - Proper impl                 :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       1666a35c-8474-4c2d-8e4a-31e9338b8bd7
-:DRILL_LAST_INTERVAL: 1.3632
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 3.6851
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:42]
+:DRILL_AVERAGE_QUALITY: 3.222
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:44]
 :END:
 
 How should you implement clone if you must?
@@ -2674,17 +2699,17 @@ class MyClass implements Comparable<MyClass> {
 #+END_SRC
 
 *** Item 12: Consider Implementing Comparable: Contract               :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       ebfcf743-d916-43ea-a93d-78f501f6b61f
-:DRILL_LAST_INTERVAL: 3.6623
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 9.4015
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:10]
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:41]
 :END:
 
 What is the general contract of Comparable?
@@ -2723,17 +2748,17 @@ Put the following in the documentation:
 "Note: This class has a natural ordering that is inconsistent with equals."
 
 *** Item 12: Consider Implementing Comparable: Extend Value class     :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       a01ffdfe-96ea-41a4-948c-1f0527e090a7
-:DRILL_LAST_INTERVAL: 4.0363
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 11.8906
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:17]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:44]
 :END:
 
 What is the problem with comparable and a extending a value class?
@@ -2941,17 +2966,17 @@ If a class is package-private or a private nested class, there is nothing
 inherently wrong with exposing data fields.
 
 *** Item 14: Public accessors - why accessors                         :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       2e1879b7-e276-452d-85ef-eee1c96aa7ab
-:DRILL_LAST_INTERVAL: 4.3318
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 11.3761
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:16]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:43]
 :END:
 
 Why should you use accessors over fields?
@@ -3065,17 +3090,17 @@ What are two approaches to making mutability performant in immutable classes?
    e.g. String -> String Builder, BigInteger -> BitSet.
 
 *** Item 15: Minimize Mutablitiy - make immutable class               :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       d3f102f4-533d-445d-87d2-14bd913fd8f0
-:DRILL_LAST_INTERVAL: 4.2512
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.9117
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:21]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
 :END:
 
 How can you prevent a class from being subclassed?
@@ -3087,17 +3112,17 @@ How can you prevent a class from being subclassed?
   package-private implementation classes.
 
 *** Item 15: Minimize Mutability - when immutable                     :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       e04eac1c-5dbc-4956-860f-166911b27b69
-:DRILL_LAST_INTERVAL: 4.5619
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.4702
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:14]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:42]
 :END:
 
 When should classes be immutable?
@@ -3107,17 +3132,17 @@ When should classes be immutable?
 All the time, unless there's a very good reason to make them mutable.
 
 *** Item 15: Minimize Mutability - if can't immutable                 :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       3211f3ac-b981-41ce-9926-50086c9ab70a
-:DRILL_LAST_INTERVAL: 4.4799
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.0363
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:13]
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
 :END:
 
 If you absolutely must make a class mutable, how should you mitigate the risks
@@ -3129,17 +3154,17 @@ Limit mutability as much as possible.
 Mark every field as final unless there is a compelling reason not to.
 
 *** Item 16: Favor Composition - why inheritance bad                 :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
 :ID:       4b082ecd-3192-4a9d-8be4-48f55f36016e
-:DRILL_LAST_INTERVAL: 1.6898
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 5.6811
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:46]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
 :END:
 
 Why is inheritance bad?
@@ -3154,17 +3179,17 @@ on the implementation of HashSet to Instrument correctly.
 Additionally, if the super-class gets new methods, they can break your class.
 
 *** Item 16: Favor Composition - alternative inheritance              :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       d42ea0ae-570b-4449-9116-247a2d5c2acb
-:DRILL_LAST_INTERVAL: 4.4118
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 11.9007
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:22]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:44]
 :END:
 
 What can you use instead of inheritance?
@@ -3177,17 +3202,17 @@ This is composition because the existing class becomes a component of the new
 class.
 
 *** Item 16: Favor Composition - drawbacks                            :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       c811f48e-2ce7-462e-b064-6182dbc51b56
-:DRILL_LAST_INTERVAL: 1.8706
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.06
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:45]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
 :END:
 
 What are the drawbacks of composition, specifically of forwarding classes?
@@ -3227,17 +3252,17 @@ really an A?  If you cannot truthfully answer yes, B should not extend A.
 You must also be comfortable in adopting the flaws of A.
 
 *** Item 17: Design for Inheritance -  Document           :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       ed2bf3be-4fad-4d11-8d0a-2fb0043fe710
-:DRILL_LAST_INTERVAL: 1.6788
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.3412
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:46]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:40]
 :END:
 
 What aspect of an inheritable class must you document?
@@ -3448,17 +3473,17 @@ helper method and then call the helper method from the overridable method.
 Then, replace each self-use of an overridable method with its private helper.
 
 *** Item 18: Prefer Interfaces - Why                                  :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       28beb321-3739-4e82-aa2c-45c81c33e107
-:DRILL_LAST_INTERVAL: 1.1898
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.0073
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.75
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:42]
+:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:42]
 :END:
 
 Why should you prefer interfaces to abstract classes?
@@ -3587,17 +3612,17 @@ final modifiers.
 Then you can import with static import.
 
 *** Item 20: Prefer class hierarchies over tags - what                :drill:
-SCHEDULED: <2016-01-25 Mon>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       b284739b-61be-453e-9887-ce4304181027
-:DRILL_LAST_INTERVAL: 1.4522
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.4048
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:38]
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:41]
 :END:
 
 What is a tagged class?
@@ -3683,7 +3708,6 @@ Tagged classes are verbose, error-prone and inefficient.
 
 A tagged class is a pallid imitation of a class hierarchy. 
 
-
 *** Item 20: Prefer class hierarchies over tags - alternative         :drill:
 SCHEDULED: <2016-01-26 Tue>
 :PROPERTIES:
@@ -3703,7 +3727,6 @@ What do you replace a tagged class with?
 **** Answer
 
 A class hierarchy.
-
 
 *** Item 20: Prefer class hierarchies over tags - Alternative impl    :drill:
 SCHEDULED: <2016-01-26 Tue>
@@ -3727,6 +3750,305 @@ How do you transform a tagged class to a class hierarchy?
    tagged class that depends on the tag value.
 2. Define a concrete subclass of the root class for each flavor of the original
    tagged class.
+
+*** Item 21: Use function objects - Java function pointer             :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       7748115f-87d0-43a5-aa77-e504115ff827
+:DRILL_LAST_INTERVAL: 1.6319
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:47]
+:END:
+
+How do you represent a function pointer in Java?
+
+**** Answer
+
+With an object whose method does stuff to other objects.  The instance of a
+class with one method functions essentially as a pointer to the method, thus
+mimicking a function pointer.
+
+This approach is typically used for the strategy pattern.
+
+*** Item 21: Use function objects - optimization                      :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       ed8a6576-6a80-49e6-bebd-0c66446ef8e8
+:DRILL_LAST_INTERVAL: 1.6661
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:48]
+:END:
+
+Should you create a function object every time you want to use the strategy
+pattern?
+
+**** Answer
+
+No, silly.  You generally want to make a singleton and use that to avoid
+unnecessary object creation.
+
+*** Item 21: Use function objects - anonymous class optimization      :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       0c71b0b1-6acc-43d3-8a6d-a49ec780d1f2
+:DRILL_LAST_INTERVAL: 1.6062
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:47]
+:END:
+
+If using anonymous classes for function objects, how can you optimize repeated
+use?
+
+**** Answer
+
++ Define the function object as a private static class.
++ Instantiate the function object as a singleton, so a public field or static
++ factor.
++ Use the strategy interface to define the singleton.
+ 
+#+BEGIN_SRC java
+class Host {
+    private static class StrLenCmp implements Comparator<String>, Serializable {
+        public int compare(String s1, String s2) {
+            return s1.length() - s2.length()
+        }
+
+        public static final Comparator<String> STRING_LENGTH_COMPARATOR =
+            new StrLenCmp();
+    }
+}
+#+END_SRC
+
+*** Item 22: Favor static member classes - nested class               :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       5e8e5e8f-95c6-4d75-9e81-1ce813265122
+:DRILL_LAST_INTERVAL: 1.6466
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:END:
+
+What is a nested class?
+
+**** Answer
+
+Any class defined within another class.
+
+*** Item 22: Favor static member classes -                            :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       f5bd4562-1fbe-47f7-ace8-31a6c3eeedf6
+:DRILL_LAST_INTERVAL: 1.5346
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:50]
+:END:
+
+What's the purpose of a nested class?
+
+**** Answer
+
+It only exists to serve the enclosing class.  If the nested class were useful in
+some other context, then it should be top level class.
+
+*** Item 22: Favor static member classes - four kinds of nested       :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       6da50916-c4a8-450d-8713-47e5b42389c1
+:DRILL_LAST_INTERVAL: 1.6447
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:END:
+
+What are the four types of nested classes?
+
+**** Answer
+
+1. Static member classes
+
+Inner Classes
+2. Non-static member classes
+3. Anonymous classes
+4. Local classes
+
+*** Item 22: Favor static member classes - static member class uses   :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       584cc744-953e-4ca5-b66b-b03d3b65e309
+:DRILL_LAST_INTERVAL: 1.533
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:END:
+
+What are the use cases for a static member class?
+
+**** Answer
+
+As a public helper class like Calculator.Operations enum with PLUS, MINUS, etc.
+
+*** Item 22: Favor static member classes - qualified this             :drill:
+SCHEDULED: <2016-01-26 Tue>
+:PROPERTIES:
+:ID:       101c977a-8eaf-4db9-a373-7c071745cd6b
+:DRILL_LAST_INTERVAL: 1.4466
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:END:
+
+How do you reference an enclosing class instance fields or methods from an inner class?
+
+**** Answer
+
+You can use a simple name, or if the name is shadowed, you use the qualified
+this construct:
+
+Without the qualifier, x() would recurse. With the qualifier, the enclosing
+instance's x() method is invoked instead.
+
+#+BEGIN_SRC java
+class Envelope {
+  void x() {
+    System.out.println("Hello");
+  }
+  class Enclosure {
+    void x() {
+      Envelope.this.x(); /* Qualified*/
+    }
+  }
+}
+#+END_SRC
+
+http://stackoverflow.com/questions/11276994/what-does-qualified-this-construct-mean-in-java
+
+*** Item 22: Favor static member classes - when use static            :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       66bebad5-d97b-425f-b08e-b8b68dbd9a59
+:DRILL_LAST_INTERVAL: 1.8064
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:END:
+
+When should declare a nested class as static?
+
+**** Answer
+
+Always if the class does not require access to the enclosing instance.
+
+It saves memory since each enclosing class doesn't also have a nested class
+instantiation.
+
+*** Item 22: Favor static member classes - anonymous class            :drill:
+SCHEDULED: <2016-01-27 Wed>
+:PROPERTIES:
+:ID:       d4451b59-5726-4757-97c8-90d56bf8c030
+:DRILL_LAST_INTERVAL: 1.5684
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:46]
+:END:
+
+Where can you declare an anonymous class?
+
+**** Answer
+
+Anywhere an expression is legal.
+
+*** Item 22: Favor static member classes - anonymous class limitations :drill:
+SCHEDULED: <2016-01-26 Tue>
+:PROPERTIES:
+:ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
+:DRILL_LAST_INTERVAL: 1.4232
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:51]
+:END:
+
+What are the limitations on an anonymous class?
+
+**** Answer
+
++ You can't perform instanceof tests
++ You can't implement multiple interfaces, or extend a class and implement an
+  interfaces.
++ Clients of an anonymous class can't invoke any members except those it
+  inherits from the super-type.
+
+*** Item 22: Favor static member classes - anonymous class uses       :drill:
+:PROPERTIES:
+:ID:       5dcfd714-1960-47ee-865d-a1c9f0b29d62
+:END:
+
+What are common uses for anonymous classes?
+
+**** Answer
+
+To create function objects on the fly or process objects or to use in a static
+factory.
+
+*** Item 22: Favor static member classes - local classes declared     :drill:
+:PROPERTIES:
+:ID:       b6f4287d-2908-4dd6-b0a6-9893621012bf
+:END:
+
+Where can local classes be declared?
+
+**** Answer
+
+anywhere a local variable can be declared.
+
 
 * Consulting
 
