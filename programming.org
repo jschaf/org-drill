@@ -1,6 +1,4 @@
-
 * Emacs Questions
-
 ** Elisp
 
 *** Dired files                                                       :drill:
@@ -1124,7 +1122,6 @@ PermGen, default 64mb
 
 Answer
 
-
 ** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
@@ -1704,9 +1701,7 @@ time.  It is measured in units per unit of time.
 https://www.udemy.com/apachemaven
 
 * Java Concurrency
-
 ** Java Concurrency In Practice
-
 *** Motivating Factors                                              :drill:
 SCHEDULED: <2016-03-24 Thu>
 :PROPERTIES:
@@ -1946,7 +1941,7 @@ What are common names of a static factory?
   class.  Type indicates the return type.
 + new/Type/ - like new instance, but with a new /Type/
 
-*** Item 02: Disadvantages of telescoping constructors              :drill:
+*** Item 02: Disadvantages of telescoping constructors                :drill:
 SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       5d0e59cb-1bd6-4b82-899d-40eff3015e27
@@ -1969,7 +1964,7 @@ What are the disadvantages of telescoping constructors?
 + A java bean may be in an inconsistent state partway through construction.
 + JavaBeans patterns precludes the possibility of using an immutable class.
 
-*** Item 02: Replacing Telescoping Constructors                     :drill:
+*** Item 02: Replacing Telescoping Constructors                       :drill:
 SCHEDULED: <2016-03-06 Sun>
 :PROPERTIES:
 :ID:       5fcef5a1-814a-406c-a435-ee66fa073923
@@ -2362,7 +2357,7 @@ fork, change random colors, parent, privacy drapes.
 4. The class is private or package private and you know equals is never called.
    In which case, you should override it and throw an assertion error.
 
-*** Item 08: Equals method general contracts                         :drill:
+*** Item 08: Equals method general contracts                          :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       7e040020-d7c2-4719-a33c-f410238fb22d
@@ -2910,7 +2905,7 @@ public class Person implements Cloneable
 }
 #+END_SRC
 
-*** Item 12: Consider Implementing Comparable: Interface              :drill:
+*** Item 12: Implement Comparable: Interface                          :drill:
 SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       7d645124-9390-464b-80c4-a6cb9abeedc0
@@ -2937,7 +2932,7 @@ class MyClass implements Comparable<MyClass> {
 }
 #+END_SRC
 
-*** Item 12: Consider Implementing Comparable: Contract               :drill:
+*** Item 12: Implement Comparable: Contract                           :drill:
 SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       ebfcf743-d916-43ea-a93d-78f501f6b61f
@@ -2962,7 +2957,7 @@ What is the general contract of Comparable?
   sgn(y.compareTo(z))~
 - Strongly recommended that if ~x.compareTo(y) == 0~ then ~x.equals(y)~
  
-*** Item 12: Consider Implementing Comparable: compareTo not consistent with equals :drill:
+*** Item 12: Implement Comparable: compareTo not consistent equals    :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       7f740588-9ca2-4c51-ac09-8a91d1c65e42
@@ -2986,7 +2981,7 @@ Put the following in the documentation:
 
 "Note: This class has a natural ordering that is inconsistent with equals."
 
-*** Item 12: Consider Implementing Comparable: Extend Value class     :drill:
+*** Item 12: Implement Comparable: Extend Value class                 :drill:
 SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       a01ffdfe-96ea-41a4-948c-1f0527e090a7
@@ -3029,7 +3024,7 @@ then ~dateOfBirth~.  But what if we compare NamedThing to Person.
 
 http://stackoverflow.com/questions/13509286/why-cant-i-extend-an-instantiable-class-with-a-new-value-component-while-preser
 
-*** Item 12: Consider Implementing Comparable: Impl                   :drill:
+*** Item 12: Implement Comparable: Impl                               :drill:
 SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       5a6fa657-f96d-4a9b-a46c-4c90da10704b
@@ -3067,7 +3062,7 @@ public int compareTo(PhoneNumber pn) {
 }
 #+END_SRC
 
-*** Item 12: Consider Implementing Comparable: Guava Impl             :drill:
+*** Item 12: Implement Comparable: Guava Impl                         :drill:
 SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :ID:       ecd99002-0134-43ff-b96d-f0b7a5efad52
@@ -3392,7 +3387,7 @@ of mutability?
 Limit mutability as much as possible.
 Mark every field as final unless there is a compelling reason not to.
 
-*** Item 16: Favor Composition - why inheritance bad                 :drill:
+*** Item 16: Favor Composition - why inheritance bad                  :drill:
 SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
 :ID:       4b082ecd-3192-4a9d-8be4-48f55f36016e
@@ -3490,7 +3485,7 @@ really an A?  If you cannot truthfully answer yes, B should not extend A.
 
 You must also be comfortable in adopting the flaws of A.
 
-*** Item 17: Design for Inheritance -  Document           :drill:
+*** Item 17: Design for Inheritance -  Document                       :drill:
 SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       ed2bf3be-4fad-4d11-8d0a-2fb0043fe710
@@ -3912,7 +3907,7 @@ class Figure {
 }
 #+END_SRC
 
-*** Item 20: Prefer class hierarchies over tags - why bad :drill:
+*** Item 20: Prefer class hierarchies over tags - why bad             :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       26e60c15-d309-4102-b78b-d63528fa4614
@@ -4241,7 +4236,7 @@ Where can you declare an anonymous class?
 
 Anywhere an expression is legal.
 
-*** Item 22: Favor static member classes - anonymous class limitations :drill:
+*** Item 22: Favor static member classes - anon class limitations     :drill:
 SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
@@ -4302,7 +4297,6 @@ What are common uses for anonymous classes?
   }
   #+END_SRC
 
-
 *** Item 22: Favor static member classes - local classes declared     :drill:
 SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
@@ -4340,8 +4334,7 @@ SCHEDULED: <2016-01-30 Sat>
  
 The official term for a [List<String>] is a [parameterized type].
 
-
-*** Item 23: Don't use raw types - type 2                              :drill:
+*** Item 23: Don't use raw types - type 2                             :drill:
 SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4358,8 +4351,7 @@ SCHEDULED: <2016-01-30 Sat>
  
 The official term for a [String] is a [actual type parameter].
 
-
-*** Item 23: Don't use raw types - type 2                              :drill:
+*** Item 23: Don't use raw types - type 2                             :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4376,8 +4368,7 @@ SCHEDULED: <2016-01-28 Thu>
  
 The official term for a [List<E>] is a [generic type].
 
-
-*** Item 23: Don't use raw types - type 3                              :drill:
+*** Item 23: Don't use raw types - type 3                             :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4394,8 +4385,7 @@ SCHEDULED: <2016-01-28 Thu>
  
 The official term for a [E] is a [formal type parameter].
 
-
-*** Item 23: Don't use raw types - type 4                :drill:
+*** Item 23: Don't use raw types - type 4                             :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4412,7 +4402,7 @@ SCHEDULED: <2016-02-01 Mon>
  
 The official term for a [List<?>] is an [unbounded wildcard type].
 
-*** Item 23: Don't use raw types - type 5                 :drill:
+*** Item 23: Don't use raw types - type 5                             :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4430,8 +4420,7 @@ SCHEDULED: <2016-01-28 Thu>
 The official term for a [List] (a generic class with no type parameters) is a
 [raw type].
 
-
-*** Item 23: Don't use raw types - type 6                 :drill:
+*** Item 23: Don't use raw types - type 6                             :drill:
 SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4448,8 +4437,7 @@ SCHEDULED: <2016-01-27 Wed>
  
 The official term for a [<E extends Number>] is a [bounded type parameter].
 
-
-*** Item 23: Don't use raw types - type 7                 :drill:
+*** Item 23: Don't use raw types - type 7                             :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4466,8 +4454,7 @@ SCHEDULED: <2016-02-01 Mon>
  
 The official term for a [<T extends Comparable<T>>] is a [recursive type bound].
 
-
-*** Item 23: Don't use raw types - type 8                 :drill:
+*** Item 23: Don't use raw types - type 8                             :drill:
 SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4484,8 +4471,7 @@ SCHEDULED: <2016-01-30 Sat>
  
 The official term for a [List<? extends Number>] is a [bounded wildcard type].
 
-
-*** Item 23: Don't use raw types - type 9                 :drill:
+*** Item 23: Don't use raw types - type 9                             :drill:
 SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4502,8 +4488,7 @@ SCHEDULED: <2016-02-03 Wed>
  
 The official term for a [~static <E> List<E> asList(E[] a)~] is a [generic method].
 
-
-*** Item 23: Don't use raw types - type 10                 :drill:
+*** Item 23: Don't use raw types - type 10                            :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
@@ -4731,7 +4716,7 @@ What else should you do when you suppress a warning?
 
 Add a comment stating why it's safe to use.
 
-*** Item 24 Eliminate unchecked warnings - when to supress            :drill:
+*** Item 24 Eliminate unchecked warnings - when to suppress           :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       976f515c-3639-4b41-8bb1-885c376fa091
@@ -4752,7 +4737,6 @@ When should you supress unchecked warnings?
 Only when you can prove that the code that provoked the warning is typesafe.
 
 * Consulting
-
 ** Breaking the Time Barrier
 
 *** Seven Mutual Benefits                                           :drill:
@@ -4789,7 +4773,6 @@ What are the seven mutual benefits of exploring value with clients?
 7. Establishes a trusted partnership - After the first six benefits, clients see
    the impact of your work and champion for you.
 * Psychology
-
 ** New Year's Resolutions Don't Work
 
 URL: http://www.samuelthomasdavies.com/goals-systems/
