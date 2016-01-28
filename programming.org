@@ -201,17 +201,17 @@ base 16 - 0xcafebabe
 underscores, anywhere but the beginning and the end
 
 *** Floating point literals                                           :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-12 Fri>
 :PROPERTIES:
 :ID:       c417f903-19a7-4d7f-9d30-9a2730839ee8
-:DRILL_LAST_INTERVAL: 5.5053
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 14.6469
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:12]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:53]
 :END:
 
 What floating point literals does Java support?
@@ -819,17 +819,17 @@ What are compile time constants in Java?
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
 
 *** String vs StringBuilder vs StringBuffer                           :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       71b8ea5d-535f-4a21-853d-f2319f7d2c69
-:DRILL_LAST_INTERVAL: 1.5463
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.5068
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:46]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:54]
 :END:
 
 What are the differences between String, StringBuilder and StringBuffer?
@@ -872,17 +872,17 @@ public static void main(String... args) {
 #+END_SRC
 
 *** Varargs type                                                      :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       262bfbad-9446-443f-81f8-c09cebe80766
-:DRILL_LAST_INTERVAL: 1.658
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.1263
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:31]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:57]
 :END:
 
 What type is a varargs argument in Java
@@ -925,8 +925,17 @@ int myItem = threeDimArray[0][1][2];
 #+END_SRC
 
 *** Multidimensional array - String representation                    :drill:
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       a364ea37-eeba-400f-9e5c-7d2c17349540
+:DRILL_LAST_INTERVAL: 1.7158
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:05]
 :END:
 
 How do you get a string representation of a multidimensional array in Java?
@@ -1121,6 +1130,18 @@ PermGen, default 64mb
 Answer
 
 *** Why does Java not having reified types matter?                    :drill:
+SCHEDULED: <2016-01-29 Fri>
+:PROPERTIES:
+:ID:       b64319d7-d9a2-49ae-9234-71d7a08ff53a
+:DRILL_LAST_INTERVAL: 1.2542
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 2.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:14]
+:END:
 
 Why should I care that Java doesn't have reified generics?
 
@@ -1131,22 +1152,25 @@ Why should I care that Java doesn't have reified generics?
   public void my_method(List<String> input) { ... }
   public void my_method(List<Integer> input) { ... }
   #+END_SRC
-+ Use generics with arrays
- 
-  Arrays are reified, generics you can't instantiate E[] or List<E>[]
-+ You can't use parameterized exceptions.
 
-  The catch block of a try-catch checks using instanceof.  The instanceof
-  operator requires a reifiable type.
-+ Performance improvements
-  
-  Specialized generics would have more info available for optimization.
++ Use generics with arrays.  Arrays are reified, generics you can't instantiate
+  E[] or List<E>[]
+
++ You can't use parameterized exceptions.  The catch block of a try-catch checks
+  using instanceof.  The instanceof operator requires a reifiable type.
+
++ Performance improvements.  Specialized generics would have more info available
+  for optimization.
+
 + No support for run time type information.  You have to pass a class token in
   if you want type support.
  
 http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
 
 *** Limitations on Generics                                           :drill:
+:PROPERTIES:
+:ID:       9027c47c-5b46-4f17-82b2-ca8c766a1cbd
+:END:
 
 What are the limitations on generics in Java?
 
@@ -1160,6 +1184,23 @@ What are the limitations on generics in Java?
 6. Can't create catch or throw objects of parameterized types.
 7. Can't overload a method where the formal type parameter erases to the same
    type.
+
+*** Implied keywords on nested interfaces and enums                   :drill:
+:PROPERTIES:
+:ID:       4f528049-fb9d-4bc1-80ac-a6f3cdd3db98
+:END:
+
+What keywords are implied on nested interfaces and enums in Java? 
+
+**** Answer
+
+static
+
+[[https://docs.oracle.com/javase/specs/jls/se7/html/jls-8.html#jls-8.1.3][JLS (§8.5)]] Member interfaces are always implicitly static so they are never
+considered to be inner classes
+
+[[https://docs.oracle.com/javase/specs/jls/se7/html/jls-8.html#jls-8.9][JLS (§8.9)]] Nested enum types are implicitly static. It is permissible to
+explicitly declare a nested enum type to be static.
 
 ** Design Patterns
 
@@ -2346,17 +2387,17 @@ What are valid use cases for finalizers?
 + Native peers, assuming the native peer holds no critical resources.
 
 *** Item 07: Avoid Finalizers - Safe Impl                             :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       6262a0ed-cd87-446f-b258-f05c1037d8c9
-:DRILL_LAST_INTERVAL: 10.8932
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 25.6547
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:02]
+:DRILL_AVERAGE_QUALITY: 3.285
+:DRILL_EASE: 2.08
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:05]
 :END:
 
 How should you implement finalizers if you must?
@@ -2397,17 +2438,17 @@ fork, change random colors, parent, privacy drapes.
    In which case, you should override it and throw an assertion error.
 
 *** Item 08: Equals method general contracts                          :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-03-09 Wed>
 :PROPERTIES:
 :ID:       7e040020-d7c2-4719-a33c-f410238fb22d
-:DRILL_LAST_INTERVAL: 14.3393
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 40.9839
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:17]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:06]
 :END:
 
 What are the general contracts for the equals method?
@@ -3293,17 +3334,17 @@ Follow these five rules:
 5. Ensure exclusive access to any mutable components.
 
 *** Item 15: Minimize Mutability - benefits                           :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       360a3167-bbc5-44e3-85c0-fa2d58c859cb
-:DRILL_LAST_INTERVAL: 4.6521
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 18.3141
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:41]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:57]
 :END:
 
 What are the benefits of immutable classes?
@@ -3498,17 +3539,17 @@ Annoying and tedious to write.
 http://programmers.stackexchange.com/questions/117628/why-are-wrapper-classes-not-suited-for-use-in-callback-frameworks
 
 *** Item 16: Favor Composition - when to use inheritance              :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       71d5fc01-01f6-48f7-9ffa-d071e95bd4ae
-:DRILL_LAST_INTERVAL: 4.7104
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 12.2124
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:17]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:55]
 :END:
 
 When is inheritance appropriate?
@@ -3550,17 +3591,17 @@ the results of each invocation affect subsequent processing.
 Overridable means nonfinal and either public or protected.
 
 *** Item 17: Design for Inheritance - inheritance doc convention      :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       64ec1959-6c4b-4a06-9d0f-5cb1f0daa436
-:DRILL_LAST_INTERVAL: 4.9801
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 18.4914
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:42]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:54]
 :END:
 
 What convention do you use to signal that a method invokes overridable methods?
@@ -3746,22 +3787,24 @@ helper method and then call the helper method from the overridable method.
 Then, replace each self-use of an overridable method with its private helper.
 
 *** Item 18: Prefer Interfaces - Why                                  :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       28beb321-3739-4e82-aa2c-45c81c33e107
-:DRILL_LAST_INTERVAL: 3.0073
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_LAST_INTERVAL: 1.4996
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.143
 :DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:42]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:15]
 :END:
 
 Why should you prefer interfaces to abstract classes?
 
 **** Answer
+
+Arya Stark, faces, blender, wrap
 
 1. Existing classes can be easily retrofitted to implement a new interface.
 2. Interfaces are ideal for defining mixins.
@@ -3815,17 +3858,17 @@ You use composition to included a skeletal implementation of an interface and
 then forward the interfaces' method calls to the wrapped skeletal interface.
 
 *** Item 18: Prefer Interfaces - Advantages of abstract classes       :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       571f408b-2c08-4b4f-8b62-397feb475239
-:DRILL_LAST_INTERVAL: 4.5145
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.4608
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:38]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:56]
 :END:
 
 What are the advantages of abstract classes?
@@ -4174,17 +4217,17 @@ Inner Classes
 4. Local classes
 
 *** Item 22: Favor static member classes - static member class uses   :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       584cc744-953e-4ca5-b66b-b03d3b65e309
-:DRILL_LAST_INTERVAL: 1.533
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.8786
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:56]
 :END:
 
 What are the use cases for a static member class?
@@ -4233,20 +4276,20 @@ class Envelope {
 http://stackoverflow.com/questions/11276994/what-does-qualified-this-construct-mean-in-java
 
 *** Item 22: Favor static member classes - when use static            :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       66bebad5-d97b-425f-b08e-b8b68dbd9a59
-:DRILL_LAST_INTERVAL: 1.8064
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.0658
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:57]
 :END:
 
-When should declare a nested class as static?
+When should you declare a nested class as static?
 
 **** Answer
 
@@ -4392,35 +4435,35 @@ SCHEDULED: <2016-01-30 Sat>
 The official term for a [String] is a [actual type parameter].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       41a638be-814f-4d91-9666-d0f11d474e84
-:DRILL_LAST_INTERVAL: 1.9032
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 5.4856
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:45]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:54]
 :END:
  
 The official term for a [List<E>] is a [generic type].
 
 *** Item 23: Don't use raw types - type 3                             :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       05e30c71-50be-4f9d-a6c6-e76ef8547cdc
-:DRILL_LAST_INTERVAL: 1.554
+:DRILL_LAST_INTERVAL: 1.7865
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:45]
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:13]
 :END:
  
 The official term for a [E] is a [formal type parameter].
@@ -4443,36 +4486,36 @@ SCHEDULED: <2016-02-01 Mon>
 The official term for a [List<?>] is an [unbounded wildcard type].
 
 *** Item 23: Don't use raw types - type 5                             :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64a611da-611d-4550-8298-603eca0032f1
-:DRILL_LAST_INTERVAL: 1.5098
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.653
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:22]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:53]
 :END:
  
 The official term for a [List] (a generic class with no type parameters) is a
 [raw type].
 
 *** Item 23: Don't use raw types - type 6                             :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       cadef5d7-3f75-4f12-9619-b93803fd8ed3
-:DRILL_LAST_INTERVAL: 1.4671
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.1973
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:46]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:55]
 :END:
  
 The official term for a [<E extends Number>] is a [bounded type parameter].
@@ -4609,17 +4652,17 @@ static int numElementsInCommon(Set<?> s1, Set<?> s2) {
 #+END_SRC
 
 *** Item 23: Don't use raw types - what's the use of <?>              :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       8b2ad061-48ba-4383-b20d-edefaff2ebcb
-:DRILL_LAST_INTERVAL: 1.6308
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6539
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:34]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:56]
 :END:
 
 What's the point of unbounded wildcard types?
@@ -4658,17 +4701,17 @@ c.add(new Object());
 http://stackoverflow.com/questions/7671072/what-is-the-use-and-point-of-unbound-wildcards-generics-in-java
 
 *** Item 23: Don't use raw types - instanceof                         :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       1694349f-062a-4bcc-a339-57647dcf180c
-:DRILL_LAST_INTERVAL: 1.7571
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.4013
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:24:]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:57]
 :END:
 
 How do you do an instanceof check for a parameterized type?
@@ -4737,17 +4780,17 @@ How do you suppress an unchecked warnings?
 ~@SuppressWarnings("unchecked")~
 
 *** Item 24: Eliminate unchecked warnings - include with suppressed   :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       cb25be5d-ee37-416a-be3a-457355ea2aea
-:DRILL_LAST_INTERVAL: 1.7538
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6866
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:25]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:55]
 :END:
 
 What else should you do when you suppress a warning?
@@ -4777,6 +4820,9 @@ When should you supress unchecked warnings?
 Only when you can prove that the code that provoked the warning is typesafe.
 
 *** Item 25: Prefer Lists to Arrays - array and generic diffs         :drill:
+:PROPERTIES:
+:ID:       2027964e-d3d8-497b-93b8-8c562b1b6550
+:END:
 
 What are the differences between arrays and generics?
 
@@ -4788,6 +4834,9 @@ Arrays have run-time safety but not compile time safety.  Generics have compile
 time safety but not run-time safety.
 
 *** Item 25: Prefer Lists to Arrays - reified definition              :drill:
+:PROPERTIES:
+:ID:       ba413ffd-0b03-49f9-8a3e-fecb51756108
+:END:
 
 What does reified mean in a Java context?
 
@@ -4796,10 +4845,26 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
+SCHEDULED: <2016-01-30 Sat>
+:PROPERTIES:
+:ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
+:DRILL_LAST_INTERVAL: 1.6066
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:15]
+:END:
 
 What are reifiable types in Java?
 
 **** Answer
+
+Ms. USA bachelor king - dwarfs, jump-rope string, Question marks, raining raw
+hamburgers, roller-coaster
+
 
 1. Primitive types, e.g. ~int~
 2. Non-parameterized class or interface, e.g. ~Number~, ~String~
@@ -4809,20 +4874,34 @@ What are reifiable types in Java?
 5. An array whose component type is reifiable, e.g. ~int[]~, ~List<?>[]~,
    ~List[]~.
 
-
 *** Item 25: Prefer Lists to Arrays - non-reifiable types             :drill:
+SCHEDULED: <2016-01-29 Fri>
+:PROPERTIES:
+:ID:       e3e1158d-d2f7-4011-baf4-469eec5ee54f
+:DRILL_LAST_INTERVAL: 1.3923
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:08]
+:END:
 
-What are non-reifiable types in Java?
+What are the non-reifiable types in Java?
 
 **** Answer
 
 1. A type variable, ~e.g~ T
-2. A parametertized type with actual type parameters, e.g. ~List<String>~,
+2. A parameterized type with actual type parameters, e.g. ~List<String>~,
    ~Map<String, Integer>~
 3. A parameterized type with bounds, e.g. ~List<? extends Number>~,
    ~Comparable<? super string>~
 
 *** Item 25: Prefer Lists to Arrays - varargs                         :drill:
+:PROPERTIES:
+:ID:       e69bf276-a239-4b57-8d9d-95fdb7f32340
+:END:
 
 Should you use generics with varargs?
 
@@ -4831,12 +4910,104 @@ Should you use generics with varargs?
 No, since varargs are an array, it doesn't play nice with generics.
 
 *** Item 25: Prefer Lists to Arrays - mixing arrays and generics      :drill:
+:PROPERTIES:
+:ID:       ff3d89a2-4c25-464e-acaf-65fa4d24a868
+:END:
 
 When having trouble with arrays and generics what should you do?
 
 **** Answer
 
 Replace the arrays with List.
+
+*** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
+:PROPERTIES:
+:ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
+:END:
+
+What steps should you take to prove an unchecked cast is type safe?
+
+**** Answer
+
+1. Ensure the field is private or immutable.
+2. Ensure it doesn't escape the enclosing class by return or by parameter.
+3. Ensure that all methods that modify the field are type-safe.
+4. Explain in a comment why the cast is safe.
+
+*** Item 26: Favor Generic Types - two methods for unchecked casts    :drill:
+:PROPERTIES:
+:ID:       8878bbe7-300f-42df-abb9-c167bb28d5be
+:END:
+
+What are the two places you will generally see unchecked casts?
+
+**** Answer
+
+At the construction site or at the call site.  The construction site is more
+common because it only has to happen once.
+
+*** Item 27: Favor Generic Methods - reduce redundancy                 :drill:
+:PROPERTIES:
+:ID:       1acd593f-72cb-452b-a596-5928c5887c77
+:END:
+
+How can you reduce the redundancy of instantiating a generic type?
+
+**** Answer
+
+Use a generic static factory method or use the diamond operator which will use
+type inference.
+
+*** Item 27: Favor Generic Methods - generic singleton factory        :drill:
+SCHEDULED: <2016-01-30 Sat>
+:PROPERTIES:
+:ID:       43dc9b98-2b3c-47ed-b590-c5ea1dc13ab3
+:DRILL_LAST_INTERVAL: 1.5523
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:08]
+:END:
+
+What is the generic singleton factory?
+
+**** Answer
+
+Used to create an object that is immutable but applicable to many different
+types.  Because generics are implemented by erasure, you can use a single object
+for all required type parameters.  This is better than using raw types because
+you only have one unchecked cast.
+
+# *** Item 27: Favor Generic Methods - impl generic singleton factory   :drill:
+
+# How do you implement a generic singleton factory?
+
+# **** Answer
+
+# on hold
+
+*** Item 27: Favor Generic Methods - mutual comparability             :drill:
+SCHEDULED: <2016-01-30 Sat>
+:PROPERTIES:
+:ID:       ac29ca2c-1aca-4630-84a2-df67c02822c0
+:DRILL_LAST_INTERVAL: 1.857
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:08]
+:END:
+
+How do you express "for every type T that can be compared to itself"?
+
+**** Answer
+
+<T extends Comparable<T>>
 
 * Consulting
 ** Breaking the Time Barrier
@@ -5023,17 +5194,17 @@ systemise it.
 /The ONE Thing/ by Keller
 
 *** Habitualise ONE Thing                                             :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-29 Mon>
 :PROPERTIES:
 :ID:       d51ec8b8-65ef-4264-a249-1a308dbd746a
-:DRILL_LAST_INTERVAL: 10.9521
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 31.6481
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.833
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:59]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:04]
 :END:
 
 How do you systemize your ONE thing with cue-habit-reward and implementation
