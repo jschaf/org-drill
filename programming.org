@@ -533,17 +533,17 @@ What other conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Flags                                                 :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :ID:       28483543-3abc-46e8-9d14-dbaa606e6ca8
-:DRILL_LAST_INTERVAL: 9.2703
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 21.7197
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 02:54]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:48]
 :END:
 
 What flags does java.util.Formatter support?
@@ -850,17 +850,17 @@ Both StringBuilder and StringBuffer extend AbstractStringBuilder.
 http://stackoverflow.com/questions/355089/stringbuilder-and-stringbuffer
 
 *** Varargs                                                           :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       7b5fe7f3-70ef-4606-b523-e246dc95cddc
-:DRILL_LAST_INTERVAL: 2.0225
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 6.7707
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:50]
 :END:
 
 How do you declare varargs in Java?
@@ -894,6 +894,236 @@ What type is a varargs argument in Java
 The Java Language Specification (third edition) section 8.4.1 says that "If the
 last formal parameter is a variable arity parameter of type T, it is considered
 to define a formal parameter of type T[]".
+
+*** Multidimensional array - declaration                              :drill:
+:PROPERTIES:
+:ID:       0a364e54-1afd-451a-9a8e-6b61e1a2d682
+:END:
+
+How do you declare a multidimensional array in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+int[][][] threeDimArray = new int[3][3][3];
+int[][][] threeDimInit = { 
+    { {1, 2}, {3, 4}, },
+    { {5, 6}, {7, 8}, },
+};
+#+END_SRC
+
+*** Multidimensional array - access                                   :drill:
+:PROPERTIES:
+:ID:       7d40698d-7e03-4131-9c09-a164213aba57
+:END:
+
+How do you access an item in a multidimensional array in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+int[][][] threeDimArray = new int[3][3][3];
+int myItem = threeDimArray[0][1][2];
+#+END_SRC
+
+*** Multidimensional array - String representation                    :drill:
+:PROPERTIES:
+:ID:       a364ea37-eeba-400f-9e5c-7d2c17349540
+:END:
+
+How do you get a string representation of a multidimensional array in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+int[][][] threeDimArray = new int[3][3][3];
+Arrays.deepToString(threeDimArray);
+// [[[1, 2], [3,4]], [[5, 6], [7, 8]]]
+#+END_SRC
+
+*** Create a memory leak                                              :drill:
+:PROPERTIES:
+:ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
+:END:
+
+How can you create a memory leak in Java?
+
+**** Answer
+
+For a real memory leak, classloader leaks will actually leak memory.
+
+From http://stackoverflow.com/questions/6470651/creating-a-memory-leak-with-java
+
+1. The application creates a long-running thread (or use a thread pool to leak
+   even faster).
+2. The thread loads a class via an (optionally custom) ClassLoader.
+3. The class allocates a large chunk of memory (e.g. new byte[1000000]), stores
+   a strong reference to it in a static field, and then stores a reference to
+   itself in a ThreadLocal. Allocating the extra memory is optional (leaking the
+   Class instance is enough), but it will make the leak work that much faster.
+4. The thread clears all references to the custom class or the ClassLoader it
+   was loaded from.
+5. Repeat.
+
+From http://frankkieviet.blogspot.com/2006/10/classloader-leaks-dreaded-permgen-space.html
+
+Any reference from outside an application to an object inside the application of
+which the class is loaded by the application's classloader will cause a
+classloader leak.
+
+For unintentional object retention:
+
++ Any Object that manages it's own memory, resizable array, stack, queue, etc...
++ Callbacks
++ Memory that's not reachable by the JVM, such as that allocated by native
+  methods.
++ Not closing connections or files.
+
+*** Relationship between hashcode and equals                          :drill:
+:PROPERTIES:
+:ID:       57a4b3cb-5206-475a-b876-490ee17f8812
+:END:
+
+What is the relationship between hashCode and equals?  
+
+What is their significance?
+
+**** Answer
+
+equals general contract - symmetric, reflexive, transitive, consistent,
+non-nullity
+
+hashCode general contract - consistent, equals -> same hashCode, different
+equals -> not necessarily different hashCode.
+
+Equal objects must produce the same hash code as long as they are equal,
+however unequal objects need not produce distinct hash codes.
+
+
+*** Interfaces: Call default methods                                  :drill:
+:PROPERTIES:
+:ID:       91df68d1-253f-4f3f-84f4-005400946e02
+:END:
+
+How do you call a default method explicitly?
+
+**** Answer
+
+MyInterface.super.theDefaultMethod();
+
+This only works if ~MyInterface~ is an immediate parent of the implementing
+class or extending interface.  Grandchildren can't do this.
+
+
+*** Interface multiple inheritance                                    :drill:
+:PROPERTIES:
+:ID:       c1d5b898-6c74-4440-8960-0f4e2d501bbf
+:END:
+
+Can an interface extend multiple interfaces?
+
+**** Answer
+
+Yes, there is no diamond problem unless default methods conflict from the parent
+interfaces.  If default methods from two interfaces have the same signature,
+then you must provide an implementation as either an overriding method or as a
+default method for an interface.  Otherwise the compiler will error.
+
+http://stackoverflow.com/questions/19546357/can-an-interface-extend-multiple-interfaces-in-java
+
+http://codeinventions.blogspot.com/2014/07/can-interface-extend-multiple.html
+
+#+BEGIN_SRC java
+public class MultInterfaces {
+
+    interface Washable {
+    default void prepare() {
+        System.out.println("Washable: preparing");
+    }
+        void wash();
+
+    }
+
+    interface Cleanable {
+        default void prepare() {
+            System.out.println("Cleanable: preparing");
+        }
+        void wash();
+    }
+
+    interface WashAndCleanable extends Washable, Cleanable {
+
+        default void prepare() {
+            System.out.println("WashAndCleanable: preparing");
+            Washable.super.prepare();
+            Cleanable.super.prepare();
+        }
+    }
+
+
+    static class WasherMan implements WashAndCleanable {
+
+        @Override
+        public void prepare() {
+            System.out.println("WasherMan: preparing");
+            WashAndCleanable.super.prepare();
+        }
+
+        @Override
+        public void wash() {
+            System.out.println("Washing");
+        }
+    }
+
+    public static void main(String... args) {
+        WashAndCleanable washMan = new WasherMan();
+        washMan.prepare();
+        washMan.wash();
+    }
+
+}
+#+END_SRC
+
+*** String final class                                                :drill:
+:PROPERTIES:
+:ID:       c87ea6d6-5a7d-4272-b0a3-7714da8852d1
+:END:
+
+Why is String final?
+
+**** Answer
+
+Since String is an immutable class, allowing a subclass could break the
+equals and hashCode contract, or the fake string might equals the same, but
+wouldn't be the same.
+
+*** Wait, notify and notifyAll on Object                              :drill:
+:PROPERTIES:
+:ID:       c7332c74-7a12-458f-8147-c24890814a44
+:END:
+
+What are wait, notify and notifyAll defined on Object?
+
+**** Answer
+
+Because you wait on a given object, or more specifically, its monitor, to use
+this functionality.
+
+http://stackoverflow.com/questions/1769489/why-are-wait-and-notify-declared-in-javas-object-class
+
+*** Sun JVM memory regions                                            :drill:
+:PROPERTIES:
+:ID:       ddef18a8-22ad-487c-abbe-6e19b6778ea1
+:END:
+
+Question
+
+PermGen, default 64mb
+
+**** Answer
+
+Answer
+
 
 ** Design Patterns
 
@@ -1566,17 +1796,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       d42c342e-3741-4bb0-b310-d01cab81551d
-:DRILL_LAST_INTERVAL: 5.0933
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 13.1616
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:15]
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
 :END:
 
 What is a covariant return type?
@@ -2838,17 +3068,17 @@ public int compareTo(PhoneNumber pn) {
 #+END_SRC
 
 *** Item 12: Consider Implementing Comparable: Guava Impl             :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :ID:       ecd99002-0134-43ff-b96d-f0b7a5efad52
-:DRILL_LAST_INTERVAL: 7.2865
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 22.0619
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_AVERAGE_QUALITY: 3.75
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:09]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:52]
 :END:
 
 What does an implementation for Comparable look like with Guava?
@@ -2931,17 +3161,17 @@ Are public mutable fields thread-safe?
 Nope.
 
 *** Item 13: Minimize accessibility - arrays                          :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-01-29 Fri>
 :PROPERTIES:
 :ID:       878dbcd5-d7bb-45ad-bf26-6e7b933e997e
-:DRILL_LAST_INTERVAL: 5.9848
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_LAST_INTERVAL: 1.4855
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:22]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:39]
 :END:
 
 What alternatives are there to a final array?
@@ -3001,24 +3231,24 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 4.8176
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 13.5545
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.6
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:14]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:48]
 :END:
 
 How do you make a class immutable?
 
 **** Answer
 
-Han's Solo - Arizona, sealed, final sticker, private showing, exclusive foot
+Han's Solo - Arizona, sealed, final sticker, private showing, exclusive access
 
 Follow these five rules:
 
@@ -3056,17 +3286,17 @@ Hans Solo - classrooms, intestines, blocks
 + Immutable objects make great building blocks.
 
 *** Item 15: Minimize Mutability - drawbacks                          :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-13 Sat>
 :PROPERTIES:
 :ID:       09fcee96-404f-49fe-9311-1c1751869b6c
-:DRILL_LAST_INTERVAL: 5.448
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 16.1438
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:18]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:53]
 :END:
 
 What are the drawbacks of immutable object?
@@ -3312,17 +3542,17 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 2.9981
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 9.1881
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:27]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.66
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
 :END:
 
 How do you allow efficient access to the internal workings of a subclass
@@ -3336,17 +3566,17 @@ workings of the class.
 Like AbstractList#removeRange
 
 *** Item 17: Design for Inheritance - test for inheritance design     :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       125bac74-5920-4f7a-a8c5-0cb26f5bf871
-:DRILL_LAST_INTERVAL: 4.65
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.9176
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.667
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:39]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:51]
 :END:
 
 What is the only way to test if a class is designed for inheritance?
@@ -3357,17 +3587,17 @@ Subclass it at least three times, and have someone other than the author
 subclass it at least once.
 
 *** Item 17: Design for Inheritance - constructors and overridables   :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       4d850c76-da4c-4e3c-bf02-65d7ba11bb76
-:DRILL_LAST_INTERVAL: 4.1485
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 11.7185
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:42]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:49]
 :END:
 
 Why can't you use overridable methods in a constructor?
@@ -3433,17 +3663,17 @@ Neither clone nor readObject may invoke an overridable method, directly or
 indirectly.
 
 *** Item 17: Design for Inheritance -                                 :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       beee49af-05ab-48b9-858d-60cc43353500
-:DRILL_LAST_INTERVAL: 4.083
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.1548
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:38]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
 :END:
 
 What is the best solution to prevent inheritance problems in normal concrete
@@ -3530,17 +3760,17 @@ The naming convention is AbstractINTERFACE, where INTERFACE is the interface you
 implement.
 
 *** Item 18: Prefer Interfaces - simulated multiple inheritance       :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       ead7a395-bcd7-4fd9-9917-50c67c7954cb
-:DRILL_LAST_INTERVAL: 3.9309
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.4565
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:27]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:49]
 :END:
 
 What is simulated multiple inheritance?
@@ -3574,17 +3804,17 @@ In Java 8, the story is slightly better for interfaces since you can provide
 default methods.
 
 *** Item 19: Interface only for Types - Why                           :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       dc434c1d-7b41-4c98-8f39-f6556da48256
-:DRILL_LAST_INTERVAL: 4.4295
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 12.061
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:32]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
 :END:
 
 Why should you use interfaces only for types?
@@ -3683,17 +3913,17 @@ class Figure {
 #+END_SRC
 
 *** Item 20: Prefer class hierarchies over tags - why bad :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       26e60c15-d309-4102-b78b-d63528fa4614
-:DRILL_LAST_INTERVAL: 1.6162
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.488
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_AVERAGE_QUALITY: 3.4
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:45]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:38]
 :END:
 
 Why are tagged classes bad?
@@ -3761,17 +3991,17 @@ How do you transform a tagged class to a class hierarchy?
    tagged class.
 
 *** Item 21: Use function objects - Java function pointer             :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       7748115f-87d0-43a5-aa77-e504115ff827
-:DRILL_LAST_INTERVAL: 1.6319
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.1583
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:47]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:46]
 :END:
 
 How do you represent a function pointer in Java?
@@ -3785,17 +4015,17 @@ mimicking a function pointer.
 This approach is typically used for the strategy pattern.
 
 *** Item 21: Use function objects - optimization                      :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       ed8a6576-6a80-49e6-bebd-0c66446ef8e8
-:DRILL_LAST_INTERVAL: 1.6661
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.1205
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:48]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:46]
 :END:
 
 Should you create a function object every time you want to use the strategy
@@ -3807,17 +4037,17 @@ No, silly.  You generally want to make a singleton and use that to avoid
 unnecessary object creation.
 
 *** Item 21: Use function objects - anonymous class optimization      :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       0c71b0b1-6acc-43d3-8a6d-a49ec780d1f2
-:DRILL_LAST_INTERVAL: 1.6062
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.9221
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:47]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:53]
 :END:
 
 If using anonymous classes for function objects, how can you optimize repeated
@@ -3844,17 +4074,17 @@ class Host {
 #+END_SRC
 
 *** Item 22: Favor static member classes - nested class               :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       5e8e5e8f-95c6-4d75-9e81-1ce813265122
-:DRILL_LAST_INTERVAL: 1.6466
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6387
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:49]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
 :END:
 
 What is a nested class?
@@ -3864,17 +4094,17 @@ What is a nested class?
 Any class defined within another class.
 
 *** Item 22: Favor static member classes -                            :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       f5bd4562-1fbe-47f7-ace8-31a6c3eeedf6
-:DRILL_LAST_INTERVAL: 1.5346
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6176
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:50]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:49]
 :END:
 
 What's the purpose of a nested class?
@@ -3885,17 +4115,17 @@ It only exists to serve the enclosing class.  If the nested class were useful in
 some other context, then it should be top level class.
 
 *** Item 22: Favor static member classes - four kinds of nested       :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       6da50916-c4a8-450d-8713-47e5b42389c1
-:DRILL_LAST_INTERVAL: 1.6447
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6619
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
 :END:
 
 What are the four types of nested classes?
@@ -3992,17 +4222,17 @@ It saves memory since each enclosing class doesn't also have a nested class
 instantiation.
 
 *** Item 22: Favor static member classes - anonymous class            :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       d4451b59-5726-4757-97c8-90d56bf8c030
-:DRILL_LAST_INTERVAL: 1.5684
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6608
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:46]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:49]
 :END:
 
 Where can you declare an anonymous class?
@@ -4036,17 +4266,17 @@ What are the limitations on an anonymous class?
   inherits from the super-type.
 
 *** Item 22: Favor static member classes - anonymous class uses       :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       5dcfd714-1960-47ee-865d-a1c9f0b29d62
-:DRILL_LAST_INTERVAL: 1.5996
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.2799
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:44]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:51]
 :END:
 
 What are common uses for anonymous classes?
@@ -4074,17 +4304,17 @@ What are common uses for anonymous classes?
 
 
 *** Item 22: Favor static member classes - local classes declared     :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
 :ID:       b6f4287d-2908-4dd6-b0a6-9893621012bf
-:DRILL_LAST_INTERVAL: 1.0757
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.5819
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:34]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
 :END:
 
 Where can local classes be declared?
@@ -4094,36 +4324,36 @@ Where can local classes be declared?
 Anywhere a local variable can be declared.
 
 *** Item 23: Don't use raw types - type 1                             :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       d95b8741-0cf8-44ec-aa34-873d076516c5
-:DRILL_LAST_INTERVAL: 1.3872
+:DRILL_LAST_INTERVAL: 1.5165
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 2.75
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:25]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:54]
 :END:
  
 The official term for a [List<String>] is a [parameterized type].
 
 
 *** Item 23: Don't use raw types - type 2                              :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       3c26f404-53a2-4d3d-a605-ec4835909aac
-:DRILL_LAST_INTERVAL: 1.2682
+:DRILL_LAST_INTERVAL: 1.6884
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:44]
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:39]
 :END:
  
 The official term for a [String] is a [actual type parameter].
@@ -4166,22 +4396,21 @@ The official term for a [E] is a [formal type parameter].
 
 
 *** Item 23: Don't use raw types - type 4                :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       46916859-9a39-4f4a-8f7c-067de32a8371
-:DRILL_LAST_INTERVAL: 1.5995
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.65
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:21]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:51]
 :END:
  
-The official term for a [<?>] is an [unbounded wildcard type].
-
+The official term for a [List<?>] is an [unbounded wildcard type].
 
 *** Item 23: Don't use raw types - type 5                 :drill:
 SCHEDULED: <2016-01-28 Thu>
@@ -4221,88 +4450,88 @@ The official term for a [<E extends Number>] is a [bounded type parameter].
 
 
 *** Item 23: Don't use raw types - type 7                 :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       45d1515b-5129-4db9-8d04-95e161770294
-:DRILL_LAST_INTERVAL: 1.6336
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.1929
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:28]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
 :END:
  
 The official term for a [<T extends Comparable<T>>] is a [recursive type bound].
 
 
 *** Item 23: Don't use raw types - type 8                 :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       c7999a55-19b7-4c7c-aa8c-c3b964008a2e
-:DRILL_LAST_INTERVAL: 1.794
+:DRILL_LAST_INTERVAL: 1.5793
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 3.0
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:27]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:40]
 :END:
  
 The official term for a [List<? extends Number>] is a [bounded wildcard type].
 
 
 *** Item 23: Don't use raw types - type 9                 :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       86002f40-2980-4f07-9ec1-85fb36a0e303
-:DRILL_LAST_INTERVAL: 1.7917
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.7407
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:32]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:50]
 :END:
  
 The official term for a [~static <E> List<E> asList(E[] a)~] is a [generic method].
 
 
 *** Item 23: Don't use raw types - type 10                 :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       4464817c-b1ef-47c9-b057-25264f6b819d
-:DRILL_LAST_INTERVAL: 1.5339
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.0059
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:24]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:34]
 :END:
  
 The official term for a [String.class] is a [type token].
 
 *** Item 23 Don't use raw types - why                                 :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       9c35ca8e-b578-4574-97ca-a0f3ba27678b
-:DRILL_LAST_INTERVAL: 1.5729
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.6863
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:25]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:52]
 :END:
 
 Why shouldn't you use raw types?
@@ -4319,17 +4548,17 @@ With generics, the compiler will ensure type safety and insert all the correct
 casts for you.
 
 *** Item 23 Don't use raw types - raw type alternative                :drill:
-SCHEDULED: <2016-01-27 Wed>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       71b09f09-e8b1-4bdc-bdc0-8a95609d9608
-:DRILL_LAST_INTERVAL: 1.4518
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.8694
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:31]
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:35]
 :END:
 
 What type should you use for generics if the element type is unknown and doesn't
@@ -4432,17 +4661,17 @@ value instanceof List
 #+END_SRC
 
 *** Item 23 Don't use raw types - raw type use cases                  :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       a1a64e62-7320-4e11-823f-37804d4ef489
-:DRILL_LAST_INTERVAL: 1.599
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.8399
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:46]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:52]
 :END:
 
 What are the acceptable uses for raw types?
@@ -4463,17 +4692,17 @@ What are the acceptable uses for raw types?
    work.
 
 *** Item 24 Eliminate unchecked warnings - how to suppress            :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       25630e2b-115d-497c-8f60-d0a85c734651
-:DRILL_LAST_INTERVAL: 1.6717
+:DRILL_LAST_INTERVAL: 1.58
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:32]
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:53]
 :END:
 
 How do you suppress an unchecked warnings?
@@ -4503,17 +4732,17 @@ What else should you do when you suppress a warning?
 Add a comment stating why it's safe to use.
 
 *** Item 24 Eliminate unchecked warnings - when to supress            :drill:
-SCHEDULED: <2016-01-28 Thu>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       976f515c-3639-4b41-8bb1-885c376fa091
-:DRILL_LAST_INTERVAL: 1.5915
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.843
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:27]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
 :END:
 
 When should you supress unchecked warnings?
