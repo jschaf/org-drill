@@ -96,7 +96,7 @@ What are the benefits of OO Programing?
 + Pluggability
 
 ** Java Language
-*** Variable Basics                                                 :drill:
+*** Variable Basics                                                   :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       dfe6c5a9-33b5-4933-a2c1-9f57ab726506
@@ -119,7 +119,7 @@ What are the 4 types of variables in Java?
 3. Local variables
 4. Parameters
 
-*** Primitive Types                                                 :drill:
+*** Primitive Types                                                   :drill:
 SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       938d3b90-09e3-45fa-92a4-1cbdc02d4e0e
@@ -146,7 +146,7 @@ What are Java's primitive types?
 + char - 16-bit Unicode char
 + boolean - true and false
 
-*** Primitive Types 2                                               :drill:
+*** Primitive Types 2                                                 :drill:
 SCHEDULED: <2016-02-24 Wed>
 :PROPERTIES:
 :ID:       d2b0df5b-4bea-4a10-9de1-dfdab03d4796
@@ -176,7 +176,7 @@ char: '\u0000'
 Sting or any object: null
 boolean: false
 
-*** Integer Literals                                                :drill:
+*** Integer Literals                                                  :drill:
 SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       c966a52c-6989-4f50-891a-dbbb88ae72a9
@@ -200,7 +200,7 @@ base 2 - 0b11
 base 16 - 0xcafebabe
 underscores, anywhere but the beginning and the end
 
-*** Floating point literals                                         :drill:
+*** Floating point literals                                           :drill:
 SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       c417f903-19a7-4d7f-9d30-9a2730839ee8
@@ -223,7 +223,7 @@ What floating point literals does Java support?
 + scientific notation - e or e, 1.234e2
 + underscores, anywhere but the beginning and the end or next to a decimal
 
-*** Char literals                                                   :drill:
+*** Char literals                                                     :drill:
 SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :ID:       6ace1daf-5b6a-469b-b110-39ed0119e184
@@ -245,7 +245,7 @@ any UTF-16 values
 unicode escapes - '\u0108', "S\u00ED"
 escape sequences - \b backspace, \t tab, \n, \f, \r, \", \', \\
 
-*** Class Literal                                                   :drill:
+*** Class Literal                                                     :drill:
 SCHEDULED: <2016-02-28 Sun>
 :PROPERTIES:
 :ID:       4d3cb5a7-cefd-49e1-8eef-5ffc815b67cd
@@ -266,7 +266,7 @@ What is a class literal in Java?
 Appending ".class" to a type name, e.g. String.class.  Refers to the object that
 represents the type itself.
 
-*** Arrays 1                                                        :drill:
+*** Arrays 1                                                          :drill:
 SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       a19ccb8f-c14f-40c0-879b-1ed771349a05
@@ -287,7 +287,7 @@ How do you declare an array type in Java?
 MyType[] anArray;
 MyType anArray[]; - WORKS, but BAD
 
-*** Arrays Copying                                                  :drill:
+*** Arrays Copying                                                    :drill:
 SCHEDULED: <2016-01-27 Wed>
 :PROPERTIES:
 :ID:       9d2af5e1-b9c1-4715-b227-0eb84708747e
@@ -364,7 +364,7 @@ Printing
 System.out.printf(String formatString, Object... args)
 System.out.format(String formatString, Object... args)
 
-*** Format Specifier Syntax                                          :drill:
+*** Format Specifier Syntax                                           :drill:
 SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       c531d30c-d996-4c67-a870-f5cc6faef83e
@@ -457,7 +457,7 @@ What Integral conversions are supported in a format specifier?
 + o    - octal integer
 + x, X - hexadecimal integer
 
-*** Formatter - Floating Point Conversions                           :drill:
+*** Formatter - Floating Point Conversions                            :drill:
 SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
@@ -558,7 +558,7 @@ What flags does java.util.Formatter support?
 + ','     locale specific grouping separators
 + '('     enclose negative numbers in parenthesis
 
-*** Integral different base                                         :drill:
+*** Integral different base                                           :drill:
 SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       9e2f790c-c1e8-4897-bfc5-cd766456d76e
@@ -997,7 +997,6 @@ equals -> not necessarily different hashCode.
 Equal objects must produce the same hash code as long as they are equal,
 however unequal objects need not produce distinct hash codes.
 
-
 *** Interfaces: Call default methods                                  :drill:
 :PROPERTIES:
 :ID:       91df68d1-253f-4f3f-84f4-005400946e02
@@ -1011,7 +1010,6 @@ MyInterface.super.theDefaultMethod();
 
 This only works if ~MyInterface~ is an immediate parent of the implementing
 class or extending interface.  Grandchildren can't do this.
-
 
 *** Interface multiple inheritance                                    :drill:
 :PROPERTIES:
@@ -1121,6 +1119,47 @@ PermGen, default 64mb
 **** Answer
 
 Answer
+
+*** Why does Java not having reified types matter?                    :drill:
+
+Why should I care that Java doesn't have reified generics?
+
+**** Answer
+
++ You can't do multiple dispatch on parameterized types:
+  #+BEGIN_SRC java 
+  public void my_method(List<String> input) { ... }
+  public void my_method(List<Integer> input) { ... }
+  #+END_SRC
++ Use generics with arrays
+ 
+  Arrays are reified, generics you can't instantiate E[] or List<E>[]
++ You can't use parameterized exceptions.
+
+  The catch block of a try-catch checks using instanceof.  The instanceof
+  operator requires a reifiable type.
++ Performance improvements
+  
+  Specialized generics would have more info available for optimization.
++ No support for run time type information.  You have to pass a class token in
+  if you want type support.
+ 
+http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
+
+*** Limitations on Generics                                           :drill:
+
+What are the limitations on generics in Java?
+
+**** Answer
+
+1. Can't instantiate generic types with primitive types.
+2. Can't create instances of type parameters.
+3. Can't declare static fields whose types are type parameters.
+4. Can't use casts or instanceof with parameterized types.
+5. Can't create arrays of parameterized types.
+6. Can't create catch or throw objects of parameterized types.
+7. Can't overload a method where the formal type parameter erases to the same
+   type.
 
 ** Design Patterns
 
@@ -4317,6 +4356,7 @@ Where can local classes be declared?
 
 Anywhere a local variable can be declared.
 
+** Generics
 *** Item 23: Don't use raw types - type 1                             :drill:
 SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
@@ -4505,7 +4545,7 @@ SCHEDULED: <2016-02-01 Mon>
  
 The official term for a [String.class] is a [type token].
 
-*** Item 23 Don't use raw types - why                                 :drill:
+*** Item 23: Don't use raw types - why                                :drill:
 SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       9c35ca8e-b578-4574-97ca-a0f3ba27678b
@@ -4532,7 +4572,7 @@ casts just like the pre-generic era.
 With generics, the compiler will ensure type safety and insert all the correct
 casts for you.
 
-*** Item 23 Don't use raw types - raw type alternative                :drill:
+*** Item 23: Don't use raw types - raw type alternative               :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       71b09f09-e8b1-4bdc-bdc0-8a95609d9608
@@ -4568,7 +4608,7 @@ static int numElementsInCommon(Set<?> s1, Set<?> s2) {
 }
 #+END_SRC
 
-*** Item 23 Don't use raw types - what's the use of <?>               :drill:
+*** Item 23: Don't use raw types - what's the use of <?>              :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       8b2ad061-48ba-4383-b20d-edefaff2ebcb
@@ -4617,7 +4657,7 @@ c.add(new Object());
 
 http://stackoverflow.com/questions/7671072/what-is-the-use-and-point-of-unbound-wildcards-generics-in-java
 
-*** Item 23 Don't use raw types - instanceof                          :drill:
+*** Item 23: Don't use raw types - instanceof                         :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       1694349f-062a-4bcc-a339-57647dcf180c
@@ -4628,7 +4668,7 @@ SCHEDULED: <2016-01-28 Thu>
 :DRILL_AVERAGE_QUALITY: 5.0
 :DRILL_EASE: 2.6
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:24]
+:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:24:]
 :END:
 
 How do you do an instanceof check for a parameterized type?
@@ -4645,10 +4685,10 @@ Use a raw type - Josh Bloch says it's okay
 value instanceof List
 #+END_SRC
 
-*** Item 23 Don't use raw types - raw type use cases                  :drill:
+*** Item 23: Don't use raw types - raw type use cases                 :drill:
 SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
-:ID:       a1a64e62-7320-4e11-823f-37804d4ef489
+:ID:       a1a64e62-7320-4e11-823:f-37804d4ef489
 :DRILL_LAST_INTERVAL: 4.8399
 :DRILL_REPEATS_SINCE_FAIL: 3
 :DRILL_TOTAL_REPEATS: 3
@@ -4676,7 +4716,7 @@ What are the acceptable uses for raw types?
 2. Raw types are okay for instanceof checks, though unbounded wildcards also
    work.
 
-*** Item 24 Eliminate unchecked warnings - how to suppress            :drill:
+*** Item 24: Eliminate unchecked warnings - how to suppress           :drill:
 SCHEDULED: <2016-01-30 Sat>
 :PROPERTIES:
 :ID:       25630e2b-115d-497c-8f60-d0a85c734651
@@ -4696,7 +4736,7 @@ How do you suppress an unchecked warnings?
 
 ~@SuppressWarnings("unchecked")~
 
-*** Item 24 Eliminate unchecked warnings - include with suppressed    :drill:
+*** Item 24: Eliminate unchecked warnings - include with suppressed   :drill:
 SCHEDULED: <2016-01-28 Thu>
 :PROPERTIES:
 :ID:       cb25be5d-ee37-416a-be3a-457355ea2aea
@@ -4716,7 +4756,7 @@ What else should you do when you suppress a warning?
 
 Add a comment stating why it's safe to use.
 
-*** Item 24 Eliminate unchecked warnings - when to suppress           :drill:
+*** Item 24: Eliminate unchecked warnings - when to suppress          :drill:
 SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       976f515c-3639-4b41-8bb1-885c376fa091
@@ -4735,6 +4775,68 @@ When should you supress unchecked warnings?
 **** Answer
 
 Only when you can prove that the code that provoked the warning is typesafe.
+
+*** Item 25: Prefer Lists to Arrays - array and generic diffs         :drill:
+
+What are the differences between arrays and generics?
+
+**** Answer
+
+Arrays are covariant and reified.  Generics are invariant and erased.
+
+Arrays have run-time safety but not compile time safety.  Generics have compile
+time safety but not run-time safety.
+
+*** Item 25: Prefer Lists to Arrays - reified definition              :drill:
+
+What does reified mean in a Java context?
+
+**** Answer
+
+You have type information available at runtime.
+
+*** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
+
+What are reifiable types in Java?
+
+**** Answer
+
+1. Primitive types, e.g. ~int~
+2. Non-parameterized class or interface, e.g. ~Number~, ~String~
+3. A parameterized type in which all type variables are unbounded wildcards,
+   e.g. ~List<?>~, ~Map<?, ?>~
+4. A raw type, e.g. ~List~, ~ArrayList~
+5. An array whose component type is reifiable, e.g. ~int[]~, ~List<?>[]~,
+   ~List[]~.
+
+
+*** Item 25: Prefer Lists to Arrays - non-reifiable types             :drill:
+
+What are non-reifiable types in Java?
+
+**** Answer
+
+1. A type variable, ~e.g~ T
+2. A parametertized type with actual type parameters, e.g. ~List<String>~,
+   ~Map<String, Integer>~
+3. A parameterized type with bounds, e.g. ~List<? extends Number>~,
+   ~Comparable<? super string>~
+
+*** Item 25: Prefer Lists to Arrays - varargs                         :drill:
+
+Should you use generics with varargs?
+
+**** Answer
+
+No, since varargs are an array, it doesn't play nice with generics.
+
+*** Item 25: Prefer Lists to Arrays - mixing arrays and generics      :drill:
+
+When having trouble with arrays and generics what should you do?
+
+**** Answer
+
+Replace the arrays with List.
 
 * Consulting
 ** Breaking the Time Barrier
