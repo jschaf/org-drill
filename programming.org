@@ -4983,7 +4983,6 @@ What are the reifiable types in Java?
 King Tyrion - dwarfs, jump-rope string, Question marks, raining raw
 hamburgers, roller-coaster
 
-
 1. Primitive types, e.g. ~int~
 2. Non-parameterized class or interface, e.g. ~Number~, ~String~
 3. A parameterized type in which all type variables are unbounded wildcards,
@@ -5302,6 +5301,111 @@ collection?
 1. You can bypass the type-safety by using the class in its raw form, though
    this is no different than any other generic container.
 2. You can't use a non-reifiable type as a key.
+
+** Enums and Annotations
+
+*** Item 30: Use Enum instead of ints - associate data                :drill:
+
+How do you associate data with an enum?
+
+**** Answer
+
+Declare an instance field and write a constructor that takes the data and stores
+it in the field.
+
+*** Item 30: Use Enum instead of ints - top-level vs member           :drill:
+
+Should you declare an enum as a top-level class or a member class?
+
+**** Answer
+
+If the enum is generally useful, declare it as a top-level class.  If it's
+specific to one class, declare it as member of the specific class.
+
+*** Item 30: Use Enum instead of ints - switches on enums             :drill:
+
+What should you generally use instead of switches on enums?
+
+**** Answer
+
+Declare an abstract method in the enum and override it with a constant-specific
+method implementation.
+
+#+BEGIN_SRC java
+public enum Operation {
+    PLUS { double apply(double x, double y) {return x + y;} }
+    [...]
+    abstract double apply(double x, double y);
+}
+#+END_SRC
+
+*** Item 30: Use Enum instead of ints - share code                    :drill:
+
+What's the best way to share behavior specific  code between enums?
+
+**** Answer
+
++ Don't use a switch inside an enum.
++ Use a concrete-specific method implementation.
++ If that's too repetitive, use a member strategy enum.
+
+The strategy enum pattern.
+#+BEGIN_SRC java
+public enum PayrollDay {
+
+    SUNDAY(PayType.WEEKEND),
+    MONDAY(PayType.WEEKDAY);
+
+    private final PayType payType;
+
+    PayrollDay(PayType payType) {
+        this.payType = payType;
+    }
+
+    double pay(double hoursWorked, double payRate) {
+        return payType.pay(hoursWorked, payRate);
+    }
+
+    private enum PayType {
+        WEEKDAY {
+            double overtimePay(double hours, double payRate) {
+                return hours <= HOURS_PER_SHIFT ? 0 :
+                    hours * payRate / 2;
+            }
+        },
+        WEEKEND {
+            double overtimePay(double hours, double payRate) {
+                return hours * payRate / 2;
+            }
+        };
+        private static final int HOURS_PER_SHIFT = 8;
+
+        abstract double overtimePay(double hrs, double payRate);
+
+        double pay(double hoursWorked, double payRate) {
+            double basePay = hoursWorked + payRate;
+            return basePay + overtimePay(hoursWorked, payRate);
+        }
+    }
+}
+#+END_SRC
+
+
+*** Item 30: Use Enum instead of ints - when to use switch            :drill:
+
+When is it okay to switch on an enum?
+
+**** Answer
+
+If you're augmenting external enum types with constant specific behavior.
+
+*** Item 31: Use instance fields instead of ordinals - rule           :drill:
+:PROPERTIES:
+:DRILL_CARD_TYPE: hide1cloze
+:END:
+
+Never derive a value associated with an enum from its [ordinal]; store it in an
+[instance field] instead;
 
 * Consulting
 ** Breaking the Time Barrier
