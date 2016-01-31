@@ -177,17 +177,17 @@ Sting or any object: null
 boolean: false
 
 *** Integer Literals                                                  :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-04-05 Tue>
 :PROPERTIES:
 :ID:       c966a52c-6989-4f50-891a-dbbb88ae72a9
-:DRILL_LAST_INTERVAL: 18.1157
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 64.5187
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:31]
 :END:
 
 What integer literals does Java support?
@@ -316,17 +316,17 @@ Arrays.copyOfRange(T[] original, int from, int to)
 Copies specified range into a new array
 
 *** Reference Types                                                   :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-03-07 Mon>
 :PROPERTIES:
 :ID:       37cb8ba4-f7e8-4420-aa99-623b76180cfb
-:DRILL_LAST_INTERVAL: 12.4634
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 36.2444
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 02:54]
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:30]
 :END:
 
 What are Java's reference types and when do they get garbage collected?
@@ -484,17 +484,17 @@ What floating point conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Date time Conversions                                 :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-03-07 Mon>
 :PROPERTIES:
 :ID:       50ed3929-de34-4b06-9cb6-ee7cbcdc3fc8
-:DRILL_LAST_INTERVAL: 11.8709
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 36.3001
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:03]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
 :END:
 
 What is the Date time prefix in a format specifier?
@@ -894,17 +894,17 @@ last formal parameter is a variable arity parameter of type T, it is considered
 to define a formal parameter of type T[]".
 
 *** Multidimensional array - declaration                              :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       0a364e54-1afd-451a-9a8e-6b61e1a2d682
-:DRILL_LAST_INTERVAL: 1.605
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.1716
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:07]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
 :END:
 
 How do you declare a multidimensional array in Java?
@@ -920,17 +920,17 @@ int[][][] threeDimInit = {
 #+END_SRC
 
 *** Multidimensional array - access                                   :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       7d40698d-7e03-4131-9c09-a164213aba57
-:DRILL_LAST_INTERVAL: 1.4954
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.5584
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:07]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
 :END:
 
 How do you access an item in a multidimensional array in Java?
@@ -967,17 +967,17 @@ Arrays.deepToString(threeDimArray);
 #+END_SRC
 
 *** Create a memory leak                                              :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
-:DRILL_LAST_INTERVAL: 1.5375
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.2471
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:04]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:27]
 :END:
 
 How can you create a memory leak in Java?
@@ -1016,17 +1016,17 @@ For unintentional object retention:
 + Not closing connections or files.
 
 *** Relationship between hashcode and equals                          :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       57a4b3cb-5206-475a-b876-490ee17f8812
-:DRILL_LAST_INTERVAL: 1.4936
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.9267
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:05]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:46]
 :END:
 
 What is the relationship between hashCode and equals?  
@@ -1045,17 +1045,17 @@ Equal objects must produce the same hash code as long as they are equal,
 however unequal objects need not produce distinct hash codes.
 
 *** Interfaces: Call default methods                                  :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       91df68d1-253f-4f3f-84f4-005400946e02
-:DRILL_LAST_INTERVAL: 1.8463
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 5.9977
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:08]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:21]
 :END:
 
 How do you call a default method explicitly?
@@ -1068,17 +1068,17 @@ This only works if ~MyInterface~ is an immediate parent of the implementing
 class or extending interface.  Grandchildren can't do this.
 
 *** Interface multiple inheritance                                    :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       c1d5b898-6c74-4440-8960-0f4e2d501bbf
-:DRILL_LAST_INTERVAL: 1.7768
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.5872
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:05]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
 :END:
 
 Can an interface extend multiple interfaces?
@@ -1146,17 +1146,17 @@ public class MultInterfaces {
 #+END_SRC
 
 *** String final class                                                :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       c87ea6d6-5a7d-4272-b0a3-7714da8852d1
-:DRILL_LAST_INTERVAL: 1.9818
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.9662
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:52]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
 :END:
 
 Why is String final?
@@ -1168,17 +1168,17 @@ equals and hashCode contract, or the fake string might equals the same, but
 wouldn't be the same.
 
 *** Wait, notify and notifyAll on Object                              :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       c7332c74-7a12-458f-8147-c24890814a44
-:DRILL_LAST_INTERVAL: 1.5586
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.5331
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:57]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
 :END:
 
 What are wait, notify and notifyAll defined on Object?
@@ -1204,17 +1204,17 @@ PermGen, default 64mb
 Answer
 
 *** Why does Java not having reified types matter?                    :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       b64319d7-d9a2-49ae-9234-71d7a08ff53a
-:DRILL_LAST_INTERVAL: 1.5682
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.6561
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:59]
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:47]
 :END:
 
 Why should I care that Java doesn't have reified generics?
@@ -1275,17 +1275,17 @@ rollercoaster DiCaprio, thrown, heavy ruck.
    type.
 
 *** Implied keywords on nested interfaces and enums                   :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       4f528049-fb9d-4bc1-80ac-a6f3cdd3db98
-:DRILL_LAST_INTERVAL: 1.7603
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.1398
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:53]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:28]
 :END:
 
 What keywords are implied on nested interfaces and enums in Java? 
@@ -1348,17 +1348,17 @@ What are the advantages of a Singleton pattern?
 + Singletons can be extended into a factory.
 
 *** Singleton 3                                                       :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-03-21 Mon>
 :PROPERTIES:
 :ID:       7b32a2a7-f9c6-464d-a387-53a852634a45
-:DRILL_LAST_INTERVAL: 19.5328
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 50.4536
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.75
+:DRILL_AVERAGE_QUALITY: 2.889
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-10 Sun 14:23]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:29]
 :END:
 
 What are the disadvantages of a Singleton pattern?
@@ -1557,17 +1557,17 @@ What are the two common hash table implementations techniques?
 Chaining and Open addressing
 
 *** Hash Table Open Addressing                                      :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-03-03 Thu>
 :PROPERTIES:
 :ID:       1940C116-6088-47FD-A81B-9B3E190113D7
-:DRILL_LAST_INTERVAL: 17.3909
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 31.9003
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.778
+:DRILL_AVERAGE_QUALITY: 2.9
 :DRILL_EASE: 1.94
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:21]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:31]
 :END:
 
 What are the common techniques for implementing open addressing?
@@ -1656,17 +1656,17 @@ A small step size provides better locality of reference, but results in
 clustering.  Linear probing is sensitive to input distribution.
 
 *** Quadratic Probing                                               :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :ID:       22C26F8D-EB15-497A-A2C5-E02227A246D8
-:DRILL_LAST_INTERVAL: 18.7719
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 44.9751
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
 :END:
 
 What is Quadratic Probing?
@@ -2042,17 +2042,17 @@ What are the benefits of encapsulation?
 * Effective Java
 ** Creating and Destroying Objects
 *** Item 01: Static Factories vs Constructors                         :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :ID:       6fe16328-2578-41cd-94cf-6eaa8bccaecc
-:DRILL_LAST_INTERVAL: 20.8619
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 45.2057
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:10]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:29]
 :END:
 
 What are the advantages of a static factory over a constructor?
@@ -2412,17 +2412,17 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 1.5886
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 4.9623
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:56]
+:DRILL_AVERAGE_QUALITY: 3.154
+:DRILL_EASE: 2.52
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:23]
 :END:
 
 What are the issues with finalizers?
@@ -3479,17 +3479,17 @@ What are the drawbacks of immutable object?
 Immutable objects require a separate object for each distinct value.
 
 *** Item 15:  Minimize Mutability - mitigate performance problem      :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       20a96920-807f-498e-8f90-1102e2bf07df
-:DRILL_LAST_INTERVAL: 4.8831
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 13.5318
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:15]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
 :END:
 
 What are two approaches to making mutability performant in immutable classes?
@@ -3566,17 +3566,17 @@ Limit mutability as much as possible.
 Mark every field as final unless there is a compelling reason not to.
 
 *** Item 16: Favor Composition - why inheritance bad                  :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-20 Sat>
 :PROPERTIES:
 :ID:       4b082ecd-3192-4a9d-8be4-48f55f36016e
-:DRILL_LAST_INTERVAL: 5.6811
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 19.5984
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.833
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
 :END:
 
 Why is inheritance bad?
@@ -3614,17 +3614,17 @@ This is composition because the existing class becomes a component of the new
 class.
 
 *** Item 16: Favor Composition - drawbacks                            :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       c811f48e-2ce7-462e-b064-6182dbc51b56
-:DRILL_LAST_INTERVAL: 5.06
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.56
+:DRILL_LAST_INTERVAL: 1.5855
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:33]
 :END:
 
 What are the drawbacks of composition, specifically of forwarding classes?
@@ -3664,17 +3664,17 @@ really an A?  If you cannot truthfully answer yes, B should not extend A.
 You must also be comfortable in adopting the flaws of A.
 
 *** Item 17: Design for Inheritance -  Document                       :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       ed2bf3be-4fad-4d11-8d0a-2fb0043fe710
-:DRILL_LAST_INTERVAL: 5.3412
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 13.7627
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:40]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
 :END:
 
 What aspect of an inheritable class must you document?
@@ -4000,17 +4000,17 @@ Because the constant interface is a poor use of interfaces.  The constants are
 an implementation detail.
 
 *** Item 19: Interface only for Types - Alternative for constants     :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       8803fbf7-ca24-4b9d-b9d0-5708c24e772a
-:DRILL_LAST_INTERVAL: 5.0367
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 14.4036
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:15]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
 :END:
 
 How should you export constants?
@@ -4026,17 +4026,17 @@ final modifiers.
 Then you can import with static import.
 
 *** Item 20: Prefer class hierarchies over tags - what                :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       b284739b-61be-453e-9887-ce4304181027
-:DRILL_LAST_INTERVAL: 5.4048
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 15.7647
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:41]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:27]
 :END:
 
 What is a tagged class?
@@ -4123,17 +4123,17 @@ Tagged classes are verbose, error-prone and inefficient.
 A tagged class is a pallid imitation of a class hierarchy. 
 
 *** Item 20: Prefer class hierarchies over tags - alternative         :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       892ac2e3-b1ec-4764-8a6d-7b5eaed515ad
-:DRILL_LAST_INTERVAL: 5.3174
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 15.3348
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:14]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:23]
 :END:
 
 What do you replace a tagged class with?
@@ -4417,17 +4417,17 @@ Where can you declare an anonymous class?
 Anywhere an expression is legal.
 
 *** Item 22: Favor static member classes - anon class limitations     :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
-:DRILL_LAST_INTERVAL: 1.5456
+:DRILL_LAST_INTERVAL: 1.5394
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.56
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:59]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:34]
 :END:
 
 What are the limitations on an anonymous class?
@@ -4480,17 +4480,17 @@ What are common uses for anonymous classes?
   #+END_SRC
 
 *** Item 22: Favor static member classes - local classes declared     :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       b6f4287d-2908-4dd6-b0a6-9893621012bf
-:DRILL_LAST_INTERVAL: 2.5819
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 6.2907
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
 :END:
 
 Where can local classes be declared?
@@ -4501,18 +4501,18 @@ Anywhere a local variable can be declared.
 
 ** Generics
 *** Item 23: Don't use raw types - type 1                             :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       d95b8741-0cf8-44ec-aa34-873d076516c5
-:DRILL_LAST_INTERVAL: 1.5165
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.2884
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.75
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:54]
+:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:28]
 :END:
  
 The official term for a [List<String>] is a [parameterized type].
@@ -4920,17 +4920,17 @@ When should you supress unchecked warnings?
 Only when you can prove that the code that provoked the warning is typesafe.
 
 *** Item 25: Prefer Lists to Arrays - array and generic diffs         :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       2027964e-d3d8-497b-93b8-8c562b1b6550
-:DRILL_LAST_INTERVAL: 1.9127
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.7224
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:53]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
 :END:
 
 What are the differences between arrays and generics?
@@ -4943,17 +4943,17 @@ Arrays have run-time safety but not compile time safety.  Generics have compile
 time safety but not run-time safety.
 
 *** Item 25: Prefer Lists to Arrays - reified definition              :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       ba413ffd-0b03-49f9-8a3e-fecb51756108
-:DRILL_LAST_INTERVAL: 1.9757
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 6.808
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:45]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:27]
 :END:
 
 What does reified mean in a Java context?
@@ -4963,24 +4963,24 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
-:DRILL_LAST_INTERVAL: 1.6066
+:DRILL_LAST_INTERVAL: 1.676
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:15]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:19]
 :END:
 
-What are reifiable types in Java?
+What are the reifiable types in Java?
 
 **** Answer
 
-Ms. USA bachelor king - dwarfs, jump-rope string, Question marks, raining raw
+King Tyrion - dwarfs, jump-rope string, Question marks, raining raw
 hamburgers, roller-coaster
 
 
@@ -4993,17 +4993,17 @@ hamburgers, roller-coaster
    ~List[]~.
 
 *** Item 25: Prefer Lists to Arrays - non-reifiable types             :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       e3e1158d-d2f7-4011-baf4-469eec5ee54f
-:DRILL_LAST_INTERVAL: 1.5581
+:DRILL_LAST_INTERVAL: 1.504
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:57]
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:33]
 :END:
 
 What are the non-reifiable types in Java?
@@ -5017,17 +5017,17 @@ What are the non-reifiable types in Java?
    ~Comparable<? super string>~
 
 *** Item 25: Prefer Lists to Arrays - varargs                         :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       e69bf276-a239-4b57-8d9d-95fdb7f32340
-:DRILL_LAST_INTERVAL: 1.5966
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.274
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:54]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:28]
 :END:
 
 Should you use generics with varargs?
@@ -5037,17 +5037,17 @@ Should you use generics with varargs?
 No, since varargs are an array, it doesn't play nice with generics.
 
 *** Item 25: Prefer Lists to Arrays - mixing arrays and generics      :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       ff3d89a2-4c25-464e-acaf-65fa4d24a868
-:DRILL_LAST_INTERVAL: 1.9086
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 6.186
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:53]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
 :END:
 
 When having trouble with arrays and generics what should you do?
@@ -5057,17 +5057,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-02 Tue>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 1.587
+:DRILL_LAST_INTERVAL: 1.7956
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:06]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:34]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -5080,17 +5080,17 @@ What steps should you take to prove an unchecked cast is type safe?
 4. Explain in a comment why the cast is safe.
 
 *** Item 26: Favor Generic Types - two methods for unchecked casts    :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       8878bbe7-300f-42df-abb9-c167bb28d5be
-:DRILL_LAST_INTERVAL: 1.5376
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.0545
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:59]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:25]
 :END:
 
 What are the two places you will generally see unchecked casts?
@@ -5101,17 +5101,17 @@ At the construction site or at the call site.  The construction site is more
 common because it only has to happen once.
 
 *** Item 27: Favor Generic Methods - reduce redundancy                :drill:
-SCHEDULED: <2016-01-31 Sun>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       1acd593f-72cb-452b-a596-5928c5887c77
-:DRILL_LAST_INTERVAL: 1.7381
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.3261
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:53]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
 :END:
 
 How can you reduce the redundancy of instantiating a generic type?
@@ -5122,17 +5122,17 @@ Use a generic static factory method or use the diamond operator which will use
 type inference.
 
 *** Item 27: Favor Generic Methods - generic singleton factory        :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       43dc9b98-2b3c-47ed-b590-c5ea1dc13ab3
-:DRILL_LAST_INTERVAL: 1.5523
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.7259
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:08]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:21]
 :END:
 
 What is the generic singleton factory?
@@ -5153,17 +5153,17 @@ you only have one unchecked cast.
 # on hold
 
 *** Item 27: Favor Generic Methods - mutual comparability             :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       ac29ca2c-1aca-4630-84a2-df67c02822c0
-:DRILL_LAST_INTERVAL: 1.857
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.9481
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:08]
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:23]
 :END:
 
 How do you express "for every type T that can be compared to itself"?
@@ -5173,6 +5173,18 @@ How do you express "for every type T that can be compared to itself"?
 <T extends Comparable<T>>
 
 *** Item 28: Use Bounded Wildcards - types of bounds                  :drill:
+SCHEDULED: <2016-02-01 Mon>
+:PROPERTIES:
+:ID:       f54345c2-2ed8-46d7-a10d-07fdf9fe3839
+:DRILL_LAST_INTERVAL: 1.378
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
+:END:
 
 What are the types of bounded wildcards?
 
@@ -5181,6 +5193,18 @@ What are the types of bounded wildcards?
 List<? extends Number> and List<? super Number>
 
 *** Item 28: Use Bounded Wildcards - PECS                             :drill:
+SCHEDULED: <2016-02-01 Mon>
+:PROPERTIES:
+:ID:       77348fda-8279-4d0a-b596-1828208e4ee6
+:DRILL_LAST_INTERVAL: 1.3119
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
+:END:
 
 What is PECS?
 
