@@ -943,17 +943,17 @@ int myItem = threeDimArray[0][1][2];
 #+END_SRC
 
 *** Multidimensional array - String representation                    :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       a364ea37-eeba-400f-9e5c-7d2c17349540
-:DRILL_LAST_INTERVAL: 1.7158
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.8968
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:05]
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
 :END:
 
 How do you get a string representation of a multidimensional array in Java?
@@ -1245,17 +1245,17 @@ of Pams
 http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
 
 *** Limitations on Generics                                           :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-01 Mon>
 :PROPERTIES:
 :ID:       9027c47c-5b46-4f17-82b2-ca8c766a1cbd
-:DRILL_LAST_INTERVAL: 1.3227
+:DRILL_LAST_INTERVAL: 1.702
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.36
+:DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:56]
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 14:58]
 :END:
 
 What are the limitations on generics in Java?
@@ -2889,17 +2889,17 @@ If you extend a field's subclass, there's not an easy way to clone that subfield
 http://www.agiledeveloper.com/articles/cloning072002.htm
 
 *** Item 11: Override Clone Judiciously - interface                   :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-03-02 Wed>
 :PROPERTIES:
 :ID:       47e02ec5-8662-4247-92ce-040951f211d4
-:DRILL_LAST_INTERVAL: 9.7353
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 31.5536
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:09]
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:14]
 :END:
 
 What interface do you use to implement clone?
@@ -3001,17 +3001,17 @@ What are the drawbacks of clone?
   constructor.
 
 *** Item 11: Override Clone Judiciously - alternatives                :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-26 Fri>
 :PROPERTIES:
 :ID:       37901341-bdac-4c0d-b6e8-3d786082771e
-:DRILL_LAST_INTERVAL: 9.9854
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 26.528
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:20]
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
 :END:
 
 What are the alternatives of clone?
@@ -4518,18 +4518,18 @@ SCHEDULED: <2016-01-30 Sat>
 The official term for a [List<String>] is a [parameterized type].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       3c26f404-53a2-4d3d-a605-ec4835909aac
-:DRILL_LAST_INTERVAL: 1.6884
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.9589
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:39]
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
 :END:
  
 The official term for a [String] is a [actual type parameter].
@@ -4552,18 +4552,18 @@ SCHEDULED: <2016-02-02 Tue>
 The official term for a [List<E>] is a [generic type].
 
 *** Item 23: Don't use raw types - type 3                             :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       05e30c71-50be-4f9d-a6c6-e76ef8547cdc
-:DRILL_LAST_INTERVAL: 1.7865
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.5387
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:13]
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
 :END:
  
 The official term for a [E] is a [formal type parameter].
@@ -4638,18 +4638,18 @@ SCHEDULED: <2016-02-01 Mon>
 The official term for a [<T extends Comparable<T>>] is a [recursive type bound].
 
 *** Item 23: Don't use raw types - type 8                             :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       c7999a55-19b7-4c7c-aa8c-c3b964008a2e
-:DRILL_LAST_INTERVAL: 1.5793
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 4.454
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:40]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
 :END:
  
 The official term for a [List<? extends Number>] is a [bounded wildcard type].
@@ -4860,17 +4860,17 @@ What are the acceptable uses for raw types?
    work.
 
 *** Item 24: Eliminate unchecked warnings - how to suppress           :drill:
-SCHEDULED: <2016-01-30 Sat>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       25630e2b-115d-497c-8f60-d0a85c734651
-:DRILL_LAST_INTERVAL: 1.58
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 4.4223
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:53]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
 :END:
 
 How do you suppress an unchecked warnings?
@@ -5100,7 +5100,7 @@ What are the two places you will generally see unchecked casts?
 At the construction site or at the call site.  The construction site is more
 common because it only has to happen once.
 
-*** Item 27: Favor Generic Methods - reduce redundancy                 :drill:
+*** Item 27: Favor Generic Methods - reduce redundancy                :drill:
 SCHEDULED: <2016-01-31 Sun>
 :PROPERTIES:
 :ID:       1acd593f-72cb-452b-a596-5928c5887c77
@@ -5171,6 +5171,113 @@ How do you express "for every type T that can be compared to itself"?
 **** Answer
 
 <T extends Comparable<T>>
+
+*** Item 28: Use Bounded Wildcards - types of bounds                  :drill:
+
+What are the types of bounded wildcards?
+
+**** Answer
+
+List<? extends Number> and List<? super Number>
+
+*** Item 28: Use Bounded Wildcards - PECS                             :drill:
+
+What is PECS?
+
+**** Answer
+
+Producer extends, Consumer super
+
+It's a mnemoic for remembering which bounds to place on method parameters for
+generic arguments.
+
+It's from the point of view of the argument.
+
+
+Here, src is producing elements we're adding to our stack.
+#+BEGIN_SRC java
+public void pushAll(Iterable<? extends E> src) {
+    for (E e : src)
+        push(e); 
+}
+#+END_SRC
+
+
+Here ~dest~ is consuming elements that we pop from our Stack
+#+BEGIN_SRC java
+// In class Stack
+public void popAll(Collection<? super E> dest) {
+    while (!isEmpty())
+        dst.add(pop);
+}
+#+END_SRC
+
+*** Item 28: Use Bounded Wildcards - return types                     :drill:
+
+What type should you return from generic code?
+
+**** Answer
+
+Not wildcard types.
+
+*** Item 28: Use Bounded Wildcards - wildcard rule of thumb           :drill:
+
+What rule of thumb do you use for figuring out if your API is hard to use?
+
+**** Answer
+
+If the user has to think about wildcard types, there's probably something wrong
+with the API.
+
+*** Item 28: Use Bounded Wildcards - explicit type parameters         :drill:
+
+How to you add explicit type parameters?
+
+**** Answer
+
+Set<Number> numbers = Union.<Number>union(integers, double);
+
+*** Item 28: Use Bounded Wildcards - comparable and comparator        :drill:
+
+What bounds do you use for Comparable and Comparator?
+
+**** Answer
+
+Comparable<? super T> and Comparator<? super T>
+
+Both interfaces are consumers.  They consume a object and produce an ordering.
+
+*** Item 28: Use Bounded Wildcards - type param only once             :drill:
+
+If a type parameter only appears once in a method declaration, what should you
+do?
+
+**** Answer
+
+Replace it with a wild card.
+
+You might have to use a private helper method to capture the type to do anything
+useful with the item.
+
+*** Item 29: Typesafe Heterogeneous containers - diff with container  :drill:
+
+What's the main difference between typesafe heterogeneous containers and a
+collection?
+
+**** Answer
+
+The THC parameterizes the key instead of the container.
+
+*** Item 29: Typesafe Heterogeneous containers - limitations          :drill:
+
+What are the limitations of typesafe heterogeneous containers?
+collection?
+
+**** Answer
+
+1. You can bypass the type-safety by using the class in its raw form, though
+   this is no different than any other generic container.
+2. You can't use a non-reifiable type as a key.
 
 * Consulting
 ** Breaking the Time Barrier
