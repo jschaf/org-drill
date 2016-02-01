@@ -35,17 +35,17 @@ dired-get-marked-files
 
 ** Object Oriented Programming
 *** Open Closed Principle                                             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-29 Mon>
 :PROPERTIES:
 :ID:       e5f77354-5bc9-4c14-95de-09ba86eb1f9f
-:DRILL_LAST_INTERVAL: 10.0029
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 28.4371
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:16]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:50]
 :END:
 
 What is the open closed principle?
@@ -766,17 +766,17 @@ http://stackoverflow.com/questions/2007666/in-what-order-do-static-initializer-b
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-12.html#jls-12.4.1
 
 *** Class intialization                                               :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-03-01 Tue>
 :PROPERTIES:
 :ID:       4a16e638-6b5f-4650-9269-7e534efd74c4
-:DRILL_LAST_INTERVAL: 10.0273
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 29.3629
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:17]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:52]
 :END:
 
 When are Java classes initialized?
@@ -819,17 +819,17 @@ What are compile time constants in Java?
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
 
 *** String vs StringBuilder vs StringBuffer                           :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       71b8ea5d-535f-4a21-853d-f2319f7d2c69
-:DRILL_LAST_INTERVAL: 3.5068
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 9.8722
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:54]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
 :END:
 
 What are the differences between String, StringBuilder and StringBuffer?
@@ -872,17 +872,17 @@ public static void main(String... args) {
 #+END_SRC
 
 *** Varargs type                                                      :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-13 Sat>
 :PROPERTIES:
 :ID:       262bfbad-9446-443f-81f8-c09cebe80766
-:DRILL_LAST_INTERVAL: 4.1263
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 11.658
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:57]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:46]
 :END:
 
 What type is a varargs argument in Java
@@ -1245,17 +1245,17 @@ of Pams
 http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
 
 *** Limitations on Generics                                           :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       9027c47c-5b46-4f17-82b2-ca8c766a1cbd
-:DRILL_LAST_INTERVAL: 1.702
+:DRILL_LAST_INTERVAL: 1.5001
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 2.5
-:DRILL_EASE: 2.22
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 2.428
+:DRILL_EASE: 2.08
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 14:58]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:58]
 :END:
 
 What are the limitations on generics in Java?
@@ -1299,6 +1299,21 @@ considered to be inner classes
 
 [[https://docs.oracle.com/javase/specs/jls/se7/html/jls-8.html#jls-8.9][JLS (§8.9)]] Nested enum types are implicitly static. It is permissible to
 explicitly declare a nested enum type to be static.
+
+*** Generics - Instance of type parameter workaround                  :drill:
+
+What workaround can you use to declare an instance of a type parameter?
+
+**** Answer
+
+Pass a type token into the method and call ~newInstance()~ on the type token.
+
+#+BEGIN_SRC java
+public static <E> void append(List<E> list, Class<E> cls) { 
+    E elem = cls.newInstance();
+    list.add(elem);
+}
+#+END_SRC
 
 ** Design Patterns
 
@@ -1682,17 +1697,17 @@ $i + 1^2, i + 2^2, i + 3^2, i + k^2$
 Provides some locality of reference but not as good as linear probing.
 
 *** Double Hashing                                                  :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-03-25 Fri>
 :PROPERTIES:
 :ID:       EE521875-0E0D-4784-9DF8-10076572D119
-:DRILL_LAST_INTERVAL: 20.4315
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 52.5305
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:35]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:51]
 :END:
 
 What is Double Hashing?
@@ -3136,17 +3151,17 @@ What is the general contract of Comparable?
 - Strongly recommended that if ~x.compareTo(y) == 0~ then ~x.equals(y)~
  
 *** Item 12: Implement Comparable: compareTo not consistent equals    :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-03-02 Wed>
 :PROPERTIES:
 :ID:       7f740588-9ca2-4c51-ac09-8a91d1c65e42
-:DRILL_LAST_INTERVAL: 9.6796
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 29.7596
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-22 Fri 17:14]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
 :END:
 
 What should you do if compareTo is not consistent with equals?  That is,
@@ -4088,17 +4103,17 @@ class Figure {
 #+END_SRC
 
 *** Item 20: Prefer class hierarchies over tags - why bad             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :ID:       26e60c15-d309-4102-b78b-d63528fa4614
-:DRILL_LAST_INTERVAL: 4.488
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:38]
+:DRILL_LAST_INTERVAL: 1.8821
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.429
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:53]
 :END:
 
 Why are tagged classes bad?
@@ -4106,7 +4121,7 @@ Why are tagged classes bad?
 **** Answer
 
 Schwarzenegger Tag preschool class, read constitution, ram, final countdown,
-green-light red-light on ramp.
+stage extends.
 
 + Cluttered with boiler plate, including enums, tag fields, and switch statements.
 + Readability is bad because multiple implementations are jumbled together in a
@@ -4143,17 +4158,17 @@ What do you replace a tagged class with?
 A class hierarchy.
 
 *** Item 20: Prefer class hierarchies over tags - Alternative impl    :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       37854105-68d9-4e5f-93ef-586127dea641
-:DRILL_LAST_INTERVAL: 5.8393
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 15.0267
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:15]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:48]
 :END:
 
 How do you transform a tagged class to a class hierarchy?
@@ -4315,17 +4330,17 @@ Inner Classes
 4. Local classes
 
 *** Item 22: Favor static member classes - static member class uses   :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       584cc744-953e-4ca5-b66b-b03d3b65e309
-:DRILL_LAST_INTERVAL: 3.8786
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.9631
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:56]
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:46]
 :END:
 
 What are the use cases for a static member class?
@@ -4443,17 +4458,17 @@ Anon jail, tent, multiple faces, 1/2 army
   inherits from the super-type.
 
 *** Item 22: Favor static member classes - anonymous class uses       :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-12 Fri>
 :PROPERTIES:
 :ID:       5dcfd714-1960-47ee-865d-a1c9f0b29d62
-:DRILL_LAST_INTERVAL: 4.2799
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 11.3038
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:51]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
 :END:
 
 What are common uses for anonymous classes?
@@ -4569,73 +4584,73 @@ SCHEDULED: <2016-02-04 Thu>
 The official term for a [E] is a [formal type parameter].
 
 *** Item 23: Don't use raw types - type 4                             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-13 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       46916859-9a39-4f4a-8f7c-067de32a8371
-:DRILL_LAST_INTERVAL: 3.65
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.3042
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:51]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:40]
 :END:
  
 The official term for a [List<?>] is an [unbounded wildcard type].
 
 *** Item 23: Don't use raw types - type 5                             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64a611da-611d-4550-8298-603eca0032f1
-:DRILL_LAST_INTERVAL: 3.653
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 9.8062
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:53]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:45]
 :END:
  
 The official term for a [List] (a generic class with no type parameters) is a
 [raw type].
 
 *** Item 23: Don't use raw types - type 6                             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       cadef5d7-3f75-4f12-9619-b93803fd8ed3
-:DRILL_LAST_INTERVAL: 4.1973
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.4915
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:55]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:48]
 :END:
  
 The official term for a [<E extends Number>] is a [bounded type parameter].
 
 *** Item 23: Don't use raw types - type 7                             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-13 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       45d1515b-5129-4db9-8d04-95e161770294
-:DRILL_LAST_INTERVAL: 4.1929
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 11.5843
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:45]
 :END:
  
-The official term for a [<T extends Comparable<T>>] is a [recursive type bound].
+The official term for a [<T extends Comparable<? super T>>] is a [recursive type bound].
 
 *** Item 23: Don't use raw types - type 8                             :drill:
 SCHEDULED: <2016-02-03 Wed>
@@ -4672,18 +4687,18 @@ SCHEDULED: <2016-02-03 Wed>
 The official term for a [~static <E> List<E> asList(E[] a)~] is a [generic method].
 
 *** Item 23: Don't use raw types - type 10                            :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       4464817c-b1ef-47c9-b057-25264f6b819d
-:DRILL_LAST_INTERVAL: 4.0059
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:34]
+:DRILL_LAST_INTERVAL: 1.6606
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:53]
 :END:
  
 The official term for a [String.class] is a [type token].
@@ -4716,17 +4731,17 @@ With generics, the compiler will ensure type safety and insert all the correct
 casts for you.
 
 *** Item 23: Don't use raw types - raw type alternative               :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       71b09f09-e8b1-4bdc-bdc0-8a95609d9608
-:DRILL_LAST_INTERVAL: 3.8694
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.386
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:35]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
 :END:
 
 What type should you use for generics if the element type is unknown and doesn't
@@ -4900,17 +4915,17 @@ What else should you do when you suppress a warning?
 Add a comment stating why it's safe to use.
 
 *** Item 24: Eliminate unchecked warnings - when to suppress          :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       976f515c-3639-4b41-8bb1-885c376fa091
-:DRILL_LAST_INTERVAL: 3.843
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 9.5867
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:46]
 :END:
 
 When should you supress unchecked warnings?
@@ -5172,17 +5187,17 @@ How do you express "for every type T that can be compared to itself"?
 <T extends Comparable<T>>
 
 *** Item 28: Use Bounded Wildcards - types of bounds                  :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-04 Thu>
 :PROPERTIES:
 :ID:       f54345c2-2ed8-46d7-a10d-07fdf9fe3839
-:DRILL_LAST_INTERVAL: 1.378
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.3111
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:40]
 :END:
 
 What are the types of bounded wildcards?
@@ -5192,17 +5207,17 @@ What are the types of bounded wildcards?
 List<? extends Number> and List<? super Number>
 
 *** Item 28: Use Bounded Wildcards - PECS                             :drill:
-SCHEDULED: <2016-02-01 Mon>
+SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       77348fda-8279-4d0a-b596-1828208e4ee6
-:DRILL_LAST_INTERVAL: 1.3119
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.0891
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:49]
 :END:
 
 What is PECS?
@@ -5303,8 +5318,19 @@ collection?
 2. You can't use a non-reifiable type as a key.
 
 ** Enums and Annotations
-
 *** Item 30: Use Enum instead of ints - associate data                :drill:
+SCHEDULED: <2016-02-03 Wed>
+:PROPERTIES:
+:ID:       710d241f-434c-417c-a8c5-ad488101af9d
+:DRILL_LAST_INTERVAL: 1.5964
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:50]
+:END:
 
 How do you associate data with an enum?
 
@@ -5314,6 +5340,18 @@ Declare an instance field and write a constructor that takes the data and stores
 it in the field.
 
 *** Item 30: Use Enum instead of ints - top-level vs member           :drill:
+SCHEDULED: <2016-02-03 Wed>
+:PROPERTIES:
+:ID:       fbae22a9-8b04-4416-886b-805b27f3d971
+:DRILL_LAST_INTERVAL: 1.9515
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:50]
+:END:
 
 Should you declare an enum as a top-level class or a member class?
 
@@ -5323,6 +5361,18 @@ If the enum is generally useful, declare it as a top-level class.  If it's
 specific to one class, declare it as member of the specific class.
 
 *** Item 30: Use Enum instead of ints - switches on enums             :drill:
+SCHEDULED: <2016-02-03 Wed>
+:PROPERTIES:
+:ID:       e9da0beb-da67-4fed-8c42-0e83ddf8a1e3
+:DRILL_LAST_INTERVAL: 1.5504
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:54]
+:END:
 
 What should you generally use instead of switches on enums?
 
@@ -5340,8 +5390,20 @@ public enum Operation {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - share code                    :drill:
+SCHEDULED: <2016-02-02 Tue>
+:PROPERTIES:
+:ID:       136d094a-ed19-458a-83d2-fc077daed11a
+:DRILL_LAST_INTERVAL: 1.4902
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 2
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.5
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:56]
+:END:
 
-What's the best way to share behavior specific  code between enums?
+What's the best way to share behavior specific code between enums?
 
 **** Answer
 
@@ -5390,8 +5452,19 @@ public enum PayrollDay {
 }
 #+END_SRC
 
-
 *** Item 30: Use Enum instead of ints - when to use switch            :drill:
+SCHEDULED: <2016-02-03 Wed>
+:PROPERTIES:
+:ID:       059c0edd-bbd2-43a9-8e34-05d38a67c799
+:DRILL_LAST_INTERVAL: 1.5101
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.36
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:49]
+:END:
 
 When is it okay to switch on an enum?
 
@@ -5400,8 +5473,18 @@ When is it okay to switch on an enum?
 If you're augmenting external enum types with constant specific behavior.
 
 *** Item 31: Use instance fields instead of ordinals - rule           :drill:
+SCHEDULED: <2016-02-03 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
+:ID:       64926446-cac5-4356-bff2-a764342f1727
+:DRILL_LAST_INTERVAL: 1.7103
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 1
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:49]
 :END:
 
 Never derive a value associated with an enum from its [ordinal]; store it in an
