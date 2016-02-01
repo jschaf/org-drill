@@ -5837,6 +5837,18 @@ What is impact bias?
 **** Answer
 
 The tendency to overestimate the length and intensity of our future emotions.
+* Philosophy
+** Ideas
+*** Hanlon's Razor                                                    :drill:
+
+What is Hanlon's razor?
+
+**** Answer
+
+"Never assume malice when stupidity will suffice."
+
+A philosophical razor, that is, a way of eliminating unlikely explanations.
+
 * Maven
 ** Udacity
 
