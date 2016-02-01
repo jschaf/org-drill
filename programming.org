@@ -5490,6 +5490,31 @@ SCHEDULED: <2016-02-03 Wed>
 Never derive a value associated with an enum from its [ordinal]; store it in an
 [instance field] instead;
 
+*** Item 32: Use EnumSet instead of bit fields - what                 :drill:
+
+What should you use instead of bit fields?
+
+**** Answer
+
+An ~EnumSet~.  For enums with less than 64 elements, the bitset is represented
+as a long and all operations are with bitwise operation, so it's fast.
+
+*** Item 32: Use EnumSet instead of bit fields - immutable            :drill:
+
+How do you make an immutable enum set?
+
+**** Answer
+
+Guava's ~ImmutableSet~ with ~Sets.immutableEnumSet~
+~Collections.unmodifiableSet()~, returns an immutable view to a mutable ~EnumSet~
+*** Item 33: Use EnumMap instead of ordinal indexing                  :drill:
+
+How should you map an Enum to a value?
+
+**** Answer
+
+An ~EnumMap~.
+
 * Consulting
 ** Breaking the Time Barrier
 
