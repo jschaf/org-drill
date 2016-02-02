@@ -5665,6 +5665,55 @@ How should you map an Enum to a value?
 
 An ~EnumMap~.
 
+*** Item 34: Emulate extensible enum with interfaces - use case       :drill:
+
+What's the compelling use-case for extensible enums?
+
+**** Answer
+
+opcodes
+
+*** Item 34: Emulate extensible enum with interfaces - how to         :drill:
+
+How do you emulate extensible enums?
+
+**** Answer
+
+Implement an interface with the enum.  Then add an instance-specific method for
+each instance.
+
+#+BEGIN_SRC java
+public interface Operation {
+    double apply(double x, double y);
+}
+
+public enum BasicOperation implements Operation {
+    PLUS("+") {
+        public double apply(double x, double y) {
+            return x + y;
+        }
+    };
+
+    private final String symbol;
+
+    public BasicOperation(String symbol) {
+        this.symbol = symbol;
+    }
+}
+#+END_SRC
+
+*** Item 34: Emulate extensible enum with interfaces - type decl      :drill:
+
+What's the type declaration for using an extensible enum?
+
+**** Answer
+
+To get the whole enum that you can then iterate over.
+~<T extends Enum<T> & Operation>~
+
+or convert the enum to an array of values and store it in a collection. 
+~Collection<? extends Operation>~ 
+
 * Consulting
 ** Breaking the Time Barrier
 
