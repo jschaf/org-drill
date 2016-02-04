@@ -31,17 +31,17 @@ dired-get-marked-files
 * Programming Questions
 ** Math
 *** Median 1                                                          :drill: 
-SCHEDULED: <2015-12-28 Mon> 
+SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID: 6be85ae3-7fbb-42d7-9f95-3c57fba17c95
-:DRILL_LAST_INTERVAL: 1.0061 
-:DRILL_REPEATS_SINCE_FAIL: 2 
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 2.6432
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0 
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2015-12-27 Sun 20:36] 
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
 :END: 
 
 What is the median?  How is defined for an odd set of number and an even set of numbers?
@@ -865,17 +865,17 @@ Both StringBuilder and StringBuffer extend AbstractStringBuilder.
 http://stackoverflow.com/questions/355089/stringbuilder-and-stringbuffer
 
 *** Varargs                                                           :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       7b5fe7f3-70ef-4606-b523-e246dc95cddc
-:DRILL_LAST_INTERVAL: 6.7707
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 18.7352
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:50]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:21]
 :END:
 
 How do you declare varargs in Java?
@@ -911,17 +911,17 @@ last formal parameter is a variable arity parameter of type T, it is considered
 to define a formal parameter of type T[]".
 
 *** Multidimensional array - declaration                              :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-17 Wed>
 :PROPERTIES:
 :ID:       0a364e54-1afd-451a-9a8e-6b61e1a2d682
-:DRILL_LAST_INTERVAL: 4.1716
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.7144
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
 :END:
 
 How do you declare a multidimensional array in Java?
@@ -937,17 +937,17 @@ int[][][] threeDimInit = {
 #+END_SRC
 
 *** Multidimensional array - access                                   :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       7d40698d-7e03-4131-9c09-a164213aba57
-:DRILL_LAST_INTERVAL: 3.5584
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.7213
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:25]
 :END:
 
 How do you access an item in a multidimensional array in Java?
@@ -960,17 +960,17 @@ int myItem = threeDimArray[0][1][2];
 #+END_SRC
 
 *** Multidimensional array - String representation                    :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-18 Thu>
 :PROPERTIES:
 :ID:       a364ea37-eeba-400f-9e5c-7d2c17349540
-:DRILL_LAST_INTERVAL: 4.8968
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.4545
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:28]
 :END:
 
 How do you get a string representation of a multidimensional array in Java?
@@ -984,17 +984,17 @@ Arrays.deepToString(threeDimArray);
 #+END_SRC
 
 *** Create a memory leak                                              :drill:
-SCHEDULED: <2016-02-04 Thu>
+    SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
-:DRILL_LAST_INTERVAL: 4.2471
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_LAST_INTERVAL: 1.8147
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:27]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:37]
 :END:
 
 How can you create a memory leak in Java?
@@ -1033,17 +1033,17 @@ For unintentional object retention:
 + Not closing connections or files.
 
 *** Relationship between hashcode and equals                          :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       57a4b3cb-5206-475a-b876-490ee17f8812
-:DRILL_LAST_INTERVAL: 3.9267
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 10.652
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:46]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
 :END:
 
 What is the relationship between hashCode and equals?  
@@ -1221,17 +1221,17 @@ PermGen, default 64mb
 Answer
 
 *** Why does Java not having reified types matter?                    :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-12 Fri>
 :PROPERTIES:
 :ID:       b64319d7-d9a2-49ae-9234-71d7a08ff53a
-:DRILL_LAST_INTERVAL: 3.6561
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 7.9561
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.32
+:DRILL_EASE: 2.18
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:47]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
 :END:
 
 Why should I care that Java doesn't have reified generics?
@@ -1262,17 +1262,17 @@ of Pams
 http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
 
 *** Limitations on Generics                                           :drill:
-SCHEDULED: <2016-02-03 Wed>
+    SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       9027c47c-5b46-4f17-82b2-ca8c766a1cbd
-:DRILL_LAST_INTERVAL: 1.5001
+:DRILL_LAST_INTERVAL: 1.4249
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 7
-:DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 2.428
-:DRILL_EASE: 2.08
+:DRILL_TOTAL_REPEATS: 9
+:DRILL_FAILURE_COUNT: 5
+:DRILL_AVERAGE_QUALITY: 2.444
+:DRILL_EASE: 1.94
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:58]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:39]
 :END:
 
 What are the limitations on generics in Java?
@@ -1318,17 +1318,17 @@ considered to be inner classes
 explicitly declare a nested enum type to be static.
 
 *** Generics - Instance of type parameter workaround                  :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       a9ef4294-6bcf-42e4-ac16-40d63519cb15
-:DRILL_LAST_INTERVAL: 1.6857
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.1903
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:07]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:33]
 :END:
 
 What workaround can you use to declare an instance of a type parameter?
@@ -1343,6 +1343,21 @@ public static <E> void append(List<E> list, Class<E> cls) {
     list.add(elem);
 }
 #+END_SRC
+
+*** Method References                                                 :drill:
+    :PROPERTIES:
+    :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
+    :END:
+
+What are the kinds of method references?
+
+**** Answer
+
++ Reference to a static method :: ~ContainingClass::staticMethod~
++ Reference to an instance method :: ~containingObject::instanceMethod~
++ Reference to an instance method of an arbitrary object of a particular type ::
+  ~ContainingObject::methodName~
++ Reference to a constructor :: ~ClassName::new~
 
 ** Design Patterns
 
@@ -1499,6 +1514,145 @@ pop or get-min.
 
 http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-of-integer-stream/
 
+** Bit Manipulation
+*** Two's Complement - Definition                                     :drill:
+    :PROPERTIES:
+    :ID:       bf7dd9b4-621d-493a-8c46-73a89d4486dc
+    :END:
+
+How are numbers represented in two's complement?
+
+**** Answer
+
+Positive numbers a binary string.
+
+Negative numbers are ~concat(1, 2^n-1 - 1)~.  The complement is the distance
+from the largest power of two in the representation.
+
+So in a 4 bit signed integer we can represent -8 to 7.
+
+To represent -3, we use the most-significant bit to indicate that it's negative.
+So, now we represent 8 - 3 in binary which is 5, or 101.  With the sign bit, -3
+is represented as 1101 in two's complement.
+
+*** Get bit at index i                                                :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       37841d26-b7f7-4ef2-a54b-09e397566078
+    :DRILL_LAST_INTERVAL: 1.5968
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:46]
+    :END:
+
+How do you get the bit at a specific index of an integer?
+
+**** Answer
+
+#+BEGIN_SRC python
+ def get_bit(n, i):
+        return ((1 << i) & n) != 0
+#+END_SRC
+
+*** Set bit at index i                                                :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       37a2f02c-8caa-4344-990a-bf15d0800a3e
+    :DRILL_LAST_INTERVAL: 1.5442
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
+    :END:
+
+How do you set the bit at a specific index of an integer?
+
+**** Answer
+
+#+BEGIN_SRC python
+ def set_bit(n, i):
+     return n | (1 << i)
+
+#+END_SRC
+
+*** Clear bit at index i                                              :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       cd2dc707-1c3d-4838-8fae-6a379ac6fd3c
+    :DRILL_LAST_INTERVAL: 1.7418
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:43]
+    :END:
+
+How do clear a bit at index i?
+
+**** Answer
+
+Move a 1 bit to i, invert it to create a mask.
+
+#+BEGIN_SRC python
+def clear_bit(n, i):
+    return ~(1 << i) & n
+#+END_SRC
+
+*** Update bit at index i                                             :drill:
+    :PROPERTIES:
+    :ID:       9b103e32-b010-4d42-8edb-034d0acc1f11
+    :DRILL_LAST_INTERVAL: 0.0
+    :DRILL_REPEATS_SINCE_FAIL: 1
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 1.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 1
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
+    :END:
+
+How do you set a bit at index i to a specific value?
+
+**** Answer
+
+Clear the bit with a mask, then shift the update value to i and or it.
+
+#+BEGIN_SRC python
+def update_bit(num, i, isOne):
+    value = 1 if isOne else 0
+    mask = ~(1 << i)
+    return (num & mask) | (value << i)
+#+END_SRC
+
+
+*** Clear least significant bit                                       :drill:
+    :PROPERTIES:
+    :ID:       ae7dd928-468d-4120-a73d-382fcb9a2db3
+    :DRILL_LAST_INTERVAL: 0.0
+    :DRILL_REPEATS_SINCE_FAIL: 1
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 2.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 2
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:44]
+    :END:
+
+How do you clear the least significant bit?
+
+**** Answer
+
+x & x - 1
+
 ** Sorting
 
 *** Bubble sort                                                     :drill:
@@ -1545,6 +1699,18 @@ Average Time: O(n log n)
 Worst case Time: O(n^2)
 
 Space: O(1)
+
+*** Stable sort                                                       :drill:
+    :PROPERTIES:
+    :ID:       356d511e-229d-4af2-8659-7d7845484ae3
+    :END:
+
+What is a stable sort?
+
+**** Answer
+
+Stable sorting algorithms maintain the relative order of records with equal
+keys.
 
 ** Hash Tables
 *** Implement Hash Table                                            :drill:
@@ -1921,6 +2087,252 @@ time.  It is measured in units per unit of time.
 
 ** Maven
 https://www.udemy.com/apachemaven
+
+** Python Interview Questions
+   
+*** Python calling convention                                         :drill:
+    :PROPERTIES:
+    :ID:       34a3e9f6-3e37-48d4-aa0a-af689b9f3943
+    :END:
+
+Is python call by value or call by reference? 
+
+**** Answer
+
+Arguments are passed by assignment.  Better to think of python as creating a binding to objects.
+
+   
+*** Python String Concatenation                                       :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       d344db18-54b5-4726-b545-249f6f4a8222
+    :DRILL_LAST_INTERVAL: 1.5306
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:46]
+    :END:
+
+How many different ways can you concatenate or append strings in Python?
+
+**** Answer
+
+1. +
+2. +=
+3. Make a list of strings and join them
+4. StringIO and write
+
+*** Python sort                                                       :drill:
+    SCHEDULED: <2016-02-05 Fri>
+    :PROPERTIES:
+    :ID:       aa2655fd-d434-4e44-af16-1bed3e6a2052
+    :DRILL_LAST_INTERVAL: 1.4965
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+    :END:
+
+Describe how python's sort works.
+
+**** Answer
+     
+It's a hybrid stable sort as a cross between merge sort and insertion sort.
+
++ Finds runs of data, sorts with binary insertion sort to the minrun size.
++ All the runs are merged with temp memory.
+
+See
+http://svn.python.org/view/python/trunk/Objects/listsort.txt?revision=69846&view=markup
+for the gory details.
+
+Answer
+   
+
+*** Python Garbage Collection                                         :drill:
+    SCHEDULED: <2016-02-05 Fri>
+    :PROPERTIES:
+    :ID:       c548b5b2-1af7-445c-8787-51e1f3b1ccf5
+    :DRILL_LAST_INTERVAL: 1.0894
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
+    :END:
+
+How does garbage collection CPython work?
+
+**** Answer
+     
+     
+From https://www.quora.com/How-does-garbage-collection-in-Python-work
+
+I’ll discuss the implementation of the garbage collector in CPython.
+
+***** Main Ideas of CPython’s Garbage Collector
+Maintain reference count. For every object, there is a count of the total number
+of references to that object. If that count ever falls to 0, then you can
+immediately deallocate that object because it is no longer live.  Periodically
+detect reference cycles. Deallocating when the reference count falls to 0
+doesn’t work for all cases. Consider two objects A and B, where A holds a
+reference to B and B holds a reference to A. This is called a reference
+cycle. It could be the case that these are no longer live and so that both A and
+B should be garbage collected. However, the reference count on both objects are
+not zero, so they remain alive. To get around this, CPython uses an algorithm
+for detecting reference cycles and deallocating objects in the cycle.
+Performance is enhanced with heuristics. Objects that have been created recently
+are more likely to need to be garbage collected. CPython introduces the concept
+of a generation to account for the relative age of an object. Younger
+generations have objects that have more recently been created and older
+generations hold objects that are less recent. Each object belongs to exactly
+one generation. When garbage collection is performed, CPython tries to garbage
+collect younger generations. Periodically, CPython will perform garbage
+collection on older generations (the rate at which this happens is determined by
+a heuristic).
+
+
+***** The Garbage Collection Lifecycle
+It’s probably most instructive to go through the lifecycle of how the CPython
+garbage collector would typically get run. Let’s create a new object and see
+what happens with the garbage collector:
+
+Python wants to allocate a new object. To do this, it makes a call to
+`_PyObject_GC_Malloc`. This method assigns the object some memory locations and
+adds the object to the garbage collector’s first generation (we’ll call it
+generation 0). The method then checks to see if the number of objects in
+generation 0 is greater than some threshold. If it is and the garbage collector
+is not currently running, then a call to `collect_generations` is made to begin
+garbage collection. Otherwise, the object is just allocated normally.  Python
+starts to do garbage collection when `collect_generations` gets called. This
+method figures out what generation to do garbage collection on (by default
+CPython has 3 generations but this can be modified with the GC module. In
+addition, younger generations have lower indices, so generation 0 is the
+youngest generation). Python will loop over all generations (from oldest to
+youngest) and detect whether a particular generation’s object count is greater
+than some threshold. If it is, then it will merge all younger generations with
+the current generation and perform garbage collection on that generation by
+calling `collect`. NOTE: Python wants to do garbage collection on generation 0
+for better performance, because this has the newest objects and also will have
+the fewest objects to iterate over. Doing garbage collection on the oldest
+generation is equivalent to collecting over all objects because doing garbage
+collection on generation i will use all objects in generations 0 through i.  The
+`collect` method will run garbage collection on a specified generation. What
+this amounts to is running the reference cycle detection algorithm (explained
+later) and finding a set of reachable and unreachable objects in a particular
+generation. The reachable objects will be merged into the next higher generation
+(i.e. if `collect` was run on generation `i`, then the reachable objects from
+generation `i` would be merged into generation `i+1`). For the unreachable
+objects, CPython will make all necessary finalizer callbacks, make weak ref
+callbacks, and finally deallocate the objects.  Finally, the internal state of
+the garbage collection module will be updated as `collect` finishes performing
+its duties.
+
+
+***** CPython’s Algorithm for Detecting Reference Cycles
+Python attempts to find reference cycles within a generation. Confining the
+search for reference cycles to a single generation decreases the amount of work
+that has to be done in a single collection (if it is one of the generations that
+holds younger objects).
+
+To find reference cycles, Python uses `young`, the pointer to the head of the
+list of objects for the generation that’s being garbage collected, and runs the
+following:
+
+#+BEGIN_SRC 
+update_refs(young)
+subtract_refs(young)
+gc_init_list(&unreachable)
+move_unreachable(young, &unreachable)
+#+END_SRC
+
+The `update_refs` method makes a copy of the reference count for every object in
+the generation so that the garbage collector can mutate its own version of the
+reference count without messing with the real reference count.
+
+Then `subtract_refs` goes through each of the objects `i` in the generation
+being garbage collected, and decrements the reference counts on any objects `j`
+in the generation list that are referenced by object `i`. After this method has
+run, the reference count on an object in the generation should equal the number
+of references to that object from objects which do not belong to that generation
+(since all references from objects within the same generation have been
+removed).
+
+Now comes the fun part. The `move_unreachable` method scans through the `young`
+list and moves objects with a reference count of 0 into the `unreachable` list
+and changes their reference count to `GC_TENTATIVELY_UNREACHABLE`. Objects with
+a non-zero reference count are marked as `GC_REACHABLE` and the objects they
+reference are traversed and marked as `GC_REACHABLE` then moved to the end of
+the `young` list so they too can be traversed later.
+
+The reason that objects with a reference count of 0 are tentatively unreachable
+is as follows. Suppose object A has been marked as tentatively unreachable and
+is referenced by some object B. Suppose that B is in the same generation as A
+and is actually reachable from outside the generation, but that B comes later in
+the `young` list than A. Then A would be sent to the `unreachable` list when
+`move_unreachable` scans over it. However, when `move_unreachable` scans over B,
+it will notice that it’s reference count is non-zero, mark it as `GC_REACHABLE`,
+and traverse B’s references and mark them as reachable. Now, A has become
+`GC_REACHABLE` as well and has been moved to the end of the `young` list so that
+it’s references can also be marked as `GC_REACHABLE`. Thus, we only know that an
+object is unreachable after `move_unreachable` has scanned over the entire
+`young` list.
+
+Once the entire `young` list has been traversed, then all the items left in the
+`unreachable` list are definitely unreachable and so they can be
+deallocated. The items in the `young` list are then merged into older
+generations.
+
+***** Performance Notes:
+CPython’s garbage collector still stops the world, but does so more infrequently
+than other implementations. Reference count deallocation increases the time
+between collections because the number of objects in a generation decreases
+whenever an object’s reference count falls to 0 and gets deallocated. Since
+collections are triggered when the number of objects in a generation are above a
+threshold, reference count deallocation decreases the number of collections as
+long as there aren’t too many reference cycles.  If the hypothesis that younger
+objects are the objects more likely to need to be garbage collected is true,
+then running the garbage collector on younger generations can significantly
+reduce total runtime.  Memory fragmentation occurs. Reference counting will
+naturally cause memory to get fragmented since the deallocation of an object
+means there will be small chunks of memory that get added back onto the
+heap. Some garbage collectors deal with fragmentation by copying all live
+objects into a different section of memory and freeing up an entire section of
+memory, but CPython doesn’t.  Normal execution is slower. There is an extra
+check whenever an object gets allocated, referenced, or dereferenced. This means
+that instead of running normally, then performing a garbage collection all at
+once like some tracing garbage collectors do, CPython’s reference count garbage
+collector will spread the work across normal activities and perform collection
+less frequently. Unfortunately, this means the total amount of work that goes
+into garbage collection is higher (because of the added reference count checks).
+
+* Cracking the Coding Interview
+** Chapter 5 - Bit Manipulation
+*** Exercise 5.6 - Determine number of bits difference                :drill:
+    :PROPERTIES:
+    :ID:       bc4b8037-ed6e-4e9f-9251-54891d8ec9ca
+    :END:
+
+Determine the number of bits you would need to flip to convert an integer from A
+to B?
+
+**** Answer
+
+xor to get the differences and a clever for-loop to count the differences.  ~c &
+(c - 1)~ will clear the least significant bit.
+
+#+BEGIN_SRC java
+for (int c = a ^ b; c != 0; c & (c - 1))
+    numBits++;
+#+END_SRC
 
 * Java Concurrency
 ** Java Concurrency In Practice
@@ -2344,17 +2756,17 @@ Why doesn't making a class abstract prevent instantiation?
 Because you can subclass the abstract class and instantiate the subclass.
 
 *** Item 05: Unnecessary Objects                                      :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-03-04 Fri>
 :PROPERTIES:
 :ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 11.3547
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 29.1195
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.183
+:DRILL_AVERAGE_QUALITY: 3.251
 :DRILL_EASE: 2.0
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:23]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
 :END:
 
 How can you avoid unnecessary objects?
@@ -2853,17 +3265,17 @@ You should provide a static factory to convert between the string and Object.
 Either way, clearly document your intentions.
 
 *** Item 10: override toString: programmatic access                   :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-03-18 Fri>
 :PROPERTIES:
 :ID:       d67a1839-8010-4466-aeb1-5493e8c1d4b6
-:DRILL_LAST_INTERVAL: 14.0631
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 42.7147
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:09]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
 :END:
 
 Should you provide programmatic access to all info in toString?
@@ -3022,17 +3434,17 @@ way that a superclass can provide that functionality is to return an object
 obtained by calling super.clone()
 
 *** Item 11: Override Clone Judiciously - drawbacks                   :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-03-01 Tue>
 :PROPERTIES:
 :ID:       0c51568b-767d-4463-a4b7-b02b158d2786
-:DRILL_LAST_INTERVAL: 9.9895
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 26.158
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.222
+:DRILL_AVERAGE_QUALITY: 3.3
 :DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:26]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:29]
 :END:
 
 What are the drawbacks of clone?
@@ -3155,17 +3567,17 @@ class MyClass implements Comparable<MyClass> {
 #+END_SRC
 
 *** Item 12: Implement Comparable: Contract                           :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-03-03 Thu>
 :PROPERTIES:
 :ID:       ebfcf743-d916-43ea-a93d-78f501f6b61f
-:DRILL_LAST_INTERVAL: 9.4015
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 27.9033
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_AVERAGE_QUALITY: 3.833
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:41]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:27]
 :END:
 
 What is the general contract of Comparable?
@@ -3247,17 +3659,17 @@ then ~dateOfBirth~.  But what if we compare NamedThing to Person.
 http://stackoverflow.com/questions/13509286/why-cant-i-extend-an-instantiable-class-with-a-new-value-component-while-preser
 
 *** Item 12: Implement Comparable: Impl                               :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-03-04 Fri>
 :PROPERTIES:
 :ID:       5a6fa657-f96d-4a9b-a46c-4c90da10704b
-:DRILL_LAST_INTERVAL: 11.1904
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 28.5554
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_AVERAGE_QUALITY: 3.833
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:30]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
 :END:
 
 What does a plain implementation for Comparable look like?
@@ -3399,17 +3811,17 @@ Collections.unmodifiableList - an unmodifiable view, the backing array can still
 Guava ImmutableList - actually immutable
 
 *** Item 14: Public accessors - accessor vs public field              :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       f204e0bd-7b04-4cb1-bbb8-977d14b186e7
-:DRILL_LAST_INTERVAL: 1.7849
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 3.9556
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:06]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:23]
 :END:
 
 When should you use an accessor over a public field?
@@ -3730,7 +4142,7 @@ protected method or constructor, the documentation must indicate which
 overridable methods the method or constructor invokes, in what sequence and how
 the results of each invocation affect subsequent processing.
 
-Overridable means nonfinal and either public or protected.
+Overridable means nonfinal and either public or protected. 
 
 *** Item 17: Design for Inheritance - inheritance doc convention      :drill:
 SCHEDULED: <2016-02-15 Mon>
@@ -4132,17 +4544,17 @@ class Figure {
 #+END_SRC
 
 *** Item 20: Prefer class hierarchies over tags - why bad             :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       26e60c15-d309-4102-b78b-d63528fa4614
-:DRILL_LAST_INTERVAL: 1.8821
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 5.442
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.429
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.625
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:53]
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:29]
 :END:
 
 Why are tagged classes bad?
@@ -4441,20 +4853,20 @@ It saves memory since each enclosing class doesn't also have a nested class
 instantiation.
 
 *** Item 22: Favor static member classes - anonymous class            :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       d4451b59-5726-4757-97c8-90d56bf8c030
-:DRILL_LAST_INTERVAL: 1.7195
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.9564
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:07]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:22]
 :END:
 
-Where can you declare an anonymous class?
+Where can you write an anonymous class?
 
 **** Answer
 
@@ -4545,35 +4957,35 @@ Anywhere a local variable can be declared.
 
 ** Generics
 *** Item 23: Don't use raw types - type 1                             :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       d95b8741-0cf8-44ec-aa34-873d076516c5
-:DRILL_LAST_INTERVAL: 4.2884
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 12.0745
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.2
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:28]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:23]
 :END:
  
 The official term for a [List<String>] is a [parameterized type].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       3c26f404-53a2-4d3d-a605-ec4835909aac
-:DRILL_LAST_INTERVAL: 3.9589
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 11.0323
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:30]
 :END:
  
 The official term for a [String] is a [actual type parameter].
@@ -4596,18 +5008,18 @@ SCHEDULED: <2016-02-20 Sat>
 The official term for a [List<E>] is a [generic type].
 
 *** Item 23: Don't use raw types - type 3                             :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-17 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       05e30c71-50be-4f9d-a6c6-e76ef8547cdc
-:DRILL_LAST_INTERVAL: 4.5387
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 12.8431
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:22]
 :END:
  
 The official term for a [E] is a [formal type parameter].
@@ -4682,52 +5094,52 @@ SCHEDULED: <2016-02-13 Sat>
 The official term for a [<T extends Comparable<? super T>>] is a [recursive type bound].
 
 *** Item 23: Don't use raw types - type 8                             :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       c7999a55-19b7-4c7c-aa8c-c3b964008a2e
-:DRILL_LAST_INTERVAL: 4.454
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 13.359
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
 :END:
  
 The official term for a [List<? extends Number>] is a [bounded wildcard type].
 
 *** Item 23: Don't use raw types - type 9                             :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-20 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       86002f40-2980-4f07-9ec1-85fb36a0e303
-:DRILL_LAST_INTERVAL: 5.7407
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 16.7958
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:50]
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 11:59]
 :END:
  
 The official term for a [~static <E> List<E> asList(E[] a)~] is a [generic method].
 
 *** Item 23: Don't use raw types - type 10                            :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       4464817c-b1ef-47c9-b057-25264f6b819d
-:DRILL_LAST_INTERVAL: 1.6606
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.1562
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:53]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:29]
 :END:
  
 The official term for a [String.class] is a [type token].
@@ -4873,17 +5285,17 @@ value instanceof List
 #+END_SRC
 
 *** Item 23: Don't use raw types - raw type use cases                 :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       a1a64e62-7320-4e11-823:f-37804d4ef489
-:DRILL_LAST_INTERVAL: 1.6037
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 4.0146
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:06]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:28]
 :END:
 
 What are the acceptable uses for raw types?
@@ -4904,17 +5316,17 @@ What are the acceptable uses for raw types?
    work.
 
 *** Item 24: Eliminate unchecked warnings - how to suppress           :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       25630e2b-115d-497c-8f60-d0a85c734651
-:DRILL_LAST_INTERVAL: 4.4223
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 11.8538
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
 :END:
 
 How do you suppress an unchecked warnings?
@@ -5007,17 +5419,17 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
-:DRILL_LAST_INTERVAL: 1.8804
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 5.1456
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:07]
+:DRILL_AVERAGE_QUALITY: 3.285
+:DRILL_EASE: 2.66
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:33]
 :END:
 
 What are the reifiable types in Java?
@@ -5036,17 +5448,17 @@ hamburgers, roller-coaster
    ~List[]~.
 
 *** Item 25: Prefer Lists to Arrays - non-reifiable types             :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       e3e1158d-d2f7-4011-baf4-469eec5ee54f
-:DRILL_LAST_INTERVAL: 1.7241
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 4.313
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.286
-:DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:06]
+:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_EASE: 2.42
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
 :END:
 
 What are the non-reifiable types in Java?
@@ -5060,17 +5472,17 @@ What are the non-reifiable types in Java?
    ~Comparable<? super string>~
 
 *** Item 25: Prefer Lists to Arrays - varargs                         :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-18 Thu>
 :PROPERTIES:
 :ID:       e69bf276-a239-4b57-8d9d-95fdb7f32340
-:DRILL_LAST_INTERVAL: 4.274
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.4109
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:28]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:33]
 :END:
 
 Should you use generics with varargs?
@@ -5123,17 +5535,17 @@ What steps should you take to prove an unchecked cast is type safe?
 4. Explain in a comment why the cast is safe.
 
 *** Item 26: Favor Generic Types - two methods for unchecked casts    :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-14 Sun>
 :PROPERTIES:
 :ID:       8878bbe7-300f-42df-abb9-c167bb28d5be
-:DRILL_LAST_INTERVAL: 4.0545
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 9.6505
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:25]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
 :END:
 
 What are the two places you will generally see unchecked casts?
@@ -5144,17 +5556,17 @@ At the construction site or at the call site.  The construction site is more
 common because it only has to happen once.
 
 *** Item 27: Favor Generic Methods - reduce redundancy                :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-18 Thu>
 :PROPERTIES:
 :ID:       1acd593f-72cb-452b-a596-5928c5887c77
-:DRILL_LAST_INTERVAL: 4.3261
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.5031
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:25]
 :END:
 
 How can you reduce the redundancy of instantiating a generic type?
@@ -5165,17 +5577,17 @@ Use a generic static factory method or use the diamond operator which will use
 type inference.
 
 *** Item 27: Favor Generic Methods - generic singleton factory        :drill:
-SCHEDULED: <2016-02-04 Thu>
+    SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       43dc9b98-2b3c-47ed-b590-c5ea1dc13ab3
-:DRILL_LAST_INTERVAL: 3.7259
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_LAST_INTERVAL: 1.623
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:21]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:35]
 :END:
 
 What is the generic singleton factory?
@@ -5216,17 +5628,17 @@ How do you express "for every type T that can be compared to itself"?
 <T extends Comparable<T>>
 
 *** Item 28: Use Bounded Wildcards - types of bounds                  :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-12 Fri>
 :PROPERTIES:
 :ID:       f54345c2-2ed8-46d7-a10d-07fdf9fe3839
-:DRILL_LAST_INTERVAL: 3.3111
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 8.386
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:40]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:22]
 :END:
 
 What are the types of bounded wildcards?
@@ -5280,17 +5692,17 @@ public void popAll(Collection<? super E> dest) {
 #+END_SRC
 
 *** Item 28: Use Bounded Wildcards - return types                     :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       8f4d5f42-8be3-4a38-baa0-6fea2f8eff3a
-:DRILL_LAST_INTERVAL: 2.0019
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 6.3999
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:05]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:27]
 :END:
 
 What type should you return from generic code?
@@ -5300,17 +5712,17 @@ What type should you return from generic code?
 Not wildcard types.
 
 *** Item 28: Use Bounded Wildcards - wildcard rule of thumb           :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       e3d40428-2383-40a8-8170-2b4237a995d8
-:DRILL_LAST_INTERVAL: 1.4827
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.3079
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:05]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:25]
 :END:
 
 What rule of thumb do you use for figuring out if your generic API is hard to
@@ -5322,37 +5734,37 @@ If the user has to think about wildcard types, there's probably something wrong
 with the API.
 
 *** Item 28: Use Bounded Wildcards - explicit type parameters         :drill:
-SCHEDULED: <2016-02-04 Thu>
+    SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       09978df4-e085-458f-9ca4-e6c7e677489e
-:DRILL_LAST_INTERVAL: 1.7614
+:DRILL_LAST_INTERVAL: 1.4792
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.333
 :DRILL_EASE: 2.5
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:02]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:35]
 :END:
 
-How to you add explicit type parameters?
+How do you add explicit type parameters?
 
 **** Answer
 
 ~Set<String> set = Collections.synchronizedSet(Sets.<String>newHashSet());~
 
 *** Item 28: Use Bounded Wildcards - comparable and comparator        :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       f0a94b6f-533e-4360-b0d7-5471e9d06c1c
-:DRILL_LAST_INTERVAL: 1.6945
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.2075
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:04]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:35]
 :END:
 
 What bounds do you use for Comparable and Comparator?
@@ -5364,17 +5776,17 @@ Comparable<? super T> and Comparator<? super T>
 Both interfaces are consumers.  They consume a object and produce an ordering.
 
 *** Item 28: Use Bounded Wildcards - type param only once             :drill:
-SCHEDULED: <2016-02-04 Thu>
+    SCHEDULED: <2016-02-06 Sat>
 :PROPERTIES:
 :ID:       e220978c-d35b-495c-a74d-0d4db7d29d0f
-:DRILL_LAST_INTERVAL: 1.6469
+:DRILL_LAST_INTERVAL: 1.8336
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
+:DRILL_TOTAL_REPEATS: 4
+:DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:06]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:36]
 :END:
 
 If a type parameter only appears once in a method declaration, what should you
@@ -5388,17 +5800,17 @@ You might have to use a private helper method to capture the type to do anything
 useful with the item.
 
 *** Item 29: Typesafe Heterogeneous containers - diff with container  :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       422876c6-b14f-4662-a571-011d25595ce0
-:DRILL_LAST_INTERVAL: 1.6894
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.587
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:04]
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:28]
 :END:
 
 What's the main difference between typesafe heterogeneous containers and a
@@ -5409,17 +5821,17 @@ collection?
 The THC parameterizes the key instead of the container.
 
 *** Item 29: Typesafe Heterogeneous containers - limitations          :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       80952072-e06c-4467-b612-9345de1b5174
-:DRILL_LAST_INTERVAL: 1.5477
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.1673
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:07]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:28]
 :END:
 
 What are the limitations of typesafe heterogeneous containers?
@@ -5433,17 +5845,17 @@ collection?
 
 ** Enums and Annotations
 *** Item 30: Use Enum instead of ints - associate data                :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       710d241f-434c-417c-a8c5-ad488101af9d
-:DRILL_LAST_INTERVAL: 1.5964
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 3.8152
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:50]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:25]
 :END:
 
 How do you associate data with an enum?
@@ -5454,17 +5866,17 @@ Declare an instance field and write a constructor that takes the data and stores
 it in the field.
 
 *** Item 30: Use Enum instead of ints - top-level vs member           :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       fbae22a9-8b04-4416-886b-805b27f3d971
-:DRILL_LAST_INTERVAL: 1.9515
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.993
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:50]
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
 :END:
 
 Should you declare an enum as a top-level class or a member class?
@@ -5475,17 +5887,17 @@ If the enum is generally useful, declare it as a top-level class.  If it's
 specific to one class, declare it as member of the specific class.
 
 *** Item 30: Use Enum instead of ints - switches on enums             :drill:
-SCHEDULED: <2016-02-03 Wed>
+    SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       e9da0beb-da67-4fed-8c42-0e83ddf8a1e3
-:DRILL_LAST_INTERVAL: 1.5504
+:DRILL_LAST_INTERVAL: 1.5938
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:54]
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 2.6
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 11:59]
 :END:
 
 What should you generally use instead of switches on enums?
@@ -5567,17 +5979,17 @@ public enum PayrollDay {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - when to use switch            :drill:
-SCHEDULED: <2016-02-03 Wed>
+    SCHEDULED: <2016-02-05 Fri>
 :PROPERTIES:
 :ID:       059c0edd-bbd2-43a9-8e34-05d38a67c799
-:DRILL_LAST_INTERVAL: 1.5101
+:DRILL_LAST_INTERVAL: 1.4919
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:49]
+:DRILL_TOTAL_REPEATS: 3
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:36]
 :END:
 
 When is it okay to switch on an enum?
@@ -5587,56 +5999,56 @@ When is it okay to switch on an enum?
 If you're augmenting external enum types with constant specific behavior.
 
 *** Item 31: Use instance fields instead of ordinals - rule           :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64926446-cac5-4356-bff2-a764342f1727
-:DRILL_LAST_INTERVAL: 1.7103
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.1172
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:49]
+:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:30]
 :END:
 
 Never derive a value associated with an enum from its [ordinal]; store it in an
 [instance field] instead;
 
 *** Item 32: Use EnumSet instead of bit fields - what                 :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       728cac51-d43d-4ce2-be81-bc99352baf57
-:DRILL_LAST_INTERVAL: 1.7817
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 4.7883
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:05]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:22]
 :END:
 
 What should you use instead of bit fields?
 
 **** Answer
 
-An ~EnumSet~.  For enums with less than 64 elements, the bitset is represented
-as a long and all operations are with bitwise operation, so it's fast.
+An ~EnumSet~.  For enums with less than 64 elements, the set is represented as a
+long and all operations are with bitwise operation, so it's fast.
 
 *** Item 32: Use EnumSet instead of bit fields - immutable            :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       0d15569a-71aa-42a3-8a58-eb516f88f46f
-:DRILL_LAST_INTERVAL: 1.7236
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.7595
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:03]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:21]
 :END:
 
 How do you make an immutable enum set?
@@ -5646,17 +6058,17 @@ How do you make an immutable enum set?
 Guava's ~ImmutableSet~ with ~Sets.immutableEnumSet~
 ~Collections.unmodifiableSet()~, returns an immutable view to a mutable ~EnumSet~
 *** Item 33: Use EnumMap instead of ordinal indexing                  :drill:
-SCHEDULED: <2016-02-04 Thu>
+SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       53cd9c72-c39d-48ad-9a91-5f2adb116524
-:DRILL_LAST_INTERVAL: 1.8407
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 1
+:DRILL_LAST_INTERVAL: 5.7605
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 2
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.6
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:03]
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:30]
 :END:
 
 How should you map an Enum to a value?
@@ -5666,6 +6078,18 @@ How should you map an Enum to a value?
 An ~EnumMap~.
 
 *** Item 34: Emulate extensible enum with interfaces - use case       :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       1ad79362-654d-44b8-8bfe-641a9b3e444d
+    :DRILL_LAST_INTERVAL: 1.5046
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
+    :END:
 
 What's the compelling use-case for extensible enums?
 
@@ -5674,6 +6098,18 @@ What's the compelling use-case for extensible enums?
 opcodes
 
 *** Item 34: Emulate extensible enum with interfaces - how to         :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       7d8eddbb-d46c-4978-9a7e-4a4791a9fdca
+    :DRILL_LAST_INTERVAL: 1.5458
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+    :END:
 
 How do you emulate extensible enums?
 
@@ -5703,6 +6139,9 @@ public enum BasicOperation implements Operation {
 #+END_SRC
 
 *** Item 34: Emulate extensible enum with interfaces - type decl      :drill:
+    :PROPERTIES:
+    :ID:       bd065887-6f89-47f6-93dd-7543b2cb2b8e
+    :END:
 
 What's the type declaration for using an extensible enum?
 
@@ -5713,6 +6152,48 @@ To get the whole enum that you can then iterate over.
 
 or convert the enum to an array of values and store it in a collection. 
 ~Collection<? extends Operation>~ 
+
+*** Item 35: Prefer annotations to naming patterns - disadvantages    :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       3b8949d3-2461-4203-9628-acefc9ea7d20
+    :DRILL_LAST_INTERVAL: 1.6081
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
+    :END:
+
+What are the disadvantages of naming patterns?
+
+**** Answer
+
+1. Silent failures because of typos.
+2. No way to ensure naming patterns are used on appropriate elements.
+3. There's no good way to associate parameter values with program elements.
+
+*** Item 35: Prefer annotations to naming patterns - use instead      :drill:
+    SCHEDULED: <2016-02-06 Sat>
+    :PROPERTIES:
+    :ID:       5ecb8a3a-da8a-49d6-9c1a-c38683a66c9e
+    :DRILL_LAST_INTERVAL: 2.0248
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+    :END:
+
+What should you use instead of naming patterns?
+
+**** Answer
+
+Annotations!!!
 
 * Consulting
 ** Breaking the Time Barrier
@@ -6038,17 +6519,17 @@ The tendency to overestimate the length and intensity of our future emotions.
 * Philosophy
 ** Ideas
 *** Hanlon's Razor                                                    :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       3617fbd1-6b96-442f-8b82-dcf9d3c0ce6f
-:DRILL_LAST_INTERVAL: 1.4919
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 4.5356
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:07]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:30]
 :END:
 
 What is Hanlon's razor?
