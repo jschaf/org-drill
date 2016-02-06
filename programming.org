@@ -31,17 +31,17 @@ dired-get-marked-files
 * Programming Questions
 ** Math
 *** Median 1                                                          :drill: 
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID: 6be85ae3-7fbb-42d7-9f95-3c57fba17c95
-:DRILL_LAST_INTERVAL: 2.6432
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 8.5227
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:51]
 :END: 
 
 What is the median?  How is defined for an odd set of number and an even set of numbers?
@@ -382,17 +382,17 @@ System.out.printf(String formatString, Object... args)
 System.out.format(String formatString, Object... args)
 
 *** Format Specifier Syntax                                           :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-03-11 Fri>
 :PROPERTIES:
 :ID:       c531d30c-d996-4c67-a870-f5cc6faef83e
-:DRILL_LAST_INTERVAL: 14.4424
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 33.8631
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:12]
+:DRILL_AVERAGE_QUALITY: 3.25
+:DRILL_EASE: 2.18
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
 :END:
 
 What is the syntax for a format specifier?
@@ -1062,17 +1062,17 @@ Equal objects must produce the same hash code as long as they are equal,
 however unequal objects need not produce distinct hash codes.
 
 *** Interfaces: Call default methods                                  :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-22 Mon>
 :PROPERTIES:
 :ID:       91df68d1-253f-4f3f-84f4-005400946e02
-:DRILL_LAST_INTERVAL: 5.9977
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 15.5659
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:21]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
 :END:
 
 How do you call a default method explicitly?
@@ -1085,17 +1085,17 @@ This only works if ~MyInterface~ is an immediate parent of the implementing
 class or extending interface.  Grandchildren can't do this.
 
 *** Interface multiple inheritance                                    :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       c1d5b898-6c74-4440-8960-0f4e2d501bbf
-:DRILL_LAST_INTERVAL: 4.5872
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 15.1724
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:51]
 :END:
 
 Can an interface extend multiple interfaces?
@@ -1163,17 +1163,17 @@ public class MultInterfaces {
 #+END_SRC
 
 *** String final class                                                :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-25 Thu>
 :PROPERTIES:
 :ID:       c87ea6d6-5a7d-4272-b0a3-7714da8852d1
-:DRILL_LAST_INTERVAL: 5.9662
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 18.5915
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
 :END:
 
 Why is String final?
@@ -1185,17 +1185,17 @@ equals and hashCode contract, or the fake string might equals the same, but
 wouldn't be the same.
 
 *** Wait, notify and notifyAll on Object                              :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-18 Thu>
 :PROPERTIES:
 :ID:       c7332c74-7a12-458f-8147-c24890814a44
-:DRILL_LAST_INTERVAL: 4.5331
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 11.6106
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:50]
 :END:
 
 What are wait, notify and notifyAll defined on Object?
@@ -1292,17 +1292,17 @@ rollercoaster DiCaprio, thrown, heavy ruck.
    type.
 
 *** Implied keywords on nested interfaces and enums                   :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       4f528049-fb9d-4bc1-80ac-a6f3cdd3db98
-:DRILL_LAST_INTERVAL: 5.1398
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.9044
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:28]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:50]
 :END:
 
 What keywords are implied on nested interfaces and enums in Java? 
@@ -1345,8 +1345,17 @@ public static <E> void append(List<E> list, Class<E> cls) {
 #+END_SRC
 
 *** Method References                                                 :drill:
+    SCHEDULED: <2016-02-08 Mon>
     :PROPERTIES:
     :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
+    :DRILL_LAST_INTERVAL: 1.5663
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:46]
     :END:
 
 What are the kinds of method references?
@@ -1358,6 +1367,13 @@ What are the kinds of method references?
 + Reference to an instance method of an arbitrary object of a particular type ::
   ~ContainingObject::methodName~
 + Reference to a constructor :: ~ClassName::new~
+     
+http://www.studytrails.com/java/java8/Java8_Lambdas_FunctionalProgramming.jsp
+Nice examples with explanations.
+     
+http://stackoverflow.com/questions/22516331/whats-the-difference-between-instance-method-reference-types-in-java-8
+
+http://stackoverflow.com/questions/32283833/please-explain-java-8-method-reference-to-instance-method-using-class-name
 
 ** Design Patterns
 
@@ -1516,8 +1532,17 @@ http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-
 
 ** Bit Manipulation
 *** Two's Complement - Definition                                     :drill:
+    SCHEDULED: <2016-02-08 Mon>
     :PROPERTIES:
     :ID:       bf7dd9b4-621d-493a-8c46-73a89d4486dc
+    :DRILL_LAST_INTERVAL: 1.7529
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:44]
     :END:
 
 How are numbers represented in two's complement?
@@ -1536,17 +1561,17 @@ So, now we represent 8 - 3 in binary which is 5, or 101.  With the sign bit, -3
 is represented as 1101 in two's complement.
 
 *** Get bit at index i                                                :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-10 Wed>
     :PROPERTIES:
     :ID:       37841d26-b7f7-4ef2-a54b-09e397566078
-    :DRILL_LAST_INTERVAL: 1.5968
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.0817
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:46]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:51]
     :END:
 
 How do you get the bit at a specific index of an integer?
@@ -1559,17 +1584,17 @@ How do you get the bit at a specific index of an integer?
 #+END_SRC
 
 *** Set bit at index i                                                :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-11 Thu>
     :PROPERTIES:
     :ID:       37a2f02c-8caa-4344-990a-bf15d0800a3e
-    :DRILL_LAST_INTERVAL: 1.5442
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.514
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:50]
     :END:
 
 How do you set the bit at a specific index of an integer?
@@ -1583,17 +1608,17 @@ How do you set the bit at a specific index of an integer?
 #+END_SRC
 
 *** Clear bit at index i                                              :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-11 Thu>
     :PROPERTIES:
     :ID:       cd2dc707-1c3d-4838-8fae-6a379ac6fd3c
-    :DRILL_LAST_INTERVAL: 1.7418
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.5773
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:43]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
     :END:
 
 How do clear a bit at index i?
@@ -1608,16 +1633,17 @@ def clear_bit(n, i):
 #+END_SRC
 
 *** Update bit at index i                                             :drill:
+    SCHEDULED: <2016-02-08 Mon>
     :PROPERTIES:
     :ID:       9b103e32-b010-4d42-8edb-034d0acc1f11
-    :DRILL_LAST_INTERVAL: 0.0
-    :DRILL_REPEATS_SINCE_FAIL: 1
-    :DRILL_TOTAL_REPEATS: 1
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 1.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 1
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
+    :DRILL_LAST_INTERVAL: 1.7252
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 2.667
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:45]
     :END:
 
 How do you set a bit at index i to a specific value?
@@ -1635,16 +1661,17 @@ def update_bit(num, i, isOne):
 
 
 *** Clear least significant bit                                       :drill:
+    SCHEDULED: <2016-02-12 Fri>
     :PROPERTIES:
     :ID:       ae7dd928-468d-4120-a73d-382fcb9a2db3
-    :DRILL_LAST_INTERVAL: 0.0
-    :DRILL_REPEATS_SINCE_FAIL: 1
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.5602
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 2.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 2
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:44]
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
     :END:
 
 How do you clear the least significant bit?
@@ -1701,8 +1728,17 @@ Worst case Time: O(n^2)
 Space: O(1)
 
 *** Stable sort                                                       :drill:
+    SCHEDULED: <2016-02-11 Thu>
     :PROPERTIES:
     :ID:       356d511e-229d-4af2-8659-7d7845484ae3
+    :DRILL_LAST_INTERVAL: 4.5165
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
     :END:
 
 What is a stable sort?
@@ -2008,17 +2044,17 @@ http://stackoverflow.com/questions/919612/mapping-two-integers-to-one-in-a-uniqu
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-02-29 Mon>
 :PROPERTIES:
 :ID:       8C596422-5A0D-4635-A98A-C103638C5760
-:DRILL_LAST_INTERVAL: 10.5888
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 22.6105
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.182
-:DRILL_EASE: 2.18
+:DRILL_AVERAGE_QUALITY: 3.334
+:DRILL_EASE: 2.28
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:38]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:47]
 :END:
 
 What are the different methods of IPC?
@@ -2090,7 +2126,7 @@ https://www.udemy.com/apachemaven
 
 ** Python Interview Questions
    
-*** Python calling convention                                         :drill:
+*** TODO Python calling convention                                   
     :PROPERTIES:
     :ID:       34a3e9f6-3e37-48d4-aa0a-af689b9f3943
     :END:
@@ -2103,17 +2139,17 @@ Arguments are passed by assignment.  Better to think of python as creating a bin
 
    
 *** Python String Concatenation                                       :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-11 Thu>
     :PROPERTIES:
     :ID:       d344db18-54b5-4726-b545-249f6f4a8222
-    :DRILL_LAST_INTERVAL: 1.5306
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6678
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:46]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
     :END:
 
 How many different ways can you concatenate or append strings in Python?
@@ -2126,17 +2162,17 @@ How many different ways can you concatenate or append strings in Python?
 4. StringIO and write
 
 *** Python sort                                                       :drill:
-    SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-10 Wed>
     :PROPERTIES:
     :ID:       aa2655fd-d434-4e44-af16-1bed3e6a2052
-    :DRILL_LAST_INTERVAL: 1.4965
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.2913
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
     :END:
 
 Describe how python's sort works.
@@ -2156,17 +2192,17 @@ Answer
    
 
 *** Python Garbage Collection                                         :drill:
-    SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-09 Tue>
     :PROPERTIES:
     :ID:       c548b5b2-1af7-445c-8787-51e1f3b1ccf5
-    :DRILL_LAST_INTERVAL: 1.0894
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.3214
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
     :END:
 
 How does garbage collection CPython work?
@@ -2317,8 +2353,17 @@ into garbage collection is higher (because of the added reference count checks).
 * Cracking the Coding Interview
 ** Chapter 5 - Bit Manipulation
 *** Exercise 5.6 - Determine number of bits difference                :drill:
+    SCHEDULED: <2016-02-08 Mon>
     :PROPERTIES:
     :ID:       bc4b8037-ed6e-4e9f-9251-54891d8ec9ca
+    :DRILL_LAST_INTERVAL: 1.7646
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:46]
     :END:
 
 Determine the number of bits you would need to flip to convert an integer from A
@@ -2330,7 +2375,7 @@ xor to get the differences and a clever for-loop to count the differences.  ~c &
 (c - 1)~ will clear the least significant bit.
 
 #+BEGIN_SRC java
-for (int c = a ^ b; c != 0; c & (c - 1))
+for (int c = a ^ b; c != 0; c = c & (c - 1))
     numBits++;
 #+END_SRC
 
@@ -2868,17 +2913,17 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 4.9623
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 13
+:DRILL_LAST_INTERVAL: 13.0853
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 14
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.154
-:DRILL_EASE: 2.52
+:DRILL_AVERAGE_QUALITY: 3.286
+:DRILL_EASE: 2.62
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:23]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
 :END:
 
 What are the issues with finalizers?
@@ -3478,17 +3523,17 @@ What are the alternatives of clone?
 + static factory
  
 *** Item 11: Override Clone Judiciously - Proper impl                 :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-03-01 Tue>
 :PROPERTIES:
 :ID:       1666a35c-8474-4c2d-8e4a-31e9338b8bd7
-:DRILL_LAST_INTERVAL: 7.464
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 23.8013
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 3.545
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:42]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:52]
 :END:
 
 How should you implement clone if you must?
@@ -4070,17 +4115,17 @@ This is composition because the existing class becomes a component of the new
 class.
 
 *** Item 16: Favor Composition - drawbacks                            :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-22 Mon>
 :PROPERTIES:
 :ID:       c811f48e-2ce7-462e-b064-6182dbc51b56
-:DRILL_LAST_INTERVAL: 4.3482
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 16.2875
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.875
-:DRILL_EASE: 2.76
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.86
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:50]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:52]
 :END:
 
 What are the drawbacks of composition, specifically of forwarding classes?
@@ -4171,17 +4216,17 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 9.1881
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.66
+:DRILL_LAST_INTERVAL: 1.6876
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.625
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
 :END:
 
 How do you allow efficient access to the internal workings of a subclass
@@ -4873,17 +4918,17 @@ Where can you write an anonymous class?
 Anywhere an expression is legal.
 
 *** Item 22: Favor static member classes - anon class limitations     :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-17 Wed>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
-:DRILL_LAST_INTERVAL: 4.3245
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 11.3624
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.222
-:DRILL_EASE: 2.52
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:55]
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.62
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
 :END:
 
 What are the limitations on an anonymous class?
@@ -4936,17 +4981,17 @@ What are common uses for anonymous classes?
   #+END_SRC
 
 *** Item 22: Favor static member classes - local classes declared     :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-24 Wed>
 :PROPERTIES:
 :ID:       b6f4287d-2908-4dd6-b0a6-9893621012bf
-:DRILL_LAST_INTERVAL: 6.2907
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 17.9116
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
 :END:
 
 Where can local classes be declared?
@@ -5376,17 +5421,17 @@ When should you supress unchecked warnings?
 Only when you can prove that the code that provoked the warning is typesafe.
 
 *** Item 25: Prefer Lists to Arrays - array and generic diffs         :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-20 Sat>
 :PROPERTIES:
 :ID:       2027964e-d3d8-497b-93b8-8c562b1b6550
-:DRILL_LAST_INTERVAL: 4.7224
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 14.3462
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
 :END:
 
 What are the differences between arrays and generics?
@@ -5492,17 +5537,17 @@ Should you use generics with varargs?
 No, since varargs are an array, it doesn't play nice with generics.
 
 *** Item 25: Prefer Lists to Arrays - mixing arrays and generics      :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       ff3d89a2-4c25-464e-acaf-65fa4d24a868
-:DRILL_LAST_INTERVAL: 6.186
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 17.4112
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
 :END:
 
 When having trouble with arrays and generics what should you do?
@@ -5608,17 +5653,17 @@ you only have one unchecked cast.
 # on hold
 
 *** Item 27: Favor Generic Methods - mutual comparability             :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-20 Sat>
 :PROPERTIES:
 :ID:       ac29ca2c-1aca-4630-84a2-df67c02822c0
-:DRILL_LAST_INTERVAL: 4.9481
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 13.8017
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:23]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
 :END:
 
 How do you express "for every type T that can be compared to itself"?
@@ -5734,17 +5779,17 @@ If the user has to think about wildcard types, there's probably something wrong
 with the API.
 
 *** Item 28: Use Bounded Wildcards - explicit type parameters         :drill:
-    SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       09978df4-e085-458f-9ca4-e6c7e677489e
-:DRILL_LAST_INTERVAL: 1.4792
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 3.9304
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:35]
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:52]
 :END:
 
 How do you add explicit type parameters?
@@ -5776,17 +5821,17 @@ Comparable<? super T> and Comparator<? super T>
 Both interfaces are consumers.  They consume a object and produce an ordering.
 
 *** Item 28: Use Bounded Wildcards - type param only once             :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       e220978c-d35b-495c-a74d-0d4db7d29d0f
-:DRILL_LAST_INTERVAL: 1.8336
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 5.3683
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:36]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
 :END:
 
 If a type parameter only appears once in a method declaration, what should you
@@ -5979,17 +6024,17 @@ public enum PayrollDay {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - when to use switch            :drill:
-    SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       059c0edd-bbd2-43a9-8e34-05d38a67c799
-:DRILL_LAST_INTERVAL: 1.4919
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 3.8937
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:36]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
 :END:
 
 When is it okay to switch on an enum?
@@ -6154,17 +6199,17 @@ or convert the enum to an array of values and store it in a collection.
 ~Collection<? extends Operation>~ 
 
 *** Item 35: Prefer annotations to naming patterns - disadvantages    :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-10 Wed>
     :PROPERTIES:
     :ID:       3b8949d3-2461-4203-9628-acefc9ea7d20
-    :DRILL_LAST_INTERVAL: 1.6081
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.6739
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
     :END:
 
 What are the disadvantages of naming patterns?
@@ -6176,17 +6221,17 @@ What are the disadvantages of naming patterns?
 3. There's no good way to associate parameter values with program elements.
 
 *** Item 35: Prefer annotations to naming patterns - use instead      :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-11 Thu>
     :PROPERTIES:
     :ID:       5ecb8a3a-da8a-49d6-9c1a-c38683a66c9e
-    :DRILL_LAST_INTERVAL: 2.0248
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6581
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
     :END:
 
 What should you use instead of naming patterns?
@@ -6275,17 +6320,17 @@ Why are goals bad?
    made goal a part of their identity and jeopordized themselves to get the goal.
 
 *** Hedonic Adaptation                                                :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :ID:       0048cd41-4170-47a4-aa65-23a9bc9c7817
-:DRILL_LAST_INTERVAL: 17.7507
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 41.7948
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-16 Sat 13:58]
+:DRILL_AVERAGE_QUALITY: 3.571
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:47]
 :END:
 
 What is hedonic adaptation (hedonic treadmill)?
