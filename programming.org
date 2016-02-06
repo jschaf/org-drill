@@ -608,17 +608,17 @@ Integer.toString(100, 2); // prints 1100100 - binary
 Integer.toString(100,16); // prints 64 - hex
 
 *** Math Min and Max values                                           :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-23 Wed>
 :PROPERTIES:
 :ID:       cda0c464-b768-4628-9e69-c408e1bff97e
-:DRILL_LAST_INTERVAL: 15.6222
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 45.5682
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:20]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:40]
 :END:
 
 How to do you get the min and max value of a number type in Java?
@@ -811,17 +811,17 @@ Initialization does not occur when accessing fields that are compile time consta
 http://stackoverflow.com/questions/23093470/java-order-of-initialization-and-instantiation
 
 *** Compile time constants                                            :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-05 Sat>
 :PROPERTIES:
 :ID:       2c7534cd-5b20-42ad-b72b-114fa56ff988
-:DRILL_LAST_INTERVAL: 10.7826
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 28.0492
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.375
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 3.556
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:18]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:41]
 :END:
 
 What are compile time constants in Java?
@@ -984,17 +984,17 @@ Arrays.deepToString(threeDimArray);
 #+END_SRC
 
 *** Create a memory leak                                              :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-11 Thu>
 :PROPERTIES:
 :ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
-:DRILL_LAST_INTERVAL: 1.8147
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 4.8353
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:37]
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:32]
 :END:
 
 How can you create a memory leak in Java?
@@ -1262,17 +1262,17 @@ of Pams
 http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
 
 *** Limitations on Generics                                           :drill:
-    SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-08 Mon>
 :PROPERTIES:
 :ID:       9027c47c-5b46-4f17-82b2-ca8c766a1cbd
-:DRILL_LAST_INTERVAL: 1.4249
+:DRILL_LAST_INTERVAL: 1.624
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
-:DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 2.444
-:DRILL_EASE: 1.94
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:39]
+:DRILL_TOTAL_REPEATS: 11
+:DRILL_FAILURE_COUNT: 6
+:DRILL_AVERAGE_QUALITY: 2.636
+:DRILL_EASE: 2.04
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:42]
 :END:
 
 What are the limitations on generics in Java?
@@ -1503,17 +1503,17 @@ Hitler singleton
 
 ** Arrays
 *** Array 1 :drill:
-SCHEDULED: <2016-02-03 Wed>
+SCHEDULED: <2016-04-13 Wed>
 :PROPERTIES:
 :ID:       15ac94ff-d684-4ff4-9660-88f3b64c5cfa
-:DRILL_LAST_INTERVAL: 25.4648
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 66.9108
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-09 Sat 23:11]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:34]
 :END:
 
 How would you keep track of a median while getting a stream of numbers?
@@ -1783,20 +1783,20 @@ get(key)
 Use hashcode to find the bucket and search the list to find the item.
 
 *** Hash Table Collision Resolution                                   :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-04-11 Mon>
 :PROPERTIES:
 :ID:       F426A0A8-72BE-4F74-8F0E-32381A0D7C99
-:DRILL_LAST_INTERVAL: 24.1929
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 65.4914
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:24]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:37]
 :END:
 
-What are the two common hash table implementations techniques?
+What are the two common hash table implementation techniques?
 
 **** Answer
 
@@ -2017,17 +2017,17 @@ Scheme for resolving hash collisions in a table using open addressing.
 ** Algorithms
 
 *** Perfect Hashing for Pair of Ints                                  :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-11 Fri>
 :PROPERTIES:
 :ID:       592e784d-e09b-44e2-907a-07ac56433737
-:DRILL_LAST_INTERVAL: 11.8708
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 34.0953
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:41]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:36]
 :END:
 
 What's a perfect hash for a pair of ints?
@@ -2101,17 +2101,17 @@ measured in units of time.
 
 
 *** Throughput                                                        :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-04-22 Fri>
 :PROPERTIES:
 :ID:       5FB041A6-CAFF-4317-A86B-39E6AF117500
-:DRILL_LAST_INTERVAL: 23.9379
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 75.576
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:34]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:38]
 :END:
 
 What is throughput?
@@ -2405,17 +2405,17 @@ What are the motivating factors for concurrency?
   coordinate them
 
 *** Thread Benefits                                                   :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-04-18 Mon>
 :PROPERTIES:
 :ID:       3acd0416-3113-4401-a5f4-58af124d3050
-:DRILL_LAST_INTERVAL: 23.3604
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 71.9321
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.32
+:DRILL_AVERAGE_QUALITY: 3.571
+:DRILL_EASE: 2.42
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:16]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:35]
 :END:
 
 What are the benefits of threads?
@@ -2730,17 +2730,17 @@ What are the three common methods for implementing a Singleton in Java?
 3. Enum with a single field
 
 *** Item 03: Singleton Enum                                           :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       794a10aa-35b6-46af-8845-ca9baa214da5
-:DRILL_LAST_INTERVAL: 19.3787
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 48.8044
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:12]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:39]
 :END:
 
 Why is a single-element enum the best way to implement a singleton?
@@ -3261,17 +3261,17 @@ It makes a class much more pleasant to use.  Compare:
 {Jenny=(707) 867-5390}
 
 *** Item 10: override toString format                                 :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-03-18 Fri>
 :PROPERTIES:
 :ID:       d23d8b5b-7371-462a-ab3e-11e3615c244e
-:DRILL_LAST_INTERVAL: 15.2087
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 40.9002
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:20]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:41]
 :END:
 
 What info should be in toString?
@@ -3432,17 +3432,17 @@ class implements Cloneable, clone returns a field-by-field copy.  Otherwise, it
 throws a CloneNotSupportedException.
 
 *** Item 11: Override Clone Judiciously - contract                    :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-09 Wed>
 :PROPERTIES:
 :ID:       883c47bb-108e-4f5a-8e00-e5d8d70e0760
-:DRILL_LAST_INTERVAL: 11.4112
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 32.4849
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:19]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:37]
 :END:
 
 What is the general contract for clone?
@@ -3661,17 +3661,17 @@ Put the following in the documentation:
 "Note: This class has a natural ordering that is inconsistent with equals."
 
 *** Item 12: Implement Comparable: Extend Value class                 :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-06 Sun>
 :PROPERTIES:
 :ID:       a01ffdfe-96ea-41a4-948c-1f0527e090a7
-:DRILL_LAST_INTERVAL: 11.8906
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 28.7783
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.2
-:DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:44]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:39]
 :END:
 
 What is the problem with comparable and a extending a value class?
@@ -3879,17 +3879,17 @@ If a class is package-private or a private nested class, there is nothing
 inherently wrong with exposing data fields.
 
 *** Item 14: Public accessors - why accessors                         :drill:
-SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-07 Sun>
 :PROPERTIES:
 :ID:       2e1879b7-e276-452d-85ef-eee1c96aa7ab
-:DRILL_LAST_INTERVAL: 11.3761
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_LAST_INTERVAL: 1.1808
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.625
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:43]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:43]
 :END:
 
 Why should you use accessors over fields?
@@ -4003,17 +4003,17 @@ What are two approaches to making mutability performant in immutable classes?
    e.g. String -> String Builder, BigInteger -> BitSet.
 
 *** Item 15: Minimize Mutablitiy - make immutable class               :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-03-13 Sun>
 :PROPERTIES:
 :ID:       d3f102f4-533d-445d-87d2-14bd913fd8f0
-:DRILL_LAST_INTERVAL: 10.9117
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 35.6786
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:41]
 :END:
 
 How can you prevent a class from being subclassed?
@@ -4045,17 +4045,17 @@ When should classes be immutable?
 All the time, unless there's a very good reason to make them mutable.
 
 *** Item 15: Minimize Mutability - if can't immutable                 :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-14 Mon>
 :PROPERTIES:
 :ID:       3211f3ac-b981-41ce-9926-50086c9ab70a
-:DRILL_LAST_INTERVAL: 12.0363
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 36.9186
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:45]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:40]
 :END:
 
 If you absolutely must make a class mutable, how should you mitigate the risks
@@ -4092,17 +4092,17 @@ on the implementation of HashSet to Instrument correctly.
 Additionally, if the super-class gets new methods, they can break your class.
 
 *** Item 16: Favor Composition - alternative inheritance              :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-15 Tue>
 :PROPERTIES:
 :ID:       d42ea0ae-570b-4449-9116-247a2d5c2acb
-:DRILL_LAST_INTERVAL: 11.9007
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.7739
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:44]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:40]
 :END:
 
 What can you use instead of inheritance?
@@ -4359,17 +4359,17 @@ Prohibit subclassing in classes that are not designed and documented to be
 safely subclasses.
 
 *** Item 17: Design for Inheritance - concrete with no std interface  :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-17 Thu>
 :PROPERTIES:
 :ID:       f7f17099-a359-4b7e-97b5-dfbc52c0eb8e
-:DRILL_LAST_INTERVAL: 11.2643
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 39.8373
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:19]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:35]
 :END:
 
 If you must allow inheritance from a concrete class that doesn't implement a
@@ -4836,20 +4836,21 @@ What are the use cases for a static member class?
 As a public helper class like Calculator.Operations enum with PLUS, MINUS, etc.
 
 *** Item 22: Favor static member classes - qualified this             :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-29 Mon>
 :PROPERTIES:
 :ID:       101c977a-8eaf-4db9-a373-7c071745cd6b
-:DRILL_LAST_INTERVAL: 8.2983
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 23.2842
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:44]
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:33]
 :END:
 
-How do you reference an enclosing class instance fields or methods from an inner class?
+How do you reference an enclosing class instance fields or methods from an inner
+class?
 
 **** Answer
 
@@ -5622,17 +5623,17 @@ Use a generic static factory method or use the diamond operator which will use
 type inference.
 
 *** Item 27: Favor Generic Methods - generic singleton factory        :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       43dc9b98-2b3c-47ed-b590-c5ea1dc13ab3
-:DRILL_LAST_INTERVAL: 1.623
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 3.9209
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_AVERAGE_QUALITY: 3.8
 :DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:35]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:34]
 :END:
 
 What is the generic singleton factory?
@@ -5693,17 +5694,17 @@ What are the types of bounded wildcards?
 List<? extends Number> and List<? super Number>
 
 *** Item 28: Use Bounded Wildcards - PECS                             :drill:
-SCHEDULED: <2016-02-05 Fri>
+SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       77348fda-8279-4d0a-b596-1828208e4ee6
-:DRILL_LAST_INTERVAL: 4.0891
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 9.6533
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.667
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:49]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:26]
 :END:
 
 What is PECS?
@@ -5932,17 +5933,17 @@ If the enum is generally useful, declare it as a top-level class.  If it's
 specific to one class, declare it as member of the specific class.
 
 *** Item 30: Use Enum instead of ints - switches on enums             :drill:
-    SCHEDULED: <2016-02-05 Fri>
+    SCHEDULED: <2016-02-10 Wed>
 :PROPERTIES:
 :ID:       e9da0beb-da67-4fed-8c42-0e83ddf8a1e3
-:DRILL_LAST_INTERVAL: 1.5938
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 3.8528
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.6
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-03 Wed 11:59]
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:32]
 :END:
 
 What should you generally use instead of switches on enums?
@@ -5961,17 +5962,17 @@ public enum Operation {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - share code                    :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-02-18 Thu>
 :PROPERTIES:
 :ID:       136d094a-ed19-458a-83d2-fc077daed11a
-:DRILL_LAST_INTERVAL: 4.1842
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 11.5282
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.25
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:00]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:31]
 :END:
 
 What's the best way to share behavior specific code between enums?
@@ -6123,17 +6124,17 @@ How should you map an Enum to a value?
 An ~EnumMap~.
 
 *** Item 34: Emulate extensible enum with interfaces - use case       :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-10 Wed>
     :PROPERTIES:
     :ID:       1ad79362-654d-44b8-8bfe-641a9b3e444d
-    :DRILL_LAST_INTERVAL: 1.5046
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.9936
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:42]
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:32]
     :END:
 
 What's the compelling use-case for extensible enums?
@@ -6143,17 +6144,17 @@ What's the compelling use-case for extensible enums?
 opcodes
 
 *** Item 34: Emulate extensible enum with interfaces - how to         :drill:
-    SCHEDULED: <2016-02-06 Sat>
+    SCHEDULED: <2016-02-10 Wed>
     :PROPERTIES:
     :ID:       7d8eddbb-d46c-4978-9a7e-4a4791a9fdca
-    :DRILL_LAST_INTERVAL: 1.5458
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.8672
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:33]
     :END:
 
 How do you emulate extensible enums?
@@ -6184,8 +6185,17 @@ public enum BasicOperation implements Operation {
 #+END_SRC
 
 *** Item 34: Emulate extensible enum with interfaces - type decl      :drill:
+    SCHEDULED: <2016-02-08 Mon>
     :PROPERTIES:
     :ID:       bd065887-6f89-47f6-93dd-7543b2cb2b8e
+    :DRILL_LAST_INTERVAL: 1.5255
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:36]
     :END:
 
 What's the type declaration for using an extensible enum?
@@ -6293,17 +6303,17 @@ Identify a keystone habit
 Use a feedback loop.
 
 *** Goals are bad                                                     :drill:
-SCHEDULED: <2016-02-06 Sat>
+SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       10f40af7-186f-448e-a1fe-35e8c881ad84
-:DRILL_LAST_INTERVAL: 19.3186
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 48.501
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:11]
+:DRILL_AVERAGE_QUALITY: 3.286
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:38]
 :END:
 
 Why are goals bad?
