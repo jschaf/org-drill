@@ -6250,6 +6250,63 @@ What should you use instead of naming patterns?
 
 Annotations!!!
 
+*** Item 36: Use Override consistently - when                         :drill:
+
+When should you use the Override annotation?
+
+**** Answer
+
+Any time you believe a method is overriding a superclass declaration.
+
+*** Item 37: Use marker interfaces to define types - what             :drill:
+
+What are marker interfaces?
+
+**** Answer
+     
+It's an empty interface.
+
+#+BEGIN_QUOTE
+Marker interfaces define a type that is implemented by instances of the marked
+class; marker annotations do not.
+#+END_QUOTE
+
+http://stackoverflow.com/questions/1995198/what-is-the-use-of-marker-interfaces-in-java    
+http://stackoverflow.com/questions/26271786/marker-annotation-vs-marker-interface
+
+
+*** Item 37: Use marker interfaces to define types - benefits         :drill:
+
+What are the benefits of marker types over marker annotations?
+
+**** Answer
+
++ Catch errors at compile time.
++ Can be targeted more precisely, e.g. ~interface MyInterfaces extends
+  BroInterface {}~
+
+*** Item 37: Use marker interfaces to define types - annotations      :drill:
+
+What are the benefits of marker annotations over marker interfaces?
+
+**** Answer
+
++ Possible to add more information to an annotation type after it is already in
+  use.
++ Part of the larger annotation framework.  Allows for consistency in
+  processing.
+
+*** Item 37: Use marker interfaces to define types - which to pick    :drill:
+
+How do you pick marker interface over a marker annotation?
+
+**** Answer
+#+BEGIN_QUOTE
+If you find yourself writing a marker annotation type whose target is
+~ElementType.TYPE~, take the time to figure out whether it really should be an
+annotation type, or whether a marker interface would be more appropriate.
+#+END_QUOTE
+
 * Consulting
 ** Breaking the Time Barrier
 
