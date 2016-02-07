@@ -137,17 +137,17 @@ What are the 4 types of variables in Java?
 4. Parameters
 
 *** Primitive Types                                                   :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-04-10 Sun>
 :PROPERTIES:
 :ID:       938d3b90-09e3-45fa-92a4-1cbdc02d4e0e
-:DRILL_LAST_INTERVAL: 19.8578
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 62.822
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_AVERAGE_QUALITY: 3.75
 :DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:16]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:47]
 :END:
 
 What are Java's primitive types?
@@ -1401,17 +1401,17 @@ Singleton is a class which only has one instance in a whole application. The
 class provides a getInstance() method to access the singleton instances.
 
 *** Singleton 2                                                       :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :ID:       5e4c1b0b-ede4-43cf-943d-d83c847691ac
-:DRILL_LAST_INTERVAL: 16.7425
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 38.0161
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.222
-:DRILL_EASE: 2.18
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.28
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:22]
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:46]
 :END:
 
 What are the advantages of a Singleton pattern?
@@ -1448,17 +1448,17 @@ What are the disadvantages of a Singleton pattern?
 + Inability to subclass because of private constructor.
 
 *** Singleton 4                                                       :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-04-08 Fri>
 :PROPERTIES:
 :ID:       f6b95c46-c338-4c84-bcb6-8773f38d6282
-:DRILL_LAST_INTERVAL: 23.5836
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 60.645
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.714
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-14 Thu 20:18]
+:DRILL_AVERAGE_QUALITY: 3.625
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:47]
 :END:
 
 What are the alternatives to a Singleton pattern?
@@ -3456,17 +3456,17 @@ x.clone().getClass() == x.getClass() // Not 100% required
 x.clone().equals(x) // Not 100% required.
 
 *** Item 11: Override Clone Judiciously - nonfinal class              :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-03-20 Sun>
 :PROPERTIES:
 :ID:       a8c9d998-919e-47f5-a521-bafe40dc0141
-:DRILL_LAST_INTERVAL: 13.044
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 42.4522
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_AVERAGE_QUALITY: 3.75
 :DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:42]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:48]
 :END:
 
 What type should you return in a clone of a nonfinal class?
@@ -3879,17 +3879,17 @@ If a class is package-private or a private nested class, there is nothing
 inherently wrong with exposing data fields.
 
 *** Item 14: Public accessors - why accessors                         :drill:
-    SCHEDULED: <2016-02-07 Sun>
+    SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       2e1879b7-e276-452d-85ef-eee1c96aa7ab
-:DRILL_LAST_INTERVAL: 1.1808
+:DRILL_LAST_INTERVAL: 1.624
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.625
-:DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:43]
+:DRILL_TOTAL_REPEATS: 10
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.9
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:49]
 :END:
 
 Why should you use accessors over fields?
@@ -4025,17 +4025,17 @@ How can you prevent a class from being subclassed?
   package-private implementation classes.
 
 *** Item 15: Minimize Mutability - when immutable                     :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :ID:       e04eac1c-5dbc-4956-860f-166911b27b69
-:DRILL_LAST_INTERVAL: 13.4702
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 40.7684
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-25 Mon 20:42]
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:47]
 :END:
 
 When should classes be immutable?
@@ -4436,17 +4436,17 @@ The naming convention is AbstractINTERFACE, where INTERFACE is the interface you
 implement.
 
 *** Item 18: Prefer Interfaces - simulated multiple inheritance       :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-03-09 Wed>
 :PROPERTIES:
 :ID:       ead7a395-bcd7-4fd9-9917-50c67c7954cb
-:DRILL_LAST_INTERVAL: 10.4565
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 31.0253
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:49]
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:47]
 :END:
 
 What is simulated multiple inheritance?
@@ -5445,17 +5445,17 @@ Arrays have run-time safety but not compile time safety.  Generics have compile
 time safety but not run-time safety.
 
 *** Item 25: Prefer Lists to Arrays - reified definition              :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-02-26 Fri>
 :PROPERTIES:
 :ID:       ba413ffd-0b03-49f9-8a3e-fecb51756108
-:DRILL_LAST_INTERVAL: 6.808
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 19.2013
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:27]
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:45]
 :END:
 
 What does reified mean in a Java context?
@@ -5558,17 +5558,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-SCHEDULED: <2016-02-07 Sun>
+    SCHEDULED: <2016-02-09 Tue>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 5.2002
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:58]
+:DRILL_LAST_INTERVAL: 1.8402
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.66
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:48]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -6045,18 +6045,18 @@ When is it okay to switch on an enum?
 If you're augmenting external enum types with constant specific behavior.
 
 *** Item 31: Use instance fields instead of ordinals - rule           :drill:
-SCHEDULED: <2016-02-07 Sun>
+SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64926446-cac5-4356-bff2-a764342f1727
-:DRILL_LAST_INTERVAL: 4.1172
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 12.1177
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:30]
+:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:44]
 :END:
 
 Never derive a value associated with an enum from its [ordinal]; store it in an
@@ -6251,6 +6251,18 @@ What should you use instead of naming patterns?
 Annotations!!!
 
 *** Item 36: Use Override consistently - when                         :drill:
+    SCHEDULED: <2016-02-09 Tue>
+    :PROPERTIES:
+    :ID:       bdf68b77-3401-4bd3-bd4e-142c94506d87
+    :DRILL_LAST_INTERVAL: 1.5391
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:46]
+    :END:
 
 When should you use the Override annotation?
 
@@ -6259,6 +6271,18 @@ When should you use the Override annotation?
 Any time you believe a method is overriding a superclass declaration.
 
 *** Item 37: Use marker interfaces to define types - what             :drill:
+    SCHEDULED: <2016-02-09 Tue>
+    :PROPERTIES:
+    :ID:       699e86de-ede7-4181-9a70-23cbcac2d38d
+    :DRILL_LAST_INTERVAL: 1.5061
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:47]
+    :END:
 
 What are marker interfaces?
 
@@ -6276,6 +6300,18 @@ http://stackoverflow.com/questions/26271786/marker-annotation-vs-marker-interfac
 
 
 *** Item 37: Use marker interfaces to define types - benefits         :drill:
+    SCHEDULED: <2016-02-09 Tue>
+    :PROPERTIES:
+    :ID:       f3372f70-e742-4f91-abda-efe7509bf925
+    :DRILL_LAST_INTERVAL: 1.5054
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:48]
+    :END:
 
 What are the benefits of marker types over marker annotations?
 
@@ -6284,8 +6320,22 @@ What are the benefits of marker types over marker annotations?
 + Catch errors at compile time.
 + Can be targeted more precisely, e.g. ~interface MyInterfaces extends
   BroInterface {}~
+  
+http://www.javacodegeeks.com/2013/02/increased-compile-time-safety-with-phantom-types.html
 
 *** Item 37: Use marker interfaces to define types - annotations      :drill:
+    SCHEDULED: <2016-02-09 Tue>
+    :PROPERTIES:
+    :ID:       671aec6a-0f28-4a32-a3eb-b1907f79365b
+    :DRILL_LAST_INTERVAL: 1.7821
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:48]
+    :END:
 
 What are the benefits of marker annotations over marker interfaces?
 
@@ -6297,6 +6347,18 @@ What are the benefits of marker annotations over marker interfaces?
   processing.
 
 *** Item 37: Use marker interfaces to define types - which to pick    :drill:
+    SCHEDULED: <2016-02-08 Mon>
+    :PROPERTIES:
+    :ID:       598d0f1e-a19a-4f5e-a90d-f258d7eee8e8
+    :DRILL_LAST_INTERVAL: 1.3371
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:46]
+    :END:
 
 How do you pick marker interface over a marker annotation?
 
@@ -6306,6 +6368,103 @@ If you find yourself writing a marker annotation type whose target is
 ~ElementType.TYPE~, take the time to figure out whether it really should be an
 annotation type, or whether a marker interface would be more appropriate.
 #+END_QUOTE
+
+** Methods
+*** Item 38: Check parameters for validity - nonpublic methods        :drill:
+
+How should you check non-public methods for validity?
+
+**** Answer
+
+Use assertions because you can and should ensure only valid parameters are ever
+passed in.
+
+*** Item 38: Check parameters for validity - stored parameters        :drill:
+
+Why is it important to check parameters that are stored for later use?
+
+**** Answer
+
+Because you want to fail as fast as possible.  Trying to debug problems later is
+much harder than failing at construction.
+
+*** Item 38: Check parameters for validity - exceptions               :drill:
+
+When can you skip validation?
+
+**** Answer
+
+When the validity check would be expensive or impractical AND the validity check
+is conducted implicitly in the process of doing the computation.
+
+*** Item 38: Check parameters for validity - why                      :drill:
+
+Why should you restrict and check parameters for validity?
+
+**** Answer
+
+The extra time spent doing the checks will be paid back with interest the first
+time a validity check fails.
+
+*** Item 39: Make defensive copies when needed - base assumption      :drill:
+
+What assumption should you operate under when programming?
+
+**** Answer
+
+That the clients of your class will do their best to destroy the invariants.
+
+*** Item 39: Make defensive copies when needed - constructors         :drill:
+
+Which parameters are essential to defensively copy in a constructor?
+
+**** Answer
+
+Each mutable parameter.
+
+*** Item 39: Make defensive copies when needed - validity check       :drill:
+
+When do you perform the validity check on defensive copies?
+
+**** Answer
+
+After the defensive copies have been made and you perform the validity check on
+the copies.
+
+This protects the class against changes to the parameters from another thread
+during the "window of vulnerability" between the time the parameters are checked
+and the time they are copied.  This is known as a /time-of-check time-of-use/
+TOCTOU attack.
+
+*** Item 39: Make defensive copies when needed - clone                :drill:
+
+Should you use clone for defensive copies?
+
+**** Answer
+
+No, you don't use clone to make a defensive copy of a parameter whose type is
+subclassable by untrusted parties.
+
+An attacker could create a subclass for nefarious purposes, such as storing all
+instances in a private static list for later use.
+
+*** Item 39: Make defensive copies when needed - skipping             :drill:
+
+When can you skip defensive copies?
+
+**** Answer
+
+If the cost of the copy is prohibitive *AND* the class trusts its clients not to
+modify the components inappropriately then you can replace the copy with
+documentation.
+
+*** Item 39: Make defensive copies when needed - mutable fields       :drill:
+
+How do you defensively copy accessors?
+
+**** Answer
+
+Defensively copy all mutable fields when returning accessors.
 
 * Consulting
 ** Breaking the Time Barrier
