@@ -6586,6 +6586,101 @@ How do you defensively copy accessors?
 
 Defensively copy all mutable fields when returning accessors.
 
+*** Item 40: Design method signatures carefully - convenience         :drill:
+
+What's a rule of thumb for adding convenience methods?
+
+**** Answer
+
+Every method should pull its weight.  Too many methods make a class difficult to
+learn, use, document, test and maintain.
+
+
+When in doubt, leave it out.
+
+*** Item 40: Design method signatures carefully - avoid long params   :drill:
+
+How long is too long for parameter lists?
+
+**** Answer
+
+Aim for four parameters or fewer.
+
+Long sequences of identically typed parameters are especially harmful.
+
+*** Item 40: Design method signatures carefully - break up            :drill:
+
+How can you break up long parameters?
+
+**** Answer
+
+1. Break the method into multiple methods.  If careless, this can result in too
+   many methods, but it can also reduce the number of methods by composing well.
+2. Create helper classes to hold methods.
+3. Adapt builder pattern to method invocation.
+
+*** Item 40: Design method signatures carefully - prefer enums        :drill:
+
+What should you use instead of boolean parameters?
+
+**** Answer
+
+Two element enums because:
+
+1. They have a name.
+2. You can evolve them
+
+   
+*** Item 41: Use overloading judiciously - overloading v. overriding  :drill:
+
+When is an overloaded method chosen? 
+When is an overriden method chosen?
+
+**** Answer
+
+Selection among overloaded methods is static.
+Selection among overriden methods in dynamic.
+
+*** Item 41: Use overloading judiciously - avoid confusing overloads  :drill:
+
+What's a good policy for overloading?
+
+**** Answer
+
+A safe, conservative policy is never to export two overloadings with the same
+number of parameters.
+
+*** Item 41: Use overloading judiciously - example                    :drill:
+
+Why is List.remove a good example of overloading gone wrong?
+
+**** Answer
+
+If you use List<Integer> and call list.remove(3), you get the remove(int i)
+which removes an item at index i, instead of removing the element.  You must
+explicitly cast to Integer to get remove to actually remove an item.
+
+*** Item 41: Use overloading judiciously - must overload              :drill:
+
+If you must overload a method, what should you avoid?
+
+**** Answer
+
+1. At least avoid situations where the same set of parameters can be passed to
+   different overloadings by the addition of casts.
+2. If you can't avoid that situation, because of retrofitting, ensure that all
+   overloadings behave identically when passed the same parameters.  Otherwise
+   you confuse the fuck out of programmers.
+
+*** Item 41: Use overloading judiciously -                            :drill:
+
+Question
+
+**** Answer
+
+Answer
+
+
 * Consulting
 ** Breaking the Time Barrier
 
