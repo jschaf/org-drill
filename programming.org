@@ -6678,7 +6678,6 @@ Two element enums because:
 1. They have a name.
 2. You can evolve them
 
-   
 *** Item 41: Use overloading judiciously - overloading v. overriding  :drill:
     SCHEDULED: <2016-02-11 Thu>
     :PROPERTIES:
@@ -6767,6 +6766,64 @@ If you must overload a method, what should you avoid?
 2. If you can't avoid that situation, because of retrofitting, ensure that all
    overloadings behave identically when passed the same parameters.  Otherwise
    you confuse the fuck out of programmers.
+
+*** Item 42: Use varargs judiciously - one required arg               :drill:
+
+How do you handle a required argument followed by a variable number of
+arguments?
+
+**** Answer
+
+One parameter followed by a varags.
+
+#+BEGIN_SRC java
+static int min(int firstArg, int... remainingArgs) {
+    int min = firstArg;
+    for (int n : remainingArgs) {
+        if (n < min)
+            min = n
+    }
+}
+#+END_SRC
+
+*** Item 42: Use varargs judiciously - when to use                    :drill:
+
+When should you use varargs?
+
+**** Answer
+
+When the method /only/ really operates on a variable length sequence of values.
+
+*** Item 42: Use varargs judiciously - optimize                       :drill:
+
+How can you optimize a varargs method?
+
+**** Answer
+
+If performance is critical as determined by profiling:
+
+1. Overload the method with 0 params, 1 param, 2 params..., the  number of
+   overloads should be determined empirically.
+2. Have one varargs catch-all
+   
+#+BEGIN_SRC java
+public void foo() { }
+public void foo(int a1) { }
+public void foo(int a1, int a2) { }
+public void foo(int a1, int a2, int a3) { }
+public void foo(int a1, int a2, int a3, int... rest) { }
+#+END_SRC
+
+*** Item 43: return empty arrays or collections, not nulls - why      :drill:
+
+Why should you return empty arrays or collections instead of nulls?
+
+**** Answer
+
+There is no reason to return null.
+
++ Empty arrays and ~Collections.emptyList()~ are immutable and can be shared.
++ It's easier for the client because they don't have to handle the null case.
 
 * Consulting
 ** Breaking the Time Barrier
