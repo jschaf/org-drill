@@ -6873,6 +6873,60 @@ There is no reason to return null.
 + Empty arrays and ~Collections.emptyList()~ are immutable and can be shared.
 + It's easier for the client because they don't have to handle the null case.
 
+*** Item 44: Write doc comments - what to include                     :drill:
+
+What should you include in a doc comment?
+
+**** Answer
+     
+The doc comment for a method should describe succinctly the contract between the
+method and its client. 
+
+1. What the method does - include a one sentence summary description.
+2. For methods in a class designed for inheritance - document how the class is
+   implemented, especially the use of overridable methods. 
+3. Preconditions - typically described the ~@throws~ tag or with the relevant
+   ~@param~
+4. Postconditions
+5. Side-effects - an observable change in the state of the system not obviously
+   required to achieve the postcondition.
+6. Thread-safety
+7. Serialization
+   
+Other requirements:
++ No two members or constructors in a class or interface should have the same
+  summary description.
++ There are no periods followed by spaces in the summary description.
++ For generic types - document all type parameters.
++ For enum types - document the constants.
++ For annotation types - document any members as well as the type itself.
+
+**
+** General Programming
+*** Item 45: Minimize scope of local vars - most powerful             :drill:
+
+What is the most powerful technique for minimizing the scope of local variables?
+
+**** Answer
+
+Declare the local variable where it is first used.
+
+*** Item 45: Minimize scope of local vars - initialize                :drill:
+
+Nearly every local variable should contain an _?
+
+**** Answer
+
+Initializer
+
+*** Item 45: Minimize scope of local vars - skipping initialization   :drill:
+
+When can postpone initialization of local variables?
+
+**** Answer
+
+When using a try-catch block.
+
 * Consulting
 ** Breaking the Time Barrier
 
