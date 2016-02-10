@@ -1345,17 +1345,17 @@ public static <E> void append(List<E> list, Class<E> cls) {
 #+END_SRC
 
 *** Method References                                                 :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
-    :DRILL_LAST_INTERVAL: 1.6074
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.9253
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:26]
+    :DRILL_AVERAGE_QUALITY: 3.4
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:42]
     :END:
 
 What are the kinds of method references?
@@ -1561,17 +1561,17 @@ So, now we represent 8 - 3 in binary which is 5, or 101.  With the sign bit, -3
 is represented as 1101 in two's complement.
 
 *** Get bit at index i                                                :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       37841d26-b7f7-4ef2-a54b-09e397566078
-    :DRILL_LAST_INTERVAL: 4.0817
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 9.4574
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:51]
+    :DRILL_AVERAGE_QUALITY: 4.333
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
     :END:
 
 How do you get the bit at a specific index of an integer?
@@ -1955,17 +1955,17 @@ $h(i, k) = h1(k) + i * h2(k) mod (length array)$
 https://en.wikipedia.org/wiki/Double_hashing
 
 *** Coalesced hashing                                               :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-03-27 Sun>
 :PROPERTIES:
 :ID:       1DDEFC35-28AF-45D7-9911-FA560687150A
-:DRILL_LAST_INTERVAL: 20.1721
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 46.0565
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.286
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:21]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:50]
 :END:
 
 What is Coalesced hashing?
@@ -2162,17 +2162,17 @@ How many different ways can you concatenate or append strings in Python?
 4. StringIO and write
 
 *** Python sort                                                       :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       aa2655fd-d434-4e44-af16-1bed3e6a2052
-    :DRILL_LAST_INTERVAL: 4.2913
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.4745
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
     :END:
 
 Describe how python's sort works.
@@ -2470,17 +2470,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-03-24 Thu>
 :PROPERTIES:
 :ID:       d42c342e-3741-4bb0-b310-d01cab81551d
-:DRILL_LAST_INTERVAL: 13.1616
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 43.1431
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.167
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.286
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
 :END:
 
 What is a covariant return type?
@@ -3791,17 +3791,17 @@ What is Bloch's rule of thumb for class or member accessibility?
 Make each class or member as inaccessible as possible.
 
 *** Item 13: Minimize accessibility - levels                          :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-04-04 Mon>
 :PROPERTIES:
 :ID:       d8c3a0e4-da20-496d-8380-220ecb303820
-:DRILL_LAST_INTERVAL: 18.1594
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 53.7496
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:39]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:49]
 :END:
 
 What are the four access levels in Java?
@@ -4240,17 +4240,17 @@ workings of the class.
 Like AbstractList#removeRange
 
 *** Item 17: Design for Inheritance - test for inheritance design     :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :ID:       125bac74-5920-4f7a-a8c5-0cb26f5bf871
-:DRILL_LAST_INTERVAL: 12.9176
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 35.1965
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:51]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
 :END:
 
 What is the only way to test if a class is designed for inheritance?
@@ -4457,17 +4457,17 @@ You use composition to included a skeletal implementation of an interface and
 then forward the interfaces' method calls to the wrapped skeletal interface.
 
 *** Item 18: Prefer Interfaces - Advantages of abstract classes       :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :ID:       571f408b-2c08-4b4f-8b62-397feb475239
-:DRILL_LAST_INTERVAL: 13.4608
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.9312
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:56]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:50]
 :END:
 
 What are the advantages of abstract classes?
@@ -4480,17 +4480,17 @@ In Java 8, the story is slightly better for interfaces since you can provide
 default methods.
 
 *** Item 19: Interface only for Types - Why                           :drill:
-SCHEDULED: <2016-02-09 Tue>
+SCHEDULED: <2016-03-15 Tue>
 :PROPERTIES:
 :ID:       dc434c1d-7b41-4c98-8f39-f6556da48256
-:DRILL_LAST_INTERVAL: 12.061
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 34.1329
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:44]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:50]
 :END:
 
 Why should you use interfaces only for types?
@@ -5623,17 +5623,17 @@ Use a generic static factory method or use the diamond operator which will use
 type inference.
 
 *** Item 27: Favor Generic Methods - generic singleton factory        :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-20 Sat>
 :PROPERTIES:
 :ID:       43dc9b98-2b3c-47ed-b590-c5ea1dc13ab3
-:DRILL_LAST_INTERVAL: 3.9209
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 9.5083
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_AVERAGE_QUALITY: 3.833
 :DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:34]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:41]
 :END:
 
 What is the generic singleton factory?
@@ -5738,17 +5738,17 @@ public void popAll(Collection<? super E> dest) {
 #+END_SRC
 
 *** Item 28: Use Bounded Wildcards - return types                     :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-02-29 Mon>
 :PROPERTIES:
 :ID:       8f4d5f42-8be3-4a38-baa0-6fea2f8eff3a
-:DRILL_LAST_INTERVAL: 6.3999
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 18.9039
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:27]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
 :END:
 
 What type should you return from generic code?
@@ -5780,17 +5780,17 @@ If the user has to think about wildcard types, there's probably something wrong
 with the API.
 
 *** Item 28: Use Bounded Wildcards - explicit type parameters         :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-22 Mon>
 :PROPERTIES:
 :ID:       09978df4-e085-458f-9ca4-e6c7e677489e
-:DRILL_LAST_INTERVAL: 3.9304
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 12.2086
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:52]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
 :END:
 
 How do you add explicit type parameters?
@@ -5933,17 +5933,17 @@ If the enum is generally useful, declare it as a top-level class.  If it's
 specific to one class, declare it as member of the specific class.
 
 *** Item 30: Use Enum instead of ints - switches on enums             :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       e9da0beb-da67-4fed-8c42-0e83ddf8a1e3
-:DRILL_LAST_INTERVAL: 3.8528
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 13.1244
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 3.286
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:32]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
 :END:
 
 What should you generally use instead of switches on enums?
@@ -6025,17 +6025,17 @@ public enum PayrollDay {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - when to use switch            :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       059c0edd-bbd2-43a9-8e34-05d38a67c799
-:DRILL_LAST_INTERVAL: 3.8937
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 10.991
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:45]
 :END:
 
 When is it okay to switch on an enum?
@@ -6084,17 +6084,17 @@ An ~EnumSet~.  For enums with less than 64 elements, the set is represented as a
 long and all operations are with bitwise operation, so it's fast.
 
 *** Item 32: Use EnumSet instead of bit fields - immutable            :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-02-28 Sun>
 :PROPERTIES:
 :ID:       0d15569a-71aa-42a3-8a58-eb516f88f46f
-:DRILL_LAST_INTERVAL: 5.7595
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 17.5845
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:21]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
 :END:
 
 How do you make an immutable enum set?
@@ -6104,17 +6104,17 @@ How do you make an immutable enum set?
 Guava's ~ImmutableSet~ with ~Sets.immutableEnumSet~
 ~Collections.unmodifiableSet()~, returns an immutable view to a mutable ~EnumSet~
 *** Item 33: Use EnumMap instead of ordinal indexing                  :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-02-26 Fri>
 :PROPERTIES:
 :ID:       53cd9c72-c39d-48ad-9a91-5f2adb116524
-:DRILL_LAST_INTERVAL: 5.7605
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 2
+:DRILL_LAST_INTERVAL: 16.4121
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 3
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.7
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:30]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:41]
 :END:
 
 How should you map an Enum to a value?
@@ -6124,17 +6124,17 @@ How should you map an Enum to a value?
 An ~EnumMap~.
 
 *** Item 34: Emulate extensible enum with interfaces - use case       :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       1ad79362-654d-44b8-8bfe-641a9b3e444d
-    :DRILL_LAST_INTERVAL: 3.9936
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.5179
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:32]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:45]
     :END:
 
 What's the compelling use-case for extensible enums?
@@ -6144,17 +6144,17 @@ What's the compelling use-case for extensible enums?
 opcodes
 
 *** Item 34: Emulate extensible enum with interfaces - how to         :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       7d8eddbb-d46c-4978-9a7e-4a4791a9fdca
-    :DRILL_LAST_INTERVAL: 3.8672
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.3105
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:33]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:46]
     :END:
 
 How do you emulate extensible enums?
@@ -6209,17 +6209,17 @@ or convert the enum to an array of values and store it in a collection.
 ~Collection<? extends Operation>~ 
 
 *** Item 35: Prefer annotations to naming patterns - disadvantages    :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       3b8949d3-2461-4203-9628-acefc9ea7d20
-    :DRILL_LAST_INTERVAL: 3.6739
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 9.9691
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
     :END:
 
 What are the disadvantages of naming patterns?
@@ -6371,20 +6371,20 @@ annotation type, or whether a marker interface would be more appropriate.
 
 ** Methods
 *** Item 38: Check parameters for validity - nonpublic methods        :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       18be2409-3537-463d-a291-1429edccedee
-    :DRILL_LAST_INTERVAL: 1.5839
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.2632
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:22]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:46]
     :END:
 
-How should you check non-public methods for validity?
+How should you check non-public methods for validity?  With assertions or exceptions?
 
 **** Answer
 
@@ -6392,17 +6392,17 @@ Use assertions because you can and should ensure only valid parameters are ever
 passed in.
 
 *** Item 38: Check parameters for validity - stored parameters        :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       60da9210-7254-4313-a059-2e934cc98ad8
-    :DRILL_LAST_INTERVAL: 1.7704
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.2181
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:23]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:42]
     :END:
 
 Why is it important to check parameters that are stored for later use?
@@ -6413,17 +6413,17 @@ Because you want to fail as fast as possible.  Trying to debug problems later is
 much harder than failing at construction.
 
 *** Item 38: Check parameters for validity - exceptions               :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       bb41556b-97c5-443e-a981-6c036d01f85e
-    :DRILL_LAST_INTERVAL: 1.5111
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.1372
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:27]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
     :END:
 
 When can you skip validation?
@@ -6455,17 +6455,17 @@ The extra time spent doing the checks will be paid back with interest the first
 time a validity check fails.
 
 *** Item 39: Make defensive copies when needed - base assumption      :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       af5067ca-7257-4424-8d2a-bc9070b1e45c
-    :DRILL_LAST_INTERVAL: 1.5575
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.3401
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:23]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:42]
     :END:
 
 What assumption should you operate under when programming?
@@ -6475,17 +6475,17 @@ What assumption should you operate under when programming?
 That the clients of your class will do their best to destroy the invariants.
 
 *** Item 39: Make defensive copies when needed - constructors         :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       c48a6362-4a1c-4ce3-b897-7bf551d41c13
-    :DRILL_LAST_INTERVAL: 1.5673
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.4012
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:21]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
     :END:
 
 Which parameters are essential to defensively copy in a constructor?
@@ -6495,17 +6495,17 @@ Which parameters are essential to defensively copy in a constructor?
 Each mutable parameter.
 
 *** Item 39: Make defensive copies when needed - validity check       :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       106c92cc-d4bd-4b8a-9bdf-cea7fc6fabf4
-    :DRILL_LAST_INTERVAL: 1.762
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.8333
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:21]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:46]
     :END:
 
 When do you perform the validity check on defensive copies?
@@ -6521,17 +6521,17 @@ and the time they are copied.  This is known as a /time-of-check time-of-use/
 TOCTOU attack.
 
 *** Item 39: Make defensive copies when needed - clone                :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       aa6b48c6-7a5d-4963-8f9d-dad7dd71e611
-    :DRILL_LAST_INTERVAL: 1.5704
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.0209
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:27]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
     :END:
 
 Should you use clone for defensive copies?
@@ -6545,17 +6545,17 @@ An attacker could create a subclass for nefarious purposes, such as storing all
 instances in a private static list for later use.
 
 *** Item 39: Make defensive copies when needed - skipping             :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       8d8568e4-fb92-4a2e-8209-7826b7dd4ed6
-    :DRILL_LAST_INTERVAL: 1.7879
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.464
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:22]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
     :END:
 
 When can you skip defensive copies?
@@ -6567,17 +6567,17 @@ modify the components inappropriately then you can replace the copy with
 documentation.
 
 *** Item 39: Make defensive copies when needed - mutable fields       :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       4f4c1247-bf37-41fa-8105-6e886f47785e
-    :DRILL_LAST_INTERVAL: 1.5006
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.9965
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:24]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
     :END:
 
 How do you defensively copy accessors?
@@ -6656,17 +6656,17 @@ How can you break up long parameters?
 3. Adapt builder pattern to method invocation.
 
 *** Item 40: Design method signatures carefully - prefer enums        :drill:
-    SCHEDULED: <2016-02-10 Wed>
+    SCHEDULED: <2016-02-14 Sun>
     :PROPERTIES:
     :ID:       8513fe7b-8098-4ae0-b307-44fa5ee3474b
-    :DRILL_LAST_INTERVAL: 1.4612
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.6579
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:03]
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
     :END:
 
 What should you use instead of boolean parameters?
@@ -6768,6 +6768,18 @@ If you must overload a method, what should you avoid?
    you confuse the fuck out of programmers.
 
 *** Item 42: Use varargs judiciously - one required arg               :drill:
+    SCHEDULED: <2016-02-12 Fri>
+    :PROPERTIES:
+    :ID:       222c514f-84df-4055-909d-fd22003eaac9
+    :DRILL_LAST_INTERVAL: 1.5506
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
+    :END:
 
 How do you handle a required argument followed by a variable number of
 arguments?
@@ -6787,6 +6799,18 @@ static int min(int firstArg, int... remainingArgs) {
 #+END_SRC
 
 *** Item 42: Use varargs judiciously - when to use                    :drill:
+    SCHEDULED: <2016-02-12 Fri>
+    :PROPERTIES:
+    :ID:       fd5f001f-75ac-4a40-985a-d9dce17b2cca
+    :DRILL_LAST_INTERVAL: 1.5101
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
+    :END:
 
 When should you use varargs?
 
@@ -6795,6 +6819,18 @@ When should you use varargs?
 When the method /only/ really operates on a variable length sequence of values.
 
 *** Item 42: Use varargs judiciously - optimize                       :drill:
+    SCHEDULED: <2016-02-12 Fri>
+    :PROPERTIES:
+    :ID:       17543b2a-82f3-4a2f-b98a-ccd27cb4de93
+    :DRILL_LAST_INTERVAL: 1.6015
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
+    :END:
 
 How can you optimize a varargs method?
 
@@ -6815,6 +6851,18 @@ public void foo(int a1, int a2, int a3, int... rest) { }
 #+END_SRC
 
 *** Item 43: return empty arrays or collections, not nulls - why      :drill:
+    SCHEDULED: <2016-02-12 Fri>
+    :PROPERTIES:
+    :ID:       5680d835-14fc-4ca5-8161-972476035b17
+    :DRILL_LAST_INTERVAL: 1.8408
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
+    :END:
 
 Why should you return empty arrays or collections instead of nulls?
 
@@ -6954,17 +7002,17 @@ moon rocket habit
 3. Revise your system on a regular basis.
 
 *** What to Achieve                                                   :drill:
-SCHEDULED: <2016-02-10 Wed>
+SCHEDULED: <2016-04-21 Thu>
 :PROPERTIES:
 :ID:       9de25430-f028-4591-a97d-1e74bc205238
-:DRILL_LAST_INTERVAL: 22.7778
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 70.9767
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 02:54]
+:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
 :END:
 
 How do you decide what you want to achieve?
