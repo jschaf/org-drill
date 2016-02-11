@@ -836,17 +836,17 @@ What are compile time constants in Java?
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
 
 *** String vs StringBuilder vs StringBuffer                           :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :ID:       71b8ea5d-535f-4a21-853d-f2319f7d2c69
-:DRILL_LAST_INTERVAL: 9.8722
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 33.5256
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:38]
 :END:
 
 What are the differences between String, StringBuilder and StringBuffer?
@@ -984,17 +984,17 @@ Arrays.deepToString(threeDimArray);
 #+END_SRC
 
 *** Create a memory leak                                              :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
-:DRILL_LAST_INTERVAL: 4.8353
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 11.5025
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:32]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:36]
 :END:
 
 How can you create a memory leak in Java?
@@ -1584,17 +1584,17 @@ How do you get the bit at a specific index of an integer?
 #+END_SRC
 
 *** Set bit at index i                                                :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-13 Sat>
     :PROPERTIES:
     :ID:       37a2f02c-8caa-4344-990a-bf15d0800a3e
-    :DRILL_LAST_INTERVAL: 4.514
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_LAST_INTERVAL: 1.7436
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:50]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:42]
     :END:
 
 How do you set the bit at a specific index of an integer?
@@ -1608,17 +1608,17 @@ How do you set the bit at a specific index of an integer?
 #+END_SRC
 
 *** Clear bit at index i                                              :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-24 Wed>
     :PROPERTIES:
     :ID:       cd2dc707-1c3d-4838-8fae-6a379ac6fd3c
-    :DRILL_LAST_INTERVAL: 4.5773
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.2844
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:41]
     :END:
 
 How do clear a bit at index i?
@@ -1728,17 +1728,17 @@ Worst case Time: O(n^2)
 Space: O(1)
 
 *** Stable sort                                                       :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-24 Wed>
     :PROPERTIES:
     :ID:       356d511e-229d-4af2-8659-7d7845484ae3
-    :DRILL_LAST_INTERVAL: 4.5165
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.0541
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:37]
     :END:
 
 What is a stable sort?
@@ -2139,17 +2139,17 @@ Arguments are passed by assignment.  Better to think of python as creating a bin
 
    
 *** Python String Concatenation                                       :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       d344db18-54b5-4726-b545-249f6f4a8222
-    :DRILL_LAST_INTERVAL: 4.6678
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.0095
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
     :END:
 
 How many different ways can you concatenate or append strings in Python?
@@ -2664,17 +2664,17 @@ What pattern can you use to replace telescoping constructors?
 The builder pattern.
 
 *** Item 02: Builder Pattern 1                                        :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-04-28 Thu>
 :PROPERTIES:
 :ID:       78c527a6-6450-41df-aa53-de80b6d16a74
-:DRILL_LAST_INTERVAL: 27.1063
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 77.1239
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_AVERAGE_QUALITY: 3.667
 :DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-15 Fri 20:51]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:50]
 :END:
 
 What are the advantages to the builder pattern?
@@ -2781,17 +2781,17 @@ This will also prevent the class from being subclassed.
 Effective Java 4
 
 *** Item 04: Noninstantiability Abstract                              :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-04-10 Sun>
 :PROPERTIES:
 :ID:       25f88f5c-f8d8-4d8d-8a9c-d3fb11936443
-:DRILL_LAST_INTERVAL: 23.5858
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 58.8865
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:24]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:49]
 :END:
 
 Why doesn't making a class abstract prevent instantiation?
@@ -3905,17 +3905,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-13 Sat>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 13.5545
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_LAST_INTERVAL: 1.7573
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.375
 :DRILL_EASE: 2.6
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:48]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:51]
 :END:
 
 How do you make a class immutable?
@@ -4261,17 +4261,17 @@ Subclass it at least three times, and have someone other than the author
 subclass it at least once.
 
 *** Item 17: Design for Inheritance - constructors and overridables   :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       4d850c76-da4c-4e3c-bf02-65d7ba11bb76
-:DRILL_LAST_INTERVAL: 1.7675
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 5.2414
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.4
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:08]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:41]
 :END:
 
 Why can't you use overridable methods in a constructor?
@@ -4337,17 +4337,17 @@ Neither clone nor readObject may invoke an overridable method, directly or
 indirectly.
 
 *** Item 17: Design for Inheritance -                                 :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       beee49af-05ab-48b9-858d-60cc43353500
-:DRILL_LAST_INTERVAL: 14.1548
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 43.8952
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:45]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:46]
 :END:
 
 What is the best solution to prevent inheritance problems in normal concrete
@@ -4412,17 +4412,17 @@ Arya Stark, faces, blender, wrap
    composition, by the wrapper idiom.
 
 *** Item 18: Prefer Interfaces -                                      :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-20 Sun>
 :PROPERTIES:
 :ID:       fcda47f0-d9c6-4172-be27-a0423b8e6820
-:DRILL_LAST_INTERVAL: 13.2731
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.5431
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:44]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:49]
 :END:
 
 How do you combine the virtues of interfaces and abstract classes?
@@ -5088,36 +5088,36 @@ SCHEDULED: <2016-02-13 Sat>
 The official term for a [List<?>] is an [unbounded wildcard type].
 
 *** Item 23: Don't use raw types - type 5                             :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64a611da-611d-4550-8298-603eca0032f1
-:DRILL_LAST_INTERVAL: 9.8062
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 33.6962
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:45]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:39]
 :END:
  
 The official term for a [List] (a generic class with no type parameters) is a
 [raw type].
 
 *** Item 23: Don't use raw types - type 6                             :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-09 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       cadef5d7-3f75-4f12-9619-b93803fd8ed3
-:DRILL_LAST_INTERVAL: 10.4915
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 26.9442
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:48]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:41]
 :END:
  
 The official term for a [<E extends Number>] is a [bounded type parameter].
@@ -5218,17 +5218,17 @@ With generics, the compiler will ensure type safety and insert all the correct
 casts for you.
 
 *** Item 23: Don't use raw types - raw type alternative               :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-15 Tue>
 :PROPERTIES:
 :ID:       71b09f09-e8b1-4bdc-bdc0-8a95609d9608
-:DRILL_LAST_INTERVAL: 10.386
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 33.0444
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:41]
 :END:
 
 What type should you use for generics if the element type is unknown and doesn't
@@ -5402,17 +5402,17 @@ What else should you do when you suppress a warning?
 Add a comment stating why it's safe to use.
 
 *** Item 24: Eliminate unchecked warnings - when to suppress          :drill:
-SCHEDULED: <2016-02-11 Thu>
+SCHEDULED: <2016-03-06 Sun>
 :PROPERTIES:
 :ID:       976f515c-3639-4b41-8bb1-885c376fa091
-:DRILL_LAST_INTERVAL: 9.5867
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 23.8681
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:46]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:37]
 :END:
 
 When should you supress unchecked warnings?
@@ -5465,17 +5465,17 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
-:DRILL_LAST_INTERVAL: 1.729
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 5.3171
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.332
+:DRILL_AVERAGE_QUALITY: 3.399
 :DRILL_EASE: 2.76
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:08]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
 :END:
 
 What are the reifiable types in Java?
@@ -5822,17 +5822,17 @@ Comparable<? super T> and Comparator<? super T>
 Both interfaces are consumers.  They consume a object and produce an ordering.
 
 *** Item 28: Use Bounded Wildcards - type param only once             :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-27 Sat>
 :PROPERTIES:
 :ID:       e220978c-d35b-495c-a74d-0d4db7d29d0f
-:DRILL_LAST_INTERVAL: 5.3683
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 16.1143
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
 :END:
 
 If a type parameter only appears once in a method declaration, what should you
@@ -6231,17 +6231,17 @@ What are the disadvantages of naming patterns?
 3. There's no good way to associate parameter values with program elements.
 
 *** Item 35: Prefer annotations to naming patterns - use instead      :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       5ecb8a3a-da8a-49d6-9c1a-c38683a66c9e
-    :DRILL_LAST_INTERVAL: 4.6581
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.6869
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:36]
     :END:
 
 What should you use instead of naming patterns?
@@ -6587,17 +6587,17 @@ How do you defensively copy accessors?
 Defensively copy all mutable fields when returning accessors.
 
 *** Item 40: Design method signatures carefully - convenience         :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       264fbdca-6af1-4a41-8e6a-2133c280d4ec
-    :DRILL_LAST_INTERVAL: 1.6985
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.0806
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:01]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:36]
     :END:
 
 What's a rule of thumb for adding convenience methods?
@@ -6611,17 +6611,17 @@ learn, use, document, test and maintain.
 When in doubt, leave it out.
 
 *** Item 40: Design method signatures carefully - avoid long params   :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       7c581b33-9e9a-47b1-84ac-7b62e192e83f
-    :DRILL_LAST_INTERVAL: 1.6513
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6756
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:07]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
     :END:
 
 How long is too long for parameter lists?
@@ -6633,17 +6633,17 @@ Aim for four parameters or fewer.
 Long sequences of identically typed parameters are especially harmful.
 
 *** Item 40: Design method signatures carefully - break up            :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       d5f52a28-4851-411b-bd06-ebfd1509232f
-    :DRILL_LAST_INTERVAL: 1.7469
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.1879
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_AVERAGE_QUALITY: 3.667
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:08]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:35]
     :END:
 
 How can you break up long parameters?
@@ -6679,17 +6679,17 @@ Two element enums because:
 2. You can evolve them
 
 *** Item 41: Use overloading judiciously - overloading v. overriding  :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       7f2e0ad2-ebe2-419a-a482-cef6e225df70
-    :DRILL_LAST_INTERVAL: 1.5644
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.9113
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:01]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:37]
     :END:
 
 When is an overloaded method chosen? 
@@ -6701,17 +6701,17 @@ Selection among overloaded methods is static.
 Selection among overriden methods in dynamic.
 
 *** Item 41: Use overloading judiciously - avoid confusing overloads  :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       ad83a823-979c-49d2-b33a-215b9266c34d
-    :DRILL_LAST_INTERVAL: 1.9418
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.1797
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:02]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
     :END:
 
 What's a good policy for overloading?
@@ -6722,17 +6722,17 @@ A safe, conservative policy is never to export two overloadings with the same
 number of parameters.
 
 *** Item 41: Use overloading judiciously - example                    :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       0786822f-742b-444b-a942-01e9a108bbfa
-    :DRILL_LAST_INTERVAL: 1.6136
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.7436
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:03]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:39]
     :END:
 
 Why is List.remove a good example of overloading gone wrong?
@@ -6744,17 +6744,17 @@ which removes an item at index i, instead of removing the element.  You must
 explicitly cast to Integer to get remove to actually remove an item.
 
 *** Item 41: Use overloading judiciously - must overload              :drill:
-    SCHEDULED: <2016-02-11 Thu>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       abe0af53-2168-4d82-9693-1a48afc0f110
-    :DRILL_LAST_INTERVAL: 1.8684
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.3009
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:03]
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:35]
     :END:
 
 If you must overload a method, what should you avoid?
@@ -6874,6 +6874,18 @@ There is no reason to return null.
 + It's easier for the client because they don't have to handle the null case.
 
 *** Item 44: Write doc comments - what to include                     :drill:
+    SCHEDULED: <2016-02-13 Sat>
+    :PROPERTIES:
+    :ID:       c72f9e94-b337-47ec-b7ac-7360f0fc6360
+    :DRILL_LAST_INTERVAL: 1.6575
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:51]
+    :END:
 
 What should you include in a doc comment?
 
@@ -6904,6 +6916,18 @@ Other requirements:
 **
 ** General Programming
 *** Item 45: Minimize scope of local vars - most powerful             :drill:
+    SCHEDULED: <2016-02-13 Sat>
+    :PROPERTIES:
+    :ID:       bd6a6a51-10d9-45d8-8efc-644b59aea90a
+    :DRILL_LAST_INTERVAL: 1.5861
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:46]
+    :END:
 
 What is the most powerful technique for minimizing the scope of local variables?
 
@@ -6912,6 +6936,18 @@ What is the most powerful technique for minimizing the scope of local variables?
 Declare the local variable where it is first used.
 
 *** Item 45: Minimize scope of local vars - initialize                :drill:
+    SCHEDULED: <2016-02-13 Sat>
+    :PROPERTIES:
+    :ID:       ba4ac188-21ff-4292-85e4-9a83c521f894
+    :DRILL_LAST_INTERVAL: 1.7046
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:49]
+    :END:
 
 Nearly every local variable should contain an _?
 
@@ -6920,8 +6956,20 @@ Nearly every local variable should contain an _?
 Initializer
 
 *** Item 45: Minimize scope of local vars - skipping initialization   :drill:
+    SCHEDULED: <2016-02-13 Sat>
+    :PROPERTIES:
+    :ID:       e05cf4e2-0798-4d5b-84fe-c751786bba03
+    :DRILL_LAST_INTERVAL: 2.0954
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:49]
+    :END:
 
-When can postpone initialization of local variables?
+When is it acceptable to  postpone initialization of local variables?
 
 **** Answer
 
