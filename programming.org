@@ -218,17 +218,17 @@ base 16 - 0xcafebabe
 underscores, anywhere but the beginning and the end
 
 *** Floating point literals                                           :drill:
-SCHEDULED: <2016-02-12 Fri>
+SCHEDULED: <2016-03-24 Thu>
 :PROPERTIES:
 :ID:       c417f903-19a7-4d7f-9d30-9a2730839ee8
-:DRILL_LAST_INTERVAL: 14.6469
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 41.342
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:53]
+:DRILL_AVERAGE_QUALITY: 4.143
+:DRILL_EASE: 2.76
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:30]
 :END:
 
 What floating point literals does Java support?
@@ -1221,17 +1221,17 @@ PermGen, default 64mb
 Answer
 
 *** Why does Java not having reified types matter?                    :drill:
-SCHEDULED: <2016-02-12 Fri>
+SCHEDULED: <2016-03-02 Wed>
 :PROPERTIES:
 :ID:       b64319d7-d9a2-49ae-9234-71d7a08ff53a
-:DRILL_LAST_INTERVAL: 7.9561
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 19.1666
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.143
 :DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:26]
 :END:
 
 Why should I care that Java doesn't have reified generics?
@@ -1262,17 +1262,17 @@ of Pams
 http://stackoverflow.com/questions/1927789/why-should-i-care-that-java-doesnt-have-reified-generics
 
 *** Limitations on Generics                                           :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       9027c47c-5b46-4f17-82b2-ca8c766a1cbd
-:DRILL_LAST_INTERVAL: 4.216
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 8.7308
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 2.833
-:DRILL_EASE: 2.14
+:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_EASE: 2.24
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:15]
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:27]
 :END:
 
 What are the limitations on generics in Java?
@@ -1661,17 +1661,17 @@ def update_bit(num, i, isOne):
 
 
 *** Clear least significant bit                                       :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-29 Mon>
     :PROPERTIES:
     :ID:       ae7dd928-468d-4120-a73d-382fcb9a2db3
-    :DRILL_LAST_INTERVAL: 5.5602
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 16.6743
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:48]
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:25]
     :END:
 
 How do you clear the least significant bit?
@@ -2869,17 +2869,17 @@ Null out the object, but this should be the exception, not the rule.
 The best way to handle it is to let the object fall out of scope.
 
 *** Item 06: Obsolete Object Reference Alert                          :drill:
-SCHEDULED: <2016-02-12 Fri>
+SCHEDULED: <2016-04-15 Fri>
 :PROPERTIES:
 :ID:       502824c2-771b-48ca-b809-02020dd22aa4
-:DRILL_LAST_INTERVAL: 22.3504
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 62.5578
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:08]
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:30]
 :END:
 
 When will you typically see obsolete references (memory leaks)?
@@ -4216,17 +4216,17 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-28 Sun>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 4.4966
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 15.9032
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.778
-:DRILL_EASE: 2.86
+:DRILL_AVERAGE_QUALITY: 3.9
+:DRILL_EASE: 2.96
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:16]
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
 :END:
 
 How do you allow efficient access to the internal workings of a subclass
@@ -4945,17 +4945,17 @@ Anon jail, tent, multiple faces, 1/2 army
   inherits from the super-type.
 
 *** Item 22: Favor static member classes - anonymous class uses       :drill:
-SCHEDULED: <2016-02-12 Fri>
+SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :ID:       5dcfd714-1960-47ee-865d-a1c9f0b29d62
-:DRILL_LAST_INTERVAL: 11.3038
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 35.6784
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_AVERAGE_QUALITY: 4.2
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:30]
 :END:
 
 What are common uses for anonymous classes?
@@ -5674,20 +5674,20 @@ How do you express "for every type T that can be compared to itself"?
 <T extends Comparable<T>>
 
 *** Item 28: Use Bounded Wildcards - types of bounds                  :drill:
-SCHEDULED: <2016-02-12 Fri>
+SCHEDULED: <2016-03-04 Fri>
 :PROPERTIES:
 :ID:       f54345c2-2ed8-46d7-a10d-07fdf9fe3839
-:DRILL_LAST_INTERVAL: 8.386
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 20.8844
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:22]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
 :END:
 
-What are the types of bounded wildcards?
+What are the kinds of bounded wildcards?
 
 **** Answer
 
@@ -6185,17 +6185,17 @@ public enum BasicOperation implements Operation {
 #+END_SRC
 
 *** Item 34: Emulate extensible enum with interfaces - type decl      :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-24 Wed>
     :PROPERTIES:
     :ID:       bd065887-6f89-47f6-93dd-7543b2cb2b8e
-    :DRILL_LAST_INTERVAL: 3.846
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.5682
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_AVERAGE_QUALITY: 4.333
     :DRILL_EASE: 2.6
     :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:20]
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:26]
     :END:
 
 What's the type declaration for using an extensible enum?
@@ -6300,17 +6300,17 @@ http://stackoverflow.com/questions/26271786/marker-annotation-vs-marker-interfac
 
 
 *** Item 37: Use marker interfaces to define types - benefits         :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       f3372f70-e742-4f91-abda-efe7509bf925
-    :DRILL_LAST_INTERVAL: 3.2683
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 9.6742
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:59]
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:25]
     :END:
 
 What are the benefits of marker types over marker annotations?
@@ -6347,17 +6347,17 @@ What are the benefits of marker annotations over marker interfaces?
   processing.
 
 *** Item 37: Use marker interfaces to define types - which to pick    :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-24 Wed>
     :PROPERTIES:
     :ID:       598d0f1e-a19a-4f5e-a90d-f258d7eee8e8
-    :DRILL_LAST_INTERVAL: 3.6677
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.553
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_AVERAGE_QUALITY: 4.333
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:20]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:25]
     :END:
 
 How do you pick marker interface over a marker annotation?
@@ -6768,17 +6768,17 @@ If you must overload a method, what should you avoid?
    you confuse the fuck out of programmers.
 
 *** Item 42: Use varargs judiciously - one required arg               :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-17 Wed>
     :PROPERTIES:
     :ID:       222c514f-84df-4055-909d-fd22003eaac9
-    :DRILL_LAST_INTERVAL: 1.5506
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.0075
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
     :END:
 
 How do you handle a required argument followed by a variable number of
@@ -6799,17 +6799,17 @@ static int min(int firstArg, int... remainingArgs) {
 #+END_SRC
 
 *** Item 42: Use varargs judiciously - when to use                    :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       fd5f001f-75ac-4a40-985a-d9dce17b2cca
-    :DRILL_LAST_INTERVAL: 1.5101
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.3464
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
     :END:
 
 When should you use varargs?
@@ -6819,17 +6819,17 @@ When should you use varargs?
 When the method /only/ really operates on a variable length sequence of values.
 
 *** Item 42: Use varargs judiciously - optimize                       :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-17 Wed>
     :PROPERTIES:
     :ID:       17543b2a-82f3-4a2f-b98a-ccd27cb4de93
-    :DRILL_LAST_INTERVAL: 1.6015
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.826
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
     :END:
 
 How can you optimize a varargs method?
@@ -6851,17 +6851,17 @@ public void foo(int a1, int a2, int a3, int... rest) { }
 #+END_SRC
 
 *** Item 43: return empty arrays or collections, not nulls - why      :drill:
-    SCHEDULED: <2016-02-12 Fri>
+    SCHEDULED: <2016-02-18 Thu>
     :PROPERTIES:
     :ID:       5680d835-14fc-4ca5-8161-972476035b17
-    :DRILL_LAST_INTERVAL: 1.8408
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 6.2464
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:51]
+    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:28]
     :END:
 
 Why should you return empty arrays or collections instead of nulls?
