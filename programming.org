@@ -6975,6 +6975,45 @@ When is it acceptable to  postpone initialization of local variables?
 
 When using a try-catch block.
 
+*** Item 46: Prefer for-each loops - why                              :drill:
+
+Why should you prefer for-each loops?
+
+**** Answer
+
+Because they avoid complex bugs around iterators
+
+*** Item 46: Prefer for-each loops - why not                          :drill:
+
+When can't you use a for-each loops.
+
+**** Answer
+
+1. Filtering
+2. Transforming
+3. Parallel iteration
+
+*** Item 46: Prefer for-each loops - implement iterable               :drill:
+
+If you are writing a type that represents a group of elements what interface
+should you implement?
+
+**** Answer
+
+Iterable
+
+*** Item 47: Know and use the libraries - why use stdlib              :drill:
+
+Why should use the stdlib?
+
+**** Answer
+
+1. Take advantage of experts who wrote it and the experience of those who used
+   it before you.
+2. You don't have to waste time writing ad-hoc solutions.
+3. Performance of the stdlib tends to improve over time.
+4. Libraries tend to gain new functionality over time.
+
 * Consulting
 ** Breaking the Time Barrier
 
