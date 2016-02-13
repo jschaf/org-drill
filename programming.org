@@ -889,17 +889,17 @@ public static void main(String... args) {
 #+END_SRC
 
 *** Varargs type                                                      :drill:
-SCHEDULED: <2016-02-13 Sat>
+SCHEDULED: <2016-03-22 Tue>
 :PROPERTIES:
 :ID:       262bfbad-9446-443f-81f8-c09cebe80766
-:DRILL_LAST_INTERVAL: 11.658
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.8159
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:46]
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
 :END:
 
 What type is a varargs argument in Java
@@ -1532,17 +1532,17 @@ http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-
 
 ** Bit Manipulation
 *** Two's Complement - Definition                                     :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       bf7dd9b4-621d-493a-8c46-73a89d4486dc
-    :DRILL_LAST_INTERVAL: 4.763
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 8.5064
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.667
-    :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:19]
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:12]
     :END:
 
 How are numbers represented in two's complement?
@@ -1584,17 +1584,17 @@ How do you get the bit at a specific index of an integer?
 #+END_SRC
 
 *** Set bit at index i                                                :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       37a2f02c-8caa-4344-990a-bf15d0800a3e
-    :DRILL_LAST_INTERVAL: 1.7436
+    :DRILL_LAST_INTERVAL: 1.7025
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.8
+    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.833
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:42]
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:18]
     :END:
 
 How do you set the bit at a specific index of an integer?
@@ -1633,20 +1633,20 @@ def clear_bit(n, i):
 #+END_SRC
 
 *** Update bit at index i                                             :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-29 Mon>
     :PROPERTIES:
     :ID:       9b103e32-b010-4d42-8edb-034d0acc1f11
-    :DRILL_LAST_INTERVAL: 5.4084
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 15.6947
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.25
+    :DRILL_AVERAGE_QUALITY: 3.4
     :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:15]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:13]
     :END:
 
-How do you set a bit at index i to a specific value?
+How do you set a bit at index ~i~ of an integer to a /specified/ value?
 
 **** Answer
 
@@ -1683,17 +1683,17 @@ x & x - 1
 ** Sorting
 
 *** Bubble sort                                                     :drill:
-SCHEDULED: <2016-02-13 Sat>
+SCHEDULED: <2016-06-03 Fri>
 :PROPERTIES:
 :ID:       45FF61B9-A095-4F7A-B7E2-2ED612001C56
-:DRILL_LAST_INTERVAL: 32.0057
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 110.6746
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-12 Tue 22:28]
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
 :END:
 
 How is bubble sort implemented?
@@ -2353,17 +2353,17 @@ into garbage collection is higher (because of the added reference count checks).
 * Cracking the Coding Interview
 ** Chapter 5 - Bit Manipulation
 *** Exercise 5.6 - Determine number of bits difference                :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       bc4b8037-ed6e-4e9f-9251-54891d8ec9ca
-    :DRILL_LAST_INTERVAL: 4.7526
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 12.3789
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.667
+    :DRILL_AVERAGE_QUALITY: 3.75
     :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:18]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:10]
     :END:
 
 Determine the number of bits you would need to flip to convert an integer from A
@@ -3905,17 +3905,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 1.7573
+:DRILL_LAST_INTERVAL: 1.7896
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
-:DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.375
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:51]
+:DRILL_TOTAL_REPEATS: 10
+:DRILL_FAILURE_COUNT: 4
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:19]
 :END:
 
 How do you make a class immutable?
@@ -3960,17 +3960,17 @@ Hans Solo - classrooms, intestines, blocks
 + Immutable objects make great building blocks.
 
 *** Item 15: Minimize Mutability - drawbacks                          :drill:
-SCHEDULED: <2016-02-13 Sat>
+SCHEDULED: <2016-04-13 Wed>
 :PROPERTIES:
 :ID:       09fcee96-404f-49fe-9311-1c1751869b6c
-:DRILL_LAST_INTERVAL: 16.1438
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 59.9418
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.9
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:53]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
 :END:
 
 What are the drawbacks of immutable object?
@@ -4312,17 +4312,17 @@ almost certainly lead to bugs and errors.
 http://stackoverflow.com/questions/3404301/whats-wrong-with-overridable-method-calls-in-constructors
 
 *** Item 17: Design for Inheritance - cloneable and serializable      :drill:
-SCHEDULED: <2016-02-13 Sat>
+SCHEDULED: <2016-03-21 Mon>
 :PROPERTIES:
 :ID:       ace68707-4ebe-4cb5-806f-e245a2aac72a
-:DRILL_LAST_INTERVAL: 14.5005
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.3778
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:45]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:14]
 :END:
 
 Should you implement cloneable and serializable for a class designed for
@@ -5071,18 +5071,18 @@ SCHEDULED: <2016-02-17 Wed>
 The official term for a [E] is a [formal type parameter].
 
 *** Item 23: Don't use raw types - type 4                             :drill:
-SCHEDULED: <2016-02-13 Sat>
+SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       46916859-9a39-4f4a-8f7c-067de32a8371
-:DRILL_LAST_INTERVAL: 12.3042
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 34.7803
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:40]
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:17]
 :END:
  
 The official term for a [List<?>] is an [unbounded wildcard type].
@@ -5123,18 +5123,18 @@ SCHEDULED: <2016-03-09 Wed>
 The official term for a [<E extends Number>] is a [bounded type parameter].
 
 *** Item 23: Don't use raw types - type 7                             :drill:
-SCHEDULED: <2016-02-13 Sat>
+SCHEDULED: <2016-03-16 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       45d1515b-5129-4db9-8d04-95e161770294
-:DRILL_LAST_INTERVAL: 11.5843
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 32.2454
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 4.0
 :DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:45]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
 :END:
  
 The official term for a [<T extends Comparable<? super T>>] is a [recursive type bound].
@@ -6251,17 +6251,17 @@ What should you use instead of naming patterns?
 Annotations!!!
 
 *** Item 36: Use Override consistently - when                         :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       bdf68b77-3401-4bd3-bd4e-142c94506d87
-    :DRILL_LAST_INTERVAL: 4.3744
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.5337
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:56]
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:13]
     :END:
 
 When should you use the Override annotation?
@@ -6271,17 +6271,17 @@ When should you use the Override annotation?
 Any time you believe a method is overriding a superclass declaration.
 
 *** Item 37: Use marker interfaces to define types - what             :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-26 Fri>
     :PROPERTIES:
     :ID:       699e86de-ede7-4181-9a70-23cbcac2d38d
-    :DRILL_LAST_INTERVAL: 3.793
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.0
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:55]
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:12]
     :END:
 
 What are marker interfaces?
@@ -6434,17 +6434,17 @@ When the validity check would be expensive or impractical AND the validity check
 is conducted implicitly in the process of doing the computation.
 
 *** Item 38: Check parameters for validity - why                      :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       8d580a9f-a3ba-42fe-b939-bdd0c39708ea
-    :DRILL_LAST_INTERVAL: 3.8326
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 11.9513
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:56]
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:14]
     :END:
 
 Why should you restrict and check parameters for validity?
@@ -6874,17 +6874,17 @@ There is no reason to return null.
 + It's easier for the client because they don't have to handle the null case.
 
 *** Item 44: Write doc comments - what to include                     :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-15 Mon>
     :PROPERTIES:
     :ID:       c72f9e94-b337-47ec-b7ac-7360f0fc6360
-    :DRILL_LAST_INTERVAL: 1.6575
+    :DRILL_LAST_INTERVAL: 1.5287
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:51]
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:18]
     :END:
 
 What should you include in a doc comment?
@@ -6916,17 +6916,17 @@ Other requirements:
 **
 ** General Programming
 *** Item 45: Minimize scope of local vars - most powerful             :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-17 Wed>
     :PROPERTIES:
     :ID:       bd6a6a51-10d9-45d8-8efc-644b59aea90a
-    :DRILL_LAST_INTERVAL: 1.5861
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.2396
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:46]
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:10]
     :END:
 
 What is the most powerful technique for minimizing the scope of local variables?
@@ -6936,17 +6936,17 @@ What is the most powerful technique for minimizing the scope of local variables?
 Declare the local variable where it is first used.
 
 *** Item 45: Minimize scope of local vars - initialize                :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-17 Wed>
     :PROPERTIES:
     :ID:       ba4ac188-21ff-4292-85e4-9a83c521f894
-    :DRILL_LAST_INTERVAL: 1.7046
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.4786
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:49]
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:13]
     :END:
 
 Nearly every local variable should contain an _?
@@ -6956,17 +6956,17 @@ Nearly every local variable should contain an _?
 Initializer
 
 *** Item 45: Minimize scope of local vars - skipping initialization   :drill:
-    SCHEDULED: <2016-02-13 Sat>
+    SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       e05cf4e2-0798-4d5b-84fe-c751786bba03
-    :DRILL_LAST_INTERVAL: 2.0954
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 6.1418
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:49]
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:05]
     :END:
 
 When is it acceptable to  postpone initialization of local variables?
@@ -6976,6 +6976,18 @@ When is it acceptable to  postpone initialization of local variables?
 When using a try-catch block.
 
 *** Item 46: Prefer for-each loops - why                              :drill:
+    SCHEDULED: <2016-02-15 Mon>
+    :PROPERTIES:
+    :ID:       d1e99a54-2063-424a-900b-0acde4fc4f69
+    :DRILL_LAST_INTERVAL: 1.5778
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:14]
+    :END:
 
 Why should you prefer for-each loops?
 
@@ -6984,6 +6996,18 @@ Why should you prefer for-each loops?
 Because they avoid complex bugs around iterators
 
 *** Item 46: Prefer for-each loops - why not                          :drill:
+    SCHEDULED: <2016-02-15 Mon>
+    :PROPERTIES:
+    :ID:       33f1d8c5-abbf-4167-9073-e0a97a524fda
+    :DRILL_LAST_INTERVAL: 1.8408
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
+    :END:
 
 When can't you use a for-each loops.
 
@@ -6994,8 +7018,20 @@ When can't you use a for-each loops.
 3. Parallel iteration
 
 *** Item 46: Prefer for-each loops - implement iterable               :drill:
+    SCHEDULED: <2016-02-15 Mon>
+    :PROPERTIES:
+    :ID:       d8f1f8ac-6157-4452-83f1-bfcd1c4d72f0
+    :DRILL_LAST_INTERVAL: 1.5114
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:17]
+    :END:
 
-If you are writing a type that represents a group of elements what interface
+If you are writing a type that represents a group of elements, what interface
 should you implement?
 
 **** Answer
@@ -7003,6 +7039,18 @@ should you implement?
 Iterable
 
 *** Item 47: Know and use the libraries - why use stdlib              :drill:
+    SCHEDULED: <2016-02-15 Mon>
+    :PROPERTIES:
+    :ID:       c2906d5b-2aeb-467d-a99b-4a63eaae4852
+    :DRILL_LAST_INTERVAL: 1.7644
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:19]
+    :END:
 
 Why should use the stdlib?
 
