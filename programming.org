@@ -7062,6 +7062,73 @@ Why should use the stdlib?
 3. Performance of the stdlib tends to improve over time.
 4. Libraries tend to gain new functionality over time.
 
+*** Item 48: Avoid float and double for exact - why                   :drill:
+
+Why should you avoid float and doubles for exact calculations?
+
+**** Answer
+
+Because they perform binary floating-point arithmetic, which provides accurate
+approximations over a broad range of results, but is not exact.
+
+http://stackoverflow.com/questions/3730019/why-not-use-double-or-float-to-represent-currency
+
+#+BEGIN_QUOTE
+Because floats and doubles cannot accurately represent the base 10 multiples
+we use for money. This issue isn't just for Java, it's for any programming
+language that uses native floating-point types, as it stems from how computers
+handle floating-point numbers by default.
+#+END_QUOTE
+
+*** Item 48: Avoid float and double for exact nums - money            :drill:
+
+What should you use for monetary calculations in Java?
+
+**** Answer
+
+int, long, or BigDecimal
+
+Java 9 will include https://github.com/JavaMoney/jsr354-api which is a Money and
+Currency API.
+
+*** Item 49: Prefer primitives to boxed primitives - differences      :drill:
+
+What are the three major differences between primitives and boxed primitives?
+
+**** Answer
+
+1. primitives only have values, whereas boxed primitives have identities
+   distinct from their values.  In other words, two boxed primitives can have
+   the same value, but different identities.
+2. primitive types only have non-null values, whereas boxed primitives can be
+   null or have a value.
+3. primitives are more time and space efficient.
+
+*** Item 49: Prefer primitives to boxed primitives - ==               :drill:
+
+What does ~==~ do for boxed primitives?
+
+**** Answer
+
+The same thing as a normal object, it compares object identity instead of the value.
+
+*** Item 49: Prefer primitives to boxed primitives - mix              :drill:
+
+What happens if you mix primitives with boxed primitives?
+
+**** Answer
+
+When you mix primitives and boxed primitives in a single operation, the boxed
+primitive is auto-unboxed.
+
+*** Item 49: Prefer primitives to boxed primitives - null unboxing    :drill:
+
+What happens if you unbox a null value?
+
+**** Answer
+
+You get a ~NullPointerException~.
+
 * Consulting
 ** Breaking the Time Barrier
 
