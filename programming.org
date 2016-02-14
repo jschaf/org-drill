@@ -7201,6 +7201,78 @@ What happens if you unbox a null value?
 
 You get a ~NullPointerException~.
 
+*** Item 50: Avoid strings where other types are better - why         :drill:
+
+Why shouldn't you use strings to represent value types, enums, aggregates or
+capabilities?
+
+**** Answer
+
+Strings are slower, more tedious and more error-prone than the other methods
+
+*** Item 50: Avoid strings where other types are better - aggregation :drill:
+
+What should you replace String aggregation with?
+
+For example:
+
+#+BEGIN_SRC java
+String compoundKey = className + "#" + i.next();
+#+END_SRC
+
+**** Answer
+
+Write a private static member class to represent the aggregate.
+
+*** Item 50: Avoid strings where other types are better - capability  :drill:
+
+How can you replace a String with that represents a capability with an
+unforgeable key?
+
+**** Answer
+
+You can use a public static member class with a no-args constructor.
+
+#+BEGIN_SRC java
+public class ThreadLocal {
+    private ThreadLocal() {} // Noninstaniable
+
+    public static class Key { // capability
+        Key()
+    }
+
+    public static Key getKey() {
+        return new Key();
+    }
+
+    public static void set(Key key, Object value);
+
+    public static Object get(Key key);
+
+}
+#+END_SRC
+
+*** Item 51: Beware the performance of string concatenation           :drill:
+
+Why should you avoid repeated string concatenation?
+
+**** Answer
+
+Because it's quadratic.  Use ~StringBuilder~ instead.
+
+This advice is a little suspect.  Java compilers may use StringBuilder
+optimization.  Thus, we should probably prefer concatenation because it's
+shorter.
+
+http://www.pellegrino.link/2015/08/22/string-concatenation-with-java-8.html
+
+This blog post actually runs tests.  The results:
+
+1. Java 8 will optimize static string concatenation.
+2. Java 8 does not currently optimize dynamic string concatenation.
+
+
+
 * Consulting
 ** Breaking the Time Barrier
 
