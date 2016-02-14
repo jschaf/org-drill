@@ -475,17 +475,17 @@ What Integral conversions are supported in a format specifier?
 + x, X - hexadecimal integer
 
 *** Formatter - Floating Point Conversions                            :drill:
-SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-16 Tue>
 :PROPERTIES:
 :ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
-:DRILL_LAST_INTERVAL: 21.8793
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_LAST_INTERVAL: 1.688
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:40]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
 :END:
 
 What floating point conversions are supported in a format specifier?
@@ -1470,17 +1470,17 @@ What are the alternatives to a Singleton pattern?
   components.
 
 *** List design patterns                                            :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-04-13 Wed>
 :PROPERTIES:
 :ID:       14175568-52ec-4096-b33d-129f38a1de3e
-:DRILL_LAST_INTERVAL: 23.8587
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 59.2415
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.0
+:DRILL_AVERAGE_QUALITY: 3.167
 :DRILL_EASE: 2.22
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:09]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:05]
 :END:
 
 What are the most common design patterns?
@@ -2827,17 +2827,17 @@ Primitives standing around 7-11
 Effective Java 5
 
 *** Item 06: Obsolete Object References                               :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-04-20 Wed>
 :PROPERTIES:
 :ID:       32570943-f46d-4edb-90ee-15b4ea21945d
-:DRILL_LAST_INTERVAL: 25.014
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 65.9976
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.0
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-20 Wed 11:10]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:09]
 :END:
 
 What is the proper name for a memory leak in a garbage-collected language?
@@ -3009,17 +3009,17 @@ How should you implement finalizers if you must?
 
 ** Methods Common to All Objects
 *** Item 08: Don't Override Equals                                    :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-04-05 Tue>
 :PROPERTIES:
 :ID:       3e2e805b-2665-456a-b24e-331c47727060
-:DRILL_LAST_INTERVAL: 22.0713
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 51.3006
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.375
+:DRILL_AVERAGE_QUALITY: 3.444
 :DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:41]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:05]
 :END:
 
 What conditions should you not override equals?
@@ -3879,17 +3879,17 @@ If a class is package-private or a private nested class, there is nothing
 inherently wrong with exposing data fields.
 
 *** Item 14: Public accessors - why accessors                         :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-29 Mon>
 :PROPERTIES:
 :ID:       2e1879b7-e276-452d-85ef-eee1c96aa7ab
-:DRILL_LAST_INTERVAL: 4.9709
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 14.8382
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.636
-:DRILL_EASE: 2.9
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:59]
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 3.0
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:02]
 :END:
 
 Why should you use accessors over fields?
@@ -3980,17 +3980,17 @@ What are the drawbacks of immutable object?
 Immutable objects require a separate object for each distinct value.
 
 *** Item 15:  Minimize Mutability - mitigate performance problem      :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       20a96920-807f-498e-8f90-1102e2bf07df
-:DRILL_LAST_INTERVAL: 13.5318
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 40.6127
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.167
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.286
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:20]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:11]
 :END:
 
 What are two approaches to making mutability performant in immutable classes?
@@ -4165,17 +4165,17 @@ really an A?  If you cannot truthfully answer yes, B should not extend A.
 You must also be comfortable in adopting the flaws of A.
 
 *** Item 17: Design for Inheritance -  Document                       :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-21 Mon>
 :PROPERTIES:
 :ID:       ed2bf3be-4fad-4d11-8d0a-2fb0043fe710
-:DRILL_LAST_INTERVAL: 13.7627
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 35.8478
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_AVERAGE_QUALITY: 3.715
 :DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 02:48]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:06]
 :END:
 
 What aspect of an inheritable class must you document?
@@ -4386,17 +4386,17 @@ helper method and then call the helper method from the overridable method.
 Then, replace each self-use of an overridable method with its private helper.
 
 *** Item 18: Prefer Interfaces - Why                                  :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-23 Wed>
 :PROPERTIES:
 :ID:       28beb321-3739-4e82-aa2c-45c81c33e107
-:DRILL_LAST_INTERVAL: 12.052
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 37.9755
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.556
+:DRILL_AVERAGE_QUALITY: 3.6
 :DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:56]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:11]
 :END:
 
 Why should you prefer interfaces to abstract classes?
@@ -4501,17 +4501,17 @@ Because the constant interface is a poor use of interfaces.  The constants are
 an implementation detail.
 
 *** Item 19: Interface only for Types - Alternative for constants     :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-25 Fri>
 :PROPERTIES:
 :ID:       8803fbf7-ca24-4b9d-b9d0-5708c24e772a
-:DRILL_LAST_INTERVAL: 14.4036
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 40.0634
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:22]
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:06]
 :END:
 
 How should you export constants?
@@ -4816,17 +4816,17 @@ Inner Classes
 4. Local classes
 
 *** Item 22: Favor static member classes - static member class uses   :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-23 Wed>
 :PROPERTIES:
 :ID:       584cc744-953e-4ca5-b66b-b03d3b65e309
-:DRILL_LAST_INTERVAL: 12.9631
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.985
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:46]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:10]
 :END:
 
 What are the use cases for a static member class?
@@ -5020,18 +5020,18 @@ SCHEDULED: <2016-02-16 Tue>
 The official term for a [List<String>] is a [parameterized type].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       3c26f404-53a2-4d3d-a605-ec4835909aac
-:DRILL_LAST_INTERVAL: 11.0323
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.66
+:DRILL_LAST_INTERVAL: 1.4526
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 8
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.625
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:30]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
 :END:
  
 The official term for a [String] is a [actual type parameter].
@@ -5254,17 +5254,17 @@ static int numElementsInCommon(Set<?> s1, Set<?> s2) {
 #+END_SRC
 
 *** Item 23: Don't use raw types - what's the use of <?>              :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-29 Tue>
 :PROPERTIES:
 :ID:       8b2ad061-48ba-4383-b20d-edefaff2ebcb
-:DRILL_LAST_INTERVAL: 12.1133
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 43.666
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:49]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:09]
 :END:
 
 What's the point of unbounded wildcard types?
@@ -5581,17 +5581,17 @@ What steps should you take to prove an unchecked cast is type safe?
 4. Explain in a comment why the cast is safe.
 
 *** Item 26: Favor Generic Types - two methods for unchecked casts    :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-03-18 Fri>
 :PROPERTIES:
 :ID:       8878bbe7-300f-42df-abb9-c167bb28d5be
-:DRILL_LAST_INTERVAL: 9.6505
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 32.7348
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
 :END:
 
 What are the two places you will generally see unchecked casts?
@@ -6324,17 +6324,17 @@ What are the benefits of marker types over marker annotations?
 http://www.javacodegeeks.com/2013/02/increased-compile-time-safety-with-phantom-types.html
 
 *** Item 37: Use marker interfaces to define types - annotations      :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       671aec6a-0f28-4a32-a3eb-b1907f79365b
-    :DRILL_LAST_INTERVAL: 5.1877
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 17.894
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:59]
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
     :END:
 
 What are the benefits of marker annotations over marker interfaces?
@@ -6371,17 +6371,17 @@ annotation type, or whether a marker interface would be more appropriate.
 
 ** Methods
 *** Item 38: Check parameters for validity - nonpublic methods        :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-26 Fri>
     :PROPERTIES:
     :ID:       18be2409-3537-463d-a291-1429edccedee
-    :DRILL_LAST_INTERVAL: 4.2632
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.4373
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_AVERAGE_QUALITY: 4.333
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:46]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:02]
     :END:
 
 How should you check non-public methods for validity?  With assertions or exceptions?
@@ -6413,17 +6413,17 @@ Because you want to fail as fast as possible.  Trying to debug problems later is
 much harder than failing at construction.
 
 *** Item 38: Check parameters for validity - exceptions               :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-16 Tue>
     :PROPERTIES:
     :ID:       bb41556b-97c5-443e-a981-6c036d01f85e
-    :DRILL_LAST_INTERVAL: 4.1372
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_LAST_INTERVAL: 1.6451
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.8
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
     :END:
 
 When can you skip validation?
@@ -6475,17 +6475,17 @@ What assumption should you operate under when programming?
 That the clients of your class will do their best to destroy the invariants.
 
 *** Item 39: Make defensive copies when needed - constructors         :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-26 Fri>
     :PROPERTIES:
     :ID:       c48a6362-4a1c-4ce3-b897-7bf551d41c13
-    :DRILL_LAST_INTERVAL: 4.4012
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.7514
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
     :END:
 
 Which parameters are essential to defensively copy in a constructor?
@@ -6521,17 +6521,17 @@ and the time they are copied.  This is known as a /time-of-check time-of-use/
 TOCTOU attack.
 
 *** Item 39: Make defensive copies when needed - clone                :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       aa6b48c6-7a5d-4963-8f9d-dad7dd71e611
-    :DRILL_LAST_INTERVAL: 4.0209
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 10.8278
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:02]
     :END:
 
 Should you use clone for defensive copies?
@@ -6545,17 +6545,17 @@ An attacker could create a subclass for nefarious purposes, such as storing all
 instances in a private static list for later use.
 
 *** Item 39: Make defensive copies when needed - skipping             :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       8d8568e4-fb92-4a2e-8209-7826b7dd4ed6
-    :DRILL_LAST_INTERVAL: 4.464
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.4117
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:04]
     :END:
 
 When can you skip defensive copies?
@@ -6567,17 +6567,17 @@ modify the components inappropriately then you can replace the copy with
 documentation.
 
 *** Item 39: Make defensive copies when needed - mutable fields       :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       4f4c1247-bf37-41fa-8105-6e886f47785e
-    :DRILL_LAST_INTERVAL: 3.9965
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.088
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
     :END:
 
 How do you defensively copy accessors?
@@ -6656,17 +6656,17 @@ How can you break up long parameters?
 3. Adapt builder pattern to method invocation.
 
 *** Item 40: Design method signatures carefully - prefer enums        :drill:
-    SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       8513fe7b-8098-4ae0-b307-44fa5ee3474b
-    :DRILL_LAST_INTERVAL: 3.6579
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 10.9623
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:01]
     :END:
 
 What should you use instead of boolean parameters?
@@ -7063,6 +7063,18 @@ Why should use the stdlib?
 4. Libraries tend to gain new functionality over time.
 
 *** Item 48: Avoid float and double for exact - why                   :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       44d5dd04-4f4c-4a78-8806-ef396cfcce4d
+    :DRILL_LAST_INTERVAL: 1.633
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
+    :END:
 
 Why should you avoid float and doubles for exact calculations?
 
@@ -7081,6 +7093,18 @@ handle floating-point numbers by default.
 #+END_QUOTE
 
 *** Item 48: Avoid float and double for exact nums - money            :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       f7f34659-bda6-4672-87a0-68a2a0d190fb
+    :DRILL_LAST_INTERVAL: 1.6489
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:06]
+    :END:
 
 What should you use for monetary calculations in Java?
 
@@ -7092,6 +7116,18 @@ Java 9 will include https://github.com/JavaMoney/jsr354-api which is a Money and
 Currency API.
 
 *** Item 49: Prefer primitives to boxed primitives - differences      :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       6f775111-a44a-46ee-a5e8-3fc5a45c0278
+    :DRILL_LAST_INTERVAL: 1.5063
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:09]
+    :END:
 
 What are the three major differences between primitives and boxed primitives?
 
@@ -7105,6 +7141,18 @@ What are the three major differences between primitives and boxed primitives?
 3. primitives are more time and space efficient.
 
 *** Item 49: Prefer primitives to boxed primitives - ==               :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       62eaf8e0-6a84-48db-a9c6-62a2b9588744
+    :DRILL_LAST_INTERVAL: 1.6285
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:10]
+    :END:
 
 What does ~==~ do for boxed primitives?
 
@@ -7113,6 +7161,18 @@ What does ~==~ do for boxed primitives?
 The same thing as a normal object, it compares object identity instead of the value.
 
 *** Item 49: Prefer primitives to boxed primitives - mix              :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       8d20e577-8bff-482c-84cf-9c7549445796
+    :DRILL_LAST_INTERVAL: 1.5732
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:09]
+    :END:
 
 What happens if you mix primitives with boxed primitives?
 
@@ -7122,6 +7182,18 @@ When you mix primitives and boxed primitives in a single operation, the boxed
 primitive is auto-unboxed.
 
 *** Item 49: Prefer primitives to boxed primitives - null unboxing    :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       78ad49ed-c190-4543-ada7-99e02dc72924
+    :DRILL_LAST_INTERVAL: 1.6292
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:05]
+    :END:
 
 What happens if you unbox a null value?
 
@@ -7400,17 +7472,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-SCHEDULED: <2016-02-14 Sun>
+    SCHEDULED: <2016-02-15 Mon>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 23.6169
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.143
+:DRILL_LAST_INTERVAL: 1.3678
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 9
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.111
 :DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:15]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:13]
 :END:
 
 What are the stages of a feedback loop?
@@ -7478,17 +7550,17 @@ A philosophical razor, that is, a way of eliminating unlikely explanations.
 ** Udacity
 
 *** Standard Maven Layout                                 :drill:
-SCHEDULED: <2016-02-14 Sun>
+SCHEDULED: <2016-04-11 Mon>
 :PROPERTIES:
 :ID:       3f3d6cb8-fe88-4dc8-aaba-ea786e50e6ea
-:DRILL_LAST_INTERVAL: 20.715
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 56.8004
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 3.857
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:24]
+:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:06]
 :END:
 
 What is the standard maven layout?
