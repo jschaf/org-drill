@@ -31,17 +31,17 @@ dired-get-marked-files
 * Programming Questions
 ** Math
 *** Median 1                                                          :drill: 
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-03-13 Sun>
 :PROPERTIES:
 :ID: 6be85ae3-7fbb-42d7-9f95-3c57fba17c95
-:DRILL_LAST_INTERVAL: 8.5227
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 26.8276
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:51]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:36]
 :END: 
 
 What is the median?  How is defined for an odd set of number and an even set of numbers?
@@ -576,36 +576,77 @@ What flags does java.util.Formatter support?
 + '('     enclose negative numbers in parenthesis
 
 *** Integral different base                                           :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-04-11 Mon>
 :PROPERTIES:
 :ID:       9e2f790c-c1e8-4897-bfc5-cd766456d76e
-:DRILL_LAST_INTERVAL: 23.3737
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 56.3581
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.32
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:37]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:56]
 :END:
 
-How do you get an integral representation in different bases?
+How do you get an integral representation in two's complement form in different
+bases?
 
 **** Answer
 
 Returns the two's complement version:
 
-Integer.toBinaryString(100);
-Integer.toHexString(100);
-Integer.toOctalString(100);
-Long.*
+#+BEGIN_SRC java
+Integer.toBinaryString(2)  == "10"
+Integer.toBinaryString(-2) == "1111111111111111111111111111110"
+
+Integer.toOctalString(21)  == "25"
+Integer.toOctalString(-21) == "37777777747"
+
+Integer.toHexString(15)    == "f"
+Integer.toHexString(-15)   == "fffffff1"
+
+All the same methods on Long.
+#+END_SRC
+
+*** Integral different base - literal version                         :drill:
+
+How do you get an integral representation in a different base that isn't in
+two's complement form?
+
+**** Answer
 
 Return the literal version
 
-BigInteger.toString(radix) // The number is part of bigInteger
-Integer.toString(100, 8); // prints 144 - octal
-Integer.toString(100, 2); // prints 1100100 - binary
-Integer.toString(100,16); // prints 64 - hex
+#+BEGIN_SRC java
+Integer.toString(-2, 2)   == "-10"
+Integer.toString(-15, 2)  == "-1111"
+Integer.toString(100, 2)  == "1100100"
+Integer.toString(100, 16) == "64"
+#+END_SRC
+
+*** Integral different base - BigInteger                             :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       5e672982-0265-4c17-877d-ef1e10bc25fd
+    :DRILL_LAST_INTERVAL: 1.4069
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:02]
+    :END:
+
+How do you get an integral representation of a ~BigInteger~?
+
+**** Answer
+
+#+BEGIN_SRC java
+BigInteger myInt = BigInteger.valueOf(3);
+myInt.toString(radix) 
+#+END_SRC
 
 *** Math Min and Max values                                           :drill:
 SCHEDULED: <2016-03-23 Wed>
@@ -937,17 +978,17 @@ int[][][] threeDimInit = {
 #+END_SRC
 
 *** Multidimensional array - access                                   :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :ID:       7d40698d-7e03-4131-9c09-a164213aba57
-:DRILL_LAST_INTERVAL: 10.7213
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 32.8314
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:25]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:00]
 :END:
 
 How do you access an item in a multidimensional array in Java?
@@ -1033,17 +1074,17 @@ For unintentional object retention:
 + Not closing connections or files.
 
 *** Relationship between hashcode and equals                          :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-03-15 Tue>
 :PROPERTIES:
 :ID:       57a4b3cb-5206-475a-b876-490ee17f8812
-:DRILL_LAST_INTERVAL: 10.652
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 29.0037
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_AVERAGE_QUALITY: 4.25
 :DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:59]
 :END:
 
 What is the relationship between hashCode and equals?  
@@ -1345,17 +1386,17 @@ public static <E> void append(List<E> list, Class<E> cls) {
 #+END_SRC
 
 *** Method References                                                 :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
-    :DRILL_LAST_INTERVAL: 4.9253
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 16.2052
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.4
+    :DRILL_AVERAGE_QUALITY: 3.5
     :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:42]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:31]
     :END:
 
 What are the kinds of method references?
@@ -1584,17 +1625,17 @@ How do you get the bit at a specific index of an integer?
 #+END_SRC
 
 *** Set bit at index i                                                :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       37a2f02c-8caa-4344-990a-bf15d0800a3e
-    :DRILL_LAST_INTERVAL: 1.7025
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 6.0698
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.833
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:18]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
     :END:
 
 How do you set the bit at a specific index of an integer?
@@ -2041,6 +2082,8 @@ What's a perfect hash for a pair of ints?
 
 http://stackoverflow.com/questions/919612/mapping-two-integers-to-one-in-a-unique-and-deterministic-way
 
+** Numbers
+http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
@@ -3905,17 +3948,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 1.7896
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 5.6849
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_AVERAGE_QUALITY: 3.455
 :DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:19]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:32]
 :END:
 
 How do you make a class immutable?
@@ -3933,17 +3976,17 @@ Follow these five rules:
 5. Ensure exclusive access to any mutable components.
 
 *** Item 15: Minimize Mutability - benefits                           :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-04-22 Fri>
 :PROPERTIES:
 :ID:       360a3167-bbc5-44e3-85c0-fa2d58c859cb
-:DRILL_LAST_INTERVAL: 18.3141
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 67.1372
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.143
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:57]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:05]
 :END:
 
 What are the benefits of immutable classes?
@@ -4190,20 +4233,21 @@ the results of each invocation affect subsequent processing.
 Overridable means nonfinal and either public or protected. 
 
 *** Item 17: Design for Inheritance - inheritance doc convention      :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-04-11 Mon>
 :PROPERTIES:
 :ID:       64ec1959-6c4b-4a06-9d0f-5cb1f0daa436
-:DRILL_LAST_INTERVAL: 18.4914
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 56.3844
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 16:54]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:57]
 :END:
 
-What convention do you use to signal that a method invokes overridable methods?
+What documentation convention do you use to signal that a method invokes
+overridable methods?
 
 **** Answer
 
@@ -4624,17 +4668,17 @@ Tagged classes are verbose, error-prone and inefficient.
 A tagged class is a pallid imitation of a class hierarchy. 
 
 *** Item 20: Prefer class hierarchies over tags - alternative         :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-04-04 Mon>
 :PROPERTIES:
 :ID:       892ac2e3-b1ec-4764-8a6d-7b5eaed515ad
-:DRILL_LAST_INTERVAL: 15.3348
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 49.05
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:23]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:02]
 :END:
 
 What do you replace a tagged class with?
@@ -4750,17 +4794,17 @@ class Host {
 #+END_SRC
 
 *** Item 22: Favor static member classes - nested class               :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-03-28 Mon>
 :PROPERTIES:
 :ID:       5e8e5e8f-95c6-4d75-9e81-1ce813265122
-:DRILL_LAST_INTERVAL: 12.7764
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 42.2751
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:49]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:59]
 :END:
 
 What is a nested class?
@@ -4876,17 +4920,17 @@ class Envelope {
 http://stackoverflow.com/questions/11276994/what-does-qualified-this-construct-mean-in-java
 
 *** Item 22: Favor static member classes - when use static            :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-04-01 Fri>
 :PROPERTIES:
 :ID:       66bebad5-d97b-425f-b08e-b8b68dbd9a59
-:DRILL_LAST_INTERVAL: 13.3761
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 45.5172
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:58]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:59]
 :END:
 
 When should you declare a nested class as static?
@@ -5020,18 +5064,18 @@ SCHEDULED: <2016-02-16 Tue>
 The official term for a [List<String>] is a [parameterized type].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-20 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       3c26f404-53a2-4d3d-a605-ec4835909aac
-:DRILL_LAST_INTERVAL: 1.4526
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 4.7225
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.625
-:DRILL_EASE: 2.76
+:DRILL_AVERAGE_QUALITY: 3.778
+:DRILL_EASE: 2.86
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
 :END:
  
 The official term for a [String] is a [actual type parameter].
@@ -5362,17 +5406,17 @@ What are the acceptable uses for raw types?
    work.
 
 *** Item 24: Eliminate unchecked warnings - how to suppress           :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-03-17 Thu>
 :PROPERTIES:
 :ID:       25630e2b-115d-497c-8f60-d0a85c734651
-:DRILL_LAST_INTERVAL: 11.8538
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 31.1524
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:36]
 :END:
 
 How do you suppress an unchecked warnings?
@@ -5382,17 +5426,17 @@ How do you suppress an unchecked warnings?
 ~@SuppressWarnings("unchecked")~
 
 *** Item 24: Eliminate unchecked warnings - include with suppressed   :drill:
-SCHEDULED: <2016-02-15 Mon>
+SCHEDULED: <2016-03-24 Thu>
 :PROPERTIES:
 :ID:       cb25be5d-ee37-416a-be3a-457355ea2aea
-:DRILL_LAST_INTERVAL: 12.7692
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 37.8878
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:59]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:05]
 :END:
 
 What else should you do when you suppress a warning?
@@ -5558,17 +5602,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-03-03 Thu>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 5.7352
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 17.1869
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.715
+:DRILL_AVERAGE_QUALITY: 3.751
 :DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:58]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -6392,17 +6436,17 @@ Use assertions because you can and should ensure only valid parameters are ever
 passed in.
 
 *** Item 38: Check parameters for validity - stored parameters        :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-28 Sun>
     :PROPERTIES:
     :ID:       60da9210-7254-4313-a059-2e934cc98ad8
-    :DRILL_LAST_INTERVAL: 5.2181
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.3339
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_AVERAGE_QUALITY: 4.333
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:42]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:34]
     :END:
 
 Why is it important to check parameters that are stored for later use?
@@ -6455,17 +6499,17 @@ The extra time spent doing the checks will be paid back with interest the first
 time a validity check fails.
 
 *** Item 39: Make defensive copies when needed - base assumption      :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       af5067ca-7257-4424-8d2a-bc9070b1e45c
-    :DRILL_LAST_INTERVAL: 5.3401
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.7441
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:42]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
     :END:
 
 What assumption should you operate under when programming?
@@ -6495,17 +6539,17 @@ Which parameters are essential to defensively copy in a constructor?
 Each mutable parameter.
 
 *** Item 39: Make defensive copies when needed - validity check       :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-29 Mon>
     :PROPERTIES:
     :ID:       106c92cc-d4bd-4b8a-9bdf-cea7fc6fabf4
-    :DRILL_LAST_INTERVAL: 4.8333
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.9768
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:46]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:34]
     :END:
 
 When do you perform the validity check on defensive copies?
@@ -6587,17 +6631,17 @@ How do you defensively copy accessors?
 Defensively copy all mutable fields when returning accessors.
 
 *** Item 40: Design method signatures carefully - convenience         :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       264fbdca-6af1-4a41-8e6a-2133c280d4ec
-    :DRILL_LAST_INTERVAL: 4.0806
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.8737
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:36]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:31]
     :END:
 
 What's a rule of thumb for adding convenience methods?
@@ -6679,17 +6723,17 @@ Two element enums because:
 2. You can evolve them
 
 *** Item 41: Use overloading judiciously - overloading v. overriding  :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-26 Fri>
     :PROPERTIES:
     :ID:       7f2e0ad2-ebe2-419a-a482-cef6e225df70
-    :DRILL_LAST_INTERVAL: 3.9113
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 10.7085
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:37]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:35]
     :END:
 
 When is an overloaded method chosen? 
@@ -6874,17 +6918,17 @@ There is no reason to return null.
 + It's easier for the client because they don't have to handle the null case.
 
 *** Item 44: Write doc comments - what to include                     :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       c72f9e94-b337-47ec-b7ac-7360f0fc6360
-    :DRILL_LAST_INTERVAL: 1.5287
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.1921
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_AVERAGE_QUALITY: 3.2
     :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:18]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:30]
     :END:
 
 What should you include in a doc comment?
@@ -6976,17 +7020,17 @@ When is it acceptable to  postpone initialization of local variables?
 When using a try-catch block.
 
 *** Item 46: Prefer for-each loops - why                              :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       d1e99a54-2063-424a-900b-0acde4fc4f69
-    :DRILL_LAST_INTERVAL: 1.5778
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.1382
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:14]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:30]
     :END:
 
 Why should you prefer for-each loops?
@@ -6996,20 +7040,20 @@ Why should you prefer for-each loops?
 Because they avoid complex bugs around iterators
 
 *** Item 46: Prefer for-each loops - why not                          :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       33f1d8c5-abbf-4167-9073-e0a97a524fda
-    :DRILL_LAST_INTERVAL: 1.8408
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.106
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:36]
     :END:
 
-When can't you use a for-each loops.
+What type of list operations are impossible with a for-each loops??
 
 **** Answer
 
@@ -7018,17 +7062,17 @@ When can't you use a for-each loops.
 3. Parallel iteration
 
 *** Item 46: Prefer for-each loops - implement iterable               :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       d8f1f8ac-6157-4452-83f1-bfcd1c4d72f0
-    :DRILL_LAST_INTERVAL: 1.5114
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9347
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:17]
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
     :END:
 
 If you are writing a type that represents a group of elements, what interface
@@ -7039,17 +7083,17 @@ should you implement?
 Iterable
 
 *** Item 47: Know and use the libraries - why use stdlib              :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       c2906d5b-2aeb-467d-a99b-4a63eaae4852
-    :DRILL_LAST_INTERVAL: 1.7644
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.8553
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_AVERAGE_QUALITY: 3.667
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:19]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:34]
     :END:
 
 Why should use the stdlib?
@@ -7202,6 +7246,18 @@ What happens if you unbox a null value?
 You get a ~NullPointerException~.
 
 *** Item 50: Avoid strings where other types are better - why         :drill:
+    SCHEDULED: <2016-02-16 Tue>
+    :PROPERTIES:
+    :ID:       c65f5e80-9a72-45ed-a55f-0855e8337446
+    :DRILL_LAST_INTERVAL: 1.4951
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:57]
+    :END:
 
 Why shouldn't you use strings to represent value types, enums, aggregates or
 capabilities?
@@ -7211,6 +7267,18 @@ capabilities?
 Strings are slower, more tedious and more error-prone than the other methods
 
 *** Item 50: Avoid strings where other types are better - aggregation :drill:
+    SCHEDULED: <2016-02-17 Wed>
+    :PROPERTIES:
+    :ID:       0f58bf04-6609-43e7-9f6a-ad417d3dbbbe
+    :DRILL_LAST_INTERVAL: 1.5478
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:02]
+    :END:
 
 What should you replace String aggregation with?
 
@@ -7225,6 +7293,18 @@ String compoundKey = className + "#" + i.next();
 Write a private static member class to represent the aggregate.
 
 *** Item 50: Avoid strings where other types are better - capability  :drill:
+    SCHEDULED: <2016-02-17 Wed>
+    :PROPERTIES:
+    :ID:       acd625bc-f054-45cd-8ec5-26d577d65451
+    :DRILL_LAST_INTERVAL: 2.0587
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:59]
+    :END:
 
 How can you replace a String with that represents a capability with an
 unforgeable key?
@@ -7253,6 +7333,18 @@ public class ThreadLocal {
 #+END_SRC
 
 *** Item 51: Beware the performance of string concatenation           :drill:
+    SCHEDULED: <2016-02-17 Wed>
+    :PROPERTIES:
+    :ID:       c451d158-a687-4678-9176-0e7c97415966
+    :DRILL_LAST_INTERVAL: 1.5382
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:04]
+    :END:
 
 Why should you avoid repeated string concatenation?
 
@@ -7260,9 +7352,9 @@ Why should you avoid repeated string concatenation?
 
 Because it's quadratic.  Use ~StringBuilder~ instead.
 
-This advice is a little suspect.  Java compilers may use StringBuilder
-optimization.  Thus, we should probably prefer concatenation because it's
-shorter.
+This advice is overly broad.  Java compilers may use StringBuilder optimization.
+For static concatenation, using "+" is fine.  For dynamic concatenation, prefer
+StringBuilder.
 
 http://www.pellegrino.link/2015/08/22/string-concatenation-with-java-8.html
 
@@ -7270,8 +7362,6 @@ This blog post actually runs tests.  The results:
 
 1. Java 8 will optimize static string concatenation.
 2. Java 8 does not currently optimize dynamic string concatenation.
-
-
 
 * Consulting
 ** Breaking the Time Barrier
@@ -7544,17 +7634,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-    SCHEDULED: <2016-02-15 Mon>
+    SCHEDULED: <2016-02-17 Wed>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 1.3678
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 2.4917
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.111
+:DRILL_AVERAGE_QUALITY: 3.2
 :DRILL_EASE: 2.18
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:13]
+:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:31]
 :END:
 
 What are the stages of a feedback loop?
