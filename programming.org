@@ -7363,6 +7363,57 @@ This blog post actually runs tests.  The results:
 1. Java 8 will optimize static string concatenation.
 2. Java 8 does not currently optimize dynamic string concatenation.
 
+*** Item 52: Refer to objects by interface - what                     :drill:
+
+Why should you use interfaces as types?
+
+**** Answer
+
+Your program will be much more flexible.  You can change the representation
+without changing the code.
+
+*** Item 52: Refer to objects by interface - Why not                  :drill:
+
+When is it appropriate to refer to an object by it's class rather than its
+interface?
+
+**** Answer
+
+1. When no appropriate interface exists, as is often the case for value classes.
+2. Object of a framework that uses classes (typically abstract) as the
+   fundamental type rather than interfaces.
+3. When the class adds extra methods and you need those methods.
+
+*** Item 53: Prefer interfaces to reflection - why                    :drill:
+
+What are the disadvantages of using reflection as opposed to interfaces?
+
+**** Answer
+
+1. You lose all the benefits of compile-time checking.
+2. The code required to perform reflective access is clumsy and verbose.
+3. Performance suffers.
+
+*** Item 53: Prefer interfaces to reflection - restricted reflection  :drill:
+
+What's one way to gain many benefits of reflection without the disadvantages?
+
+**** Answer
+
+Create instances reflectively and access them normally via their interface or
+superclass.
+
+*** Item 54: Use native methods judiciously                           :drill:
+
+What are the downsides of native methods?
+
+**** Answer
+
+1. Rely on languages that are unsafe.
+2. Platform dependent.
+3. Fixed cost associated with moving data in and out of native code.
+4. Tedious and error prone to write.
+
 * Consulting
 ** Breaking the Time Barrier
 
