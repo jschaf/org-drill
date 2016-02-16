@@ -475,17 +475,17 @@ What Integral conversions are supported in a format specifier?
 + x, X - hexadecimal integer
 
 *** Formatter - Floating Point Conversions                            :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
-:DRILL_LAST_INTERVAL: 1.688
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 4.5624
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.833
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:30]
 :END:
 
 What floating point conversions are supported in a format specifier?
@@ -626,17 +626,17 @@ Integer.toString(100, 16) == "64"
 #+END_SRC
 
 *** Integral different base - BigInteger                             :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       5e672982-0265-4c17-877d-ef1e10bc25fd
-    :DRILL_LAST_INTERVAL: 1.4069
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.2518
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 4.0
     :DRILL_EASE: 2.5
     :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:02]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:34]
     :END:
 
 How do you get an integral representation of a ~BigInteger~?
@@ -2083,6 +2083,94 @@ What's a perfect hash for a pair of ints?
 http://stackoverflow.com/questions/919612/mapping-two-integers-to-one-in-a-unique-and-deterministic-way
 
 ** Numbers
+*** How big is an signed integer                                      :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       a758328e-4aac-43a7-b8cb-738430650182
+    :DRILL_LAST_INTERVAL: 1.9992
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:46]
+    :END:
+
+What's the min and max value of a signed 32 bit integer?
+
+**** Answer
+
+Max Value:  2^31 - 1 ==  2_147_483_647
+Min Value: -2^31     == -2_147_483_648
+
+*** Signed Long Range                                                 :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       d9b3e739-4b04-47c1-ad84-1157606b7e14
+    :DRILL_LAST_INTERVAL: 1.5442
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:36]
+    :END:
+
+What's the min and max value of a signed 64 bit integer?
+
+**** Answer
+Max Value:  9.22+18
+Min Value: -9.22+18
+
+
+*** Float Range                                                       :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       e4686fe9-e787-4c9a-b649-ff12ba8b0317
+    :DRILL_LAST_INTERVAL: 1.5338
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:46]
+    :END:
+
+What's the min and max value of a single-precision float?
+
+**** Answer
+
+Max Value:  3.4E38
+Min Value: -3.4E38
+
+Also, Positive Infinity and Negative Infinity.
+
+*** Double Range                                                      :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       5e80ee5a-da72-4be2-a3d8-bbea341e1953
+    :DRILL_LAST_INTERVAL: 1.7986
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:42]
+    :END:
+
+What's the min and max value of a double-precision float?
+
+**** Answer
+
+Max Value:  1.7E308
+Min Value: -1.7E308
+
+Also, Positive Infinity and Negative Infinity.
+
 http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
 ** System Design
 
@@ -2664,17 +2752,17 @@ What are common names of a static factory?
 + new/Type/ - like new instance, but with a new /Type/
 
 *** Item 02: Disadvantages of telescoping constructors                :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-05-07 Sat>
 :PROPERTIES:
 :ID:       5d0e59cb-1bd6-4b82-899d-40eff3015e27
-:DRILL_LAST_INTERVAL: 30.634
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 81.1707
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-16 Sat 14:06]
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:44]
 :END:
 
 What are the disadvantages of telescoping constructors?
@@ -3878,17 +3966,17 @@ Are public mutable fields thread-safe?
 Nope.
 
 *** Item 13: Minimize accessibility - arrays                          :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-31 Thu>
 :PROPERTIES:
 :ID:       878dbcd5-d7bb-45ad-bf26-6e7b933e997e
-:DRILL_LAST_INTERVAL: 14.4013
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 43.5957
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.876
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.001
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:50]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:41]
 :END:
 
 What alternatives are there to a final array?
@@ -4305,17 +4393,17 @@ Subclass it at least three times, and have someone other than the author
 subclass it at least once.
 
 *** Item 17: Design for Inheritance - constructors and overridables   :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-03-04 Fri>
 :PROPERTIES:
 :ID:       4d850c76-da4c-4e3c-bf02-65d7ba11bb76
-:DRILL_LAST_INTERVAL: 5.2414
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 16.9642
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 4.571
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:41]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:32]
 :END:
 
 Why can't you use overridable methods in a constructor?
@@ -4571,17 +4659,17 @@ final modifiers.
 Then you can import with static import.
 
 *** Item 20: Prefer class hierarchies over tags - what                :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-04-09 Sat>
 :PROPERTIES:
 :ID:       b284739b-61be-453e-9887-ce4304181027
-:DRILL_LAST_INTERVAL: 15.7647
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 53.1342
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:27]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:40]
 :END:
 
 What is a tagged class?
@@ -4688,17 +4776,17 @@ What do you replace a tagged class with?
 A class hierarchy.
 
 *** Item 20: Prefer class hierarchies over tags - Alternative impl    :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-29 Tue>
 :PROPERTIES:
 :ID:       37854105-68d9-4e5f-93ef-586127dea641
-:DRILL_LAST_INTERVAL: 15.0267
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 42.4555
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:48]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:41]
 :END:
 
 How do you transform a tagged class to a class hierarchy?
@@ -4757,17 +4845,17 @@ No, silly.  You generally want to make a singleton and use that to avoid
 unnecessary object creation.
 
 *** Item 21: Use function objects - anonymous class optimization      :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       0c71b0b1-6acc-43d3-8a6d-a49ec780d1f2
-:DRILL_LAST_INTERVAL: 14.3389
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 38.7094
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:54]
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:41]
 :END:
 
 If using anonymous classes for function objects, how can you optimize repeated
@@ -4814,17 +4902,17 @@ What is a nested class?
 Any class defined within another class.
 
 *** Item 22: Favor static member classes -                            :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-25 Fri>
 :PROPERTIES:
 :ID:       f5bd4562-1fbe-47f7-ace8-31a6c3eeedf6
-:DRILL_LAST_INTERVAL: 13.6718
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 38.4177
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:48]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:41]
 :END:
 
 What's the purpose of a nested class?
@@ -5047,18 +5135,18 @@ Anywhere a local variable can be declared.
 
 ** Generics
 *** Item 23: Don't use raw types - type 1                             :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-18 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       d95b8741-0cf8-44ec-aa34-873d076516c5
-:DRILL_LAST_INTERVAL: 12.0745
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 30.9552
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:23]
+:DRILL_AVERAGE_QUALITY: 3.429
+:DRILL_EASE: 2.42
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:43]
 :END:
  
 The official term for a [List<String>] is a [parameterized type].
@@ -5184,18 +5272,18 @@ SCHEDULED: <2016-03-16 Wed>
 The official term for a [<T extends Comparable<? super T>>] is a [recursive type bound].
 
 *** Item 23: Don't use raw types - type 8                             :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-24 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       c7999a55-19b7-4c7c-aa8c-c3b964008a2e
-:DRILL_LAST_INTERVAL: 13.359
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 36.976
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-03 Wed 01:28]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:41]
 :END:
  
 The official term for a [List<? extends Number>] is a [bounded wildcard type].
@@ -5347,17 +5435,17 @@ c.add(new Object());
 http://stackoverflow.com/questions/7671072/what-is-the-use-and-point-of-unbound-wildcards-generics-in-java
 
 *** Item 23: Don't use raw types - instanceof                         :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-29 Tue>
 :PROPERTIES:
 :ID:       1694349f-062a-4bcc-a339-57647dcf180c
-:DRILL_LAST_INTERVAL: 14.1452
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 41.7082
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
+:DRILL_AVERAGE_QUALITY: 4.75
 :DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:59]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
 :END:
 
 How do you do an instanceof check for a parameterized type?
@@ -5509,17 +5597,17 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-03-02 Wed>
 :PROPERTIES:
 :ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
-:DRILL_LAST_INTERVAL: 5.3171
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 14.7711
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.399
-:DRILL_EASE: 2.76
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
+:DRILL_AVERAGE_QUALITY: 3.545
+:DRILL_EASE: 2.86
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:36]
 :END:
 
 What are the reifiable types in Java?
@@ -5738,17 +5826,17 @@ What are the kinds of bounded wildcards?
 List<? extends Number> and List<? super Number>
 
 *** Item 28: Use Bounded Wildcards - PECS                             :drill:
-SCHEDULED: <2016-02-16 Tue>
+SCHEDULED: <2016-03-12 Sat>
 :PROPERTIES:
 :ID:       77348fda-8279-4d0a-b596-1828208e4ee6
-:DRILL_LAST_INTERVAL: 9.6533
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 25.4575
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_AVERAGE_QUALITY: 4.5
 :DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:26]
+:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:29]
 :END:
 
 What is PECS?
@@ -6457,17 +6545,17 @@ Because you want to fail as fast as possible.  Trying to debug problems later is
 much harder than failing at construction.
 
 *** Item 38: Check parameters for validity - exceptions               :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       bb41556b-97c5-443e-a981-6c036d01f85e
-    :DRILL_LAST_INTERVAL: 1.6451
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 5.0916
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.8
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:30]
     :END:
 
 When can you skip validation?
@@ -6655,17 +6743,17 @@ learn, use, document, test and maintain.
 When in doubt, leave it out.
 
 *** Item 40: Design method signatures carefully - avoid long params   :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-03-01 Tue>
     :PROPERTIES:
     :ID:       7c581b33-9e9a-47b1-84ac-7b62e192e83f
-    :DRILL_LAST_INTERVAL: 4.6756
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.2559
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:35]
     :END:
 
 How long is too long for parameter lists?
@@ -6677,17 +6765,17 @@ Aim for four parameters or fewer.
 Long sequences of identically typed parameters are especially harmful.
 
 *** Item 40: Design method signatures carefully - break up            :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-03-01 Tue>
     :PROPERTIES:
     :ID:       d5f52a28-4851-411b-bd06-ebfd1509232f
-    :DRILL_LAST_INTERVAL: 5.1879
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 14.421
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.667
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:35]
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:34]
     :END:
 
 How can you break up long parameters?
@@ -6745,17 +6833,17 @@ Selection among overloaded methods is static.
 Selection among overriden methods in dynamic.
 
 *** Item 41: Use overloading judiciously - avoid confusing overloads  :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       ad83a823-979c-49d2-b33a-215b9266c34d
-    :DRILL_LAST_INTERVAL: 5.1797
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.0515
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_AVERAGE_QUALITY: 4.667
     :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:40]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:33]
     :END:
 
 What's a good policy for overloading?
@@ -6766,17 +6854,17 @@ A safe, conservative policy is never to export two overloadings with the same
 number of parameters.
 
 *** Item 41: Use overloading judiciously - example                    :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-29 Mon>
     :PROPERTIES:
     :ID:       0786822f-742b-444b-a942-01e9a108bbfa
-    :DRILL_LAST_INTERVAL: 4.7436
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.7407
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:39]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:34]
     :END:
 
 Why is List.remove a good example of overloading gone wrong?
@@ -6788,17 +6876,17 @@ which removes an item at index i, instead of removing the element.  You must
 explicitly cast to Integer to get remove to actually remove an item.
 
 *** Item 41: Use overloading judiciously - must overload              :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       abe0af53-2168-4d82-9693-1a48afc0f110
-    :DRILL_LAST_INTERVAL: 5.3009
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.9144
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:35]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:34]
     :END:
 
 If you must overload a method, what should you avoid?
@@ -6843,17 +6931,17 @@ static int min(int firstArg, int... remainingArgs) {
 #+END_SRC
 
 *** Item 42: Use varargs judiciously - when to use                    :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       fd5f001f-75ac-4a40-985a-d9dce17b2cca
-    :DRILL_LAST_INTERVAL: 4.3464
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.1177
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:30]
     :END:
 
 When should you use varargs?
@@ -7107,17 +7195,17 @@ Why should use the stdlib?
 4. Libraries tend to gain new functionality over time.
 
 *** Item 48: Avoid float and double for exact - why                   :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       44d5dd04-4f4c-4a78-8806-ef396cfcce4d
-    :DRILL_LAST_INTERVAL: 1.633
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.2015
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:12]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:29]
     :END:
 
 Why should you avoid float and doubles for exact calculations?
@@ -7137,17 +7225,17 @@ handle floating-point numbers by default.
 #+END_QUOTE
 
 *** Item 48: Avoid float and double for exact nums - money            :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       f7f34659-bda6-4672-87a0-68a2a0d190fb
-    :DRILL_LAST_INTERVAL: 1.6489
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.5111
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:06]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:36]
     :END:
 
 What should you use for monetary calculations in Java?
@@ -7160,17 +7248,17 @@ Java 9 will include https://github.com/JavaMoney/jsr354-api which is a Money and
 Currency API.
 
 *** Item 49: Prefer primitives to boxed primitives - differences      :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       6f775111-a44a-46ee-a5e8-3fc5a45c0278
-    :DRILL_LAST_INTERVAL: 1.5063
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.7077
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:09]
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:32]
     :END:
 
 What are the three major differences between primitives and boxed primitives?
@@ -7185,17 +7273,17 @@ What are the three major differences between primitives and boxed primitives?
 3. primitives are more time and space efficient.
 
 *** Item 49: Prefer primitives to boxed primitives - ==               :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       62eaf8e0-6a84-48db-a9c6-62a2b9588744
-    :DRILL_LAST_INTERVAL: 1.6285
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9814
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:10]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:36]
     :END:
 
 What does ~==~ do for boxed primitives?
@@ -7205,17 +7293,17 @@ What does ~==~ do for boxed primitives?
 The same thing as a normal object, it compares object identity instead of the value.
 
 *** Item 49: Prefer primitives to boxed primitives - mix              :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       8d20e577-8bff-482c-84cf-9c7549445796
-    :DRILL_LAST_INTERVAL: 1.5732
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6556
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:09]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:33]
     :END:
 
 What happens if you mix primitives with boxed primitives?
@@ -7226,17 +7314,17 @@ When you mix primitives and boxed primitives in a single operation, the boxed
 primitive is auto-unboxed.
 
 *** Item 49: Prefer primitives to boxed primitives - null unboxing    :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       78ad49ed-c190-4543-ada7-99e02dc72924
-    :DRILL_LAST_INTERVAL: 1.6292
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.0737
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:05]
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:35]
     :END:
 
 What happens if you unbox a null value?
@@ -7246,17 +7334,17 @@ What happens if you unbox a null value?
 You get a ~NullPointerException~.
 
 *** Item 50: Avoid strings where other types are better - why         :drill:
-    SCHEDULED: <2016-02-16 Tue>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       c65f5e80-9a72-45ed-a55f-0855e8337446
-    :DRILL_LAST_INTERVAL: 1.4951
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.8298
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:57]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:33]
     :END:
 
 Why shouldn't you use strings to represent value types, enums, aggregates or
@@ -7364,6 +7452,18 @@ This blog post actually runs tests.  The results:
 2. Java 8 does not currently optimize dynamic string concatenation.
 
 *** Item 52: Refer to objects by interface - what                     :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       08e4da20-d626-4bea-a23a-3713e16872b4
+    :DRILL_LAST_INTERVAL: 1.6329
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
+    :END:
 
 Why should you use interfaces as types?
 
@@ -7373,6 +7473,18 @@ Your program will be much more flexible.  You can change the representation
 without changing the code.
 
 *** Item 52: Refer to objects by interface - Why not                  :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       225337f9-afff-4654-b679-d5973912472d
+    :DRILL_LAST_INTERVAL: 1.8622
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:46]
+    :END:
 
 When is it appropriate to refer to an object by it's class rather than its
 interface?
@@ -7385,6 +7497,18 @@ interface?
 3. When the class adds extra methods and you need those methods.
 
 *** Item 53: Prefer interfaces to reflection - why                    :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       934c577e-6cb6-476d-a1fc-8ce3e5a91639
+    :DRILL_LAST_INTERVAL: 1.7582
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
+    :END:
 
 What are the disadvantages of using reflection as opposed to interfaces?
 
@@ -7395,6 +7519,18 @@ What are the disadvantages of using reflection as opposed to interfaces?
 3. Performance suffers.
 
 *** Item 53: Prefer interfaces to reflection - restricted reflection  :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       5a94b79a-5bf7-49dd-a18c-d06d09d3fd50
+    :DRILL_LAST_INTERVAL: 1.5682
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
+    :END:
 
 What's one way to gain many benefits of reflection without the disadvantages?
 
@@ -7404,6 +7540,18 @@ Create instances reflectively and access them normally via their interface or
 superclass.
 
 *** Item 54: Use native methods judiciously                           :drill:
+    SCHEDULED: <2016-02-17 Wed>
+    :PROPERTIES:
+    :ID:       1439c72b-2fbc-425e-96a7-0a57c70ec955
+    :DRILL_LAST_INTERVAL: 1.4519
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:42]
+    :END:
 
 What are the downsides of native methods?
 
@@ -7413,6 +7561,26 @@ What are the downsides of native methods?
 2. Platform dependent.
 3. Fixed cost associated with moving data in and out of native code.
 4. Tedious and error prone to write.
+
+*** Item 55: Optimize Judiciously - principles                        :drill:
+
+What are Bloch's principles for writing programs?
+
+**** Answer
+
+1. Strive to write good programs rather than fast ones.
+2. Avoid design decisions that limit performance.
+3. Consider the performance consequences of you API design decisions.
+4. It is a very bad idea to warp an API to achieve good performance.
+
+   
+*** Item 56: Adhere to generally accepted naming conventions          :drill:
+
+What naming conventions should you follow for returning a view?
+
+**** Answer
+
+Use ~asTYPE~.
 
 * Consulting
 ** Breaking the Time Barrier
