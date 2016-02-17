@@ -431,17 +431,17 @@ What general conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Character Conversions                                 :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-05-07 Sat>
 :PROPERTIES:
 :ID:       25a7e8cc-dd99-40cf-9642-8e46cfb690ed
-:DRILL_LAST_INTERVAL: 25.011
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 79.8074
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:41]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
 :END:
 
 What character conversions are supported in a format specifier?
@@ -952,17 +952,17 @@ last formal parameter is a variable arity parameter of type T, it is considered
 to define a formal parameter of type T[]".
 
 *** Multidimensional array - declaration                              :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-03-23 Wed>
 :PROPERTIES:
 :ID:       0a364e54-1afd-451a-9a8e-6b61e1a2d682
-:DRILL_LAST_INTERVAL: 12.7144
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 34.532
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:24]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:26]
 :END:
 
 How do you declare a multidimensional array in Java?
@@ -2323,17 +2323,17 @@ Answer
    
 
 *** Python Garbage Collection                                         :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       c548b5b2-1af7-445c-8787-51e1f3b1ccf5
-    :DRILL_LAST_INTERVAL: 8.3652
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 20.995
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.333
-    :DRILL_EASE: 2.56
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.66
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:56]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:14]
     :END:
 
 How does garbage collection CPython work?
@@ -3240,17 +3240,17 @@ What does the argument type have to be when overriding equals?
 Object o, otherwise you're overloading equals instead of overriding it.
 
 *** Item 08: High Quality Equals Impl                                 :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-04-21 Thu>
 :PROPERTIES:
 :ID:       fe0f1e4b-4282-478e-8dbf-295384c0a8d4
-:DRILL_LAST_INTERVAL: 24.0059
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 64.1767
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:35]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:26]
 :END:
 
 What does a correct equals method look like?
@@ -3987,17 +3987,17 @@ Collections.unmodifiableList - an unmodifiable view, the backing array can still
 Guava ImmutableList - actually immutable
 
 *** Item 14: Public accessors - accessor vs public field              :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-03-11 Fri>
 :PROPERTIES:
 :ID:       f204e0bd-7b04-4cb1-bbb8-977d14b186e7
-:DRILL_LAST_INTERVAL: 8.9235
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 22.685
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.571
-:DRILL_EASE: 2.28
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:14]
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.38
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
 :END:
 
 When should you use an accessor over a public field?
@@ -4799,17 +4799,17 @@ How do you transform a tagged class to a class hierarchy?
    tagged class.
 
 *** Item 21: Use function objects - Java function pointer             :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-04-09 Sat>
 :PROPERTIES:
 :ID:       7748115f-87d0-43a5-aa77-e504115ff827
-:DRILL_LAST_INTERVAL: 15.2297
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 52.0736
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:49]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
 :END:
 
 How do you represent a function pointer in Java?
@@ -4823,17 +4823,17 @@ mimicking a function pointer.
 This approach is typically used for the strategy pattern.
 
 *** Item 21: Use function objects - optimization                      :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-03-31 Thu>
 :PROPERTIES:
 :ID:       ed8a6576-6a80-49e6-bebd-0c66446ef8e8
-:DRILL_LAST_INTERVAL: 15.3408
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 42.5331
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:59]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:26]
 :END:
 
 Should you create a function object every time you want to use the strategy
@@ -5051,17 +5051,17 @@ Where can you write an anonymous class?
 Anywhere an expression is legal.
 
 *** Item 22: Favor static member classes - anon class limitations     :drill:
-SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-19 Fri>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
-:DRILL_LAST_INTERVAL: 11.3624
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 10
-:DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.62
+:DRILL_LAST_INTERVAL: 1.5727
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 13
+:DRILL_FAILURE_COUNT: 6
+:DRILL_AVERAGE_QUALITY: 3.308
+:DRILL_EASE: 2.72
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:27]
 :END:
 
 What are the limitations on an anonymous class?
@@ -5186,18 +5186,18 @@ SCHEDULED: <2016-02-20 Sat>
 The official term for a [List<E>] is a [generic type].
 
 *** Item 23: Don't use raw types - type 3                             :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-04-01 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       05e30c71-50be-4f9d-a6c6-e76ef8547cdc
-:DRILL_LAST_INTERVAL: 12.8431
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 43.6074
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 3.857
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:22]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:26]
 :END:
  
 The official term for a [E] is a [formal type parameter].
@@ -5323,17 +5323,17 @@ SCHEDULED: <2016-02-24 Wed>
 The official term for a [String.class] is a [type token].
 
 *** Item 23: Don't use raw types - why                                :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-03-29 Tue>
 :PROPERTIES:
 :ID:       9c35ca8e-b578-4574-97ca-a0f3ba27678b
-:DRILL_LAST_INTERVAL: 15.0218
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 40.9583
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.667
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.75
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:49]
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
 :END:
 
 Why shouldn't you use raw types?
@@ -5999,17 +5999,17 @@ collection?
 The THC parameterizes the key instead of the container.
 
 *** Item 29: Typesafe Heterogeneous containers - limitations          :drill:
-SCHEDULED: <2016-02-17 Wed>
+SCHEDULED: <2016-03-13 Sun>
 :PROPERTIES:
 :ID:       80952072-e06c-4467-b612-9345de1b5174
-:DRILL_LAST_INTERVAL: 9.0794
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 25.4865
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:13]
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
 :END:
 
 What are the limitations of typesafe heterogeneous containers?
@@ -6900,17 +6900,17 @@ If you must overload a method, what should you avoid?
    you confuse the fuck out of programmers.
 
 *** Item 42: Use varargs judiciously - one required arg               :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       222c514f-84df-4055-909d-fd22003eaac9
-    :DRILL_LAST_INTERVAL: 5.0075
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.6752
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
     :END:
 
 How do you handle a required argument followed by a variable number of
@@ -6951,17 +6951,17 @@ When should you use varargs?
 When the method /only/ really operates on a variable length sequence of values.
 
 *** Item 42: Use varargs judiciously - optimize                       :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-03-04 Fri>
     :PROPERTIES:
     :ID:       17543b2a-82f3-4a2f-b98a-ccd27cb4de93
-    :DRILL_LAST_INTERVAL: 4.826
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.9897
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
     :END:
 
 How can you optimize a varargs method?
@@ -7048,17 +7048,17 @@ Other requirements:
 **
 ** General Programming
 *** Item 45: Minimize scope of local vars - most powerful             :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-26 Fri>
     :PROPERTIES:
     :ID:       bd6a6a51-10d9-45d8-8efc-644b59aea90a
-    :DRILL_LAST_INTERVAL: 4.2396
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 9.3292
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:10]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
     :END:
 
 What is the most powerful technique for minimizing the scope of local variables?
@@ -7068,17 +7068,17 @@ What is the most powerful technique for minimizing the scope of local variables?
 Declare the local variable where it is first used.
 
 *** Item 45: Minimize scope of local vars - initialize                :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-03-01 Tue>
     :PROPERTIES:
     :ID:       ba4ac188-21ff-4292-85e4-9a83c521f894
-    :DRILL_LAST_INTERVAL: 4.4786
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.6949
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:13]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:14]
     :END:
 
 Nearly every local variable should contain an _?
@@ -7355,17 +7355,17 @@ capabilities?
 Strings are slower, more tedious and more error-prone than the other methods
 
 *** Item 50: Avoid strings where other types are better - aggregation :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       0f58bf04-6609-43e7-9f6a-ad417d3dbbbe
-    :DRILL_LAST_INTERVAL: 1.5478
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.857
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:02]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
     :END:
 
 What should you replace String aggregation with?
@@ -7381,17 +7381,17 @@ String compoundKey = className + "#" + i.next();
 Write a private static member class to represent the aggregate.
 
 *** Item 50: Avoid strings where other types are better - capability  :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       acd625bc-f054-45cd-8ec5-26d577d65451
-    :DRILL_LAST_INTERVAL: 2.0587
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.5291
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:59]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:17]
     :END:
 
 How can you replace a String with that represents a capability with an
@@ -7421,17 +7421,17 @@ public class ThreadLocal {
 #+END_SRC
 
 *** Item 51: Beware the performance of string concatenation           :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-21 Sun>
     :PROPERTIES:
     :ID:       c451d158-a687-4678-9176-0e7c97415966
-    :DRILL_LAST_INTERVAL: 1.5382
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.3889
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:04]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:14]
     :END:
 
 Why should you avoid repeated string concatenation?
@@ -7540,17 +7540,17 @@ Create instances reflectively and access them normally via their interface or
 superclass.
 
 *** Item 54: Use native methods judiciously                           :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       1439c72b-2fbc-425e-96a7-0a57c70ec955
-    :DRILL_LAST_INTERVAL: 1.4519
+    :DRILL_LAST_INTERVAL: 1.7207
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.25
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:42]
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:22]
     :END:
 
 What are the downsides of native methods?
@@ -7563,8 +7563,20 @@ What are the downsides of native methods?
 4. Tedious and error prone to write.
 
 *** Item 55: Optimize Judiciously - principles                        :drill:
+    SCHEDULED: <2016-02-19 Fri>
+    :PROPERTIES:
+    :ID:       40d70f6a-2f26-4848-8f89-a5ccedec209a
+    :DRILL_LAST_INTERVAL: 2.0142
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:27]
+    :END:
 
-What are Bloch's principles for writing programs?
+What are Bloch's principles for writing programs with regards to optimization?
 
 **** Answer
 
@@ -7575,12 +7587,63 @@ What are Bloch's principles for writing programs?
 
    
 *** Item 56: Adhere to generally accepted naming conventions          :drill:
+    SCHEDULED: <2016-02-18 Thu>
+    :PROPERTIES:
+    :ID:       4880dd30-9a68-4417-9e95-584e0e4064e9
+    :DRILL_LAST_INTERVAL: 1.4709
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
+    :END:
 
 What naming conventions should you follow for returning a view?
 
 **** Answer
 
 Use ~asTYPE~.
+
+** Exceptions
+
+*** Item 57: Use exceptions only for exceptional circumstances        :drill:
+
+When should prefer distinguished return values over state checking for control
+flow in an API?
+
+**** Answer
+
+If the object is accessed concurrently without external synchronization, use
+distinguished return values.  The state may be mutated between concurrent
+accesses.
+
+All other things being equal, state-testing is slightly preferable to
+distinguished return value because it's easier to read and detect.
+
+*** Item 58: Use checked exceptions for recoverable conditions        :drill:
+
+When should you use checked exceptions and when do you use runtime exceptions?
+
+**** Answer
+
+Use checked exceptions for conditions from which the caller can reasonably be
+expected to recover.
+
+Use runtime exceptions to indicate programming errors.
+
+If you're unsure that recovery is possible, make it a runtime exception.
+
+*** Item 58: Use Checked exceptions for recoverable conditions - info :drill:
+
+What additional information should you include in a checked exception?
+
+**** Answer
+
+Since exceptions are full-fledged objects, include any information that could
+help the client recover.
+
 
 * Consulting
 ** Breaking the Time Barrier
@@ -7853,17 +7916,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-    SCHEDULED: <2016-02-17 Wed>
+    SCHEDULED: <2016-02-23 Tue>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 2.4917
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 6.2546
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.2
-:DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:31]
+:DRILL_AVERAGE_QUALITY: 3.364
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
 :END:
 
 What are the stages of a feedback loop?
