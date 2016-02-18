@@ -1416,6 +1416,26 @@ http://stackoverflow.com/questions/22516331/whats-the-difference-between-instanc
 
 http://stackoverflow.com/questions/32283833/please-explain-java-8-method-reference-to-instance-method-using-class-name
 
+*** Throwable                                                         :drill:
+
+What is a Throwable in Java?
+
+**** Answer
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html
+It's the supertype for Exception and Error.
+
+*** Point of checked exceptions                                       :drill:
+
+What's the point of checked exceptions?
+
+**** Answer
+     
+Depends on who you ask.  Some people hate them, other see them as valuable ways
+of communicating recoverable errors.
+
+http://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
+
 ** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
@@ -7659,7 +7679,7 @@ Use runtime exceptions to indicate programming errors.
 
 If you're unsure that recovery is possible, make it a runtime exception.
 
-*** Item 58: Use Checked exceptions for recoverable conditions - info :drill:
+*** Item 58: Use checked exceptions for recoverable conditions - info :drill:
     SCHEDULED: <2016-02-19 Fri>
     :PROPERTIES:
     :ID:       a9b6d7d3-80a1-45b7-b4a1-36f27eb88bde
@@ -7679,6 +7699,39 @@ What additional information should you include in a checked exception?
 
 Since exceptions are full-fledged objects, include any information that could
 help the client recover.
+
+*** Item 59: Avoid unnecessary use of checked exceptions              :drill:
+
+When is the burden of checked exceptions okay?
+
+**** Answer
+
+When the exceptional condition cannot be prevented by proper use of the API /and/
+the programmer can take some useful action when confronted by the exception.
+
+*** Item 59: Avoid unnecessary use of checked exceptions              :drill:
+
+How can you transform a checked exception into an unchecked exception?
+
+**** Answer
+
+Write a helper method that returns true if the exception would occur or false if
+would not.  That approach is the same as using the state testing approach.
+
+Guava Throwables.propagate(e)
+
+*** Item 60: Favor the use of standard exceptions                     :drill:
+
+What are the most common exceptions in Java?
+
+**** Answer
+
++ ~IllegalArgumentException~
++ ~IllegalStateException~
++ ~NullPointerException~
++ ~IndexOutOfBoundsException~
++ ~ConcurrentModificationException~
++ ~UnspportedOperationException~
 
 
 * Consulting
