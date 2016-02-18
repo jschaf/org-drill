@@ -1001,17 +1001,17 @@ int myItem = threeDimArray[0][1][2];
 #+END_SRC
 
 *** Multidimensional array - String representation                    :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-04-06 Wed>
 :PROPERTIES:
 :ID:       a364ea37-eeba-400f-9e5c-7d2c17349540
-:DRILL_LAST_INTERVAL: 14.4545
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 48.196
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:28]
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:30]
 :END:
 
 How do you get a string representation of a multidimensional array in Java?
@@ -1226,20 +1226,20 @@ equals and hashCode contract, or the fake string might equals the same, but
 wouldn't be the same.
 
 *** Wait, notify and notifyAll on Object                              :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-03-22 Tue>
 :PROPERTIES:
 :ID:       c7332c74-7a12-458f-8147-c24890814a44
-:DRILL_LAST_INTERVAL: 11.6106
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 32.9783
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:50]
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:30]
 :END:
 
-What are wait, notify and notifyAll defined on Object?
+Why are wait, notify and notifyAll defined on Object?
 
 **** Answer
 
@@ -2084,17 +2084,17 @@ http://stackoverflow.com/questions/919612/mapping-two-integers-to-one-in-a-uniqu
 
 ** Numbers
 *** How big is an signed integer                                      :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       a758328e-4aac-43a7-b8cb-738430650182
-    :DRILL_LAST_INTERVAL: 1.9992
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.4294
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_AVERAGE_QUALITY: 3.667
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:46]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:26]
     :END:
 
 What's the min and max value of a signed 32 bit integer?
@@ -2105,17 +2105,17 @@ Max Value:  2^31 - 1 ==  2_147_483_647
 Min Value: -2^31     == -2_147_483_648
 
 *** Signed Long Range                                                 :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       d9b3e739-4b04-47c1-ad84-1157606b7e14
-    :DRILL_LAST_INTERVAL: 1.5442
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.5685
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_AVERAGE_QUALITY: 4.5
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:36]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:28]
     :END:
 
 What's the min and max value of a signed 64 bit integer?
@@ -2126,17 +2126,17 @@ Min Value: -9.22+18
 
 
 *** Float Range                                                       :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       e4686fe9-e787-4c9a-b649-ff12ba8b0317
-    :DRILL_LAST_INTERVAL: 1.5338
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 4.5192
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:46]
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:24]
     :END:
 
 What's the min and max value of a single-precision float?
@@ -2149,17 +2149,17 @@ Min Value: -3.4E38
 Also, Positive Infinity and Negative Infinity.
 
 *** Double Range                                                      :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       5e80ee5a-da72-4be2-a3d8-bbea341e1953
-    :DRILL_LAST_INTERVAL: 1.7986
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.0645
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_AVERAGE_QUALITY: 3.333
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:42]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:28]
     :END:
 
 What's the min and max value of a double-precision float?
@@ -4923,17 +4923,17 @@ It only exists to serve the enclosing class.  If the nested class were useful in
 some other context, then it should be top level class.
 
 *** Item 22: Favor static member classes - four kinds of nested       :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-04-15 Fri>
 :PROPERTIES:
 :ID:       6da50916-c4a8-450d-8713-47e5b42389c1
-:DRILL_LAST_INTERVAL: 15.9119
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 57.4666
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_AVERAGE_QUALITY: 4.25
 :DRILL_EASE: 2.6
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 11:55]
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:29]
 :END:
 
 What are the four types of nested classes?
@@ -5626,17 +5626,17 @@ hamburgers, roller-coaster
    ~List[]~.
 
 *** Item 25: Prefer Lists to Arrays - non-reifiable types             :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-03-15 Tue>
 :PROPERTIES:
 :ID:       e3e1158d-d2f7-4011-baf4-469eec5ee54f
-:DRILL_LAST_INTERVAL: 9.6087
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 25.8397
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:21]
+:DRILL_AVERAGE_QUALITY: 3.3
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:25]
 :END:
 
 What are the non-reifiable types in Java?
@@ -5650,17 +5650,17 @@ What are the non-reifiable types in Java?
    ~Comparable<? super string>~
 
 *** Item 25: Prefer Lists to Arrays - varargs                         :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-04-01 Fri>
 :PROPERTIES:
 :ID:       e69bf276-a239-4b57-8d9d-95fdb7f32340
-:DRILL_LAST_INTERVAL: 14.4109
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 43.4983
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:33]
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:31]
 :END:
 
 Should you use generics with varargs?
@@ -5734,17 +5734,17 @@ At the construction site or at the call site.  The construction site is more
 common because it only has to happen once.
 
 *** Item 27: Favor Generic Methods - reduce redundancy                :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-03-30 Wed>
 :PROPERTIES:
 :ID:       1acd593f-72cb-452b-a596-5928c5887c77
-:DRILL_LAST_INTERVAL: 13.5031
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 41.4143
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:25]
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:32]
 :END:
 
 How can you reduce the redundancy of instantiating a generic type?
@@ -6094,17 +6094,17 @@ public enum Operation {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - share code                    :drill:
-SCHEDULED: <2016-02-18 Thu>
+SCHEDULED: <2016-03-17 Thu>
 :PROPERTIES:
 :ID:       136d094a-ed19-458a-83d2-fc077daed11a
-:DRILL_LAST_INTERVAL: 11.5282
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 28.0533
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:31]
+:DRILL_AVERAGE_QUALITY: 3.2
+:DRILL_EASE: 2.22
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:32]
 :END:
 
 What's the best way to share behavior specific code between enums?
@@ -6983,17 +6983,17 @@ public void foo(int a1, int a2, int a3, int... rest) { }
 #+END_SRC
 
 *** Item 43: return empty arrays or collections, not nulls - why      :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-03-08 Tue>
     :PROPERTIES:
     :ID:       5680d835-14fc-4ca5-8161-972476035b17
-    :DRILL_LAST_INTERVAL: 6.2464
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 18.7247
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:28]
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
     :END:
 
 Why should you return empty arrays or collections instead of nulls?
@@ -7452,17 +7452,17 @@ This blog post actually runs tests.  The results:
 2. Java 8 does not currently optimize dynamic string concatenation.
 
 *** Item 52: Refer to objects by interface - what                     :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       08e4da20-d626-4bea-a23a-3713e16872b4
-    :DRILL_LAST_INTERVAL: 1.6329
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6121
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:29]
     :END:
 
 Why should you use interfaces as types?
@@ -7473,17 +7473,17 @@ Your program will be much more flexible.  You can change the representation
 without changing the code.
 
 *** Item 52: Refer to objects by interface - Why not                  :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       225337f9-afff-4654-b679-d5973912472d
-    :DRILL_LAST_INTERVAL: 1.8622
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.2683
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_AVERAGE_QUALITY: 4.5
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:46]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
     :END:
 
 When is it appropriate to refer to an object by it's class rather than its
@@ -7497,17 +7497,17 @@ interface?
 3. When the class adds extra methods and you need those methods.
 
 *** Item 53: Prefer interfaces to reflection - why                    :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-23 Tue>
     :PROPERTIES:
     :ID:       934c577e-6cb6-476d-a1fc-8ce3e5a91639
-    :DRILL_LAST_INTERVAL: 1.7582
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.0164
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_AVERAGE_QUALITY: 4.5
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:26]
     :END:
 
 What are the disadvantages of using reflection as opposed to interfaces?
@@ -7519,17 +7519,17 @@ What are the disadvantages of using reflection as opposed to interfaces?
 3. Performance suffers.
 
 *** Item 53: Prefer interfaces to reflection - restricted reflection  :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       5a94b79a-5bf7-49dd-a18c-d06d09d3fd50
-    :DRILL_LAST_INTERVAL: 1.5682
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.0695
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:37]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
     :END:
 
 What's one way to gain many benefits of reflection without the disadvantages?
@@ -7587,17 +7587,17 @@ What are Bloch's principles for writing programs with regards to optimization?
 
    
 *** Item 56: Adhere to generally accepted naming conventions          :drill:
-    SCHEDULED: <2016-02-18 Thu>
+    SCHEDULED: <2016-02-22 Mon>
     :PROPERTIES:
     :ID:       4880dd30-9a68-4417-9e95-584e0e4064e9
-    :DRILL_LAST_INTERVAL: 1.4709
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.8377
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
     :END:
 
 What naming conventions should you follow for returning a view?
@@ -7609,8 +7609,20 @@ Use ~asTYPE~.
 ** Exceptions
 
 *** Item 57: Use exceptions only for exceptional circumstances        :drill:
+    SCHEDULED: <2016-02-20 Sat>
+    :PROPERTIES:
+    :ID:       888eb272-031c-4e69-afc2-468734d7792b
+    :DRILL_LAST_INTERVAL: 1.9818
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:30]
+    :END:
 
-When should prefer distinguished return values over state checking for control
+When should you prefer distinguished return values over state checking for control
 flow in an API?
 
 **** Answer
@@ -7623,6 +7635,18 @@ All other things being equal, state-testing is slightly preferable to
 distinguished return value because it's easier to read and detect.
 
 *** Item 58: Use checked exceptions for recoverable conditions        :drill:
+    SCHEDULED: <2016-02-20 Sat>
+    :PROPERTIES:
+    :ID:       39245b2e-7243-495a-924a-b72672a27507
+    :DRILL_LAST_INTERVAL: 1.7142
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:29]
+    :END:
 
 When should you use checked exceptions and when do you use runtime exceptions?
 
@@ -7636,6 +7660,18 @@ Use runtime exceptions to indicate programming errors.
 If you're unsure that recovery is possible, make it a runtime exception.
 
 *** Item 58: Use Checked exceptions for recoverable conditions - info :drill:
+    SCHEDULED: <2016-02-19 Fri>
+    :PROPERTIES:
+    :ID:       a9b6d7d3-80a1-45b7-b4a1-36f27eb88bde
+    :DRILL_LAST_INTERVAL: 1.4812
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:30]
+    :END:
 
 What additional information should you include in a checked exception?
 
