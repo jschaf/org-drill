@@ -241,17 +241,17 @@ What floating point literals does Java support?
 + underscores, anywhere but the beginning and the end or next to a decimal
 
 *** Char literals                                                     :drill:
-SCHEDULED: <2016-02-19 Fri>
+SCHEDULED: <2016-05-21 Sat>
 :PROPERTIES:
 :ID:       6ace1daf-5b6a-469b-b110-39ed0119e184
-:DRILL_LAST_INTERVAL: 27.1888
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 92.0276
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:45]
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:06]
 :END:
 
 What char and string literals does Java support?
@@ -548,17 +548,17 @@ What other conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Flags                                                 :drill:
-SCHEDULED: <2016-02-19 Fri>
+SCHEDULED: <2016-04-19 Tue>
 :PROPERTIES:
 :ID:       28483543-3abc-46e8-9d14-dbaa606e6ca8
-:DRILL_LAST_INTERVAL: 21.7197
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 60.109
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:48]
+:DRILL_AVERAGE_QUALITY: 3.429
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:10]
 :END:
 
 What flags does java.util.Formatter support?
@@ -626,17 +626,17 @@ Integer.toString(100, 16) == "64"
 #+END_SRC
 
 *** Integral different base - BigInteger                             :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-28 Sun>
     :PROPERTIES:
     :ID:       5e672982-0265-4c17-877d-ef1e10bc25fd
-    :DRILL_LAST_INTERVAL: 3.2518
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 8.7405
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:34]
+    :DRILL_AVERAGE_QUALITY: 4.333
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:05]
     :END:
 
 How do you get an integral representation of a ~BigInteger~?
@@ -1417,6 +1417,18 @@ http://stackoverflow.com/questions/22516331/whats-the-difference-between-instanc
 http://stackoverflow.com/questions/32283833/please-explain-java-8-method-reference-to-instance-method-using-class-name
 
 *** Throwable                                                         :drill:
+    SCHEDULED: <2016-02-20 Sat>
+    :PROPERTIES:
+    :ID:       f45f7d1a-32cb-4b1f-b692-3bec6a30155d
+    :DRILL_LAST_INTERVAL: 1.4822
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:06]
+    :END:
 
 What is a Throwable in Java?
 
@@ -1426,6 +1438,18 @@ https://docs.oracle.com/javase/8/docs/api/java/lang/Throwable.html
 It's the supertype for Exception and Error.
 
 *** Point of checked exceptions                                       :drill:
+    SCHEDULED: <2016-02-21 Sun>
+    :PROPERTIES:
+    :ID:       9380c12c-faec-4384-9417-f84a2a2119d1
+    :DRILL_LAST_INTERVAL: 1.5384
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:10]
+    :END:
 
 What's the point of checked exceptions?
 
@@ -1622,17 +1646,17 @@ So, now we represent 8 - 3 in binary which is 5, or 101.  With the sign bit, -3
 is represented as 1101 in two's complement.
 
 *** Get bit at index i                                                :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       37841d26-b7f7-4ef2-a54b-09e397566078
-    :DRILL_LAST_INTERVAL: 9.4574
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 24.412
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.333
-    :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.66
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:05]
     :END:
 
 How do you get the bit at a specific index of an integer?
@@ -3064,17 +3088,17 @@ Store only weak references to them, e.g. storing as keys in a WeakHashMap.
 http://www.java-tips.org/java-se-tips-100019/88888889-java-util/1475-using-weakhashmap-for-listener-lists.html
 
 *** Item 07: Avoid Finalizers                                         :drill:
-SCHEDULED: <2016-02-19 Fri>
+SCHEDULED: <2016-03-29 Tue>
 :PROPERTIES:
 :ID:       bdd9bdf4-1a9d-4976-a137-25dbdafdd20d
-:DRILL_LAST_INTERVAL: 13.0853
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 14
+:DRILL_LAST_INTERVAL: 38.8563
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 15
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.286
-:DRILL_EASE: 2.62
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.72
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:53]
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:11]
 :END:
 
 What are the issues with finalizers?
@@ -3561,17 +3585,17 @@ What interface do you use to implement clone?
 Cloneable
 
 *** Item 11: Override Clone Judiciously - semantics                   :drill:
-SCHEDULED: <2016-02-19 Fri>
+SCHEDULED: <2016-04-10 Sun>
 :PROPERTIES:
 :ID:       2d019765-a799-40ba-86bd-599258d1e641
-:DRILL_LAST_INTERVAL: 21.2368
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 50.9486
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:44]
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:12]
 :END:
 
 What does cloneable do?
@@ -3893,17 +3917,17 @@ public int compareTo(PhoneNumber pn) {
 #+END_SRC
 
 *** Item 12: Implement Comparable: Guava Impl                         :drill:
-SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :ID:       ecd99002-0134-43ff-b96d-f0b7a5efad52
-:DRILL_LAST_INTERVAL: 22.0619
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.36
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 00:52]
+:DRILL_LAST_INTERVAL: 1.9603
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.46
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:12]
 :END:
 
 What does an implementation for Comparable look like with Guava?
@@ -5071,17 +5095,17 @@ Where can you write an anonymous class?
 Anywhere an expression is legal.
 
 *** Item 22: Favor static member classes - anon class limitations     :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-24 Wed>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
-:DRILL_LAST_INTERVAL: 1.5727
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 13
+:DRILL_LAST_INTERVAL: 4.5345
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 14
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.308
+:DRILL_AVERAGE_QUALITY: 3.357
 :DRILL_EASE: 2.72
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:27]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:05]
 :END:
 
 What are the limitations on an anonymous class?
@@ -6043,17 +6067,17 @@ collection?
 
 ** Enums and Annotations
 *** Item 30: Use Enum instead of ints - associate data                :drill:
-SCHEDULED: <2016-02-19 Fri>
+SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       710d241f-434c-417c-a8c5-ad488101af9d
-:DRILL_LAST_INTERVAL: 10.9268
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 35.8155
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:17]
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:10]
 :END:
 
 How do you associate data with an enum?
@@ -6197,18 +6221,18 @@ When is it okay to switch on an enum?
 If you're augmenting external enum types with constant specific behavior.
 
 *** Item 31: Use instance fields instead of ordinals - rule           :drill:
-SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-21 Sun>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64926446-cac5-4356-bff2-a764342f1727
-:DRILL_LAST_INTERVAL: 12.1177
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_LAST_INTERVAL: 1.5749
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 5
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:44]
+:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:13]
 :END:
 
 Never derive a value associated with an enum from its [ordinal]; store it in an
@@ -7026,17 +7050,17 @@ There is no reason to return null.
 + It's easier for the client because they don't have to handle the null case.
 
 *** Item 44: Write doc comments - what to include                     :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-29 Mon>
     :PROPERTIES:
     :ID:       c72f9e94-b337-47ec-b7ac-7360f0fc6360
-    :DRILL_LAST_INTERVAL: 4.1921
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 9.7929
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.2
+    :DRILL_AVERAGE_QUALITY: 3.333
     :DRILL_EASE: 2.46
     :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:30]
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:03]
     :END:
 
 What should you include in a doc comment?
@@ -7108,37 +7132,37 @@ Nearly every local variable should contain an _?
 Initializer
 
 *** Item 45: Minimize scope of local vars - skipping initialization   :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-03-07 Mon>
     :PROPERTIES:
     :ID:       e05cf4e2-0798-4d5b-84fe-c751786bba03
-    :DRILL_LAST_INTERVAL: 6.1418
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.7512
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:05]
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:02]
     :END:
 
-When is it acceptable to  postpone initialization of local variables?
+When is it acceptable to postpone initialization of local variables?
 
 **** Answer
 
 When using a try-catch block.
 
 *** Item 46: Prefer for-each loops - why                              :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       d1e99a54-2063-424a-900b-0acde4fc4f69
-    :DRILL_LAST_INTERVAL: 4.1382
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.2207
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:30]
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:02]
     :END:
 
 Why should you prefer for-each loops?
@@ -7560,17 +7584,17 @@ Create instances reflectively and access them normally via their interface or
 superclass.
 
 *** Item 54: Use native methods judiciously                           :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-24 Wed>
     :PROPERTIES:
     :ID:       1439c72b-2fbc-425e-96a7-0a57c70ec955
-    :DRILL_LAST_INTERVAL: 1.7207
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 5.4314
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.25
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 3.6
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:22]
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:05]
     :END:
 
 What are the downsides of native methods?
@@ -7583,17 +7607,17 @@ What are the downsides of native methods?
 4. Tedious and error prone to write.
 
 *** Item 55: Optimize Judiciously - principles                        :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-20 Sat>
     :PROPERTIES:
     :ID:       40d70f6a-2f26-4848-8f89-a5ccedec209a
-    :DRILL_LAST_INTERVAL: 2.0142
+    :DRILL_LAST_INTERVAL: 1.4676
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:27]
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:13]
     :END:
 
 What are Bloch's principles for writing programs with regards to optimization?
@@ -7680,17 +7704,17 @@ Use runtime exceptions to indicate programming errors.
 If you're unsure that recovery is possible, make it a runtime exception.
 
 *** Item 58: Use checked exceptions for recoverable conditions - info :drill:
-    SCHEDULED: <2016-02-19 Fri>
+    SCHEDULED: <2016-02-24 Wed>
     :PROPERTIES:
     :ID:       a9b6d7d3-80a1-45b7-b4a1-36f27eb88bde
-    :DRILL_LAST_INTERVAL: 1.4812
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.5598
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:30]
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:04]
     :END:
 
 What additional information should you include in a checked exception?
@@ -7701,6 +7725,18 @@ Since exceptions are full-fledged objects, include any information that could
 help the client recover.
 
 *** Item 59: Avoid unnecessary use of checked exceptions              :drill:
+    SCHEDULED: <2016-02-20 Sat>
+    :PROPERTIES:
+    :ID:       abd8f525-8a37-45b3-8388-d0b5ae53bafc
+    :DRILL_LAST_INTERVAL: 1.4796
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:12]
+    :END:
 
 When is the burden of checked exceptions okay?
 
@@ -7710,6 +7746,18 @@ When the exceptional condition cannot be prevented by proper use of the API /and
 the programmer can take some useful action when confronted by the exception.
 
 *** Item 59: Avoid unnecessary use of checked exceptions              :drill:
+    SCHEDULED: <2016-02-21 Sun>
+    :PROPERTIES:
+    :ID:       0c4605b3-88d9-4b9c-9e22-744cd512bcd2
+    :DRILL_LAST_INTERVAL: 1.8688
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:13]
+    :END:
 
 How can you transform a checked exception into an unchecked exception?
 
@@ -7721,6 +7769,18 @@ would not.  That approach is the same as using the state testing approach.
 Guava Throwables.propagate(e)
 
 *** Item 60: Favor the use of standard exceptions                     :drill:
+    SCHEDULED: <2016-02-20 Sat>
+    :PROPERTIES:
+    :ID:       9cc909b1-8d6d-4791-ac90-0400f991db1f
+    :DRILL_LAST_INTERVAL: 1.4354
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:12]
+    :END:
 
 What are the most common exceptions in Java?
 
@@ -7732,6 +7792,40 @@ What are the most common exceptions in Java?
 + ~IndexOutOfBoundsException~
 + ~ConcurrentModificationException~
 + ~UnspportedOperationException~
+
+*** Item 61: Throw exceptions appropriate to the abstraction          :drill:
+
+How should you handle exceptions in a higher layer that come from a lower layer?
+
+**** Answer
+
+Catch the low-level exception and throw an exception that can be explained in
+the terms of the higher level abstraction.
+
+#+BEGIN_SRC java
+public E get(int index) {
+    ListIterator<E> i = listIterator(index);
+    try {
+        return i.next();
+    } catch(NoSuchElementException e) {
+        throw new IndexOutOfBoundsException("Index: " + index);
+    }
+}
+#+END_SRC
+
+The best approach is often to use exception chaining, which preserves details
+about the exception.
+
+*** Item 62: Document all exceptions thrown by each method            :drill:
+
+How should you document exceptions?
+
+**** Answer
+
++ Declare checked exceptions individually.
++ Document precisely the conditions under which each exception is thrown using
+  the Javadoc @throws tag.
++ If an exception is thrown by many methods, you can document it in the class.
 
 
 * Consulting
