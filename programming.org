@@ -7851,6 +7851,68 @@ How should you document exceptions?
   the Javadoc @throws tag.
 + If an exception is thrown by many methods, you can document it in the class.
 
+*** Item 63: Include failure capture information - detail message     :drill:
+
+What information should go into an exception detail message?
+
+**** Answer
+
+All values of parameters and fields that contributed to the exception.
+
+*** Item 63: Include failure capture information - prose              :drill:
+
+Do you include prose in an exception detail message?
+
+**** Answer
+
+Generally not, because exceptions will be accompanied by the source code, so
+only include hard data.
+
+*** Item 63: Include failure capture information - force detail       :drill:
+
+What's one way to force good detail messages for exceptions?
+
+**** Answer
+
+Provide a constructor that takes in detail message parameters, like:
+
+#+BEGIN_SRC java
+public IndexOutOfBoundsException(int lowerBound, int upperBound, int index)
+#+END_SRC
+
+*** Item 64: Strive for failure atomicity - definition                :drill:
+
+What is failure atomicity?
+
+**** Answer
+
+When a failed method invocation leaves the object in the state prior to the invocation.
+
+*** Item 64: Strive for failure atomicity - achieve atomicity         :drill:
+
+What ways can you achieve failure atomicity?
+
+**** Answer
+
+1. Use immutable objects.
+2. Check parameters for validity before performing the operation.
+3. Order the computation so that any part that might fail occurs before any part
+   that modifies the object.
+4. Write recovery code to roll-back an object.
+5. Perform the operation on a temporary object and replace the contents of the
+   object after the operation succeeds
+   
+*** Item 65 - Don't ignore exceptions                                 :drill:
+
+Why shouldn't you ignore exceptions?
+
+**** Answer
+
+The API designer is trying to tell you something and ignoring an exception
+defeats the purpose of the exception.
+
+If you are ignoring an exception, at least explain why it is appropriate to
+ignore it.
 
 * Consulting
 ** Breaking the Time Barrier
