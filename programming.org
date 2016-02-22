@@ -356,17 +356,17 @@ What are Java's reference types and when do they get garbage collected?
 + PhantomReference - relate to cleanup and offer notification before finalization
 
 *** Formatting String                                                 :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-05-12 Thu>
 :PROPERTIES:
 :ID:       fc8e3d5f-db93-4482-a0b9-5b55cec511c8
-:DRILL_LAST_INTERVAL: 28.5502
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 80.241
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:33]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:17]
 :END:
 
 How do you format a string in Java?
@@ -610,6 +610,18 @@ All the same methods on Long.
 #+END_SRC
 
 *** Integral different base - literal version                         :drill:
+    SCHEDULED: <2016-02-23 Tue>
+    :PROPERTIES:
+    :ID:       8A69B0A0-82AA-4FA2-9798-EC5EEED6E449
+    :DRILL_LAST_INTERVAL: 1.4655
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:16]
+    :END:
 
 How do you get an integral representation in a different base that isn't in
 two's complement form?
@@ -1103,17 +1115,17 @@ Equal objects must produce the same hash code as long as they are equal,
 however unequal objects need not produce distinct hash codes.
 
 *** Interfaces: Call default methods                                  :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-04-13 Wed>
 :PROPERTIES:
 :ID:       91df68d1-253f-4f3f-84f4-005400946e02
-:DRILL_LAST_INTERVAL: 15.5659
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 51.2468
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:24]
 :END:
 
 How do you call a default method explicitly?
@@ -1617,17 +1629,17 @@ http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-
 
 ** Bit Manipulation
 *** Two's Complement - Definition                                     :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-17 Thu>
     :PROPERTIES:
     :ID:       bf7dd9b4-621d-493a-8c46-73a89d4486dc
-    :DRILL_LAST_INTERVAL: 8.5064
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 24.0032
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:12]
+    :DRILL_AVERAGE_QUALITY: 3.8
+    :DRILL_EASE: 2.66
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
     :END:
 
 How are numbers represented in two's complement?
@@ -2149,17 +2161,17 @@ Max Value:  2^31 - 1 ==  2_147_483_647
 Min Value: -2^31     == -2_147_483_648
 
 *** Signed Long Range                                                 :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       d9b3e739-4b04-47c1-ad84-1157606b7e14
-    :DRILL_LAST_INTERVAL: 3.5685
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 10.1524
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:28]
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
     :END:
 
 What's the min and max value of a signed 64 bit integer?
@@ -3393,17 +3405,17 @@ How do you implement hashCode for an object?
    result = 31 * result + c;
 
 *** Item 09: hashCode optimizations                                   :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-05-08 Sun>
 :PROPERTIES:
 :ID:       078c43bc-8da6-4529-9389-a9d7b8f9b156
-:DRILL_LAST_INTERVAL: 28.6419
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 75.9172
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:23]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:22]
 :END:
 
 How to you speed up hashCode?
@@ -4290,17 +4302,17 @@ This is composition because the existing class becomes a component of the new
 class.
 
 *** Item 16: Favor Composition - drawbacks                            :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-04-06 Wed>
 :PROPERTIES:
 :ID:       c811f48e-2ce7-462e-b064-6182dbc51b56
-:DRILL_LAST_INTERVAL: 16.2875
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 43.7618
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.86
+:DRILL_AVERAGE_QUALITY: 4.1
+:DRILL_EASE: 2.96
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:52]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:16]
 :END:
 
 What are the drawbacks of composition, specifically of forwarding classes?
@@ -5956,17 +5968,17 @@ If the user has to think about wildcard types, there's probably something wrong
 with the API.
 
 *** Item 28: Use Bounded Wildcards - explicit type parameters         :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-31 Thu>
 :PROPERTIES:
 :ID:       09978df4-e085-458f-9ca4-e6c7e677489e
-:DRILL_LAST_INTERVAL: 12.2086
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 38.0807
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:44]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:23]
 :END:
 
 How do you add explicit type parameters?
@@ -6088,17 +6100,17 @@ Declare an instance field and write a constructor that takes the data and stores
 it in the field.
 
 *** Item 30: Use Enum instead of ints - top-level vs member           :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-04-08 Fri>
 :PROPERTIES:
 :ID:       fbae22a9-8b04-4416-886b-805b27f3d971
-:DRILL_LAST_INTERVAL: 14.2429
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 45.5772
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:18]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:24]
 :END:
 
 Should you declare an enum as a top-level class or a member class?
@@ -6300,17 +6312,17 @@ How should you map an Enum to a value?
 An ~EnumMap~.
 
 *** Item 34: Emulate extensible enum with interfaces - use case       :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-29 Tue>
     :PROPERTIES:
     :ID:       1ad79362-654d-44b8-8bfe-641a9b3e444d
-    :DRILL_LAST_INTERVAL: 11.5179
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 36.4332
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:45]
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
     :END:
 
 What's the compelling use-case for extensible enums?
@@ -6320,17 +6332,17 @@ What's the compelling use-case for extensible enums?
 opcodes
 
 *** Item 34: Emulate extensible enum with interfaces - how to         :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-31 Thu>
     :PROPERTIES:
     :ID:       7d8eddbb-d46c-4978-9a7e-4a4791a9fdca
-    :DRILL_LAST_INTERVAL: 12.3105
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 37.8792
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:46]
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:23]
     :END:
 
 How do you emulate extensible enums?
@@ -6476,17 +6488,17 @@ http://stackoverflow.com/questions/26271786/marker-annotation-vs-marker-interfac
 
 
 *** Item 37: Use marker interfaces to define types - benefits         :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       f3372f70-e742-4f91-abda-efe7509bf925
-    :DRILL_LAST_INTERVAL: 9.6742
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 27.5637
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:25]
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
     :END:
 
 What are the benefits of marker types over marker annotations?
@@ -7563,17 +7575,17 @@ What are the disadvantages of using reflection as opposed to interfaces?
 3. Performance suffers.
 
 *** Item 53: Prefer interfaces to reflection - restricted reflection  :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-08 Tue>
     :PROPERTIES:
     :ID:       5a94b79a-5bf7-49dd-a18c-d06d09d3fd50
-    :DRILL_LAST_INTERVAL: 4.0695
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.2868
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
     :END:
 
 What's one way to gain many benefits of reflection without the disadvantages?
@@ -7631,17 +7643,17 @@ What are Bloch's principles for writing programs with regards to optimization?
 
    
 *** Item 56: Adhere to generally accepted naming conventions          :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       4880dd30-9a68-4417-9e95-584e0e4064e9
-    :DRILL_LAST_INTERVAL: 3.8377
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 9.9031
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
     :END:
 
 What naming conventions should you follow for returning a view?
@@ -7769,17 +7781,17 @@ would not.  That approach is the same as using the state testing approach.
 Guava Throwables.propagate(e)
 
 *** Item 60: Favor the use of standard exceptions                     :drill:
-    SCHEDULED: <2016-02-22 Mon>
+    SCHEDULED: <2016-02-26 Fri>
     :PROPERTIES:
     :ID:       9cc909b1-8d6d-4791-ac90-0400f991db1f
-    :DRILL_LAST_INTERVAL: 1.4941
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.1303
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 3.4
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:42]
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:14]
     :END:
 
 What are the most common exceptions in Java?
@@ -7852,6 +7864,18 @@ How should you document exceptions?
 + If an exception is thrown by many methods, you can document it in the class.
 
 *** Item 63: Include failure capture information - detail message     :drill:
+    SCHEDULED: <2016-02-23 Tue>
+    :PROPERTIES:
+    :ID:       6B8BA896-B4A3-4856-B686-6E124C3E9CD2
+    :DRILL_LAST_INTERVAL: 1.498
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:16]
+    :END:
 
 What information should go into an exception detail message?
 
@@ -7860,6 +7884,18 @@ What information should go into an exception detail message?
 All values of parameters and fields that contributed to the exception.
 
 *** Item 63: Include failure capture information - prose              :drill:
+    SCHEDULED: <2016-02-24 Wed>
+    :PROPERTIES:
+    :ID:       C034C19C-1925-45E1-AFC5-977D24EEAF52
+    :DRILL_LAST_INTERVAL: 1.6934
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:23]
+    :END:
 
 Do you include prose in an exception detail message?
 
@@ -7869,6 +7905,18 @@ Generally not, because exceptions will be accompanied by the source code, so
 only include hard data.
 
 *** Item 63: Include failure capture information - force detail       :drill:
+    SCHEDULED: <2016-02-24 Wed>
+    :PROPERTIES:
+    :ID:       CA76A677-87AF-461D-84CF-EA19D6634C55
+    :DRILL_LAST_INTERVAL: 1.7306
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:17]
+    :END:
 
 What's one way to force good detail messages for exceptions?
 
@@ -7881,6 +7929,18 @@ public IndexOutOfBoundsException(int lowerBound, int upperBound, int index)
 #+END_SRC
 
 *** Item 64: Strive for failure atomicity - definition                :drill:
+    SCHEDULED: <2016-02-24 Wed>
+    :PROPERTIES:
+    :ID:       9A82D17A-4E5E-45AE-B138-22E72BB5D14B
+    :DRILL_LAST_INTERVAL: 1.6422
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:23]
+    :END:
 
 What is failure atomicity?
 
@@ -7889,6 +7949,18 @@ What is failure atomicity?
 When a failed method invocation leaves the object in the state prior to the invocation.
 
 *** Item 64: Strive for failure atomicity - achieve atomicity         :drill:
+    SCHEDULED: <2016-02-24 Wed>
+    :PROPERTIES:
+    :ID:       5BFAE971-C8AD-421A-AB2E-702097409EEA
+    :DRILL_LAST_INTERVAL: 1.6566
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:24]
+    :END:
 
 What ways can you achieve failure atomicity?
 
@@ -7903,6 +7975,18 @@ What ways can you achieve failure atomicity?
    object after the operation succeeds
    
 *** Item 65 - Don't ignore exceptions                                 :drill:
+    SCHEDULED: <2016-02-24 Wed>
+    :PROPERTIES:
+    :ID:       3AD966E6-F3AD-42BA-90CB-A448ADEE1B79
+    :DRILL_LAST_INTERVAL: 1.944
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:23]
+    :END:
 
 Why shouldn't you ignore exceptions?
 
@@ -7918,17 +8002,17 @@ ignore it.
 ** Breaking the Time Barrier
 
 *** Seven Mutual Benefits                                           :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-04-06 Wed>
 :PROPERTIES:
 :ID:       8EA0BF20-DE9A-418A-B275-3D0A6BC3CDC6
-:DRILL_LAST_INTERVAL: 31.5908
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 43.9621
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.625
-:DRILL_EASE: 1.94
+:DRILL_AVERAGE_QUALITY: 2.667
+:DRILL_EASE: 1.8
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:24]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:22]
 :END:
 
 What are the seven mutual benefits of exploring value with clients?
@@ -8159,17 +8243,17 @@ cannot be patched up to make it work. You have to start over with a working
 simple system. – John Gall (1975, p.71)
 
 *** Revise System                                                     :drill:
-SCHEDULED: <2016-02-22 Mon>
+SCHEDULED: <2016-04-23 Sat>
 :PROPERTIES:
 :ID:       5e20c306-4d50-4d12-b458-ef270f9c1242
-:DRILL_LAST_INTERVAL: 23.7189
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 61.3467
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.222
-:DRILL_EASE: 2.28
+:DRILL_AVERAGE_QUALITY: 3.4
+:DRILL_EASE: 2.38
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:35]
+:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:24]
 :END:
 
 How do you revise your system of accomplishment on a really, regular basis with
