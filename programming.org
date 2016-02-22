@@ -7998,6 +7998,83 @@ defeats the purpose of the exception.
 If you are ignoring an exception, at least explain why it is appropriate to
 ignore it.
 
+** Concurrency
+*** Item 66: Synchronize access to shared mutable data - purpose      :drill:
+
+What two functions does synchronization perform?
+
+**** Answer
+
+1. *Mutual exclusion* - a thread on cause a state transition, from one
+   consistent state to another.
+2. *Reliable communication* - Ensures that each thread entering a synchronized block sees the effects of
+   all previous modifications.
+
+*** Item 66: Synchronize access to shared mutable data - atomic       :drill:
+
+Which variable reads and writes are atomic in Java?
+
+**** Answer
+
+All variables except long and double.
+
+*** Item 66: Synchronize access to shared mutable data - liveness     :drill:
+
+Even though reads and writes are atomic, why might you want to synchronize
+access to a boolean that one thread modifies?
+
+**** Answer
+
+To prevent JVM optimization such as hoisting that might break concurrency.
+
+#+BEGIN_SRC java
+while (!stopRequested)
+    i++;
+
+// could be transformed into
+
+if (!done)
+    while (true)
+        i++;
+#+END_SRC
+
+*** Item 66: Synchronize access to shared mutable data - effect       :drill:
+
+What effect does synchronization have if only write access is synchronized?
+
+**** Answer
+
+No effect.  Both operations must be synchronized.
+
+*** Item 66: Synchronize access to shared mutable data - volatile     :drill:
+
+What does the volatile keyword do?
+
+**** Answer
+
+Guarantees that any thread that reads the field will see only the most recently
+written value.  Does not perform mutual exclusion.
+
+http://stackoverflow.com/questions/106591/do-you-ever-use-the-volatile-keyword-in-java
+
+*** Item 66: Synchronize access to shared mutable data - avoidance    :drill:
+
+How can you avoid problems with shared mutable data?
+
+**** Answer
+
+1. Share immutable data.
+2. Don't share at all.
+3. Confine mutable data to a single thread.
+
+*** Item 66: Synchronize access to shared mutable data - multiple     :drill:
+
+What must you do when multiple threads share mutable data?
+
+**** Answer
+
+Synchronize each thread that reads or writes the data.
+
 * Consulting
 ** Breaking the Time Barrier
 
