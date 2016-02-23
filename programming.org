@@ -284,17 +284,17 @@ Appending ".class" to a type name, e.g. String.class.  Refers to the object that
 represents the type itself.
 
 *** Arrays 1                                                          :drill:
-SCHEDULED: <2016-02-23 Tue>
+SCHEDULED: <2016-05-30 Mon>
 :PROPERTIES:
 :ID:       a19ccb8f-c14f-40c0-879b-1ed771349a05
-:DRILL_LAST_INTERVAL: 33.4739
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 97.0501
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:26]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:49]
 :END:
 
 How do you declare an array type in Java?
@@ -610,17 +610,17 @@ All the same methods on Long.
 #+END_SRC
 
 *** Integral different base - literal version                         :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       8A69B0A0-82AA-4FA2-9798-EC5EEED6E449
-    :DRILL_LAST_INTERVAL: 1.4655
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.6334
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:16]
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:44]
     :END:
 
 How do you get an integral representation in a different base that isn't in
@@ -918,17 +918,17 @@ Both StringBuilder and StringBuffer extend AbstractStringBuilder.
 http://stackoverflow.com/questions/355089/stringbuilder-and-stringbuffer
 
 *** Varargs                                                           :drill:
-SCHEDULED: <2016-02-23 Tue>
+SCHEDULED: <2016-04-28 Thu>
 :PROPERTIES:
 :ID:       7b5fe7f3-70ef-4606-b523-e246dc95cddc
-:DRILL_LAST_INTERVAL: 18.7352
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 65.1778
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:21]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:48]
 :END:
 
 How do you declare varargs in Java?
@@ -1037,17 +1037,17 @@ Arrays.deepToString(threeDimArray);
 #+END_SRC
 
 *** Create a memory leak                                              :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
-:DRILL_LAST_INTERVAL: 11.5025
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 31.967
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:36]
+:DRILL_AVERAGE_QUALITY: 3.857
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:48]
 :END:
 
 How can you create a memory leak in Java?
@@ -2140,17 +2140,17 @@ http://stackoverflow.com/questions/919612/mapping-two-integers-to-one-in-a-uniqu
 
 ** Numbers
 *** How big is an signed integer                                      :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       a758328e-4aac-43a7-b8cb-738430650182
-    :DRILL_LAST_INTERVAL: 5.4294
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 16.7196
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.667
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:26]
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:43]
     :END:
 
 What's the min and max value of a signed 32 bit integer?
@@ -2182,17 +2182,17 @@ Min Value: -9.22+18
 
 
 *** Float Range                                                       :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       e4686fe9-e787-4c9a-b649-ff12ba8b0317
-    :DRILL_LAST_INTERVAL: 4.5192
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 2
+    :DRILL_LAST_INTERVAL: 1.9845
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_FAILURE_COUNT: 3
     :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:24]
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:51]
     :END:
 
 What's the min and max value of a single-precision float?
@@ -2205,17 +2205,17 @@ Min Value: -3.4E38
 Also, Positive Infinity and Negative Infinity.
 
 *** Double Range                                                      :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-02-25 Thu>
     :PROPERTIES:
     :ID:       5e80ee5a-da72-4be2-a3d8-bbea341e1953
-    :DRILL_LAST_INTERVAL: 5.0645
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.333
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:28]
+    :DRILL_LAST_INTERVAL: 1.6336
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.4
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:51]
     :END:
 
 What's the min and max value of a double-precision float?
@@ -2895,17 +2895,17 @@ How do you make an abstract factory from a builder pattern?
    {...}~
 
 *** Item 03: Singleton Impl                                           :drill:
-SCHEDULED: <2016-02-23 Tue>
+SCHEDULED: <2016-06-29 Wed>
 :PROPERTIES:
 :ID:       aa694923-3d0b-4674-a339-df7d29f8065c
-:DRILL_LAST_INTERVAL: 36.4805
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 126.9596
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-18 Mon 03:22]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:49]
 :END:
 
 What are the three common methods for implementing a Singleton in Java?
@@ -3173,17 +3173,17 @@ What are valid use cases for finalizers?
 + Native peers, assuming the native peer holds no critical resources.
 
 *** Item 07: Avoid Finalizers - Safe Impl                             :drill:
-SCHEDULED: <2016-02-23 Tue>
+SCHEDULED: <2016-04-22 Fri>
 :PROPERTIES:
 :ID:       6262a0ed-cd87-446f-b258-f05c1037d8c9
-:DRILL_LAST_INTERVAL: 25.6547
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 59.1303
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.285
-:DRILL_EASE: 2.08
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:05]
+:DRILL_AVERAGE_QUALITY: 3.499
+:DRILL_EASE: 2.18
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:46]
 :END:
 
 How should you implement finalizers if you must?
@@ -4777,17 +4777,17 @@ class Figure {
 #+END_SRC
 
 *** Item 20: Prefer class hierarchies over tags - why bad             :drill:
-SCHEDULED: <2016-02-23 Tue>
+SCHEDULED: <2016-04-16 Sat>
 :PROPERTIES:
 :ID:       26e60c15-d309-4102-b78b-d63528fa4614
-:DRILL_LAST_INTERVAL: 15.3826
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 53.2326
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.778
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 3.9
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:14]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:50]
 :END:
 
 Why are tagged classes bad?
@@ -5726,17 +5726,17 @@ Should you use generics with varargs?
 No, since varargs are an array, it doesn't play nice with generics.
 
 *** Item 25: Prefer Lists to Arrays - mixing arrays and generics      :drill:
-SCHEDULED: <2016-02-23 Tue>
+SCHEDULED: <2016-04-19 Tue>
 :PROPERTIES:
 :ID:       ff3d89a2-4c25-464e-acaf-65fa4d24a868
-:DRILL_LAST_INTERVAL: 17.4112
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 56.2941
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:49]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:48]
 :END:
 
 When having trouble with arrays and generics what should you do?
@@ -6121,17 +6121,17 @@ If the enum is generally useful, declare it as a top-level class.  If it's
 specific to one class, declare it as member of the specific class.
 
 *** Item 30: Use Enum instead of ints - switches on enums             :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-04-03 Sun>
 :PROPERTIES:
 :ID:       e9da0beb-da67-4fed-8c42-0e83ddf8a1e3
-:DRILL_LAST_INTERVAL: 13.1244
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 40.2154
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.286
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:43]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:45]
 :END:
 
 What should you generally use instead of switches on enums?
@@ -7437,17 +7437,17 @@ String compoundKey = className + "#" + i.next();
 Write a private static member class to represent the aggregate.
 
 *** Item 50: Avoid strings where other types are better - capability  :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       acd625bc-f054-45cd-8ec5-26d577d65451
-    :DRILL_LAST_INTERVAL: 5.5291
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.0246
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:17]
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:45]
     :END:
 
 How can you replace a String with that represents a capability with an
@@ -7508,17 +7508,17 @@ This blog post actually runs tests.  The results:
 2. Java 8 does not currently optimize dynamic string concatenation.
 
 *** Item 52: Refer to objects by interface - what                     :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-07 Mon>
     :PROPERTIES:
     :ID:       08e4da20-d626-4bea-a23a-3713e16872b4
-    :DRILL_LAST_INTERVAL: 4.6121
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.9116
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:29]
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:43]
     :END:
 
 Why should you use interfaces as types?
@@ -7529,17 +7529,17 @@ Your program will be much more flexible.  You can change the representation
 without changing the code.
 
 *** Item 52: Refer to objects by interface - Why not                  :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       225337f9-afff-4654-b679-d5973912472d
-    :DRILL_LAST_INTERVAL: 5.2683
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.3183
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:44]
     :END:
 
 When is it appropriate to refer to an object by it's class rather than its
@@ -7553,17 +7553,17 @@ interface?
 3. When the class adds extra methods and you need those methods.
 
 *** Item 53: Prefer interfaces to reflection - why                    :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       934c577e-6cb6-476d-a1fc-8ce3e5a91639
-    :DRILL_LAST_INTERVAL: 5.0164
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.635
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:26]
+    :DRILL_AVERAGE_QUALITY: 4.667
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:42]
     :END:
 
 What are the disadvantages of using reflection as opposed to interfaces?
@@ -7806,17 +7806,17 @@ What are the most common exceptions in Java?
 + ~UnspportedOperationException~
 
 *** Item 61: Throw exceptions appropriate to the abstraction          :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       cc027aae-a4e6-43ab-b39b-4edd4ff0ff72
-    :DRILL_LAST_INTERVAL: 1.5537
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.4129
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:46]
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:43]
     :END:
 
 How should you handle exceptions in a higher layer that come from a lower layer?
@@ -7841,17 +7841,17 @@ The best approach is often to use exception chaining, which preserves details
 about the exception.
 
 *** Item 62: Document all exceptions thrown by each method            :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       36b62715-5645-4aee-acb5-dcb19a5d08e5
-    :DRILL_LAST_INTERVAL: 1.5758
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.3613
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:44]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:45]
     :END:
 
 How should you document exceptions?
@@ -7864,17 +7864,17 @@ How should you document exceptions?
 + If an exception is thrown by many methods, you can document it in the class.
 
 *** Item 63: Include failure capture information - detail message     :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-02-27 Sat>
     :PROPERTIES:
     :ID:       6B8BA896-B4A3-4856-B686-6E124C3E9CD2
-    :DRILL_LAST_INTERVAL: 1.498
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.9074
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:16]
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:44]
     :END:
 
 What information should go into an exception detail message?
@@ -8000,6 +8000,18 @@ ignore it.
 
 ** Concurrency
 *** Item 66: Synchronize access to shared mutable data - purpose      :drill:
+    SCHEDULED: <2016-02-25 Thu>
+    :PROPERTIES:
+    :ID:       a4920cbe-f639-4912-8f47-4a0d0f7a30f2
+    :DRILL_LAST_INTERVAL: 1.7628
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:50]
+    :END:
 
 What two functions does synchronization perform?
 
@@ -8011,6 +8023,18 @@ What two functions does synchronization perform?
    all previous modifications.
 
 *** Item 66: Synchronize access to shared mutable data - atomic       :drill:
+    SCHEDULED: <2016-02-25 Thu>
+    :PROPERTIES:
+    :ID:       5a879416-e070-48fb-aff6-901f8d44522f
+    :DRILL_LAST_INTERVAL: 1.5972
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:48]
+    :END:
 
 Which variable reads and writes are atomic in Java?
 
@@ -8019,6 +8043,18 @@ Which variable reads and writes are atomic in Java?
 All variables except long and double.
 
 *** Item 66: Synchronize access to shared mutable data - liveness     :drill:
+    SCHEDULED: <2016-02-25 Thu>
+    :PROPERTIES:
+    :ID:       193beafd-0f36-4408-8d09-b40501c16604
+    :DRILL_LAST_INTERVAL: 1.5502
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:51]
+    :END:
 
 Even though reads and writes are atomic, why might you want to synchronize
 access to a boolean that one thread modifies?
@@ -8039,6 +8075,18 @@ if (!done)
 #+END_SRC
 
 *** Item 66: Synchronize access to shared mutable data - effect       :drill:
+    SCHEDULED: <2016-02-24 Wed>
+    :PROPERTIES:
+    :ID:       5a143a71-59fd-44cd-b9c3-5a54fd443aff
+    :DRILL_LAST_INTERVAL: 1.4733
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:46]
+    :END:
 
 What effect does synchronization have if only write access is synchronized?
 
@@ -8047,17 +8095,42 @@ What effect does synchronization have if only write access is synchronized?
 No effect.  Both operations must be synchronized.
 
 *** Item 66: Synchronize access to shared mutable data - volatile     :drill:
+    SCHEDULED: <2016-02-25 Thu>
+    :PROPERTIES:
+    :ID:       b49f9601-33df-4cfc-9e6e-a85e9345715a
+    :DRILL_LAST_INTERVAL: 1.8382
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:50]
+    :END:
 
 What does the volatile keyword do?
 
 **** Answer
 
 Guarantees that any thread that reads the field will see only the most recently
-written value.  Does not perform mutual exclusion.
+written value.  Does not perform mutual exclusion.  Also guarantees that
+assignment is not re-ordered.
 
 http://stackoverflow.com/questions/106591/do-you-ever-use-the-volatile-keyword-in-java
 
 *** Item 66: Synchronize access to shared mutable data - avoidance    :drill:
+    SCHEDULED: <2016-02-25 Thu>
+    :PROPERTIES:
+    :ID:       b628a7eb-64c5-4b00-a642-8bd107910f08
+    :DRILL_LAST_INTERVAL: 1.6113
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:49]
+    :END:
 
 How can you avoid problems with shared mutable data?
 
@@ -8068,12 +8141,121 @@ How can you avoid problems with shared mutable data?
 3. Confine mutable data to a single thread.
 
 *** Item 66: Synchronize access to shared mutable data - multiple     :drill:
+    SCHEDULED: <2016-02-25 Thu>
+    :PROPERTIES:
+    :ID:       7b2d556c-4336-49c5-be1b-07f82c823017
+    :DRILL_LAST_INTERVAL: 1.5002
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:50]
+    :END:
 
 What must you do when multiple threads share mutable data?
 
 **** Answer
 
 Synchronize each thread that reads or writes the data.
+
+*** Item 67: Avoid excessive synchronization - aliens                 :drill:
+
+Why should you avoid alien methods in synchronized blocks?
+
+**** Answer
+
+From the perspective of the class with the synchronized block, the methods are
+alien.  The class has no knowledge of what the method does and has no control
+over it.  Calling an alien method can cause exceptions, deadlocks or data
+corruption, resulting in liveness and safety failures.
+
+*** Item 67: Avoid excessive synchronization - Observers              :drill:
+
+What's a good data structure for observer lists?
+
+**** Answer
+
+~CopyOnWriteArrayList~ - all write operations are implemented by making a fresh
+copy of the array.
+
+http://stackoverflow.com/questions/17853112/in-what-situations-is-the-copyonwritearraylist-suitable
+
+Good when 90% of operations are reads.  Doesn't throw
+~ConcurrentModificationException~ because iteration happens on a separate array.
+
+*** Item 67: Avoid excessive synchronization - open call              :drill:
+
+What's do you call an alien method invoked outside a synchronized region?
+
+**** Answer
+
+An open call.
+
+*** Item 67: Avoid excessive synchronization - work in synchronized   :drill:
+
+How much work should you do in a synchronized region?
+
+**** Answer
+
+As a rule, you should do as little work as possible inside synchronized regions.
+
+*** Item 67: Avoid excessive synchronization - when to sync           :drill:
+
+When in doubt, should you synchronized your class?
+
+**** Answer
+
+No.  When in doubt, do /not/ synchronized your class, but document that it is
+not thread-safe.
+
+Let the client choose to synchronize when in doubt.  
+
+*** Item 67: Avoid excessive synchronization - static fields          :drill:
+
+If a method modifies a static field, what do you have to synchronize?
+
+**** Answer
+
+You must synchronize access to the static field, even if the method is typically
+used by a single thread.  It's not possible for clients to perform external
+synchronization on such a method because there's no guarantee that unrelated
+clients will do the same.
+
+*** Item 68: Prefer executors and tasks to threads - work queues      :drill:
+
+What should you use for work queues in Java?
+
+**** Answer
+
+Executors.
+
+*** Item 68: Prefer executors and tasks to threads - mechanism        :drill:
+
+What's the mechanism and unit of work for an Executor?
+
+**** Answer
+
+Mechanism: thread
+unit of work: Tasks - Runnable and Callable
+
+*** Item 68: Prefer executors and tasks to threads                    :drill:
+
+
+
+**** Answer
+
+Answer
+
+*** Item 68: Prefer executors and tasks to threads                    :drill:
+
+
+
+**** Answer
+
+Answer
+
 
 * Consulting
 ** Breaking the Time Barrier
@@ -8346,17 +8528,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-    SCHEDULED: <2016-02-23 Tue>
+    SCHEDULED: <2016-03-08 Tue>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 6.2546
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 14.3968
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.364
-:DRILL_EASE: 2.28
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.38
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:19]
+:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:43]
 :END:
 
 What are the stages of a feedback loop?
