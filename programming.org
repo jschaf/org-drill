@@ -1477,17 +1477,17 @@ http://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
 http://gameprogrammingpatterns.com/singleton.html
 
 *** Singleton 1                                                       :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-06-18 Sat>
 :PROPERTIES:
 :ID:       92910693-0727-4cb6-8180-b879843f0a75
-:DRILL_LAST_INTERVAL: 35.9085
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 112.7916
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.2
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-21 Thu 13:27]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:24]
 :END:
 
 What is the Singleton pattern?
@@ -1868,17 +1868,17 @@ keys.
 
 ** Hash Tables
 *** Implement Hash Table                                            :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-05-20 Fri>
 :PROPERTIES:
 :ID:       12E1B6CF-EE70-42DA-8CB7-495435FEFD7D
-:DRILL_LAST_INTERVAL: 34.4217
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 84.4942
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.857
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:44]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:24]
 :END:
 
 How would you implement a hash table?
@@ -3710,17 +3710,17 @@ What are the drawbacks of clone?
   constructor.
 
 *** Item 11: Override Clone Judiciously - alternatives                :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-05-19 Thu>
 :PROPERTIES:
 :ID:       37901341-bdac-4c0d-b6e8-3d786082771e
-:DRILL_LAST_INTERVAL: 26.528
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 83.0112
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:13]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:24]
 :END:
 
 What are the alternatives of clone?
@@ -5108,17 +5108,17 @@ It saves memory since each enclosing class doesn't also have a nested class
 instantiation.
 
 *** Item 22: Favor static member classes - anonymous class            :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-04-19 Tue>
 :PROPERTIES:
 :ID:       d4451b59-5726-4757-97c8-90d56bf8c030
-:DRILL_LAST_INTERVAL: 16.6965
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 53.0814
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 4.571
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:00]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:25]
 :END:
 
 Where can you write an anonymous class?
@@ -5654,17 +5654,17 @@ Arrays have run-time safety but not compile time safety.  Generics have compile
 time safety but not run-time safety.
 
 *** Item 25: Prefer Lists to Arrays - reified definition              :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-04-23 Sat>
 :PROPERTIES:
 :ID:       ba413ffd-0b03-49f9-8a3e-fecb51756108
-:DRILL_LAST_INTERVAL: 19.2013
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 56.7313
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:45]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:25]
 :END:
 
 What does reified mean in a Java context?
@@ -6009,17 +6009,17 @@ How do you add explicit type parameters?
 ~Set<String> set = Collections.synchronizedSet(Sets.<String>newHashSet());~
 
 *** Item 28: Use Bounded Wildcards - comparable and comparator        :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-05-01 Sun>
 :PROPERTIES:
 :ID:       f0a94b6f-533e-4360-b0d7-5471e9d06c1c
-:DRILL_LAST_INTERVAL: 17.3956
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 64.7467
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 09:55]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:23]
 :END:
 
 What bounds do you use for Comparable and Comparator?
@@ -6254,18 +6254,18 @@ When is it okay to switch on an enum?
 If you're augmenting external enum types with constant specific behavior.
 
 *** Item 31: Use instance fields instead of ordinals - rule           :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-12 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64926446-cac5-4356-bff2-a764342f1727
-:DRILL_LAST_INTERVAL: 4.6542
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 15.0049
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 4.571
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:35]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:22]
 :END:
 
 Never derive a value associated with an enum from its [ordinal]; store it in an
@@ -6313,17 +6313,17 @@ How do you make an immutable enum set?
 Guava's ~ImmutableSet~ with ~Sets.immutableEnumSet~
 ~Collections.unmodifiableSet()~, returns an immutable view to a mutable ~EnumSet~
 *** Item 33: Use EnumMap instead of ordinal indexing                  :drill:
-SCHEDULED: <2016-02-26 Fri>
+SCHEDULED: <2016-04-17 Sun>
 :PROPERTIES:
 :ID:       53cd9c72-c39d-48ad-9a91-5f2adb116524
-:DRILL_LAST_INTERVAL: 16.4121
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 50.852
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:41]
+:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:24]
 :END:
 
 How should you map an Enum to a value?
@@ -6480,17 +6480,17 @@ When should you use the Override annotation?
 Any time you believe a method is overriding a superclass declaration.
 
 *** Item 37: Use marker interfaces to define types - what             :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-04-06 Wed>
     :PROPERTIES:
     :ID:       699e86de-ede7-4181-9a70-23cbcac2d38d
-    :DRILL_LAST_INTERVAL: 13.0
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 39.8692
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:12]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:23]
     :END:
 
 What are marker interfaces?
@@ -6580,17 +6580,17 @@ annotation type, or whether a marker interface would be more appropriate.
 
 ** Methods
 *** Item 38: Check parameters for validity - nonpublic methods        :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-04-04 Mon>
     :PROPERTIES:
     :ID:       18be2409-3537-463d-a291-1429edccedee
-    :DRILL_LAST_INTERVAL: 12.4373
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 38.274
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.333
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:02]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:22]
     :END:
 
 How should you check non-public methods for validity?  With assertions or exceptions?
@@ -6684,17 +6684,17 @@ What assumption should you operate under when programming?
 That the clients of your class will do their best to destroy the invariants.
 
 *** Item 39: Make defensive copies when needed - constructors         :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-04-04 Mon>
     :PROPERTIES:
     :ID:       c48a6362-4a1c-4ce3-b897-7bf551d41c13
-    :DRILL_LAST_INTERVAL: 11.7514
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 37.6551
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:23]
     :END:
 
 Which parameters are essential to defensively copy in a constructor?
@@ -6888,17 +6888,17 @@ Two element enums because:
 2. You can evolve them
 
 *** Item 41: Use overloading judiciously - overloading v. overriding  :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-27 Sun>
     :PROPERTIES:
     :ID:       7f2e0ad2-ebe2-419a-a482-cef6e225df70
-    :DRILL_LAST_INTERVAL: 10.7085
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 30.4006
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:35]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:23]
     :END:
 
 When is an overloaded method chosen? 
@@ -7125,17 +7125,17 @@ Other requirements:
 **
 ** General Programming
 *** Item 45: Minimize scope of local vars - most powerful             :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-27 Sun>
     :PROPERTIES:
     :ID:       bd6a6a51-10d9-45d8-8efc-644b59aea90a
-    :DRILL_LAST_INTERVAL: 9.3292
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 30.3686
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:21]
     :END:
 
 What is the most powerful technique for minimizing the scope of local variables?
@@ -7686,17 +7686,17 @@ Use ~asTYPE~.
 ** Exceptions
 
 *** Item 57: Use exceptions only for exceptional circumstances        :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       888eb272-031c-4e69-afc2-468734d7792b
-    :DRILL_LAST_INTERVAL: 4.8966
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.6521
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:37]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:22]
     :END:
 
 When should you prefer distinguished return values over state checking for control
@@ -7712,17 +7712,17 @@ All other things being equal, state-testing is slightly preferable to
 distinguished return value because it's easier to read and detect.
 
 *** Item 58: Use checked exceptions for recoverable conditions        :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       39245b2e-7243-495a-924a-b72672a27507
-    :DRILL_LAST_INTERVAL: 5.2696
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.4667
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:40]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:21]
     :END:
 
 When should you use checked exceptions and when do you use runtime exceptions?
@@ -7802,17 +7802,17 @@ would not.  That approach is the same as using the state testing approach.
 Guava Throwables.propagate(e)
 
 *** Item 60: Favor the use of standard exceptions                     :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       9cc909b1-8d6d-4791-ac90-0400f991db1f
-    :DRILL_LAST_INTERVAL: 4.1303
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 14.079
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.4
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 3.667
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:14]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:22]
     :END:
 
 What are the most common exceptions in Java?
@@ -8231,17 +8231,17 @@ Good when 90% of operations are reads.  Doesn't throw
 ~ConcurrentModificationException~ because iteration happens on a separate array.
 
 *** Item 67: Avoid excessive synchronization - open call              :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-01 Tue>
     :PROPERTIES:
     :ID:       67b3ae14-6731-4e1f-aac8-6cc9569ac7a4
-    :DRILL_LAST_INTERVAL: 1.4557
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.88
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:25]
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:21]
     :END:
 
 What's do you call an alien method invoked outside a synchronized region?
@@ -8294,17 +8294,17 @@ not thread-safe.
 Let the client choose to synchronize when in doubt.  
 
 *** Item 67: Avoid excessive synchronization - static fields          :drill:
-    SCHEDULED: <2016-02-26 Fri>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       40701942-645c-4c52-b28a-a4ef96a97209
-    :DRILL_LAST_INTERVAL: 1.4957
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.5245
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:35]
+    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:21]
     :END:
 
 If a method modifies a static field, what do you have to synchronize?
