@@ -8379,6 +8379,95 @@ Answer
 
 Answer
 
+*** Item 69: Prefer concurrency utils to wait and notify - exclude    :drill:
+
+Should you use locking with Java's concurrent collections?
+
+**** Answer
+
+No, because the concurrent collections manage their own concurrency.  Because
+it's managed internally, it's impossible to exclude concurrent activity from a
+concurrent collection.  Locking will have no effect.
+
+*** Item 69: Prefer concurrency utils to wait and notify - concur     :drill:
+
+How do you perform a sequence of operations on a concurrent collection?
+
+**** Answer
+
+Use the state-dependent modify operations.
+
++ ~putIfAbsent~
++ ~computeIfAbsent~
+
+*** Item 69: Prefer concurrency utils to wait and notify - timing     :drill:
+
+How do you record intervals of time in Java?
+
+**** Answer
+
+~System.nanoTime()~ because it's more accurate and doesn't change if the host OS
+changes the time.
+
+*** Item 69: Prefer concurrency utils to wait and notify - wait       :drill:
+
+When should you use wait and notify in Java code?
+
+**** Answer
+
+There is seldom, if ever a reason to use wait and notify in new code.
+
+*** Item 70: Document thread safety - synchronized                    :drill:
+
+Does the synchronized modifier indicate thread-safety?
+
+**** Answer
+
+No.  It is an implementation detail, not part of the exported API.  A class must
+clearly document which level of thread-safety it supports
+
+*** Item 70: Document thread safety - levels of thread safety         :drill:
+
+What are Bloch's levels of thread-safety?
+
+**** Answer
+
+1. Immutable - no external synchronization is necessary.
+2. Unconditionally thread-safe - Instances of the class are mutable, but the
+   class is internally synchronized and can be used concurrently without
+   external synchronization, i.e. ~ConcurrentHashMap~
+3. Conditionally thread-safe - Like unconditionally thread-safe, but some
+   methods require external synchronization, i.e. ~Collections.synchronized~
+   wrappers.
+4. Not thread-safe - Instances of the class are mutable.  Clients must surround
+   each method invocation with external synchronization.
+5. Thread-hostile - not safe for concurrent use.  Usually results from modifying
+   static data without synchronization.
+
+*** Item 70: Document thread safety - private lock idiom              :drill:
+
+What is the private lock idiom?
+
+**** Answer
+
+Use a private Object to lock on instead of locking on the this instance.
+
+#+BEGIN_SRC java
+private final Object lock = new Object();
+#+END_SRC
+
+*** Item 70: Document thread safety - private vs public lock          :drill:
+
+When should you use a private lock over a public lock?
+
+**** Answer
+
+Use a private lock if the class in synchronized internally, if you don't trust
+clients to perform a denial of service attack or the class is designed for
+inheritance.
+
+Use a public lock if you have a conditionally thread-safe class, because clients
+must be able to use their own synchronization.
 
 * Consulting
 ** Breaking the Time Barrier
