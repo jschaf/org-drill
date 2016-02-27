@@ -8565,6 +8565,147 @@ inheritance.
 Use a public lock if you have a conditionally thread-safe class, because clients
 must be able to use their own synchronization.
 
+*** Item 71: Use lazy initialization judiciously - when to use        :drill:
+
+When is lazy initialization justified?
+
+**** Answer
+
+1. As an optimization, only when it's costly to initialize /and/ the field is
+   only used on a fraction of classes.
+2. To break circular dependencies.
+ 
+*** Item 71: Use lazy initialization judiciously - synchronized       :drill:
+
+What modifier must you have if you're using lazy initialization to break an
+initialization circularity?
+
+**** Answer
+
+synchronized
+
+*** Item 71: Use lazy initialization judiciously - static performance :drill:
+
+What idiom should you use if you're using lazy initialization on a static field
+as a performance optimization?
+
+**** Answer
+
+The /lazy initialization holder class idiom/.  This idiom exploits the guarantee
+that a class will not be initialized until it is used.
+
+A modern JVM will synchronize field access to initialize the class and then patch
+the code so there's no testing or synchronization.
+
+#+BEGIN_SRC java
+private static class FieldHolder {
+    static final FieldType field = computeFieldValue();
+}
+
+static FieldType getField() { return FieldHolder.field; }
+#+END_SRC
+
+*** Item 71: Use lazy initialization judiciously - instance perf      :drill:
+
+What idiom should you use to lazily initialize an instance field for
+performance?
+
+**** Answer
+
+The /double-check/ idiom, which does an optimistic check without locking and
+then synchronized initialization.
+
+#+BEGIN_SRC java
+private volatile FieldType field;
+
+FieldType getField() {
+    FieldType result = field;
+    if (result == null) {
+        synchronized(this) {
+            result = field;
+            if (result == null) {
+                field = result = computeFieldValue();
+            }
+        }
+    }
+    return result;
+}
+#+END_SRC
+
+*** Item 71: Use lazy initialization judiciously - instance repeat    :drill:
+
+What idiom should you use to lazily initialize an instance field for
+performance where you can tolerate repeated initialization?
+
+**** Answer
+
+The /single-check idiom/.  Same concept as the double-check idiom without the
+synchronized block.
+
+
+#+BEGIN_SRC java
+private volatile FieldType field;
+
+FieldType getField() {
+    FieldType result = field;
+    if (result == null) {
+        field = result = computeFieldValue();
+    }
+    return result;
+}
+#+END_SRC
+
+*** Item 71: Use lazy initialization judiciously - racy               :drill:
+
+What idiom should you use to lazily initialize an instance field for
+performance where you can tolerate repeated initialization and you don't care if
+every thread initialized the value?
+
+**** Answer
+
+You use the single-check idiom, but you remove the volatile modifier on the
+field.  This is used by String to cache hash codes.
+
+*** Item 72: Don't depend on the thread scheduler - yield             :drill:
+
+Why should you avoid the temptation to fix concurrency problems with
+Thread.yield?
+
+**** Answer
+
++ There are no testable semantics for Thread.yield.
++ The thread scheduler is not portable.
+
+*** Item 72: Don't depend on the thread scheduler - thread priorities :drill:
+
+Are thread priorities portable?
+
+**** Answer
+
+Thread priorities are among the least portable features of the Java platform.
+
+*** Item 72: Don't depend on the thread scheduler - test concurrency  :drill:
+
+How can you increase concurrency for testing purposes?
+
+**** Answer
+
+Thread.sleep(1);
+
+Don't use Thread.yield, as it may not do anything.  Thread.sleep(0) may also
+return immediately.
+
+*** Item 73: Avoid thread groups                                      :drill:
+
+Why should you avoid thread groups?
+
+**** Answer
+
++ Weak thread safety guarantees.
++ Obsolete
+
+Use thread pool executors instead.
+
 * Consulting
 ** Breaking the Time Barrier
 
