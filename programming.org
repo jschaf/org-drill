@@ -263,17 +263,17 @@ unicode escapes - '\u0108', "S\u00ED"
 escape sequences - \b backspace, \t tab, \n, \f, \r, \", \', \\
 
 *** Class Literal                                                     :drill:
-SCHEDULED: <2016-02-28 Sun>
+SCHEDULED: <2016-06-09 Thu>
 :PROPERTIES:
 :ID:       4d3cb5a7-cefd-49e1-8eef-5ffc815b67cd
-:DRILL_LAST_INTERVAL: 34.5786
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 101.8489
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.6
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-24 Sun 15:38]
+:DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:42]
 :END:
 
 What is a class literal in Java?
@@ -638,17 +638,17 @@ Integer.toString(100, 16) == "64"
 #+END_SRC
 
 *** Integral different base - BigInteger                             :drill:
-    SCHEDULED: <2016-02-28 Sun>
+    SCHEDULED: <2016-03-25 Fri>
     :PROPERTIES:
     :ID:       5e672982-0265-4c17-877d-ef1e10bc25fd
-    :DRILL_LAST_INTERVAL: 8.7405
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 26.3946
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.333
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:05]
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:27]
     :END:
 
 How do you get an integral representation of a ~BigInteger~?
@@ -1758,17 +1758,17 @@ def update_bit(num, i, isOne):
 
 
 *** Java count bits                                                   :drill:
-    SCHEDULED: <2016-02-28 Sun>
+    SCHEDULED: <2016-03-04 Fri>
     :PROPERTIES:
     :ID:       a37508c6-002a-4c2b-b928-53e2505adb21
-    :DRILL_LAST_INTERVAL: 1.4954
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 5.3566
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:29]
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:27]
     :END:
 
 How do you get the number of bits set in an integer in Java?
@@ -3371,17 +3371,17 @@ Whenever you override equals.  If you don't, you'll violate the general contract
 for Object.hashCode.
 
 *** Item 09: hashCode general contract                                :drill:
-SCHEDULED: <2016-02-28 Sun>
+SCHEDULED: <2016-05-24 Tue>
 :PROPERTIES:
 :ID:       1aa1df92-7da1-4f7d-b75e-145bbd22fadb
-:DRILL_LAST_INTERVAL: 29.6164
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 86.1596
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:35]
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:29]
 :END:
 
 What is the general contract for Object.hashCode?
@@ -4425,17 +4425,17 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-    SCHEDULED: <2016-02-28 Sun>
+    SCHEDULED: <2016-04-21 Thu>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 15.9032
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 52.7531
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.9
-:DRILL_EASE: 2.96
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 3.06
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
+:DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:40]
 :END:
 
 How do you allow efficient access to the internal workings of a subclass
@@ -6293,17 +6293,17 @@ An ~EnumSet~.  For enums with less than 64 elements, the set is represented as a
 long and all operations are with bitwise operation, so it's fast.
 
 *** Item 32: Use EnumSet instead of bit fields - immutable            :drill:
-SCHEDULED: <2016-02-28 Sun>
+SCHEDULED: <2016-04-24 Sun>
 :PROPERTIES:
 :ID:       0d15569a-71aa-42a3-8a58-eb516f88f46f
-:DRILL_LAST_INTERVAL: 17.5845
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 55.6816
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
+:DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:46]
 :END:
 
 How do you make an immutable enum set?
@@ -6601,17 +6601,17 @@ Use assertions because you can and should ensure only valid parameters are ever
 passed in.
 
 *** Item 38: Check parameters for validity - stored parameters        :drill:
-    SCHEDULED: <2016-02-28 Sun>
+    SCHEDULED: <2016-04-04 Mon>
     :PROPERTIES:
     :ID:       60da9210-7254-4313-a059-2e934cc98ad8
-    :DRILL_LAST_INTERVAL: 13.3339
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 35.6346
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.333
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:34]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.7
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:34]
     :END:
 
 Why is it important to check parameters that are stored for later use?
@@ -8021,17 +8021,17 @@ ignore it.
 
 ** Concurrency
 *** Item 66: Synchronize access to shared mutable data - purpose      :drill:
-    SCHEDULED: <2016-02-28 Sun>
+    SCHEDULED: <2016-03-08 Tue>
     :PROPERTIES:
     :ID:       a4920cbe-f639-4912-8f47-4a0d0f7a30f2
-    :DRILL_LAST_INTERVAL: 3.4251
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 9.1094
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.333
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:15]
+    :DRILL_AVERAGE_QUALITY: 3.75
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:27]
     :END:
 
 What two functions does synchronization perform?
@@ -8466,17 +8466,17 @@ When should you use wait and notify in Java code?
 There is seldom, if ever a reason to use wait and notify in new code.
 
 *** Item 70: Document thread safety - synchronized                    :drill:
-    SCHEDULED: <2016-02-28 Sun>
+    SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       a6096edb-44be-44be-bea0-e23bded9d4c1
-    :DRILL_LAST_INTERVAL: 1.4946
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.0017
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:24]
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:27]
     :END:
 
 Does the synchronized modifier indicate thread-safety?
@@ -8566,6 +8566,18 @@ Use a public lock if you have a conditionally thread-safe class, because clients
 must be able to use their own synchronization.
 
 *** Item 71: Use lazy initialization judiciously - when to use        :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       e905c9fc-2a06-4eb7-9c21-39238dd03e71
+    :DRILL_LAST_INTERVAL: 1.6439
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:50]
+    :END:
 
 When is lazy initialization justified?
 
@@ -8576,6 +8588,18 @@ When is lazy initialization justified?
 2. To break circular dependencies.
  
 *** Item 71: Use lazy initialization judiciously - synchronized       :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       dadc3195-421a-4c26-a042-8566722cea9d
+    :DRILL_LAST_INTERVAL: 1.5712
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:47]
+    :END:
 
 What modifier must you have if you're using lazy initialization to break an
 initialization circularity?
@@ -8585,6 +8609,18 @@ initialization circularity?
 synchronized
 
 *** Item 71: Use lazy initialization judiciously - static performance :drill:
+    SCHEDULED: <2016-02-29 Mon>
+    :PROPERTIES:
+    :ID:       182854fc-4920-4d61-90dc-1b0c1833ea92
+    :DRILL_LAST_INTERVAL: 1.4967
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:49]
+    :END:
 
 What idiom should you use if you're using lazy initialization on a static field
 as a performance optimization?
@@ -8606,6 +8642,18 @@ static FieldType getField() { return FieldHolder.field; }
 #+END_SRC
 
 *** Item 71: Use lazy initialization judiciously - instance perf      :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       7e59794f-d211-4e7e-a57b-92664882c951
+    :DRILL_LAST_INTERVAL: 1.6861
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:48]
+    :END:
 
 What idiom should you use to lazily initialize an instance field for
 performance?
@@ -8633,6 +8681,18 @@ FieldType getField() {
 #+END_SRC
 
 *** Item 71: Use lazy initialization judiciously - instance repeat    :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       a5130c60-a1af-41a5-80fa-724d4788996d
+    :DRILL_LAST_INTERVAL: 1.6197
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:50]
+    :END:
 
 What idiom should you use to lazily initialize an instance field for
 performance where you can tolerate repeated initialization?
@@ -8656,6 +8716,18 @@ FieldType getField() {
 #+END_SRC
 
 *** Item 71: Use lazy initialization judiciously - racy               :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       f20ef9dd-a61b-4401-ba1e-e1105a3486ff
+    :DRILL_LAST_INTERVAL: 1.581
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:46]
+    :END:
 
 What idiom should you use to lazily initialize an instance field for
 performance where you can tolerate repeated initialization and you don't care if
@@ -8663,10 +8735,23 @@ every thread initialized the value?
 
 **** Answer
 
-You use the single-check idiom, but you remove the volatile modifier on the
-field.  This is used by String to cache hash codes.
+You can use the racy single-check idiom.  It's the single check idiom, but you
+remove the volatile modifier on the field.  This is used by String to cache hash
+codes.
 
 *** Item 72: Don't depend on the thread scheduler - yield             :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       a58eb218-9b82-4e66-adc7-85bab8fef66a
+    :DRILL_LAST_INTERVAL: 1.9579
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:49]
+    :END:
 
 Why should you avoid the temptation to fix concurrency problems with
 Thread.yield?
@@ -8677,6 +8762,18 @@ Thread.yield?
 + The thread scheduler is not portable.
 
 *** Item 72: Don't depend on the thread scheduler - thread priorities :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       23392b52-183f-4fa8-ae4b-a162b7460978
+    :DRILL_LAST_INTERVAL: 1.5683
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:37]
+    :END:
 
 Are thread priorities portable?
 
@@ -8685,6 +8782,18 @@ Are thread priorities portable?
 Thread priorities are among the least portable features of the Java platform.
 
 *** Item 72: Don't depend on the thread scheduler - test concurrency  :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       fdb7a9f7-2af9-4a6d-8d3c-d063ed6e8553
+    :DRILL_LAST_INTERVAL: 1.6333
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:29]
+    :END:
 
 How can you increase concurrency for testing purposes?
 
@@ -8696,6 +8805,18 @@ Don't use Thread.yield, as it may not do anything.  Thread.sleep(0) may also
 return immediately.
 
 *** Item 73: Avoid thread groups                                      :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       016ff915-e90d-442e-af5c-0b58ccec6ef4
+    :DRILL_LAST_INTERVAL: 1.8358
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:47]
+    :END:
 
 Why should you avoid thread groups?
 
@@ -9009,17 +9130,17 @@ Goal - lose 10,000 lbs
 + Action - You learn from your mistake and replace snack with carrots.
 
 *** Impact Bias                                                       :drill:
-SCHEDULED: <2016-02-28 Sun>
+SCHEDULED: <2016-05-31 Tue>
 :PROPERTIES:
 :ID:       a3e8eb48-624b-4738-87da-082295451369
-:DRILL_LAST_INTERVAL: 35.6577
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 92.959
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-23 Sat 23:43]
+:DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:29]
 :END:
 
 What is impact bias?
