@@ -52,17 +52,17 @@ It's the middle number.  If the number of elements is even, the median is the me
 
 ** Object Oriented Programming
 *** Open Closed Principle                                             :drill:
-SCHEDULED: <2016-02-29 Mon>
+SCHEDULED: <2016-05-12 Thu>
 :PROPERTIES:
 :ID:       e5f77354-5bc9-4c14-95de-09ba86eb1f9f
-:DRILL_LAST_INTERVAL: 28.4371
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 72.7435
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.714
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 3.875
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:50]
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:50]
 :END:
 
 What is the open closed principle?
@@ -524,17 +524,17 @@ What is the Date time prefix in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Other Conversions                                     :drill:
-SCHEDULED: <2016-02-29 Mon>
+SCHEDULED: <2016-06-01 Wed>
 :PROPERTIES:
 :ID:       3a979001-89ca-449c-beca-727caaaa4dd6
-:DRILL_LAST_INTERVAL: 30.6225
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 92.7277
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:07]
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:37]
 :END:
 
 What other conversions are supported in a format specifier?
@@ -1730,17 +1730,17 @@ def clear_bit(n, i):
 #+END_SRC
 
 *** Update bit at index i                                             :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-04-21 Thu>
     :PROPERTIES:
     :ID:       9b103e32-b010-4d42-8edb-034d0acc1f11
-    :DRILL_LAST_INTERVAL: 15.6947
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 52.4798
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.4
+    :DRILL_AVERAGE_QUALITY: 3.5
     :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:13]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:50]
     :END:
 
 How do you set a bit at index ~i~ of an integer to a /specified/ value?
@@ -1779,17 +1779,17 @@ How do you get the number of bits set in an integer in Java?
 https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html
 
 *** Clear least significant bit                                       :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-04-17 Sun>
     :PROPERTIES:
     :ID:       ae7dd928-468d-4120-a73d-382fcb9a2db3
-    :DRILL_LAST_INTERVAL: 16.6743
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 48.3312
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_AVERAGE_QUALITY: 4.2
     :DRILL_EASE: 2.8
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:25]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:54]
     :END:
 
 How do you clear the least significant bit?
@@ -2252,17 +2252,17 @@ http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
 ** System Design
 
 *** IPC - Interprocess communication                                :drill:
-SCHEDULED: <2016-02-29 Mon>
+SCHEDULED: <2016-04-25 Mon>
 :PROPERTIES:
 :ID:       8C596422-5A0D-4635-A98A-C103638C5760
-:DRILL_LAST_INTERVAL: 22.6105
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 56.2445
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.334
+:DRILL_AVERAGE_QUALITY: 3.385
 :DRILL_EASE: 2.28
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 00:47]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:55]
 :END:
 
 What are the different methods of IPC?
@@ -4087,17 +4087,17 @@ If a class is package-private or a private nested class, there is nothing
 inherently wrong with exposing data fields.
 
 *** Item 14: Public accessors - why accessors                         :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-04-15 Fri>
 :PROPERTIES:
 :ID:       2e1879b7-e276-452d-85ef-eee1c96aa7ab
-:DRILL_LAST_INTERVAL: 14.8382
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 46.4956
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 3.846
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:02]
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:38]
 :END:
 
 Why should you use accessors over fields?
@@ -5045,21 +5045,21 @@ What are the use cases for a static member class?
 As a public helper class like Calculator.Operations enum with PLUS, MINUS, etc.
 
 *** Item 22: Favor static member classes - qualified this             :drill:
-SCHEDULED: <2016-02-29 Mon>
+SCHEDULED: <2016-04-30 Sat>
 :PROPERTIES:
 :ID:       101c977a-8eaf-4db9-a373-7c071745cd6b
-:DRILL_LAST_INTERVAL: 23.2842
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 60.5662
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_AVERAGE_QUALITY: 4.4
 :DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:33]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:37]
 :END:
 
-How do you reference an enclosing class instance fields or methods from an inner
-class?
+How do you reference a enclosing class instance fields or methods from an inner
+class if the name is shadowed?
 
 **** Answer
 
@@ -5947,20 +5947,20 @@ public void popAll(Collection<? super E> dest) {
 #+END_SRC
 
 *** Item 28: Use Bounded Wildcards - return types                     :drill:
-SCHEDULED: <2016-02-29 Mon>
+SCHEDULED: <2016-04-29 Fri>
 :PROPERTIES:
 :ID:       8f4d5f42-8be3-4a38-baa0-6fea2f8eff3a
-:DRILL_LAST_INTERVAL: 18.9039
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 3
+:DRILL_LAST_INTERVAL: 59.5016
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 4
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:47]
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:40]
 :END:
 
-What type should you return from generic code?
+Should you return wildcard types in generic code?
 
 **** Answer
 
@@ -6704,17 +6704,17 @@ Which parameters are essential to defensively copy in a constructor?
 Each mutable parameter.
 
 *** Item 39: Make defensive copies when needed - validity check       :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-04-16 Sat>
     :PROPERTIES:
     :ID:       106c92cc-d4bd-4b8a-9bdf-cea7fc6fabf4
-    :DRILL_LAST_INTERVAL: 13.9768
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 46.668
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:34]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:56]
     :END:
 
 When do you perform the validity check on defensive copies?
@@ -6931,17 +6931,17 @@ A safe, conservative policy is never to export two overloadings with the same
 number of parameters.
 
 *** Item 41: Use overloading judiciously - example                    :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-04-06 Wed>
     :PROPERTIES:
     :ID:       0786822f-742b-444b-a942-01e9a108bbfa
-    :DRILL_LAST_INTERVAL: 12.7407
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 36.5005
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:34]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:59]
     :END:
 
 Why is List.remove a good example of overloading gone wrong?
@@ -7083,17 +7083,17 @@ There is no reason to return null.
 + It's easier for the client because they don't have to handle the null case.
 
 *** Item 44: Write doc comments - what to include                     :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-26 Sat>
     :PROPERTIES:
     :ID:       c72f9e94-b337-47ec-b7ac-7360f0fc6360
-    :DRILL_LAST_INTERVAL: 9.7929
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 26.2483
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.333
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:03]
+    :DRILL_AVERAGE_QUALITY: 3.571
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:35]
     :END:
 
 What should you include in a doc comment?
@@ -7970,17 +7970,17 @@ What is failure atomicity?
 When a failed method invocation leaves the object in the state prior to the invocation.
 
 *** Item 64: Strive for failure atomicity - achieve atomicity         :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-06 Sun>
     :PROPERTIES:
     :ID:       5BFAE971-C8AD-421A-AB2E-702097409EEA
-    :DRILL_LAST_INTERVAL: 1.9638
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 6.1942
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 3.333
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 3.571
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:29]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:34]
     :END:
 
 What ways can you achieve failure atomicity?
@@ -8096,17 +8096,17 @@ if (!done)
 #+END_SRC
 
 *** Item 66: Synchronize access to shared mutable data - effect       :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       5a143a71-59fd-44cd-b9c3-5a54fd443aff
-    :DRILL_LAST_INTERVAL: 3.8998
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.6478
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:22]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:30]
     :END:
 
 What effect does synchronization have if only write access is synchronized?
@@ -8162,17 +8162,17 @@ How can you avoid problems with shared mutable data?
 3. Confine mutable data to a single thread.
 
 *** Item 66: Synchronize access to shared mutable data - multiple     :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-12 Sat>
     :PROPERTIES:
     :ID:       7b2d556c-4336-49c5-be1b-07f82c823017
-    :DRILL_LAST_INTERVAL: 4.1315
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.672
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:21]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:30]
     :END:
 
 What must you do when multiple threads share mutable data?
@@ -8317,17 +8317,17 @@ synchronization on such a method because there's no guarantee that unrelated
 clients will do the same.
 
 *** Item 68: Prefer executors and tasks to threads - work queues      :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-05 Sat>
     :PROPERTIES:
     :ID:       853d2ba5-8e9e-4d46-86a1-7caf7fbfec80
-    :DRILL_LAST_INTERVAL: 1.9013
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 4.9766
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.333
-    :DRILL_EASE: 2.46
+    :DRILL_AVERAGE_QUALITY: 3.75
+    :DRILL_EASE: 2.56
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:29]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:34]
     :END:
 
 What should you use for work queues in Java?
@@ -8380,17 +8380,17 @@ Answer
 Answer
 
 *** Item 69: Prefer concurrency utils to wait and notify - exclude    :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-04 Fri>
     :PROPERTIES:
     :ID:       8fa22fb4-74d1-4db1-935f-1b252694b268
-    :DRILL_LAST_INTERVAL: 1.571
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.3938
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:24]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:32]
     :END:
 
 Should you use locking with Java's concurrent collections?
@@ -8402,17 +8402,17 @@ it's managed internally, it's impossible to exclude concurrent activity from a
 concurrent collection.  Locking will have no effect.
 
 *** Item 69: Prefer concurrency utils to wait and notify - concur     :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-04 Fri>
     :PROPERTIES:
     :ID:       bcfe83aa-7870-45da-80cc-28efe7ac52b2
-    :DRILL_LAST_INTERVAL: 1.5791
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.2079
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:28]
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:32]
     :END:
 
 How do you perform a sequence of operations on a concurrent collection?
@@ -8425,17 +8425,17 @@ Use the state-dependent modify operations.
 + ~computeIfAbsent~
 
 *** Item 69: Prefer concurrency utils to wait and notify - timing     :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-05 Sat>
     :PROPERTIES:
     :ID:       37c6a15f-5598-4f4d-8d7d-526b38ceea6d
-    :DRILL_LAST_INTERVAL: 1.7983
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9517
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:28]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:33]
     :END:
 
 How do you record intervals of time in Java?
@@ -8446,17 +8446,17 @@ How do you record intervals of time in Java?
 changes the time.
 
 *** Item 69: Prefer concurrency utils to wait and notify - wait       :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       7ea7652f-2585-4cd8-bcc6-3ccfa854a8dd
-    :DRILL_LAST_INTERVAL: 1.7141
+    :DRILL_LAST_INTERVAL: 1.714
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:28]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:29]
     :END:
 
 When should you use wait and notify in Java code?
@@ -8487,17 +8487,17 @@ No.  It is an implementation detail, not part of the exported API.  A class must
 clearly document which level of thread-safety it supports
 
 *** Item 70: Document thread safety - levels of thread safety         :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       5043938d-f236-4d87-ba7b-6f7b9192d561
-    :DRILL_LAST_INTERVAL: 1.5521
+    :DRILL_LAST_INTERVAL: 1.743
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:27]
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.333
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:30]
     :END:
 
 What are Bloch's levels of thread-safety?
@@ -8517,17 +8517,17 @@ What are Bloch's levels of thread-safety?
    static data without synchronization.
 
 *** Item 70: Document thread safety - private lock idiom              :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-02 Wed>
     :PROPERTIES:
     :ID:       502cb142-23bc-4fdb-bf72-8c8c247897f4
-    :DRILL_LAST_INTERVAL: 1.693
+    :DRILL_LAST_INTERVAL: 1.7286
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:28]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:53]
     :END:
 
 What is the private lock idiom?
@@ -8541,17 +8541,17 @@ private final Object lock = new Object();
 #+END_SRC
 
 *** Item 70: Document thread safety - private vs public lock          :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-06 Sun>
     :PROPERTIES:
     :ID:       217f7bd3-eab6-41ed-9b09-f1ebc224a60d
-    :DRILL_LAST_INTERVAL: 2.0966
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.8691
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:28]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:33]
     :END:
 
 When should you use a private lock over a public lock?
@@ -8609,17 +8609,17 @@ initialization circularity?
 synchronized
 
 *** Item 71: Use lazy initialization judiciously - static performance :drill:
-    SCHEDULED: <2016-02-29 Mon>
+    SCHEDULED: <2016-03-05 Sat>
     :PROPERTIES:
     :ID:       182854fc-4920-4d61-90dc-1b0c1833ea92
-    :DRILL_LAST_INTERVAL: 1.4967
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.7041
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:49]
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:36]
     :END:
 
 What idiom should you use if you're using lazy initialization on a static field
@@ -8829,6 +8829,18 @@ Use thread pool executors instead.
 
 ** Serialization
 *** Item 74: Implement Serializable judiciously                       :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       B56FD64A-A891-4640-8EF9-6976C0AF4705
+    :DRILL_LAST_INTERVAL: 1.2938
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:52]
+    :END:
 
 What are the major costs of implementing Serializable?
 
@@ -8841,6 +8853,18 @@ What are the major costs of implementing Serializable?
    serializable into new releases.
 
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       2CE03011-2174-430B-A5D8-B01687A38F28
+    :DRILL_LAST_INTERVAL: 1.8715
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:45]
+    :END:
 
 Should classes designed for inheritance implement Serializable?
 
@@ -8849,6 +8873,18 @@ Should classes designed for inheritance implement Serializable?
 No, because it places a significant burden an anyone that extend the class?
  
 *** Item 74: Implement Serializable judiciously - inheritance excep   :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       3C1B1D8B-010E-46CA-A88D-B1D3BC9266BC
+    :DRILL_LAST_INTERVAL: 1.1743
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:37]
+    :END:
 
 Which classes designed for inheritance in Java do implement Serializable?
 
@@ -8857,6 +8893,18 @@ Which classes designed for inheritance in Java do implement Serializable?
 ~Throwable~, ~Component~ and ~HttpServlet~
  
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       5D04453C-0C00-429C-867E-849804418E70
+    :DRILL_LAST_INTERVAL: 1.7061
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:53]
+    :END:
 
 If you have a class designed for inheritance that is not Serializable, how can
 you allow child classes to implement Serializable?
@@ -8867,6 +8915,18 @@ Provide a protected no-args constructor and a ~checkInit()~ function using an
 ~AtomicReference~ to an enum on the classes initialized State.
  
 *** Item 74: Implement Serializable judiciously - inner classes       :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       7B6373EB-BA5C-4836-8CFB-27CC543AA603
+    :DRILL_LAST_INTERVAL: 1.6621
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:39]
+    :END:
 
 Should inner classes implement Serializable?
 
@@ -8878,6 +8938,18 @@ scope.  The names of the variables are unspecified, so the default Serialized
 form of an inner class is ill-defined.
 
 *** Item 75: Consier using a custom serialized form - default         :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       5FF16B7D-2760-4CD0-9DC8-0ADA9A1C9C45
+    :DRILL_LAST_INTERVAL: 1.3767
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:37]
+    :END:
 
 When is the default serialized form likely to be appropriate?
 
@@ -8887,6 +8959,18 @@ When the object's physical representation is identical to it's content,
 e.g. value classes.
 
 *** Item 75: Consier using a custom serialized form - default 2       :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       9307F746-A8DD-4B04-89FF-4FAFE0D323F5
+    :DRILL_LAST_INTERVAL: 1.9467
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:59]
+    :END:
 
 If you use the default serialized form, what method must you provide?
 
@@ -8895,6 +8979,18 @@ If you use the default serialized form, what method must you provide?
 The ~readObject~ method to ensure invariants and security.
 
 *** Item 75: Consier using a custom serialized form - default bad     :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       F44F9AE0-14DB-4D2D-96F8-70449D4F6335
+    :DRILL_LAST_INTERVAL: 1.5105
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:52]
+    :END:
 
 What are the disadvantages of using the default serialized form when an object's
 physical representation differs substantially from it's logical data content?
@@ -8907,6 +9003,18 @@ physical representation differs substantially from it's logical data content?
 4. It can cause stack overflows.
 
 *** Item 75: Consier using a custom serialized form - default read    :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       C76C27AB-7FB8-4931-BC2A-AFF8C2C3CC18
+    :DRILL_LAST_INTERVAL: 1.3905
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:52]
+    :END:
 
 What methods must you call first in ~writeObject~ and ~readObject~?
 
@@ -8916,6 +9024,18 @@ What methods must you call first in ~writeObject~ and ~readObject~?
 fields make the class more flexible to change
 
 *** Item 75: Consier using a custom serialized form - transient       :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       01C20FE3-FD22-4C72-AB08-35DD5BF77923
+    :DRILL_LAST_INTERVAL: 1.981
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:54]
+    :END:
 
 Which fields should you mark as transient?
 
@@ -8928,8 +9048,21 @@ If you use a custom serialized form, most or all of the instance fields should
 be labeled transient.
 
 *** Item 75: Consier using a custom serialized form - synchronization :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       220524C6-B445-4B9F-8140-BF09AB3E7D88
+    :DRILL_LAST_INTERVAL: 1.5382
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:54]
+    :END:
 
-What has to be synchronized for serialization?
+What synchronization do you need for serialization compared to the original
+class?
 
 **** Answer
 
@@ -8937,6 +9070,18 @@ The same synchronization on any other method that reads the entire state of the
 object.
 
 *** Item 75: Consier using a custom serialized form - UID             :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       AC6BD6A5-EB75-4197-A512-2A02F1D56FB7
+    :DRILL_LAST_INTERVAL: 1.6756
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:38]
+    :END:
 
 Why should you declare an explicit serial version UID in every serializable class?
 
@@ -8946,6 +9091,18 @@ Because otherwise the JVM will perform an expensive computation looking at all
 fields and methods to generate a UID.
 
 *** Item 75: Consier using a custom serialized form - How UID         :drill:
+    SCHEDULED: <2016-03-02 Wed>
+    :PROPERTIES:
+    :ID:       C86197B2-3023-47C2-A838-CEC0645C3D9D
+    :DRILL_LAST_INTERVAL: 1.5811
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:39]
+    :END:
 
 How do you declare a serial version UID on your class?
 
@@ -9140,17 +9297,17 @@ systemise it.
 /The ONE Thing/ by Keller
 
 *** Habitualise ONE Thing                                             :drill:
-SCHEDULED: <2016-02-29 Mon>
+SCHEDULED: <2016-05-17 Tue>
 :PROPERTIES:
 :ID:       d51ec8b8-65ef-4264-a249-1a308dbd746a
-:DRILL_LAST_INTERVAL: 31.6481
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 77.7065
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:04]
+:DRILL_AVERAGE_QUALITY: 3.875
+:DRILL_EASE: 2.52
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:39]
 :END:
 
 How do you systemize your ONE thing with cue-habit-reward and implementation
@@ -9381,11 +9538,22 @@ INDEX(Table1,                                     // The table to search
       3)                                          // Column number to pull from, starts from 1
 #+END_SRC
 
-
 * Management
 ** Team Building
 
 *** Item                                      :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       58FA0655-DACA-4931-BEB7-71C8E0ADBC74
+    :DRILL_LAST_INTERVAL: 1.4546
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 10:55]
+    :END:
 
     What are the main lessons learned from Google's project Aristotle?
 
@@ -9397,6 +9565,18 @@ was critical to making a team work.
 http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0
 
 *** Psychological safety                                              :drill:
+    SCHEDULED: <2016-03-01 Tue>
+    :PROPERTIES:
+    :ID:       50004242-A197-41DB-BEC6-4810772E35A3
+    :DRILL_LAST_INTERVAL: 1.3563
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-02-29 Mon 11:00]
+    :END:
 
 What is psychological safety?
 
