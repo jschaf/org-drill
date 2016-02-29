@@ -9382,3 +9382,30 @@ INDEX(Table1,                                     // The table to search
 #+END_SRC
 
 
+* Management
+** Team Building
+
+*** Item                                      :drill:
+
+    What are the main lessons learned from Google's project Aristotle?
+
+**** Answer
+
+But Google’s data indicated that psychological safety, more than anything else,
+was critical to making a team work.
+
+http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0
+
+*** Psychological safety                                              :drill:
+
+What is psychological safety?
+
+**** Answer
+
+Psychological safety is ‘‘a sense of confidence that the team will not
+embarrass, reject or punish someone for speaking up,’’ Edmondson wrote in a
+study published in 1999. ‘‘It describes a team climate characterized by
+interpersonal trust and mutual respect in which people are comfortable being
+themselves.’’
+
+http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html?_r=0
