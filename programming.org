@@ -8827,6 +8827,134 @@ Why should you avoid thread groups?
 
 Use thread pool executors instead.
 
+** Serialization
+*** Item 74: Implement Serializable judiciously                       :drill:
+
+What are the major costs of implementing Serializable?
+
+**** Answer
+
+1. Decreases the flexibility to change a class's implementation once it has been
+   release.
+2. Increases the likelihood of bugs and security holes.
+3. Increases testing burden because you have to test that old releases are
+   serializable into new releases.
+
+*** Item 74: Implement Serializable judiciously - inheritance         :drill:
+
+Should classes designed for inheritance implement Serializable?
+
+**** Answer
+
+No, because it places a significant burden an anyone that extend the class?
+ 
+*** Item 74: Implement Serializable judiciously - inheritance excep   :drill:
+
+Which classes designed for inheritance in Java do implement Serializable?
+
+**** Answer
+
+~Throwable~, ~Component~ and ~HttpServlet~
+ 
+*** Item 74: Implement Serializable judiciously - inheritance         :drill:
+
+If you have a class designed for inheritance that is not Serializable, how can
+you allow child classes to implement Serializable?
+
+**** Answer
+
+Provide a protected no-args constructor and a ~checkInit()~ function using an
+~AtomicReference~ to an enum on the classes initialized State.
+ 
+*** Item 74: Implement Serializable judiciously - inner classes       :drill:
+
+Should inner classes implement Serializable?
+
+**** Answer
+
+No because they use compiler-generated synthetic fields to store references to
+enclosing instances and to store values of local variables from the enclosing
+scope.  The names of the variables are unspecified, so the default Serialized
+form of an inner class is ill-defined.
+
+*** Item 75: Consier using a custom serialized form - default         :drill:
+
+When is the default serialized form likely to be appropriate?
+
+**** Answer
+
+When the object's physical representation is identical to it's content,
+e.g. value classes.
+
+*** Item 75: Consier using a custom serialized form - default 2       :drill:
+
+If you use the default serialized form, what method must you provide?
+
+**** Answer
+
+The ~readObject~ method to ensure invariants and security.
+
+*** Item 75: Consier using a custom serialized form - default bad     :drill:
+
+What are the disadvantages of using the default serialized form when an object's
+physical representation differs substantially from it's logical data content?
+
+**** Answer
+
+1. It permanently ties the exported API to the current internal representation.
+2. It can consume excessive space.
+3. It can consume excessive time.
+4. It can cause stack overflows.
+
+*** Item 75: Consier using a custom serialized form - default read    :drill:
+
+What methods must you call first in ~writeObject~ and ~readObject~?
+
+**** Answer
+
+~defaultWriteObject~ and ~defaultReadObject~.  These methods handle transient
+fields make the class more flexible to change
+
+*** Item 75: Consier using a custom serialized form - transient       :drill:
+
+Which fields should you mark as transient?
+
+**** Answer
+
+As many as possible.  Before deciding to make a field nontransient, convince
+yourself that its value is part of the logical state of the object.
+
+If you use a custom serialized form, most or all of the instance fields should
+be labeled transient.
+
+*** Item 75: Consier using a custom serialized form - synchronization :drill:
+
+What has to be synchronized for serialization?
+
+**** Answer
+
+The same synchronization on any other method that reads the entire state of the
+object.
+
+*** Item 75: Consier using a custom serialized form - UID             :drill:
+
+Why should you declare an explicit serial version UID in every serializable class?
+
+**** Answer
+
+Because otherwise the JVM will perform an expensive computation looking at all
+fields and methods to generate a UID.
+
+*** Item 75: Consier using a custom serialized form - How UID         :drill:
+
+How do you declare a serial version UID on your class?
+
+**** Answer
+
+#+BEGIN_SRC java
+private static final long serialVersionUID = randomLongValue;
+#+END_SRC
+ 
 * Consulting
 ** Breaking the Time Barrier
 
