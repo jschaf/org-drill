@@ -8937,7 +8937,7 @@ enclosing instances and to store values of local variables from the enclosing
 scope.  The names of the variables are unspecified, so the default Serialized
 form of an inner class is ill-defined.
 
-*** Item 75: Consier using a custom serialized form - default         :drill:
+*** Item 75: Consider using a custom serialized form - default        :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       51d8bb9b-8ca6-4cd2-bdc4-7201103d4e2a
@@ -8958,7 +8958,7 @@ When is the default serialized form likely to be appropriate?
 When the object's physical representation is identical to it's content,
 e.g. value classes.
 
-*** Item 75: Consier using a custom serialized form - default 2       :drill:
+*** Item 75: Consider using a custom serialized form - default 2      :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       f05cb32b-e179-4a8e-a2e9-929c02031d67
@@ -8978,7 +8978,7 @@ If you use the default serialized form, what method must you provide?
 
 The ~readObject~ method to ensure invariants and security.
 
-*** Item 75: Consier using a custom serialized form - default bad     :drill:
+*** Item 75: Consider using a custom serialized form - default bad    :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       fb687a6c-f5b4-4bf9-878a-29c03e1efc60
@@ -9002,7 +9002,7 @@ physical representation differs substantially from it's logical data content?
 3. It can consume excessive time.
 4. It can cause stack overflows.
 
-*** Item 75: Consier using a custom serialized form - default read    :drill:
+*** Item 75: Consider using a custom serialized form - default read   :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       54797064-a10b-42d3-962e-6639f4386553
@@ -9023,7 +9023,7 @@ What methods must you call first in ~writeObject~ and ~readObject~?
 ~defaultWriteObject~ and ~defaultReadObject~.  These methods handle transient
 fields make the class more flexible to change
 
-*** Item 75: Consier using a custom serialized form - transient       :drill:
+*** Item 75: Consider using a custom serialized form - transient      :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       3597e0b8-28b4-4af0-ae98-5cc094a90691
@@ -9047,7 +9047,7 @@ yourself that its value is part of the logical state of the object.
 If you use a custom serialized form, most or all of the instance fields should
 be labeled transient.
 
-*** Item 75: Consier using a custom serialized form - synchronization :drill:
+*** Item 75: Consider using a custom serialized form - synch          :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       c64bddc1-a9ac-483c-85cc-a629716578d6
@@ -9068,7 +9068,7 @@ What has to be synchronized for serialization?
 The same synchronization on any other method that reads the entire state of the
 object.
 
-*** Item 75: Consier using a custom serialized form - UID             :drill:
+*** Item 75: Consider using a custom serialized form - UID            :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       c439c369-3480-4e73-bbaa-a80fa6af6ec7
@@ -9089,7 +9089,7 @@ Why should you declare an explicit serial version UID in every serializable clas
 Because otherwise the JVM will perform an expensive computation looking at all
 fields and methods to generate a UID.
 
-*** Item 75: Consier using a custom serialized form - How UID         :drill:
+*** Item 75: Consider using a custom serialized form - How UID        :drill:
     SCHEDULED: <2016-03-03 Thu>
     :PROPERTIES:
     :ID:       b9b7da5b-39fb-41e2-b3cb-5dd31d8b4e5d
@@ -9111,6 +9111,118 @@ How do you declare a serial version UID on your class?
 private static final long serialVersionUID = randomLongValue;
 #+END_SRC
  
+
+*** Item 76: Write ~readObject~ methods defensively - what            :drill:
+
+What is readObject?
+
+**** Answer
+
+Loosely speaking, ~readObject~ is a constructor that takes a byte stream as its
+sole parameter.
+
+*** Item 76: Write ~readObject~ methods defensively - copies          :drill:
+
+What fields must you defensively copy when using readObject?
+
+**** Answer
+
+Any field, including final fields, that is an object reference that a client
+must not possess.
+
+*** Item 76: Write ~readObject~ methods defensively - litmus test     :drill:
+
+What litmus test can you use when deciding whether you need to manually
+implement ~readObject~?
+
+**** Answer
+
+Would you be comfortable adding a public constructor that took all non-transient
+parameters and stored the values with no validation whatsoever.  If so, the
+default ~readObject~ is for you.
+
+*** Item 76: Write ~readObject~ methods defensively - steps           :drill:
+
+What are the steps for a bulletproof ~readObject~ method?
+
+**** Answer
+
+1. Defensively copy each object that must remain private, including mutable
+   components of immutable classes.
+2. Check any invariants and throw an ~InvalidObjectException~ if a check fails.
+3. If an entire object graph must be validated after it is deserialized, use the
+   ~ObjectInputValidation~ interface.
+4. Do not invoke overridable methods in the class.
+
+*** Item 77: For instance control, prefer enums to ~readResolve~ - 1  :drill:
+
+If you use ~readResolve~ for instance control, what modifier must you use on all
+all object reference types?
+
+**** Answer
+
+The transient modifier, because otherwise the class is vulnerable to a
+class-stealer type attack
+
+
+*** Item 77: For instance control, prefer enums to ~readResolve~ - 2  :drill:
+
+How can you modify an non-transient object reference in an instance-controlled
+class?
+
+**** Answer
+
+Use a class-stealer:
+
+If the singleton contains a non-transient object reference field, the contents
+of the field will be deserialized before the singleton's ~readResolve~ method is
+run.  This allows a carefully crafted stream to steal a reference to the
+originally deserialized singleton at the time the contents of the object
+reference field are deserialized.
+
+For the Elvis singleton example, you create a bytestream that has a replaces the
+String[] favorites with a reference to an Elvis stealer class.  The Elvis
+stealer class stores the Elvis singleton in a static field.  To prevent a
+~ClassCastException~, the Elvis stealer returns a new ~String[]~ of favorites.
+
+Now, you have defeated the singleton guarantee.
+
+*** Item 77: For instance control, prefer enums to ~readResolve~ - 3  :drill:
+
+For instance-controlled class, what should you use instead of relying on
+~readResolve~ for serialization?
+
+**** Answer
+
+A single-element enum.
+
+
+*** Item 77: For instance control, prefer enums to ~readResolve~ - 4  :drill:
+
+When is it appropriate to use ~readResolve~ for serialization of an
+instance-controlled class?
+
+**** Answer
+
+When the instances are not known at compile-time.
+
+
+*** Item 77: For instance control, prefer enums to ~readResolve~ - 5  :drill:
+
+How does the accessibility of ~readResolve~ affect serialization?
+
+**** Answer
+
+On a final class, it should be private.
+
+On a non-final class:
+
+package-private: probably okay.
+
+protected or public: will cause a ~ClassCastException~ if the subclass doesn't
+override it.
+
+
 * Consulting
 ** Breaking the Time Barrier
 
