@@ -453,17 +453,17 @@ What character conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Integral Conversions                                  :drill:
-SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-03 Thu>
 :PROPERTIES:
 :ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
-:DRILL_LAST_INTERVAL: 33.4352
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.8
+:DRILL_LAST_INTERVAL: 1.3856
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 2
+:DRILL_AVERAGE_QUALITY: 3.571
 :DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:36]
+:DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:01]
 :END:
 
 What Integral conversions are supported in a format specifier?
@@ -1274,17 +1274,17 @@ PermGen, default 64mb
 Answer
 
 *** Why does Java not having reified types matter?                    :drill:
-SCHEDULED: <2016-03-02 Wed>
+SCHEDULED: <2016-04-28 Thu>
 :PROPERTIES:
 :ID:       b64319d7-d9a2-49ae-9234-71d7a08ff53a
-:DRILL_LAST_INTERVAL: 19.1666
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 56.8758
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.143
-:DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:26]
+:DRILL_AVERAGE_QUALITY: 3.375
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:56]
 :END:
 
 Why should I care that Java doesn't have reified generics?
@@ -1398,17 +1398,17 @@ public static <E> void append(List<E> list, Class<E> cls) {
 #+END_SRC
 
 *** Method References                                                 :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-04-13 Wed>
     :PROPERTIES:
     :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
-    :DRILL_LAST_INTERVAL: 16.2052
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 41.508
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:31]
+    :DRILL_AVERAGE_QUALITY: 3.714
+    :DRILL_EASE: 2.66
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:01]
     :END:
 
 What are the kinds of method references?
@@ -2203,17 +2203,17 @@ Min Value: -9.22+18
 
 
 *** Float Range                                                       :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-19 Sat>
     :PROPERTIES:
     :ID:       e4686fe9-e787-4c9a-b649-ff12ba8b0317
-    :DRILL_LAST_INTERVAL: 5.6123
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 17.3897
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 3.714
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 3.875
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:21]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:54]
     :END:
 
 What's the min and max value of a single-precision float?
@@ -3394,17 +3394,17 @@ What is the general contract for Object.hashCode?
    different objects.
 
 *** Item 09: hashCode impl                                            :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-14 Mon>
 :PROPERTIES:
 :ID:       d55ad317-672d-4bee-ab65-d11c8941a4d8
-:DRILL_LAST_INTERVAL: 4.0943
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 11.6671
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.25
-:DRILL_EASE: 2.52
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:16]
+:DRILL_AVERAGE_QUALITY: 3.385
+:DRILL_EASE: 2.62
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:54]
 :END:
 
 How do you implement hashCode for an object?
@@ -3598,17 +3598,17 @@ If you extend a field's subclass, there's not an easy way to clone that subfield
 http://www.agiledeveloper.com/articles/cloning072002.htm
 
 *** Item 11: Override Clone Judiciously - interface                   :drill:
-SCHEDULED: <2016-03-02 Wed>
+SCHEDULED: <2016-06-03 Fri>
 :PROPERTIES:
 :ID:       47e02ec5-8662-4247-92ce-040951f211d4
-:DRILL_LAST_INTERVAL: 31.5536
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 93.1427
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-30 Sat 00:14]
+:DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:55]
 :END:
 
 What interface do you use to implement clone?
@@ -3845,17 +3845,17 @@ What is the general contract of Comparable?
 - Strongly recommended that if ~x.compareTo(y) == 0~ then ~x.equals(y)~
  
 *** Item 12: Implement Comparable: compareTo not consistent equals    :drill:
-SCHEDULED: <2016-03-02 Wed>
+SCHEDULED: <2016-06-16 Thu>
 :PROPERTIES:
 :ID:       7f740588-9ca2-4c51-ac09-8a91d1c65e42
-:DRILL_LAST_INTERVAL: 29.7596
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 105.9162
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.2
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-01 Mon 10:47]
+:DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:57]
 :END:
 
 What should you do if compareTo is not consistent with equals?  That is,
@@ -5674,17 +5674,17 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-04-15 Fri>
 :PROPERTIES:
 :ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
-:DRILL_LAST_INTERVAL: 14.7711
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 43.815
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.545
-:DRILL_EASE: 2.86
+:DRILL_AVERAGE_QUALITY: 3.666
+:DRILL_EASE: 2.96
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:36]
+:DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:55]
 :END:
 
 What are the reifiable types in Java?
@@ -6910,17 +6910,17 @@ Selection among overloaded methods is static.
 Selection among overriden methods in dynamic.
 
 *** Item 41: Use overloading judiciously - avoid confusing overloads  :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-04-12 Tue>
     :PROPERTIES:
     :ID:       ad83a823-979c-49d2-b33a-215b9266c34d
-    :DRILL_LAST_INTERVAL: 15.0515
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 40.5757
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:33]
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:00]
     :END:
 
 What's a good policy for overloading?
@@ -7185,17 +7185,17 @@ When is it acceptable to postpone initialization of local variables?
 When using a try-catch block.
 
 *** Item 46: Prefer for-each loops - why                              :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       d1e99a54-2063-424a-900b-0acde4fc4f69
-    :DRILL_LAST_INTERVAL: 12.2207
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 46.9617
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:02]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:54]
     :END:
 
 Why should you prefer for-each loops?
@@ -7432,17 +7432,17 @@ capabilities?
 Strings are slower, more tedious and more error-prone than the other methods
 
 *** Item 50: Avoid strings where other types are better - aggregation :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-04-08 Fri>
     :PROPERTIES:
     :ID:       0f58bf04-6609-43e7-9f6a-ad417d3dbbbe
-    :DRILL_LAST_INTERVAL: 10.4038
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 37.1837
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:37]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:00]
     :END:
 
 What should you replace String aggregation with?
@@ -8064,17 +8064,17 @@ Which variable reads and writes are atomic in Java?
 All variables except long and double.
 
 *** Item 66: Synchronize access to shared mutable data - liveness     :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-15 Tue>
     :PROPERTIES:
     :ID:       193beafd-0f36-4408-8d09-b40501c16604
-    :DRILL_LAST_INTERVAL: 4.1842
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 12.7585
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.8
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:19]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:52]
     :END:
 
 Even though reads and writes are atomic, why might you want to synchronize
@@ -8116,17 +8116,17 @@ What effect does synchronization have if only write access is synchronized?
 No effect.  Both operations must be synchronized.
 
 *** Item 66: Synchronize access to shared mutable data - volatile     :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       b49f9601-33df-4cfc-9e6e-a85e9345715a
-    :DRILL_LAST_INTERVAL: 6.0672
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 20.0633
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:21]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:54]
     :END:
 
 What does the volatile keyword do?
@@ -8182,17 +8182,17 @@ What must you do when multiple threads share mutable data?
 Synchronize each thread that reads or writes the data.
 
 *** Item 67: Avoid excessive synchronization - aliens                 :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-15 Tue>
     :PROPERTIES:
     :ID:       36393a9f-5481-4c2e-92a4-688e8503ce4f
-    :DRILL_LAST_INTERVAL: 4.0819
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.4623
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:13]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:52]
     :END:
 
 Why should you avoid alien methods in synchronized blocks?
@@ -8893,17 +8893,17 @@ Which classes designed for inheritance in Java do implement Serializable?
 ~Throwable~, ~Component~ and ~HttpServlet~
  
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-03-02 Wed>
+    SCHEDULED: <2016-03-06 Sun>
     :PROPERTIES:
     :ID:       909e64d3-08a8-45c3-8c7e-6dc0c4a5ed5f
-    :DRILL_LAST_INTERVAL: 1.4168
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.6051
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:21]
+    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:54]
     :END:
 
 If you have a class designed for inheritance that is not Serializable, how can
