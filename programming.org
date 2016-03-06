@@ -1472,6 +1472,30 @@ of communicating recoverable errors.
 
 http://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
 
+*** Try, finally, return                                              :drill:
+
+Does finally always get executed in Java?
+
+**** Answer
+
+Yes, except in two cases:
+
+1. If you call ~System.exit()~
+2. If the JVM crashes first.
+
+http://stackoverflow.com/questions/65035/does-finally-always-execute-in-java
+
+*** Return from finally                                               :drill:
+
+What happens if you return from a finally block in Java?
+
+**** Answer
+
+It trumps any other return statement and swallows any ~Throwables~.
+
+https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.20.1
+http://stackoverflow.com/questions/48088/returning-from-a-finally-block-in-java
+
 ** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
