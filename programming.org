@@ -453,17 +453,17 @@ What character conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Integral Conversions                                  :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
 :PROPERTIES:
 :ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
-:DRILL_LAST_INTERVAL: 1.3856
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 4.658
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.571
-:DRILL_EASE: 2.56
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:01]
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.66
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:09]
 :END:
 
 What Integral conversions are supported in a format specifier?
@@ -1758,17 +1758,17 @@ def update_bit(num, i, isOne):
 
 
 *** Java count bits                                                   :drill:
-    SCHEDULED: <2016-03-04 Fri>
+    SCHEDULED: <2016-03-19 Sat>
     :PROPERTIES:
     :ID:       a37508c6-002a-4c2b-b928-53e2505adb21
-    :DRILL_LAST_INTERVAL: 5.3566
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 14.9883
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.4
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:27]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:08]
     :END:
 
 How do you get the number of bits set in an integer in Java?
@@ -1921,17 +1921,17 @@ What are the two common hash table implementation techniques?
 Chaining and Open addressing
 
 *** Hash Table Open Addressing                                      :drill:
-SCHEDULED: <2016-03-03 Thu>
+SCHEDULED: <2016-05-07 Sat>
 :PROPERTIES:
 :ID:       1940C116-6088-47FD-A81B-9B3E190113D7
-:DRILL_LAST_INTERVAL: 31.9003
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 63.5555
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 2.9
-:DRILL_EASE: 1.94
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:31]
+:DRILL_AVERAGE_QUALITY: 3.091
+:DRILL_EASE: 2.04
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:24]
 :END:
 
 What are the common techniques for implementing open addressing?
@@ -1950,17 +1950,17 @@ Hopscotch raptors.
 + 2-choice Hashing
 
 *** Hopscotch hashing                                               :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-08 Tue>
 :PROPERTIES:
 :ID:       C53D4220-3C93-478B-BEBC-BA862E35D2D8
-:DRILL_LAST_INTERVAL: 1.7807
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 4.352
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.2
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 3.364
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:20]
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:12]
 :END:
 
 What is Hopscotch hashing?
@@ -2182,17 +2182,17 @@ Max Value:  2^31 - 1 ==  2_147_483_647
 Min Value: -2^31     == -2_147_483_648
 
 *** Signed Long Range                                                 :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-04-01 Fri>
     :PROPERTIES:
     :ID:       d9b3e739-4b04-47c1-ad84-1157606b7e14
-    :DRILL_LAST_INTERVAL: 10.1524
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 28.2053
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:25]
     :END:
 
 What's the min and max value of a signed 64 bit integer?
@@ -2226,17 +2226,17 @@ Min Value: -3.4E38
 Also, Positive Infinity and Negative Infinity.
 
 *** Double Range                                                      :drill:
-    SCHEDULED: <2016-03-04 Fri>
+    SCHEDULED: <2016-03-24 Thu>
     :PROPERTIES:
     :ID:       5e80ee5a-da72-4be2-a3d8-bbea341e1953
-    :DRILL_LAST_INTERVAL: 5.6262
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 8
+    :DRILL_LAST_INTERVAL: 19.7147
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 9
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 3.625
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 3.778
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:14]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:09]
     :END:
 
 What's the min and max value of a double-precision float?
@@ -3009,17 +3009,17 @@ Why doesn't making a class abstract prevent instantiation?
 Because you can subclass the abstract class and instantiate the subclass.
 
 *** Item 05: Unnecessary Objects                                      :drill:
-SCHEDULED: <2016-03-04 Fri>
+SCHEDULED: <2016-05-05 Thu>
 :PROPERTIES:
 :ID:       5522d806-b622-4968-a64b-73c656113047
-:DRILL_LAST_INTERVAL: 29.1195
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 61.8474
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.251
-:DRILL_EASE: 2.0
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
+:DRILL_AVERAGE_QUALITY: 3.386
+:DRILL_EASE: 2.1
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:13]
 :END:
 
 How can you avoid unnecessary objects?
@@ -3912,17 +3912,17 @@ then ~dateOfBirth~.  But what if we compare NamedThing to Person.
 http://stackoverflow.com/questions/13509286/why-cant-i-extend-an-instantiable-class-with-a-new-value-component-while-preser
 
 *** Item 12: Implement Comparable: Impl                               :drill:
-SCHEDULED: <2016-03-04 Fri>
+SCHEDULED: <2016-05-25 Wed>
 :PROPERTIES:
 :ID:       5a6fa657-f96d-4a9b-a46c-4c90da10704b
-:DRILL_LAST_INTERVAL: 28.5554
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 81.9356
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.833
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:47]
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:13]
 :END:
 
 What does a plain implementation for Comparable look like?
@@ -5767,17 +5767,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-05 Sat>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 17.1869
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 8
-:DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.751
-:DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
+:DRILL_LAST_INTERVAL: 1.075
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 10
+:DRILL_FAILURE_COUNT: 3
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.52
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:43]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -5785,7 +5785,7 @@ What steps should you take to prove an unchecked cast is type safe?
 **** Answer
 
 1. Ensure the field is private or immutable.
-2. Ensure it doesn't escape the enclosing class by return or by parameter.
+2. Ensure the field doesn't escape the enclosing class by return or by parameter.
 3. Ensure that all methods that modify the field are type-safe.
 4. Explain in a comment why the cast is safe.
 
@@ -5883,17 +5883,17 @@ How do you express "for every type T that can be compared to itself"?
 <T extends Comparable<T>>
 
 *** Item 28: Use Bounded Wildcards - types of bounds                  :drill:
-SCHEDULED: <2016-03-04 Fri>
+SCHEDULED: <2016-05-14 Sat>
 :PROPERTIES:
 :ID:       f54345c2-2ed8-46d7-a10d-07fdf9fe3839
-:DRILL_LAST_INTERVAL: 20.8844
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 71.2462
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:29]
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:24]
 :END:
 
 What are the kinds of bounded wildcards?
@@ -6533,17 +6533,17 @@ What are the benefits of marker types over marker annotations?
 http://www.javacodegeeks.com/2013/02/increased-compile-time-safety-with-phantom-types.html
 
 *** Item 37: Use marker interfaces to define types - annotations      :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       671aec6a-0f28-4a32-a3eb-b1907f79365b
-    :DRILL_LAST_INTERVAL: 17.894
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 58.972
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:25]
     :END:
 
 What are the benefits of marker annotations over marker interfaces?
@@ -6664,17 +6664,17 @@ The extra time spent doing the checks will be paid back with interest the first
 time a validity check fails.
 
 *** Item 39: Make defensive copies when needed - base assumption      :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-04-25 Mon>
     :PROPERTIES:
     :ID:       af5067ca-7257-4424-8d2a-bc9070b1e45c
-    :DRILL_LAST_INTERVAL: 16.7441
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 52.1195
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:33]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:13]
     :END:
 
 What assumption should you operate under when programming?
@@ -6977,17 +6977,17 @@ If you must overload a method, what should you avoid?
    you confuse the fuck out of programmers.
 
 *** Item 42: Use varargs judiciously - one required arg               :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       222c514f-84df-4055-909d-fd22003eaac9
-    :DRILL_LAST_INTERVAL: 14.6752
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 44.7963
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:24]
     :END:
 
 How do you handle a required argument followed by a variable number of
@@ -7028,17 +7028,17 @@ When should you use varargs?
 When the method /only/ really operates on a variable length sequence of values.
 
 *** Item 42: Use varargs judiciously - optimize                       :drill:
-    SCHEDULED: <2016-03-04 Fri>
+    SCHEDULED: <2016-04-23 Sat>
     :PROPERTIES:
     :ID:       17543b2a-82f3-4a2f-b98a-ccd27cb4de93
-    :DRILL_LAST_INTERVAL: 15.9897
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 50.0013
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:15]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:24]
     :END:
 
 How can you optimize a varargs method?
@@ -7664,17 +7664,17 @@ What are Bloch's principles for writing programs with regards to optimization?
 
    
 *** Item 56: Adhere to generally accepted naming conventions          :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-04-03 Sun>
     :PROPERTIES:
     :ID:       4880dd30-9a68-4417-9e95-584e0e4064e9
-    :DRILL_LAST_INTERVAL: 9.9031
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 29.5149
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:07]
     :END:
 
 What naming conventions should you follow for returning a view?
@@ -8205,17 +8205,17 @@ over it.  Calling an alien method can cause exceptions, deadlocks or data
 corruption, resulting in liveness and safety failures.
 
 *** Item 67: Avoid excessive synchronization - Observers              :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       9a0dbcbe-c1a4-4852-8c55-d494fad9ebe9
-    :DRILL_LAST_INTERVAL: 4.9736
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.608
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:19]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:10]
     :END:
 
 What's a good data structure for observer lists?
@@ -8829,17 +8829,17 @@ What do you call an alien method invoked outside a synchronized region?
 
 # ** Serialization
 *** Item 74: Implement Serializable judiciously                       :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-10 Thu>
     :PROPERTIES:
     :ID:       82dfe2f0-2878-44cb-bd98-6bcf90130842
-    :DRILL_LAST_INTERVAL: 1.8302
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.6487
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:23]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:10]
     :END:
 
 What are the major costs of implementing Serializable?
@@ -8853,17 +8853,17 @@ What are the major costs of implementing Serializable?
    serializable into new releases.
 
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-08 Tue>
     :PROPERTIES:
     :ID:       3b45b060-6ec4-44a9-9e18-3e275aed71a8
-    :DRILL_LAST_INTERVAL: 1.5717
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.4729
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:23]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
     :END:
 
 Should classes designed for inheritance implement Serializable?
@@ -8873,17 +8873,17 @@ Should classes designed for inheritance implement Serializable?
 No, because it places a significant burden an anyone that extend the class?
  
 *** Item 74: Implement Serializable judiciously - inheritance excep   :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       5008dc2d-f4fd-4c19-a7b9-a287cdfbb3d0
-    :DRILL_LAST_INTERVAL: 1.6352
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.5063
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:21]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:10]
     :END:
 
 Which classes designed for inheritance in Java do implement Serializable?
@@ -8915,17 +8915,17 @@ Provide a protected no-args constructor and a ~checkInit()~ function using an
 ~AtomicReference~ to an enum on the classes initialized State.
  
 *** Item 74: Implement Serializable judiciously - inner classes       :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-06 Sun>
     :PROPERTIES:
     :ID:       0f5f37b6-680f-4b0f-81b0-3fefa9f09130
-    :DRILL_LAST_INTERVAL: 1.5514
+    :DRILL_LAST_INTERVAL: 1.8919
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:12]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:43]
     :END:
 
 Should inner classes implement Serializable?
@@ -8938,17 +8938,17 @@ scope.  The names of the variables are unspecified, so the default Serialized
 form of an inner class is ill-defined.
 
 *** Item 75: Consider using a custom serialized form - default        :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       51d8bb9b-8ca6-4cd2-bdc4-7201103d4e2a
-    :DRILL_LAST_INTERVAL: 2.052
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 6.5442
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:24]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:08]
     :END:
 
 When is the default serialized form likely to be appropriate?
@@ -8959,17 +8959,17 @@ When the object's physical representation is identical to it's content,
 e.g. value classes.
 
 *** Item 75: Consider using a custom serialized form - default 2      :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       f05cb32b-e179-4a8e-a2e9-929c02031d67
-    :DRILL_LAST_INTERVAL: 1.7848
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 6.5466
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:16]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
     :END:
 
 If you use the default serialized form, what method must you provide?
@@ -8979,17 +8979,17 @@ If you use the default serialized form, what method must you provide?
 The ~readObject~ method to ensure invariants and security.
 
 *** Item 75: Consider using a custom serialized form - default bad    :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       fb687a6c-f5b4-4bf9-878a-29c03e1efc60
-    :DRILL_LAST_INTERVAL: 1.7154
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.1913
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:15]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:08]
     :END:
 
 What are the disadvantages of using the default serialized form when an object's
@@ -9003,17 +9003,17 @@ physical representation differs substantially from it's logical data content?
 4. It can cause stack overflows.
 
 *** Item 75: Consider using a custom serialized form - default read   :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       54797064-a10b-42d3-962e-6639f4386553
-    :DRILL_LAST_INTERVAL: 1.6155
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9131
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:22]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
     :END:
 
 What methods must you call first in ~writeObject~ and ~readObject~?
@@ -9024,17 +9024,17 @@ What methods must you call first in ~writeObject~ and ~readObject~?
 fields make the class more flexible to change
 
 *** Item 75: Consider using a custom serialized form - transient      :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-10 Thu>
     :PROPERTIES:
     :ID:       3597e0b8-28b4-4af0-ae98-5cc094a90691
-    :DRILL_LAST_INTERVAL: 1.7709
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.794
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:21]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
     :END:
 
 Which fields should you mark as transient?
@@ -9048,17 +9048,17 @@ If you use a custom serialized form, most or all of the instance fields should
 be labeled transient.
 
 *** Item 75: Consider using a custom serialized form - synch          :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       c64bddc1-a9ac-483c-85cc-a629716578d6
-    :DRILL_LAST_INTERVAL: 1.5034
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.8338
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:24]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
     :END:
 
 What has to be synchronized for serialization?
@@ -9069,17 +9069,17 @@ The same synchronization on any other method that reads the entire state of the
 object.
 
 *** Item 75: Consider using a custom serialized form - UID            :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       c439c369-3480-4e73-bbaa-a80fa6af6ec7
-    :DRILL_LAST_INTERVAL: 1.5959
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.7375
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:13]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:09]
     :END:
 
 Why should you declare an explicit serial version UID in every serializable class?
@@ -9090,17 +9090,17 @@ Because otherwise the JVM will perform an expensive computation looking at all
 fields and methods to generate a UID.
 
 *** Item 75: Consider using a custom serialized form - How UID        :drill:
-    SCHEDULED: <2016-03-03 Thu>
+    SCHEDULED: <2016-03-09 Wed>
     :PROPERTIES:
     :ID:       b9b7da5b-39fb-41e2-b3cb-5dd31d8b4e5d
-    :DRILL_LAST_INTERVAL: 1.7045
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6167
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:20]
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
     :END:
 
 How do you declare a serial version UID on your class?
@@ -9113,6 +9113,9 @@ private static final long serialVersionUID = randomLongValue;
  
 
 *** Item 76: Write ~readObject~ methods defensively - what            :drill:
+    :PROPERTIES:
+    :ID:       6DC8557E-E233-4F06-8ADC-C28E1E170895
+    :END:
 
 What is readObject?
 
@@ -9122,6 +9125,18 @@ Loosely speaking, ~readObject~ is a constructor that takes a byte stream as its
 sole parameter.
 
 *** Item 76: Write ~readObject~ methods defensively - copies          :drill:
+    SCHEDULED: <2016-03-06 Sun>
+    :PROPERTIES:
+    :ID:       2270A45D-957A-46AB-A8F8-BF92940391C5
+    :DRILL_LAST_INTERVAL: 1.8767
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:13]
+    :END:
 
 What fields must you defensively copy when using readObject?
 
@@ -9131,6 +9146,18 @@ Any field, including final fields, that is an object reference that a client
 must not possess.
 
 *** Item 76: Write ~readObject~ methods defensively - litmus test     :drill:
+    SCHEDULED: <2016-03-06 Sun>
+    :PROPERTIES:
+    :ID:       2F14FFFE-986B-4540-91CE-C46B53314339
+    :DRILL_LAST_INTERVAL: 1.6632
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:44]
+    :END:
 
 What litmus test can you use when deciding whether you need to manually
 implement ~readObject~?
@@ -9142,6 +9169,18 @@ parameters and stored the values with no validation whatsoever.  If so, the
 default ~readObject~ is for you.
 
 *** Item 76: Write ~readObject~ methods defensively - steps           :drill:
+    SCHEDULED: <2016-03-06 Sun>
+    :PROPERTIES:
+    :ID:       50644C0C-33E5-49BF-A4F0-3EF0D67D75D2
+    :DRILL_LAST_INTERVAL: 1.6901
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 3
+    :DRILL_AVERAGE_QUALITY: 2.25
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:46]
+    :END:
 
 What are the steps for a bulletproof ~readObject~ method?
 
@@ -9155,6 +9194,9 @@ What are the steps for a bulletproof ~readObject~ method?
 4. Do not invoke overridable methods in the class.
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 1  :drill:
+    :PROPERTIES:
+    :ID:       3E42BE01-DDC6-4179-B1D7-9A35D52453F6
+    :END:
 
 If you use ~readResolve~ for instance control, what modifier must you use on all
 all object reference types?
@@ -9166,6 +9208,9 @@ class-stealer type attack
 
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 2  :drill:
+    :PROPERTIES:
+    :ID:       D52D8DFC-5D0C-4B18-B271-7EF171029909
+    :END:
 
 How can you modify an non-transient object reference in an instance-controlled
 class?
@@ -9188,6 +9233,18 @@ stealer class stores the Elvis singleton in a static field.  To prevent a
 Now, you have defeated the singleton guarantee.
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 3  :drill:
+    SCHEDULED: <2016-03-06 Sun>
+    :PROPERTIES:
+    :ID:       8E60EF9F-4B1F-4FCB-9ECF-4C105F546424
+    :DRILL_LAST_INTERVAL: 1.544
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:24]
+    :END:
 
 For instance-controlled class, what should you use instead of relying on
 ~readResolve~ for serialization?
@@ -9198,6 +9255,18 @@ A single-element enum.
 
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 4  :drill:
+    SCHEDULED: <2016-03-05 Sat>
+    :PROPERTIES:
+    :ID:       1B7B50FE-6485-42DE-BC3F-CD2D4D80D49E
+    :DRILL_LAST_INTERVAL: 1.4676
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:26]
+    :END:
 
 When is it appropriate to use ~readResolve~ for serialization of an
 instance-controlled class?
@@ -9208,6 +9277,18 @@ When the instances are not known at compile-time.
 
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 5  :drill:
+    SCHEDULED: <2016-03-06 Sun>
+    :PROPERTIES:
+    :ID:       B7CD2ED7-556A-416F-8605-0B92AF7547AF
+    :DRILL_LAST_INTERVAL: 2.0189
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:25]
+    :END:
 
 How does the accessibility of ~readResolve~ affect serialization?
 
