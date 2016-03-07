@@ -1520,6 +1520,88 @@ It trumps any other return statement and swallows any ~Throwables~.
 https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.20.1
 http://stackoverflow.com/questions/48088/returning-from-a-finally-block-in-java
 
+*** Fill Array                                                        :drill:
+
+How do you fill an array in Java?  
+
+How do you fill part of an array?
+
+**** Answer
+
+#+BEGIN_SRC java
+Arrays.fill(Object[] a, int fromIndex, int toIndex, Object val)
+
+Arrays.fill(Object[] a, Object val)
+#+END_SRC
+
+*** Sort Array                                                        :drill:
+
+How do you sort an array in-place in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+Arrays.sort(int[] a)
+Arrays.sort(int[] a, int fromIndex, int toIndex)
+
+Arrays.sort(T[] a, Comparator<? super T> c)
+Arrays.sort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
+#+END_SRC
+
+*** Sort Array - new                                                  :drill:
+
+How do get a new sorted array from another one in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+int[] oldArray = new int[5] {3, 1, 4, 1, 5};
+int[] newArray = oldArray.clone();
+Arrays.sort(newArray);
+#+END_SRC
+
+*** Parallel Sort                                                     :drill:
+
+How do you parallel sort in Java?
+
+**** Answer
+
+
+#+BEGIN_SRC java
+Arrays.parallelSort(int[] a)
+Arrays.parallelSort(int[] a, int fromIndex, int toIndex)
+
+Arrays.parallelSort(T[] a, Comparator<? super T> c)
+Arrays.parallelSort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
+#+END_SRC
+
+*** Array Prefix                                                      :drill:
+
+How do you compute the prefix of an array in Java?
+
+**** Answer
+
+Manually:
+
+#+BEGIN_SRC java
+int sum = 0;
+for (int i = 0; i < a.length; i++) {
+    sum += a[i];
+    a[i] = sum;
+}
+#+END_SRC
+
+With ~parallelPrefix~
+#+BEGIN_SRC java
+Arrays.parallelPrefix(array, a, b -> a + b);
+#+END_SRC
+
+With streams:
+#+BEGIN_SRC java
+Arrays.stream(a).reduce(
+#+END_SRC
+
+
 ** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
@@ -1845,6 +1927,26 @@ How do you clear the least significant bit?
 **** Answer
 
 x & x - 1
+
+*** Logical vs arithmetic shifts                                      :drill:
+
+What's the difference between logical and arithmetic shifts?
+
+**** Answer
+
+Arithmetic - preserves the sign
+Logical - fills with 0;
+
+Arithmetic and logic left shifts are the same.
+That's not the case on the right.
+
+#+BEGIN_SRC java
+  00010111 (decimal +23) LEFT-SHIFT
+= 00101110 (decimal +46)
+
+  10010111 (decimal −105) RIGHT-SHIFT
+= 11001011 (decimal −53)
+#+END_SRC
 
 ** Sorting
 
