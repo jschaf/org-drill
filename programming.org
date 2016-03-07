@@ -333,17 +333,17 @@ Arrays.copyOfRange(T[] original, int from, int to)
 Copies specified range into a new array
 
 *** Reference Types                                                   :drill:
-SCHEDULED: <2016-03-07 Mon>
+SCHEDULED: <2016-06-14 Tue>
 :PROPERTIES:
 :ID:       37cb8ba4-f7e8-4420-aa99-623b76180cfb
-:DRILL_LAST_INTERVAL: 36.2444
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 99.3191
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:30]
+:DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:27]
 :END:
 
 What are Java's reference types and when do they get garbage collected?
@@ -501,17 +501,17 @@ What floating point conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Date time Conversions                                 :drill:
-SCHEDULED: <2016-03-07 Mon>
+SCHEDULED: <2016-06-18 Sat>
 :PROPERTIES:
 :ID:       50ed3929-de34-4b06-9cb6-ee7cbcdc3fc8
-:DRILL_LAST_INTERVAL: 36.3001
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 102.6275
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
+:DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:26]
 :END:
 
 What is the Date time prefix in a format specifier?
@@ -1498,17 +1498,17 @@ Yes, except in two cases:
 http://stackoverflow.com/questions/65035/does-finally-always-execute-in-java
 
 *** Return from finally                                               :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       a168fadd-fc22-44de-a12a-dcb00b10a43c
-    :DRILL_LAST_INTERVAL: 1.4963
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.8735
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:56]
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:23]
     :END:
 
 What happens if you return from a finally block in Java?
@@ -1521,6 +1521,18 @@ https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.20.1
 http://stackoverflow.com/questions/48088/returning-from-a-finally-block-in-java
 
 *** Fill Array                                                        :drill:
+    SCHEDULED: <2016-03-09 Wed>
+    :PROPERTIES:
+    :ID:       e494ca44-c3bf-4bda-acc3-c0537768e1d1
+    :DRILL_LAST_INTERVAL: 1.5874
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :END:
 
 How do you fill an array in Java?  
 
@@ -1535,6 +1547,18 @@ Arrays.fill(Object[] a, Object val)
 #+END_SRC
 
 *** Sort Array                                                        :drill:
+    SCHEDULED: <2016-03-09 Wed>
+    :PROPERTIES:
+    :ID:       58b12f01-2423-4260-9d7e-b8873f429b00
+    :DRILL_LAST_INTERVAL: 1.5967
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :END:
 
 How do you sort an array in-place in Java?
 
@@ -1549,6 +1573,18 @@ Arrays.sort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
 #+END_SRC
 
 *** Sort Array - new                                                  :drill:
+    SCHEDULED: <2016-03-09 Wed>
+    :PROPERTIES:
+    :ID:       8ef205e9-5734-4562-a0c0-c01543b6336a
+    :DRILL_LAST_INTERVAL: 1.5367
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :END:
 
 How do get a new sorted array from another one in Java?
 
@@ -1561,6 +1597,18 @@ Arrays.sort(newArray);
 #+END_SRC
 
 *** Parallel Sort                                                     :drill:
+    SCHEDULED: <2016-03-09 Wed>
+    :PROPERTIES:
+    :ID:       972eafae-55ca-4751-9c27-7382e732fd6c
+    :DRILL_LAST_INTERVAL: 1.5919
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:26]
+    :END:
 
 How do you parallel sort in Java?
 
@@ -1576,6 +1624,18 @@ Arrays.parallelSort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
 #+END_SRC
 
 *** Array Prefix                                                      :drill:
+    SCHEDULED: <2016-03-08 Tue>
+    :PROPERTIES:
+    :ID:       56a86586-4174-4a91-a41d-6e42382e17c1
+    :DRILL_LAST_INTERVAL: 1.4585
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:24]
+    :END:
 
 How do you compute the prefix of an array in Java?
 
@@ -1593,6 +1653,7 @@ for (int i = 0; i < a.length; i++) {
 
 With ~parallelPrefix~
 #+BEGIN_SRC java
+parallelPrefix(T[] array, int fromIndex, int toIndex, BinaryOperator<T> op)
 Arrays.parallelPrefix(array, a, b -> a + b);
 #+END_SRC
 
@@ -1929,6 +1990,18 @@ How do you clear the least significant bit?
 x & x - 1
 
 *** Logical vs arithmetic shifts                                      :drill:
+    SCHEDULED: <2016-03-09 Wed>
+    :PROPERTIES:
+    :ID:       c141c7dc-a95d-48e9-abce-1710cf9c77d6
+    :DRILL_LAST_INTERVAL: 1.8135
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :END:
 
 What's the difference between logical and arithmetic shifts?
 
@@ -4173,17 +4246,17 @@ What are the four access levels in Java?
 4. public - everywhere
 
 *** Item 13: Minimize accessibility - public mutable                  :drill:
-SCHEDULED: <2016-03-07 Mon>
+SCHEDULED: <2016-06-12 Sun>
 :PROPERTIES:
 :ID:       bb8391ef-dd19-4658-aeb1-034402409033
-:DRILL_LAST_INTERVAL: 33.6817
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 96.6994
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-02 Tue 12:07]
+:DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
 :END:
 
 Are public mutable fields thread-safe?
@@ -4618,17 +4691,17 @@ Subclass it at least three times, and have someone other than the author
 subclass it at least once.
 
 *** Item 17: Design for Inheritance - constructors and overridables   :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-03-13 Sun>
 :PROPERTIES:
 :ID:       4d850c76-da4c-4e3c-bf02-65d7ba11bb76
-:DRILL_LAST_INTERVAL: 1.409
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 5.7792
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 4.333
-:DRILL_EASE: 3.2
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 3.3
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-06 Sun 15:03]
+:DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:22]
 :END:
 
 Why can't you use overridable methods in a constructor?
@@ -5377,18 +5450,18 @@ SCHEDULED: <2016-03-18 Fri>
 The official term for a [List<String>] is a [parameterized type].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-04-30 Sat>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       3c26f404-53a2-4d3d-a605-ec4835909aac
-:DRILL_LAST_INTERVAL: 14.6933
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 54.3573
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.9
-:DRILL_EASE: 2.96
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 3.06
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:39]
+:DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
 :END:
  
 The official term for a [String] is a [actual type parameter].
@@ -7313,17 +7386,17 @@ Nearly every local variable should contain an _?
 Initializer
 
 *** Item 45: Minimize scope of local vars - skipping initialization   :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-04-26 Tue>
     :PROPERTIES:
     :ID:       e05cf4e2-0798-4d5b-84fe-c751786bba03
-    :DRILL_LAST_INTERVAL: 16.7512
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 50.4876
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:02]
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
     :END:
 
 When is it acceptable to postpone initialization of local variables?
@@ -7539,17 +7612,17 @@ When you mix primitives and boxed primitives in a single operation, the boxed
 primitive is auto-unboxed.
 
 *** Item 49: Prefer primitives to boxed primitives - null unboxing    :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-04-20 Wed>
     :PROPERTIES:
     :ID:       78ad49ed-c190-4543-ada7-99e02dc72924
-    :DRILL_LAST_INTERVAL: 15.3465
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 44.1717
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:40]
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
     :END:
 
 What happens if you unbox a null value?
@@ -7677,17 +7750,17 @@ This blog post actually runs tests.  The results:
 2. Java 8 does not currently optimize dynamic string concatenation.
 
 *** Item 52: Refer to objects by interface - what                     :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-04-15 Fri>
     :PROPERTIES:
     :ID:       08e4da20-d626-4bea-a23a-3713e16872b4
-    :DRILL_LAST_INTERVAL: 12.9116
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 39.198
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:43]
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:24]
     :END:
 
 Why should you use interfaces as types?
@@ -8118,17 +8191,17 @@ What is failure atomicity?
 When a failed method invocation leaves the object in the state prior to the invocation.
 
 *** Item 64: Strive for failure atomicity - achieve atomicity         :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-03-23 Wed>
     :PROPERTIES:
     :ID:       5BFAE971-C8AD-421A-AB2E-702097409EEA
-    :DRILL_LAST_INTERVAL: 5.6849
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 16.1767
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 3.571
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 3.75
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:05]
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:22]
     :END:
 
 What ways can you achieve failure atomicity?
@@ -9351,17 +9424,17 @@ What are the steps for a bulletproof ~readObject~ method?
 4. Do not invoke overridable methods in the class.
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 1  :drill:
-    SCHEDULED: <2016-03-07 Mon>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       3E42BE01-DDC6-4179-B1D7-9A35D52453F6
-    :DRILL_LAST_INTERVAL: 1.3891
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 3.8126
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 15:01]
+    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:21]
     :END:
 
 If you use ~readResolve~ for instance control, what modifier must you use on all
