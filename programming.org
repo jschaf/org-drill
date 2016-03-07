@@ -2811,93 +2811,6 @@ for (int c = a ^ b; c != 0; c = c & (c - 1))
 #+END_SRC
 
 * Java Concurrency
-** Java Concurrency In Practice
-*** Motivating Factors                                                :drill:
-SCHEDULED: <2016-03-24 Thu>
-:PROPERTIES:
-:ID:       e084f79e-8e7c-4677-bbf8-415022b927cd
-:DRILL_LAST_INTERVAL: 58.3392
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 7
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:34]
-:END:
-
-What are the motivating factors for concurrency?
-
-**** Answer
-
-+ Resource Utilization - waiting for external operations
-+ Fairness - share resources with time slicing
-+ Convenience - often easier to write programs perform a single task and
-  coordinate them
-
-*** Thread Benefits                                                   :drill:
-SCHEDULED: <2016-04-18 Mon>
-:PROPERTIES:
-:ID:       3acd0416-3113-4401-a5f4-58af124d3050
-:DRILL_LAST_INTERVAL: 71.9321
-:DRILL_REPEATS_SINCE_FAIL: 7
-:DRILL_TOTAL_REPEATS: 7
-:DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.571
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:35]
-:END:
-
-What are the benefits of threads?
-
-**** Answer
-
-+ Exploit multiple processors.
-+ Simplicity of modeling, break complicated async workflow into simpler
-  synchronous workflows and interact at specific sync points.
-+ More responsive user interface.
-
-*** Thread vs Process                                                 :drill:
-SCHEDULED: <2016-04-06 Wed>
-:PROPERTIES:
-:ID:       2505D78D-4817-463B-B40A-CCD23232BD24
-:DRILL_LAST_INTERVAL: 57.2504
-:DRILL_REPEATS_SINCE_FAIL: 7
-:DRILL_TOTAL_REPEATS: 6
-:DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 1.94
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:07]
-:END:
-
-Whats the difference between threads and processes?
-
-**** Answer
-
-A process is an executing instance of a program.  Process provides resources
-necessary to execute a program.  A process has:
-
-+ Virtual address space
-+ executable code
-+ Open handles to system objects
-+ a security context
-+ A unique PID (process identifier)
-+ At least one thread of execution
-
-A thread is the entity within the process that can be scheduled for execution.
-Threads share virtual address space of a process.  Each thread maintains:
-
-+ Shared virtual address space from the process
-+ Exception handlers
-+ scheduling priority
-+ thread local storage
-+ a unique thread identifier
-+ a set of structures to save the thread context until it is scheduled
-
-http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread
-
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
@@ -9551,6 +9464,129 @@ package-private: probably okay.
 
 protected or public: will cause a ~ClassCastException~ if the subclass doesn't
 override it.
+
+* Java Concurrency in Practice
+** Introduction
+*** Motivating Factors                                                :drill:
+SCHEDULED: <2016-03-24 Thu>
+:PROPERTIES:
+:ID:       e084f79e-8e7c-4677-bbf8-415022b927cd
+:DRILL_LAST_INTERVAL: 58.3392
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-01-26 Tue 18:34]
+:END:
+
+What are the motivating factors for concurrency?
+
+**** Answer
+
++ Resource Utilization - waiting for external operations
++ Fairness - share resources with time slicing
++ Convenience - often easier to write programs perform a single task and
+  coordinate them
+
+*** Thread Benefits                                                   :drill:
+SCHEDULED: <2016-04-18 Mon>
+:PROPERTIES:
+:ID:       3acd0416-3113-4401-a5f4-58af124d3050
+:DRILL_LAST_INTERVAL: 71.9321
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
+:DRILL_FAILURE_COUNT: 1
+:DRILL_AVERAGE_QUALITY: 3.571
+:DRILL_EASE: 2.42
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:35]
+:END:
+
+What are the benefits of threads?
+
+**** Answer
+
++ Exploit multiple processors.
++ Simplicity of modeling, break complicated async workflow into simpler
+  synchronous workflows and interact at specific sync points.
++ More responsive user interface.
+
+*** Thread vs Process                                                 :drill:
+SCHEDULED: <2016-04-06 Wed>
+:PROPERTIES:
+:ID:       2505D78D-4817-463B-B40A-CCD23232BD24
+:DRILL_LAST_INTERVAL: 57.2504
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
+:DRILL_FAILURE_COUNT: 0
+:DRILL_AVERAGE_QUALITY: 3.333
+:DRILL_EASE: 1.94
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:07]
+:END:
+
+Whats the difference between threads and processes?
+
+**** TODO Answer
+
+A process is an executing instance of a program.  Process provides resources
+necessary to execute a program.  A process has:
+
++ Virtual address space
++ executable code
++ Open handles to system objects
++ a security context
++ A unique PID (process identifier)
++ At least one thread of execution
+
+A thread is the entity within the process that can be scheduled for execution.
+Threads share virtual address space of a process.  Each thread maintains:
+
++ Shared virtual address space from the process
++ Exception handlers
++ scheduling priority
++ thread local storage
++ a unique thread identifier
++ a set of structures to save the thread context until it is scheduled
+
+http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-process-and-a-thread
+
+
+** Chapter 1 - Thread Safety
+*** Solutions to Mutable State                                        :drill:
+
+What are three ways you can fix unsynchronized access to shared mutable state?
+
+**** Answer
+
++ Don't share the state variable across threads.
++ Make the state variable immutable.
++ Use synchronization whenever accessing the state variable.
+
+*** Thread safety definition                                          :drill:
+
+What's the definition of thread safety in JCIP?
+
+**** Answer
+
+#+BEGIN_QUOTE
+A class is thread-safe if it behaves correctly when accessed from multiple
+threads, regardless of the scheduling or interleaving of the execution of those
+threads by the runtime environment, and with no additional synchronization or
+other coordination on the part of the calling code.
+#+END_QUOTE
+
+*** Thread safe encapsulation                                         :drill:
+
+Do you need external synchronization for thread-safe classes?
+
+**** Answer
+
+No, thread safe classes encapsulate any needed synchronization so that clients
+need not provide their own.
+
 
 * Consulting
 ** Breaking the Time Barrier
