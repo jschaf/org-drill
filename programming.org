@@ -610,17 +610,17 @@ All the same methods on Long.
 #+END_SRC
 
 *** Integral different base - literal version                         :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-04 Mon>
     :PROPERTIES:
     :ID:       8A69B0A0-82AA-4FA2-9798-EC5EEED6E449
-    :DRILL_LAST_INTERVAL: 10.4103
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 27.2669
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:20]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.66
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:06]
     :END:
 
 How do you get an integral representation in a different base that isn't in
@@ -864,17 +864,17 @@ Initialization does not occur when accessing fields that are compile time consta
 http://stackoverflow.com/questions/23093470/java-order-of-initialization-and-instantiation
 
 *** Compile time constants                                            :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-12 Sat>
 :PROPERTIES:
 :ID:       2c7534cd-5b20-42ad-b72b-114fa56ff988
-:DRILL_LAST_INTERVAL: 1.6627
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 4.237
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.545
-:DRILL_EASE: 2.76
+:DRILL_AVERAGE_QUALITY: 3.666
+:DRILL_EASE: 2.86
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-06 Sun 15:01]
+:DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:56]
 :END:
 
 What are compile time constants in Java?
@@ -1429,17 +1429,17 @@ http://stackoverflow.com/questions/22516331/whats-the-difference-between-instanc
 http://stackoverflow.com/questions/32283833/please-explain-java-8-method-reference-to-instance-method-using-class-name
 
 *** Throwable                                                         :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-11 Mon>
     :PROPERTIES:
     :ID:       f45f7d1a-32cb-4b1f-b692-3bec6a30155d
-    :DRILL_LAST_INTERVAL: 11.7366
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 34.1191
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:21]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:18]
     :END:
 
 What is a Throwable in Java?
@@ -1473,17 +1473,17 @@ of communicating recoverable errors.
 http://stackoverflow.com/questions/613954/the-case-against-checked-exceptions
 
 *** Try, finally, return                                              :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       b30fe80f-ed03-47d3-9575-7665b8a99430
-    :DRILL_LAST_INTERVAL: 1.747
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.9781
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:58]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:55]
     :END:
 
 Does finally always get executed in Java?
@@ -1624,17 +1624,17 @@ Arrays.parallelSort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
 #+END_SRC
 
 *** Array Prefix                                                      :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-12 Sat>
     :PROPERTIES:
     :ID:       56a86586-4174-4a91-a41d-6e42382e17c1
-    :DRILL_LAST_INTERVAL: 1.4585
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.7777
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:24]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:00]
     :END:
 
 How do you compute the prefix of an array in Java?
@@ -2173,17 +2173,17 @@ Hopscotch raptors.
 + 2-choice Hashing
 
 *** Hopscotch hashing                                               :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-19 Sat>
 :PROPERTIES:
 :ID:       C53D4220-3C93-478B-BEBC-BA862E35D2D8
-:DRILL_LAST_INTERVAL: 4.352
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 11.106
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.364
-:DRILL_EASE: 2.52
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.62
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:12]
+:DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:56]
 :END:
 
 What is Hopscotch hashing?
@@ -3956,17 +3956,17 @@ class MyClass implements Comparable<MyClass> {
 #+END_SRC
 
 *** Item 12: Implement Comparable: Contract                           :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-12 Sat>
 :PROPERTIES:
 :ID:       ebfcf743-d916-43ea-a93d-78f501f6b61f
-:DRILL_LAST_INTERVAL: 1.7497
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 4.2688
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.75
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-06 Sun 15:02]
+:DRILL_AVERAGE_QUALITY: 3.667
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:05]
 :END:
 
 What is the general contract of Comparable?
@@ -4249,17 +4249,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-09 Wed>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 1.6738
+:DRILL_LAST_INTERVAL: 1.4315
 :DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 14
-:DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.9
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-06 Sun 15:03]
+:DRILL_TOTAL_REPEATS: 16
+:DRILL_FAILURE_COUNT: 6
+:DRILL_AVERAGE_QUALITY: 3.312
+:DRILL_EASE: 2.76
+:DRILL_LAST_QUALITY: 3
+:DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:17]
 :END:
 
 How do you make a class immutable?
@@ -5901,17 +5901,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-11 Fri>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 1.5235
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 13
+:DRILL_LAST_INTERVAL: 3.3832
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 14
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.231
-:DRILL_EASE: 2.38
+:DRILL_AVERAGE_QUALITY: 3.214
+:DRILL_EASE: 2.24
 :DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:30]
+:DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:00]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -7194,17 +7194,17 @@ public void foo(int a1, int a2, int a3, int... rest) { }
 #+END_SRC
 
 *** Item 43: return empty arrays or collections, not nulls - why      :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-29 Fri>
     :PROPERTIES:
     :ID:       5680d835-14fc-4ca5-8161-972476035b17
-    :DRILL_LAST_INTERVAL: 18.7247
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 51.5067
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:19]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:06]
     :END:
 
 Why should you return empty arrays or collections instead of nulls?
@@ -7361,17 +7361,17 @@ What type of list operations are impossible with a for-each loops??
 3. Parallel iteration
 
 *** Item 46: Prefer for-each loops - implement iterable               :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-05-04 Wed>
     :PROPERTIES:
     :ID:       d8f1f8ac-6157-4452-83f1-bfcd1c4d72f0
-    :DRILL_LAST_INTERVAL: 16.2673
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 56.5002
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:37]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:05]
     :END:
 
 If you are writing a type that represents a group of elements, what interface
@@ -7730,17 +7730,17 @@ What are the disadvantages of using reflection as opposed to interfaces?
 3. Performance suffers.
 
 *** Item 53: Prefer interfaces to reflection - restricted reflection  :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-09 Sat>
     :PROPERTIES:
     :ID:       5a94b79a-5bf7-49dd-a18c-d06d09d3fd50
-    :DRILL_LAST_INTERVAL: 15.2868
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 32.4629
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:05]
     :END:
 
 What's one way to gain many benefits of reflection without the disadvantages?
@@ -7871,17 +7871,17 @@ Use runtime exceptions to indicate programming errors.
 If you're unsure that recovery is possible, make it a runtime exception.
 
 *** Item 58: Use checked exceptions for recoverable conditions - info :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-19 Tue>
     :PROPERTIES:
     :ID:       a9b6d7d3-80a1-45b7-b4a1-36f27eb88bde
-    :DRILL_LAST_INTERVAL: 12.268
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 41.6748
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:22]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:18]
     :END:
 
 What additional information should you include in a checked exception?
@@ -8155,17 +8155,17 @@ ignore it.
 
 ** Concurrency
 *** Item 66: Synchronize access to shared mutable data - purpose      :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-01 Fri>
     :PROPERTIES:
     :ID:       a4920cbe-f639-4912-8f47-4a0d0f7a30f2
-    :DRILL_LAST_INTERVAL: 9.1094
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 23.5087
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.75
-    :DRILL_EASE: 2.56
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.66
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:27]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:54]
     :END:
 
 What two functions does synchronization perform?
@@ -8987,17 +8987,17 @@ What are the major costs of implementing Serializable?
    serializable into new releases.
 
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       3b45b060-6ec4-44a9-9e18-3e275aed71a8
-    :DRILL_LAST_INTERVAL: 4.4729
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.8319
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:57]
     :END:
 
 Should classes designed for inheritance implement Serializable?
@@ -9049,17 +9049,17 @@ Provide a protected no-args constructor and a ~checkInit()~ function using an
 ~AtomicReference~ to an enum on the classes initialized State.
  
 *** Item 74: Implement Serializable judiciously - inner classes       :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       0f5f37b6-680f-4b0f-81b0-3fefa9f09130
-    :DRILL_LAST_INTERVAL: 1.7689
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 5.2831
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 3.714
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:29]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:55]
     :END:
 
 Should inner classes implement Serializable?
@@ -9247,17 +9247,17 @@ private static final long serialVersionUID = randomLongValue;
  
 
 *** Item 76: Write ~readObject~ methods defensively - what            :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       6DC8557E-E233-4F06-8ADC-C28E1E170895
-    :DRILL_LAST_INTERVAL: 1.909
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.2662
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 15:00]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:57]
     :END:
 
 What is readObject?
@@ -9289,17 +9289,17 @@ Any field, including final fields, that is an object reference that a client
 must not possess.
 
 *** Item 76: Write ~readObject~ methods defensively - litmus test     :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-12 Sat>
     :PROPERTIES:
     :ID:       2F14FFFE-986B-4540-91CE-C46B53314339
-    :DRILL_LAST_INTERVAL: 1.6482
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.4813
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 3.8
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:27]
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 12:57]
     :END:
 
 What litmus test can you use when deciding whether you need to manually
@@ -9360,17 +9360,17 @@ class-stealer type attack
 
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 2  :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       D52D8DFC-5D0C-4B18-B271-7EF171029909
-    :DRILL_LAST_INTERVAL: 1.7129
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.0912
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:27]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:05]
     :END:
 
 How can you modify an non-transient object reference in an instance-controlled
@@ -9556,6 +9556,18 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 
 ** Chapter 1 - Thread Safety
 *** Solutions to Mutable State                                        :drill:
+    SCHEDULED: <2016-03-10 Thu>
+    :PROPERTIES:
+    :ID:       10801c60-360d-45e1-987e-c88f587126c9
+    :DRILL_LAST_INTERVAL: 1.6891
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:18]
+    :END:
 
 What are three ways you can fix unsynchronized access to shared mutable state?
 
@@ -9566,6 +9578,18 @@ What are three ways you can fix unsynchronized access to shared mutable state?
 + Use synchronization whenever accessing the state variable.
 
 *** Thread safety definition                                          :drill:
+    SCHEDULED: <2016-03-09 Wed>
+    :PROPERTIES:
+    :ID:       461c4fb7-3a47-4513-b180-be70c9bc67e5
+    :DRILL_LAST_INTERVAL: 1.2956
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:18]
+    :END:
 
 What's the definition of thread safety in JCIP?
 
@@ -9579,6 +9603,18 @@ other coordination on the part of the calling code.
 #+END_QUOTE
 
 *** Thread safe encapsulation                                         :drill:
+    SCHEDULED: <2016-03-10 Thu>
+    :PROPERTIES:
+    :ID:       280e334b-d26e-47e0-98c1-4ae769b3d18d
+    :DRILL_LAST_INTERVAL: 1.5624
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:06]
+    :END:
 
 Do you need external synchronization for thread-safe classes?
 
@@ -9859,17 +9895,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-    SCHEDULED: <2016-03-08 Tue>
+    SCHEDULED: <2016-04-13 Wed>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 14.3968
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 36.3029
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.38
+:DRILL_AVERAGE_QUALITY: 3.615
+:DRILL_EASE: 2.48
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:43]
+:DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:06]
 :END:
 
 What are the stages of a feedback loop?
