@@ -453,17 +453,17 @@ What character conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Integral Conversions                                  :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
-:DRILL_LAST_INTERVAL: 4.658
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 16.7925
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_AVERAGE_QUALITY: 3.778
 :DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:09]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:30]
 :END:
 
 What Integral conversions are supported in a format specifier?
@@ -1521,17 +1521,17 @@ https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.20.1
 http://stackoverflow.com/questions/48088/returning-from-a-finally-block-in-java
 
 *** Fill Array                                                        :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       e494ca44-c3bf-4bda-acc3-c0537768e1d1
-    :DRILL_LAST_INTERVAL: 1.5874
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9003
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:31]
     :END:
 
 How do you fill an array in Java?  
@@ -1547,17 +1547,17 @@ Arrays.fill(Object[] a, Object val)
 #+END_SRC
 
 *** Sort Array                                                        :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       58b12f01-2423-4260-9d7e-b8873f429b00
-    :DRILL_LAST_INTERVAL: 1.5967
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6752
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:32]
     :END:
 
 How do you sort an array in-place in Java?
@@ -1573,17 +1573,17 @@ Arrays.sort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
 #+END_SRC
 
 *** Sort Array - new                                                  :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       8ef205e9-5734-4562-a0c0-c01543b6336a
-    :DRILL_LAST_INTERVAL: 1.5367
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.6651
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:34]
     :END:
 
 How do get a new sorted array from another one in Java?
@@ -1597,17 +1597,17 @@ Arrays.sort(newArray);
 #+END_SRC
 
 *** Parallel Sort                                                     :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       972eafae-55ca-4751-9c27-7382e732fd6c
-    :DRILL_LAST_INTERVAL: 1.5919
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.6408
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_AVERAGE_QUALITY: 4.5
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:26]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:28]
     :END:
 
 How do you parallel sort in Java?
@@ -1662,6 +1662,27 @@ With streams:
 Arrays.stream(a).reduce(
 #+END_SRC
 
+*** Constructor synchronization                                       :drill:
+    SCHEDULED: <2016-03-10 Thu>
+    :PROPERTIES:
+    :ID:       00894c90-2a9f-4c6c-843e-d5ffb19fe97e
+    :DRILL_LAST_INTERVAL: 1.4627
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:42]
+    :END:
+
+Can you synchronize a constructor in Java?
+
+**** Answer
+
+No, it is a syntax error.  Synchronizing contructors doesn't make sense because
+only the thread that creates an object should have access to it while it is
+being constructed.
 
 ** Design Patterns
 
@@ -1990,17 +2011,17 @@ How do you clear the least significant bit?
 x & x - 1
 
 *** Logical vs arithmetic shifts                                      :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       c141c7dc-a95d-48e9-abce-1710cf9c77d6
-    :DRILL_LAST_INTERVAL: 1.8135
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9325
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:25]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:30]
     :END:
 
 What's the difference between logical and arithmetic shifts?
@@ -2218,17 +2239,17 @@ http://www.cs.tau.ac.il/~liortzaf/papers/disc2008_submission_98.pdf
 http://codecapsule.com/2013/08/11/hopscotch-hashing/
 
 *** Linear Probing                                                  :drill:
-SCHEDULED: <2016-03-09 Wed>
+SCHEDULED: <2016-06-17 Fri>
 :PROPERTIES:
 :ID:       619671F6-3126-41E1-99C2-FB06CB4EC830
-:DRILL_LAST_INTERVAL: 40.4342
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 99.6605
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:05]
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:01]
 :END:
 
 What is linear probing?
@@ -2623,17 +2644,17 @@ Answer
    
 
 *** Python Garbage Collection                                         :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-05-08 Sun>
     :PROPERTIES:
     :ID:       c548b5b2-1af7-445c-8787-51e1f3b1ccf5
-    :DRILL_LAST_INTERVAL: 20.995
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 59.7329
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 2.66
+    :DRILL_AVERAGE_QUALITY: 4.6
+    :DRILL_EASE: 2.76
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:14]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:03]
     :END:
 
 How does garbage collection CPython work?
@@ -3381,17 +3402,17 @@ fork, change random colors, parent, privacy drapes.
    In which case, you should override it and throw an assertion error.
 
 *** Item 08: Equals method general contracts                          :drill:
-SCHEDULED: <2016-03-09 Wed>
+SCHEDULED: <2016-07-04 Mon>
 :PROPERTIES:
 :ID:       7e040020-d7c2-4719-a33c-f410238fb22d
-:DRILL_LAST_INTERVAL: 40.9839
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 117.2498
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-28 Thu 17:06]
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:49]
 :END:
 
 What are the general contracts for the equals method?
@@ -3776,17 +3797,17 @@ class implements Cloneable, clone returns a field-by-field copy.  Otherwise, it
 throws a CloneNotSupportedException.
 
 *** Item 11: Override Clone Judiciously - contract                    :drill:
-SCHEDULED: <2016-03-09 Wed>
+SCHEDULED: <2016-06-10 Fri>
 :PROPERTIES:
 :ID:       883c47bb-108e-4f5a-8e00-e5d8d70e0760
-:DRILL_LAST_INTERVAL: 32.4849
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 92.9795
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:37]
+:DRILL_AVERAGE_QUALITY: 4.125
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:02]
 :END:
 
 What is the general contract for clone?
@@ -4249,17 +4270,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-13 Sun>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 1.4315
-:DRILL_REPEATS_SINCE_FAIL: 2
-:DRILL_TOTAL_REPEATS: 16
+:DRILL_LAST_INTERVAL: 4.1931
+:DRILL_REPEATS_SINCE_FAIL: 3
+:DRILL_TOTAL_REPEATS: 17
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.312
+:DRILL_AVERAGE_QUALITY: 3.352
 :DRILL_EASE: 2.76
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:17]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:35]
 :END:
 
 How do you make a class immutable?
@@ -4779,17 +4800,17 @@ The naming convention is AbstractINTERFACE, where INTERFACE is the interface you
 implement.
 
 *** Item 18: Prefer Interfaces - simulated multiple inheritance       :drill:
-SCHEDULED: <2016-03-09 Wed>
+SCHEDULED: <2016-07-04 Mon>
 :PROPERTIES:
 :ID:       ead7a395-bcd7-4fd9-9917-50c67c7954cb
-:DRILL_LAST_INTERVAL: 31.0253
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 116.5698
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.9
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:47]
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:01]
 :END:
 
 What is simulated multiple inheritance?
@@ -5449,18 +5470,18 @@ The official term for a [List] (a generic class with no type parameters) is a
 [raw type].
 
 *** Item 23: Don't use raw types - type 6                             :drill:
-SCHEDULED: <2016-03-09 Wed>
+SCHEDULED: <2016-06-06 Mon>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       cadef5d7-3f75-4f12-9619-b93803fd8ed3
-:DRILL_LAST_INTERVAL: 26.9442
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 88.5903
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:41]
+:DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:03]
 :END:
  
 The official term for a [<E extends Number>] is a [bounded type parameter].
@@ -7484,17 +7505,17 @@ What are the three major differences between primitives and boxed primitives?
 3. primitives are more time and space efficient.
 
 *** Item 49: Prefer primitives to boxed primitives - ==               :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       62eaf8e0-6a84-48db-a9c6-62a2b9588744
-    :DRILL_LAST_INTERVAL: 17.2408
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 54.0825
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:40]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:41]
     :END:
 
 What does ~==~ do for boxed primitives?
@@ -7592,21 +7613,21 @@ String compoundKey = className + "#" + i.next();
 Write a private static member class to represent the aggregate.
 
 *** Item 50: Avoid strings where other types are better - capability  :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-04-27 Wed>
     :PROPERTIES:
     :ID:       acd625bc-f054-45cd-8ec5-26d577d65451
-    :DRILL_LAST_INTERVAL: 15.0246
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 48.6641
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:45]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:56]
     :END:
 
-How can you replace a String with that represents a capability with an
-unforgeable key?
+How can you replace a String that represents a capability with an unforgeable
+key?
 
 **** Answer
 
@@ -7684,17 +7705,17 @@ Your program will be much more flexible.  You can change the representation
 without changing the code.
 
 *** Item 52: Refer to objects by interface - Why not                  :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-04-22 Fri>
     :PROPERTIES:
     :ID:       225337f9-afff-4654-b679-d5973912472d
-    :DRILL_LAST_INTERVAL: 15.3183
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 43.9281
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:44]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:04]
     :END:
 
 When is it appropriate to refer to an object by it's class rather than its
@@ -7708,17 +7729,17 @@ interface?
 3. When the class adds extra methods and you need those methods.
 
 *** Item 53: Prefer interfaces to reflection - why                    :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-04-21 Thu>
     :PROPERTIES:
     :ID:       934c577e-6cb6-476d-a1fc-8ce3e5a91639
-    :DRILL_LAST_INTERVAL: 14.635
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 42.9869
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.667
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.75
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:42]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:03]
     :END:
 
 What are the disadvantages of using reflection as opposed to interfaces?
@@ -7846,17 +7867,17 @@ All other things being equal, state-testing is slightly preferable to
 distinguished return value because it's easier to read and detect.
 
 *** Item 58: Use checked exceptions for recoverable conditions        :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-04-14 Thu>
     :PROPERTIES:
     :ID:       39245b2e-7243-495a-924a-b72672a27507
-    :DRILL_LAST_INTERVAL: 12.4667
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 35.9963
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:21]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:55]
     :END:
 
 When should you use checked exceptions and when do you use runtime exceptions?
@@ -9007,17 +9028,17 @@ Should classes designed for inheritance implement Serializable?
 No, because it places a significant burden an anyone that extend the class?
  
 *** Item 74: Implement Serializable judiciously - inheritance excep   :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       5008dc2d-f4fd-4c19-a7b9-a287cdfbb3d0
-    :DRILL_LAST_INTERVAL: 4.5063
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.5326
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:10]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:35]
     :END:
 
 Which classes designed for inheritance in Java do implement Serializable?
@@ -9113,17 +9134,17 @@ If you use the default serialized form, what method must you provide?
 The ~readObject~ method to ensure invariants and security.
 
 *** Item 75: Consider using a custom serialized form - default bad    :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-25 Fri>
     :PROPERTIES:
     :ID:       fb687a6c-f5b4-4bf9-878a-29c03e1efc60
-    :DRILL_LAST_INTERVAL: 5.1913
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 16.2487
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
     :DRILL_AVERAGE_QUALITY: 4.0
     :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:08]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:33]
     :END:
 
 What are the disadvantages of using the default serialized form when an object's
@@ -9137,17 +9158,17 @@ physical representation differs substantially from it's logical data content?
 4. It can cause stack overflows.
 
 *** Item 75: Consider using a custom serialized form - default read   :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-25 Fri>
     :PROPERTIES:
     :ID:       54797064-a10b-42d3-962e-6639f4386553
-    :DRILL_LAST_INTERVAL: 4.9131
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.473
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:35]
     :END:
 
 What methods must you call first in ~writeObject~ and ~readObject~?
@@ -9182,17 +9203,17 @@ If you use a custom serialized form, most or all of the instance fields should
 be labeled transient.
 
 *** Item 75: Consider using a custom serialized form - synch          :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       c64bddc1-a9ac-483c-85cc-a629716578d6
-    :DRILL_LAST_INTERVAL: 4.8338
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_LAST_INTERVAL: 2.2152
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:48]
     :END:
 
 What has to be synchronized for serialization?
@@ -9203,17 +9224,17 @@ The same synchronization on any other method that reads the entire state of the
 object.
 
 *** Item 75: Consider using a custom serialized form - UID            :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-25 Fri>
     :PROPERTIES:
     :ID:       c439c369-3480-4e73-bbaa-a80fa6af6ec7
-    :DRILL_LAST_INTERVAL: 4.7375
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.0547
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:09]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:31]
     :END:
 
 Why should you declare an explicit serial version UID in every serializable class?
@@ -9224,17 +9245,17 @@ Because otherwise the JVM will perform an expensive computation looking at all
 fields and methods to generate a UID.
 
 *** Item 75: Consider using a custom serialized form - How UID        :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       b9b7da5b-39fb-41e2-b3cb-5dd31d8b4e5d
-    :DRILL_LAST_INTERVAL: 4.6167
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.3673
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:31]
     :END:
 
 How do you declare a serial version UID on your class?
@@ -9312,17 +9333,17 @@ parameters and stored the values with no validation whatsoever.  If so, the
 default ~readObject~ is for you.
 
 *** Item 76: Write ~readObject~ methods defensively - steps           :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       50644C0C-33E5-49BF-A4F0-3EF0D67D75D2
-    :DRILL_LAST_INTERVAL: 2.6012
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
-    :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 2.4
-    :DRILL_EASE: 2.22
+    :DRILL_LAST_INTERVAL: 1.6743
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_FAILURE_COUNT: 4
+    :DRILL_AVERAGE_QUALITY: 2.428
+    :DRILL_EASE: 2.08
     :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:18]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:48]
     :END:
 
 What are the steps for a bulletproof ~readObject~ method?
@@ -9578,17 +9599,17 @@ What are three ways you can fix unsynchronized access to shared mutable state?
 + Use synchronization whenever accessing the state variable.
 
 *** Thread safety definition                                          :drill:
-    SCHEDULED: <2016-03-09 Wed>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       461c4fb7-3a47-4513-b180-be70c9bc67e5
-    :DRILL_LAST_INTERVAL: 1.2956
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 3.9013
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 2.5
-    :DRILL_EASE: 2.36
+    :DRILL_AVERAGE_QUALITY: 2.667
+    :DRILL_EASE: 2.22
     :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:18]
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:28]
     :END:
 
 What's the definition of thread safety in JCIP?
@@ -9622,6 +9643,316 @@ Do you need external synchronization for thread-safe classes?
 
 No, thread safe classes encapsulate any needed synchronization so that clients
 need not provide their own.
+
+*** Stateless objects                                                 :drill:
+    SCHEDULED: <2016-03-11 Fri>
+    :PROPERTIES:
+    :ID:       b1c4a6bf-75f9-49d5-9110-9bef34bc2fc0
+    :DRILL_LAST_INTERVAL: 1.7238
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:50]
+    :END:
+
+Are stateless objects thread-safe?
+
+**** Answer
+
+Yes, they are always thread-safe.
+
+*** Race Condition Definition                                         :drill:
+    SCHEDULED: <2016-03-11 Fri>
+    :PROPERTIES:
+    :ID:       274aa1b2-639e-43ef-81b9-a39edc8cd9cc
+    :DRILL_LAST_INTERVAL: 1.5444
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:07]
+    :END:
+
+What's the definition of a race condition?
+
+**** Answer
+
+A race condition occurs when the correctness of a computation depends on the
+relative timing or interleaving of multiple threads by the runtime environment.
+
+In other words, when getting the right answer depends on lucky timing.
+
+*** Data Race Definition                                              :drill:
+    SCHEDULED: <2016-03-10 Thu>
+    :PROPERTIES:
+    :ID:       05550c99-ad7f-45a4-9b68-6bcf737b66f0
+    :DRILL_LAST_INTERVAL: 1.4726
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:49]
+    :END:
+
+Define a data race.
+
+**** Answer
+
+A data race is when there are two memory accesses in a program where both
+memory accesses:
+
++ target the same location
++ are performed concurrently by two threads
++ are not reads
++ are not synchronization operations
+
+http://blog.regehr.org/archives/490 awesome example of data races
+
+*** Data Race vs Race Condition                                       :drill:
+    SCHEDULED: <2016-03-10 Thu>
+    :PROPERTIES:
+    :ID:       80da219d-40d9-4062-9ed7-2276c02a3b9a
+    :DRILL_LAST_INTERVAL: 1.4809
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:05]
+    :END:
+
+What's the difference between a data race and a race condition?
+
+**** Answer
+
+They aren't the same thing.  Neither is a subset of the other.  Neither is a
+necessary or sufficient condition for the other.
+
+A data race is when two threads access the same memory location and at least one
+thread writes to the memory where there is no synchronization.
+
+A race condition is when a program misbehaves because the correct computation
+depends on a lucky timing of operations.
+
+Awesome explanation from http://blog.regehr.org/archives/490
+
+
+***** Data Race and Race Conditions
+ #+BEGIN_SRC text
+ transfer1 (amount, account_from, account_to) {
+   if (account_from.balance < amount) return NOPE;
+   account_to.balance += amount;
+   account_from.balance -= amount;
+   return YEP;
+ }
+ #+END_SRC
+
+
+***** Only Race Conditions
+ #+BEGIN_SRC text
+transfer2 (amount, account_from, account_to) {
+  atomic {
+    bal = account_from.balance;
+  }
+  if (bal < amount) return NOPE;
+  atomic {
+    account_to.balance += amount;
+  }
+  atomic {
+    account_from.balance -= amount;
+  }
+  return YEP;
+}
+ #+END_SRC
+
+
+***** No Data Races or Race Conditions
+ #+BEGIN_SRC text
+transfer3 (amount, account_from, account_to) {
+  atomic {
+    if (account_from.balance < amount) return NOPE;
+    account_to.balance += amount;
+    account_from.balance -= amount;
+    return YEP;
+  }
+}
+ #+END_SRC
+
+
+***** Only Data Races
+ #+BEGIN_SRC text
+transfer4 (amount, account_from, account_to) {
+  account_from.activity = true;
+  account_to.activity = true;
+  atomic {
+    if (account_from.balance < amount) return NOPE;
+    account_to.balance += amount;
+    account_from.balance -= amount;
+    return YEP;
+  }
+}
+ #+END_SRC
+
+
+*** Atomic definition                                                 :drill:
+    SCHEDULED: <2016-03-11 Fri>
+    :PROPERTIES:
+    :ID:       43a2153b-d649-42a8-babf-d14467879ded
+    :DRILL_LAST_INTERVAL: 1.7204
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:08]
+    :END:
+
+Define atomic in regards to thread safety.
+
+**** Answer
+
+#+BEGIN_QUOTE
+Operation A and B are atomic with respect to each other if, from the perspective
+of a thread executing A, when another thread executes B, either all of B has
+executed or none of it has.  An atomic operation is one that is atomic with
+respect to all operations, including itself, that operate on the same state.
+#+END_QUOTE
+
+*** Prefer existing thread-safe objects                               :drill:
+    SCHEDULED: <2016-03-11 Fri>
+    :PROPERTIES:
+    :ID:       c68e1d92-7de4-4dde-b58d-7ca3a8b04503
+    :DRILL_LAST_INTERVAL: 1.5612
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:42]
+    :END:
+
+Why should you prefer existing thread-safe objects to normal state variables?
+
+**** Answer
+
+It's simpler to reason about the possible states and state transitions for
+existing thread-safe objects than for arbitrary state variables which makes it
+easier to verify thread safety.
+
+*** State consistency                                                 :drill:
+    SCHEDULED: <2016-03-11 Fri>
+    :PROPERTIES:
+    :ID:       4304801e-0bce-44df-89bc-09af82ca74ea
+    :DRILL_LAST_INTERVAL: 1.859
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:03]
+    :END:
+
+How do you preserve state consistency with multiple
+related state variables in a concurrent environment?
+
+**** Answer
+
+Update related state variables in a single atomic operations.
+
+*** Java Built-in locks                                               :drill:
+    SCHEDULED: <2016-03-11 Fri>
+    :PROPERTIES:
+    :ID:       c2413d1d-6ef0-4200-94fc-e79005d629db
+    :DRILL_LAST_INTERVAL: 1.7622
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:06]
+    :END:
+
+What type of locking mechanism does Java have built-in for enforcing atomicity?
+
+**** Answer
+
+The synchronized block, which is a /intrinsic lock/ or a /monitor lock/.
+Intrinsic locks in Java function as /mutexes/ (or mutual exclusion locks) which
+means  that at most one thread may own the lock.
+
+*** Reentrant definition                                              :drill:
+    SCHEDULED: <2016-03-10 Thu>
+    :PROPERTIES:
+    :ID:       3888e486-8ea0-47f3-8543-a3f6e01b5fe4
+    :DRILL_LAST_INTERVAL: 1.3238
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:06]
+    :END:
+
+Define reentrant.
+
+**** Answer
+
+Reentrancy means that you do SOME_THING, and while you are still doing SOME_THING, you do
+SOME_THING again.  In the case of locks, it looks like:
+
+1. Acquire a lock on ~foo~
+2. Do something
+3. Acquire a lock on ~foo~  (We haven't released the lock we previously
+   acquired)
+4. ...
+5. Release lock on ~foo~
+6. ...
+7. Release lock on ~foo~
+
+With reentrant locking, attempting to acquire the same lock will succeed and
+will increment an internal counter belonging to the lock.  The lock will only be
+released when the current holder of the lock released it twice.
+
+
+// Java example of reentrant locking
+#+BEGIN_SRC java
+Object lock = new Object();
+...
+synchronized (lock) {
+    ...
+    doSomething(lock, ...)
+    ...
+}
+
+public void doSomething(Object lock, ...) {
+    synchronized (lock) {
+        ...
+    }
+}
+#+END_SRC
+
+That advantage of reentrant locking is that you don't have to worry about the
+possibility of failing due to accidentally acquiring a lock you already had.
+The disadvantage is that you can't assume that nothing you call will change the
+state of variables that the lock is designed to protect.
+
+However, that's not usually a problem.  Locks are generally used tor protect
+against concurrent state changes made by /other/ threads.
+
+
 
 
 * Consulting
