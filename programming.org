@@ -9824,7 +9824,6 @@ transfer4 (amount, account_from, account_to) {
 }
  #+END_SRC
 
-
 *** Atomic definition                                                 :drill:
     SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
@@ -9977,6 +9976,120 @@ against concurrent state changes made by /other/ threads.
 
 
 
+*** Guarded By                                                        :drill:
+
+Define guarded by.
+
+**** Answer
+
+#+BEGIN_QUOTE
+For each mutable state variable that may be accessed by more than one thread,
+/all/ accesses to that variable must be performed with the /same/ lock held.  In
+this case, we say that the variable is /guarded by/ that lock.
+#+END_QUOTE
+
+*** Simplicity vs Performance Temptation                              :drill:
+
+Which temptation should you avoid in regards to simplicity and performance of a
+synchronization policy.
+
+**** Answer
+
+Resist the temptation to prematurely sacrifice simplicity (potentially
+compromising safety) for the sake of performance.
+
+** Chapter 3 - Visibility
+
+*** Visibility - reordering                                           :drill:
+
+What is reordering in the context of JVM optimization?
+
+**** Answer
+
+There is no guarantee that operations in one thread will be performed in the
+order given by the program, as long as the /reordering/ is not detectable from
+within /that/ thread.
+
+This allows the JVM to take full advantage of the modern hardware by cache
+values in registers and permits the CPU to reorder operations.
+
+*** Reasoning about reordering                                        :drill:
+
+Can you reason about the order of operations on the JVM in the absence of
+synchronization?
+
+**** Answer
+
+No, because the compiler, processor and runtime can do some downright weird
+things to the order in which operations appear to execute.
+
+*** Stale Data                                                        :drill:
+
+What is stale data?
+
+**** Answer
+
+When a reader thread examines a shared, mutable variable, it may see an out of
+date variable if a writer thread's changes haven't been stored back into memory.
+
+*** Out-of-thin-air                                                   :drill:
+
+Define the out-of-thin-air safety by the JVM.
+
+**** Answer
+
+A thread will always see a value place there by some other thread.  A variable
+will never be initialized "out of thin air."  This safety guarantee applies to
+all variables except 64 bit numeric variables (long and double) that are not
+declared volatile.  The JVM can treat a 64 bit read or write as two separate 32
+bit operations.
+
+*** Locking                                                           :drill:
+
+What are the two purposes of locking?
+
+**** Answer
+
+Memory visibility - ensure all threads see the most up-to-date value of a shared
+mutable value
+Mutual exclusion
+
+*** Volatile                                                          :drill:
+
+What does the volatile modifier do in Java?
+
+**** Answer
+
+#+BEGIN_QUOTE
+Puts the compiler and runtime on notice that this variable is shared and that
+operations on it should not be reordered with other memory operation.  Volatile
+variables are not cached in registers or in caches where they are hidden from
+other processors, so a read of a volatile variable always returns the most
+recent write by an thread.
+#+END_QUOTE
+
+*** When to use volatile                                              :drill:
+
+When should you use volatile variables?
+
+**** Answer
+
+Only when they simplify implementing and verifying your synchronization policy.
+
+Good uses of volatile variables include ensuring the visibility of their own
+state, that of the object they refer to, or indicating that an important
+life-cycle event (such as initialization or shutdown) has occurred.
+
+*** Volatile Criteria                                                 :drill:
+
+What are the criteria for using volatile variables?
+
+**** Answer
+
++ Writes to the variable do not depend on its current value, or you can ensure
+  that only  a single thread ever updates the value.
++ The variable does not participate in invariants with other state variables.
++ Locking is not required for any other reason while the variable is being accessed.
 
 * Consulting
 ** Breaking the Time Barrier
