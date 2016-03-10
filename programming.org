@@ -1663,17 +1663,17 @@ Arrays.stream(a).reduce(
 #+END_SRC
 
 *** Constructor synchronization                                       :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-14 Mon>
     :PROPERTIES:
     :ID:       00894c90-2a9f-4c6c-843e-d5ffb19fe97e
-    :DRILL_LAST_INTERVAL: 1.4627
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.0412
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:42]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:22]
     :END:
 
 Can you synchronize a constructor in Java?
@@ -1683,6 +1683,29 @@ Can you synchronize a constructor in Java?
 No, it is a syntax error.  Synchronizing contructors doesn't make sense because
 only the thread that creates an object should have access to it while it is
 being constructed.
+
+*** Sort part of array                                                :drill:
+    SCHEDULED: <2016-03-12 Sat>
+    :PROPERTIES:
+    :ID:       838e18c0-0d55-4e62-943a-2fe6a23b410a
+    :DRILL_LAST_INTERVAL: 1.555
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:25]
+    :END:
+
+How do you sort part of an array in Java?
+
+**** Answer
+
+#+BEGIN_SRC java
+Arrays.sort(int[] a, int from, int to);
+Arrays.sort(T[], int from , int to, Comparator<? super T>);
+#+END_SRC
 
 ** Design Patterns
 
@@ -5283,17 +5306,17 @@ Where can you write an anonymous class?
 Anywhere an expression is legal.
 
 *** Item 22: Favor static member classes - anon class limitations     :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-04-17 Sun>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
-:DRILL_LAST_INTERVAL: 14.4247
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 15
+:DRILL_LAST_INTERVAL: 38.3055
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 16
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.467
+:DRILL_AVERAGE_QUALITY: 3.5
 :DRILL_EASE: 2.82
-:DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:23]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:26]
 :END:
 
 What are the limitations on an anonymous class?
@@ -6777,17 +6800,17 @@ Because you want to fail as fast as possible.  Trying to debug problems later is
 much harder than failing at construction.
 
 *** Item 38: Check parameters for validity - exceptions               :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-05-04 Wed>
     :PROPERTIES:
     :ID:       bb41556b-97c5-443e-a981-6c036d01f85e
-    :DRILL_LAST_INTERVAL: 18.2412
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 55.0736
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 4.143
-    :DRILL_EASE: 3.0
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 3.1
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:40]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:25]
     :END:
 
 When can you skip validation?
@@ -7982,17 +8005,17 @@ What are the most common exceptions in Java?
 + ~UnspportedOperationException~
 
 *** Item 61: Throw exceptions appropriate to the abstraction          :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-04-12 Tue>
     :PROPERTIES:
     :ID:       cc027aae-a4e6-43ab-b39b-4edd4ff0ff72
-    :DRILL_LAST_INTERVAL: 11.6063
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 33.1991
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:14]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:25]
     :END:
 
 How should you handle exceptions in a higher layer that come from a lower layer?
@@ -8040,17 +8063,17 @@ How should you document exceptions?
 + If an exception is thrown by many methods, you can document it in the class.
 
 *** Item 63: Include failure capture information - detail message     :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-04-23 Sat>
     :PROPERTIES:
     :ID:       6B8BA896-B4A3-4856-B686-6E124C3E9CD2
-    :DRILL_LAST_INTERVAL: 11.7436
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 44.33
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:13]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:25]
     :END:
 
 What information should go into an exception detail message?
@@ -8984,17 +9007,17 @@ What do you call an alien method invoked outside a synchronized region?
 
 # ** Serialization
 *** Item 74: Implement Serializable judiciously                       :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-27 Sun>
     :PROPERTIES:
     :ID:       82dfe2f0-2878-44cb-bd98-6bcf90130842
-    :DRILL_LAST_INTERVAL: 5.6487
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.501
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_AVERAGE_QUALITY: 4.667
     :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:10]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:21]
     :END:
 
 What are the major costs of implementing Serializable?
@@ -9179,17 +9202,17 @@ What methods must you call first in ~writeObject~ and ~readObject~?
 fields make the class more flexible to change
 
 *** Item 75: Consider using a custom serialized form - transient      :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-28 Mon>
     :PROPERTIES:
     :ID:       3597e0b8-28b4-4af0-ae98-5cc094a90691
-    :DRILL_LAST_INTERVAL: 5.794
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 17.511
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:11]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:21]
     :END:
 
 Which fields should you mark as transient?
@@ -9416,17 +9439,17 @@ Elvis stealer class stores the Elvis singleton in a static field.  To prevent a
 Now, you have defeated the singleton guarantee.
 
 *** Item 77: For instance control, prefer enums to ~readResolve~ - 3  :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-27 Sun>
     :PROPERTIES:
     :ID:       8E60EF9F-4B1F-4FCB-9ECF-4C105F546424
-    :DRILL_LAST_INTERVAL: 4.4512
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.7252
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:05]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:21]
     :END:
 
 For instance-controlled classes, what should you use instead of relying on
@@ -9577,17 +9600,17 @@ http://stackoverflow.com/questions/200469/what-is-the-difference-between-a-proce
 
 ** Chapter 1 - Thread Safety
 *** Solutions to Mutable State                                        :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-15 Tue>
     :PROPERTIES:
     :ID:       10801c60-360d-45e1-987e-c88f587126c9
-    :DRILL_LAST_INTERVAL: 1.6891
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.8102
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:18]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:24]
     :END:
 
 What are three ways you can fix unsynchronized access to shared mutable state?
@@ -9624,17 +9647,17 @@ other coordination on the part of the calling code.
 #+END_QUOTE
 
 *** Thread safe encapsulation                                         :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-15 Tue>
     :PROPERTIES:
     :ID:       280e334b-d26e-47e0-98c1-4ae769b3d18d
-    :DRILL_LAST_INTERVAL: 1.5624
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.5833
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:06]
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:24]
     :END:
 
 Do you need external synchronization for thread-safe classes?
@@ -9688,17 +9711,17 @@ relative timing or interleaving of multiple threads by the runtime environment.
 In other words, when getting the right answer depends on lucky timing.
 
 *** Data Race Definition                                              :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-11 Fri>
     :PROPERTIES:
     :ID:       05550c99-ad7f-45a4-9b68-6bcf737b66f0
-    :DRILL_LAST_INTERVAL: 1.4726
+    :DRILL_LAST_INTERVAL: 1.4757
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 2.75
     :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:49]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:26]
     :END:
 
 Define a data race.
@@ -9716,17 +9739,17 @@ memory accesses:
 http://blog.regehr.org/archives/490 awesome example of data races
 
 *** Data Race vs Race Condition                                       :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       80da219d-40d9-4062-9ed7-2276c02a3b9a
-    :DRILL_LAST_INTERVAL: 1.4809
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.2397
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_AVERAGE_QUALITY: 3.5
     :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:05]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:24]
     :END:
 
 What's the difference between a data race and a race condition?
@@ -9893,17 +9916,17 @@ Intrinsic locks in Java function as /mutexes/ (or mutual exclusion locks) which
 means  that at most one thread may own the lock.
 
 *** Reentrant definition                                              :drill:
-    SCHEDULED: <2016-03-10 Thu>
+    SCHEDULED: <2016-03-13 Sun>
     :PROPERTIES:
     :ID:       3888e486-8ea0-47f3-8543-a3f6e01b5fe4
-    :DRILL_LAST_INTERVAL: 1.3238
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 3.3717
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:06]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:22]
     :END:
 
 Define reentrant.
