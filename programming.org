@@ -28,6 +28,134 @@ dired-get-marked-files
              (indent-region (point-min) (point-max)))))
 #+END_SRC
 
+* Interview Questions
+***  Deadlock prevention                                              :drill:
+    SCHEDULED: <2016-03-18 Fri>
+    :PROPERTIES:
+    :ID:       99926a81-416c-4925-90f7-b64c193c92cc
+    :DRILL_LAST_INTERVAL: 1.531
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:30]
+    :END:
+
+How do you ensure deadlocks don't happen?
+
+**** Answer
+
++ Use lock ordering.
+ 
++ Use a lock timeout meaning a thread will give up after a preset time and free
+all locks, wait for a random amount of time and try again.
+
++ Use deadlock detection.  Every time a lock is acquired, note it in a
+  data structure (map or a graph). When a thread blocks on a lock request,
+  traverse the lock graph to check for deadlocks.  There's a deadlock if we hold
+  any of transitive locks that block another thread.  Basically, if there's a
+  cycle there's a deadlock.
+ 
+*** Polymorphism                                                      :drill:
+    SCHEDULED: <2016-03-17 Thu>
+    :PROPERTIES:
+    :ID:       77dc5a29-c1b7-4027-9c0a-617e6772ad63
+    :DRILL_LAST_INTERVAL: 1.4412
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 2.667
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:53]
+    :END:
+
+What is polymorphism?
+
+**** Answer
+
+
+It's a language's ability to process objects of various types and classes
+through a single, uniform interface.
+
++ Ad hoc polymorphism - function has different implementations depending on
+  specified types, commonly seen in function overloading.
+
++ Parametric polymorphism - code is written without mention of a specific type,
+  e.g. generics in Java, templates in C++, Regular Haskell
+ 
++ Subtyping - when instances share a common super type, interfaces or inheritance.
+
+*** Write a to i                                                      :drill:
+    SCHEDULED: <2016-03-18 Fri>
+    :PROPERTIES:
+    :ID:       03aa78a2-8319-4124-9556-dbf0575cdf5b
+    :DRILL_LAST_INTERVAL: 1.5204
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:27]
+    :END:
+
+Write atoi in Java
+
+**** Answer
+
+http://www.programcreek.com/2012/12/leetcode-string-to-integer-atoi/
+
+1. null or empty string
+2. white spaces
+3. +/- sign
+4. calculate real value
+5. handle min & max
+
+#+BEGIN_SRC java
+public int atoi(String str) {
+	if (str == null || str.length() < 1)
+		return 0;
+ 
+	// trim white spaces
+	str = str.trim();
+ 
+	char flag = '+';
+ 
+	// check negative or positive
+	int i = 0;
+	if (str.charAt(0) == '-') {
+		flag = '-';
+		i++;
+	} else if (str.charAt(0) == '+') {
+		i++;
+	}
+	// use double to store result
+	double result = 0;
+ 
+	// calculate value
+	while (str.length() > i && str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+		result = result * 10 + (str.charAt(i) - '0');
+		i++;
+	}
+ 
+	if (flag == '-')
+		result = -result;
+ 
+	// handle max and min
+	if (result > Integer.MAX_VALUE)
+		return Integer.MAX_VALUE;
+ 
+	if (result < Integer.MIN_VALUE)
+		return Integer.MIN_VALUE;
+ 
+	return (int) result;
+}
+#+END_SRC
+
+
 * Programming Questions
 ** Math
 *** Median 1                                                          :drill: 
@@ -404,17 +532,17 @@ What is the syntax for a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - General Conversions                                   :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-06-04 Sat>
 :PROPERTIES:
 :ID:       1186f080-5d43-40a7-8045-7aae066f84b1
-:DRILL_LAST_INTERVAL: 36.5318
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 79.5602
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.333
-:DRILL_EASE: 2.18
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:22]
+:DRILL_AVERAGE_QUALITY: 3.571
+:DRILL_EASE: 2.28
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:27]
 :END:
 
 What general conversions are supported in a format specifier?
@@ -889,17 +1017,17 @@ What are compile time constants in Java?
 http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#d5e30892
 
 *** String vs StringBuilder vs StringBuffer                           :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-07-03 Sun>
 :PROPERTIES:
 :ID:       71b8ea5d-535f-4a21-853d-f2319f7d2c69
-:DRILL_LAST_INTERVAL: 33.5256
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 108.5576
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:38]
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:24]
 :END:
 
 What are the differences between String, StringBuilder and StringBuffer?
@@ -1730,17 +1858,17 @@ Singleton is a class which only has one instance in a whole application. The
 class provides a getInstance() method to access the singleton instances.
 
 *** Singleton 2                                                       :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-06-24 Fri>
 :PROPERTIES:
 :ID:       5e4c1b0b-ede4-43cf-943d-d83c847691ac
-:DRILL_LAST_INTERVAL: 38.0161
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 100.1104
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.4
-:DRILL_EASE: 2.28
+:DRILL_AVERAGE_QUALITY: 3.545
+:DRILL_EASE: 2.38
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-07 Sun 01:46]
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:25]
 :END:
 
 What are the advantages of a Singleton pattern?
@@ -2082,17 +2210,17 @@ What is the value of "~x" in terms of arithmetic?
 -(x + 1)
 
 *** Negation in terms of bit manipulation                             :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       4de21ddc-4cc3-4da4-b359-465ea0572ba9
-    :DRILL_LAST_INTERVAL: 1.6523
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.2201
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:19]
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:23]
     :END:
 
 What is the value of "-x" in terms of arithmetic?
@@ -2102,17 +2230,17 @@ What is the value of "-x" in terms of arithmetic?
 ~x + 1
 
 *** Extract least significant bit                                     :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       d18ebb8a-de3e-4fd5-9cde-496eb244a6ef
-    :DRILL_LAST_INTERVAL: 1.6248
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.3291
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:23]
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:20]
     :END:
 
 How do you extract the least significant bit of x?
@@ -2492,17 +2620,17 @@ A small step size provides better locality of reference, but results in
 clustering.  Linear probing is sensitive to input distribution.
 
 *** Quadratic Probing                                               :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-07-22 Fri>
 :PROPERTIES:
 :ID:       22C26F8D-EB15-497A-A2C5-E02227A246D8
-:DRILL_LAST_INTERVAL: 44.9751
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 128.0223
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:32]
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:27]
 :END:
 
 What is Quadratic Probing?
@@ -3136,17 +3264,17 @@ What are the benefits of encapsulation?
 * Effective Java
 ** Creating and Destroying Objects
 *** Item 01: Static Factories vs Constructors                         :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-07-19 Tue>
 :PROPERTIES:
 :ID:       6fe16328-2578-41cd-94cf-6eaa8bccaecc
-:DRILL_LAST_INTERVAL: 45.2057
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 124.5582
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.5
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-01-31 Sun 10:29]
+:DRILL_AVERAGE_QUALITY: 4.167
+:DRILL_EASE: 2.6
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:24]
 :END:
 
 What are the advantages of a static factory over a constructor?
@@ -3682,17 +3810,17 @@ What are the steps to a high quality equals method?
    transitive, consistent and non-nullity.
 
 *** Item 08: Equals overloading                                       :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-08-02 Tue>
 :PROPERTIES:
 :ID:       ed57b79c-3dcb-45ce-ae9f-7e1b1fd018e9
-:DRILL_LAST_INTERVAL: 46.8497
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 139.2353
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 16:07]
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:25]
 :END:
 
 What does the argument type have to be when overriding equals?
@@ -4832,17 +4960,17 @@ workings of the class.
 Like AbstractList#removeRange
 
 *** Item 17: Design for Inheritance - test for inheritance design     :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-07-07 Thu>
 :PROPERTIES:
 :ID:       125bac74-5920-4f7a-a8c5-0cb26f5bf871
-:DRILL_LAST_INTERVAL: 35.1965
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 113.2012
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.7
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.8
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:24]
 :END:
 
 What is the only way to test if a class is designed for inheritance?
@@ -5680,18 +5808,18 @@ SCHEDULED: <2016-03-19 Sat>
 The official term for a [List<?>] is an [unbounded wildcard type].
 
 *** Item 23: Don't use raw types - type 5                             :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-07-13 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       64a611da-611d-4550-8298-603eca0032f1
-:DRILL_LAST_INTERVAL: 33.6962
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 119.3405
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.5
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.6
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:39]
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:30]
 :END:
  
 The official term for a [List] (a generic class with no type parameters) is a
@@ -5715,18 +5843,18 @@ SCHEDULED: <2016-06-06 Mon>
 The official term for a [<E extends Number>] is a [bounded type parameter].
 
 *** Item 23: Don't use raw types - type 7                             :drill:
-SCHEDULED: <2016-03-16 Wed>
+SCHEDULED: <2016-06-17 Fri>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       45d1515b-5129-4db9-8d04-95e161770294
-:DRILL_LAST_INTERVAL: 32.2454
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 92.8145
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.46
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
+:DRILL_AVERAGE_QUALITY: 4.2
+:DRILL_EASE: 2.56
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:54]
 :END:
  
 The official term for a [<T extends Comparable<? super T>>] is a [recursive type bound].
@@ -9827,17 +9955,17 @@ What are three ways you can fix unsynchronized access to shared mutable state?
 + Use synchronization whenever accessing the state variable.
 
 *** Thread safety definition                                          :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       461c4fb7-3a47-4513-b180-be70c9bc67e5
-    :DRILL_LAST_INTERVAL: 1.739
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 4.7061
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 2.857
-    :DRILL_EASE: 2.32
+    :DRILL_AVERAGE_QUALITY: 3.125
+    :DRILL_EASE: 2.42
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:22]
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:23]
     :END:
 
 What's the definition of thread safety in JCIP?
@@ -9916,17 +10044,17 @@ relative timing or interleaving of multiple threads by the runtime environment.
 In other words, when getting the right answer depends on lucky timing.
 
 *** Data Race Definition                                              :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-25 Fri>
     :PROPERTIES:
     :ID:       05550c99-ad7f-45a4-9b68-6bcf737b66f0
-    :DRILL_LAST_INTERVAL: 3.382
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 8.5145
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 2.8
-    :DRILL_EASE: 2.22
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:44]
+    :DRILL_AVERAGE_QUALITY: 3.167
+    :DRILL_EASE: 2.32
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:23]
     :END:
 
 Define a data race.
@@ -10030,17 +10158,17 @@ transfer4 (amount, account_from, account_to) {
  #+END_SRC
 
 *** Atomic definition                                                 :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       43a2153b-d649-42a8-babf-d14467879ded
-    :DRILL_LAST_INTERVAL: 2.4717
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 4.9884
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 2.6
+    :DRILL_AVERAGE_QUALITY: 2.833
     :DRILL_EASE: 2.08
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:11]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:20]
     :END:
 
 Define atomic in regards to thread safety.
@@ -10344,17 +10472,17 @@ mutable value
 Mutual exclusion
 
 *** Volatile                                                          :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       d6393f3f-29ab-46df-b85a-a8aa6322d12a
-    :DRILL_LAST_INTERVAL: 1.6721
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.583
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:16]
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:20]
     :END:
 
 What does the volatile modifier do in Java?
@@ -10394,17 +10522,17 @@ state, that of the object they refer to, or indicating that an important
 life-cycle event (such as initialization or shutdown) has occurred.
 
 *** Volatile Criteria                                                 :drill:
-    SCHEDULED: <2016-03-16 Wed>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       09176331-2aa7-424e-be0e-b38436207e29
-    :DRILL_LAST_INTERVAL: 1.7596
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.6729
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.25
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:22]
+    :DRILL_AVERAGE_QUALITY: 3.2
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:22]
     :END:
 
 What are the criteria for using volatile variables?
