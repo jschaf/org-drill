@@ -30,17 +30,17 @@ dired-get-marked-files
 
 * Interview Questions
 *** Deadlock prevention                                              :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       99926a81-416c-4925-90f7-b64c193c92cc
-    :DRILL_LAST_INTERVAL: 1.531
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.1862
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:30]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:03]
     :END:
 
 How do you ensure deadlocks don't happen?
@@ -89,17 +89,17 @@ through a single, uniform interface.
 + Subtyping - when instances share a common super type, interfaces or inheritance.
 
 *** Write a to i                                                      :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       03aa78a2-8319-4124-9556-dbf0575cdf5b
-    :DRILL_LAST_INTERVAL: 1.5204
+    :DRILL_LAST_INTERVAL: 1.6159
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:27]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:13]
     :END:
 
 Write atoi in Java
@@ -156,20 +156,339 @@ public int atoi(String str) {
 #+END_SRC
 
 
-* Programming Questions
-** General 
-*** Problem solving methodology                                       :drill:
-    SCHEDULED: <2016-03-18 Fri>
+** Arrays and Strings
+
+*** Reverse order of words of a string in place                       :drill:
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
-    :ID:       28efc126-eb0a-401b-84d2-3132a575bd7f
-    :DRILL_LAST_INTERVAL: 1.282
+    :ID:       7a85ec67-7ce8-4f5e-a71c-01556f66b325
+    :DRILL_LAST_INTERVAL: 2.0533
     :DRILL_REPEATS_SINCE_FAIL: 2
     :DRILL_TOTAL_REPEATS: 1
     :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:07]
+    :END:
+
+Given an input string, reverse the string word by word.
+
+For example, given s = "the sky is blue", return "blue is sky the".
+
+**** Answer
+
+With no extra memory:
+1. Reverse the whole string
+2. reverse individual words.
+
+Straight forward solution with extra memory
+#+BEGIN_SRC java
+class Solution {
+	public String reverseWords(String s) {
+		if (s == null || s.length() == 0) {
+			return "";
+		}
+ 
+		// split to words by space
+		String[] arr = s.split(" ");
+		StringBuilder sb = new StringBuilder();
+		for (int i = arr.length - 1; i >= 0; --i) {
+			if (!arr[i].equals("")) {
+				sb.append(arr[i]).append(" ");
+			}
+		}
+		return sb.length() == 0 ? "" : sb.substring(0, sb.length() - 1);
+	}
+}
+#+END_SRC
+
+** Sorting
+
+*** Write merge sort                                                  :drill:
+    SCHEDULED: <2016-03-20 Sun>
+    :PROPERTIES:
+    :ID:       51c374f5-20af-45ea-af43-87fb649f8020
+    :DRILL_LAST_INTERVAL: 1.9456
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
     :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:12]
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:13]
+    :END:
+
+Write a merge sort.
+
+**** Answer
+
+http://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html
+#+BEGIN_SRC java
+public class Mergesort {
+  private int[] numbers;
+  private int[] helper;
+
+  private int number;
+
+  public void sort(int[] values) {
+    this.numbers = values;
+    number = values.length;
+    this.helper = new int[number];
+    mergesort(0, number - 1);
+  }
+
+  private void mergesort(int low, int high) {
+    // check if low is smaller then high, if not then the array is sorted
+    if (low < high) {
+      // Get the index of the element which is in the middle
+      int middle = low + (high - low) / 2;
+      // Sort the left side of the array
+      mergesort(low, middle);
+      // Sort the right side of the array
+      mergesort(middle + 1, high);
+      // Combine them both
+      merge(low, middle, high);
+    }
+  }
+
+  private void merge(int low, int middle, int high) {
+
+    // Copy both parts into the helper array
+    for (int i = low; i <= high; i++) {
+      helper[i] = numbers[i];
+    }
+
+    int i = low;
+    int j = middle + 1;
+    int k = low;
+    // Copy the smallest values from either the left or the right side back
+    // to the original array
+    while (i <= middle && j <= high) {
+      if (helper[i] <= helper[j]) {
+        numbers[k] = helper[i];
+        i++;
+      } else {
+        numbers[k] = helper[j];
+        j++;
+      }
+      k++;
+    }
+    // Copy the rest of the left side of the array into the target array
+    while (i <= middle) {
+      numbers[k] = helper[i];
+      k++;
+      i++;
+    }
+
+  }
+} 
+#+END_SRC
+
+*** Write Insertion Sort                                              :drill:
+    SCHEDULED: <2016-03-20 Sun>
+    :PROPERTIES:
+    :ID:       44032c87-c31f-4581-9845-bdbc0dde92b8
+    :DRILL_LAST_INTERVAL: 1.6536
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:09]
+    :END:
+
+Write insertion sort.
+
+**** Answer
+
+#+BEGIN_SRC java
+public static int[] insertionSort(int[] input){
+    int temp;
+    for (int i = 1; i < input.length; i++) {
+        for(int j = i ; j > 0 ; j--){
+            if(input[j] < input[j-1]){
+                temp = input[j];
+                input[j] = input[j-1];
+                input[j-1] = temp;
+            }
+        }
+    }
+    return input;
+}
+#+END_SRC
+
+** Combinatorics
+
+*** Item                                      :drill:
+    SCHEDULED: <2016-03-19 Sat>
+    :PROPERTIES:
+    :ID:       67999120-3bea-4fd3-ac02-b96af0ac61cd
+    :DRILL_LAST_INTERVAL: 1.4731
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:10]
+    :END:
+
+Select the k^th smallest element from an array.
+
+**** Answer
+http://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
+Easy solution:
+Sort
+return array[k - 1]
+
+
+
+Better solution:
+Quick Select with 
+
+#+BEGIN_SRC java
+#include<iostream>
+#include<climits>
+using namespace std;
+ 
+int partition(int arr[], int l, int r);
+ 
+// This function returns k'th smallest element in arr[l..r] using
+// QuickSort based method.  ASSUMPTION: ALL ELEMENTS IN ARR[] ARE DISTINCT
+int kthSmallest(int arr[], int l, int r, int k)
+{
+    // If k is smaller than number of elements in array
+    if (k > 0 && k <= r - l + 1)
+    {
+        // Partition the array around last element and get
+        // position of pivot element in sorted array
+        int pos = partition(arr, l, r);
+ 
+        // If position is same as k
+        if (pos-l == k-1)
+            return arr[pos];
+        if (pos-l > k-1)  // If position is more, recur for left subarray
+            return kthSmallest(arr, l, pos-1, k);
+ 
+        // Else recur for right subarray
+        return kthSmallest(arr, pos+1, r, k-pos+l-1);
+    }
+ 
+    // If k is more than number of elements in array
+    return INT_MAX;
+}
+ 
+void swap(int *a, int *b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+ 
+// Standard partition process of QuickSort().  It considers the last
+// element as pivot and moves all smaller element to left of it
+// and greater elements to right
+int partition(int arr[], int l, int r)
+{
+    int x = arr[r], i = l;
+    for (int j = l; j <= r - 1; j++)
+    {
+        if (arr[j] <= x)
+        {
+            swap(&arr[i], &arr[j]);
+            i++;
+        }
+    }
+    swap(&arr[i], &arr[r]);
+    return i;
+}
+ 
+// Driver program to test above methods
+int main()
+{
+    int arr[] = {12, 3, 5, 7, 4, 19, 26};
+    int n = sizeof(arr)/sizeof(arr[0]), k = 3;
+    cout << "K'th smallest element is " << kthSmallest(arr, 0, n-1, k);
+    return 0;
+}
+#+END_SRC
+
+** Geometry
+
+** Bits
+
+*** Add two numbers without arithmetic operations                     :drill:
+    SCHEDULED: <2016-03-20 Sun>
+    :PROPERTIES:
+    :ID:       91b27514-e5d9-4d50-a501-0f3626aca4c5
+    :DRILL_LAST_INTERVAL: 1.8209
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:08]
+    :END:
+
+Write a function Add() that returns sum of two integers. The function should not
+use any of the arithmetic operators (+, ++, –, -, .. etc).
+
+**** Answer
+
+#+BEGIN_SRC java
+#include<stdio.h>
+ 
+int Add(int x, int y)
+{
+    // Iterate till there is no carry  
+    while (y != 0)
+    {
+        // carry now contains common set bits of x and y
+        int carry = x & y;  
+ 
+        // Sum of bits of x and y where at least one of the bits is not set
+        x = x ^ y; 
+ 
+        // Carry is shifted by one so that adding it to x gives the required sum
+        y = carry << 1;
+    }
+    return x;
+}
+ 
+int main()
+{
+    printf("%d", Add(15, 32));
+    return 0;
+}
+#+END_SRC
+
+#+BEGIN_SRC java
+int Add(int x, int y)
+{
+    if (y == 0)
+        return x;
+    else
+        return Add( x ^ y, (x & y) << 1);
+}
+#+END_SRC
+
+* Programming Questions
+** General 
+*** Problem solving methodology                                       :drill:
+    SCHEDULED: <2016-03-20 Sun>
+    :PROPERTIES:
+    :ID:       28efc126-eb0a-401b-84d2-3132a575bd7f
+    :DRILL_LAST_INTERVAL: 1.8361
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.333
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:12]
     :END:
 
 What's the problem solving methodology from CTCI?
@@ -1883,17 +2202,17 @@ only the thread that creates an object should have access to it while it is
 being constructed.
 
 *** Sort part of array                                                :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-04-02 Sat>
     :PROPERTIES:
     :ID:       838e18c0-0d55-4e62-943a-2fe6a23b410a
-    :DRILL_LAST_INTERVAL: 5.2934
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.2736
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:45]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:01]
     :END:
 
 How do you sort part of an array in Java?
@@ -1975,17 +2294,17 @@ Better yet, don't mess with the synchronization primitives at all and work with
 the abstractions offered in the java.util.concurrent packages.
 
 *** Java Monitors                                                     :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       800ca716-f3f7-41c6-a7c0-8fa2fe053e13
-    :DRILL_LAST_INTERVAL: 1.4233
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.0176
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:09]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:03]
     :END:
 
 How are monitors implemented in Java?
@@ -2444,17 +2763,17 @@ How do you create a mask for bits above and including the least significant bit?
 x | -x
 
 *** Mask for bits above and not including least significant bit       :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       489c977f-6ee3-4f60-9fe7-081b6523c3ac
-    :DRILL_LAST_INTERVAL: 3.7986
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
-    :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 2.8
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:05]
+    :DRILL_LAST_INTERVAL: 1.7075
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_FAILURE_COUNT: 4
+    :DRILL_AVERAGE_QUALITY: 2.715
+    :DRILL_EASE: 2.32
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:11]
     :END:
 
 How do you create a mask for bits above and *NOT* including the least significant bit?
@@ -2504,17 +2823,17 @@ How do you create a mask for bits below and including the least significant bit?
 x ^ (x - 1)
 
 *** Mask for bits below and including not the least significant bit   :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       97d1be1b-1b39-4927-9282-aa607a96a1b4
-    :DRILL_LAST_INTERVAL: 1.4854
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 4.3168
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 2.715
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:07]
+    :DRILL_AVERAGE_QUALITY: 3.001
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:04]
     :END:
 
 How do you create a mask for bits below and *NOT* including the least significant bit?
@@ -4154,17 +4473,17 @@ It makes a class much more pleasant to use.  Compare:
 {Jenny=(707) 867-5390}
 
 *** Item 10: override toString format                                 :drill:
-SCHEDULED: <2016-03-18 Fri>
+SCHEDULED: <2016-07-12 Tue>
 :PROPERTIES:
 :ID:       d23d8b5b-7371-462a-ab3e-11e3615c244e
-:DRILL_LAST_INTERVAL: 40.9002
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 116.0841
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.2
-:DRILL_EASE: 2.52
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.62
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:41]
+:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:07]
 :END:
 
 What info should be in toString?
@@ -4203,17 +4522,17 @@ You should provide a static factory to convert between the string and Object.
 Either way, clearly document your intentions.
 
 *** Item 10: override toString: programmatic access                   :drill:
-SCHEDULED: <2016-03-18 Fri>
+SCHEDULED: <2016-07-23 Sat>
 :PROPERTIES:
 :ID:       d67a1839-8010-4466-aeb1-5493e8c1d4b6
-:DRILL_LAST_INTERVAL: 42.7147
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 126.5254
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.9
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-04 Thu 12:48]
+:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:11]
 :END:
 
 Should you provide programmatic access to all info in toString?
@@ -5029,17 +5348,17 @@ Annoying and tedious to write.
 http://programmers.stackexchange.com/questions/117628/why-are-wrapper-classes-not-suited-for-use-in-callback-frameworks
 
 *** Item 16: Favor Composition - when to use inheritance              :drill:
-SCHEDULED: <2016-03-18 Fri>
+SCHEDULED: <2016-07-02 Sat>
 :PROPERTIES:
 :ID:       71d5fc01-01f6-48f7-9ffa-d071e95bd4ae
-:DRILL_LAST_INTERVAL: 38.305
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 105.8568
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.167
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.286
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:02]
+:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:07]
 :END:
 
 When is inheritance appropriate?
@@ -5895,18 +6214,18 @@ Anywhere a local variable can be declared.
 
 ** Generics
 *** Item 23: Don't use raw types - type 1                             :drill:
-SCHEDULED: <2016-03-18 Fri>
+SCHEDULED: <2016-06-09 Thu>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       d95b8741-0cf8-44ec-aa34-873d076516c5
-:DRILL_LAST_INTERVAL: 30.9552
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 82.8528
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.429
-:DRILL_EASE: 2.42
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:43]
+:DRILL_AVERAGE_QUALITY: 3.625
+:DRILL_EASE: 2.52
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:07]
 :END:
  
 The official term for a [List<String>] is a [parameterized type].
@@ -6450,17 +6769,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-26 Sat>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 3.2768
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 17
+:DRILL_LAST_INTERVAL: 8.2402
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 18
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.235
+:DRILL_AVERAGE_QUALITY: 3.278
 :DRILL_EASE: 2.2
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:34]
+:DRILL_LAST_QUALITY: 4
+:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:03]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -6473,17 +6792,17 @@ What steps should you take to prove an unchecked cast is type safe?
 4. Explain in a comment why the cast is safe.
 
 *** Item 26: Favor Generic Types - two methods for unchecked casts    :drill:
-SCHEDULED: <2016-03-18 Fri>
+SCHEDULED: <2016-07-23 Sat>
 :PROPERTIES:
 :ID:       8878bbe7-300f-42df-abb9-c167bb28d5be
-:DRILL_LAST_INTERVAL: 32.7348
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 127.1309
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.2
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.333
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:03]
+:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:07]
 :END:
 
 What are the two places you will generally see unchecked casts?
@@ -8679,17 +8998,17 @@ What ways can you achieve failure atomicity?
    object after the operation succeeds
    
 *** Item 65 - Don't ignore exceptions                                 :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-05-07 Sat>
     :PROPERTIES:
     :ID:       3AD966E6-F3AD-42BA-90CB-A448ADEE1B79
-    :DRILL_LAST_INTERVAL: 17.3536
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 50.2865
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:10]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:08]
     :END:
 
 Why shouldn't you ignore exceptions?
@@ -9085,17 +9404,17 @@ it's managed internally, it's impossible to exclude concurrent activity from a
 concurrent collection.  Locking will have no effect.
 
 *** Item 69: Prefer concurrency utils to wait and notify - concur     :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-04-05 Tue>
     :PROPERTIES:
     :ID:       bcfe83aa-7870-45da-80cc-28efe7ac52b2
-    :DRILL_LAST_INTERVAL: 5.431
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 17.505
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.4
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:26]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:02]
     :END:
 
 How do you perform a sequence of operations on a concurrent collection?
@@ -9488,17 +9807,17 @@ Don't use Thread.yield, as it may not do anything.  Thread.sleep(0) may also
 return immediately.
 
 *** Item 73: Avoid thread groups                                      :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-04-05 Tue>
     :PROPERTIES:
     :ID:       016ff915-e90d-442e-af5c-0b58ccec6ef4
-    :DRILL_LAST_INTERVAL: 5.3428
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 17.8525
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.8
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:26]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:07]
     :END:
 
 Why should you avoid thread groups?
@@ -9576,17 +9895,17 @@ Which classes designed for inheritance in Java do implement Serializable?
 ~Throwable~, ~Component~ and ~HttpServlet~
  
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-20 Sun>
     :PROPERTIES:
     :ID:       909e64d3-08a8-45c3-8c7e-6dc0c4a5ed5f
-    :DRILL_LAST_INTERVAL: 12.2899
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
-    :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_LAST_INTERVAL: 1.6432
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 4.4
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:07]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:13]
     :END:
 
 If you have a class designed for inheritance that is not Serializable, how can
@@ -10173,17 +10492,17 @@ No, thread safe classes encapsulate any needed synchronization so that clients
 need not provide their own.
 
 *** Stateless objects                                                 :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-31 Thu>
     :PROPERTIES:
     :ID:       b1c4a6bf-75f9-49d5-9110-9bef34bc2fc0
-    :DRILL_LAST_INTERVAL: 4.955
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.4107
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:47]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:03]
     :END:
 
 Are stateless objects thread-safe?
@@ -10398,17 +10717,17 @@ related state variables in a concurrent environment?
 Update related state variables in a single atomic operations.
 
 *** Java Built-in locks                                               :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-04-03 Sun>
     :PROPERTIES:
     :ID:       c2413d1d-6ef0-4200-94fc-e79005d629db
-    :DRILL_LAST_INTERVAL: 4.5657
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 15.5771
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:42]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:02]
     :END:
 
 What type of locking mechanism does Java have built-in for enforcing atomicity?
@@ -10482,17 +10801,17 @@ against concurrent state changes made by /other/ threads.
 
 
 *** Guarded By                                                        :drill:
-    SCHEDULED: <2016-03-18 Fri>
+    SCHEDULED: <2016-03-28 Mon>
     :PROPERTIES:
     :ID:       7c925e81-da67-425c-b50c-d80199f57b76
-    :DRILL_LAST_INTERVAL: 3.2072
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 9.5317
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.46
+    :DRILL_AVERAGE_QUALITY: 4.333
+    :DRILL_EASE: 2.56
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:32]
+    :DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:02]
     :END:
 
 Define guarded by.
