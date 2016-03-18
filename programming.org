@@ -29,7 +29,7 @@ dired-get-marked-files
 #+END_SRC
 
 * Interview Questions
-***  Deadlock prevention                                              :drill:
+*** Deadlock prevention                                              :drill:
     SCHEDULED: <2016-03-18 Fri>
     :PROPERTIES:
     :ID:       99926a81-416c-4925-90f7-b64c193c92cc
@@ -59,17 +59,17 @@ all locks, wait for a random amount of time and try again.
   cycle there's a deadlock.
  
 *** Polymorphism                                                      :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       77dc5a29-c1b7-4027-9c0a-617e6772ad63
-    :DRILL_LAST_INTERVAL: 1.4412
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 3.8176
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 2.667
-    :DRILL_EASE: 2.5
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:53]
+    :DRILL_AVERAGE_QUALITY: 2.75
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:44]
     :END:
 
 What is polymorphism?
@@ -157,6 +157,34 @@ public int atoi(String str) {
 
 
 * Programming Questions
+** General 
+*** Problem solving methodology                                       :drill:
+    SCHEDULED: <2016-03-18 Fri>
+    :PROPERTIES:
+    :ID:       28efc126-eb0a-401b-84d2-3132a575bd7f
+    :DRILL_LAST_INTERVAL: 1.282
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:12]
+    :END:
+
+What's the problem solving methodology from CTCI?
+
+**** Answer
+
+1. Listen, state assumptions and constraints
+2. Example, 7 elements, avoid special cases
+3. State Brute Forces ASAP
+4. Optimize, unused info, fresh example, solve incorrectly, make time-space
+   trade-off, pre-compute, hash, BCR
+5. Walk through - pseudo code
+6. Implement - avoid line creep, write modular code, use todo for error checks
+7. Test, conceptual test, weird code, hot spots, small test case, special case
+
 ** Math
 *** Median 1                                                          :drill: 
 SCHEDULED: <2016-06-21 Tue>
@@ -240,19 +268,64 @@ What are the benefits of OO Programing?
 + Encapsulation - hide implmentation details
 + Pluggability
 
+** Concurrency
+*** Concurrency Models                                                :drill:
+    SCHEDULED: <2016-03-19 Sat>
+    :PROPERTIES:
+    :ID:       8c998336-f161-4df5-8fef-104cb72a8d38
+    :DRILL_LAST_INTERVAL: 1.7852
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:05]
+    :END:
+
+What are the common concurrency models?
+
+**** Answer
+
++ Parallel Workers
+  Delegator divides up work to worker threads.
+  Pros: easy to understand
+  Cons: Shared state is complex, stateless workers must re-read state, job
+  ordering is non-deterministic.
+ 
++ Assembly Line (aka reactive, event driven)
+  Each worker runs in its own thread and shares no state with other workers, a
+  /shared nothing concurrency model/.
+
+  Variant: *Actor* actors send messages directly to each other.  Messages are
+  sent and processed asynchronously.
+
+  Variant: *Channel* workers communicate using channels without knowing who is
+  listening.  
+
+  Pros: no shared state, stateful workers, better hardware conformity, job
+  ordering is possible
+
+  Cons: Execution of a job is spread over multiple workers, harder to follow.
+
++ Functional Parallelism
+  
+  Implement program using function calls.  Functions are like actors and
+  parameters are copied.
+
 ** Java Language
 *** Variable Basics                                                   :drill:
-SCHEDULED: <2016-03-17 Thu>
+SCHEDULED: <2016-08-26 Fri>
 :PROPERTIES:
 :ID:       dfe6c5a9-33b5-4933-a2c1-9f57ab726506
-:DRILL_LAST_INTERVAL: 48.3897
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 162.3178
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.875
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-01-29 Fri 15:54]
+:DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:09]
 :END:
 
 What are the 4 types of variables in Java?
@@ -1832,6 +1905,107 @@ Arrays.sort(int[] a, int from, int to);
 Arrays.sort(T[], int from , int to, Comparator<? super T>);
 #+END_SRC
 
+*** Missed signal                                                     :drill:
+    SCHEDULED: <2016-03-19 Sat>
+    :PROPERTIES:
+    :ID:       925539de-b713-45c4-8db4-51fc7327d985
+    :DRILL_LAST_INTERVAL: 1.6218
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:56]
+    :END:
+
+Why do ~wait()~ and ~notify()~ need to be called in a synchronized block?
+
+**** Answer
+
+To prevent missed signals (aka lost wakeup) as a result of a race condition on
+the monitor's condition variable.
+
+http://coding.derkeiler.com/Archive/Java/comp.lang.java.programmer/2006-01/msg01130.html
+#+BEGIN_QUOTE
+while (!thingImWaitingFor()) wait(); 
+
+You need an absolute guarantee that the waiter and the notifier agree about the
+state of the predicate. The waiter checks the state of the predicate at some
+point slightly BEFORE it goes to sleep, but it depends for correctness on the
+predicate being true WHEN it goes to sleep. There's a period of vulnerability
+between those two events, which can break the program.
+#+END_QUOTE
+
+http://stackoverflow.com/questions/2779484/why-must-wait-always-be-in-synchronized-block
+
+A wait() only makes sense when there is also a notify(), so it's always about
+communication between threads, and that needs synchronization to work
+correctly. One could argue that this should be implicit, but that would not
+really help, for the following reason:
+
+Semantically, you never just wait(). You need some condition to be satisfied,
+and if it is not, you wait until it is. So what you really do is
+
+if(!condition){
+    wait();
+}
+
+But the condition is being set by a separate thread, so in order to have this
+work correctly you need synchronization.
+
+A couple more things wrong with it, where just because your thread quit waiting
+doesn't mean the condition you are looking for is true:
+
+You can get spurious wakeups (meaning that a thread can wake up from waiting
+without ever having received a notification), or
+
+The condition can get set, but a third thread makes the condition false again by
+the time the waiting thread wakes up (and reacquires the monitor).
+
+To deal with these cases what you really need is always some variation of this:
+
+synchronized(lock){
+    while(!condition){
+        lock.wait();
+    }
+}
+
+Better yet, don't mess with the synchronization primitives at all and work with
+the abstractions offered in the java.util.concurrent packages.
+
+*** Java Monitors                                                     :drill:
+    SCHEDULED: <2016-03-18 Fri>
+    :PROPERTIES:
+    :ID:       800ca716-f3f7-41c6-a7c0-8fa2fe053e13
+    :DRILL_LAST_INTERVAL: 1.4233
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:09]
+    :END:
+
+How are monitors implemented in Java?
+
+**** Answer
+
+The monitor region is inside the synchronized block.
+
+The monitor can be visualized as three rooms.
+
+An entry room - for threads waiting to enter the monitor region.
+The owner room - for the currently executing thread in the monitor region.
+The wait set - for threads that called ~wait()~ in the monitor region.
+
+~notify()~ signals schedules the next waiting thread to wakeup.
+~wait()~ release the intrinsic lock and puts the thread in the monitor's wait set.
+
+http://www.artima.com/insidejvm/ed2/threadsynch.html - Nice description on how
+the monitor concept is implemented in Java, complete with pictures.
+
 ** Design Patterns
 
 http://gameprogrammingpatterns.com/singleton.html
@@ -1989,17 +2163,17 @@ http://www.ardendertat.com/2011/11/03/programming-interview-questions-13-median-
 
 ** Bit Manipulation
 *** Two's Complement - Definition                                     :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-05-24 Tue>
     :PROPERTIES:
     :ID:       bf7dd9b4-621d-493a-8c46-73a89d4486dc
-    :DRILL_LAST_INTERVAL: 24.0032
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 68.2081
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.8
-    :DRILL_EASE: 2.66
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.76
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:15]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:52]
     :END:
 
 How are numbers represented in two's complement?
@@ -2290,17 +2464,17 @@ How do you create a mask for bits above and *NOT* including the least significan
 x ^ -x
 
 *** Fill in all bits below least significant bit                      :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-19 Sat>
     :PROPERTIES:
     :ID:       51944e90-2de7-4a4c-bdb6-b7d81de1aefc
-    :DRILL_LAST_INTERVAL: 1.9251
+    :DRILL_LAST_INTERVAL: 1.6496
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.25
-    :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:48]
+    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_FAILURE_COUNT: 3
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:06]
     :END:
 
 How do you fill in all bits below the least significant bit?
@@ -2310,17 +2484,17 @@ How do you fill in all bits below the least significant bit?
 x | (x - 1)
 
 *** Mask for bits below and including the least significant bit       :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-19 Sat>
     :PROPERTIES:
     :ID:       5c923869-4202-4eb3-b17f-6e8332d77971
-    :DRILL_LAST_INTERVAL: 1.7586
+    :DRILL_LAST_INTERVAL: 1.5738
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.25
-    :DRILL_EASE: 2.7
+    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_FAILURE_COUNT: 3
+    :DRILL_AVERAGE_QUALITY: 3.333
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:46]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:08]
     :END:
 
 How do you create a mask for bits below and including the least significant bit?
@@ -2330,17 +2504,17 @@ How do you create a mask for bits below and including the least significant bit?
 x ^ (x - 1)
 
 *** Mask for bits below and including not the least significant bit   :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-18 Fri>
     :PROPERTIES:
     :ID:       97d1be1b-1b39-4927-9282-aa607a96a1b4
-    :DRILL_LAST_INTERVAL: 2.0697
+    :DRILL_LAST_INTERVAL: 1.4854
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 5
-    :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 2.8
-    :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:46]
+    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_FAILURE_COUNT: 4
+    :DRILL_AVERAGE_QUALITY: 2.715
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:07]
     :END:
 
 How do you create a mask for bits below and *NOT* including the least significant bit?
@@ -2350,17 +2524,17 @@ How do you create a mask for bits below and *NOT* including the least significan
 ~x & (x - 1)
 
 *** Fill in lowest zero bit                                           :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-19 Sat>
     :PROPERTIES:
     :ID:       88e68c45-ba22-4a8d-a143-5f55c0bbd984
-    :DRILL_LAST_INTERVAL: 1.5976
+    :DRILL_LAST_INTERVAL: 1.8309
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 2.75
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:48]
+    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_FAILURE_COUNT: 4
+    :DRILL_AVERAGE_QUALITY: 2.857
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:08]
     :END:
 
 How do you fill in the lowest zero bit?
@@ -2370,17 +2544,17 @@ How do you fill in the lowest zero bit?
 x | (x + 1)
 
 *** Shift number right so lowest bit set ends up a index 0            :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       eafdb890-ac0f-4377-928e-af87647bef61
-    :DRILL_LAST_INTERVAL: 1.5226
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 3.6923
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 5
-    :DRILL_AVERAGE_QUALITY: 2.429
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:46]
+    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_EASE: 2.32
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:48]
     :END:
 
 How do you shift a number right so the lowest bit set ends up at index 0?
@@ -2388,8 +2562,6 @@ How do you shift a number right so the lowest bit set ends up at index 0?
 **** Answer
 
 x / (x & -x)
-
-
 
 
 
@@ -4306,17 +4478,17 @@ public class Person implements Cloneable
 #+END_SRC
 
 *** Item 12: Implement Comparable: Interface                          :drill:
-SCHEDULED: <2016-03-17 Thu>
+SCHEDULED: <2016-07-01 Fri>
 :PROPERTIES:
 :ID:       7d645124-9390-464b-80c4-a6cb9abeedc0
-:DRILL_LAST_INTERVAL: 37.8597
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 105.9804
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.6
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.7
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:22]
+:DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:52]
 :END:
 
 How do you implement the Comparable interface?
@@ -5079,17 +5251,17 @@ Prohibit subclassing in classes that are not designed and documented to be
 safely subclasses.
 
 *** Item 17: Design for Inheritance - concrete with no std interface  :drill:
-SCHEDULED: <2016-03-17 Thu>
+SCHEDULED: <2016-07-20 Wed>
 :PROPERTIES:
 :ID:       f7f17099-a359-4b7e-97b5-dfbc52c0eb8e
-:DRILL_LAST_INTERVAL: 39.8373
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 125.4819
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.9
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:35]
+:DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:10]
 :END:
 
 If you must allow inheritance from a concrete class that doesn't implement a
@@ -6082,17 +6254,17 @@ What are the acceptable uses for raw types?
    work.
 
 *** Item 24: Eliminate unchecked warnings - how to suppress           :drill:
-SCHEDULED: <2016-03-17 Thu>
+SCHEDULED: <2016-06-07 Tue>
 :PROPERTIES:
 :ID:       25630e2b-115d-497c-8f60-d0a85c734651
-:DRILL_LAST_INTERVAL: 31.1524
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 81.6045
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.66
+:DRILL_AVERAGE_QUALITY: 4.143
+:DRILL_EASE: 2.76
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-15 Mon 09:36]
+:DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:56]
 :END:
 
 How do you suppress an unchecked warnings?
@@ -6682,17 +6854,17 @@ public enum Operation {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - share code                    :drill:
-SCHEDULED: <2016-03-17 Thu>
+SCHEDULED: <2016-05-22 Sun>
 :PROPERTIES:
 :ID:       136d094a-ed19-458a-83d2-fc077daed11a
-:DRILL_LAST_INTERVAL: 28.0533
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 66.123
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.2
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 3
-:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:32]
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:10]
 :END:
 
 What's the best way to share behavior specific code between enums?
@@ -8437,17 +8609,17 @@ Generally not, because exceptions will be accompanied by the source code, so
 only include hard data.
 
 *** Item 63: Include failure capture information - force detail       :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       CA76A677-87AF-461D-84CF-EA19D6634C55
-    :DRILL_LAST_INTERVAL: 15.8519
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 46.2811
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:11]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 22:12]
     :END:
 
 What's one way to force good detail messages for exceptions?
@@ -8461,17 +8633,17 @@ public IndexOutOfBoundsException(int lowerBound, int upperBound, int index)
 #+END_SRC
 
 *** Item 64: Strive for failure atomicity - definition                :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       9A82D17A-4E5E-45AE-B138-22E72BB5D14B
-    :DRILL_LAST_INTERVAL: 1.5982
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 5.3569
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.4
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:46]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:49]
     :END:
 
 What is failure atomicity?
@@ -9052,17 +9224,17 @@ private final Object lock = new Object();
 #+END_SRC
 
 *** Item 70: Document thread safety - private vs public lock          :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-30 Wed>
     :PROPERTIES:
     :ID:       217f7bd3-eab6-41ed-9b09-f1ebc224a60d
-    :DRILL_LAST_INTERVAL: 4.3332
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 12.6036
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.4
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:26]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:51]
     :END:
 
 When should you use a private lock over a public lock?
@@ -9251,17 +9423,17 @@ remove the volatile modifier on the field.  This is used by String to cache hash
 codes.
 
 *** Item 72: Don't depend on the thread scheduler - yield             :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-21 Mon>
     :PROPERTIES:
     :ID:       a58eb218-9b82-4e66-adc7-85bab8fef66a
-    :DRILL_LAST_INTERVAL: 1.5287
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 8
+    :DRILL_LAST_INTERVAL: 4.3689
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 9
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 3.667
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:48]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:49]
     :END:
 
 Why should you avoid the temptation to fix concurrency problems with
@@ -9689,17 +9861,17 @@ parameters and stored the values with no validation whatsoever.  If so, the
 default ~readObject~ is for you.
 
 *** Item 76: Write ~readObject~ methods defensively - steps           :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-25 Fri>
     :PROPERTIES:
     :ID:       50644C0C-33E5-49BF-A4F0-3EF0D67D75D2
-    :DRILL_LAST_INTERVAL: 3.9018
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 8
+    :DRILL_LAST_INTERVAL: 8.0912
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 9
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 2.75
-    :DRILL_EASE: 2.18
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.28
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:47]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:51]
     :END:
 
 What are the steps for a bulletproof ~readObject~ method?
@@ -10183,17 +10355,17 @@ respect to all operations, including itself, that operate on the same state.
 #+END_QUOTE
 
 *** Prefer existing thread-safe objects                               :drill:
-    SCHEDULED: <2016-03-17 Thu>
+    SCHEDULED: <2016-03-29 Tue>
     :PROPERTIES:
     :ID:       c68e1d92-7de4-4dde-b58d-7ca3a8b04503
-    :DRILL_LAST_INTERVAL: 4.0539
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.5455
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:44]
+    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:49]
     :END:
 
 Why should you prefer existing thread-safe objects to normal state variables?
