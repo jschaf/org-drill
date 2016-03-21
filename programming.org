@@ -59,17 +59,17 @@ all locks, wait for a random amount of time and try again.
   cycle there's a deadlock.
  
 *** Polymorphism                                                      :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-03-22 Tue>
     :PROPERTIES:
     :ID:       77dc5a29-c1b7-4027-9c0a-617e6772ad63
-    :DRILL_LAST_INTERVAL: 3.8176
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 2.75
-    :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-17 Thu 21:44]
+    :DRILL_LAST_INTERVAL: 1.3094
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_FAILURE_COUNT: 3
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:44]
     :END:
 
 What is polymorphism?
@@ -206,17 +206,17 @@ class Solution {
 ** Sorting
 
 *** Write merge sort                                                  :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-03-26 Sat>
     :PROPERTIES:
     :ID:       51c374f5-20af-45ea-af43-87fb649f8020
-    :DRILL_LAST_INTERVAL: 1.4662
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.8458
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
     :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.7
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-20 Sun 01:41]
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:34]
     :END:
 
 Write a merge sort.
@@ -225,64 +225,52 @@ Write a merge sort.
 
 http://www.vogella.com/tutorials/JavaAlgorithmsMergesort/article.html
 #+BEGIN_SRC java
-public class Mergesort {
-  private int[] numbers;
-  private int[] helper;
+import java.util.*;
 
-  private int number;
+public class MergerSort
+{
+	public static void mergeSort(Comparable [ ] a)
+	{
+		Comparable[] tmp = new Comparable[a.length];
+		mergeSort(a, tmp,  0,  a.length - 1);
+	}
 
-  public void sort(int[] values) {
-    this.numbers = values;
-    number = values.length;
-    this.helper = new int[number];
-    mergesort(0, number - 1);
-  }
 
-  private void mergesort(int low, int high) {
-    // check if low is smaller then high, if not then the array is sorted
-    if (low < high) {
-      // Get the index of the element which is in the middle
-      int middle = low + (high - low) / 2;
-      // Sort the left side of the array
-      mergesort(low, middle);
-      // Sort the right side of the array
-      mergesort(middle + 1, high);
-      // Combine them both
-      merge(low, middle, high);
+	private static void mergeSort(Comparable [ ] a, Comparable [ ] tmp, int left, int right)
+	{
+		if( left < right )
+		{
+			int center = (left + right) / 2;
+			mergeSort(a, tmp, left, center);
+			mergeSort(a, tmp, center + 1, right);
+			merge(a, tmp, left, center + 1, right);
+		}
+	}
+
+
+    private static void merge(Comparable[ ] a, Comparable[ ] tmp, int left, int right, int rightEnd )
+    {
+        int leftEnd = right - 1;
+        int k = left;
+        int num = rightEnd - left + 1;
+
+        while(left <= leftEnd && right <= rightEnd)
+            if(a[left].compareTo(a[right]) <= 0)
+                tmp[k++] = a[left++];
+            else
+                tmp[k++] = a[right++];
+
+        while(left <= leftEnd)    // Copy rest of first half
+            tmp[k++] = a[left++];
+
+        while(right <= rightEnd)  // Copy rest of right half
+            tmp[k++] = a[right++];
+
+        // Copy tmp back
+        for(int i = 0; i < num; i++, rightEnd--)
+            a[rightEnd] = tmp[rightEnd];
     }
-  }
-
-  private void merge(int low, int middle, int high) {
-
-    // Copy both parts into the helper array
-    for (int i = low; i <= high; i++) {
-      helper[i] = numbers[i];
-    }
-
-    int i = low;
-    int j = middle + 1;
-    int k = low;
-    // Copy the smallest values from either the left or the right side back
-    // to the original array
-    while (i <= middle && j <= high) {
-      if (helper[i] <= helper[j]) {
-        numbers[k] = helper[i];
-        i++;
-      } else {
-        numbers[k] = helper[j];
-        j++;
-      }
-      k++;
-    }
-    // Copy the rest of the left side of the array into the target array
-    while (i <= middle) {
-      numbers[k] = helper[i];
-      k++;
-      i++;
-    }
-
-  }
-} 
+ }
 #+END_SRC
 
 *** Write Insertion Sort                                              :drill:
@@ -589,17 +577,17 @@ What are the benefits of OO Programing?
 
 ** Concurrency
 *** Concurrency Models                                                :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-03-24 Thu>
     :PROPERTIES:
     :ID:       8c998336-f161-4df5-8fef-104cb72a8d38
-    :DRILL_LAST_INTERVAL: 1.4513
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 2.9394
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 2.333
-    :DRILL_EASE: 2.22
+    :DRILL_AVERAGE_QUALITY: 2.5
+    :DRILL_EASE: 2.08
     :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-20 Sun 01:43]
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:36]
     :END:
 
 What are the common concurrency models?
@@ -2803,17 +2791,17 @@ How do you fill in all bits below the least significant bit?
 x | (x - 1)
 
 *** Mask for bits below and including the least significant bit       :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-03-23 Wed>
     :PROPERTIES:
     :ID:       5c923869-4202-4eb3-b17f-6e8332d77971
-    :DRILL_LAST_INTERVAL: 1.3257
+    :DRILL_LAST_INTERVAL: 1.7393
     :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 8
-    :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.125
-    :DRILL_EASE: 2.8
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-03-20 Sun 01:42]
+    :DRILL_TOTAL_REPEATS: 10
+    :DRILL_FAILURE_COUNT: 5
+    :DRILL_AVERAGE_QUALITY: 3.1
+    :DRILL_EASE: 2.9
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:43]
     :END:
 
 How do you create a mask for bits below and including the least significant bit?
@@ -10050,17 +10038,17 @@ If you use a custom serialized form, most or all of the instance fields should
 be labeled transient.
 
 *** Item 75: Consider using a custom serialized form - synch          :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-04-15 Fri>
     :PROPERTIES:
     :ID:       c64bddc1-a9ac-483c-85cc-a629716578d6
-    :DRILL_LAST_INTERVAL: 8.4969
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 25.3342
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.4
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:56]
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:41]
     :END:
 
 What has to be synchronized for serialization?
@@ -10446,17 +10434,17 @@ What are three ways you can fix unsynchronized access to shared mutable state?
 + Use synchronization whenever accessing the state variable.
 
 *** Thread safety definition                                          :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-04-01 Fri>
     :PROPERTIES:
     :ID:       461c4fb7-3a47-4513-b180-be70c9bc67e5
-    :DRILL_LAST_INTERVAL: 4.7061
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 8
+    :DRILL_LAST_INTERVAL: 11.1361
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 9
     :DRILL_FAILURE_COUNT: 3
-    :DRILL_AVERAGE_QUALITY: 3.125
-    :DRILL_EASE: 2.42
+    :DRILL_AVERAGE_QUALITY: 3.333
+    :DRILL_EASE: 2.52
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:23]
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:23]
     :END:
 
 What's the definition of thread safety in JCIP?
@@ -10649,17 +10637,17 @@ transfer4 (amount, account_from, account_to) {
  #+END_SRC
 
 *** Atomic definition                                                 :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-03-23 Wed>
     :PROPERTIES:
     :ID:       43a2153b-d649-42a8-babf-d14467879ded
-    :DRILL_LAST_INTERVAL: 4.9884
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
-    :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 2.833
-    :DRILL_EASE: 2.08
-    :DRILL_LAST_QUALITY: 4
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:20]
+    :DRILL_LAST_INTERVAL: 1.5689
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 8
+    :DRILL_FAILURE_COUNT: 3
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.18
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:44]
     :END:
 
 Define atomic in regards to thread safety.
@@ -10874,17 +10862,17 @@ This allows the JVM to take full advantage of the modern hardware by cache
 values in registers and permits the CPU to reorder operations.
 
 *** Reasoning about reordering                                        :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-04-05 Tue>
     :PROPERTIES:
     :ID:       99f732cd-b701-47a8-a8b9-7e43247b1e9e
-    :DRILL_LAST_INTERVAL: 5.5691
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.716
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-15 Tue 10:39]
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:41]
     :END:
 
 Can you reason about the order of operations on the JVM in the absence of
@@ -10963,17 +10951,17 @@ mutable value
 Mutual exclusion
 
 *** Volatile                                                          :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-04-02 Sat>
     :PROPERTIES:
     :ID:       d6393f3f-29ab-46df-b85a-a8aa6322d12a
-    :DRILL_LAST_INTERVAL: 4.583
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.8479
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:20]
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:36]
     :END:
 
 What does the volatile modifier do in Java?
@@ -11013,17 +11001,17 @@ state, that of the object they refer to, or indicating that an important
 life-cycle event (such as initialization or shutdown) has occurred.
 
 *** Volatile Criteria                                                 :drill:
-    SCHEDULED: <2016-03-21 Mon>
+    SCHEDULED: <2016-04-02 Sat>
     :PROPERTIES:
     :ID:       09176331-2aa7-424e-be0e-b38436207e29
-    :DRILL_LAST_INTERVAL: 4.6729
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 12.3433
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.2
-    :DRILL_EASE: 2.46
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-16 Wed 13:22]
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.56
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:37]
     :END:
 
 What are the criteria for using volatile variables?
@@ -11034,6 +11022,148 @@ What are the criteria for using volatile variables?
   that only  a single thread ever updates the value.
 + The variable does not participate in invariants with other state variables.
 + Locking is not required for any other reason while the variable is being accessed.
+
+*** Publishing definition                                             :drill:
+    :PROPERTIES:
+    :ID:       4be96116-c782-4387-9e7b-fa9d5691bf2b
+    :END:
+
+Define publishing in the context of concurrent programming.
+
+**** Answer
+
+Publishing an object means making it available to code outside of its current scope
+
+*** Escaped definition.                                               :drill:
+    :PROPERTIES:
+    :ID:       a31e9991-d9c7-4c60-8296-8f1f75a4ee0d
+    :END:
+
+Define escaped in the context of concurrent programming.
+
+**** Answer
+
+An object that is published when it should not have been is said to have escaped.
+
+*** Methods of publication                                            :drill:
+    :PROPERTIES:
+    :ID:       2da06657-ae46-4abe-90f6-00a8a3133044
+    :END:
+
+How can you publish an object?
+
+**** Answer
+
+1. Store a reference in a public static field, where any class and thread can see it.
+2. Allowing internal mutable state to escape by return value.
+3. Passing an object to an alien method.
+4. Publish an inner class instance, such as an event listener because it
+   publishes a hidden reference to enclosing scope.
+
+*** Safe construction: prevent this from escaping                     :drill:
+    :PROPERTIES:
+    :ID:       35b4f68c-7bfa-462a-b5d9-aff5475b9513
+    :END:
+
+How can you prevent the this reference from escaping during construction?
+
+**** Answer
+
+1. Don't call ~Runnable.start~ or ~registerListener~ in a constructor.
+2. Don't invoke overridable methods in a constructor.
+
+*** Thread confinement                                                :drill:
+    :PROPERTIES:
+    :ID:       02652eb7-cfce-449a-a712-cf1f5dad695c
+    :END:
+
+What is thread confinement?
+
+**** Answer
+
+Accessing mutable data from only one thread.
+
+*** Ad-hoc thread confinement                                         :drill:
+    :PROPERTIES:
+    :ID:       a597a5ed-c922-4010-a131-aeac7fb8d4e0
+    :END:
+
+Define ad-hoc thread confinement.
+
+**** Answer
+
+Thread confinement when the responsibility for maintaining thread confinement
+falls entirely on the implementation.
+
+Fragile because there's no language constructs to help.
+
+*** Stack confinement                                                 :drill:
+    :PROPERTIES:
+    :ID:       801f2a68-84d5-4b2d-b59e-1cb9d70f78d9
+    :END:
+
+What is stack confinement in concurrency?
+
+**** Answer
+
+Special case of thread confinement in which an object can only be reached
+through local variables.
+
+*** ThreadLocal                                                       :drill:
+    :PROPERTIES:
+    :ID:       3eb3e600-207a-4b10-8e7e-f7acbf3f0735
+    :END:
+
+What is thread local?
+
+**** Answer
+
+A formal means of thread confinement.  Conceptually, it's like ~Map<Thread, T>~
+
+*** Immutable definition                                              :drill:
+    :PROPERTIES:
+    :ID:       20cd670b-d402-4ddc-94f8-bd087b0eedd7
+    :END:
+
+What conditions must an object meet for it to be immutable in Java?
+
+**** Answer
+ 
+An object is immutable if:
++ Its state cannot be modified after construction.
++ All its fields are final
++ It is properly constructed (the this reference doesn't escape during
+  construction)
+
+*** Volatile to publish immutable objects                             :drill:
+    :PROPERTIES:
+    :ID:       b61f4376-1799-4b00-b9e2-70a392d8b194
+    :END:
+
+How can you use immutable objects and volatile modifier to create a weak atomic
+section?
+
+**** Answer
+
+Use an immutable object to hold related mutable variables.  If you only
+reference the immutable class once, you can simply mark it as volatile.
+
+Because the class is only referenced once, there is no data race.
+ 
+
+ 
+
+
+
+
+
+
+ 
+
+
+ 
+
+
 
 * Consulting
 ** Breaking the Time Barrier
