@@ -159,17 +159,17 @@ public int atoi(String str) {
 ** Arrays and Strings
 
 *** Reverse order of words of a string in place                       :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-04-12 Tue>
     :PROPERTIES:
     :ID:       7a85ec67-7ce8-4f5e-a71c-01556f66b325
-    :DRILL_LAST_INTERVAL: 5.6989
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 17.3596
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-20 Sun 01:48]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:38]
     :END:
 
 Given an input string, reverse the string word by word.
@@ -206,17 +206,17 @@ class Solution {
 ** Sorting
 
 *** Write merge sort                                                  :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-04-07 Thu>
     :PROPERTIES:
     :ID:       51c374f5-20af-45ea-af43-87fb649f8020
-    :DRILL_LAST_INTERVAL: 4.8458
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 11.5583
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_AVERAGE_QUALITY: 3.167
     :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:34]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:43]
     :END:
 
 Write a merge sort.
@@ -1004,17 +1004,17 @@ What character conversions are supported in a format specifier?
 https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html
 
 *** Formatter - Integral Conversions                                  :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-05-12 Thu>
 :PROPERTIES:
 :ID:       30a7dece-1423-44b7-9460-3cbd24bbf374
-:DRILL_LAST_INTERVAL: 16.7925
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 46.5352
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.778
-:DRILL_EASE: 2.66
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-03-09 Wed 12:30]
+:DRILL_AVERAGE_QUALITY: 3.9
+:DRILL_EASE: 2.76
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:47]
 :END:
 
 What Integral conversions are supported in a format specifier?
@@ -1588,17 +1588,17 @@ Arrays.deepToString(threeDimArray);
 #+END_SRC
 
 *** Create a memory leak                                              :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-06-23 Thu>
 :PROPERTIES:
 :ID:       2c16baf7-a2b4-4e42-97ce-92816dc2cfd9
-:DRILL_LAST_INTERVAL: 31.967
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 88.8546
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.857
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:48]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:48]
 :END:
 
 How can you create a memory leak in Java?
@@ -2069,17 +2069,17 @@ https://docs.oracle.com/javase/specs/jls/se8/html/jls-14.html#jls-14.20.1
 http://stackoverflow.com/questions/48088/returning-from-a-finally-block-in-java
 
 *** Fill Array                                                        :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-04-25 Mon>
     :PROPERTIES:
     :ID:       e494ca44-c3bf-4bda-acc3-c0537768e1d1
-    :DRILL_LAST_INTERVAL: 11.5152
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 29.5942
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.333
-    :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:14]
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 2.66
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:46]
     :END:
 
 How do you fill an array in Java?  
@@ -3819,7 +3819,7 @@ for (int c = a ^ b; c != 0; c = c & (c - 1))
     :DRILL_LAST_REVIEWED: [2016-03-25 Fri 16:34]
     :END:
 
-Why is using a string literal or a global object as a monitor a bad idea?
+    Why is using a string literal or a global object as a monitor a bad idea?
 
 **** Answer
 
@@ -4116,17 +4116,17 @@ What are the three common methods for implementing a Singleton in Java?
 3. Enum with a single field
 
 *** Item 03: Singleton Enum                                           :drill:
-SCHEDULED: <2016-03-26 Sat>
+SCHEDULED: <2016-07-26 Tue>
 :PROPERTIES:
 :ID:       794a10aa-35b6-46af-8845-ca9baa214da5
-:DRILL_LAST_INTERVAL: 48.8044
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 122.0769
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.833
-:DRILL_EASE: 2.56
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.66
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:39]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:45]
 :END:
 
 Why is a single-element enum the best way to implement a singleton?
@@ -5291,17 +5291,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-03-28 Mon>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 12.5552
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 18
-:DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.444
-:DRILL_EASE: 2.86
+:DRILL_LAST_INTERVAL: 1.5351
+:DRILL_REPEATS_SINCE_FAIL: 2
+:DRILL_TOTAL_REPEATS: 20
+:DRILL_FAILURE_COUNT: 7
+:DRILL_AVERAGE_QUALITY: 3.45
+:DRILL_EASE: 2.96
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:43]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:49]
 :END:
 
 How do you make a class immutable?
@@ -5364,17 +5364,17 @@ What are the drawbacks of immutable object?
 Immutable objects require a separate object for each distinct value.
 
 *** Item 15:  Minimize Mutability - mitigate performance problem      :drill:
-SCHEDULED: <2016-03-26 Sat>
+SCHEDULED: <2016-08-06 Sat>
 :PROPERTIES:
 :ID:       20a96920-807f-498e-8f90-1102e2bf07df
-:DRILL_LAST_INTERVAL: 40.6127
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 133.4567
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.286
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.375
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:11]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:46]
 :END:
 
 What are two approaches to making mutability performant in immutable classes?
@@ -5722,17 +5722,17 @@ Neither clone nor readObject may invoke an overridable method, directly or
 indirectly.
 
 *** Item 17: Design for Inheritance -                                 :drill:
-SCHEDULED: <2016-03-26 Sat>
+SCHEDULED: <2016-08-09 Tue>
 :PROPERTIES:
 :ID:       beee49af-05ab-48b9-858d-60cc43353500
-:DRILL_LAST_INTERVAL: 43.8952
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 135.8829
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-11 Thu 10:46]
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:45]
 :END:
 
 What is the best solution to prevent inheritance problems in normal concrete
@@ -6098,17 +6098,17 @@ No, silly.  You generally want to make a singleton and use that to avoid
 unnecessary object creation.
 
 *** Item 21: Use function objects - anonymous class optimization      :drill:
-SCHEDULED: <2016-03-26 Sat>
+SCHEDULED: <2016-08-05 Fri>
 :PROPERTIES:
 :ID:       0c71b0b1-6acc-43d3-8a6d-a49ec780d1f2
-:DRILL_LAST_INTERVAL: 38.7094
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 132.0727
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-16 Tue 10:41]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:46]
 :END:
 
 If using anonymous classes for function objects, how can you optimize repeated
@@ -6943,17 +6943,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-04-14 Thu>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 8.2402
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 18
+:DRILL_LAST_INTERVAL: 18.6933
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 19
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.278
-:DRILL_EASE: 2.2
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-03-18 Fri 13:03]
+:DRILL_AVERAGE_QUALITY: 3.369
+:DRILL_EASE: 2.3
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:39]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -7276,17 +7276,17 @@ collection?
 
 ** Enums and Annotations
 *** Item 30: Use Enum instead of ints - associate data                :drill:
-SCHEDULED: <2016-03-26 Sat>
+SCHEDULED: <2016-07-13 Wed>
 :PROPERTIES:
 :ID:       710d241f-434c-417c-a8c5-ad488101af9d
-:DRILL_LAST_INTERVAL: 35.8155
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 108.811
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.9
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-19 Fri 10:10]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:48]
 :END:
 
 How do you associate data with an enum?
@@ -7410,17 +7410,17 @@ public enum PayrollDay {
 #+END_SRC
 
 *** Item 30: Use Enum instead of ints - when to use switch            :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-06-27 Mon>
 :PROPERTIES:
 :ID:       059c0edd-bbd2-43a9-8e34-05d38a67c799
-:DRILL_LAST_INTERVAL: 33.8482
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 93.2799
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.167
-:DRILL_EASE: 2.76
+:DRILL_AVERAGE_QUALITY: 4.286
+:DRILL_EASE: 2.86
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:42]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:48]
 :END:
 
 When is it okay to switch on an enum?
@@ -9427,17 +9427,17 @@ What do you call an alien method invoked outside a synchronized region?
 An open call.
 
 *** Item 67: Avoid excessive synchronization - work in synchronized   :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-05-08 Sun>
     :PROPERTIES:
     :ID:       62a93860-370b-46ab-8742-0336efd3900d
-    :DRILL_LAST_INTERVAL: 13.3511
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 42.7049
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:26]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:45]
     :END:
 
 How much work should you do in a synchronized region?
@@ -9470,17 +9470,17 @@ not thread-safe.
 Let the client choose to synchronize when in doubt.  
 
 *** Item 67: Avoid excessive synchronization - static fields          :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-05-08 Sun>
     :PROPERTIES:
     :ID:       40701942-645c-4c52-b28a-a4ef96a97209
-    :DRILL_LAST_INTERVAL: 12.5309
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 42.9997
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.4
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:25]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:47]
     :END:
 
 If a method modifies a static field, what do you have to synchronize?
@@ -9693,17 +9693,17 @@ What are Bloch's levels of thread-safety?
    static data without synchronization.
 
 *** Item 70: Document thread safety - private lock idiom              :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-05-03 Tue>
     :PROPERTIES:
     :ID:       502cb142-23bc-4fdb-bf72-8c8c247897f4
-    :DRILL_LAST_INTERVAL: 13.3365
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 38.4345
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:32]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:47]
     :END:
 
 What is the private lock idiom?
@@ -9742,17 +9742,17 @@ Use a public lock if you have a conditionally thread-safe class, because clients
 must be able to use their own synchronization.
 
 *** Item 71: Use lazy initialization judiciously - when to use        :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-03-28 Mon>
     :PROPERTIES:
     :ID:       e905c9fc-2a06-4eb7-9c21-39238dd03e71
-    :DRILL_LAST_INTERVAL: 12.6559
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 4
-    :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.8
+    :DRILL_LAST_INTERVAL: 1.8957
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_FAILURE_COUNT: 2
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:33]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:49]
     :END:
 
 When is lazy initialization justified?
@@ -10069,17 +10069,17 @@ Which classes designed for inheritance in Java do implement Serializable?
 ~Throwable~, ~Component~ and ~HttpServlet~
  
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-04-13 Wed>
     :PROPERTIES:
     :ID:       909e64d3-08a8-45c3-8c7e-6dc0c4a5ed5f
-    :DRILL_LAST_INTERVAL: 5.5626
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 17.9809
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 3.0
+    :DRILL_AVERAGE_QUALITY: 4.571
+    :DRILL_EASE: 3.1
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-20 Sun 01:50]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:39]
     :END:
 
 If you have a class designed for inheritance that is not Serializable, how can
@@ -10331,17 +10331,17 @@ Any field, including final fields, that is an object reference that a client
 must not possess.
 
 *** Item 76: Write ~readObject~ methods defensively - litmus test     :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-05-06 Fri>
     :PROPERTIES:
     :ID:       2F14FFFE-986B-4540-91CE-C46B53314339
-    :DRILL_LAST_INTERVAL: 13.3288
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 40.5916
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 4.143
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-12 Sat 23:56]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:48]
     :END:
 
 What litmus test can you use when deciding whether you need to manually
@@ -11274,17 +11274,17 @@ What different ways can you publish an object?
    publishes a hidden reference to enclosing scope.
 
 *** Safe construction: prevent this from escaping                     :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-04-01 Fri>
     :PROPERTIES:
     :ID:       35b4f68c-7bfa-462a-b5d9-aff5475b9513
-    :DRILL_LAST_INTERVAL: 1.8989
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 5.7488
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-24 Thu 19:16]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:39]
     :END:
 
 How can you prevent the this reference from escaping during construction?
@@ -11295,17 +11295,17 @@ How can you prevent the this reference from escaping during construction?
 2. Don't invoke overridable methods in a constructor.
 
 *** Thread confinement                                                :drill:
-    SCHEDULED: <2016-03-26 Sat>
+    SCHEDULED: <2016-03-30 Wed>
     :PROPERTIES:
     :ID:       02652eb7-cfce-449a-a712-cf1f5dad695c
-    :DRILL_LAST_INTERVAL: 1.5817
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.4826
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.0
-    :DRILL_EASE: 2.46
+    :DRILL_AVERAGE_QUALITY: 3.4
+    :DRILL_EASE: 2.56
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-24 Thu 19:18]
+    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:37]
     :END:
 
 What is thread confinement?
@@ -11493,17 +11493,17 @@ Identify a keystone habit
 Use a feedback loop.
 
 *** Goals are bad                                                     :drill:
-SCHEDULED: <2016-03-26 Sat>
+SCHEDULED: <2016-08-03 Wed>
 :PROPERTIES:
 :ID:       10f40af7-186f-448e-a1fe-35e8c881ad84
-:DRILL_LAST_INTERVAL: 48.501
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 130.1318
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.286
-:DRILL_EASE: 2.32
+:DRILL_AVERAGE_QUALITY: 3.5
+:DRILL_EASE: 2.42
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:38]
+:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:47]
 :END:
 
 Why are goals bad?
