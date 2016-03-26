@@ -3853,6 +3853,17 @@ public class MyWaitNotify{
 }
 #+END_SRC
 
+*** Nested Monitor Lockout vs Deadlock                                :drill:
+
+What's the difference between nested monitor lockout and deadlock?    
+
+**** Answer
+
+In deadlock, two threads are waiting for each other to release locks.
+
+In nested monitor lockout, Thread 1 is holding a lock A, and waits for a signal
+from Thread 2.  Thread 2 needs lock A to send the signal to Thread 1.
+
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
