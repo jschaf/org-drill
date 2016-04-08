@@ -662,6 +662,68 @@ having multiple jugglers juggle balls simultaneously."
 
 http://stackoverflow.com/questions/1050222/concurrency-vs-parallelism-what-is-the-difference
 
+*** Item                                      :drill:
+
+What concurrency problem exists below?
+#+BEGIN_SRC java
+
+public class FairLock {
+  private boolean           isLocked       = false;
+  private Thread            lockingThread  = null;
+  private List<QueueObject> waitingThreads =
+            new ArrayList<QueueObject>();
+
+  public void lock() throws InterruptedException{
+    QueueObject queueObject = new QueueObject();
+
+    synchronized(this){
+      waitingThreads.add(queueObject);
+    }
+
+    boolean mustWait = true;
+    while(mustWait){
+
+      synchronized(this){
+        mustWait = isLocked || waitingThreads.get(0) != queueObject;
+      }
+
+      synchronized(queueObject){
+        if(mustWait){
+          try{
+            queueObject.wait();
+          }catch(InterruptedException e){
+            waitingThreads.remove(queueObject);
+            throw e;
+          }
+        }
+      }
+    }
+
+    synchronized(this){
+      waitingThreads.remove(queueObject);
+      isLocked = true;
+      lockingThread = Thread.currentThread();
+    }
+  }
+}
+#+END_SRC
+
+**** Answer
+
+Fair Lock implementation with slipped conditions problem
+
+The first synchronized(this) block checks the condition by setting mustWait =
+isLocked || waitingThreads.get(0) != queueObject.
+
+The second synchronized(queueObject) block checks if the thread is to wait or
+not. Already at this time another thread may have unlocked the lock, but lets
+forget that for the time being. Let's assume that the lock was unlocked, so the
+thread exits the synchronized(queueObject) block right away.
+
+The third synchronized(this) block is only executed if mustWait = false. This
+sets the condition isLocked back to true etc. and leaves the lock() method.
+
+http://tutorials.jenkov.com/java-concurrency/slipped-conditions.html
 
 ** Java Language
 *** Variable Basics                                                   :drill:
@@ -11997,5 +12059,228 @@ INDEX(Table1,                                     // The table to search
       MATCH([@[Last Name]], Table1[Last Name]),   // Get the row of the last name in a specific column.
       3)                                          // Column number to pull from, starts from 1
 #+END_SRC
+
+
+* Statistics
+** Random
+*** Simpson's Paradox                                                 :drill:
+
+What is Simpson's paradox?
+
+**** Answer
+
+Simpson's paradox, or the Yule–Simpson effect, is a paradox in probability and
+statistics, in which a trend appears in different groups of data but disappears
+or reverses when these groups are combined. It is sometimes given the impersonal
+title reversal paradox or amalgamation paradox.
+
+The famous example is UC Berkley's alleged discrimination.  When looking at
+individual departments there was actually a bias in favor of women.
+
+https://en.wikipedia.org/wiki/Simpson%27s_paradox
+
+
+* Quant Books
+
+* Capital Markets for Quantitative Professionals
+
+** Chapter 1 - Financial Markets
+
+*** distinct ways of making money                                     :drill:
+
+What are the three logically distinct ways of making money?
+
+**** Answer
+
+1. Theft
+2. Debt
+3. Equity
+
+*** Earliest debt                                                     :drill:
+
+Which code of laws first regulated debt?
+
+**** Answer
+
+The Code of Hammurabi regulated loans by placing a 33 1/3 % limit on interest on
+loans of grain.
+
+*** Principal                                                         :drill:
+
+Define principal
+
+**** Answer
+
+Principal is the borrowed amount, or the amount still owed on a loan.
+
+*** Capital Market                                                    :drill:
+
+Define a capital market
+
+**** Answer
+
+A financial market for trading equity (stocks) and debt (bonds).
+
+*** Mortgage                                                          :drill:
+
+Where did mortgage originate from?
+
+**** Answer
+
+As a form of debt called the /census/ or /rente/ in medieval France.
+
+The owner of a property granted a borrower the right to use the property in
+exchange for periodic payments.
+
+Used by the Church and feudal barons to convert illiquid wealth into money as
+the economy shifted away from the self sufficient feudal manor system.
+
+mort-gage means dead-pledge.
+
+*** Tradeable debt                                                    :drill:
+
+What is the first occurence of tradable and negotiable debt?
+
+**** Answer
+
+The /presti/ of the Venetian Republic paid a 5% interest forever.
+
+*** Security                                                          :drill:
+
+Define security.
+
+**** Answer
+
+A security is a financial instrument that represents either:
+
++ Ownership position in a publicly-traded corporation (stock)
++ Creditor relationship with a governmental body or corporation (bond)
++ Rights to ownership as represented by an option.
+
+*** Financial Instrument                                              :drill:
+
+Define financial instrument
+
+**** Answer
+
+A real or virtual document representing a legal agreement involving some sort of
+monetary value.
+
+*** Yield                                                             :drill:
+
+Define yield.
+
+**** Answer
+
+The income return on an investment.  Refers to interest or dividends from a security.
+
+*** Par Amount                                                        :drill:
+
+What is the par amount or par value?
+
+**** Answer
+
+It means original value.  AKA face value or nominal value.
+
+Most commonly refers to value of a bond when first issued.
+
+*** Nominal Yield                                                     :drill:
+
+Define nominal yield
+
+**** Answer
+
+The coupon rate on a bond.  It's the interest rate (to the par value) that the
+bond issuer promises to pay bond purchasers.
+
+AKA nominal rate, coupon yield or coupon rate.
+
+*** Current yield                                                     :drill:
+
+Define current yield
+
+**** Answer
+
+Annual income (interest or dividends) divided by the current price of the
+security.
+
+*** Central Bank                                                      :drill:
+
+What financial innovation did the British develop to reduce their interest rates?
+
+**** Answer
+
+The central bank, established in 1694 responsible for monetary policy and as a
+lender of last resort.
+
+*** Types of Bonds                                                    :drill:
+
+What are the types of bonds?
+
+**** Answer
+
+1. Callable - issuer must redeem NLT maturity date.
+2. Perpetual - no maturity date, aka consol
+3. Bullet - issuer redeems AT maturity date
+
+*** Issue date                                                        :drill:
+
+define issue date
+
+**** Answer
+
+At the inception of the bond
+
+*** Dividend payments                                                 :drill:
+
+Define dividend
+
+**** Answer
+
+A dividend is a distribution of a portion of a company's earnings, decided by
+the board of directors to a class of its shareholders.
+
+*** Types of markets                                                  :drill:
+
+What are the common markets?
+
+**** Answer
+
++ Capital Market - includes equity and fixed-income markets
++ Money Market - short term assets with original maturities of one year or
+  less.  Discount bill
++ Foreign Exchange - combination of currency exchange and short term borrowing
++ Commodity market
+
+*** Arbitrage                                                         :drill:
+
+Define arbitrage
+
+**** Answer
+
+The simultaneous purchase and sale of an asset in order to profit from a
+difference in the price.
+
+*** Derivatives market                                                :drill:
+
+Define a derivatives market.
+
+**** Answer
+
+The value of the product that are actually traded is derived from the value of
+some other quantity, called the /underlying/.
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
 
 
