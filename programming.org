@@ -159,17 +159,17 @@ public int atoi(String str) {
 ** Arrays and Strings
 
 *** Reverse order of words of a string in place                       :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-06-14 Tue>
     :PROPERTIES:
     :ID:       7a85ec67-7ce8-4f5e-a71c-01556f66b325
-    :DRILL_LAST_INTERVAL: 17.3596
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 61.792
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:38]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:42]
     :END:
 
 Given an input string, reverse the string word by word.
@@ -663,17 +663,17 @@ having multiple jugglers juggle balls simultaneously."
 http://stackoverflow.com/questions/1050222/concurrency-vs-parallelism-what-is-the-difference
 
 *** Item                                      :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       06779953-a743-4744-b1f3-c0094fcbb85c
-    :DRILL_LAST_INTERVAL: 1.5469
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 4.6275
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.25
+    :DRILL_AVERAGE_QUALITY: 3.4
     :DRILL_EASE: 2.6
-    :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:27]
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:37]
     :END:
 
 What concurrency problem exists below?
@@ -1767,17 +1767,17 @@ Equal objects must produce the same hash code as long as they are equal,
 however unequal objects need not produce distinct hash codes.
 
 *** Interfaces: Call default methods                                  :drill:
-SCHEDULED: <2016-04-13 Wed>
+SCHEDULED: <2016-09-14 Wed>
 :PROPERTIES:
 :ID:       91df68d1-253f-4f3f-84f4-005400946e02
-:DRILL_LAST_INTERVAL: 51.2468
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 153.9797
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.4
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:24]
+:DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:41]
 :END:
 
 How do you call a default method explicitly?
@@ -1868,17 +1868,17 @@ public class MultInterfaces {
 #+END_SRC
 
 *** String final class                                                :drill:
-SCHEDULED: <2016-04-13 Wed>
+SCHEDULED: <2016-08-30 Tue>
 :PROPERTIES:
 :ID:       c87ea6d6-5a7d-4272-b0a3-7714da8852d1
-:DRILL_LAST_INTERVAL: 47.7462
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 139.4047
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.75
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.8
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-25 Thu 22:24]
+:DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:43]
 :END:
 
 Why is String final?
@@ -2047,17 +2047,17 @@ public static <E> void append(List<E> list, Class<E> cls) {
 #+END_SRC
 
 *** Method References                                                 :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-09-04 Sun>
     :PROPERTIES:
     :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
-    :DRILL_LAST_INTERVAL: 41.508
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 143.6048
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.714
-    :DRILL_EASE: 2.66
+    :DRILL_AVERAGE_QUALITY: 3.875
+    :DRILL_EASE: 2.76
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:01]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:41]
     :END:
 
 What are the kinds of method references?
@@ -2646,17 +2646,17 @@ What are the alternatives to a Singleton pattern?
   components.
 
 *** List design patterns                                            :drill:
-SCHEDULED: <2016-04-13 Wed>
+SCHEDULED: <2016-09-28 Wed>
 :PROPERTIES:
 :ID:       14175568-52ec-4096-b33d-129f38a1de3e
-:DRILL_LAST_INTERVAL: 59.2415
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 167.6718
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.167
-:DRILL_EASE: 2.22
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-14 Sun 11:05]
+:DRILL_AVERAGE_QUALITY: 3.429
+:DRILL_EASE: 2.32
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:44]
 :END:
 
 What are the most common design patterns?
@@ -2679,17 +2679,17 @@ Hitler singleton
 
 ** Arrays
 *** Array 1 :drill:
-SCHEDULED: <2016-04-13 Wed>
+SCHEDULED: <2016-12-15 Thu>
 :PROPERTIES:
 :ID:       15ac94ff-d684-4ff4-9660-88f3b64c5cfa
-:DRILL_LAST_INTERVAL: 66.9108
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 246.2523
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.4
-:DRILL_EASE: 2.7
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 2.8
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:34]
+:DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:43]
 :END:
 
 How would you keep track of a median while getting a stream of numbers?
@@ -3029,17 +3029,17 @@ How do you fill in all bits below the least significant bit?
 x | (x - 1)
 
 *** Mask for bits below and including the least significant bit       :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-06-02 Thu>
     :PROPERTIES:
     :ID:       5c923869-4202-4eb3-b17f-6e8332d77971
-    :DRILL_LAST_INTERVAL: 16.0633
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 12
+    :DRILL_LAST_INTERVAL: 49.6617
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 13
     :DRILL_FAILURE_COUNT: 5
-    :DRILL_AVERAGE_QUALITY: 3.417
-    :DRILL_EASE: 3.1
+    :DRILL_AVERAGE_QUALITY: 3.539
+    :DRILL_EASE: 3.2
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-28 Mon 09:22]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:43]
     :END:
 
 How do you create a mask for bits below and including the least significant bit?
@@ -3978,17 +3978,17 @@ In nested monitor lockout, Thread 1 is holding a lock A, and waits for a signal
 from Thread 2.  Thread 2 needs lock A to send the signal to Thread 1.
 
 *** Spin Lock                                                         :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-04-19 Tue>
     :PROPERTIES:
     :ID:       f9173e25-7dca-4c82-a9ba-dfa5e39ab5df
-    :DRILL_LAST_INTERVAL: 1.7358
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.7328
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:24]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:37]
     :END:
 
 What's a spinlock?
@@ -3999,17 +3999,17 @@ A lock which causes a thread which is trying to acquire a lock to repeatedly
 check if the loop is available.  It is a kind of busy waiting.
 
 *** Unlock                                                            :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-04-20 Wed>
     :PROPERTIES:
     :ID:       5d5b6eb3-7075-4722-a113-6cf2fa69d364
-    :DRILL_LAST_INTERVAL: 1.9672
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 7.0875
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:28]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:37]
     :END:
 
 How should we unlock a Lock in Java?
@@ -5510,17 +5510,17 @@ Hans Solo - classrooms, intestines, blocks
 + Immutable objects make great building blocks.
 
 *** Item 15: Minimize Mutability - drawbacks                          :drill:
-SCHEDULED: <2016-04-13 Wed>
+SCHEDULED: <2016-10-16 Sun>
 :PROPERTIES:
 :ID:       09fcee96-404f-49fe-9311-1c1751869b6c
-:DRILL_LAST_INTERVAL: 59.9418
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 186.2647
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 2.9
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-13 Sat 13:16]
+:DRILL_AVERAGE_QUALITY: 4.125
+:DRILL_EASE: 3.0
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:42]
 :END:
 
 What are the drawbacks of immutable object?
@@ -8273,17 +8273,17 @@ A safe, conservative policy is never to export two overloadings with the same
 number of parameters.
 
 *** Item 41: Use overloading judiciously - example                    :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-08-20 Sat>
     :PROPERTIES:
     :ID:       0786822f-742b-444b-a942-01e9a108bbfa
-    :DRILL_LAST_INTERVAL: 42.2264
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 128.9745
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:13]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:44]
     :END:
 
 Why is List.remove a good example of overloading gone wrong?
@@ -8547,17 +8547,17 @@ Why should you prefer for-each loops?
 Because they avoid complex bugs around iterators
 
 *** Item 46: Prefer for-each loops - why not                          :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-08-03 Wed>
     :PROPERTIES:
     :ID:       33f1d8c5-abbf-4167-9073-e0a97a524fda
-    :DRILL_LAST_INTERVAL: 38.445
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 112.2318
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:57]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:44]
     :END:
 
 What type of list operations are impossible with a for-each loops??
@@ -8590,17 +8590,17 @@ should you implement?
 Iterable
 
 *** Item 47: Know and use the libraries - why use stdlib              :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-07-24 Sun>
     :PROPERTIES:
     :ID:       c2906d5b-2aeb-467d-a99b-4a63eaae4852
-    :DRILL_LAST_INTERVAL: 37.3091
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_LAST_INTERVAL: 101.5157
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.2
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.333
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:58]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:42]
     :END:
 
 Why should use the stdlib?
@@ -9169,17 +9169,17 @@ What are the most common exceptions in Java?
 + ~UnspportedOperationException~
 
 *** Item 61: Throw exceptions appropriate to the abstraction          :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-08-01 Mon>
     :PROPERTIES:
     :ID:       cc027aae-a4e6-43ab-b39b-4edd4ff0ff72
-    :DRILL_LAST_INTERVAL: 33.1991
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 110.2259
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:25]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:43]
     :END:
 
 How should you handle exceptions in a higher layer that come from a lower layer?
@@ -10235,17 +10235,17 @@ Which classes designed for inheritance in Java do implement Serializable?
 ~Throwable~, ~Component~ and ~HttpServlet~
  
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-06-22 Wed>
     :PROPERTIES:
     :ID:       909e64d3-08a8-45c3-8c7e-6dc0c4a5ed5f
-    :DRILL_LAST_INTERVAL: 17.9809
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 69.5527
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.571
-    :DRILL_EASE: 3.1
+    :DRILL_AVERAGE_QUALITY: 4.625
+    :DRILL_EASE: 3.2
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:39]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:42]
     :END:
 
 If you have a class designed for inheritance that is not Serializable, how can
@@ -10520,17 +10520,17 @@ parameters and stored the values with no validation whatsoever.  If so, the
 default ~readObject~ is for you.
 
 *** Item 76: Write ~readObject~ methods defensively - steps           :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-06-03 Fri>
     :PROPERTIES:
     :ID:       50644C0C-33E5-49BF-A4F0-3EF0D67D75D2
-    :DRILL_LAST_INTERVAL: 18.7978
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 10
+    :DRILL_LAST_INTERVAL: 51.3244
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 11
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.2
-    :DRILL_EASE: 2.38
+    :DRILL_AVERAGE_QUALITY: 3.364
+    :DRILL_EASE: 2.48
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-25 Fri 16:26]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:41]
     :END:
 
 What are the steps for a bulletproof ~readObject~ method?
@@ -11608,17 +11608,17 @@ Because the class is only referenced once, there is no data race.
 ** Chapter 4 - Composing Objects
 
 *** Designing thread safe classes                                     :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       c74c4a9f-d932-4055-a215-2d4748b324da
-    :DRILL_LAST_INTERVAL: 1.7543
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 8
+    :DRILL_LAST_INTERVAL: 4.6061
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 9
     :DRILL_FAILURE_COUNT: 5
-    :DRILL_AVERAGE_QUALITY: 2.876
-    :DRILL_EASE: 2.56
+    :DRILL_AVERAGE_QUALITY: 3.112
+    :DRILL_EASE: 2.66
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 14:02]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:39]
     :END:
 
 What are the three steps in the design process for a thread safe class in JCIP?
@@ -11651,17 +11651,17 @@ Constraints on valid values or state transitions for state variables.
  
 
 *** Confinement and thread safety                                     :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-05-03 Tue>
     :PROPERTIES:
     :ID:       7123f9d8-5aef-40d6-a8f7-37f8aac18787
-    :DRILL_LAST_INTERVAL: 5.7258
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 19.5527
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:52]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:37]
     :END:
 
 How does thread confinement simplify building thread-safe classes?
@@ -11672,17 +11672,17 @@ A class that confines it's state can be analyzed for thread safety without
 having to examine the whole program.
 
 *** Independent state variables                                       :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-04-30 Sat>
     :PROPERTIES:
     :ID:       7952560b-9fb8-4c06-ad5c-0b34b9a333b8
-    :DRILL_LAST_INTERVAL: 5.3561
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 17.4612
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.2
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-08 Fri 11:45]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:37]
     :END:
 
 When can you delegate thread-safety to state variables?
@@ -11989,17 +11989,17 @@ Gall trebuchet model orca
 + Use a feedback loop to identify what works and what doesn't.
 
 *** Feedback Loop                                                     :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-08-15 Mon>
 :PROPERTIES:
 :ID:       8c6a1d60-c410-48b7-b6a9-a875255b85c4
-:DRILL_LAST_INTERVAL: 36.3029
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 13
+:DRILL_LAST_INTERVAL: 123.6875
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 14
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.615
-:DRILL_EASE: 2.48
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.58
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-08 Tue 13:06]
+:DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:42]
 :END:
 
 What are the stages of a feedback loop?
@@ -12647,17 +12647,17 @@ and brokers.
 The sell side consists of investors.
 
 *** Offer price                                                       :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       99deaa96-134d-41b7-a5ad-2fb36070751c
-    :DRILL_LAST_INTERVAL: 1.6017
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.2471
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 14:01]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:39]
     :END:
 
 Define offer price.
@@ -12670,17 +12670,17 @@ the investment bank underwriting the issue.
 AKA ask price
 
 *** Price risk                                                        :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-17 Sun>
     :PROPERTIES:
     :ID:       8ac9f0fd-8733-458d-97a6-2ea2705e9f88
-    :DRILL_LAST_INTERVAL: 1.8402
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.3854
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:57]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:39]
     :END:
 
 Define price risk.
@@ -12691,17 +12691,17 @@ Price risk is the risk of a decline in the value of a security or a
 portfolio.  Price risk is the biggest risk faced by all investors.
 
 *** Bid price                                                         :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       48bd58a4-f25c-4ecd-884f-ed50289846d8
-    :DRILL_LAST_INTERVAL: 1.7107
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.7227
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:59]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:36]
     :END:
 
 Define bid price
@@ -12712,17 +12712,17 @@ The price that a dealer or other prospective buyer is prepared to pay for
 securities or other assets.
 
 *** Institutional Investor                                            :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       00e0beb6-fdb3-445b-bc53-ecf51e4ff2b9
-    :DRILL_LAST_INTERVAL: 1.5633
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.9094
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:58]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:36]
     :END:
 
 Define institutional investor
@@ -12733,17 +12733,17 @@ A large organization, such as a bank, pension fund, labor union, or insurance
 company, that makes substantial investments on the stock exchange.
 
 *** Liquidity                                                         :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-17 Sun>
     :PROPERTIES:
     :ID:       bbcd9a3e-e38c-44cd-bb18-7b04f808094c
-    :DRILL_LAST_INTERVAL: 1.5781
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.2414
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 2.5
-    :DRILL_EASE: 2.36
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 14:02]
+    :DRILL_AVERAGE_QUALITY: 3.333
+    :DRILL_EASE: 2.46
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:37]
     :END:
 
 Define liquidity
@@ -12754,17 +12754,17 @@ Liquidity describes the degree to which an asset or security can be quickly
 bought or sold in the market without affecting the asset's price.
 
 *** Broker                                                            :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-17 Sun>
     :PROPERTIES:
     :ID:       386fded1-1d0f-427a-9b44-64ec00cfab76
-    :DRILL_LAST_INTERVAL: 1.5493
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 4.2429
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 14:02]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:39]
     :END:
 
 Define broker.
@@ -12775,17 +12775,17 @@ A broker is an individual or firm that charges a fee or commission for executing
 buy and sell orders submitted by an investor.
 
 *** Exchange                                                          :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       6d008f45-829a-48db-ba75-de98610bab5b
-    :DRILL_LAST_INTERVAL: 1.7369
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 5.271
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:59]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:38]
     :END:
 
 Define exchange
@@ -12799,17 +12799,17 @@ for any securities trading on that exchange.
 
 
 *** Market Maker                                                      :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-19 Tue>
     :PROPERTIES:
     :ID:       38d0ccaa-265d-4ea6-bbba-474754435ce0
-    :DRILL_LAST_INTERVAL: 1.7207
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.6488
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 14:03]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:39]
     :END:
 
 Define market maker.
@@ -12821,17 +12821,17 @@ number of shares of a particular security in order to facilitate trading in that
 security.
 
 *** Relative importance of geography                                  :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
     :ID:       994a8758-b634-4bbd-96e7-4e97318a05f3
-    :DRILL_LAST_INTERVAL: 1.5432
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.7026
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:56]
+    :DRILL_LAST_REVIEWED: [2016-04-13 Wed 13:39]
     :END:
 
 What's the relative importance of geography in the financial system?
