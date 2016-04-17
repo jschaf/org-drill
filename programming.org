@@ -59,17 +59,17 @@ all locks, wait for a random amount of time and try again.
   cycle there's a deadlock.
  
 *** Polymorphism                                                      :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-03 Tue>
     :PROPERTIES:
     :ID:       77dc5a29-c1b7-4027-9c0a-617e6772ad63
-    :DRILL_LAST_INTERVAL: 5.5572
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 11
+    :DRILL_LAST_INTERVAL: 15.9648
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 12
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.636
-    :DRILL_EASE: 2.86
+    :DRILL_AVERAGE_QUALITY: 3.75
+    :DRILL_EASE: 2.96
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:53]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:41]
     :END:
 
 What is polymorphism?
@@ -621,17 +621,17 @@ What are the common concurrency models?
   parameters are copied.
 
 *** Concurrency vs Parallelism                                        :drill: 
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-05-22 Sun>
     :PROPERTIES:
     :ID:       513c5eaa-c3c4-49a3-b477-fa2714fe0f80
-    :DRILL_LAST_INTERVAL: 11.3138
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 34.6405
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:56]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:43]
     :END:
 
 What's the difference between concurrency and parallelism?
@@ -1767,17 +1767,17 @@ Equal objects must produce the same hash code as long as they are equal,
 however unequal objects need not produce distinct hash codes.
 
 *** Interfaces: Call default methods                                  :drill:
-SCHEDULED: <2016-04-13 Wed>
+SCHEDULED: <2016-09-25 Sun>
 :PROPERTIES:
 :ID:       91df68d1-253f-4f3f-84f4-005400946e02
-:DRILL_LAST_INTERVAL: 51.2468
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 161.0564
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.4
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-22 Mon 09:24]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:48]
 :END:
 
 How do you call a default method explicitly?
@@ -2047,17 +2047,17 @@ public static <E> void append(List<E> list, Class<E> cls) {
 #+END_SRC
 
 *** Method References                                                 :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-08-11 Thu>
     :PROPERTIES:
     :ID:       76c4cba7-631a-41c2-898b-7a075cd57fa2
-    :DRILL_LAST_INTERVAL: 41.508
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 115.5297
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.714
-    :DRILL_EASE: 2.66
+    :DRILL_AVERAGE_QUALITY: 3.875
+    :DRILL_EASE: 2.76
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:01]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:49]
     :END:
 
 What are the kinds of method references?
@@ -2624,17 +2624,17 @@ What are the disadvantages of a Singleton pattern?
 + Inability to subclass because of private constructor.
 
 *** Singleton 4                                                       :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-04-30 Sat>
 :PROPERTIES:
 :ID:       f6b95c46-c338-4c84-bcb6-8773f38d6282
-:DRILL_LAST_INTERVAL: 4.9412
-:DRILL_REPEATS_SINCE_FAIL: 3
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 12.8208
+:DRILL_REPEATS_SINCE_FAIL: 4
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.727
-:DRILL_EASE: 2.48
+:DRILL_AVERAGE_QUALITY: 3.833
+:DRILL_EASE: 2.58
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:12]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:40]
 :END:
 
 What are the alternatives to a Singleton pattern?
@@ -3498,17 +3498,17 @@ Max Value:  2^31 - 1 ==  2_147_483_647
 Min Value: -2^31     == -2_147_483_648
 
 *** Signed Long Range                                                 :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-05-11 Wed>
     :PROPERTIES:
     :ID:       d9b3e739-4b04-47c1-ad84-1157606b7e14
-    :DRILL_LAST_INTERVAL: 6.8413
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 24.4195
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.428
-    :DRILL_EASE: 3.0
+    :DRILL_AVERAGE_QUALITY: 4.499
+    :DRILL_EASE: 3.1
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:49]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:39]
     :END:
 
 What's the min and max value of a signed 64 bit integer?
@@ -4420,17 +4420,17 @@ Null out the object, but this should be the exception, not the rule.
 The best way to handle it is to let the object fall out of scope.
 
 *** Item 06: Obsolete Object Reference Alert                          :drill:
-SCHEDULED: <2016-04-15 Fri>
+SCHEDULED: <2016-10-20 Thu>
 :PROPERTIES:
 :ID:       502824c2-771b-48ca-b809-02020dd22aa4
-:DRILL_LAST_INTERVAL: 62.5578
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 186.0817
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.714
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.875
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-12 Fri 10:30]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:47]
 :END:
 
 When will you typically see obsolete references (memory leaks)?
@@ -4737,17 +4737,17 @@ What is the general contract for Object.hashCode?
    different objects.
 
 *** Item 09: hashCode impl                                            :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-08-20 Sat>
 :PROPERTIES:
 :ID:       d55ad317-672d-4bee-ab65-d11c8941a4d8
-:DRILL_LAST_INTERVAL: 33.262
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 14
+:DRILL_LAST_INTERVAL: 124.5788
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 15
 :DRILL_FAILURE_COUNT: 5
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.72
+:DRILL_AVERAGE_QUALITY: 3.6
+:DRILL_EASE: 2.82
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:16]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:50]
 :END:
 
 How do you implement hashCode for an object?
@@ -5430,17 +5430,17 @@ If a class is package-private or a private nested class, there is nothing
 inherently wrong with exposing data fields.
 
 *** Item 14: Public accessors - why accessors                         :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-10-06 Thu>
 :PROPERTIES:
 :ID:       2e1879b7-e276-452d-85ef-eee1c96aa7ab
-:DRILL_LAST_INTERVAL: 46.8024
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 13
+:DRILL_LAST_INTERVAL: 172.213
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 14
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.846
-:DRILL_EASE: 3.1
+:DRILL_AVERAGE_QUALITY: 3.928
+:DRILL_EASE: 3.2
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:16]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:49]
 :END:
 
 Why should you use accessors over fields?
@@ -6139,17 +6139,17 @@ class Figure {
 #+END_SRC
 
 *** Item 20: Prefer class hierarchies over tags - why bad             :drill:
-SCHEDULED: <2016-04-16 Sat>
+SCHEDULED: <2016-09-19 Mon>
 :PROPERTIES:
 :ID:       26e60c15-d309-4102-b78b-d63528fa4614
-:DRILL_LAST_INTERVAL: 53.2326
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 10
+:DRILL_LAST_INTERVAL: 154.9524
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 11
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.9
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:50]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:46]
 :END:
 
 Why are tagged classes bad?
@@ -6341,17 +6341,17 @@ It only exists to serve the enclosing class.  If the nested class were useful in
 some other context, then it should be top level class.
 
 *** Item 22: Favor static member classes - four kinds of nested       :drill:
-SCHEDULED: <2016-04-15 Fri>
+SCHEDULED: <2016-10-29 Sat>
 :PROPERTIES:
 :ID:       6da50916-c4a8-450d-8713-47e5b42389c1
-:DRILL_LAST_INTERVAL: 57.4666
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 194.7249
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.25
-:DRILL_EASE: 2.6
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-02-18 Thu 12:29]
+:DRILL_AVERAGE_QUALITY: 4.4
+:DRILL_EASE: 2.7
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:46]
 :END:
 
 What are the four types of nested classes?
@@ -6469,17 +6469,17 @@ Where can you write an anonymous class?
 Anywhere an expression is legal.
 
 *** Item 22: Favor static member classes - anon class limitations     :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-08-08 Mon>
 :PROPERTIES:
 :ID:       0e5bb2ae-1957-4795-b73f-63f46cf86e25
-:DRILL_LAST_INTERVAL: 38.3055
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 16
+:DRILL_LAST_INTERVAL: 112.534
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 17
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.5
-:DRILL_EASE: 2.82
-:DRILL_LAST_QUALITY: 4
-:DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:26]
+:DRILL_AVERAGE_QUALITY: 3.588
+:DRILL_EASE: 2.92
+:DRILL_LAST_QUALITY: 5
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:51]
 :END:
 
 What are the limitations on an anonymous class?
@@ -6587,18 +6587,18 @@ The official term for a [List<String>] is a [parameterized type].
 The official term for a [String] is a [actual type parameter].
 
 *** Item 23: Don't use raw types - type 2                             :drill:
-SCHEDULED: <2016-04-16 Sat>
+SCHEDULED: <2016-09-28 Wed>
 :PROPERTIES:
 :DRILL_CARD_TYPE: hide1cloze
 :ID:       41a638be-814f-4d91-9666-d0f11d474e84
-:DRILL_LAST_INTERVAL: 54.9725
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 164.3034
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.4
-:DRILL_EASE: 2.9
+:DRILL_AVERAGE_QUALITY: 4.5
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-21 Sun 14:43]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:48]
 :END:
  
 The official term for a [List<E>] is a [generic type].
@@ -7015,17 +7015,17 @@ What does reified mean in a Java context?
 You have type information available at runtime.
 
 *** Item 25: Prefer Lists to Arrays - reifiable types                 :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-08-21 Sun>
 :PROPERTIES:
 :ID:       b63b890c-7dff-44e7-90a5-84297cd83f12
-:DRILL_LAST_INTERVAL: 43.815
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 12
+:DRILL_LAST_INTERVAL: 125.9914
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 13
 :DRILL_FAILURE_COUNT: 4
-:DRILL_AVERAGE_QUALITY: 3.666
-:DRILL_EASE: 2.96
+:DRILL_AVERAGE_QUALITY: 3.769
+:DRILL_EASE: 3.06
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:55]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:42]
 :END:
 
 What are the reifiable types in Java?
@@ -7108,17 +7108,17 @@ When having trouble with arrays and generics what should you do?
 Replace the arrays with List.
 
 *** Item 26: Favor Generic Types - Steps to valid unchecked           :drill:
-    SCHEDULED: <2016-04-14 Thu>
+    SCHEDULED: <2016-06-03 Fri>
 :PROPERTIES:
 :ID:       713c26e2-a1d8-4792-af9c-aa0f939204b6
-:DRILL_LAST_INTERVAL: 18.6933
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 19
+:DRILL_LAST_INTERVAL: 46.9543
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 20
 :DRILL_FAILURE_COUNT: 6
-:DRILL_AVERAGE_QUALITY: 3.369
-:DRILL_EASE: 2.3
+:DRILL_AVERAGE_QUALITY: 3.451
+:DRILL_EASE: 2.4
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:39]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:37]
 :END:
 
 What steps should you take to prove an unchecked cast is type safe?
@@ -7654,17 +7654,17 @@ How do you make an immutable enum set?
 Guava's ~ImmutableSet~ with ~Sets.immutableEnumSet~
 ~Collections.unmodifiableSet()~, returns an immutable view to a mutable ~EnumSet~
 *** Item 33: Use EnumMap instead of ordinal indexing                  :drill:
-SCHEDULED: <2016-04-17 Sun>
+SCHEDULED: <2016-09-18 Sun>
 :PROPERTIES:
 :ID:       53cd9c72-c39d-48ad-9a91-5f2adb116524
-:DRILL_LAST_INTERVAL: 50.852
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 4
+:DRILL_LAST_INTERVAL: 154.2644
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 5
 :DRILL_FAILURE_COUNT: 0
 :DRILL_AVERAGE_QUALITY: 5.0
-:DRILL_EASE: 2.9
+:DRILL_EASE: 3.0
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-26 Fri 18:24]
+:DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:42]
 :END:
 
 How should you map an Enum to a value?
@@ -8161,17 +8161,17 @@ learn, use, document, test and maintain.
 When in doubt, leave it out.
 
 *** Item 40: Design method signatures carefully - avoid long params   :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-08-31 Wed>
     :PROPERTIES:
     :ID:       7c581b33-9e9a-47b1-84ac-7b62e192e83f
-    :DRILL_LAST_INTERVAL: 41.6
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 135.5952
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:24]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:41]
     :END:
 
 How long is too long for parameter lists?
@@ -8251,17 +8251,17 @@ Selection among overloaded methods is static.
 Selection among overriden methods in dynamic.
 
 *** Item 41: Use overloading judiciously - avoid confusing overloads  :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-08-13 Sat>
     :PROPERTIES:
     :ID:       ad83a823-979c-49d2-b33a-215b9266c34d
-    :DRILL_LAST_INTERVAL: 40.5757
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 118.2867
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 13:00]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:47]
     :END:
 
 What's a good policy for overloading?
@@ -8272,17 +8272,17 @@ A safe, conservative policy is never to export two overloadings with the same
 number of parameters.
 
 *** Item 41: Use overloading judiciously - example                    :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-08-18 Thu>
     :PROPERTIES:
     :ID:       0786822f-742b-444b-a942-01e9a108bbfa
-    :DRILL_LAST_INTERVAL: 42.2264
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 122.9352
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:13]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:41]
     :END:
 
 Why is List.remove a good example of overloading gone wrong?
@@ -8546,17 +8546,17 @@ Why should you prefer for-each loops?
 Because they avoid complex bugs around iterators
 
 *** Item 46: Prefer for-each loops - why not                          :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-09-07 Wed>
     :PROPERTIES:
     :ID:       33f1d8c5-abbf-4167-9073-e0a97a524fda
-    :DRILL_LAST_INTERVAL: 38.445
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 143.3614
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:57]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:47]
     :END:
 
 What type of list operations are impossible with a for-each loops??
@@ -8870,17 +8870,17 @@ This blog post actually runs tests.  The results:
 2. Java 8 does not currently optimize dynamic string concatenation.
 
 *** Item 52: Refer to objects by interface - what                     :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-08-30 Tue>
     :PROPERTIES:
     :ID:       08e4da20-d626-4bea-a23a-3713e16872b4
-    :DRILL_LAST_INTERVAL: 39.198
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 134.5056
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-07 Mon 10:24]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:49]
     :END:
 
 Why should you use interfaces as types?
@@ -9168,17 +9168,17 @@ What are the most common exceptions in Java?
 + ~UnspportedOperationException~
 
 *** Item 61: Throw exceptions appropriate to the abstraction          :drill:
-    SCHEDULED: <2016-04-12 Tue>
+    SCHEDULED: <2016-07-31 Sun>
     :PROPERTIES:
     :ID:       cc027aae-a4e6-43ab-b39b-4edd4ff0ff72
-    :DRILL_LAST_INTERVAL: 33.1991
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 104.8476
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-10 Thu 11:25]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:43]
     :END:
 
 How should you handle exceptions in a higher layer that come from a lower layer?
@@ -9385,17 +9385,17 @@ What two functions does synchronization perform?
    all previous modifications.
 
 *** Item 66: Synchronize access to shared mutable data - atomic       :drill:
-    SCHEDULED: <2016-04-14 Thu>
+    SCHEDULED: <2016-07-24 Sun>
     :PROPERTIES:
     :ID:       5a879416-e070-48fb-aff6-901f8d44522f
-    :DRILL_LAST_INTERVAL: 31.2447
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 97.6131
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:21]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:47]
     :END:
 
 Which variable reads and writes are atomic in Java?
@@ -9437,17 +9437,17 @@ if (!done)
 #+END_SRC
 
 *** Item 66: Synchronize access to shared mutable data - effect       :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-08-05 Fri>
     :PROPERTIES:
     :ID:       5a143a71-59fd-44cd-b9c3-5a54fd443aff
-    :DRILL_LAST_INTERVAL: 32.6784
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 110.0713
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:46]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:42]
     :END:
 
 What effect does synchronization have if only write access is synchronized?
@@ -10234,17 +10234,17 @@ Which classes designed for inheritance in Java do implement Serializable?
 ~Throwable~, ~Component~ and ~HttpServlet~
  
 *** Item 74: Implement Serializable judiciously - inheritance         :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-06-19 Sun>
     :PROPERTIES:
     :ID:       909e64d3-08a8-45c3-8c7e-6dc0c4a5ed5f
-    :DRILL_LAST_INTERVAL: 17.9809
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 63.2181
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.571
-    :DRILL_EASE: 3.1
+    :DRILL_AVERAGE_QUALITY: 4.625
+    :DRILL_EASE: 3.2
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-26 Sat 13:39]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:36]
     :END:
 
 If you have a class designed for inheritance that is not Serializable, how can
@@ -10389,17 +10389,17 @@ If you use a custom serialized form, most or all of the instance fields should
 be labeled transient.
 
 *** Item 75: Consider using a custom serialized form - synch          :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-07-12 Tue>
     :PROPERTIES:
     :ID:       c64bddc1-a9ac-483c-85cc-a629716578d6
-    :DRILL_LAST_INTERVAL: 25.3342
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 86.4636
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.5
-    :DRILL_EASE: 3.0
+    :DRILL_AVERAGE_QUALITY: 4.571
+    :DRILL_EASE: 3.1
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-21 Mon 11:41]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:47]
     :END:
 
 What has to be synchronized for serialization?
@@ -10519,17 +10519,17 @@ parameters and stored the values with no validation whatsoever.  If so, the
 default ~readObject~ is for you.
 
 *** Item 76: Write ~readObject~ methods defensively - steps           :drill:
-    SCHEDULED: <2016-04-13 Wed>
+    SCHEDULED: <2016-06-13 Mon>
     :PROPERTIES:
     :ID:       50644C0C-33E5-49BF-A4F0-3EF0D67D75D2
-    :DRILL_LAST_INTERVAL: 18.7978
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 10
+    :DRILL_LAST_INTERVAL: 56.6487
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 11
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.2
-    :DRILL_EASE: 2.38
+    :DRILL_AVERAGE_QUALITY: 3.364
+    :DRILL_EASE: 2.48
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-25 Fri 16:26]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:36]
     :END:
 
 What are the steps for a bulletproof ~readObject~ method?
@@ -10902,17 +10902,17 @@ memory accesses:
 http://blog.regehr.org/archives/490 awesome example of data races
 
 *** Data Race vs Race Condition                                       :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-06-22 Wed>
     :PROPERTIES:
     :ID:       80da219d-40d9-4062-9ed7-2276c02a3b9a
-    :DRILL_LAST_INTERVAL: 24.2939
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 66.3754
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.25
-    :DRILL_EASE: 2.56
+    :DRILL_AVERAGE_QUALITY: 4.4
+    :DRILL_EASE: 2.66
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-22 Tue 13:37]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:42]
     :END:
 
 What's the difference between a data race and a race condition?
@@ -11078,17 +11078,17 @@ Intrinsic locks in Java function as /mutexes/ (or mutual exclusion locks) which
 means  that at most one thread may own the lock.
 
 *** Reentrant definition                                              :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-07-02 Sat>
     :PROPERTIES:
     :ID:       3888e486-8ea0-47f3-8543-a3f6e01b5fe4
-    :DRILL_LAST_INTERVAL: 25.58
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 75.8149
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-22 Tue 13:39]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:48]
     :END:
 
 Define reentrant.
@@ -11544,17 +11544,17 @@ What is thread local?
 A formal means of thread confinement.  Conceptually, it's like ~Map<Thread, T>~
 
 *** Immutable definition                                              :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-05-17 Tue>
     :PROPERTIES:
     :ID:       20cd670b-d402-4ddc-94f8-bd087b0eedd7
-    :DRILL_LAST_INTERVAL: 10.5156
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 29.8837
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.667
-    :DRILL_EASE: 2.66
+    :DRILL_AVERAGE_QUALITY: 3.857
+    :DRILL_EASE: 2.76
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:51]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:48]
     :END:
 
 What conditions must an object meet for it to be immutable in Java?
@@ -11629,17 +11629,17 @@ What are the three steps in the design process for a thread safe class in JCIP?
 3. Establish a policy for managing concurrent access to the object's state.
 
 *** Thread safety and invariants                                      :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       1a2f577c-6fc4-4e7d-a5c8-eaa82c8ebc4d
-    :DRILL_LAST_INTERVAL: 4.8392
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 15.2523
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.286
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 3.5
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:49]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:38]
     :END:
 
 What creates atomicity and encapsulation requirements?
@@ -11692,17 +11692,17 @@ When a class is composed of multiple /independent/ state variables and have no
 operations that have any invalid state transitions.
 
 *** Publishing state variables                                        :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-05-04 Wed>
     :PROPERTIES:
     :ID:       9448f55a-de81-4bf0-8615-b62eb2b4c1d1
-    :DRILL_LAST_INTERVAL: 4.8835
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 9
+    :DRILL_LAST_INTERVAL: 17.4627
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 10
     :DRILL_FAILURE_COUNT: 6
-    :DRILL_AVERAGE_QUALITY: 2.778
-    :DRILL_EASE: 2.56
-    :DRILL_LAST_QUALITY: 3
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:56]
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.66
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:38]
     :END:
 
 When can you publish a state variable?
@@ -12146,17 +12146,17 @@ INDEX(Table1,                                     // The table to search
 * Statistics
 ** Random
 *** Simpson's Paradox                                                 :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-05-01 Sun>
     :PROPERTIES:
     :ID:       9ce866db-53ac-4d94-aead-e751ee34f386
-    :DRILL_LAST_INTERVAL: 5.2119
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.4183
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:44]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:37]
     :END:
 
 What is Simpson's paradox?
@@ -12202,17 +12202,17 @@ What are the three logically distinct ways of making money?
 3. Equity
 
 *** Earliest debt                                                     :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-05-05 Thu>
     :PROPERTIES:
     :ID:       a4834d31-399e-479b-9290-8bdca9f394df
-    :DRILL_LAST_INTERVAL: 5.8207
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 17.5447
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:21]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:39]
     :END:
 
 Which code of laws first regulated debt?
@@ -12263,17 +12263,17 @@ Define a capital market
 A financial market for trading equity (stocks) and debt (bonds).
 
 *** Mortgage                                                          :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-01 Sun>
     :PROPERTIES:
     :ID:       30a6a61f-b113-4232-a8ab-ca46bb2469d2
-    :DRILL_LAST_INTERVAL: 4.6196
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.8719
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:12]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:40]
     :END:
 
 Where did mortgage originate from?
@@ -12291,17 +12291,17 @@ the economy shifted away from the self sufficient feudal manor system.
 mort-gage means dead-pledge.
 
 *** Tradeable debt                                                    :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       6dbb01c1-3a4f-4196-97fe-a43de5621854
-    :DRILL_LAST_INTERVAL: 4.6843
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.9914
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:22]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:38]
     :END:
 
 What is the first occurence of tradable and negotiable debt?
@@ -12314,17 +12314,17 @@ In 1262, these loans were consolidated into a single loan called the /monte
 vecchio/ in two semiannual installments of 2.5% interest each.
 
 *** Security                                                          :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       109513f7-8e73-4051-b67b-f1ec755b294f
-    :DRILL_LAST_INTERVAL: 4.6669
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 14.6138
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:12]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:39]
     :END:
 
 Define security in a financial context.
@@ -12359,17 +12359,17 @@ A real or virtual document representing a legal agreement involving some sort of
 monetary value.
 
 *** Yield                                                             :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-05 Thu>
     :PROPERTIES:
     :ID:       8f853f19-a0b9-49d0-834b-bda86ca4cdc9
-    :DRILL_LAST_INTERVAL: 5.2792
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 17.9518
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:24]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:40]
     :END:
 
 Define yield.
@@ -12379,17 +12379,17 @@ Define yield.
 The income return on an investment.  Refers to interest or dividends from a security.
 
 *** Par Amount                                                        :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-04 Wed>
     :PROPERTIES:
     :ID:       39dcbb58-63fc-4dcf-a0a7-9c3ddf265be9
-    :DRILL_LAST_INTERVAL: 4.9859
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 16.6082
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:20]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:40]
     :END:
 
 What is the par amount or par value?
@@ -12401,17 +12401,17 @@ It means original value.  AKA face value or nominal value.
 Most commonly refers to value of a bond when first issued.
 
 *** Nominal Yield                                                     :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-04-30 Sat>
     :PROPERTIES:
     :ID:       989858c6-5ee5-44fc-abbb-646593bf80c1
-    :DRILL_LAST_INTERVAL: 4.5558
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.1546
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:24]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:38]
     :END:
 
 Define nominal yield
@@ -12424,17 +12424,17 @@ bond issuer promises to pay bond purchasers.
 AKA nominal rate, coupon yield or coupon rate.
 
 *** Current yield                                                     :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       264c5b1e-d341-4a7c-ab62-7b8cbe5d626f
-    :DRILL_LAST_INTERVAL: 5.0225
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 15.0502
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:23]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:39]
     :END:
 
 Define current yield
@@ -12466,17 +12466,17 @@ The central bank, established in 1694 responsible for monetary policy and as a
 lender of last resort.
 
 *** Types of Bonds                                                    :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-04-30 Sat>
     :PROPERTIES:
     :ID:       29ef2f12-ec25-4432-9b62-3a6d825f2dd0
-    :DRILL_LAST_INTERVAL: 4.6659
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 13.3835
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:12]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:39]
     :END:
 
 What are the types of bonds?
@@ -12488,17 +12488,17 @@ What are the types of bonds?
 3. Bullet - issuer redeems AT maturity date
 
 *** Issue date                                                        :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-05-02 Mon>
     :PROPERTIES:
     :ID:       01307408-18ea-42d6-83df-199782665f90
-    :DRILL_LAST_INTERVAL: 5.14
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 14.9882
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:12]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:40]
     :END:
 
 define issue date
@@ -12508,17 +12508,17 @@ define issue date
 The date on which a bond is issued and begins to accrue interest
 
 *** Dividend payments                                                 :drill:
-    SCHEDULED: <2016-04-16 Sat>
+    SCHEDULED: <2016-04-30 Sat>
     :PROPERTIES:
     :ID:       14590664-b42e-4054-a374-6cc77a1bf229
-    :DRILL_LAST_INTERVAL: 4.801
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 13.2256
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:23]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:38]
     :END:
 
 Define dividend
@@ -12529,17 +12529,17 @@ A dividend is a distribution of a portion of a company's earnings, decided by
 the board of directors to a class of its shareholders.
 
 *** Types of markets                                                  :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-04-28 Thu>
     :PROPERTIES:
     :ID:       4ceb8481-fabc-4e86-98ae-d9e9671b439a
-    :DRILL_LAST_INTERVAL: 3.9949
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 10.7187
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:21]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:38]
     :END:
 
 What are the common markets?
@@ -12553,17 +12553,17 @@ What are the common markets?
 + Commodity market
 
 *** Arbitrage                                                         :drill:
-    SCHEDULED: <2016-04-17 Sun>
+    SCHEDULED: <2016-05-09 Mon>
     :PROPERTIES:
     :ID:       36be2642-3b36-4635-974b-f73d55dc8d3a
-    :DRILL_LAST_INTERVAL: 6.1045
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 21.895
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:23]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:39]
     :END:
 
 Define arbitrage
@@ -12574,17 +12574,17 @@ The simultaneous purchase and sale of an asset in order to profit from a
 difference in the price.
 
 *** Derivatives market                                                :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-04-29 Fri>
     :PROPERTIES:
     :ID:       4d42ed05-68de-4618-8326-96066199346a
-    :DRILL_LAST_INTERVAL: 3.9888
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 12.4983
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:21]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:37]
     :END:
 
 Define a derivatives market.
@@ -12600,17 +12600,17 @@ The most common types of derivatives are futures, options, forwards and swaps
 ** Chapter 2 - Market Participants
 
 *** Primary and secondary                                             :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-05-01 Sun>
     :PROPERTIES:
     :ID:       f8d15716-f110-44ea-a9dd-e98c4ed566bf
-    :DRILL_LAST_INTERVAL: 4.2147
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 13.627
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:24]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:37]
     :END:
 
 What's the difference between the primary and secondary market?
@@ -12623,17 +12623,17 @@ banks to create and issue securities to investors.
 The secondary market is where trading of securities takes place.
 
 *** Secondary market setup                                            :drill:
-    SCHEDULED: <2016-04-15 Fri>
+    SCHEDULED: <2016-04-28 Thu>
     :PROPERTIES:
     :ID:       b3829ad4-53d5-4a8f-a2ab-913135671269
-    :DRILL_LAST_INTERVAL: 3.9488
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.4876
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:20]
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:37]
     :END:
 
 How is the secondary market organized?
@@ -12762,6 +12762,7 @@ bought or sold in the market without affecting the asset's price.
     :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
     :DRILL_LAST_REVIEWED: [2016-04-14 Thu 09:35]
+    :ID:       09DAEB25-8A4C-45DE-BF81-A57C15F6CA96
     :END:
     :PROPERTIES:
     :ID:       386fded1-1d0f-427a-9b44-64ec00cfab76
@@ -12851,11 +12852,22 @@ London - 40%
 Tokyo - 10%
 Rest of Asia - 10%
 
-
 * Management
 ** The Phoenix Project
 
 *** Synopsis                                                          :drill:
+    SCHEDULED: <2016-04-19 Tue>
+    :PROPERTIES:
+    :ID:       A0CE8796-3F00-40E9-A327-22ED45E50C15
+    :DRILL_LAST_INTERVAL: 1.5388
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:51]
+    :END:
 
 What was the Phoenix Project about?
 
@@ -12871,6 +12883,18 @@ interdepartmental communications and effectively server other business functions
 at Parts Unlimited.
 
 *** Three Ways                                                        :drill:
+    SCHEDULED: <2016-04-19 Tue>
+    :PROPERTIES:
+    :ID:       DE3464A6-A2EC-49AA-A480-4F4434B6C131
+    :DRILL_LAST_INTERVAL: 1.7112
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-04-17 Sun 17:46]
+    :END:
 
 What is the philosophy of the three ways described in the Phoenix Project?
 
