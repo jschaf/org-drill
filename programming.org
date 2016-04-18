@@ -1127,17 +1127,17 @@ What Integral conversions are supported in a format specifier?
 + x, X - hexadecimal integer
 
 *** Formatter - Floating Point Conversions                            :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-08-22 Mon>
 :PROPERTIES:
 :ID:       3fcd21ba-88ce-4022-bede-a4643cd26345
-:DRILL_LAST_INTERVAL: 43.4484
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 9
+:DRILL_LAST_INTERVAL: 126.2251
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 10
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 4.222
-:DRILL_EASE: 2.86
+:DRILL_AVERAGE_QUALITY: 4.3
+:DRILL_EASE: 2.96
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-06 Sun 14:43]
+:DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:04]
 :END:
 
 What floating point conversions are supported in a format specifier?
@@ -3266,17 +3266,17 @@ Hopscotch raptors.
 + 2-choice Hashing
 
 *** Hopscotch hashing                                               :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-07-24 Sun>
 :PROPERTIES:
 :ID:       C53D4220-3C93-478B-BEBC-BA862E35D2D8
-:DRILL_LAST_INTERVAL: 29.127
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 13
+:DRILL_LAST_INTERVAL: 97.2796
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 14
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 3.615
-:DRILL_EASE: 2.72
+:DRILL_AVERAGE_QUALITY: 3.714
+:DRILL_EASE: 2.82
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-03-20 Sun 01:51]
+:DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:00]
 :END:
 
 What is Hopscotch hashing?
@@ -4836,17 +4836,17 @@ All of the interesting information. For a PhoneBook class:
 The string should be self explanatory.
 
 *** Item 10: override toString format specification                   :drill:
-SCHEDULED: <2016-04-18 Mon>
+SCHEDULED: <2017-01-03 Tue>
 :PROPERTIES:
 :ID:       da560596-fcfe-44a1-b831-6af67b1ec2fa
-:DRILL_LAST_INTERVAL: 70.0478
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 260.2718
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 3.857
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.0
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-08 Mon 16:24]
+:DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:05]
 :END:
 
 When should you specify the value of toString?
@@ -7372,17 +7372,17 @@ Comparable<? super T> and Comparator<? super T>
 Both interfaces are consumers.  They consume a object and produce an ordering.
 
 *** Item 28: Use Bounded Wildcards - type param only once             :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-10-14 Fri>
 :PROPERTIES:
 :ID:       e220978c-d35b-495c-a74d-0d4db7d29d0f
-:DRILL_LAST_INTERVAL: 51.4909
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 178.6206
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 4.143
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-27 Sat 10:24]
+:DRILL_LAST_REVIEWED: [2016-04-18 Mon 08:55]
 :END:
 
 If a type parameter only appears once in a method declaration, what should you
@@ -8318,17 +8318,17 @@ If you must overload a method, what should you avoid?
    you confuse the fuck out of programmers.
 
 *** Item 42: Use varargs judiciously - one required arg               :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-09-11 Sun>
     :PROPERTIES:
     :ID:       222c514f-84df-4055-909d-fd22003eaac9
-    :DRILL_LAST_INTERVAL: 44.7963
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 145.6007
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-04 Fri 00:24]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:00]
     :END:
 
 How do you handle a required argument followed by a variable number of
@@ -8486,17 +8486,17 @@ What is the most powerful technique for minimizing the scope of local variables?
 Declare the local variable where it is first used.
 
 *** Item 45: Minimize scope of local vars - initialize                :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-09-03 Sat>
     :PROPERTIES:
     :ID:       ba4ac188-21ff-4292-85e4-9a83c521f894
-    :DRILL_LAST_INTERVAL: 47.8424
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 138.1456
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-01 Tue 21:21]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 08:55]
     :END:
 
 Nearly every local variable should contain an _?
@@ -8526,17 +8526,17 @@ When is it acceptable to postpone initialization of local variables?
 When using a try-catch block.
 
 *** Item 46: Prefer for-each loops - why                              :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-10-08 Sat>
     :PROPERTIES:
     :ID:       d1e99a54-2063-424a-900b-0acde4fc4f69
-    :DRILL_LAST_INTERVAL: 46.9617
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 173.1785
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-02 Wed 12:54]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:04]
     :END:
 
 Why should you prefer for-each loops?
@@ -10698,17 +10698,17 @@ What are the motivating factors for concurrency?
   coordinate them
 
 *** Thread Benefits                                                   :drill:
-SCHEDULED: <2016-04-18 Mon>
+SCHEDULED: <2016-11-08 Tue>
 :PROPERTIES:
 :ID:       3acd0416-3113-4401-a5f4-58af124d3050
-:DRILL_LAST_INTERVAL: 71.9321
-:DRILL_REPEATS_SINCE_FAIL: 7
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 203.909
+:DRILL_REPEATS_SINCE_FAIL: 8
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.571
-:DRILL_EASE: 2.42
+:DRILL_AVERAGE_QUALITY: 3.75
+:DRILL_EASE: 2.52
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:35]
+:DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:00]
 :END:
 
 What are the benefits of threads?
@@ -11460,17 +11460,17 @@ How can you prevent the this reference from escaping during construction?
 2. Don't invoke overridable methods in a constructor.
 
 *** Thread confinement                                                :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-05-27 Fri>
     :PROPERTIES:
     :ID:       02652eb7-cfce-449a-a712-cf1f5dad695c
-    :DRILL_LAST_INTERVAL: 12.2751
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 39.2687
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.667
-    :DRILL_EASE: 2.66
+    :DRILL_AVERAGE_QUALITY: 3.857
+    :DRILL_EASE: 2.76
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:52]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:04]
     :END:
 
 What is thread confinement?
@@ -12338,17 +12338,17 @@ A security is a financial instrument that represents either:
 + Rights to ownership as represented by an option.
 
 *** Financial Instrument                                              :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-05-10 Tue>
     :PROPERTIES:
     :ID:       45f3d664-9fb9-43bd-8ba0-8c9d8c73ee1c
-    :DRILL_LAST_INTERVAL: 6.7487
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 22.3373
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-11 Mon 10:21]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 08:55]
     :END:
 
 Define financial instrument
@@ -12711,17 +12711,17 @@ The price that a dealer or other prospective buyer is prepared to pay for
 securities or other assets.
 
 *** Institutional Investor                                            :drill:
-    SCHEDULED: <2016-04-18 Mon>
+    SCHEDULED: <2016-04-30 Sat>
     :PROPERTIES:
     :ID:       00e0beb6-fdb3-445b-bc53-ecf51e4ff2b9
-    :DRILL_LAST_INTERVAL: 4.2602
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 11.8833
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-14 Thu 09:35]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 08:55]
     :END:
 
 Define institutional investor
@@ -12753,16 +12753,16 @@ Liquidity describes the degree to which an asset or security can be quickly
 bought or sold in the market without affecting the asset's price.
 
 *** Broker                                                            :drill:
-    SCHEDULED: <2016-04-18 Mon>
     :PROPERTIES:
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.0
-    :DRILL_EASE: 2.7
+    :DRILL_AVERAGE_QUALITY: 4.25
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-14 Thu 09:35]
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 08:55]
     :ID:       09DAEB25-8A4C-45DE-BF81-A57C15F6CA96
+    :DRILL_LAST_INTERVAL: 0.0
     :END:
     :PROPERTIES:
     :ID:       386fded1-1d0f-427a-9b44-64ec00cfab76
@@ -12930,3 +12930,77 @@ increase resilience.
 
 
 
+** The Goal
+*** The Goal Synopsis                                                 :drill:
+    SCHEDULED: <2016-04-20 Wed>
+    :PROPERTIES:
+    :ID:       6D456455-8060-4687-92AA-C387190250E8
+    :DRILL_LAST_INTERVAL: 1.5458
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_FAILURE_COUNT: 0
+    :DRILL_AVERAGE_QUALITY: 5.0
+    :DRILL_EASE: 2.6
+    :DRILL_LAST_QUALITY: 5
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:00]
+    :END:
+
+Describe the goal in broad strokes?
+
+**** Answer
+
+Fictional novel on how a manufacturing company plant manager turns his plant
+around in three months by using principles of lean supply.
+
+*** The Goal focusing steps                                           :drill:
+    SCHEDULED: <2016-04-20 Wed>
+    :PROPERTIES:
+    :ID:       92B365AE-8520-472E-90C1-48B7EDDE6273
+    :DRILL_LAST_INTERVAL: 1.7814
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_FAILURE_COUNT: 1
+    :DRILL_AVERAGE_QUALITY: 3.0
+    :DRILL_EASE: 2.5
+    :DRILL_LAST_QUALITY: 4
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:06]
+    :END:
+
+What are the focusing steps in /The Goal/?
+
+**** Answer
+
+- IDENTIFY the system’s constraint.
+- Decide how to EXPLOIT the system’s constraint.
+- SUBORDINATE everything else to the above decisions.
+- ELEVATE the system’s constraint.
+- If in the previous steps a constraint has been broken Go back to step 1, but
+  do not allow inertia to cause a system constraint.
+
+*** The Goal Concepts of Flow                                         :drill:
+    SCHEDULED: <2016-04-20 Wed>
+    :PROPERTIES:
+    :ID:       0F549A8C-7829-437C-AF6F-0110CB5DB260
+    :DRILL_LAST_INTERVAL: 1.5869
+    :DRILL_REPEATS_SINCE_FAIL: 2
+    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_FAILURE_COUNT: 4
+    :DRILL_AVERAGE_QUALITY: 2.2
+    :DRILL_EASE: 2.36
+    :DRILL_LAST_QUALITY: 3
+    :DRILL_LAST_REVIEWED: [2016-04-18 Mon 09:09]
+    :END:
+
+What are the concepts of flow in /The Goal/?
+
+**** Answer
+
+- Improving flow (or equivalently lead time) is a primary objective of
+  operations.
+- This primary objective should be translated into a practical mechanism that
+  guides the operation when not to produce (prevents over production). Ford used
+  space; Ohno used inventory.
+- Local efficiencies must be abolished.
+- A focusing process to balance flow must be in place. Ford used direct
+  observation. Ohno used the gradual reduction of the number of containers and
+  then gradual reduction of parts per container.
