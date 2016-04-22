@@ -577,17 +577,17 @@ What are the benefits of OO Programing?
 
 ** Concurrency
 *** Concurrency Models                                                :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-05-27 Fri>
     :PROPERTIES:
     :ID:       8c998336-f161-4df5-8fef-104cb72a8d38
-    :DRILL_LAST_INTERVAL: 15.4233
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 6
+    :DRILL_LAST_INTERVAL: 35.3848
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 7
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.333
-    :DRILL_EASE: 2.28
+    :DRILL_AVERAGE_QUALITY: 3.571
+    :DRILL_EASE: 2.38
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 10:00]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
     :END:
 
 What are the common concurrency models?
@@ -2273,17 +2273,17 @@ Arrays.parallelSort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
 #+END_SRC
 
 *** Array Prefix                                                      :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-07-23 Sat>
     :PROPERTIES:
     :ID:       56a86586-4174-4a91-a41d-6e42382e17c1
-    :DRILL_LAST_INTERVAL: 29.3308
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 91.8541
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-23 Wed 13:21]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:02]
     :END:
 
 How do you compute the prefix of an array in Java?
@@ -2458,17 +2458,17 @@ http://www.artima.com/insidejvm/ed2/threadsynch.html - Nice description on how
 the monitor concept is implemented in Java, complete with pictures.
 
 *** Create a thread                                                   :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-06-04 Sat>
     :PROPERTIES:
     :ID:       6c9cf0cf-e082-45d2-a6d3-9b2b3dd282f3
-    :DRILL_LAST_INTERVAL: 14.6518
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 43.443
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:59]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:06]
     :END:
 
 How do you create and start a thread in Java?
@@ -2528,17 +2528,17 @@ How do you get the currently executing thread in Java?
 ~Thread.currentThread()~, it's a static method.
 
 *** Name a thread                                                     :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-06-01 Wed>
     :PROPERTIES:
     :ID:       cedcafd9-a681-4aba-9e80-00a85b06584b
-    :DRILL_LAST_INTERVAL: 14.8964
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 40.3512
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:47]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
     :END:
 
 How do you name a thread in Java?
@@ -2969,17 +2969,17 @@ How do you extract the least significant bit of x?
 x & -x
 
 *** Mask for bits above and including least significant bit           :drill:
-    SCHEDULED: <2016-04-22 Fri>
+    SCHEDULED: <2016-06-06 Mon>
     :PROPERTIES:
     :ID:       2169d35d-ab0e-47b0-baa9-6fae92a2b42d
-    :DRILL_LAST_INTERVAL: 15.8027
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 11
+    :DRILL_LAST_INTERVAL: 44.9224
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 12
     :DRILL_FAILURE_COUNT: 4
-    :DRILL_AVERAGE_QUALITY: 3.455
-    :DRILL_EASE: 2.86
+    :DRILL_AVERAGE_QUALITY: 3.584
+    :DRILL_EASE: 2.96
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:50]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:03]
     :END:
 
 How do you create a mask for bits above and including the least significant bit?
@@ -3139,17 +3139,17 @@ Adjacent items are repeatedly compared.
 https://en.wikipedia.org/wiki/Bubble_sort
 
 *** Quick Sort                                                      :drill:
-SCHEDULED: <2016-04-21 Thu>
+SCHEDULED: <2016-11-19 Sat>
 :PROPERTIES:
 :ID:       A9B6BC51-C1E8-46DC-9288-9EFF8126261A
-:DRILL_LAST_INTERVAL: 71.8978
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 211.4291
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.6
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-09 Tue 10:05]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
 :END:
 
 What is quicksort's running time and space complexity?
@@ -3625,17 +3625,17 @@ measured in units of time.
 
 
 *** Throughput                                                        :drill:
-SCHEDULED: <2016-04-22 Fri>
+SCHEDULED: <2017-01-03 Tue>
 :PROPERTIES:
 :ID:       5FB041A6-CAFF-4317-A86B-39E6AF117500
-:DRILL_LAST_INTERVAL: 75.576
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 255.6414
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.6
-:DRILL_EASE: 2.8
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.9
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-06 Sat 14:38]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
 :END:
 
 What is throughput?
@@ -3907,17 +3907,17 @@ for (int c = a ^ b; c != 0; c = c & (c - 1))
 ** Jenkov Concurrency
 
 *** Should you use a constant object or String literal as monitor     :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-06-06 Mon>
     :PROPERTIES:
     :ID:       eee275c3-0172-49a5-8f59-c549eb4e5e55
-    :DRILL_LAST_INTERVAL: 13.2968
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 45.0476
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-08 Fri 11:26]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:02]
     :END:
 
     Why is using a string literal or a global object as a monitor a bad idea?
@@ -3955,17 +3955,17 @@ public class MyWaitNotify{
 #+END_SRC
 
 *** Nested Monitor Lockout vs Deadlock                                :drill:
-    SCHEDULED: <2016-04-22 Fri>
+    SCHEDULED: <2016-05-28 Sat>
     :PROPERTIES:
     :ID:       e64dcdcd-a900-4786-9184-3ad91734bafc
-    :DRILL_LAST_INTERVAL: 12.0353
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 36.3587
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-10 Sun 13:54]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:04]
     :END:
 
 What's the difference between nested monitor lockout and deadlock?    
@@ -3999,17 +3999,17 @@ A lock which causes a thread which is trying to acquire a lock to repeatedly
 check if the loop is available.  It is a kind of busy waiting.
 
 *** Unlock                                                            :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-05-16 Mon>
     :PROPERTIES:
     :ID:       5d5b6eb3-7075-4722-a113-6cf2fa69d364
-    :DRILL_LAST_INTERVAL: 7.1285
-    :DRILL_REPEATS_SINCE_FAIL: 3
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 24.308
+    :DRILL_REPEATS_SINCE_FAIL: 4
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.7
+    :DRILL_EASE: 2.8
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-14 Thu 09:36]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 13:58]
     :END:
 
 How should we unlock a Lock in Java?
@@ -4537,17 +4537,17 @@ What are valid use cases for finalizers?
 + Native peers, assuming the native peer holds no critical resources.
 
 *** Item 07: Avoid Finalizers - Safe Impl                             :drill:
-SCHEDULED: <2016-04-22 Fri>
+SCHEDULED: <2016-08-30 Tue>
 :PROPERTIES:
 :ID:       6262a0ed-cd87-446f-b258-f05c1037d8c9
-:DRILL_LAST_INTERVAL: 59.1303
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 8
+:DRILL_LAST_INTERVAL: 130.1678
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 9
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.499
-:DRILL_EASE: 2.18
+:DRILL_AVERAGE_QUALITY: 3.666
+:DRILL_EASE: 2.28
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-23 Tue 10:46]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:04]
 :END:
 
 How should you implement finalizers if you must?
@@ -4660,17 +4660,17 @@ What does the argument type have to be when overriding equals?
 Object o, otherwise you're overloading equals instead of overriding it.
 
 *** Item 08: High Quality Equals Impl                                 :drill:
-SCHEDULED: <2016-04-21 Thu>
+SCHEDULED: <2016-10-10 Mon>
 :PROPERTIES:
 :ID:       fe0f1e4b-4282-478e-8dbf-295384c0a8d4
-:DRILL_LAST_INTERVAL: 64.1767
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 6
+:DRILL_LAST_INTERVAL: 171.279
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 7
 :DRILL_FAILURE_COUNT: 1
-:DRILL_AVERAGE_QUALITY: 3.667
-:DRILL_EASE: 2.46
+:DRILL_AVERAGE_QUALITY: 3.857
+:DRILL_EASE: 2.56
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-17 Wed 11:26]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:01]
 :END:
 
 What does a correct equals method look like?
@@ -5456,17 +5456,17 @@ Using fields does not offer the benefits of encapsulation.
 + You can't take auxiallary action when a field is accessed.
 
 *** Item 15: Minimize mutability                                      :drill:
-    SCHEDULED: <2016-04-22 Fri>
+    SCHEDULED: <2016-06-07 Tue>
 :PROPERTIES:
 :ID:       853c0b48-cf7a-459b-90f7-a6305accb467
-:DRILL_LAST_INTERVAL: 14.0738
-:DRILL_REPEATS_SINCE_FAIL: 4
-:DRILL_TOTAL_REPEATS: 22
+:DRILL_LAST_INTERVAL: 45.859
+:DRILL_REPEATS_SINCE_FAIL: 5
+:DRILL_TOTAL_REPEATS: 23
 :DRILL_FAILURE_COUNT: 7
-:DRILL_AVERAGE_QUALITY: 3.545
-:DRILL_EASE: 3.06
+:DRILL_AVERAGE_QUALITY: 3.608
+:DRILL_EASE: 3.16
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-04-08 Fri 11:27]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:04]
 :END:
 
 How do you make a class immutable?
@@ -5482,17 +5482,17 @@ Follow these five rules:
 5. Ensure exclusive access to any mutable components.
 
 *** Item 15: Minimize Mutability - benefits                           :drill:
-SCHEDULED: <2016-04-22 Fri>
+SCHEDULED: <2016-11-16 Wed>
 :PROPERTIES:
 :ID:       360a3167-bbc5-44e3-85c0-fa2d58c859cb
-:DRILL_LAST_INTERVAL: 67.1372
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 7
+:DRILL_LAST_INTERVAL: 208.0819
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 8
 :DRILL_FAILURE_COUNT: 2
-:DRILL_AVERAGE_QUALITY: 4.143
-:DRILL_EASE: 3.0
+:DRILL_AVERAGE_QUALITY: 4.25
+:DRILL_EASE: 3.1
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-15 Mon 10:05]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:03]
 :END:
 
 What are the benefits of immutable classes?
@@ -5766,17 +5766,17 @@ See AbstractCollection#remove for an example.
 https://docs.oracle.com/javase/8/docs/api/index.html?java/util/AbstractCollection.html
 
 *** Item 17: Design for Inheritance - inheritance efficient           :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-09-24 Sat>
 :PROPERTIES:
 :ID:       34f730e7-9562-41f4-902d-0ea490046964
-:DRILL_LAST_INTERVAL: 52.7531
-:DRILL_REPEATS_SINCE_FAIL: 5
-:DRILL_TOTAL_REPEATS: 11
+:DRILL_LAST_INTERVAL: 154.717
+:DRILL_REPEATS_SINCE_FAIL: 6
+:DRILL_TOTAL_REPEATS: 12
 :DRILL_FAILURE_COUNT: 3
-:DRILL_AVERAGE_QUALITY: 4.0
-:DRILL_EASE: 3.06
+:DRILL_AVERAGE_QUALITY: 4.083
+:DRILL_EASE: 3.16
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-28 Sun 15:40]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:02]
 :END:
 
 How do you allow efficient access to the internal workings of a subclass
@@ -8891,17 +8891,17 @@ Your program will be much more flexible.  You can change the representation
 without changing the code.
 
 *** Item 52: Refer to objects by interface - Why not                  :drill:
-    SCHEDULED: <2016-04-22 Fri>
+    SCHEDULED: <2016-09-23 Fri>
     :PROPERTIES:
     :ID:       225337f9-afff-4654-b679-d5973912472d
-    :DRILL_LAST_INTERVAL: 43.9281
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 154.2304
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:04]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
     :END:
 
 When is it appropriate to refer to an object by it's class rather than its
@@ -8915,17 +8915,17 @@ interface?
 3. When the class adds extra methods and you need those methods.
 
 *** Item 53: Prefer interfaces to reflection - why                    :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-08-26 Fri>
     :PROPERTIES:
     :ID:       934c577e-6cb6-476d-a1fc-8ce3e5a91639
-    :DRILL_LAST_INTERVAL: 42.9869
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 126.2181
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-09 Wed 13:03]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:06]
     :END:
 
 What are the disadvantages of using reflection as opposed to interfaces?
@@ -9203,17 +9203,17 @@ The best approach is often to use exception chaining, which preserves details
 about the exception.
 
 *** Item 62: Document all exceptions thrown by each method            :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-08-18 Thu>
     :PROPERTIES:
     :ID:       36b62715-5645-4aee-acb5-dcb19a5d08e5
-    :DRILL_LAST_INTERVAL: 39.0058
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 117.9961
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
-    :DRILL_AVERAGE_QUALITY: 4.75
-    :DRILL_EASE: 2.8
+    :DRILL_AVERAGE_QUALITY: 4.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-13 Sun 16:51]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
     :END:
 
 How should you document exceptions?
@@ -9246,17 +9246,17 @@ What information should go into an exception detail message?
 All values of parameters and fields that contributed to the exception.
 
 *** Item 63: Include failure capture information - prose              :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-09-08 Thu>
     :PROPERTIES:
     :ID:       C034C19C-1925-45E1-AFC5-977D24EEAF52
-    :DRILL_LAST_INTERVAL: 37.5546
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 138.597
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:21]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:06]
     :END:
 
 Do you include prose in an exception detail message?
@@ -9503,17 +9503,17 @@ How can you avoid problems with shared mutable data?
 3. Confine mutable data to a single thread.
 
 *** Item 66: Synchronize access to shared mutable data - multiple     :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-09-13 Tue>
     :PROPERTIES:
     :ID:       7b2d556c-4336-49c5-be1b-07f82c823017
-    :DRILL_LAST_INTERVAL: 37.6009
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 4
+    :DRILL_LAST_INTERVAL: 143.6771
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 5
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.9
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-14 Mon 10:14]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:04]
     :END:
 
 What must you do when multiple threads share mutable data?
@@ -10874,17 +10874,17 @@ relative timing or interleaving of multiple threads by the runtime environment.
 In other words, when getting the right answer depends on lucky timing.
 
 *** Data Race Definition                                              :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-06-28 Tue>
     :PROPERTIES:
     :ID:       05550c99-ad7f-45a4-9b68-6bcf737b66f0
-    :DRILL_LAST_INTERVAL: 27.4379
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 7
+    :DRILL_LAST_INTERVAL: 66.9091
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 8
     :DRILL_FAILURE_COUNT: 2
-    :DRILL_AVERAGE_QUALITY: 3.429
-    :DRILL_EASE: 2.42
+    :DRILL_AVERAGE_QUALITY: 3.625
+    :DRILL_EASE: 2.52
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-03-25 Fri 16:29]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:02]
     :END:
 
 Define a data race.
@@ -11503,17 +11503,17 @@ falls entirely on the implementation.
 Fragile because there's no language constructs to help.
 
 *** Stack confinement                                                 :drill:
-    SCHEDULED: <2016-04-22 Fri>
+    SCHEDULED: <2016-06-19 Sun>
     :PROPERTIES:
     :ID:       801f2a68-84d5-4b2d-b59e-1cb9d70f78d9
-    :DRILL_LAST_INTERVAL: 15.5074
-    :DRILL_REPEATS_SINCE_FAIL: 4
-    :DRILL_TOTAL_REPEATS: 3
+    :DRILL_LAST_INTERVAL: 57.8787
+    :DRILL_REPEATS_SINCE_FAIL: 5
+    :DRILL_TOTAL_REPEATS: 4
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.8
+    :DRILL_EASE: 2.9
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-06 Wed 09:47]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:02]
     :END:
 
 What is stack confinement in concurrency?
@@ -11846,17 +11846,17 @@ moon rocket habit
 3. Revise your system on a regular basis.
 
 *** What to Achieve                                                   :drill:
-SCHEDULED: <2016-04-21 Thu>
+SCHEDULED: <2016-11-20 Sun>
 :PROPERTIES:
 :ID:       9de25430-f028-4591-a97d-1e74bc205238
-:DRILL_LAST_INTERVAL: 70.9767
-:DRILL_REPEATS_SINCE_FAIL: 6
-:DRILL_TOTAL_REPEATS: 5
+:DRILL_LAST_INTERVAL: 212.3599
+:DRILL_REPEATS_SINCE_FAIL: 7
+:DRILL_TOTAL_REPEATS: 6
 :DRILL_FAILURE_COUNT: 0
-:DRILL_AVERAGE_QUALITY: 4.6
-:DRILL_EASE: 2.76
+:DRILL_AVERAGE_QUALITY: 4.667
+:DRILL_EASE: 2.86
 :DRILL_LAST_QUALITY: 5
-:DRILL_LAST_REVIEWED: [2016-02-10 Wed 10:48]
+:DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:05]
 :END:
 
 How do you decide what you want to achieve?
@@ -12754,13 +12754,13 @@ bought or sold in the market without affecting the asset's price.
 
 *** Broker                                                            :drill:
     :PROPERTIES:
-    :DRILL_REPEATS_SINCE_FAIL: 5
-    :DRILL_TOTAL_REPEATS: 5
+    :DRILL_REPEATS_SINCE_FAIL: 6
+    :DRILL_TOTAL_REPEATS: 6
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 4.4
-    :DRILL_EASE: 2.9
+    :DRILL_AVERAGE_QUALITY: 4.5
+    :DRILL_EASE: 3.0
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-20 Wed 14:27]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:02]
     :ID:       dd7e4b59-b2d8-4fe0-ab51-78ed927935b1
     :DRILL_LAST_INTERVAL: 0.0
     :END:
@@ -12857,17 +12857,17 @@ Rest of Asia - 10%
 ** The Phoenix Project
 
 *** Synopsis                                                          :drill:
-    SCHEDULED: <2016-04-21 Thu>
+    SCHEDULED: <2016-04-26 Tue>
     :PROPERTIES:
     :ID:       4477dfd5-71f4-443e-9e9a-40d5de1fc570
-    :DRILL_LAST_INTERVAL: 1.3708
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 1
+    :DRILL_LAST_INTERVAL: 4.3638
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 2
     :DRILL_FAILURE_COUNT: 0
     :DRILL_AVERAGE_QUALITY: 5.0
-    :DRILL_EASE: 2.6
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-20 Wed 14:24]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 13:58]
     :END:
 
 What was the Phoenix Project about?
@@ -12884,17 +12884,17 @@ interdepartmental communications and effectively server other business functions
 at Parts Unlimited.
 
 *** Three Ways                                                        :drill:
-    SCHEDULED: <2016-04-22 Fri>
+    SCHEDULED: <2016-04-28 Thu>
     :PROPERTIES:
     :ID:       c82981b7-6e3c-4989-b600-f081df219a09
-    :DRILL_LAST_INTERVAL: 1.8481
-    :DRILL_REPEATS_SINCE_FAIL: 2
-    :DRILL_TOTAL_REPEATS: 2
+    :DRILL_LAST_INTERVAL: 5.9509
+    :DRILL_REPEATS_SINCE_FAIL: 3
+    :DRILL_TOTAL_REPEATS: 3
     :DRILL_FAILURE_COUNT: 1
-    :DRILL_AVERAGE_QUALITY: 3.5
-    :DRILL_EASE: 2.6
+    :DRILL_AVERAGE_QUALITY: 4.0
+    :DRILL_EASE: 2.7
     :DRILL_LAST_QUALITY: 5
-    :DRILL_LAST_REVIEWED: [2016-04-20 Wed 14:25]
+    :DRILL_LAST_REVIEWED: [2016-04-22 Fri 14:01]
     :END:
 
 What is the philosophy of the three ways described in the Phoenix Project?
