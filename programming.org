@@ -2550,6 +2550,45 @@ new Thread("my awesome thread");
 new Thread(myRunnable, "my awesome runnable");
 #+END_SRC
 
+*** Implement interface                                               :drill:
+
+How do you implement multiple interfaces from an interface declaration?
+
+**** Answer
+
+~public MyInterface extends Interface1, Interface2 {}~
+
+*** Interface Implicit modifiers                                      :drill:
+
+What modifiers are implicit in Interfaces for methods and constants?
+
+**** Answer
+
+Methods are automatically public and abstract.
+
+Any field is public, static and final.
+
+*** Interface allowed things                                          :drill:
+
+What can go in an interface body?
+
+**** Answer
+
++ Abstract methods - only available for backwards compatibility
++ default methods
++ static methods
++ constants
+
+*** Interface default method                                          :drill:
+
+How do you define a default method for an interface?
+
+**** Answer
+
+~default int myComparable(Comparable other) {}~
+
+
+
 
 ** Design Patterns
 
