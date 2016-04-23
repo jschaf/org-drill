@@ -4057,6 +4057,61 @@ How should we unlock a Lock in Java?
 
 In a finally clause.
 
+*** Interrupts                                                        :drill:
+
+How do Java interrupts work?
+
+**** Answer
+
+An interrupt is a cooperative, scheduling mechanism.  Every thread has a flag
+that indicates if someone has requested an interrupt.  You can check it with
+interrupted().  The decision to actually cancel is entirely up to the running
+thread.
+
++ isInterrupted() - returns true if interrupt requested, doesn't change flag
++ interrupted() - return true if interrupt requested, resets flag.
+
+*** Blocking method                                                   :drill:
+
+Define blocking method
+
+**** Answer
+
+http://www.ibm.com/developerworks/library/j-jtp05236/
+
+A blocking method is different from an ordinary method that just takes a long
+time to run. The completion of an ordinary method is dependent only on how much
+work you've asked it to do and whether adequate computing resources (CPU cycles
+and memory) are available. The completion of a blocking method, on the other
+hand, is also dependent on some external event, such as timer expiration, I/O
+completion, or the action of another thread (releasing a lock, setting a flag,
+or placing a task on a work queue). Ordinary methods complete as soon as their
+work can be done, but blocking methods are less predictable because they depend
+on external events. Blocking methods can compromise responsiveness because it
+can be hard to predict when they will complete.
+
+*** Handle blocking method interrupt                                  :drill:
+
+How should you handle a blocking method that might interrupt?
+
+**** Answer
+
+If no cleanup, just add ~throws InterruptedException~ to the method signature.
+If you need cleanup, catch the ~InterruptedException~, cleanup and rethrow the
+exception.
+
+*** Ignoring ~InterruptedException~                                   :drill:
+
+How should you ignore ~InterruptedException~?
+
+**** Answer
+
+If you cannot rethrow it, e.g. you're in a ~Runnable~, you should reset the
+interrupt flag, since it's cleared when the exception is thrown.
+~Thread.currentThread().interrupt();~
+
+
+
 * Object Oriented Programming
 ** Types
 *** Covariant                                                         :drill:
